@@ -23,7 +23,7 @@ const paymentMethods = ["Visa", "Mastercard", "PayPal", "Amex"];
 const Footer = () => {
   return (
     <footer className="bg-foreground text-background py-12">
-      <div className="container mx-auto px-4">
+      <div className="container">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -83,18 +83,22 @@ const Footer = () => {
             <p className="text-xs text-muted-foreground leading-relaxed">
               <strong>Disclaimer:</strong> Certified Scrum Master(CSM®), Advanced Certified Scrum Master(A-CSM®), 
               Certified Scrum Product Owner (CSPO®), and other certifications are registered trademarks of their 
-              respective owners. SimpliAxis INC is a Licensed Training Partner (LTP) of Scrum Alliance, 
+              respective owners. viovn INC is a Licensed Training Partner (LTP) of Scrum Alliance, 
               Professional Training Network member of Scrum.org®, and Platinum SPCT Partner of Scaled Agile, Inc®.
             </p>
           </div>
 
           {/* Copyright */}
           <div className="pt-6 border-t border-muted/20 flex flex-wrap items-center justify-between gap-4">
-            <div className="logo-text text-background">
-              simpli<span className="text-primary">a</span>xis
+            <div className="flex items-center gap-3">
+              <img src="/logo.png" alt="Viovn Logo" className="w-10 h-10 object-contain invert grayscale brightness-200" />
+              <div className="flex flex-col">
+                <span className="text-xl font-black text-white tracking-tighter leading-none">Viovn</span>
+                <span className="text-[8px] font-bold text-slate-400 uppercase tracking-widest leading-none mt-0.5">Technologies</span>
+              </div>
             </div>
             <p className="text-sm text-muted-foreground">
-              © 2018-2026, Simpliaxis Solutions Private Limited. All Rights Reserved
+              © 2018-2026, viovn Solutions Private Limited. All Rights Reserved
             </p>
             <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
               Our privacy policy

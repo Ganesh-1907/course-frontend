@@ -36,7 +36,7 @@ const trustCards = [
 const WhyTrusted = () => {
   return (
     <section className="py-16 bg-background">
-      <div className="container mx-auto px-4">
+      <div className="container">
         {/* Title */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -45,7 +45,7 @@ const WhyTrusted = () => {
           className="text-center mb-12"
         >
           <h2 className="text-3xl md:text-4xl font-bold font-display">
-            Why <span className="logo-text inline">simpli<span>a</span>xis</span> is trusted globally
+            Why <span className="logo-text inline">viovn</span> is trusted globally
           </h2>
         </motion.div>
 

@@ -35,7 +35,7 @@ const stats = [
 const CareerStats = () => {
   return (
     <section className="py-16 bg-cream-dark">
-      <div className="container mx-auto px-4">
+      <div className="container">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}

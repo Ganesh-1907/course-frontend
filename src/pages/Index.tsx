@@ -1,10 +1,7 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
-import WhyTrusted from "@/components/WhyTrusted";
 import Partners from "@/components/Partners";
 import Courses from "@/components/Courses";
-import CareerStats from "@/components/CareerStats";
-import Webinars from "@/components/Webinars";
 import Benefits from "@/components/Benefits";
 import Trainers from "@/components/Trainers";
 import CallToAction from "@/components/CallToAction";
@@ -12,17 +9,17 @@ import ClientLogos from "@/components/ClientLogos";
 import Testimonials from "@/components/Testimonials";
 import Footer from "@/components/Footer";
 
+import SuccessRoadmap from "@/components/SuccessRoadmap";
+
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <Header />
       <main>
         <Hero />
-        <WhyTrusted />
         <Partners />
         <Courses />
-        <CareerStats />
-        <Webinars />
+        <SuccessRoadmap />
         <Benefits />
         <Trainers />
         <CallToAction />

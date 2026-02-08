@@ -5,13 +5,13 @@ import { Button } from "@/components/ui/button";
 
 const categories = [
   "All Courses",
-  "AGILE",
-  "SERVICE",
-  "SAFe",
-  "PROJECT",
-  "QUALITY",
-  "BUSINESS",
-  "Generative AI",
+  "Agile & Scrum",
+  "Project Management",
+  "IT Service Management",
+  "Quality & Process",
+  "Leadership & Coaching",
+  "Business Skills",
+  "AI & Technology",
 ];
 
 const courses = [
@@ -115,37 +115,42 @@ const Courses = () => {
     : courses.filter(c => c.category === activeCategory);
 
   return (
-    <section id="offers-cards" className="py-16 bg-background">
-      <div className="container mx-auto px-4">
-        {/* Header */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="text-center mb-8"
-        >
-          <p className="text-muted-foreground text-sm mb-2">
-            Choose the better course for your career
-          </p>
-          <h2 className="text-3xl md:text-4xl font-bold font-display">
+    <section id="offers-cards" className="py-12 bg-background">
+      <div className="container">
+        <div className="text-center max-w-3xl mx-auto mb-10">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-[10px] font-black uppercase tracking-widest mb-4"
+          >
+            Our Training Programs
+          </motion.div>
+          <motion.h2
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.1 }}
+            className="text-2xl md:text-3xl font-black font-display tracking-tight uppercase"
+          >
             Professional Certification & Training Courses
-          </h2>
-        </motion.div>
+          </motion.h2>
+        </div>
 
         {/* Category Tabs */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="flex flex-wrap justify-center gap-2 mb-10"
+          className="flex flex-wrap justify-center gap-2 mb-8"
         >
           {categories.map((category) => (
             <button
               key={category}
               onClick={() => setActiveCategory(category)}
-              className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
+              className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all uppercase tracking-widest ${
                 activeCategory === category
-                  ? "bg-primary text-white"
+                  ? "bg-primary text-white shadow-md shadow-primary/20"
                   : "bg-muted text-muted-foreground hover:bg-muted/80"
               }`}
             >

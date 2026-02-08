@@ -16,7 +16,7 @@ interface CourseCardProps {
     discount: number;
     badge?: string;
     image: string;
-    nextDate: string;
+    nextDate?: string;
   };
   index: number;
 }
@@ -38,7 +38,7 @@ const CourseCard = ({ course, index }: CourseCardProps) => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ delay: index * 0.1 }}
-      className="bg-card rounded-xl overflow-hidden shadow-card border border-border/50 card-hover"
+      className="bg-card rounded-lg overflow-hidden shadow-sm border border-border/50 card-hover"
     >
       {/* Image */}
       <div className="relative h-48 overflow-hidden">
@@ -71,10 +71,12 @@ const CourseCard = ({ course, index }: CourseCardProps) => {
         </h3>
 
         {/* Schedule */}
-        <div className="flex items-center gap-2 text-sm text-muted-foreground mb-3">
-          <Calendar className="w-4 h-4" />
-          <span>Next Schedule starts at {course.nextDate}</span>
-        </div>
+        {course.nextDate && (
+          <div className="flex items-center gap-2 text-sm text-muted-foreground mb-3">
+            <Calendar className="w-4 h-4" />
+            <span>Next Schedule starts at {course.nextDate}</span>
+          </div>
+        )}
 
         {/* Stats */}
         <div className="flex items-center gap-4 text-sm text-muted-foreground mb-4">
