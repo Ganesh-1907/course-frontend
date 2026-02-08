@@ -1,0 +1,262 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap');
+
+@layer base {
+  :root {
+    /* SimpliAxis Color Palette */
+    --background: 30 50% 98%;
+    --foreground: 240 24% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 240 24% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 24% 10%;
+
+    /* Primary - Orange */
+    --primary: 16 100% 50%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Secondary - Light gray/beige */
+    --secondary: 30 33% 96%;
+    --secondary-foreground: 240 24% 10%;
+
+    /* Muted */
+    --muted: 30 20% 94%;
+    --muted-foreground: 240 10% 46%;
+
+    /* Accent - Orange light */
+    --accent: 16 100% 96%;
+    --accent-foreground: 16 100% 40%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 30 20% 90%;
+    --input: 30 20% 90%;
+    --ring: 16 100% 50%;
+
+    --radius: 0.75rem;
+
+    /* Custom Colors */
+    --cream: 30 50% 98%;
+    --cream-dark: 30 33% 96%;
+    --orange: 16 100% 50%;
+    --orange-dark: 16 100% 45%;
+    --orange-light: 16 100% 96%;
+    --navy: 240 24% 10%;
+    --navy-light: 240 20% 20%;
+    --green: 142 76% 36%;
+    --yellow: 45 100% 51%;
+    --red: 0 84% 60%;
+    --blue: 217 91% 60%;
+
+    /* Category Colors */
+    --agile: 16 100% 50%;
+    --service: 270 70% 50%;
+    --safe: 200 100% 40%;
+    --project: 142 70% 40%;
+    --quality: 45 100% 45%;
+    --business: 340 80% 50%;
+    --ai: 260 70% 55%;
+
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(30 50% 98%) 0%, hsl(30 40% 95%) 100%);
+    --gradient-orange: linear-gradient(135deg, hsl(16 100% 50%) 0%, hsl(25 100% 55%) 100%);
+    --gradient-card: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(30 30% 98%) 100%);
+
+    /* Shadows */
+    --shadow-sm: 0 2px 8px -2px rgba(0, 0, 0, 0.08);
+    --shadow-md: 0 4px 16px -4px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 8px 32px -8px rgba(0, 0, 0, 0.12);
+    --shadow-card: 0 4px 20px -4px rgba(0, 0, 0, 0.08);
+    --shadow-hover: 0 8px 30px -8px rgba(0, 0, 0, 0.15);
+
+    /* Sidebar (keeping for compatibility) */
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 240 24% 6%;
+    --foreground: 30 20% 95%;
+
+    --card: 240 20% 10%;
+    --card-foreground: 30 20% 95%;
+
+    --popover: 240 20% 10%;
+    --popover-foreground: 30 20% 95%;
+
+    --primary: 16 100% 55%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 240 20% 15%;
+    --secondary-foreground: 30 20% 95%;
+
+    --muted: 240 15% 18%;
+    --muted-foreground: 30 15% 60%;
+
+    --accent: 16 100% 15%;
+    --accent-foreground: 16 100% 65%;
+
+    --destructive: 0 62% 40%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 240 15% 20%;
+    --input: 240 15% 20%;
+    --ring: 16 100% 55%;
+
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Inter', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary text-primary-foreground px-6 py-3 rounded-lg font-semibold 
+           hover:opacity-90 transition-all duration-300 shadow-md hover:shadow-lg
+           inline-flex items-center gap-2;
+  }
+
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold text-foreground;
+  }
+
+  .section-subtitle {
+    @apply text-muted-foreground text-sm uppercase tracking-wider mb-2;
+  }
+
+  .card-shadow {
+    box-shadow: var(--shadow-card);
+  }
+
+  .card-hover {
+    @apply transition-all duration-300;
+  }
+
+  .card-hover:hover {
+    box-shadow: var(--shadow-hover);
+    transform: translateY(-4px);
+  }
+
+  .gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-orange-500;
+  }
+
+  .logo-text {
+    font-family: 'Poppins', sans-serif;
+    @apply font-bold text-2xl;
+  }
+
+  .logo-text span {
+    @apply text-primary;
+  }
+
+  /* Infinite scroll animation */
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  .animate-scroll {
+    animation: scroll 30s linear infinite;
+  }
+
+  .animate-scroll-slow {
+    animation: scroll 45s linear infinite;
+  }
+
+  /* Category badges */
+  .badge-agile {
+    @apply bg-orange-100 text-orange-600;
+  }
+
+  .badge-service {
+    @apply bg-purple-100 text-purple-600;
+  }
+
+  .badge-safe {
+    @apply bg-blue-100 text-blue-600;
+  }
+
+  .badge-project {
+    @apply bg-green-100 text-green-600;
+  }
+
+  .badge-quality {
+    @apply bg-yellow-100 text-yellow-700;
+  }
+
+  .badge-business {
+    @apply bg-pink-100 text-pink-600;
+  }
+
+  .badge-ai {
+    @apply bg-violet-100 text-violet-600;
+  }
+
+  /* Star rating */
+  .star-rating {
+    @apply inline-flex items-center gap-0.5;
+  }
+
+  .star-filled {
+    @apply text-yellow-400;
+  }
+
+  .star-empty {
+    @apply text-gray-300;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .bg-cream {
+    background-color: hsl(var(--cream));
+  }
+
+  .bg-cream-dark {
+    background-color: hsl(var(--cream-dark));
+  }
+}
