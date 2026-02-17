@@ -38,6 +38,245 @@ export interface CategoryData {
   breadcrumbName?: string;
 }
 
+const DEFAULT_COURSE_IMAGE = "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=400&h=300&fit=crop";
+let generatedCourseId = 10000;
+
+const buildCourses = (category: string, titles: string[]): Course[] =>
+  titles.map((title) => ({
+    id: generatedCourseId++,
+    title,
+    category,
+    rating: 4.8,
+    enrolled: "1k+",
+    duration: "Self-paced",
+    format: "Live Virtual",
+    price: 299,
+    originalPrice: 499,
+    discount: 40,
+    image: DEFAULT_COURSE_IMAGE,
+  }));
+
+const buildCategory = (id: string, name: string, courseTitles: string[]): CategoryData => ({
+  id,
+  name,
+  title: `${name} CERTIFICATION COURSES`,
+  description: `${name} training and certification programs.`,
+  highlights: [],
+  heroImage: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&q=80",
+  stats: [
+    { label: "Courses", value: String(courseTitles.length) },
+    { label: "Format", value: "Live + Self-paced" },
+    { label: "Level", value: "All Levels" },
+  ],
+  courses: buildCourses(name, courseTitles),
+  details: [],
+  faqs: [],
+});
+
+const agileCourseTitles = [
+  "Certified Scrum Master (CSM) Certification Training",
+  "Certified Scrum Product Owner (CSPO) Certification Training",
+  "Advanced Certified Scrum Master (A-CSM) Certification Training",
+  "Advanced Certified Scrum Product Owner (A-CSPO) Certification Training",
+  "Certified Scrum Developer (CSD) Certification Training",
+  "Agile and Scrum Training",
+  "PMI-Agile Certified Practitioner (PMI-ACP) Certification Training",
+  "Professional Scrum Master (PSM I) Certification Training",
+  "Certified Agile Scaling Practitioner (CASP) Training",
+  "Agile Coaching Skills - Certified Facilitator (CAF) Training",
+  "Professional Scrum Master - Advanced (PSM II) Certification Training",
+  "Certified Agile Leader - 1 (CAL-1) Certification Training",
+  "Advanced Certified Scrum Developer (A-CSD) Certification Training",
+  "ICAgile Certified Professional in Agile Coaching (ICP-ACC) Certification Training",
+  "Professional Scrum with Kanban (PSK) Certification Training",
+  "Professional Scrum Product Owner (PSPO) Certification Training",
+  "Scrum@Scale Certification Training",
+  "ICAgile Enterprise Agile Coaching (ICP-ENT) Certification Training",
+  "Professional Agile Leadership Essentials (PAL-E) Certification Training",
+  "Behaviour Driven Development (BDD) Training",
+  "Test Driven Development (TDD) Training",
+  "ICAgile Agility in the Enterprise (ICP-ENT) Certification Training",
+  "ICAgile (ICP) Fundamentals Certification Training",
+  "Agile Fundamentals: Including Scrum and Kanban Training",
+  "Manage Agile Projects Using Scrum Training",
+  "Agile for Executive Training",
+  "Agile for Managers Training",
+  "Agile Product Owner Training",
+  "Applying Professional Scrum (APS) Certification Training",
+  "Agile Release Planning Training",
+  "Certified Scrum Professional - Product Owner (CSP-PO) Certification Training",
+  "Agile Project Management Training",
+  "Jira Software Training for Agile Projects",
+  "ICAgile Agile Leadership (ICP-LEA) Certification Course Training",
+  "ICAgile Product Management (ICP-PDM) Certification Training",
+  "ICAgile Agile Project and Delivery Management (ICP-APM) Training",
+  "Professional Scrum Product Backlog Management (PSBM) Skills Certification",
+  "ICAgile Agile Product Ownership (ICP-APO) Certification Training",
+  "Applying Professional Kanban (APK) Course",
+  "ICAgile Agile Team Facilitation Certification (ICP-ATF) Training",
+  "ICAgile Foundations of AI for FAI Certification Training",
+  "ICAgile Lean Portfolio Management (ICP-LPM) Certification Training",
+  "ICAgile AI for Customer Insights Micro-credential Training",
+  "ICAgile AI for Product Strategy Micro-credential Course",
+  "ICAgile People Development (ICP-PDV) Certification Training",
+  "ICAgile Systems Coaching (ICP-SYS) Certification Training",
+  "Leading SAFe 6.0 Certification Training",
+];
+
+const safeCourseTitles = [
+  "AI-Improved SAFe 6.0 Scrum Master (SSM) Certification Training",
+  "AI-Improved SAFe 6.0 Product Owner/Product Manager (POPM) Certification Training",
+  "SAFe 6.0 Practice Consultant (SPC) Certification Training",
+  "SAFe 6.0 Lean Portfolio Management (LPM) Certification Training",
+  "SAFe 6.0 Architect Certification Training",
+  "SAFe 6.0 for Teams Certification Training",
+  "Advanced SAFe Practice Consultant (ASPC) Certification Path",
+  "AI-Improved SAFe 6.0 Release Train Engineer (RTE) Certification Training",
+  "SAFe 6.0 DevOps Certification Training",
+  "Advanced Facilitation: Conflict and Collaboration Micro-credential Course",
+  "Achieving Responsible AI with SAFe Micro-credential Course",
+  "Agile HR Explorer (AHR) Training and Certification",
+  "Advanced Scrum Master Certification Path",
+  "SAFe for Hardware Certification Training",
+  "AI-Native Foundations Certification Training Course",
+  "AI-Native Change Agent Certification Training Course",
+];
+
+const projectCourseTitles = [
+  "Project Management Professional (PMP) Certification Training",
+  "Project Management Techniques Training",
+  "PRINCE2 Foundation and Practitioner Certification Training",
+  "PRINCE2 Foundation Certification Training",
+  "PRINCE2 Practitioner Certification Training",
+  "Certified Associate in Project Management (CAPM) Certification Training",
+  "PRINCE2 Agile Foundation Certification Training",
+  "Primavera P6 v20.12 Certification Training",
+  "PRINCE2 Agile Practitioner Certification Training",
+  "PRINCE2 Agile Foundation and Practitioner Certification Training",
+  "Program Management Professional (PgMP) Certification Training",
+  "Project Management Fundamentals Training",
+  "Portfolio Management Professional (PfMP) Certification Training",
+  "Disciplined Agile Foundations (DAF) Training",
+  "PMI-CPM Certification Training",
+];
+
+const businessCourseTitles = [
+  "Business Case Writing Training",
+  "Conflict Management Training",
+  "Certified Business Analysis Professional (CBAP) Certification Training",
+  "Change Management Training",
+  "Certification of Capability in Business Analysis (CCBA) Training",
+  "Entry Certificate in Business Analysis (ECBA) Certification Training",
+  "Design Thinking Training",
+  "Agile Analysis Certification (IIBA-AAC) Certification Training",
+];
+
+const generativeAiCourseTitles = [
+  "Generative AI for Business and IT Leaders & Managers Training",
+  "Generative AI for Business Analysis & Functional IT Consultants Training",
+  "Cloud Fundamentals for Business Managers & Product Managers Training",
+  "Generative AI Architect - Advanced Program Training",
+  "Multi-cloud FinOps: AWS, GCP, Azure",
+  "Introduction to Generative AI Training",
+  "Generative AI for Agile Leaders Training",
+  "Generative AI for Scrum Masters Training",
+  "Generative AI in HR Certification Course",
+  "Generative AI for Software Developers Course",
+  "Generative AI for Project Managers Training",
+  "Prompt Engineering Course",
+  "Generative AI for Product Owners/Product Managers Certification Training",
+  "Mastering Generative AI Tools Online",
+];
+
+const microcredentialsCourseTitles = [
+  "Agile Objectives and Key Results (OKRs) Microcredential Training",
+  "AI for Scrum Masters Micro credential Course",
+  "AI for Product Owners Microcredential Training",
+  "Scrum Essentials",
+  "Conflict Management Skills Course",
+  "ICAgile AI for Product Lifecycle Micro-credential Course Training",
+  "ICAgile AI for Product Planning Micro-credential Course Training",
+  "Scrum Better with Kanban (SBK) Micro-credential Training",
+  "ICAgile AI for Stakeholder Management Micro-credential Course",
+  "ICAgile AI for Product Discovery Micro-credential Course Training",
+  "ICAgile AI for Product Strategy Micro-credential Course",
+  "ICAgile AI for Customer Insights Micro-credential Training",
+  "Agile Coaching Skills Micro-credential Training",
+];
+
+const devopsCourseTitles = [
+  "DevOps Foundation Certification Training",
+  "Docker and Kubernetes Training",
+  "DevSecOps Foundation Certification Training",
+];
+
+const onDemandMicrocredentialsCourseTitles = [
+  "AI for Scrum Masters Microcredential Course",
+  "AI for Product Owners Microcredential Course",
+  "Agile Essentials Microcredential Course",
+  "Scrum Essentials Microcredential Course",
+  "Metrics that Matter: Improving Product Outcomes Microcredential Course",
+  "Introduction to Agile Coaching Microcredential Course",
+  "Get Started with DevOps Microcredential Course",
+  "Coaching for Transformation: Sustaining Change Microcredential Course",
+  "Coaching for Change: Making Agility Work Microcredential Course",
+  "Change Management Microcredential Course",
+  "Becoming an Agile Coach Microcredential Course",
+  "AI for Product Discovery and Strategy Microcredentials Course",
+  "Agile Stakeholder Engagement: Effective Communication Strategies Microcredential Course",
+  "Agile for Marketing Microcredentials Course",
+  "Agile for HR Microcredentials Course",
+  "Agile Coaching Skills Microcredential Course",
+];
+
+const serviceCourseTitles = [
+  "ITIL 4 Foundation Certification Training",
+];
+
+const qualityCourseTitles = [
+  "Six Sigma Fundamentals Training",
+  "Lean Six Sigma Yellow Belt Training",
+  "Lean Six Sigma Green Belt Training",
+  "Lean Six Sigma Black Belt Training",
+  "Root Cause Analysis (RCA) Training",
+];
+
+const cloudComputingCourseTitles = [
+  "AWS SysOps Administrator Certification Training",
+  "AWS DevOps Engineer Certification Training",
+  "AWS Cloud Practitioner Certification Training",
+  "AWS Certified Solutions Architect Professional Certification Training",
+  "Cloud Computing with AWS Training",
+];
+
+const dataScienceCourseTitles = [
+  "Data Science with Python Training",
+  "Python Django (PDP) Training",
+  "Introduction to Artificial Intelligence and Machine Learning (AI and ML)",
+  "Artificial Intelligence (AI) Training",
+  "Data Science Training",
+  "Certified Artificial Intelligence for Agile Leaders Training",
+];
+
+const technologyCourseTitles = [
+  "Angular JS Training",
+  "React Native Training",
+  "React JS Training",
+  "Introduction to Blockchain Training",
+];
+
+const othersCourseTitles = [
+  "Python Programming Training",
+  "PCI DSS Training",
+  "Microsoft AZ-400: Designing and Implementing Microsoft DevOps Solutions",
+  "Microsoft Power BI Training",
+  "Microsoft Azure Fundamentals AZ-900 Certification Training",
+  "AZ-104 Microsoft Azure Administrator Training",
+  "Microsoft Azure Developer Associate (AZ-204) Certification Course",
+  "Certified Information Systems Security Professional (CISSP) Training",
+  "Microsoft Certified Azure Solutions Architect Expert (AZ-305) Certification Training",
+];
+
 export const categoryData: Record<string, CategoryData> = {
   "agile-scrum": {
     id: "agile-scrum",
@@ -339,5 +578,23 @@ export const categoryData: Record<string, CategoryData> = {
         answer: "While not always mandatory for entry-level roles, basic coding knowledge is essential for advanced threat analysis."
       }
     ]
-  }
+  },
+  agile: buildCategory("agile", "AGILE", agileCourseTitles),
+  safe: buildCategory("safe", "SAFE", safeCourseTitles),
+  project: buildCategory("project", "PROJECT", projectCourseTitles),
+  business: buildCategory("business", "BUSINESS", businessCourseTitles),
+  "generative-ai": buildCategory("generative-ai", "Generative AI", generativeAiCourseTitles),
+  microcredentials: buildCategory("microcredentials", "Microcredentials", microcredentialsCourseTitles),
+  devops: buildCategory("devops", "DEVOPS", devopsCourseTitles),
+  "on-demand-microcredentials": buildCategory(
+    "on-demand-microcredentials",
+    "ON DEMAND MICROCREDENTIALS",
+    onDemandMicrocredentialsCourseTitles
+  ),
+  service: buildCategory("service", "SERVICE", serviceCourseTitles),
+  quality: buildCategory("quality", "QUALITY", qualityCourseTitles),
+  "cloud-computing": buildCategory("cloud-computing", "CLOUD COMPUTING", cloudComputingCourseTitles),
+  "data-science": buildCategory("data-science", "DATA SCIENCE", dataScienceCourseTitles),
+  technology: buildCategory("technology", "TECHNOLOGY", technologyCourseTitles),
+  others: buildCategory("others", "OTHERS", othersCourseTitles),
 };
