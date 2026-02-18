@@ -17,22 +17,20 @@ import { Button } from "@/components/ui/button";
 import { categoryData } from "@/data/categoryData";
 
 const categories = [
-  { id: "agile-scrum", name: "Agile & Scrum", slug: "agile-scrum", count: 12 },
-  { id: "project-management", name: "Project Management", slug: "project-management", count: 15 },
-  { id: "it-service-management", name: "IT Service Management", slug: "it-service-management", count: 8 },
-  { id: "quality-process", name: "Quality & Process", slug: "quality-process", count: 10 },
-  { id: "leadership-coaching", name: "Leadership & Coaching", slug: "leadership-coaching", count: 6 },
-  { id: "business-skills", name: "Business Skills", slug: "business-skills", count: 20 },
-  { id: "ai-technology", name: "AI & Technology", slug: "ai-technology", count: 14 },
-];
-
-const projectCourses = [
-  { name: "Project Management Professional (PMP®) Certification Training", tag: "Popular", duration: "4 Days | Live Classes" },
-  { name: "Project Management Techniques Training", tag: "Trending", duration: "1 Day | Live Classes" },
-  { name: "PRINCE2® Foundation and Practitioner Certification Training", tag: "Popular", duration: "4 Days | Live Classes" },
-  { name: "PRINCE2® Foundation Certification Training", tag: "Popular", duration: "2 Days | Live Classes" },
-  { name: "PRINCE2® Practitioner Certification Training", tag: "Popular", duration: "2 Days | Live Classes" },
-  { name: "Certified Associate in Project Management (CAPM®) Certification Training", tag: "Popular", duration: "3 Days | Live Classes" },
+  { id: "agile", name: "AGILE", slug: "agile-scrum", count: 0 },
+  { id: "safe", name: "SAFE", slug: "agile-scrum", count: 0 },
+  { id: "project", name: "PROJECT", slug: "project-management", count: 0 },
+  { id: "business", name: "BUSINESS", slug: "business-skills", count: 0 },
+  { id: "cloud-computing", name: "CLOUD COMPUTING", slug: "ai-technology", count: 0 },
+  { id: "data-science", name: "DATA SCIENCE", slug: "ai-technology", count: 0 },
+  { id: "devops", name: "DEVOPS", slug: "ai-technology", count: 0 },
+  { id: "generative-ai", name: "Generative AI", slug: "ai-technology", count: 0 },
+  { id: "microcredentials", name: "Microcredentials", slug: "ai-technology", count: 0 },
+  { id: "on-demand-microcredentials", name: "ON DEMAND MICROCREDENTIALS", slug: "ai-technology", count: 0 },
+  { id: "others", name: "OTHERS", slug: "ai-technology", count: 0 },
+  { id: "service", name: "SERVICE", slug: "it-service-management", count: 0 },
+  { id: "quality", name: "QUALITY", slug: "quality-process", count: 0 },
+  { id: "technology", name: "TECHNOLOGY", slug: "ai-technology", count: 0 },
 ];
 
 interface HeaderProps {
@@ -41,7 +39,7 @@ interface HeaderProps {
 
 const Header: React.FC<HeaderProps> = ({ hidden = false }) => {
   const [isMegaMenuOpen, setIsMegaMenuOpen] = useState(false);
-  const [activeCategory, setActiveCategory] = useState("agile-scrum");
+  const [activeCategory, setActiveCategory] = useState("agile");
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
