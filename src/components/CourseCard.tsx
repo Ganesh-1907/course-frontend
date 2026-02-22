@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Star, Calendar, Users, Clock, MonitorPlay } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -17,6 +18,7 @@ interface CourseCardProps {
     badge?: string;
     image: string;
     nextDate?: string;
+    path?: string;
   };
   index: number;
 }
@@ -106,9 +108,11 @@ const CourseCard = ({ course, index }: CourseCardProps) => {
               </span>
             </div>
           </div>
-          <Button variant="outline" size="sm" className="border-primary text-primary hover:bg-primary hover:text-white">
-            Explore
-          </Button>
+          <Link to={course.path || "/sub-category"}>
+            <Button variant="outline" size="sm" className="border-primary text-primary hover:bg-primary hover:text-white">
+              Explore
+            </Button>
+          </Link>
         </div>
       </div>
     </motion.div>
