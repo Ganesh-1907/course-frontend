@@ -9,13 +9,13 @@ export default {
       center: true,
       padding: {
         DEFAULT: "1rem",
-        md: "2rem",
-        lg: "4rem",
-        xl: "6rem",
-        "2xl": "8rem",
+        md: "1.5rem",
+        lg: "1.5rem",
+        xl: "2rem",
+        "2xl": "2rem",
       },
       screens: {
-        "2xl": "1400px",
+        "2xl": "1440px",
       },
     },
     extend: {
