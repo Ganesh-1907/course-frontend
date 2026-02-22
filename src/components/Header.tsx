@@ -119,7 +119,7 @@ const Header: React.FC<HeaderProps> = ({ hidden = false }) => {
             </div>
 
             {/* Search Bar */}
-            <div className="flex-1 max-w-lg hidden lg:block mx-12">
+            <div className="flex-1 max-w-xl hidden lg:block mx-8">
               <div className="relative group">
                 <SearchIcon className="absolute left-5 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground group-focus-within:text-blue-600 transition-colors" />
                 <input 

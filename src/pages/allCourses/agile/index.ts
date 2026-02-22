@@ -1,7 +1,7 @@
 // Barrel export for all Agile courses
 // This file consolidates all course exports in one place
 
-export { default as AgileCourse1 } from './AgileCourse1';
+export { default as AgileCourse1 } from './Certified-Scrum-Master-(CSM)-Certification-Training';
 export { default as AgileCourse2 } from './AgileCourse2';
 export { default as AgileCourse3 } from './AgileCourse3';
 export { default as AgileCourse4 } from './AgileCourse4';
