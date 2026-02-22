@@ -29,6 +29,24 @@ import {
 } from "lucide-react";
 
 const CertifiedScrumMasterCertificationTraining = () => {
+  // --- Page Content Constants ---
+  const heroData = {
+    courseName: "CSM Certification Training Course",
+    breadcrumbName: "Certified Scrum Master (CSM®) Certification Training",
+    rating: "5.0",
+    enrolledCount: "73k+",
+    subtitle: "Join our Certified Scrum Master training with real-time Scrum simulations!",
+    benefits: [
+      "30+ Guaranteed Live CSM Training Sessions Every Month!",
+      "Get Trained by Certified Scrum Trainers with 15+ Years of Experience!",
+      "Achieve Scrum Master Certification + 2-Year Scrum Alliance Membership!",
+      "CSM Certification Exam Fee Included With Our CSM Training Cost!",
+      "Practice Exams, Quizzes, Interview Toolkit Included in Our CSM Course!"
+    ],
+    mainImage: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=2070",
+    badgeImage: "/csm-badge.png"
+  };
+
   const highlights = [
     {
       icon: <Users className="w-6 h-6" />,
@@ -55,6 +73,37 @@ const CertifiedScrumMasterCertificationTraining = () => {
       text: "Complete guidance in the certification journey"
     }
   ];
+
+  const careerUpliftmentData = {
+    courseName: "CSM",
+    stats: {
+      averageIncome: "$110k-130k",
+      incomeLabel: "per annum",
+      employmentGrowth: "67%",
+      growthLabel: "(2022-2025)"
+    },
+    attendees: [
+      { group: ["Scrum Masters", "Delivery Managers", "Product Owners", "Agile Coaches"] },
+      { group: ["Team Leads", "Development Managers"] }
+    ],
+    companies: [
+      { name: "Amazon", url: "https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" },
+      { name: "Cognizant", url: "https://upload.wikimedia.org/wikipedia/commons/4/43/Cognizant_logo_2022.svg" },
+      { name: "IBM", url: "https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg" },
+      { name: "Accenture", url: "https://upload.wikimedia.org/wikipedia/commons/c/cd/Accenture.svg" },
+      { name: "Wipro", url: "https://upload.wikimedia.org/wikipedia/commons/a/a0/Wipro_Primary_Logo_Color_RGB.svg" },
+      { name: "Eurofins", url: "https://upload.wikimedia.org/wikipedia/en/b/b3/Eurofins_Scientific_logo.svg" },
+      { name: "JPMorgan", url: "https://upload.wikimedia.org/wikipedia/commons/a/af/J_P_Morgan_Chase_Logo_2008_1.svg" }
+    ],
+    outcomes: [
+      "CSM certification will help improve communication between the Scrum Team members, customers, stakeholders, executives, and Product Owners.",
+      "Learn to boost your risk capabilities when encountering challenges.",
+      "Increase engagement with people from different backgrounds and expand your network.",
+      "Upscale your efficiency to individuals or as a team member."
+    ],
+    outcomesTitle: "What are the Learning Outcomes of the CSM Certification Course?",
+    outcomesFooter: "After completing your Certified Scrum Master® Certification, a wide selection of career options will open up, and one can explore enhancements in one's career path. One can lead to higher positions in the job profile and the organization."
+  };
 
   const individualBenefits = [
     {
@@ -90,39 +139,23 @@ const CertifiedScrumMasterCertificationTraining = () => {
     }
   ];
 
-  const careerStats = {
-    averageIncome: "$110k-130k",
-    incomeLabel: "per annum",
-    employmentGrowth: "67%",
-    growthLabel: "(2022-2025)"
+  const attendeesList = [
+    "Scrum Masters",
+    "Team Leads",
+    "Development Managers",
+    "Delivery Managers",
+    "Product Owners",
+    "Agile Coaches"
+  ];
+
+  const prerequisitesData = {
+    courseName: "A-CSM",
+    items: [
+      "One must be a Certified ScrumMaster (CSM) certification with the Scrum Alliance.",
+      "Must have at least 12 months of prior experience specific to Scrum Master(within the past five years)."
+    ],
+    subtitle: "What are the Prerequisites Required for Advanced Scrum Master Training?"
   };
-
-  const attendees = [
-    { group: ["Scrum Masters", "Delivery Managers", "Product Owners", "Agile Coaches"] },
-    { group: ["Team Leads", "Development Managers"] }
-  ];
-
-  const companies = [
-    { name: "Amazon", url: "https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" },
-    { name: "Cognizant", url: "https://upload.wikimedia.org/wikipedia/commons/4/43/Cognizant_logo_2022.svg" },
-    { name: "IBM", url: "https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg" },
-    { name: "Accenture", url: "https://upload.wikimedia.org/wikipedia/commons/c/cd/Accenture.svg" },
-    { name: "Wipro", url: "https://upload.wikimedia.org/wikipedia/commons/a/a0/Wipro_Primary_Logo_Color_RGB.svg" },
-    { name: "Eurofins", url: "https://upload.wikimedia.org/wikipedia/en/b/b3/Eurofins_Scientific_logo.svg" },
-    { name: "JPMorgan", url: "https://upload.wikimedia.org/wikipedia/commons/a/af/J_P_Morgan_Chase_Logo_2008_1.svg" }
-  ];
-
-  const outcomes = [
-    "CSM certification will help improve communication between the Scrum Team members, customers, stakeholders, executives, and Product Owners.",
-    "Learn to boost your risk capabilities when encountering challenges.",
-    "Increase engagement with people from different backgrounds and expand your network.",
-    "Upscale your efficiency to individuals or as a team member."
-  ];
-
-  const prerequisites = [
-    "One must be a Certified ScrumMaster (CSM) certification with the Scrum Alliance.",
-    "Must have at least 12 months of prior experience specific to Scrum Master(within the past five years)."
-  ];
 
   const certificationSteps = [
     {
@@ -278,121 +311,123 @@ const CertifiedScrumMasterCertificationTraining = () => {
     }
   ];
 
+  const corporateOptUsData = {
+    courseName: "A-CSM",
+    description: "With learning targeted to your unique team environment, we at Simpliaxis helps to resolve your specific issues and meet your specific needs with tailored training methods. We offer corporate training globally to keep Organizations up to date by building the knowledge gap required and make them strive in the competitive world with the right skills according to the industry needs. Preferred by many MNC's, Startups, and Organizations among all sectors. Trusted by X clients and meet their training needs. Skilled training experts and professionals around the world with good command of the subjects. Delivering tailoring modules for your enterprises by highly qualified experts."
+  };
+
+  const overviewText = {
+    title: "Overview of CSM Certification Course",
+    sections: [
+      {
+        text: "Simpliaxis Certified ScrumMaster (CSM) certification training helps an individual master the Scrum values and practices. Our CSM course enhances your acquired Scrum knowledge and skills to the next level. You can learn how to motivate the team and improve productivity. Our trained professionals help you know how to deal with difficult situations and tactfully handle challenges."
+      },
+      {
+        text: "Learn to incorporate Scrum principles to facilitate better communication among team members and stakeholders through our CSM certification training. This will also help Scrum teams be more productive and deliver desired results."
+      }
+    ],
+    q1: {
+      title: "What is CSM Training?",
+      content: [
+        "ScrumMaster certification can range from basic to advanced. CSM is the basic level of ScrumMaster certification. The certification demonstrates your level of Scrum skills in facilitating team collaboration and coordination.",
+        "This CSM course enhances the capabilities of Scrum Masters, enabling them to deliver projects on time and expand their Scrum skills, which can lead to better opportunities in Agile projects."
+      ]
+    },
+    q2: {
+      title: "What's Included in Our CSM Training?",
+      content: [
+        "Simpliaxis offers structured CSM training to enhance proficiency in Scrum and managing Scrum teams, ensuring project success. Our CSM training provides opportunities to scale up your Scrum insights and master the process. The main highlights of our CSM certification training include:"
+      ]
+    }
+  };
+
+  // --- Tab Contents ---
+  const overviewTab = (
+    <div className="space-y-6">
+      <div className="bg-white border border-slate-200 rounded-none p-8 shadow-sm">
+        <h4 className="text-[14px] text-slate-500 font-bold mb-2 uppercase tracking-tight flex items-center gap-2">
+          Course Overview
+        </h4>
+        <h2 className="text-2xl md:text-3xl font-black text-[#001c3d] mb-6 flex items-center gap-2">
+          {overviewText.title} <span className="text-blue-400">✦</span>
+        </h2>
+        <div className="space-y-5 text-slate-700 font-medium leading-[1.7] text-[15px]">
+          {overviewText.sections.map((section, idx) => (
+            <p key={idx}>{section.text}</p>
+          ))}
+          
+          <h3 className="text-2xl font-black text-[#001c3d] pt-4">{overviewText.q1.title}</h3>
+          {overviewText.q1.content.map((p, idx) => (
+            <p key={idx}>{p}</p>
+          ))}
+
+          <h3 className="text-2xl font-black text-[#001c3d] pt-4">{overviewText.q2.title}</h3>
+          {overviewText.q2.content.map((p, idx) => (
+            <p key={idx}>{p}</p>
+          ))}
+        </div>
+      </div>
+
+      <CourseHighlights 
+        courseName="CSM" 
+        highlights={highlights} 
+      />
+      <CourseCareerUpliftment 
+        courseName={careerUpliftmentData.courseName}
+        stats={careerUpliftmentData.stats}
+        attendees={careerUpliftmentData.attendees}
+        companies={careerUpliftmentData.companies}
+        outcomes={careerUpliftmentData.outcomes}
+        outcomesTitle={careerUpliftmentData.outcomesTitle}
+        outcomesFooter={careerUpliftmentData.outcomesFooter}
+      />
+    </div>
+  );
+
+  const benefitsTab = (
+    <div className="space-y-6">
+      <CourseBenefits 
+        courseName="CSM"
+        individualBenefits={individualBenefits}
+        corporateBenefits={corporateBenefits}
+      />
+      <CourseCommonAttendees 
+        courseName="CSM"
+        attendees={attendeesList}
+      />
+    </div>
+  );
+
+  const prerequisitesTab = (
+    <div className="space-y-6">
+      <CoursePrerequisites 
+        courseName={prerequisitesData.courseName}
+        prerequisites={prerequisitesData.items}
+        subtitle={prerequisitesData.subtitle}
+      />
+      <CourseStepByStepProcess 
+        courseName="Advance Certified Scrum Master (A-CSM)"
+        steps={certificationSteps}
+      />
+      <CourseCertificate 
+        courseName="Advanced Scrum Master" 
+      />
+    </div>
+  );
+
   const tabs = [
-    {
-      id: "overview",
-      label: "Course overview",
-      content: (
-        <div className="space-y-6">
-          <div className="bg-white border border-slate-200 rounded-none p-8 shadow-sm">
-            <h4 className="text-[14px] text-slate-500 font-bold mb-2 uppercase tracking-tight flex items-center gap-2">
-              Course Overview
-            </h4>
-            <h2 className="text-2xl md:text-3xl font-black text-[#001c3d] mb-6 flex items-center gap-2">
-              Overview of CSM Certification Course <span className="text-blue-400">✦</span>
-            </h2>
-            <div className="space-y-5 text-slate-700 font-medium leading-[1.7] text-[15px]">
-              <p>
-                Simpliaxis Certified ScrumMaster (CSM) certification training helps an individual master the Scrum values and practices. Our CSM course enhances your acquired Scrum knowledge and skills to the next level. You can learn how to motivate the team and improve productivity. Our trained professionals help you know how to deal with difficult situations and tactfully handle challenges.
-              </p>
-              <p>
-                Learn to incorporate Scrum principles to facilitate better communication among team members and stakeholders through our CSM certification training. This will also help Scrum teams be more productive and deliver desired results.
-              </p>
-              
-              <h3 className="text-2xl font-black text-[#001c3d] pt-4">What is CSM Training?</h3>
-              <p>
-                ScrumMaster certification can range from basic to advanced. CSM is the basic level of ScrumMaster certification. The certification demonstrates your level of Scrum skills in facilitating team collaboration and coordination.
-              </p>
-              <p>
-                This CSM course enhances the capabilities of Scrum Masters, enabling them to deliver projects on time and expand their Scrum skills, which can lead to better opportunities in Agile projects.
-              </p>
-
-              <h3 className="text-2xl font-black text-[#001c3d] pt-4">What's Included in Our CSM Training?</h3>
-              <p>
-                Simpliaxis offers structured CSM training to enhance proficiency in Scrum and managing Scrum teams, ensuring project success. Our CSM training provides opportunities to scale up your Scrum insights and master the process. The main highlights of our CSM certification training include:
-              </p>
-            </div>
-          </div>
-
-          <CourseHighlights 
-            courseName="CSM" 
-            highlights={highlights} 
-          />
-          <CourseCareerUpliftment 
-            courseName="CSM"
-            stats={careerStats}
-            attendees={attendees}
-            companies={companies}
-            outcomes={outcomes}
-            outcomesTitle="What are the Learning Outcomes of the CSM Certification Course?"
-            outcomesFooter="After completing your Certified Scrum Master® Certification, a wide selection of career options will open up, and one can explore enhancements in one's career path. One can lead to higher positions in the job profile and the organization."
-          />
-        </div>
-      )
-    },
-    { 
-      id: "benefits", 
-      label: "Benefits", 
-      content: (
-        <div className="space-y-6">
-          <CourseBenefits 
-            courseName="CSM"
-            individualBenefits={individualBenefits}
-            corporateBenefits={corporateBenefits}
-          />
-          <CourseCommonAttendees 
-            courseName="CSM"
-            attendees={[
-              "Scrum Masters",
-              "Team Leads",
-              "Development Managers",
-              "Delivery Managers",
-              "Product Owners",
-              "Agile Coaches"
-            ]}
-          />
-        </div>
-      )
-    },
-    { 
-      id: "prerequisites", 
-      label: "Prerequisites", 
-      content: (
-        <div className="space-y-6">
-          <CoursePrerequisites 
-            courseName="A-CSM"
-            prerequisites={prerequisites}
-            subtitle="What are the Prerequisites Required for Advanced Scrum Master Training?"
-          />
-          <CourseStepByStepProcess 
-            courseName="Advance Certified Scrum Master (A-CSM)"
-            steps={certificationSteps}
-          />
-          <CourseCertificate 
-            courseName="Advanced Scrum Master" 
-          />
-        </div>
-      )
-    },
+    { id: "overview", label: "Course overview", content: overviewTab },
+    { id: "benefits", label: "Benefits", content: benefitsTab },
+    { id: "prerequisites", label: "Prerequisites", content: prerequisitesTab },
     { 
       id: "curriculum", 
       label: "Curriculum", 
-      content: (
-        <CourseCurriculum 
-          courseName="A-CSM" 
-          modules={curriculumModules} 
-        />
-      )
+      content: <CourseCurriculum courseName="A-CSM" modules={curriculumModules} /> 
     },
     { 
       id: "faqs", 
       label: "FAQs", 
-      content: (
-        <CourseFAQs 
-          courseName="A-CSM"
-          categories={faqCategories}
-        />
-      )
+      content: <CourseFAQs courseName="A-CSM" categories={faqCategories} /> 
     },
   ];
 
@@ -402,22 +437,7 @@ const CertifiedScrumMasterCertificationTraining = () => {
       <Header />
 
       <main className="pt-16">
-        <CourseHero 
-          courseName="CSM Certification Training Course"
-          breadcrumbName="Certified Scrum Master (CSM®) Certification Training"
-          rating="5.0"
-          enrolledCount="73k+"
-          subtitle="Join our Certified Scrum Master training with real-time Scrum simulations!"
-          benefits={[
-            "30+ Guaranteed Live CSM Training Sessions Every Month!",
-            "Get Trained by Certified Scrum Trainers with 15+ Years of Experience!",
-            "Achieve Scrum Master Certification + 2-Year Scrum Alliance Membership!",
-            "CSM Certification Exam Fee Included With Our CSM Training Cost!",
-            "Practice Exams, Quizzes, Interview Toolkit Included in Our CSM Course!"
-          ]}
-          mainImage="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=2070"
-          badgeImage="/csm-badge.png"
-        />
+        <CourseHero {...heroData} />
         
         <CourseFeatures />
 
@@ -432,12 +452,8 @@ const CertifiedScrumMasterCertificationTraining = () => {
                 objectives={learningObjectives}
               />
 
-              <CourseCorporateOptUs 
-                courseName="A-CSM"
-                description="With learning targeted to your unique team environment, we at Simpliaxis helps to resolve your specific issues and meet your specific needs with tailored training methods. We offer corporate training globally to keep Organizations up to date by building the knowledge gap required and make them strive in the competitive world with the right skills according to the industry needs. Preferred by many MNC's, Startups, and Organizations among all sectors. Trusted by X clients and meet their training needs. Skilled training experts and professionals around the world with good command of the subjects. Delivering tailoring modules for your enterprises by highly qualified experts."
-              />
+              <CourseCorporateOptUs {...corporateOptUsData} />
 
-              
               <CourseClients />
               <CourseTrainers />
               <CourseWhySimpliaxis />
