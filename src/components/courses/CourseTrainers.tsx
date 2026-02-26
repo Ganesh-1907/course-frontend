@@ -21,34 +21,19 @@ interface Trainer {
   image: string;
 }
 
-const trainers: Trainer[] = [
-  {
-    name: "Ram Srinivasan",
-    role: "Certified Scrum Trainer (CST)",
-    rating: "4.8",
-    experience: "15+ Years",
-    description: "Ram Srinivasan has a unique distinction of being the first and only person in North America to lead workshops that bridge the gap between business and technology.",
-    image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=400"
-  },
-  {
-    name: "Axel Wilhelm Berle",
-    role: "Senior Agile Coach",
-    rating: "4.9",
-    experience: "20+ Years",
-    description: "Axel Wilhelm Berle has been an international IT consultant and software developer in a wide range of industries, helping teams achieve peak performance.",
-    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=400"
-  },
-  {
-    name: "Raquel Silva",
-    role: "Agile Coach & Mentor",
-    rating: "4.8",
-    experience: "10+ Years",
-    description: "Raquel Silva is an Agile Coach who cares passionately about helping deliver value to clients through sustainable and effective Scrum practices.",
-    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=400"
-  }
-];
+interface CourseTrainersProps {
+  title?: string;
+  subtitle?: string;
+  description?: string;
+  trainers: Trainer[];
+}
 
-const CourseTrainers = () => {
+const CourseTrainers: React.FC<CourseTrainersProps> = ({
+  title = "World-Class Faculty",
+  subtitle = "Learn from Elite Global Instructors",
+  description = "Meet the industry experts who will guide you through your Scrum transformation journey with real-world case studies and practical insights.",
+  trainers
+}) => {
   return (
     <div className="py-24 bg-white relative overflow-hidden">
       {/* Background Glow */}
@@ -61,13 +46,13 @@ const CourseTrainers = () => {
               <div className="p-2 bg-yellow-400/10 rounded-lg">
                 <Lightbulb className="w-5 h-5 text-yellow-600 fill-yellow-600/20" />
               </div>
-              <span className="text-[12px] text-yellow-600 font-black uppercase tracking-[0.2em]">World-Class Faculty</span>
+              <span className="text-[12px] text-yellow-600 font-black uppercase tracking-[0.2em]">{title}</span>
             </div>
             <h2 className="text-3xl md:text-5xl font-black text-[#001c3d] tracking-tight leading-[1.1]">
-              Learn from <span className="text-blue-600">Elite</span> Global Instructors
+              {subtitle.split("Elite")[0]}<span className="text-blue-600">Elite</span>{subtitle.split("Elite")[1]}
             </h2>
             <p className="text-slate-500 font-medium text-[15px] leading-relaxed">
-              Meet the industry experts who will guide you through your Scrum transformation journey with real-world case studies and practical insights.
+              {description}
             </p>
           </div>
           

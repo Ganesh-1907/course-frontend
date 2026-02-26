@@ -5,16 +5,20 @@ import { motion } from "framer-motion";
 
 interface CourseCorporateOptUsProps {
   courseName: string;
+  label?: string;
   title?: string;
   subtitle?: string;
   description: string;
+  buttonText?: string;
 }
 
 const CourseCorporateOptUs: React.FC<CourseCorporateOptUsProps> = ({
   courseName,
+  label = "Corporate Solutions",
   title,
   subtitle,
-  description
+  description,
+  buttonText = "Corporate Group Inquiry",
 }) => {
   return (
     <motion.div 
@@ -35,7 +39,7 @@ const CourseCorporateOptUs: React.FC<CourseCorporateOptUsProps> = ({
             <div className="p-2 bg-blue-600 rounded-lg">
               <Users className="w-5 h-5 text-white" />
             </div>
-            <span className="text-[12px] text-blue-600 font-black uppercase tracking-[0.2em]">Corporate Solutions</span>
+            <span className="text-[12px] text-blue-600 font-black uppercase tracking-[0.2em]">{label}</span>
           </div>
           <h2 className="text-3xl md:text-5xl font-black text-[#001c3d] tracking-tight leading-[1.1] max-w-4xl">
             {title || `Why Corporates Choose Us for ${courseName} Training`}
@@ -48,9 +52,9 @@ const CourseCorporateOptUs: React.FC<CourseCorporateOptUsProps> = ({
 
         <div className="pt-4">
           <Button 
-            className="bg-blue-600 hover:bg-blue-700 text-white font-black px-10 py-8 text-[16px] rounded-2xl shadow-xl shadow-blue-500/20 transition-all hover:-translate-y-1 active:scale-95 gap-3"
+            className="bg-blue-600 hover:bg-blue-700 text-white font-black px-10 py-8 text-[16px] rounded-2xl shadow-xl shadow-blue-500/20 transition-all hover:-translate-y-1 active:scale-[0.98] gap-3"
           >
-            Corporate Group Inquiry
+            {buttonText}
             <ArrowRight className="w-5 h-5" />
           </Button>
         </div>

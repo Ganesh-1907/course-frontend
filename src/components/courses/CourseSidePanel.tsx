@@ -15,7 +15,26 @@ import {
 } from "lucide-react";
 import { motion } from "framer-motion";
 
-const CourseSidePanel = () => {
+interface Schedule {
+  courseCode: string;
+  courseName: string;
+  dateRange: string;
+  timeRange: string;
+  trainerName: string;
+  trainerImage: string;
+  originalPrice: string;
+  discountedPrice: string;
+  discountPercentage: string;
+}
+
+interface CourseSidePanelProps {
+  schedules: Schedule[];
+}
+
+const CourseSidePanel: React.FC<CourseSidePanelProps> = ({ schedules }) => {
+  // Use the first schedule as the featured one for now
+  const featuredSchedule = schedules[0];
+
   return (
     <div className="space-y-3">
       {/* Upcoming Schedule Card */}
@@ -25,11 +44,13 @@ const CourseSidePanel = () => {
         className="bg-white border border-slate-100 rounded-xl shadow-md shadow-slate-200/30 relative overflow-hidden"
       >
         {/* Ribbon */}
-        <div className="absolute top-0 right-0 w-20 h-20 overflow-hidden pointer-events-none z-10">
-          <div className="absolute top-3 -right-8 w-28 h-7 bg-red-500 text-white text-[9px] font-black flex items-center justify-center rotate-45 transform shadow-md uppercase tracking-tight">
-            30% OFF
+        {featuredSchedule?.discountPercentage && (
+          <div className="absolute top-0 right-0 w-20 h-20 overflow-hidden pointer-events-none z-10">
+            <div className="absolute top-3 -right-8 w-28 h-7 bg-red-500 text-white text-[9px] font-black flex items-center justify-center rotate-45 transform shadow-md uppercase tracking-tight">
+              {featuredSchedule.discountPercentage}% OFF
+            </div>
           </div>
-        </div>
+        )}
 
         <div className="p-3 space-y-3">
           <div className="flex items-center justify-between border-b border-slate-100 pb-2.5">
@@ -41,48 +62,50 @@ const CourseSidePanel = () => {
             </h3>
           </div>
 
-          <div className="space-y-2.5">
-            <div className="flex items-start gap-2.5">
-              <div className="w-9 h-9 flex-shrink-0 bg-slate-50 border border-slate-100 p-1.5 flex items-center justify-center rounded-md italic font-black text-[9px] text-blue-600">
-                SCM
+          {featuredSchedule && (
+            <div className="space-y-2.5">
+              <div className="flex items-start gap-2.5">
+                <div className="w-9 h-9 flex-shrink-0 bg-slate-50 border border-slate-100 p-1.5 flex items-center justify-center rounded-md italic font-black text-[9px] text-blue-600">
+                  {featuredSchedule.courseCode}
+                </div>
+                <p className="text-[12px] font-black text-slate-800 leading-tight">
+                  {featuredSchedule.courseName}
+                </p>
               </div>
-              <p className="text-[12px] font-black text-slate-800 leading-tight">
-                Advanced Certified Scrum Master (A-CSM®) Training
-              </p>
-            </div>
 
-            <div className="grid grid-cols-1 gap-1.5 bg-slate-50/50 p-2.5 rounded-lg border border-slate-100">
-              <div className="flex items-center gap-2 text-[11px] font-bold text-slate-700">
-                <Calendar className="w-3 h-3 text-orange-500" />
-                <span>Feb 28 - Mar 01, 2026</span>
+              <div className="grid grid-cols-1 gap-1.5 bg-slate-50/50 p-2.5 rounded-lg border border-slate-100">
+                <div className="flex items-center gap-2 text-[11px] font-bold text-slate-700">
+                  <Calendar className="w-3 h-3 text-orange-500" />
+                  <span>{featuredSchedule.dateRange}</span>
+                </div>
+                <div className="flex items-center gap-2 text-[11px] font-bold text-slate-700">
+                  <Clock className="w-3 h-3 text-orange-500" />
+                  <span>{featuredSchedule.timeRange}</span>
+                </div>
               </div>
-              <div className="flex items-center gap-2 text-[11px] font-bold text-slate-700">
-                <Clock className="w-3 h-3 text-orange-500" />
-                <span>08:30 AM - 04:30 PM IST</span>
+
+              <div className="flex items-center gap-2.5">
+                <div className="w-9 h-9 rounded-md overflow-hidden bg-slate-200 ring-1 ring-white shadow-sm">
+                  <img src={featuredSchedule.trainerImage} alt={featuredSchedule.trainerName} className="w-full h-full object-cover" />
+                </div>
+                <div className="flex-1">
+                  <p className="text-[9px] font-black text-slate-400 uppercase tracking-widest">Master Trainer</p>
+                  <p className="text-[12px] font-black text-blue-600">{featuredSchedule.trainerName}</p>
+                </div>
+              </div>
+
+              <div className="flex items-end justify-between py-0.5">
+                 <div className="flex flex-col">
+                   <span className="text-[9px] text-slate-400 line-through font-bold">{featuredSchedule.originalPrice}</span>
+                   <span className="text-xl leading-none font-black text-[#001c3d]">{featuredSchedule.discountedPrice}</span>
+                 </div>
+                 <div className="bg-red-50 text-red-600 text-[9px] font-black px-2 py-0.5 rounded-md flex items-center gap-1 border border-red-100">
+                   <TrendingDown className="w-3 h-3" />
+                   {featuredSchedule.discountPercentage}% OFF
+                 </div>
               </div>
             </div>
-          </div>
-
-          <div className="flex items-center gap-2.5">
-            <div className="w-9 h-9 rounded-md overflow-hidden bg-slate-200 ring-1 ring-white shadow-sm">
-              <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=100" alt="Trainer" className="w-full h-full object-cover" />
-            </div>
-            <div className="flex-1">
-              <p className="text-[9px] font-black text-slate-400 uppercase tracking-widest">Master Trainer</p>
-              <p className="text-[12px] font-black text-blue-600">Naveen Nanjundappa</p>
-            </div>
-          </div>
-
-          <div className="flex items-end justify-between py-0.5">
-             <div className="flex flex-col">
-               <span className="text-[9px] text-slate-400 line-through font-bold">INR 49,080</span>
-               <span className="text-xl leading-none font-black text-[#001c3d]">INR 34,356</span>
-             </div>
-             <div className="bg-red-50 text-red-600 text-[9px] font-black px-2 py-0.5 rounded-md flex items-center gap-1 border border-red-100">
-               <TrendingDown className="w-3 h-3" />
-               30% OFF
-             </div>
-          </div>
+          )}
 
           <div className="space-y-1.5">
             <Button className="w-full bg-[#ff4d2a] hover:bg-[#e64526] text-white font-black text-[13px] rounded-md h-9 shadow-md shadow-orange-500/20 transition-all active:scale-[0.98]">
