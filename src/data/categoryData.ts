@@ -12,6 +12,7 @@ export interface Course {
   image: string;
   badge?: string;
   nextDate?: string;
+  path?: string;
 }
 
 export interface FAQItem {
@@ -54,6 +55,7 @@ const buildCourses = (category: string, titles: string[]): Course[] =>
     originalPrice: 499,
     discount: 40,
     image: DEFAULT_COURSE_IMAGE,
+    path: "/sub-category",
   }));
 
 const buildCategory = (id: string, name: string, courseTitles: string[]): CategoryData => ({
@@ -312,6 +314,7 @@ export const categoryData: Record<string, CategoryData> = {
         badge: "Popular",
         image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300&fit=crop",
         nextDate: "Feb 22, 2026",
+        path: "/course/agile-course-1",
       },
       {
         id: 2,
@@ -598,3 +601,8 @@ export const categoryData: Record<string, CategoryData> = {
   technology: buildCategory("technology", "TECHNOLOGY", technologyCourseTitles),
   others: buildCategory("others", "OTHERS", othersCourseTitles),
 };
+
+// Update CSM path in the generated agile category
+if (categoryData.agile && categoryData.agile.courses.length > 0) {
+  categoryData.agile.courses[0].path = "/course/agile-course-1";
+}
