@@ -10,12 +10,24 @@ interface BenefitItem {
 
 interface CourseBenefitsProps {
   courseName: string;
+  title?: string;
+  subtitle?: string;
+  description?: string;
+  individualTitle?: string;
+  corporateTitle?: string;
+  buttonText?: string;
   individualBenefits: BenefitItem[];
   corporateBenefits: BenefitItem[];
 }
 
 const CourseBenefits: React.FC<CourseBenefitsProps> = ({
   courseName,
+  title = "Impactful Gains",
+  subtitle = "Benefits of Certification Training",
+  description = "Elevate your professional trajectory with a certification that is recognized and respected by top organizations worldwide.",
+  individualTitle = "Individual Growth",
+  corporateTitle = "Corporate Impact",
+  buttonText = "View Schedules & Pricing",
   individualBenefits,
   corporateBenefits
 }) => {
@@ -24,13 +36,13 @@ const CourseBenefits: React.FC<CourseBenefitsProps> = ({
       {/* Header */}
       <div className="space-y-4 max-w-3xl">
         <div className="flex items-center gap-2">
-          <span className="text-blue-600 text-[12px] font-black uppercase tracking-[0.2em]">Impactful Gains</span>
+          <span className="text-blue-600 text-[12px] font-black uppercase tracking-[0.2em]">{title}</span>
         </div>
         <h2 className="text-3xl md:text-5xl font-black text-[#001c3d] tracking-tight leading-[1.1]">
-          Benefits of <span className="text-blue-600">Certification</span> Training
+          {subtitle.split("Certification")[0]}<span className="text-blue-600">Certification</span>{subtitle.split("Certification")[1]}
         </h2>
         <p className="text-slate-500 font-medium text-[15px] leading-relaxed">
-          Elevate your professional trajectory with a certification that is recognized and respected by top organizations worldwide.
+          {description}
         </p>
       </div>
 
@@ -51,7 +63,7 @@ const CourseBenefits: React.FC<CourseBenefitsProps> = ({
               <User className="w-7 h-7 text-white" />
             </div>
             <h3 className="text-[24px] font-black text-white mb-10 tracking-tight">
-              Individual <span className="text-blue-200">Growth</span>
+              {individualTitle.split("Growth")[0]}<span className="text-blue-200">Growth</span>{individualTitle.split("Growth")[1]}
             </h3>
 
             <div className="space-y-8 flex-grow">
@@ -89,7 +101,7 @@ const CourseBenefits: React.FC<CourseBenefitsProps> = ({
               <Building2 className="w-7 h-7 text-blue-600" />
             </div>
             <h3 className="text-[24px] font-black text-[#001c3d] mb-10 tracking-tight">
-              Corporate <span className="text-blue-600">Impact</span>
+              {corporateTitle.split("Impact")[0]}<span className="text-blue-600">Impact</span>{corporateTitle.split("Impact")[1]}
             </h3>
 
             <div className="space-y-8 flex-grow">
@@ -118,7 +130,7 @@ const CourseBenefits: React.FC<CourseBenefitsProps> = ({
       {/* Footer Action */}
       <div className="flex justify-center md:justify-start pt-6">
         <Button className="bg-blue-600 hover:bg-blue-700 text-white font-black px-12 py-8 text-[16px] rounded-2xl shadow-xl shadow-blue-500/30 transition-all hover:-translate-y-1 active:scale-[0.98]">
-          View Schedules & Pricing
+          {buttonText}
         </Button>
       </div>
     </div>

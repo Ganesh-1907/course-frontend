@@ -23,6 +23,11 @@ interface Company {
 interface CourseCareerUpliftmentProps {
   courseName: string;
   title?: string;
+  subtitle?: string;
+  averageIncomeLabel?: string;
+  employmentGrowthTitle?: string;
+  whoCanAttendTitle?: string;
+  companiesTitle?: string;
   stats: Stats;
   attendees: AttendeeGroup[];
   companies: Company[];
@@ -35,6 +40,11 @@ interface CourseCareerUpliftmentProps {
 const CourseCareerUpliftment: React.FC<CourseCareerUpliftmentProps> = ({
   courseName,
   title,
+  subtitle,
+  averageIncomeLabel = "Average Income",
+  employmentGrowthTitle = "Employment growth",
+  whoCanAttendTitle = "Who can attend",
+  companiesTitle = "Companies",
   stats,
   attendees,
   companies,
@@ -52,7 +62,7 @@ const CourseCareerUpliftment: React.FC<CourseCareerUpliftmentProps> = ({
             {title || "Career upliftment"}
           </h4>
           <h2 className="text-2xl md:text-3xl font-extrabold text-[#001c3d] flex items-center gap-2">
-            Boost your career with the {courseName} Certification Training. <Sparkles className="w-7 h-7 text-blue-400 fill-blue-400" />
+            {subtitle || `Boost your career with the ${courseName} Certification Training.`} <Sparkles className="w-7 h-7 text-blue-400 fill-blue-400" />
           </h2>
         </div>
 
@@ -60,7 +70,7 @@ const CourseCareerUpliftment: React.FC<CourseCareerUpliftmentProps> = ({
           {/* Stats Grid */}
           <div className="flex flex-wrap gap-8 md:gap-16">
             <div className="space-y-4">
-              <p className="text-sm font-bold text-slate-500 text-center">Average Income</p>
+              <p className="text-sm font-bold text-slate-500 text-center">{averageIncomeLabel}</p>
               <div className="text-center">
                 <span className="text-2xl font-black text-[#001c3d]">{stats.averageIncome}</span>
                 <p className="text-xs font-bold text-slate-500">{stats.incomeLabel}</p>
@@ -75,7 +85,7 @@ const CourseCareerUpliftment: React.FC<CourseCareerUpliftmentProps> = ({
             <div className="w-px h-24 bg-slate-200 hidden md:block" />
 
             <div className="space-y-4">
-              <p className="text-sm font-bold text-slate-500 text-center">Employment growth</p>
+              <p className="text-sm font-bold text-slate-500 text-center">{employmentGrowthTitle}</p>
               <div className="text-center">
                 <span className="text-2xl font-black text-[#001c3d]">{stats.employmentGrowth}</span>
                 <p className="text-xs font-bold text-slate-500">{stats.growthLabel}</p>
@@ -91,7 +101,7 @@ const CourseCareerUpliftment: React.FC<CourseCareerUpliftmentProps> = ({
             <div className="w-px h-24 bg-slate-200 hidden md:block" />
 
             <div className="space-y-4">
-              <p className="text-sm font-bold text-[#1a1a1a] mb-2">Who can attend</p>
+              <p className="text-sm font-bold text-[#1a1a1a] mb-2">{whoCanAttendTitle}</p>
               <div className="flex gap-8">
                 {attendees.map((col, i) => (
                   <ul key={i} className="space-y-1">
@@ -123,7 +133,7 @@ const CourseCareerUpliftment: React.FC<CourseCareerUpliftmentProps> = ({
 
       {/* Companies Grid */}
       <div className="space-y-6">
-        <p className="text-sm font-black text-slate-900 uppercase tracking-tight">Companies</p>
+        <p className="text-sm font-black text-slate-900 uppercase tracking-tight">{companiesTitle}</p>
         <div className="flex flex-wrap items-center justify-between gap-8 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all">
           {companies.map((company, i) => (
             <img key={i} src={company.url} alt={company.name} className="h-6 md:h-8 object-contain" />

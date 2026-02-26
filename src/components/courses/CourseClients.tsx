@@ -2,20 +2,24 @@ import React from "react";
 import { Sparkles, Building2 } from "lucide-react";
 import { motion } from "framer-motion";
 
-const clients = [
-  { name: "Wells Fargo", logo: "https://upload.wikimedia.org/wikipedia/commons/b/b3/Wells_Fargo_Bank.svg" },
-  { name: "Infosys", logo: "https://upload.wikimedia.org/wikipedia/commons/9/95/Infosys_logo.svg" },
-  { name: "Bosch", logo: "https://upload.wikimedia.org/wikipedia/commons/1/16/Bosch-logo.svg" },
-  { name: "Capgemini", logo: "https://upload.wikimedia.org/wikipedia/commons/9/91/Capgemini_logo.svg" },
-  { name: "KPMG", logo: "https://upload.wikimedia.org/wikipedia/commons/d/dd/KPMG_logo.svg" },
-  { name: "Accenture", logo: "https://upload.wikimedia.org/wikipedia/commons/c/cd/Accenture.svg" },
-  { name: "Cognizant", logo: "https://upload.wikimedia.org/wikipedia/commons/4/43/Cognizant_logo_2022.svg" },
-  { name: "Deloitte", logo: "https://upload.wikimedia.org/wikipedia/commons/5/56/Deloitte.svg" },
-  { name: "Hexaware", logo: "https://upload.wikimedia.org/wikipedia/commons/e/e0/Hexaware_new_logo.svg" },
-  { name: "Thomson Reuters", logo: "https://upload.wikimedia.org/wikipedia/en/b/b3/Thomson_Reuters_logo.svg" },
-];
+interface Client {
+  name: string;
+  logo: string;
+}
 
-const CourseClients = () => {
+interface CourseClientsProps {
+  title?: string;
+  subtitle?: string;
+  description?: string;
+  clients: Client[];
+}
+
+const CourseClients: React.FC<CourseClientsProps> = ({
+  title = "Trusted Globally",
+  subtitle = "Partnering with Industry Leaders",
+  description = "We've helped thousands of professionals from the world's most prestigious organizations achieve their Scrum certification goals.",
+  clients
+}) => {
   return (
     <div className="py-24 bg-white relative overflow-hidden">
       <div className="container mx-auto">
@@ -25,13 +29,13 @@ const CourseClients = () => {
               <div className="p-2 bg-blue-50 rounded-lg">
                 <Building2 className="w-5 h-5 text-blue-600" />
               </div>
-              <span className="text-[12px] text-blue-600 font-black uppercase tracking-[0.2em]">Trusted Globally</span>
+              <span className="text-[12px] text-blue-600 font-black uppercase tracking-[0.2em]">{title}</span>
             </div>
             <h2 className="text-3xl md:text-5xl font-black text-[#001c3d] tracking-tight leading-[1.1]">
-              Partnering with <span className="text-blue-600">Industry Leaders</span>
+              {subtitle.split("Industry Leaders")[0]}<span className="text-blue-600">Industry Leaders</span>
             </h2>
             <p className="text-slate-500 font-medium text-[15px] leading-relaxed">
-              We've helped thousands of professionals from the world's most prestigious organizations achieve their Scrum certification goals.
+              {description}
             </p>
           </div>
         </div>

@@ -16,11 +16,19 @@ interface CurriculumModule {
 
 interface CourseCurriculumProps {
   courseName: string;
+  title?: string;
+  subtitle?: string;
+  description?: string;
+  downloadText?: string;
   modules: CurriculumModule[];
 }
 
 const CourseCurriculum: React.FC<CourseCurriculumProps> = ({
   courseName,
+  title = "Comprehensive Learning",
+  subtitle = "Training Curriculum & Syllabus",
+  description = "A meticulously structured roadmap designed to take you from foundational concepts to advanced practical mastery.",
+  downloadText = "Download Syllabus",
   modules
 }) => {
   return (
@@ -32,13 +40,13 @@ const CourseCurriculum: React.FC<CourseCurriculumProps> = ({
             <div className="p-2 bg-blue-50 rounded-lg">
               <BookCheck className="w-5 h-5 text-blue-600" />
             </div>
-            <span className="text-[12px] text-blue-600 font-black uppercase tracking-[0.2em]">Comprehensive Learning</span>
+            <span className="text-[12px] text-blue-600 font-black uppercase tracking-[0.2em]">{title}</span>
           </div>
           <h2 className="text-3xl md:text-4xl font-black text-[#001c3d] tracking-tight leading-[1.1]">
-            Training <span className="text-blue-600">Curriculum</span> & Syllabus
+            {subtitle.split("Curriculum")[0]}<span className="text-blue-600">Curriculum</span>{subtitle.split("Curriculum")[1]}
           </h2>
           <p className="text-slate-500 font-medium text-[15px] max-w-xl">
-            A meticulously structured roadmap designed to take you from foundational concepts to advanced practical mastery.
+            {description}
           </p>
         </div>
         <Button 
@@ -46,7 +54,7 @@ const CourseCurriculum: React.FC<CourseCurriculumProps> = ({
           className="h-14 border-blue-600 text-blue-600 hover:bg-blue-50 font-black rounded-xl px-8 gap-3 shadow-sm hover:shadow-md transition-all active:scale-95"
         >
           <FileDown className="w-5 h-5" />
-          Download Syllabus
+          {downloadText}
         </Button>
       </div>
 
