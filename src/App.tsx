@@ -18,13 +18,14 @@ import NotFound from "./pages/NotFound";
 
 // ✨ BARREL EXPORT IMPORT - Import all agile courses from one place!
 // Instead of 5 separate import lines, we import all at once from the index.ts
-import { 
-  AgileCourse1, 
-  AgileCourse2, 
-  AgileCourse3, 
-  AgileCourse4, 
-  AgileCourse5 
-} from "./pages/allCourses/agile";
+import {
+  CertifiedScrumMasterCertificationTraining,
+  CertifiedScrumProductOwnerCertificationTraining,
+  AdvancedCertifiedScrumMasterCertificationTraining,
+  AdvancedCertifiedScrumProductOwnerCertificationTraining,
+  CertifiedScrumDeveloperCertificationTraining,
+  AgileCourse5,
+} from './pages/allCourses/agile';
 
 const queryClient = new QueryClient();
 
@@ -37,23 +38,56 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/category/agile-scrum" element={<AgileScrum />} />
-          <Route path="/category/project-management" element={<ProjectManagement />} />
-          <Route path="/category/it-service-management" element={<ITServiceManagement />} />
-          <Route path="/category/quality-process" element={<QualityProcess />} />
-          <Route path="/category/leadership-coaching" element={<LeadershipCoaching />} />
-          <Route path="/category/business-skills" element={<BusinessSkills />} />
+          <Route
+            path="/category/project-management"
+            element={<ProjectManagement />}
+          />
+          <Route
+            path="/category/it-service-management"
+            element={<ITServiceManagement />}
+          />
+          <Route
+            path="/category/quality-process"
+            element={<QualityProcess />}
+          />
+          <Route
+            path="/category/leadership-coaching"
+            element={<LeadershipCoaching />}
+          />
+          <Route
+            path="/category/business-skills"
+            element={<BusinessSkills />}
+          />
           <Route path="/category/ai-technology" element={<AiTechnology />} />
-          <Route path="/category/cyber-security" element={<CyberSecurity />} /> 
+          <Route path="/category/cyber-security" element={<CyberSecurity />} />
           <Route path="/sub-category" element={<SubCategoryPage />} />
           <Route path="/demo-one" element={<DemoOne />} />
-          
+
           {/* ✨ AGILE COURSES - Using Barrel Export Pattern */}
-          <Route path="/course/agile-course-1" element={<AgileCourse1 />} />
-          <Route path="/course/agile-course-2" element={<AgileCourse2 />} />
-          <Route path="/course/agile-course-3" element={<AgileCourse3 />} />
-          <Route path="/course/agile-course-4" element={<AgileCourse4 />} />
-          <Route path="/course/agile-course-5" element={<AgileCourse5 />} />
-          
+          <Route
+            path="/course/csm-certificaton-training"
+            element={<CertifiedScrumMasterCertificationTraining />}
+          />
+          <Route
+            path="/course/cspo-certificaton-training"
+            element={<CertifiedScrumProductOwnerCertificationTraining />}
+          />
+          <Route
+            path="/course/a-csm-certificaton-training"
+            element={<AdvancedCertifiedScrumMasterCertificationTraining />}
+          />
+          <Route
+            path="/course/a-cspo-certificaton-training"
+            element={
+              <AdvancedCertifiedScrumProductOwnerCertificationTraining />
+            }
+          />
+
+          <Route
+            path="/course/csd-certification-training"
+            element={<CertifiedScrumDeveloperCertificationTraining />}
+          />
+
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
