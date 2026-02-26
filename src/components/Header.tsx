@@ -204,7 +204,7 @@ const Header: React.FC<HeaderProps> = ({ hidden = false }) => {
                   <div className="grid gap-6">
                     {(categoryData[activeCategory]?.courses || []).map((course, i) => (
                       <Link 
-                        to="/sub-category" 
+                        to={course.path || "/sub-category"} 
                         key={i} 
                         className="flex items-start gap-4 group cursor-pointer"
                         onClick={() => setIsMegaMenuOpen(false)}

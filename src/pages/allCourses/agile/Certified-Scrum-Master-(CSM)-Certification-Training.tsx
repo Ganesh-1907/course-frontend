@@ -40,6 +40,24 @@ import {
 } from "lucide-react";
 
 const CertifiedScrumMasterCertificationTraining = () => {
+  // --- Page Content Constants ---
+  const heroData = {
+    courseName: "CSM Certification Training Course",
+    breadcrumbName: "Certified Scrum Master (CSM®) Certification Training",
+    rating: "5.0",
+    enrolledCount: "73k+",
+    subtitle: "Join our Certified Scrum Master training with real-time Scrum simulations!",
+    benefits: [
+      "30+ Guaranteed Live CSM Training Sessions Every Month!",
+      "Get Trained by Certified Scrum Trainers with 15+ Years of Experience!",
+      "Achieve Scrum Master Certification + 2-Year Scrum Alliance Membership!",
+      "CSM Certification Exam Fee Included With Our CSM Training Cost!",
+      "Practice Exams, Quizzes, Interview Toolkit Included in Our CSM Course!"
+    ],
+    mainImage: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=2070",
+    badgeImage: "/csm-badge.png"
+  };
+
   const highlights = [
     {
       text: 'CSM Training given by Certified Scrum Trainers(CSTs) with 15+ years of experience',
@@ -81,6 +99,37 @@ const CertifiedScrumMasterCertificationTraining = () => {
       text: '20 SEUs and 20 PDUs for CSM Certification Renewal',
     },
   ];
+
+  const careerUpliftmentData = {
+    courseName: "CSM",
+    stats: {
+      averageIncome: "$110k-130k",
+      incomeLabel: "per annum",
+      employmentGrowth: "67%",
+      growthLabel: "(2022-2025)"
+    },
+    attendees: [
+      { group: ["Scrum Masters", "Delivery Managers", "Product Owners", "Agile Coaches"] },
+      { group: ["Team Leads", "Development Managers"] }
+    ],
+    companies: [
+      { name: "Amazon", url: "https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" },
+      { name: "Cognizant", url: "https://upload.wikimedia.org/wikipedia/commons/4/43/Cognizant_logo_2022.svg" },
+      { name: "IBM", url: "https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg" },
+      { name: "Accenture", url: "https://upload.wikimedia.org/wikipedia/commons/c/cd/Accenture.svg" },
+      { name: "Wipro", url: "https://upload.wikimedia.org/wikipedia/commons/a/a0/Wipro_Primary_Logo_Color_RGB.svg" },
+      { name: "Eurofins", url: "https://upload.wikimedia.org/wikipedia/en/b/b3/Eurofins_Scientific_logo.svg" },
+      { name: "JPMorgan", url: "https://upload.wikimedia.org/wikipedia/commons/a/af/J_P_Morgan_Chase_Logo_2008_1.svg" }
+    ],
+    outcomes: [
+      "CSM certification will help improve communication between the Scrum Team members, customers, stakeholders, executives, and Product Owners.",
+      "Learn to boost your risk capabilities when encountering challenges.",
+      "Increase engagement with people from different backgrounds and expand your network.",
+      "Upscale your efficiency to individuals or as a team member."
+    ],
+    outcomesTitle: "What are the Learning Outcomes of the CSM Certification Course?",
+    outcomesFooter: "After completing your Certified Scrum Master® Certification, a wide selection of career options will open up, and one can explore enhancements in one's career path. One can lead to higher positions in the job profile and the organization."
+  };
 
   const individualBenefits = [
     {
