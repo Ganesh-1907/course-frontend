@@ -4,11 +4,44 @@ import { motion } from "framer-motion";
 
 interface CourseCertificateProps {
   courseName: string;
+  label?: string;
+  titlePrefix?: string;
+  titleHighlight?: string;
+  titleSuffix?: string;
+  description?: string;
+  issuerName?: string;
+  certificateType?: string;
+  certifyText?: string;
+  requirementText?: string;
+  signer1Role?: string;
+  signer2Role?: string;
+  certificateBenefits?: string[];
+  mockupName?: string;
 }
 
 const CourseCertificate: React.FC<CourseCertificateProps> = ({
   courseName,
+  label = "Official Accreditation",
+  titlePrefix = "Earn Your",
+  titleHighlight = "Global",
+  titleSuffix = "Recognition",
+  description,
+  issuerName = "Scrum Alliance",
+  certificateType = "Certificate of Mastery",
+  certifyText = "This is to certify that",
+  requirementText = "Has successfully fulfilled all requirements to be recognized as an",
+  signer1Role = "Certified Trainer",
+  signer2Role = "Executive Director",
+  certificateBenefits = [
+    "Digital Badge for LinkedIn & PDF Copy",
+    "Access to Premium Alumni Network",
+    "Validity for 2 Years with SEUs/PDUs",
+    "Lifetime Access to Course Materials"
+  ],
+  mockupName = "ALEX BRYANT"
 }) => {
+  const defaultDescription = `Upon successful completion of the training, you will receive your ${courseName} certification, globally recognized and issued directly by the governing body.`;
+  
   return (
     <div className="bg-gradient-to-br from-slate-50 to-blue-50/30 border border-slate-100 rounded-[2.5rem] p-8 md:p-12 shadow-sm mt-12 relative overflow-hidden">
       {/* Decorative background elements */}
@@ -21,23 +54,18 @@ const CourseCertificate: React.FC<CourseCertificateProps> = ({
               <div className="p-2 bg-blue-600 rounded-lg shadow-lg shadow-blue-600/20">
                 <Award className="w-5 h-5 text-white" />
               </div>
-              <span className="text-[12px] text-blue-600 font-black uppercase tracking-[0.2em]">Official Accreditation</span>
+              <span className="text-[12px] text-blue-600 font-black uppercase tracking-[0.2em]">{label}</span>
             </div>
             <h2 className="text-3xl md:text-5xl font-black text-[#001c3d] tracking-tight leading-[1.1]">
-              Earn Your <span className="text-blue-600">Global</span> Recognition
+              {titlePrefix} <span className="text-blue-600">{titleHighlight}</span> {titleSuffix}
             </h2>
             <p className="text-slate-500 font-medium text-[15px] leading-relaxed">
-              Upon successful completion of the training, you will receive your {courseName} certification, globally recognized and issued directly by the governing body.
+              {description || defaultDescription}
             </p>
           </div>
 
           <div className="space-y-4">
-            {[
-              "Digital Badge for LinkedIn & PDF Copy",
-              "Access to Premium Alumni Network",
-              "Validity for 2 Years with SEUs/PDUs",
-              "Lifetime Access to Course Materials"
-            ].map((item, idx) => (
+            {certificateBenefits.map((item, idx) => (
               <motion.div 
                 key={idx}
                 initial={{ opacity: 0, x: -10 }}
@@ -75,19 +103,19 @@ const CourseCertificate: React.FC<CourseCertificateProps> = ({
               <div className="relative z-10 w-full flex flex-col items-center gap-4">
                 <div className="flex flex-col items-center gap-1">
                   <div className="w-16 h-0.5 bg-blue-600 mb-2" />
-                  <span className="text-[10px] font-black text-blue-600 uppercase tracking-[0.3em]">Scrum Alliance</span>
+                  <span className="text-[10px] font-black text-blue-600 uppercase tracking-[0.3em]">{issuerName}</span>
                 </div>
-                <h5 className="text-[9px] font-black text-slate-400 uppercase tracking-widest">Certificate of Mastery</h5>
+                <h5 className="text-[9px] font-black text-slate-400 uppercase tracking-widest">{certificateType}</h5>
               </div>
 
               <div className="space-y-4 relative z-10">
                 <div className="space-y-1">
-                   <p className="text-[10px] italic text-slate-400">This is to certify that</p>
-                   <h3 className="text-3xl font-black text-[#001c3d] tracking-tight">ALEX BRYANT</h3>
+                   <p className="text-[10px] italic text-slate-400">{certifyText}</p>
+                   <h3 className="text-3xl font-black text-[#001c3d] tracking-tight uppercase">{mockupName}</h3>
                 </div>
                 <div className="h-px w-16 bg-blue-100 mx-auto" />
                 <p className="text-[11px] font-bold text-slate-500 max-w-[280px] leading-relaxed mx-auto italic">
-                  Has successfully fulfilled all requirements to be recognized as an
+                  {requirementText}
                 </p>
                 <h4 className="text-xl font-black text-blue-600 tracking-tight uppercase">{courseName}</h4>
               </div>
@@ -95,7 +123,7 @@ const CourseCertificate: React.FC<CourseCertificateProps> = ({
               <div className="w-full flex justify-between items-end px-10 relative z-10 mb-2">
                 <div className="text-left space-y-2">
                   <div className="h-0.5 w-24 bg-slate-100" />
-                  <p className="text-[8px] font-black text-slate-400 uppercase tracking-tighter">Certified Trainer</p>
+                  <p className="text-[8px] font-black text-slate-400 uppercase tracking-tighter">{signer1Role}</p>
                 </div>
                 
                 <div className="relative">
@@ -108,7 +136,7 @@ const CourseCertificate: React.FC<CourseCertificateProps> = ({
 
                 <div className="text-right space-y-2">
                   <div className="h-0.5 w-24 bg-slate-100" />
-                  <p className="text-[8px] font-black text-slate-400 uppercase tracking-tighter">Executive Director</p>
+                  <p className="text-[8px] font-black text-slate-400 uppercase tracking-tighter">{signer2Role}</p>
                 </div>
               </div>
             </div>

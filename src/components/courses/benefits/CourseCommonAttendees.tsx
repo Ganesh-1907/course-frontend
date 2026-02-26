@@ -3,12 +3,16 @@ import { CheckCircle2, Sparkles } from "lucide-react";
 
 interface CourseCommonAttendeesProps {
   courseName: string;
+  title?: string;
+  subtitle?: string;
   attendees: string[];
   professionalImage?: string;
 }
 
 const CourseCommonAttendees: React.FC<CourseCommonAttendeesProps> = ({
   courseName,
+  title = "Common attendees",
+  subtitle = `Who usually attend ${courseName} Training`,
   attendees,
   professionalImage = "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=600"
 }) => {
@@ -18,10 +22,10 @@ const CourseCommonAttendees: React.FC<CourseCommonAttendeesProps> = ({
       <div className="relative z-10 space-y-8 flex-1">
         <div>
           <h4 className="text-[13px] text-slate-500 font-bold mb-2 uppercase tracking-wide">
-            Common attendees
+            {title}
           </h4>
           <h2 className="text-2xl md:text-3xl font-extrabold text-[#001c3d] flex items-center gap-2">
-            Who usually attend {courseName} Training <Sparkles className="w-7 h-7 text-blue-400 fill-blue-400" />
+            {subtitle} <Sparkles className="w-7 h-7 text-blue-400 fill-blue-400" />
           </h2>
         </div>
 

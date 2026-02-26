@@ -9,11 +9,13 @@ interface Step {
 
 interface CourseStepByStepProcessProps {
   courseName: string;
+  title?: string;
   steps: Step[];
 }
 
 const CourseStepByStepProcess: React.FC<CourseStepByStepProcessProps> = ({
   courseName,
+  title = `The step by step process to get ${courseName} certification as follow`,
   steps
 }) => {
   return (
@@ -27,7 +29,7 @@ const CourseStepByStepProcess: React.FC<CourseStepByStepProcessProps> = ({
 
       <div className="relative z-10 space-y-10">
         <h2 className="text-xl md:text-2xl font-black text-[#001c3d] flex items-center gap-2 max-w-2xl leading-tight">
-          The step by step process to get {courseName} certification as follow <Sparkles className="w-6 h-6 text-blue-400 fill-blue-400 flex-shrink-0" />
+          {title} <Sparkles className="w-6 h-6 text-blue-400 fill-blue-400 flex-shrink-0" />
         </h2>
 
         {/* Visual Process Diagram (Simplified representation of the curved line with circles) */}

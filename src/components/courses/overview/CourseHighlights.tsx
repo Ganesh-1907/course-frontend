@@ -11,12 +11,18 @@ interface HighlightItem {
 interface CourseHighlightsProps {
   courseName: string;
   title?: string;
+  subtitle?: string;
+  viewSchedulesText?: string;
+  contactAdvisorText?: string;
   highlights: HighlightItem[];
 }
 
 const CourseHighlights: React.FC<CourseHighlightsProps> = ({ 
   courseName, 
   title,
+  subtitle,
+  viewSchedulesText = "View Schedules",
+  contactAdvisorText = "Contact Advisor",
   highlights 
 }) => {
   return (
@@ -34,7 +40,12 @@ const CourseHighlights: React.FC<CourseHighlightsProps> = ({
         </div>
         
         <h2 className="text-2xl md:text-4xl font-black text-[#001c3d] mb-12 tracking-tight max-w-2xl leading-[1.1]">
-          Key Highlights of the <span className="text-blue-600">{courseName}</span> Training Course <Sparkles className="inline-block w-8 h-8 text-yellow-400 fill-yellow-400 mb-2 ml-1" />
+          {subtitle || (
+            <>
+              Key Highlights of the <span className="text-blue-600">{courseName}</span> Training Course
+            </>
+          )} 
+          <Sparkles className="inline-block w-8 h-8 text-yellow-400 fill-yellow-400 mb-2 ml-1" />
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
@@ -59,10 +70,10 @@ const CourseHighlights: React.FC<CourseHighlightsProps> = ({
 
         <div className="flex flex-wrap items-center gap-5 pt-4">
           <Button className="bg-blue-600 hover:bg-blue-700 text-white font-black px-10 py-7 text-[15px] rounded-xl shadow-xl shadow-blue-600/20 transition-all hover:-translate-y-1">
-            View Schedules
+            {viewSchedulesText}
           </Button>
           <Button variant="ghost" className="text-[#001c3d] hover:bg-white/50 font-black px-10 py-7 text-[15px] rounded-xl border-2 border-slate-200 hover:border-blue-600 transition-all">
-            Contact Advisor
+            {contactAdvisorText}
           </Button>
         </div>
       </div>

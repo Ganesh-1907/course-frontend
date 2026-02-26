@@ -22,11 +22,23 @@ interface FAQCategory {
 
 interface CourseFAQsProps {
   courseName: string;
+  title?: string;
+  subtitle?: string;
+  description?: string;
+  footerTitle?: string;
+  footerDescription?: string;
+  footerButtonText?: string;
   categories: FAQCategory[];
 }
 
 const CourseFAQs: React.FC<CourseFAQsProps> = ({
   courseName,
+  title = "Learning Resource",
+  subtitle = "Frequently Asked Questions",
+  description = `Everything you need to know about the ${courseName} certification and training process.`,
+  footerTitle = "Still have questions?",
+  footerDescription = "Our team of experts is ready to help you plan your career path.",
+  footerButtonText = "Speak to an Expert",
   categories
 }) => {
   const [activeCategory, setActiveCategory] = useState(categories[0].id);
@@ -41,13 +53,13 @@ const CourseFAQs: React.FC<CourseFAQsProps> = ({
           <div className="p-2 bg-blue-50 rounded-lg">
             <HelpCircle className="w-5 h-5 text-blue-600" />
           </div>
-          <span className="text-[12px] text-blue-600 font-black uppercase tracking-[0.2em]">Learning Resource</span>
+          <span className="text-[12px] text-blue-600 font-black uppercase tracking-[0.2em]">{title}</span>
         </div>
         <h2 className="text-3xl md:text-4xl font-black text-[#001c3d] tracking-tight">
-          Frequently Asked <span className="text-blue-600">Questions</span>
+          {subtitle.split("Questions")[0]}<span className="text-blue-600">Questions</span>{subtitle.split("Questions")[1]}
         </h2>
         <p className="text-slate-500 font-medium text-[15px] max-w-2xl">
-          Everything you need to know about the {courseName} certification and training process.
+          {description}
         </p>
       </div>
 
@@ -117,11 +129,11 @@ const CourseFAQs: React.FC<CourseFAQsProps> = ({
         <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl" />
         <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-8">
           <div className="text-center md:text-left space-y-2">
-            <h3 className="text-2xl font-black text-white">Still have questions?</h3>
-            <p className="text-blue-100 font-medium text-[15px]">Our team of experts is ready to help you plan your career path.</p>
+            <h3 className="text-2xl font-black text-white">{footerTitle}</h3>
+            <p className="text-blue-100 font-medium text-[15px]">{footerDescription}</p>
           </div>
           <button className="bg-white text-blue-600 font-black px-8 py-4 rounded-xl shadow-lg hover:shadow-xl hover:scale-105 transition-all active:scale-95 whitespace-nowrap">
-            Speak to an Expert
+            {footerButtonText}
           </button>
         </div>
       </div>

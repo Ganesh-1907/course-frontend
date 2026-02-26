@@ -9,58 +9,38 @@ import {
 } from "lucide-react";
 import { motion } from "framer-motion";
 
-const features = [
-  {
-    icon: Users,
-    title: "Guaranteed to",
-    subtitle: "Run Workshops",
-    color: "bg-blue-50 text-blue-600"
-  },
-  {
-    icon: BookOpen,
-    title: "Expert-Led Study",
-    subtitle: "Sessions",
-    color: "bg-orange-50 text-orange-600"
-  },
-  {
-    icon: Network,
-    title: "Networking",
-    subtitle: "Opportunities",
-    color: "bg-green-50 text-green-600"
-  },
-  {
-    icon: CreditCard,
-    title: "Flexible Monthly",
-    subtitle: "Payment Plans",
-    color: "bg-purple-50 text-purple-600"
-  },
-  {
-    icon: FileText,
-    title: "Real-World Case",
-    subtitle: "Studies",
-    color: "bg-red-50 text-red-600"
-  },
-  {
-    icon: Briefcase,
-    title: "Hands-On Project",
-    subtitle: "Experience",
-    color: "bg-cyan-50 text-cyan-600"
-  }
-];
+interface Feature {
+  icon: React.ElementType;
+  title: string;
+  subtitle: string;
+  color: string;
+}
 
-const CourseFeatures = () => {
+interface CourseFeaturesProps {
+  title?: string;
+  subtitle?: string;
+  description?: string;
+  features: Feature[];
+}
+
+const CourseFeatures: React.FC<CourseFeaturesProps> = ({
+  title = "Our Exclusive Prime",
+  subtitle = "Our Key to Exam and Career Success",
+  description = "Unlocking professional potential through curated learning experiences.",
+  features
+}) => {
   return (
     <section className="bg-slate-50/50 py-16 border-y border-slate-100">
       <div className="container mx-auto">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
           <div className="space-y-2">
-            <span className="text-blue-600 text-xs font-black uppercase tracking-[0.2em]">Our Exclusive Prime</span>
+            <span className="text-blue-600 text-xs font-black uppercase tracking-[0.2em]">{title}</span>
             <h2 className="text-3xl font-black text-[#001c3d] tracking-tight">
-              Our Key to Exam and Career Success
+              {subtitle}
             </h2>
           </div>
           <p className="text-slate-500 font-medium text-sm max-w-xs leading-relaxed">
-            Unlocking professional potential through curated learning experiences.
+            {description}
           </p>
         </div>
         
