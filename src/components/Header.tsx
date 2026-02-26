@@ -83,22 +83,16 @@ const Header: React.FC<HeaderProps> = ({ hidden = false }) => {
         scrolled ? "bg-white/95 backdrop-blur-md shadow-lg" : "bg-white"
       )}>
         <div className="container">
-          <div className="h-16 flex items-center justify-between gap-6">
+          <div className="h-20 flex items-center justify-between gap-6">
             
             {/* Logo */}
             <div className="flex items-center gap-6">
-              <Link to="/" className="flex items-center gap-0 group">
-                <div className="relative flex items-center justify-center w-12 h-12 transition-all mr-3">
-                  <img 
-                    src="/logo.png" 
-                    alt="Viovn Logo" 
-                    className="w-full h-full object-contain"
-                  />
-                </div>
-                <div className="flex flex-col">
-                  <span className="text-2xl font-black text-[#001c3d] tracking-tighter leading-none">Viovn</span>
-                  <span className="text-[10px] font-bold text-blue-500/80 uppercase tracking-widest leading-none mt-0.5">Technologies</span>
-                </div>
+              <Link to="/" className="flex items-center group">
+                <img 
+                  src="/image.png" 
+                  alt="Viovn Logo" 
+                  className="h-20 w-auto object-contain"
+                />
               </Link>
 
               {/* All Courses Toggle */}
@@ -236,7 +230,9 @@ const Header: React.FC<HeaderProps> = ({ hidden = false }) => {
       </header>
       
       <div className="md:hidden bg-white border-b border-border py-4 px-4 flex items-center justify-between">
-        <div className="logo-text text-2xl">viovn</div>
+        <Link to="/" className="flex items-center">
+          <img src="/image.png" alt="Viovn Logo" className="h-14 w-auto object-contain" />
+        </Link>
         <div className="flex items-center gap-4">
           <ShoppingCart className="w-6 h-6" />
           <Menu className="w-6 h-6" />

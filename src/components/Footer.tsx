@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Phone, Linkedin, Facebook, Instagram, Twitter, Youtube } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const countries = [
   { name: "USA", phone: "+1-214-286-6498", flag: "🇺🇸" },
@@ -91,11 +92,9 @@ const Footer = () => {
           {/* Copyright */}
           <div className="pt-6 border-t border-muted/20 flex flex-wrap items-center justify-between gap-4">
             <div className="flex items-center gap-3">
-              <img src="/logo.png" alt="Viovn Logo" className="w-10 h-10 object-contain invert grayscale brightness-200" />
-              <div className="flex flex-col">
-                <span className="text-xl font-black text-white tracking-tighter leading-none">Viovn</span>
-                <span className="text-[8px] font-bold text-slate-400 uppercase tracking-widest leading-none mt-0.5">Technologies</span>
-              </div>
+              <Link to="/" className="bg-white p-1.5 rounded-lg hover:opacity-90 transition-opacity">
+                <img src="/image.png" alt="Viovn Logo" className="h-12 w-auto object-contain" />
+              </Link>
             </div>
             <p className="text-sm text-muted-foreground">
               © 2018-2026, viovn Solutions Private Limited. All Rights Reserved
