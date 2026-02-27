@@ -1,0 +1,318 @@
+{
+  "highlights": [
+    {
+      "text": "Expert-led instruction, mentorship, and advisory services from world-renowned educators."
+    },
+    {
+      "text": "Intensive two-day immersive learning and interactive workshop experience."
+    },
+    {
+      "text": "Stay updated with current industry trends through our recurring monthly webinars and digital publications."
+    },
+    {
+      "text": "Gain access to specialized tutorials and practice exams curated by leading industry professionals."
+    },
+    {
+      "text": "Join an expansive network of Scrum practitioners to broaden your hands-on expertise."
+    },
+    {
+      "text": "Learn directly from practitioners who are currently deploying the Scrum@Scale framework in live environments."
+    },
+    {
+      "text": "Deepen your grasp of Scrum fundamentals through participative classroom exercises and real-world simulations."
+    }
+  ],
+  "individualBenefits": [],
+  "corporateBenefits": [],
+  "careerStats": {},
+  "attendees": [],
+  "companies": [],
+  "outcomes": [],
+  "prerequisites": [],
+  "certificationSteps": [],
+  "curriculumModules": [
+    {
+      "title": "Preface to the Scrum@Scale Guide",
+      "topics": []
+    },
+    {
+      "title": "Purpose of the Scrum@Scale Guide",
+      "topics": []
+    },
+    {
+      "title": "The Components of Scrum@Scale",
+      "topics": [
+        "Values-Driven Culture",
+        "Getting Started: Installing an Agile Operating System",
+        "Scaling The Teams",
+        "The Team Process",
+        "The Scrum of Scrums (SoS)",
+        "Scaling in Larger Organizations",
+        "Scaling the Events and Roles",
+        "Event: The Scaled Daily Scrum (SDS)",
+        "Event: The Scaled Retrospective"
+      ]
+    },
+    {
+      "title": "The Scrum Master Cycle: Coordinating the “How”",
+      "topics": [
+        "Role: The Scrum of Scrums Master (SoSM)",
+        "The Hub of the SM Cycle: The Executive Action Team (EAT)",
+        "EAT Backlog and Responsibilities",
+        "Continuous Improvement and Impediment Removal",
+        "Cross-Team Coordination",
+        "Delivery"
+      ]
+    },
+    {
+      "title": "The Product Owner Cycle: Coordinating the “What”",
+      "topics": [
+        "Scaling the Product Owner – The Product Owner Cycle",
+        "Role: The Chief Product Owner (CPO)",
+        "Scaling the Product Owner Team",
+        "The Hub of the PO Cycle: The Executive MetaScrum (EMS)",
+        "Coordinating the “What” – The Product Owner Cycle",
+        "Strategic Vision",
+        "Backlog Prioritization",
+        "Backlog Decomposition and Refinement",
+        "Release Planning"
+      ]
+    },
+    {
+      "title": "Connecting the Product Owner and Scrum Master Cycles",
+      "topics": [
+        "Product Feedback and Release Feedback",
+        "Metrics and Transparency",
+        "Some Notes on Organizational Design"
+      ]
+    }
+  ],
+  "learningObjectives": [],
+  "faqCategories": [
+    {
+      "id": "category_1",
+      "label": "FAQ Category 1",
+      "items": [
+        {
+          "question": "1. What does Scrum@Scale certification entail?",
+          "answer": "The Scrum@Scale certification equips you with the necessary expertise to scale Scrum and Lean product development across multiple cross-functional teams aiming for a shared objective. It provides a framework for Scrum teams to solve intricate challenges while delivering maximum product value."
+        },
+        {
+          "question": "2. Are there any prerequisites for joining the Scrum@Scale course?",
+          "answer": "While there are no mandatory prerequisites, having a CSM/CSPO credential or practical experience with Scrum is highly recommended. We also advise reviewing the official Scrum@Scale guide before the first day of class."
+        },
+        {
+          "question": "3. What are the advantages of becoming Scrum@Scale certified?",
+          "answer": "Earning this certification offers numerous perks for both individuals and companies: it boosts productivity, reduces costs, enhances work quality, and fosters a collaborative atmosphere. Practitioners see significant career growth, can manage enterprise-level Scrum metrics, and help remove barriers to scaling, leading to improved project outcomes and client satisfaction."
+        },
+        {
+          "question": "4. What is the process for getting Scrum@Scale certified?",
+          "answer": "To get certified, you must first finish the Scrum@Scale training through an Authorized Training Organization (ATO). Afterwards, you'll receive a registration link to set up your profiles with Scrum Inc. You then need to pass the online exam with a score of at least 75% (correctly answering 23 out of 30 questions). The exam is open-book and untimed."
+        },
+        {
+          "question": "5. How long does the Scrum@Scale credential remain valid?",
+          "answer": "The certification is valid for a period of two years, after which it must be renewed."
+        },
+        {
+          "question": "6. How soon after the training should I take the certification exam?",
+          "answer": "Once you have successfully completed your training, you are free to take the certification exam at a time that is most convenient for you."
+        },
+        {
+          "question": "7. What can I expect from the Scrum@Scale exam format?",
+          "answer": "The exam is an open-book assessment with no time restrictions. You must achieve a pass mark of 75% or higher, which means getting at least 23 out of the 30 questions right."
+        }
+      ]
+    },
+    {
+      "id": "category_2",
+      "label": "FAQ Category 2",
+      "items": [
+        {
+          "question": "1. What happens to my token or partial payment if I don’t enroll immediately?",
+          "answer": "Token or partial payments will become non-refundable after 15 days from the date of payment.Any token or partial amount paid can be applied towards enrollment for any available sessions on our website within 6 months of the payment date."
+        },
+        {
+          "question": "2. Is there a preferred currency for payment, especially for international students?",
+          "answer": "While we accept payments in various currencies, we recommend using the currency from where you want to attend the course."
+        },
+        {
+          "question": "3. Can payments be made online through your website, or do I need to visit a physical location?",
+          "answer": "Payments can be made conveniently through our secure online payment portal on our website. We do not require visiting a physical location for payment."
+        },
+        {
+          "question": "4. Do you offer any discounts or promotions for early payment?",
+          "answer": "Yes, we offer discounts and promotions for early payments or certain corporate Training. Keep an eye on our website or contact us to get exciting offers."
+        },
+        {
+          "question": "5. Can I pay for the course in installments, or is full payment required upfront?",
+          "answer": "You have the flexibility to pay for the course either in full upfront or in installments, depending on your preference. To know more details about it contact us."
+        },
+        {
+          "question": "6. Will I get a refund if I cancel my enrollment?",
+          "answer": "No, refund is not possible. You can reschedule your course. To know more about refunds, visit our Refund Policy."
+        },
+        {
+          "question": "7. Where will I get my payment receipt?",
+          "answer": "Upon successful completion of payment, you will receive a confirmation email of your payment along with payment invoices."
+        },
+        {
+          "question": "8. Is there any transaction or processing fee?",
+          "answer": "No, there is no transaction processing fee."
+        },
+        {
+          "question": "9. What cards do you accept?",
+          "answer": "We accept payments from VISA, Master, Maestro, AMEX, and Discover."
+        },
+        {
+          "question": "10. What payment options are available?",
+          "answer": "All types of payment methods are available. You can pay Online through Credit Cards, Debit Cards and Net Banking, Direct Bank Transfer/Wire Transfer/Wallet to our account and many more.Other payment options available are stripe, Splitit, PayPal for US & CA regions."
+        }
+      ]
+    },
+    {
+      "id": "category_3",
+      "label": "FAQ Category 3",
+      "items": [
+        {
+          "question": "1. What if I miss a class? Are there any money back options?",
+          "answer": "No, you won't get your money back. But, as per your convenience, we can reschedule your training without any extra charges."
+        },
+        {
+          "question": "2. If I want to know more about Training, whom should I connect with?",
+          "answer": "If you want to know more about the course you can connect us in mail hello@simpliaxis.com or you can call us."
+        },
+        {
+          "question": "3. Is there any option to complete the Training in the native language if a participant chooses to?",
+          "answer": "English is the preferred language for training delivery. For corporate Training, any language other than English will have to be requested as a custom service. However, this will be subject to additional costs and the availability of a native language trainer. Please note that only official languages will be considered for this request."
+        },
+        {
+          "question": "4. Can I receive personalized Training at my convenience?",
+          "answer": "Yes, we’ll be posting multiple schedules every week for all the courses. Based on your convenience, you can select the training schedule. Also, we’ve E-Learning programs for popular courses, you can enroll and watch the training modules whenever you want."
+        },
+        {
+          "question": "5. Where do I find the upcoming schedules of my course?",
+          "answer": "Select the course of your interest from the website and view all the upcoming workshop schedules. You can select your course from the website https://www.simpliaxis.com/"
+        },
+        {
+          "question": "6. After enrollment, can I change the date of my training class?",
+          "answer": "Yes, you can change the date, but you have to inform it 3-4 days before the Scheduled date."
+        },
+        {
+          "question": "7. Do I get any certificate upon completion of the course?",
+          "answer": "Yes, you will receive a certificate after successful completion of the training course."
+        },
+        {
+          "question": "8. How do I enroll in the training course?",
+          "answer": "Choose the course of your interest, schedule it at your convenience from our upcoming schedule list, and register for the training by submitting your details. Proceed to make a payment and you will receive a confirmation email of your course enrolment. Or you can connect our career advisors to consult & choose your course."
+        },
+        {
+          "question": "9. What are the different courses offered by Simpliaxis?",
+          "answer": "At Simpliaxis we provide training for courses of all the in-demand technologies. One can choose a course from Project Management, Agile, IT, DevOps, Business, IT Service Management, Quality Management, etc based on their choice of interest. To know more, please visit https://www.simpliaxis.com/"
+        },
+        {
+          "question": "10. What are the different modes of Training available for Simpliaxis courses?",
+          "answer": "We provide different modes of Training: virtual Online Training, Live Virtual Training, Corporate Training & also E-learning."
+        },
+        {
+          "question": "11. Do you offer online Training?",
+          "answer": "Yes, For every course, online Training is available."
+        },
+        {
+          "question": "12. Do you offer corporate Training?",
+          "answer": "Yes, we do provide corporate Training. We customize Training based on our clients' needs."
+        },
+        {
+          "question": "13. Who are the instructors of my course?",
+          "answer": "All our trainers are highly qualified and certified, having numerous years of experience in the training industry. You can choose your instructors for your course."
+        },
+        {
+          "question": "14. Is there any discount available for the Simpliaxis courses?",
+          "answer": "Yes, we do provide discounts on multiple courses. Please visit the schedules page to view the available discounts."
+        },
+        {
+          "question": "15. Whom do I contact if I have more queries regarding my course?",
+          "answer": "You can reach out to our experienced career counseloror email us on support@simpliaxis.comor contact any of our phone numbersor you can chat with us anytimeor visit our contact us page https://www.simpliaxis.com/contact-us"
+        },
+        {
+          "question": "16. Are your courses affordable?",
+          "answer": "Yes, course fees for all technologies are affordable. Along with that, we do provide discounts on various courses."
+        },
+        {
+          "question": "17. Why should I choose Simpliaxis?",
+          "answer": "Simpliaxis offers personalized corporate training programs designed for enterprise teams seeking to refine their employees' skills in various job processes or roles, whether through in-person sessions or live virtual instruction. Led by our skilled and certified trainers, these certification programs not only elevate learning curves but also empower teams to effectively apply their newfound skills to meet industry benchmarks. With over 40 certification programs available, the impact is profound, evident in a remarkable 45% improvement in employee retention rates. On average, there's been a notable 30% enhancement in both work satisfaction and capabilities, showcasing the tangible benefits of our training initiatives."
+        },
+        {
+          "question": "18. What is the object of Simpliaxis?",
+          "answer": "To provide high-quality training and help our professional participants & clients to build a high-performing workforce."
+        },
+        {
+          "question": "19. How much discount will I get if I enroll for the Training?",
+          "answer": "It totally depends upon the course. Please check our website regularly for new offers and discounts throughout the year. You can also chat with one of our career consultants to see if any discounts are available."
+        }
+      ]
+    }
+  ],
+  "whySections": [
+    {
+      "title": "Worldwide Credibility",
+      "description": "Our courses are endorsed by leading global certification bodies, ensuring your credentials are respected and valid across all major industries."
+    },
+    {
+      "title": "Professional Educators",
+      "description": "Learn from seasoned experts who bring a wealth of practical experience and real-world business acumen to every session."
+    },
+    {
+      "title": "Versatile Education Paths",
+      "description": "We offer multiple learning formats, including classroom, virtual, and corporate workshops, to accommodate your personal and professional schedule."
+    },
+    {
+      "title": "Permanent Resource Access",
+      "description": "Receive indefinite access to all session recordings, educational materials, and supporting study resources."
+    },
+    {
+      "title": "Evidence of Excellence",
+      "description": "As a trusted training partner, we have a long history of helping individuals and corporations reach their strategic career and business milestones."
+    },
+    {
+      "title": "Comprehensive Support",
+      "description": "Simpliaxis provides continuous guidance through every stage of your journey—from pre-training preparation to post-certification career advice."
+    },
+    {
+      "title": "Engaging Learning Experience",
+      "description": "Our workshops are built on interactivity, utilizing case studies, collaborative group work, and open Q&A to ensure deep conceptual understanding."
+    },
+    {
+      "title": "Extensive Course Catalog",
+      "description": "Choose from a diverse range of top-tier certification programs in Agile, Scrum, SAFe, DevOps, Project Management, and beyond."
+    }
+  ],
+  "heroData": {
+    "courseName": "Scrum@Scale™ Certification Training",
+    "breadcrumbName": "Scrum@Scale Certification | Certified Scrum@Scale Practitioner Course",
+    "rating": "5.0",
+    "enrolledCount": "",
+    "subtitle": "",
+    "benefits": [],
+    "mainImage": "https://www.simpliaxis.com/../frontend_assets/image/ring_loader.gif",
+    "badgeImage": "/csm-badge.png"
+  },
+  "overviewContent": {
+    "title": "Course Overview",
+    "subtitle": "Course Overview",
+    "description": [],
+    "whatIsTitle": "",
+    "whatIsDescription": [],
+    "whatsIncludedTitle": "",
+    "whatsIncludedDescription": [],
+    "skillsTitle": "",
+    "skills": [],
+    "modesTitle": "",
+    "modesDescription": []
+  },
+  "corporateData": {
+    "courseName": "Why Corporate Opt Us",
+    "label": "",
+    "buttonText": "Corporate Group enquiry",
+    "description": "With learning targeted to your unique team environment, we at SimpliAxis help to resolve your specific issues and meet your specific needs with tailored training methods. We offer corporate training globally to keep Organizations up to date by building the knowledge gap required and make them strive in the competitive world with the right skills according to the industry needs. Preferred by many MNC’s, Startups, and Organizations among all sectors. Trusted by X clients and meet their training needs. Skilled training experts and professionals around the world with good command of the subjects. Delivering tailoring modules for your enterprises by highly qualified experts."
+  }
+}
