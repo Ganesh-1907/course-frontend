@@ -18,10 +18,10 @@ const CoursePrerequisites: React.FC<CoursePrerequisitesProps> = ({
     <div className="bg-white border border-slate-200 rounded-none p-8 md:p-10 shadow-sm space-y-8">
       <div>
         <h4 className="text-[13px] text-slate-500 font-bold mb-2 uppercase tracking-wide">
-          {title || `Prerequisites for ${courseName} certification training`}
+          {`Prerequisites for ${title} certification training`}
         </h4>
         <h2 className="text-2xl md:text-3xl font-extrabold text-[#001c3d]">
-          {subtitle || `What are the Prerequisites Required for ${courseName} Training?`}
+          {`What are the Prerequisites Required for ${title} Training?`}
         </h2>
       </div>
 
