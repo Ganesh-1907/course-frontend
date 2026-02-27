@@ -39,61 +39,59 @@ import {
   Star
 } from "lucide-react";
 
-const AgileAndScrumTraining = () => {
-  const highlights =  [
-    { "text": "8 Hours of Live Instructor-Led Training" },
-    { "text": "Earn 8 PDUs and 8 SEUs" },
-    { "text": "Delivered by Certified Scrum Trainers (CSTs)" },
-    { "text": "Comprehensive Coverage of Agile and Scrum Fundamentals" },
-    { "text": "Hands-On Practical Exercises and Case Studies" },
-    { "text": "Course Completion Certificate from Simpliaxis" },
-    { "text": "24/7 Post-Training Support" },
-    { "text": "Dedicated Doubt-Clearing Sessions" }
+const ICAgileEnterpriseAgileCoachingCertificationTraining = () => {
+  const highlights = [
+    { "text": "16 Hours of Live Instructor-Led Online Training" },
+    { "text": "Earn 16 SEUs and 16 PDUs Upon Completion" },
+    { "text": "Globally Recognized ICAgile-Accredited ICP-CAT Certification" },
+    { "text": "Hands-On Learning with Real-World Simulations" },
+    { "text": "Official ICAgile-Authorized Courseware Included" },
+    { "text": "Mentorship by Experienced Enterprise Agile Coaches" }
   ];
 
   const individualBenefits = [
     {
-      "title": "Improved Adaptability",
-      "description": "Respond effectively to changing project requirements."
+      "title": "Advanced Enterprise Coaching Skills",
+      "description": "Build strong capabilities to coach large-scale Agile transformations."
     },
     {
-      "title": "Enhanced Collaboration",
-      "description": "Work efficiently within cross-functional Agile teams."
+      "title": "Professional Credibility",
+      "description": "Enhance your reputation as a trusted enterprise Agile transformation coach."
     },
     {
-      "title": "Higher Productivity",
-      "description": "Increase efficiency and deliver value consistently."
-    },
-    {
-      "title": "Stronger Problem-Solving Skills",
-      "description": "Develop analytical thinking through Agile practices."
+      "title": "Leadership Coaching Expertise",
+      "description": "Develop skills to coach senior leaders and executive stakeholders."
     },
     {
       "title": "Career Growth Opportunities",
-      "description": "Unlock new career paths in Agile and Scrum roles."
+      "description": "Unlock senior roles such as Enterprise Agile Coach and Transformation Consultant."
+    },
+    {
+      "title": "Globally Recognized Credential",
+      "description": "Earn the respected ICAgile ICP-CAT certification issued directly by ICAgile."
     }
   ];
 
   const corporateBenefits = [
     {
-      "title": "Faster Project Delivery",
-      "description": "Accelerate time-to-market using Agile methodologies."
+      "title": "Sustainable Agile Transformation",
+      "description": "Enable long-term, effective Agile change initiatives across the enterprise."
     },
     {
-      "title": "Improved Customer Satisfaction",
-      "description": "Deliver value-driven solutions aligned with customer needs."
+      "title": "Leadership Alignment",
+      "description": "Strengthen collaboration and strategic alignment among leadership teams."
     },
     {
-      "title": "Enhanced Product Quality",
-      "description": "Ensure continuous improvement through iterative development."
+      "title": "Reduced Change Resistance",
+      "description": "Support smoother adoption through structured coaching-led change."
     },
     {
-      "title": "Greater Employee Engagement",
-      "description": "Encourage team ownership and collaboration."
+      "title": "Internal Coaching Capability",
+      "description": "Build strong in-house Agile transformation expertise."
     },
     {
-      "title": "Reduced Project Risk",
-      "description": "Identify and mitigate risks early through continuous feedback."
+      "title": "Agile Culture Development",
+      "description": "Encourage mindset shifts and sustainable cultural change toward agility."
     }
   ];
 
@@ -106,14 +104,15 @@ const AgileAndScrumTraining = () => {
 
   const attendees = [
     {
-      group: [
-        'Scrum Masters',
-        'Delivery Managers',
-        'Product Owners',
-        'Agile Coaches',
-      ],
-    },
-    { group: ['Team Leads', 'Development Managers'] },
+      "group": [
+        "Enterprise Agile Coaches",
+        "Agile Coaches",
+        "Scrum Masters with Coaching Experience",
+        "Transformation Leads",
+        "Organizational Change Consultants",
+        "Leaders Driving Agile Adoption"
+      ]
+    }
   ];
 
   const companies = [
@@ -148,215 +147,167 @@ const AgileAndScrumTraining = () => {
   ];
 
   const outcomes = [
-    "Develop a strong foundation in Agile principles and Scrum practices.",
-    "Apply Scrum roles, artifacts, and ceremonies effectively in real projects.",
-    "Use Agile estimation techniques such as Story Points and Planning Poker.",
-    "Monitor progress using Agile metrics like burn-down and burn-up charts.",
-    "Understand scaling approaches for enterprise-level Agile implementation."
+    "Coach enterprise-level Agile transformations.",
+    "Apply systems thinking to complex organizational change.",
+    "Engage effectively with leadership and senior stakeholders.",
+    "Enable sustainable Agile culture shifts.",
+    "Design and guide long-term transformation strategies."
   ];
 
   const prerequisites = [
-    "No prior experience is required to enroll in this Agile and Scrum Training.",
-    "Ideal for beginners and professionals planning to pursue certifications such as CSM, CSPO, PSM, or SAFe Scrum Master."
+    "No mandatory prerequisites.",
+    "Prior Agile coaching or transformation experience is strongly recommended.",
+    "Foundational ICAgile certifications such as ICP-ENT are beneficial."
   ];
 
   const certificationSteps = [
     {
-      title: 'Attend Training',
-      description:
-        'Complete the 16-hour A-CSM training delivered by Scrum Alliance-accredited trainers.',
+      "title": "Attend the Training",
+      "description": "Complete the 16-hour ICAgile-authorized ICP-CAT training."
     },
     {
-      title: 'Validate Experience',
-      description: 'Confirm at least 12 months of Scrum Master experience.',
+      "title": "Participate Actively",
+      "description": "Engage in experiential learning, discussions, and transformation simulations."
     },
     {
-      title: 'Accept License',
-      description:
-        'Log in to Scrum Alliance and acknowledge the license agreement.',
+      "title": "Complete Required Assignment",
+      "description": "Submit coursework demonstrating your understanding of transformation coaching."
     },
     {
-      title: 'Download Certificate',
-      description:
-        'Receive and download your Advanced Certified ScrumMaster credential.',
-    },
+      "title": "Receive Certification",
+      "description": "Earn the ICP-CAT credential issued directly by ICAgile."
+    }
   ];
 
-  const curriculumModules =[
+  const curriculumModules = [
     {
-      "title": "Module 1: Introduction to Agile",
+      "title": "Module 1: Exploring Leadership and Culture",
       "topics": [
-        "Evolution of Agile",
-        "Traditional vs Agile Project Management",
-        "Benefits of Agile Methodology"
+        "Leadership Styles and Organizational Culture",
+        "Enterprise Agile Coaching Skills",
+        "Organizational Culture Models",
+        "Culture Assessment Approaches"
       ]
     },
     {
-      "title": "Module 2: Agile Foundations",
+      "title": "Module 2: Change Processes and Strategies",
       "topics": [
-        "Agile Manifesto",
-        "Agile Values and Principles",
-        "Customer Collaboration and Iterative Delivery"
+        "Human and Organizational Change Processes",
+        "Business Case for Change",
+        "Agile Transformation Strategies",
+        "Organizational Assessments",
+        "Communicating Change at Enterprise Level"
       ]
     },
     {
-      "title": "Module 3: Business Value in Agile",
+      "title": "Module 3: Coaching Through Change",
       "topics": [
-        "User Stories and the 3Cs",
-        "Prioritization Techniques",
-        "Minimum Viable Product (MVP)"
-      ]
-    },
-    {
-      "title": "Module 4: Agile Frameworks",
-      "topics": [
-        "Scrum Framework",
-        "Kanban",
-        "Extreme Programming (XP)",
-        "Feature-Driven Development (FDD)"
-      ]
-    },
-    {
-      "title": "Module 5: Agile Project Management",
-      "topics": [
-        "APM Framework Phases",
-        "Envision, Speculate, Explore, Adapt, Close"
-      ]
-    },
-    {
-      "title": "Module 6: Scrum Framework Deep Dive",
-      "topics": [
-        "Scrum Roles",
-        "Scrum Artifacts",
-        "Scrum Events"
-      ]
-    },
-    {
-      "title": "Module 7: Agile Estimation",
-      "topics": [
-        "Story Points",
-        "Planning Poker",
-        "T-Shirt Sizing"
-      ]
-    },
-    {
-      "title": "Module 8: Agile Planning and Tracking",
-      "topics": [
-        "Release Planning",
-        "Iteration Planning",
-        "Burn-down and Burn-up Charts"
-      ]
-    },
-    {
-      "title": "Module 9: Scaling Agile",
-      "topics": [
-        "SAFe",
-        "DAD",
-        "LeSS"
-      ]
-    },
-    {
-      "title": "Module 10: Agile Career Path",
-      "topics": [
-        "Agile Certifications",
-        "Enterprise Agile Roles"
+        "Coaching and Advising Leaders",
+        "Professional Coaching Practices",
+        "Trusted Advisor Stance",
+        "Self-Mastery and Professional Ethics",
+        "Enterprise Coaching Contracts"
       ]
     }
   ];
 
   const learningObjectives = [
     {
-      "title": "Agile Fundamentals",
-      "description": "Understand Agile values and principles and explore frameworks such as Scrum, Kanban, and XP."
+      "title": "Enterprise Transformation Coaching",
+      "description": "Guide organizations through large-scale Agile transformation journeys."
     },
     {
-      "title": "User Stories and Business Value",
-      "description": "Learn how to create effective user stories and prioritize development based on customer value."
+      "title": "Leadership & Culture Alignment",
+      "description": "Support leadership teams in building agile, adaptive cultures."
     },
     {
-      "title": "Agile Planning",
-      "description": "Master product planning, release planning, and iteration planning techniques."
+      "title": "Systems Thinking Application",
+      "description": "Apply systems thinking to navigate complex enterprise challenges."
     },
     {
-      "title": "Scrum Events",
-      "description": "Gain clarity on Scrum ceremonies including Sprint Planning, Daily Scrum, Sprint Review, and Retrospective."
+      "title": "Strategic Business Alignment",
+      "description": "Align transformation initiatives with measurable business outcomes."
     },
     {
-      "title": "Estimation and Metrics",
-      "description": "Apply estimation techniques and measure performance using Agile metrics."
+      "title": "Ethical & Responsible Change",
+      "description": "Coach transformation initiatives with strong ethical awareness."
     },
     {
-      "title": "Scaling Agile",
-      "description": "Learn how to scale Agile practices successfully across large organizations."
+      "title": "Cross-Functional Collaboration",
+      "description": "Enable enterprise-wide collaboration across departments and functions."
     }
   ];
 
   const faqCategories = [
   {
     "id": "category_1",
-    "label": "Agile & Scrum Certification FAQs",
+    "label": "Certification FAQs",
     "items": [
       {
-        "question": "What is Agile and Scrum Training?",
-        "answer": "Agile and Scrum Training provides a comprehensive understanding of Agile principles and the Scrum framework. It helps professionals learn how to deliver value incrementally, collaborate effectively, and adapt quickly to changing requirements."
+        "question": "What is ICAgile ICP-CAT Certification?",
+        "answer": "ICAgile ICP-CAT (Coaching Agile Transformations) is an advanced-level certification focused on developing enterprise Agile transformation coaching capabilities. It prepares professionals to guide leaders and organizations through complex Agile change initiatives."
       },
       {
-        "question": "Who should attend Agile and Scrum Training?",
-        "answer": "This course is ideal for Developers, Testers, Project Managers, Product Owners, Scrum Masters, Business Analysts, and anyone involved in Agile projects."
+        "question": "Is there an exam for ICP-CAT certification?",
+        "answer": "No, there is no formal exam for ICP-CAT certification. The credential is awarded based on successful course participation and completion of required assignments."
       },
       {
-        "question": "Are there any prerequisites for Agile and Scrum Training?",
-        "answer": "There are no strict prerequisites. However, having basic knowledge of software development or project management concepts is beneficial."
+        "question": "Who should attend the ICP-CAT course?",
+        "answer": "The course is ideal for Enterprise Agile Coaches, Agile Coaches, Scrum Masters with coaching experience, Transformation Leads, Organizational Change Consultants, and leaders driving Agile transformation."
       },
       {
-        "question": "What will I learn in Agile and Scrum Training?",
-        "answer": "You will learn Agile values and principles, Scrum roles (Scrum Master, Product Owner, Developers), Scrum events, artifacts, sprint planning, backlog management, estimation techniques, and Agile best practices."
+        "question": "Are there any prerequisites for ICP-CAT training?",
+        "answer": "There are no mandatory prerequisites. However, prior Agile coaching experience and foundational ICAgile certifications (such as ICP-ENT) are strongly recommended."
       },
       {
-        "question": "Is there an exam included in the training?",
-        "answer": "Depending on the certification track, an assessment may be included. Exam details such as number of questions, duration, and passing score vary based on the certification body."
+        "question": "How do I get certified in ICP-CAT?",
+        "answer": "You must complete the ICAgile-authorized training, actively participate in course activities, and successfully complete the required assignments. The certification is then issued directly by ICAgile."
       },
       {
-        "question": "How long is the Agile and Scrum certification valid?",
-        "answer": "Certification validity depends on the certifying organization. Some certifications are lifetime, while others require renewal through SEUs or PDUs."
+        "question": "How long is the ICP-CAT certification valid?",
+        "answer": "ICP-CAT certification is valid for a lifetime. There is no renewal or annual maintenance fee."
+      },
+      {
+        "question": "Will I receive a digital badge?",
+        "answer": "Yes, upon certification, you will receive a digital ICAgile credential that can be shared on LinkedIn and other professional platforms."
+      },
+      {
+        "question": "Is ICP-CAT globally recognized?",
+        "answer": "Yes, ICAgile certifications are globally recognized and respected across industries for advanced Agile coaching expertise."
       },
       {
         "question": "How many PDUs and SEUs can I earn?",
-        "answer": "Participants can typically earn up to 14–16 PDUs and SEUs upon completion of the 2-day Agile and Scrum training program."
-      },
-      {
-        "question": "Is Agile and Scrum certification globally recognized?",
-        "answer": "Yes, Agile and Scrum certifications are globally recognized and highly valued across industries adopting Agile methodologies."
+        "answer": "Participants can earn up to 16 PDUs and 16 SEUs upon successful completion of the 16-hour training."
       }
     ]
   },
   {
     "id": "category_2",
-    "label": "Training & Course Delivery FAQs",
+    "label": "Training & Course FAQs",
     "items": [
       {
-        "question": "What is the duration of Agile and Scrum Training?",
-        "answer": "The training is typically delivered over 2 days (approximately 16 hours) of instructor-led sessions."
+        "question": "What is the duration of the ICP-CAT training?",
+        "answer": "The ICP-CAT course typically consists of 16 hours of live instructor-led training delivered over two days or multiple interactive sessions."
       },
       {
-        "question": "Is the training practical or theoretical?",
-        "answer": "The training is highly interactive and includes case studies, group activities, simulations, sprint exercises, and real-world scenarios."
+        "question": "What topics are covered in ICP-CAT training?",
+        "answer": "The course covers enterprise Agile coaching, organizational change processes, leadership coaching, systems thinking, cultural transformation, and sustainable Agile adoption strategies."
       },
       {
-        "question": "Do I get hands-on Scrum experience during training?",
-        "answer": "Yes, participants engage in practical Scrum simulations including sprint planning, daily scrum exercises, backlog refinement, and retrospectives."
+        "question": "Is the training theoretical or practical?",
+        "answer": "ICP-CAT training is highly experiential and practice-focused. It includes case studies, simulations, leadership coaching exercises, and real-world transformation scenarios."
       },
       {
-        "question": "Is online training available?",
-        "answer": "Yes, Agile and Scrum training is available in live virtual instructor-led mode as well as corporate onsite programs."
+        "question": "What delivery modes are available?",
+        "answer": "The course is offered through live online instructor-led sessions and corporate group training programs."
       },
       {
-        "question": "Do you provide corporate Agile and Scrum training?",
-        "answer": "Yes, we offer customized corporate training tailored to organizational needs and Agile transformation goals."
+        "question": "Do I receive course materials?",
+        "answer": "Yes, participants receive official ICAgile-authorized courseware and supporting learning materials."
       },
       {
-        "question": "Will I receive study materials?",
-        "answer": "Yes, participants receive comprehensive course materials, templates, and supporting learning resources."
+        "question": "What career opportunities are available after ICP-CAT certification?",
+        "answer": "ICP-CAT certification supports career growth into roles such as Enterprise Agile Coach, Transformation Consultant, Organizational Change Coach, Agile Practice Lead, and senior coaching positions."
       }
     ]
   },
@@ -365,28 +316,32 @@ const AgileAndScrumTraining = () => {
     "label": "Payment & Enrollment FAQs",
     "items": [
       {
-        "question": "How do I enroll in Agile and Scrum Training?",
-        "answer": "Choose your preferred schedule, complete the registration process, make the payment, and you will receive confirmation with course access details."
+        "question": "Can I pay in installments?",
+        "answer": "Yes, installment options may be available. Please contact our support team for detailed payment plans."
+      },
+      {
+        "question": "Do you offer corporate discounts?",
+        "answer": "Yes, we offer special pricing and customized packages for corporate group enrollments."
+      },
+      {
+        "question": "Is there any transaction or processing fee?",
+        "answer": "No, there are no additional transaction or processing fees."
       },
       {
         "question": "What payment methods are accepted?",
-        "answer": "We accept credit cards, debit cards, net banking, wire transfers, PayPal, Stripe, and other secure payment methods."
-      },
-      {
-        "question": "Do you offer installment payment options?",
-        "answer": "Yes, installment options may be available. Please contact support for detailed payment plans."
-      },
-      {
-        "question": "Are there group or corporate discounts available?",
-        "answer": "Yes, we provide special pricing for corporate teams and group enrollments."
+        "answer": "We accept credit cards, debit cards, net banking, wire transfers, PayPal, Stripe, and other secure payment options."
       },
       {
         "question": "Will I receive a payment receipt?",
-        "answer": "Yes, you will receive an official invoice and confirmation email after successful payment."
+        "answer": "Yes, you will receive an invoice and confirmation email immediately after successful payment."
       },
       {
-        "question": "What is your refund policy?",
-        "answer": "Refunds are generally not provided. However, participants may reschedule their training as per policy terms."
+        "question": "What is the refund policy?",
+        "answer": "Refunds are not available. However, you may reschedule your training as per policy terms."
+      },
+      {
+        "question": "How do I enroll in the ICP-CAT course?",
+        "answer": "Select your preferred training schedule, complete registration, make the payment, and you will receive confirmation with further instructions."
       }
     ]
   }
@@ -508,50 +463,50 @@ const AgileAndScrumTraining = () => {
 
   const courseWhySimpliaxis = [
     {
-      "title": "Global Recognition",
-      "description": "Courses accredited by globally recognized certification bodies."
+      "title": "ICAgile-Authorized Training Partner",
+      "description": "Programs fully aligned with ICAgile learning objectives and standards."
     },
     {
-      "title": "Expert Trainers",
-      "description": "Learn from certified professionals with real-world industry experience."
+      "title": "Experienced Transformation Coaches",
+      "description": "Learn from professionals who have led enterprise Agile transformations."
     },
     {
-      "title": "Flexible Learning Options",
-      "description": "Choose from live virtual, online, or corporate training formats."
+      "title": "Practice-Focused Learning",
+      "description": "Experiential learning with real-world organizational case studies."
     },
     {
-      "title": "Lifetime Access",
-      "description": "Access session recordings and learning resources anytime."
+      "title": "Interactive & Engaging Sessions",
+      "description": "Highly interactive coaching labs, reflections, and exercises."
     },
     {
-      "title": "Proven Track Record",
-      "description": "Trusted by organizations worldwide for measurable training outcomes."
+      "title": "Industry-Relevant Case Studies",
+      "description": "Exposure to real transformation challenges across industries."
     },
     {
-      "title": "End-to-End Support",
-      "description": "Comprehensive assistance before, during, and after training."
+      "title": "Globally Recognized Credential",
+      "description": "ICP-CAT certification respected worldwide."
     },
     {
-      "title": "Interactive Learning",
-      "description": "Engaging sessions with real-world case studies and activities."
+      "title": "Flexible Delivery Options",
+      "description": "Available in live online and corporate formats."
     },
     {
-      "title": "Wide Course Portfolio",
-      "description": "International certifications across Agile, Scrum, SAFe, DevOps, and Project Management."
+      "title": "Post-Training Support",
+      "description": "Ongoing guidance and learning resources beyond course completion."
     }
-  ]
+  ];
   const sidePanelSchedules = [
     {
-      courseCode: 'SCM',
-      courseName: 'Advanced Certified Scrum Master (A-CSM®) Training',
-      dateRange: 'Feb 28 - Mar 01, 2026',
-      timeRange: '08:30 AM - 04:30 PM IST',
-      trainerName: 'Naveen Nanjundappa',
+      courseCode: 'ICP-CAT',
+      courseName: 'ICAgile Coaching Agile Transformations (ICP-CAT) Training',
+      dateRange: 'Mar 25 - Mar 26, 2026',
+      timeRange: '10:00 AM - 06:00 PM IST',
+      trainerName: 'Expert Enterprise Coach',
       trainerImage:
-        'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=100',
-      originalPrice: 'INR 49,080',
-      discountedPrice: 'INR 34,356',
-      discountPercentage: '30',
+        'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=100',
+      originalPrice: 'INR 65,000',
+      discountedPrice: 'INR 58,500',
+      discountPercentage: '10',
     },
   ];
 
@@ -563,16 +518,17 @@ const AgileAndScrumTraining = () => {
   ];
 
   const heroData = {
-    "courseName": "Agile and Scrum Training",
-    "breadcrumbName": "Agile and Scrum Foundational Training by Simpliaxis",
+    "courseName": "ICAgile Coaching Agile Transformations (ICP-CAT) Certification Training",
+    "breadcrumbName": "ICP-CAT Certification | Coaching Agile Transformations Course",
     "rating": "5.0",
     "enrolledCount": "",
-    "subtitle": "Build a strong foundation in Agile principles and the Scrum framework in just one day.",
+    "subtitle": "Develop advanced enterprise coaching capabilities to lead Agile transformations.",
     "benefits": [
-      "Attend a 1-Day Live Instructor-Led Training Session delivered by certified experts.",
-      "Develop essential Agile and Scrum skills to build high-performing teams.",
-      "Engage in interactive and practical learning for deeper conceptual clarity.",
-      "Begin your journey toward globally recognized certifications such as CSM and PSM."
+      "16 Hours Live Instructor-Led Training",
+      "Enterprise Transformation Coaching Skills",
+      "No Exam – Assignment-Based Certification",
+      "Globally Recognized ICAgile Credential",
+      "Lifetime Valid Certification"
     ],
     "mainImage": "https://www.simpliaxis.com/../frontend_assets/image/ring_loader.gif",
     "badgeImage": "/csm-badge.png"
@@ -580,35 +536,54 @@ const AgileAndScrumTraining = () => {
 
   const overviewContent = {
     "title": "Course Overview",
-    "subtitle": "Comprehensive Introduction to Agile and Scrum",
+    "subtitle": "ICAgile Coaching Agile Transformations (ICP-CAT)",
     "description": [
-      "The Agile and Scrum Training by Simpliaxis validates your understanding of Agile principles and Scrum practices. This foundational program prepares professionals to pursue globally recognized certifications such as CSM, CSPO, PSM, and SAFe Scrum Master.",
-      "Delivered by certified Scrum trainers, this course bridges traditional project management approaches with Agile methodologies. It is ideal for aspiring Scrum Masters, Product Owners, Project Managers, and Agile team members.",
-      "Participants gain hands-on exposure through real-world exercises, enabling them to effectively implement Scrum within their organizations and improve project success rates."
+      "ICP-CAT is an advanced-level ICAgile-accredited program focused on enterprise Agile transformation coaching.",
+      "The course equips professionals with systems thinking, leadership coaching, and organizational change strategies.",
+      "Participants gain practical experience to support sustainable Agile adoption at scale."
     ],
     "whatIsTitle": "",
     "whatIsDescription": [],
-    "whatsIncludedTitle": "",
-    "whatsIncludedDescription": [],
-    "skillsTitle": "",
-    "skills": [],
-    "modesTitle": "",
-    "modesDescription": []
+    "whatsIncludedTitle": "What’s Included in This Course?",
+    "whatsIncludedDescription": [
+      "Official ICAgile-Authorized Curriculum",
+      "Transformation-Focused Case Studies",
+      "Interactive Coaching Labs",
+      "Assignment-Based Certification Process",
+      "Access to Global Agile Community"
+    ],
+    "skillsTitle": "Skills Covered in ICP-CAT Training",
+    "skills": [
+      "Enterprise Agile Coaching",
+      "Organizational Change Strategy",
+      "Leadership Coaching",
+      "Systems Thinking",
+      "Cultural Transformation",
+      "Transformation Roadmapping",
+      "Stakeholder Engagement",
+      "Ethical Coaching Practices"
+    ],
+    "modesTitle": "Training Delivery Modes",
+    "modesDescription": [
+      "Live Online Instructor-Led Training",
+      "Corporate Group Training (Onsite or Virtual)",
+      "Interactive and Experiential Learning Format"
+    ]
   };
 
-  const corporateData ={
-    "courseName": "Why Corporates Choose Us",
+  const corporateData = {
+    "courseName": "Why Simpliaxis for Corporates?",
     "label": "",
     "buttonText": "Corporate Group Enquiry",
-    "description": "Simpliaxis delivers customized corporate training programs designed to address specific organizational challenges. Our expert trainers provide industry-aligned modules that enhance workforce capabilities and help enterprises remain competitive."
+    "description": "We provide enterprise-focused ICAgile ICP-CAT training tailored to organizational transformation needs, enabling sustainable Agile adoption, leadership alignment, and measurable business outcomes."
   };
 
   const courseMetadata = {
-    shortName: 'CSM',
-    shortNameAlt: 'A-CSM',
-    fullName: 'Advanced Certified Scrum Master (A-CSM®)',
-    fullNameAlt: 'Advance Certified Scrum Master (A-CSM)',
-    certificateName: 'Advanced Scrum Master',
+    shortName: 'ICP-CAT',
+    shortNameAlt: 'ICP-CAT',
+    fullName: 'ICAgile Coaching Agile Transformations (ICP-CAT)',
+    fullNameAlt: 'ICAgile Enterprise Agile Coaching',
+    certificateName: 'Coaching Agile Transformations',
   };
 
   const sectionsLabels = {
@@ -616,11 +591,11 @@ const AgileAndScrumTraining = () => {
       outcomesTitle:
         `What are the Learning Outcomes of the ${heroData.courseName} Course?`,
       outcomesFooter:
-        "After completing your Certified Scrum Master® Certification, a wide selection of career options will open up, and one can explore enhancements in one's career path. One can lead to higher positions in the job profile and the organization.",
+        "Earning your ICP-CAT certification establishes you as a high-level enterprise coach, capable of leading complex organizational transformations and influencing cultural shifts toward sustainable agility.",
     },
     prerequisites: {
       subtitle:
-        'What are the Prerequisites Required for Advanced Scrum Master Training?',
+        'What are the Prerequisites for ICAgile ICP-CAT Certification Training?',
     },
     certificate: {
       mockupName: 'ALEX BRYANT',
@@ -628,23 +603,23 @@ const AgileAndScrumTraining = () => {
       titlePrefix: 'Earn Your',
       titleHighlight: 'Global',
       titleSuffix: 'Recognition',
-      issuerName: 'Scrum Alliance',
+      issuerName: 'ICAgile',
       certificateType: 'Certificate of Mastery',
       certifyText: 'This is to certify that',
       requirementText:
         'Has successfully fulfilled all requirements to be recognized as an',
-      signer1Role: 'Certified Trainer',
-      signer2Role: 'Executive Director',
+      signer1Role: 'ICAgile Authorized Instructor',
+      signer2Role: 'Executive Director, ICAgile',
     },
   };
 
   const commonAttendeesList = [
-    'Scrum Masters',
-    'Team Leads',
-    'Development Managers',
-    'Delivery Managers',
-    'Product Owners',
-    'Agile Coaches',
+    "Enterprise Agile Coaches",
+    "Agile Coaches",
+    "Scrum Masters with Coaching Experience",
+    "Transformation Leads",
+    "Organizational Change Consultants",
+    "Leaders Driving Agile Adoption"
   ];
 
   const pageCaptions = {
@@ -659,7 +634,7 @@ const AgileAndScrumTraining = () => {
       referEarnText: 'Refer & Earn',
       enrolledSuffix: 'Enrolled',
       moneyBackText: '100% Money Back Guarantee',
-      ltpLabel: 'Global LTP of Scrum Alliance',
+      ltpLabel: 'Official ICAgile Member Organization',
       downloadBtnText: 'Download Brochure',
       viewSchedulesBtnText: 'View Schedules',
       freeAssessmentBtnText: 'Free Assesment',
@@ -695,7 +670,32 @@ const AgileAndScrumTraining = () => {
               <h3 className="text-2xl font-black text-[#001c3d] pt-4">
                 {overviewContent.whatsIncludedTitle}
               </h3>
-              <p>{overviewContent.whatsIncludedDescription}</p>
+              <ul className="list-disc pl-5 mt-2 space-y-2">
+                {overviewContent.whatsIncludedDescription.map((item, i) => (
+                  <li key={i}>{item}</li>
+                ))}
+              </ul>
+
+              <h3 className="text-2xl font-black text-[#001c3d] pt-4">
+                {overviewContent.skillsTitle}
+              </h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-2 mt-2">
+                {overviewContent.skills.map((skill, i) => (
+                  <div key={i} className="flex items-center gap-2">
+                    <span className="text-blue-500">✔</span>
+                    <span>{skill}</span>
+                  </div>
+                ))}
+              </div>
+
+              <h3 className="text-2xl font-black text-[#001c3d] pt-4">
+                {overviewContent.modesTitle}
+              </h3>
+              <ul className="list-disc pl-5 mt-2 space-y-2">
+                {overviewContent.modesDescription.map((mode, i) => (
+                  <li key={i}>{mode}</li>
+                ))}
+              </ul>
             </div>
           </div>
 
@@ -854,4 +854,4 @@ const AgileAndScrumTraining = () => {
   );
 };
 
-export default AgileAndScrumTraining;
+export default ICAgileEnterpriseAgileCoachingCertificationTraining;

@@ -39,61 +39,60 @@ import {
   Star
 } from "lucide-react";
 
-const AgileAndScrumTraining = () => {
-  const highlights =  [
-    { "text": "8 Hours of Live Instructor-Led Training" },
-    { "text": "Earn 8 PDUs and 8 SEUs" },
-    { "text": "Delivered by Certified Scrum Trainers (CSTs)" },
-    { "text": "Comprehensive Coverage of Agile and Scrum Fundamentals" },
-    { "text": "Hands-On Practical Exercises and Case Studies" },
-    { "text": "Course Completion Certificate from Simpliaxis" },
-    { "text": "24/7 Post-Training Support" },
-    { "text": "Dedicated Doubt-Clearing Sessions" }
+const ProfessionalAgileLeadershipEssentialsCertificationTraining = () => {
+  const highlights = [
+    { "text": "Highly Qualified, Certified & Accredited Scrum.org Trainers" },
+    { "text": "Interactive Instructor-Led Professional Agile Leadership Training" },
+    { "text": "Industry-Driven Case Studies & Experience-Based Scenarios" },
+    { "text": "Industry-Recognized PAL I Certification with Official Logo" },
+    { "text": "Earn 14 PDUs and 14 SEUs After 2-Day Training" },
+    { "text": "Your Name Listed on Scrum.org Upon Certification" },
+    { "text": "24/7 Support and Assistance" }
   ];
 
   const individualBenefits = [
     {
-      "title": "Improved Adaptability",
-      "description": "Respond effectively to changing project requirements."
+      "title": "Leadership Agility",
+      "description": "Develop the mindset and capabilities required to lead Agile organizations effectively."
     },
     {
-      "title": "Enhanced Collaboration",
-      "description": "Work efficiently within cross-functional Agile teams."
+      "title": "Value-Driven Decision Making",
+      "description": "Understand how leadership impacts value delivery and organizational outcomes."
     },
     {
-      "title": "Higher Productivity",
-      "description": "Increase efficiency and deliver value consistently."
+      "title": "Improved Organizational Culture",
+      "description": "Learn how to create environments that foster high-performing Agile teams."
     },
     {
-      "title": "Stronger Problem-Solving Skills",
-      "description": "Develop analytical thinking through Agile practices."
+      "title": "Global Recognition",
+      "description": "Earn a respected Scrum.org PAL I certification."
     },
     {
-      "title": "Career Growth Opportunities",
-      "description": "Unlock new career paths in Agile and Scrum roles."
+      "title": "Career Advancement",
+      "description": "Enhance opportunities in Agile leadership and enterprise transformation roles."
     }
   ];
 
   const corporateBenefits = [
     {
-      "title": "Faster Project Delivery",
-      "description": "Accelerate time-to-market using Agile methodologies."
+      "title": "Stronger Agile Leadership",
+      "description": "Equip leaders with skills to support Agile transformation successfully."
     },
     {
-      "title": "Improved Customer Satisfaction",
-      "description": "Deliver value-driven solutions aligned with customer needs."
+      "title": "Improved Value Delivery",
+      "description": "Align leadership strategies with product and business value."
     },
     {
-      "title": "Enhanced Product Quality",
-      "description": "Ensure continuous improvement through iterative development."
+      "title": "Enhanced Team Performance",
+      "description": "Create empowered, motivated, and high-performing teams."
     },
     {
-      "title": "Greater Employee Engagement",
-      "description": "Encourage team ownership and collaboration."
+      "title": "Organizational Agility",
+      "description": "Support enterprise-wide agility and cultural evolution."
     },
     {
-      "title": "Reduced Project Risk",
-      "description": "Identify and mitigate risks early through continuous feedback."
+      "title": "Sustainable Transformation",
+      "description": "Drive long-term Agile adoption through leadership alignment."
     }
   ];
 
@@ -106,14 +105,15 @@ const AgileAndScrumTraining = () => {
 
   const attendees = [
     {
-      group: [
-        'Scrum Masters',
-        'Delivery Managers',
-        'Product Owners',
-        'Agile Coaches',
-      ],
-    },
-    { group: ['Team Leads', 'Development Managers'] },
+      "group": [
+        "Senior Leaders",
+        "Executives and Directors",
+        "Managers Leading Agile Teams",
+        "Transformation Leaders",
+        "Agile Coaches",
+        "Organizational Decision Makers"
+      ]
+    }
   ];
 
   const companies = [
@@ -148,245 +148,175 @@ const AgileAndScrumTraining = () => {
   ];
 
   const outcomes = [
-    "Develop a strong foundation in Agile principles and Scrum practices.",
-    "Apply Scrum roles, artifacts, and ceremonies effectively in real projects.",
-    "Use Agile estimation techniques such as Story Points and Planning Poker.",
-    "Monitor progress using Agile metrics like burn-down and burn-up charts.",
-    "Understand scaling approaches for enterprise-level Agile implementation."
+    "Understand the role of leadership in Agile transformation.",
+    "Improve value delivery across the organization.",
+    "Foster a culture of professionalism and accountability.",
+    "Align leadership practices with Agile principles.",
+    "Support scaling initiatives effectively."
   ];
 
   const prerequisites = [
-    "No prior experience is required to enroll in this Agile and Scrum Training.",
-    "Ideal for beginners and professionals planning to pursue certifications such as CSM, CSPO, PSM, or SAFe Scrum Master."
+    "No mandatory prerequisites.",
+    "Basic understanding of Agile and Scrum is recommended.",
+    "Experience in leadership or management roles is beneficial."
   ];
 
   const certificationSteps = [
     {
-      title: 'Attend Training',
-      description:
-        'Complete the 16-hour A-CSM training delivered by Scrum Alliance-accredited trainers.',
+      "title": "Attend Training",
+      "description": "Complete the 2-day Professional Agile Leadership (PAL I) training."
     },
     {
-      title: 'Validate Experience',
-      description: 'Confirm at least 12 months of Scrum Master experience.',
+      "title": "Receive Assessment Password",
+      "description": "Get access to the PAL I assessment from Scrum.org."
     },
     {
-      title: 'Accept License',
-      description:
-        'Log in to Scrum Alliance and acknowledge the license agreement.',
+      "title": "Take the Exam",
+      "description": "Attempt the 36-question assessment within 60 minutes."
     },
     {
-      title: 'Download Certificate',
-      description:
-        'Receive and download your Advanced Certified ScrumMaster credential.',
-    },
+      "title": "Get Certified",
+      "description": "Score at least 85% to earn your PAL I certification with lifetime validity."
+    }
   ];
 
-  const curriculumModules =[
+  const curriculumModules = [
     {
-      "title": "Module 1: Introduction to Agile",
+      "title": "Professional Agile Leadership (PAL I) Certification Training",
       "topics": [
-        "Evolution of Agile",
-        "Traditional vs Agile Project Management",
-        "Benefits of Agile Methodology"
-      ]
-    },
-    {
-      "title": "Module 2: Agile Foundations",
-      "topics": [
-        "Agile Manifesto",
-        "Agile Values and Principles",
-        "Customer Collaboration and Iterative Delivery"
-      ]
-    },
-    {
-      "title": "Module 3: Business Value in Agile",
-      "topics": [
-        "User Stories and the 3Cs",
-        "Prioritization Techniques",
-        "Minimum Viable Product (MVP)"
-      ]
-    },
-    {
-      "title": "Module 4: Agile Frameworks",
-      "topics": [
-        "Scrum Framework",
-        "Kanban",
-        "Extreme Programming (XP)",
-        "Feature-Driven Development (FDD)"
-      ]
-    },
-    {
-      "title": "Module 5: Agile Project Management",
-      "topics": [
-        "APM Framework Phases",
-        "Envision, Speculate, Explore, Adapt, Close"
-      ]
-    },
-    {
-      "title": "Module 6: Scrum Framework Deep Dive",
-      "topics": [
-        "Scrum Roles",
-        "Scrum Artifacts",
-        "Scrum Events"
-      ]
-    },
-    {
-      "title": "Module 7: Agile Estimation",
-      "topics": [
-        "Story Points",
-        "Planning Poker",
-        "T-Shirt Sizing"
-      ]
-    },
-    {
-      "title": "Module 8: Agile Planning and Tracking",
-      "topics": [
-        "Release Planning",
-        "Iteration Planning",
-        "Burn-down and Burn-up Charts"
-      ]
-    },
-    {
-      "title": "Module 9: Scaling Agile",
-      "topics": [
-        "SAFe",
-        "DAD",
-        "LeSS"
-      ]
-    },
-    {
-      "title": "Module 10: Agile Career Path",
-      "topics": [
-        "Agile Certifications",
-        "Enterprise Agile Roles"
+        "Agile Theory and Principles",
+        "Improving Value Delivery",
+        "Value – The \"What\"",
+        "Culture – The \"Who\"",
+        "Professionalism – The \"How\"",
+        "Scaling Agile Leadership"
       ]
     }
   ];
 
   const learningObjectives = [
     {
-      "title": "Agile Fundamentals",
-      "description": "Understand Agile values and principles and explore frameworks such as Scrum, Kanban, and XP."
+      "title": "Leadership & Agility",
+      "description": "Understand how leadership behaviors influence organizational agility."
     },
     {
-      "title": "User Stories and Business Value",
-      "description": "Learn how to create effective user stories and prioritize development based on customer value."
+      "title": "Value Optimization",
+      "description": "Learn to measure and improve value delivery."
     },
     {
-      "title": "Agile Planning",
-      "description": "Master product planning, release planning, and iteration planning techniques."
+      "title": "Cultural Transformation",
+      "description": "Create and sustain an Agile-friendly organizational culture."
     },
     {
-      "title": "Scrum Events",
-      "description": "Gain clarity on Scrum ceremonies including Sprint Planning, Daily Scrum, Sprint Review, and Retrospective."
+      "title": "Professional Accountability",
+      "description": "Promote professionalism within Scrum Teams and leadership."
     },
     {
-      "title": "Estimation and Metrics",
-      "description": "Apply estimation techniques and measure performance using Agile metrics."
-    },
-    {
-      "title": "Scaling Agile",
-      "description": "Learn how to scale Agile practices successfully across large organizations."
+      "title": "Scaling Leadership Impact",
+      "description": "Support scaling initiatives through leadership alignment."
     }
   ];
 
   const faqCategories = [
   {
     "id": "category_1",
-    "label": "Agile & Scrum Certification FAQs",
+    "label": "Certification FAQs",
     "items": [
       {
-        "question": "What is Agile and Scrum Training?",
-        "answer": "Agile and Scrum Training provides a comprehensive understanding of Agile principles and the Scrum framework. It helps professionals learn how to deliver value incrementally, collaborate effectively, and adapt quickly to changing requirements."
+        "question": "What is the Professional Agile Leadership (PAL I) certification?",
+        "answer": "Professional Agile Leadership (PAL I) is a globally recognized certification from Scrum.org designed for leaders and managers who want to maximize the benefits of Agile within their organizations. It focuses on leadership accountability, value delivery, culture, and professionalism."
       },
       {
-        "question": "Who should attend Agile and Scrum Training?",
-        "answer": "This course is ideal for Developers, Testers, Project Managers, Product Owners, Scrum Masters, Business Analysts, and anyone involved in Agile projects."
+        "question": "Are there any prerequisites for PAL I training?",
+        "answer": "There are no mandatory prerequisites. However, a basic understanding of Agile and Scrum concepts and leadership experience is recommended."
       },
       {
-        "question": "Are there any prerequisites for Agile and Scrum Training?",
-        "answer": "There are no strict prerequisites. However, having basic knowledge of software development or project management concepts is beneficial."
+        "question": "What is the format of the PAL I certification exam?",
+        "answer": "The PAL I assessment consists of 36 multiple-choice, multiple-answer, and true/false questions. The duration is 60 minutes and it is a closed-book exam."
       },
       {
-        "question": "What will I learn in Agile and Scrum Training?",
-        "answer": "You will learn Agile values and principles, Scrum roles (Scrum Master, Product Owner, Developers), Scrum events, artifacts, sprint planning, backlog management, estimation techniques, and Agile best practices."
+        "question": "What is the passing score for the PAL I exam?",
+        "answer": "You must score at least 85% to pass the PAL I assessment and earn the certification."
       },
       {
-        "question": "Is there an exam included in the training?",
-        "answer": "Depending on the certification track, an assessment may be included. Exam details such as number of questions, duration, and passing score vary based on the certification body."
+        "question": "How much does the PAL I assessment cost?",
+        "answer": "The PAL I assessment costs $200 USD per attempt."
       },
       {
-        "question": "How long is the Agile and Scrum certification valid?",
-        "answer": "Certification validity depends on the certifying organization. Some certifications are lifetime, while others require renewal through SEUs or PDUs."
+        "question": "How long is the PAL I certification valid?",
+        "answer": "The PAL I certification is valid for a lifetime and does not require renewal."
+      },
+      {
+        "question": "Is training mandatory to take the PAL I exam?",
+        "answer": "Training is not mandatory but is highly recommended to improve your understanding and increase your chances of passing the assessment."
+      },
+      {
+        "question": "Will my name be listed publicly after certification?",
+        "answer": "Yes, upon passing the exam, your name will be listed on Scrum.org as a certified Professional Agile Leader."
       },
       {
         "question": "How many PDUs and SEUs can I earn?",
-        "answer": "Participants can typically earn up to 14–16 PDUs and SEUs upon completion of the 2-day Agile and Scrum training program."
-      },
-      {
-        "question": "Is Agile and Scrum certification globally recognized?",
-        "answer": "Yes, Agile and Scrum certifications are globally recognized and highly valued across industries adopting Agile methodologies."
+        "answer": "You can earn up to 14 PDUs and 14 SEUs after attending the 2-day PAL I training program."
       }
     ]
   },
   {
     "id": "category_2",
-    "label": "Training & Course Delivery FAQs",
+    "label": "Payment FAQs",
     "items": [
       {
-        "question": "What is the duration of Agile and Scrum Training?",
-        "answer": "The training is typically delivered over 2 days (approximately 16 hours) of instructor-led sessions."
+        "question": "Can I pay in installments?",
+        "answer": "Yes, installment options may be available. Please contact our support team for detailed payment plans."
       },
       {
-        "question": "Is the training practical or theoretical?",
-        "answer": "The training is highly interactive and includes case studies, group activities, simulations, sprint exercises, and real-world scenarios."
+        "question": "Do you offer corporate discounts?",
+        "answer": "Yes, we provide special pricing and customized packages for corporate group enrollments."
       },
       {
-        "question": "Do I get hands-on Scrum experience during training?",
-        "answer": "Yes, participants engage in practical Scrum simulations including sprint planning, daily scrum exercises, backlog refinement, and retrospectives."
+        "question": "Is there any transaction fee?",
+        "answer": "No, there are no additional transaction or processing fees."
       },
       {
-        "question": "Is online training available?",
-        "answer": "Yes, Agile and Scrum training is available in live virtual instructor-led mode as well as corporate onsite programs."
+        "question": "What payment methods are accepted?",
+        "answer": "We accept credit cards, debit cards, net banking, wire transfers, PayPal, Stripe, and other secure payment options."
       },
       {
-        "question": "Do you provide corporate Agile and Scrum training?",
-        "answer": "Yes, we offer customized corporate training tailored to organizational needs and Agile transformation goals."
+        "question": "Will I receive a payment receipt?",
+        "answer": "Yes, you will receive an invoice and confirmation email immediately after successful payment."
       },
       {
-        "question": "Will I receive study materials?",
-        "answer": "Yes, participants receive comprehensive course materials, templates, and supporting learning resources."
+        "question": "What is your refund policy?",
+        "answer": "Refunds are not available. However, you may reschedule your training as per policy terms."
       }
     ]
   },
   {
     "id": "category_3",
-    "label": "Payment & Enrollment FAQs",
+    "label": "General FAQs",
     "items": [
       {
-        "question": "How do I enroll in Agile and Scrum Training?",
-        "answer": "Choose your preferred schedule, complete the registration process, make the payment, and you will receive confirmation with course access details."
+        "question": "Who should attend PAL I training?",
+        "answer": "This course is ideal for senior leaders, executives, managers, Agile coaches, and transformation leaders responsible for driving organizational agility."
       },
       {
-        "question": "What payment methods are accepted?",
-        "answer": "We accept credit cards, debit cards, net banking, wire transfers, PayPal, Stripe, and other secure payment methods."
+        "question": "Is the training available online?",
+        "answer": "Yes, PAL I training is available in live online instructor-led format as well as corporate group training."
       },
       {
-        "question": "Do you offer installment payment options?",
-        "answer": "Yes, installment options may be available. Please contact support for detailed payment plans."
+        "question": "What happens if I miss a session?",
+        "answer": "You can reschedule your training to a future batch without additional charges, subject to terms and conditions."
       },
       {
-        "question": "Are there group or corporate discounts available?",
-        "answer": "Yes, we provide special pricing for corporate teams and group enrollments."
+        "question": "Do I receive a certificate after training?",
+        "answer": "Yes, you will receive a course completion certificate. Upon passing the Scrum.org assessment, you will receive the official PAL I certification."
       },
       {
-        "question": "Will I receive a payment receipt?",
-        "answer": "Yes, you will receive an official invoice and confirmation email after successful payment."
+        "question": "How do I enroll in the PAL I course?",
+        "answer": "Select your preferred schedule from the website, complete registration, make the payment, and you will receive a confirmation email with further instructions."
       },
       {
-        "question": "What is your refund policy?",
-        "answer": "Refunds are generally not provided. However, participants may reschedule their training as per policy terms."
+        "question": "Do you provide corporate training?",
+        "answer": "Yes, we offer customized corporate training programs tailored to organizational leadership needs."
       }
     ]
   }
@@ -509,49 +439,49 @@ const AgileAndScrumTraining = () => {
   const courseWhySimpliaxis = [
     {
       "title": "Global Recognition",
-      "description": "Courses accredited by globally recognized certification bodies."
+      "description": "PAL I certification is globally recognized and respected."
     },
     {
       "title": "Expert Trainers",
-      "description": "Learn from certified professionals with real-world industry experience."
+      "description": "Learn from experienced Scrum.org-certified professionals."
     },
     {
-      "title": "Flexible Learning Options",
-      "description": "Choose from live virtual, online, or corporate training formats."
+      "title": "Flexible Learning",
+      "description": "Live online and corporate training options available."
     },
     {
-      "title": "Lifetime Access",
-      "description": "Access session recordings and learning resources anytime."
+      "title": "Lifetime Certification",
+      "description": "No renewal fee required after certification."
     },
     {
       "title": "Proven Track Record",
-      "description": "Trusted by organizations worldwide for measurable training outcomes."
+      "description": "Trusted training provider with enterprise experience."
     },
     {
-      "title": "End-to-End Support",
-      "description": "Comprehensive assistance before, during, and after training."
+      "title": "End-to-End Assistance",
+      "description": "Support before, during, and after training."
     },
     {
-      "title": "Interactive Learning",
-      "description": "Engaging sessions with real-world case studies and activities."
+      "title": "Interactive Sessions",
+      "description": "Real-world case studies and group discussions."
     },
     {
       "title": "Wide Course Portfolio",
-      "description": "International certifications across Agile, Scrum, SAFe, DevOps, and Project Management."
+      "description": "Access to multiple Agile and Scrum certifications."
     }
-  ]
+  ];
   const sidePanelSchedules = [
     {
-      courseCode: 'SCM',
-      courseName: 'Advanced Certified Scrum Master (A-CSM®) Training',
-      dateRange: 'Feb 28 - Mar 01, 2026',
-      timeRange: '08:30 AM - 04:30 PM IST',
-      trainerName: 'Naveen Nanjundappa',
+      courseCode: 'PAL-E',
+      courseName: 'Professional Agile Leadership - Essentials (PAL-E) Training',
+      dateRange: 'Apr 05 - Apr 06, 2026',
+      timeRange: '09:00 AM - 05:00 PM IST',
+      trainerName: 'Expert PST-L',
       trainerImage:
         'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=100',
-      originalPrice: 'INR 49,080',
-      discountedPrice: 'INR 34,356',
-      discountPercentage: '30',
+      originalPrice: 'INR 35,000',
+      discountedPrice: 'INR 29,750',
+      discountPercentage: '15',
     },
   ];
 
@@ -563,16 +493,17 @@ const AgileAndScrumTraining = () => {
   ];
 
   const heroData = {
-    "courseName": "Agile and Scrum Training",
-    "breadcrumbName": "Agile and Scrum Foundational Training by Simpliaxis",
+    "courseName": "Professional Agile Leadership - Essentials (PAL-E) Certification Training",
+    "breadcrumbName": "PAL-E Certification | Professional Agile Leadership Essentials Training",
     "rating": "5.0",
     "enrolledCount": "",
-    "subtitle": "Build a strong foundation in Agile principles and the Scrum framework in just one day.",
+    "subtitle": "Develop leadership capabilities to drive successful Agile transformations.",
     "benefits": [
-      "Attend a 1-Day Live Instructor-Led Training Session delivered by certified experts.",
-      "Develop essential Agile and Scrum skills to build high-performing teams.",
-      "Engage in interactive and practical learning for deeper conceptual clarity.",
-      "Begin your journey toward globally recognized certifications such as CSM and PSM."
+      "2-Day Live Instructor-Led Training",
+      "36-Question Scrum.org Assessment",
+      "85% Passing Score",
+      "Lifetime Valid Certification",
+      "14 PDUs & 14 SEUs Earned"
     ],
     "mainImage": "https://www.simpliaxis.com/../frontend_assets/image/ring_loader.gif",
     "badgeImage": "/csm-badge.png"
@@ -580,35 +511,52 @@ const AgileAndScrumTraining = () => {
 
   const overviewContent = {
     "title": "Course Overview",
-    "subtitle": "Comprehensive Introduction to Agile and Scrum",
+    "subtitle": "Professional Agile Leadership – Essentials (PAL I)",
     "description": [
-      "The Agile and Scrum Training by Simpliaxis validates your understanding of Agile principles and Scrum practices. This foundational program prepares professionals to pursue globally recognized certifications such as CSM, CSPO, PSM, and SAFe Scrum Master.",
-      "Delivered by certified Scrum trainers, this course bridges traditional project management approaches with Agile methodologies. It is ideal for aspiring Scrum Masters, Product Owners, Project Managers, and Agile team members.",
-      "Participants gain hands-on exposure through real-world exercises, enabling them to effectively implement Scrum within their organizations and improve project success rates."
+      "The Professional Agile Leadership (PAL I) course is designed for leaders who want to maximize the benefits of Agile within their organizations.",
+      "Participants learn how leadership behaviors impact value delivery, team performance, and organizational agility.",
+      "This interactive 2-day training provides practical insights into creating high-performing Agile cultures and improving enterprise agility."
     ],
     "whatIsTitle": "",
     "whatIsDescription": [],
-    "whatsIncludedTitle": "",
-    "whatsIncludedDescription": [],
-    "skillsTitle": "",
-    "skills": [],
-    "modesTitle": "",
-    "modesDescription": []
+    "whatsIncludedTitle": "What’s Included in This Course?",
+    "whatsIncludedDescription": [
+      "2-Day Course with Certified Scrum.org Trainers",
+      "PAL I Assessment Password (1 Attempt)",
+      "Official Scrum.org PAL-E Course Materials",
+      "14 PDU / 14 SEU Credits",
+      "Global Professional Agile Leadership Certification"
+    ],
+    "skillsTitle": "Skills Covered in PAL-E Training",
+    "skills": [
+      "Agile Leadership Mindset",
+      "Value Measurement & Optimization",
+      "Cultural Transformation Strategies",
+      "Scrum Framework for Leaders",
+      "Scaling Agile Leadership Impact",
+      "High-Performance Team Coaching"
+    ],
+    "modesTitle": "Training Delivery Modes",
+    "modesDescription": [
+      "Live Online Instructor-Led Classroom",
+      "Corporate Group Training Workshops",
+      "Interactive Case-Study Based Format"
+    ]
   };
 
-  const corporateData ={
-    "courseName": "Why Corporates Choose Us",
+  const corporateData = {
+    "courseName": "Why Simpliaxis for Corporates?",
     "label": "",
     "buttonText": "Corporate Group Enquiry",
-    "description": "Simpliaxis delivers customized corporate training programs designed to address specific organizational challenges. Our expert trainers provide industry-aligned modules that enhance workforce capabilities and help enterprises remain competitive."
+    "description": "We deliver enterprise-focused PAL I training tailored to leadership teams, enabling strategic alignment, cultural agility, and sustainable Agile transformation across organizations."
   };
 
   const courseMetadata = {
-    shortName: 'CSM',
-    shortNameAlt: 'A-CSM',
-    fullName: 'Advanced Certified Scrum Master (A-CSM®)',
-    fullNameAlt: 'Advance Certified Scrum Master (A-CSM)',
-    certificateName: 'Advanced Scrum Master',
+    shortName: 'PAL-E',
+    shortNameAlt: 'PAL I',
+    fullName: 'Professional Agile Leadership - Essentials (PAL-E)',
+    fullNameAlt: 'Professional Agile Leadership Certification',
+    certificateName: 'Professional Agile Leadership',
   };
 
   const sectionsLabels = {
@@ -616,11 +564,11 @@ const AgileAndScrumTraining = () => {
       outcomesTitle:
         `What are the Learning Outcomes of the ${heroData.courseName} Course?`,
       outcomesFooter:
-        "After completing your Certified Scrum Master® Certification, a wide selection of career options will open up, and one can explore enhancements in one's career path. One can lead to higher positions in the job profile and the organization.",
+        "Earning your PAL I certification demonstrates your capability to lead organizational agility and culture shifts, opening doors to high-level strategic and transformation leadership roles.",
     },
     prerequisites: {
       subtitle:
-        'What are the Prerequisites Required for Advanced Scrum Master Training?',
+        'What are the Prerequisites for PAL-E Certification Training?',
     },
     certificate: {
       mockupName: 'ALEX BRYANT',
@@ -628,23 +576,23 @@ const AgileAndScrumTraining = () => {
       titlePrefix: 'Earn Your',
       titleHighlight: 'Global',
       titleSuffix: 'Recognition',
-      issuerName: 'Scrum Alliance',
+      issuerName: 'Scrum.org',
       certificateType: 'Certificate of Mastery',
       certifyText: 'This is to certify that',
       requirementText:
         'Has successfully fulfilled all requirements to be recognized as an',
-      signer1Role: 'Certified Trainer',
-      signer2Role: 'Executive Director',
+      signer1Role: 'Certified Professional Scrum Trainer',
+      signer2Role: 'CEO, Scrum.org',
     },
   };
 
   const commonAttendeesList = [
-    'Scrum Masters',
-    'Team Leads',
-    'Development Managers',
-    'Delivery Managers',
-    'Product Owners',
-    'Agile Coaches',
+    "Senior Leaders",
+    "Executives and Directors",
+    "Managers Leading Agile Teams",
+    "Transformation Leaders",
+    "Agile Coaches",
+    "Organizational Decision Makers"
   ];
 
   const pageCaptions = {
@@ -659,7 +607,7 @@ const AgileAndScrumTraining = () => {
       referEarnText: 'Refer & Earn',
       enrolledSuffix: 'Enrolled',
       moneyBackText: '100% Money Back Guarantee',
-      ltpLabel: 'Global LTP of Scrum Alliance',
+      ltpLabel: 'Global Provider of Scrum.org',
       downloadBtnText: 'Download Brochure',
       viewSchedulesBtnText: 'View Schedules',
       freeAssessmentBtnText: 'Free Assesment',
@@ -695,7 +643,32 @@ const AgileAndScrumTraining = () => {
               <h3 className="text-2xl font-black text-[#001c3d] pt-4">
                 {overviewContent.whatsIncludedTitle}
               </h3>
-              <p>{overviewContent.whatsIncludedDescription}</p>
+              <ul className="list-disc pl-5 mt-2 space-y-2">
+                {overviewContent.whatsIncludedDescription.map((item, i) => (
+                  <li key={i}>{item}</li>
+                ))}
+              </ul>
+
+              <h3 className="text-2xl font-black text-[#001c3d] pt-4">
+                {overviewContent.skillsTitle}
+              </h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-2 mt-2">
+                {overviewContent.skills.map((skill, i) => (
+                  <div key={i} className="flex items-center gap-2">
+                    <span className="text-blue-500">✔</span>
+                    <span>{skill}</span>
+                  </div>
+                ))}
+              </div>
+
+              <h3 className="text-2xl font-black text-[#001c3d] pt-4">
+                {overviewContent.modesTitle}
+              </h3>
+              <ul className="list-disc pl-5 mt-2 space-y-2">
+                {overviewContent.modesDescription.map((mode, i) => (
+                  <li key={i}>{mode}</li>
+                ))}
+              </ul>
             </div>
           </div>
 
@@ -854,4 +827,4 @@ const AgileAndScrumTraining = () => {
   );
 };
 
-export default AgileAndScrumTraining;
+export default ProfessionalAgileLeadershipEssentialsCertificationTraining;

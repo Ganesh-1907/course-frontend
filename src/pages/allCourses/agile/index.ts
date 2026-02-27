@@ -11,6 +11,17 @@ export { default as PMIAgileCertifiedPractitionerPMIACP } from './PMI-Agile-Cert
 export { default as ProfessionalScrumMasterCertificationTraining } from './Professional-Scrum-Master-(PSM-I)-Certification-Training';
 export { default as CertifiedAgileScalingPractitioner1Training } from './Certified-Agile-Scaling-Practitioner-1-(CASP 1)-Training';
 export { default as AgileCoachingSkillsCertifiedFacilitatorTraining } from './Agile-Coaching-Skills-Certified-Facilitator-(CAF)-Training';
+export { default as ProfessionalScrumMasterAdvancedCertificationTraining } from './Professional-Scrum-Master-Advanced-(PSM A)-Certification-Training';
+export { default as ICAgileCertifiedProfessionalinAgileCoachingICPACCertificationTraining } from './ICAgile-Certified-Professional-in-Agile-Coaching-(ICP-ACC)-Certification-Training';
+export { default as ProfessionalScrumWithKanbanCertificationTraining } from './Professional-Scrum-with-Kanban-(PSK)-Certification-Training';
+export { default as ProfessionalScrumProductOwnerCertificationTraining } from './Professional-Scrum-Product-Owner-(PSPO)-Certification-Training';
+export { default as ScrumAtScaleCertificationTraining } from './Scrum@Scale-Certification-Training';
+export { default as ICAgileEnterpriseAgileCoachingCertificationTraining } from './ICAgile-Enterprise-Agile-Coaching-(ICP-CAT)-Certification-Training';
+export { default as ProfessionalAgileLeadershipEssentialsCertificationTraining } from './Professional-Agile-Leadership-Essentials-(PAL-E)-Certification-Training';
+export { default as BehaviourDrivenDevelopmentBDDTraining } from './Behaviour-Driven-Development-(BDD)-Training';
+
+
+
 // When you have 50 courses, just add more exports:
 // export { default as AgileCourse6 } from './AgileCourse6';
 // export { default as AgileCourse7 } from './AgileCourse7';
