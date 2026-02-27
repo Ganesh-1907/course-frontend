@@ -13,7 +13,7 @@ import {
 import { motion } from "framer-motion";
 
 interface Feature {
-  icon: React.ElementType;
+  // icon: React.ElementType;
   title: string;
   description: string;
 }
@@ -27,7 +27,7 @@ interface CourseWhySimpliaxisProps {
 
 const CourseWhySimpliaxis: React.FC<CourseWhySimpliaxisProps> = ({
   title = "Excellence Defined",
-  subtitle = "Why Choose Vivon?",
+  subtitle = "Why Choose Viovn?",
   description = "Empowering professionals with industry-leading expertise and holistic support systems.",
   features
 }) => {
@@ -49,7 +49,7 @@ const CourseWhySimpliaxis: React.FC<CourseWhySimpliaxisProps> = ({
               <span className="text-[12px] text-blue-600 font-black uppercase tracking-[0.2em]">{title}</span>
             </div>
             <h2 className="text-3xl md:text-5xl font-black text-[#001c3d] tracking-tight leading-[1.1]">
-              {subtitle.split("Vivon")[0]}<span className="text-blue-600">Vivon</span>{subtitle.split("Vivon")[1]}
+              {subtitle.split("Viovn")[0]}<span className="text-blue-600">Viovn</span>{subtitle.split("Viovn")[1]}
             </h2>
           </div>
           <p className="text-slate-500 font-medium text-[15px] max-w-sm leading-relaxed">
@@ -68,9 +68,9 @@ const CourseWhySimpliaxis: React.FC<CourseWhySimpliaxisProps> = ({
               className="group p-2 rounded-3xl hover:bg-white hover:shadow-xl hover:shadow-slate-200/50 transition-all duration-300"
             >
               <div className="flex gap-6 p-4">
-                <div className="flex-shrink-0 w-16 h-16 flex items-center justify-center bg-white rounded-2xl shadow-sm border border-slate-100 group-hover:scale-110 group-hover:bg-blue-600 transition-all duration-300 group-hover:border-blue-600">
-                  <feature.icon className="w-8 h-8 text-blue-600 group-hover:text-white transition-colors" />
-                </div>
+                {/* <div className="flex-shrink-0 w-16 h-16 flex items-center justify-center bg-white rounded-2xl shadow-sm border border-slate-100 group-hover:scale-110 group-hover:bg-blue-600 transition-all duration-300 group-hover:border-blue-600"> */}
+                  {/* <feature.icon className="w-8 h-8 text-blue-600 group-hover:text-white transition-colors" /> */}
+                {/* </div> */}
                 <div className="space-y-3">
                   <h3 className="text-[19px] font-black text-[#001c3d] group-hover:text-blue-600 transition-colors">
                     {feature.title}

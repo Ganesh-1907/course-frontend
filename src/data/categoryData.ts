@@ -12,6 +12,7 @@ export interface Course {
   image: string;
   badge?: string;
   nextDate?: string;
+  navigate?: string;
 }
 
 export interface FAQItem {
@@ -41,20 +42,49 @@ export interface CategoryData {
 const DEFAULT_COURSE_IMAGE = "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=400&h=300&fit=crop";
 let generatedCourseId = 10000;
 
+const COURSE_ROUTES: Record<string, string> = {
+  "Certified Scrum Master (CSM) Certification Training": "/course/csm-certificaton-training",
+  "Certified Scrum Product Owner (CSPO) Certification Training": "/course/cspo-certificaton-training",
+  "Advanced Certified Scrum Master (A-CSM) Certification Training": "/course/a-csm-certificaton-training",
+  "Advanced Certified Scrum Product Owner (A-CSPO) Certification Training": "/course/a-cspo-certificaton-training",
+  "Certified Scrum Developer (CSD) Certification Training": "/course/csd-certification-training",
+};
+
 const buildCourses = (category: string, titles: string[]): Course[] =>
-  titles.map((title) => ({
-    id: generatedCourseId++,
-    title,
-    category,
-    rating: 4.8,
-    enrolled: "1k+",
-    duration: "Self-paced",
-    format: "Live Virtual",
-    price: 299,
-    originalPrice: 499,
-    discount: 40,
-    image: DEFAULT_COURSE_IMAGE,
-  }));
+  titles.map((title) => {
+    let navigate = `/course/${category.toLowerCase().replace(/\s+/g, '-')}/${title.toLowerCase().replace(/[^\w\s-]/g, '').replace(/\s+/g, '-')}`;
+    
+    // Manual overrides with more robust checking
+    const processedTitle = title.trim();
+    if (processedTitle.includes("Certified Scrum Master (CSM) Certification Training")) {
+      navigate = "/course/csm-certificaton-training";
+    } else if (processedTitle.includes("Certified Scrum Product Owner (CSPO) Certification Training")) {
+      navigate = "/course/cspo-certificaton-training";
+    } else if (processedTitle.includes("Advanced Certified Scrum Master (A-CSM) Certification Training")) {
+      navigate = "/course/a-csm-certificaton-training";
+    } else if (processedTitle.includes("Advanced Certified Scrum Product Owner (A-CSPO) Certification Training")) {
+      navigate = "/course/a-cspo-certificaton-training";
+    } else if (processedTitle.includes("Certified Scrum Developer (CSD) Certification Training")) {
+      navigate = "/course/csd-certification-training";
+    }else if (processedTitle.includes("Agile and Scrum Training")) {
+      navigate = "/course/agile-and-scrum-training";
+    }
+    
+    return {
+      id: generatedCourseId++,
+      title,
+      category,
+      rating: 4.8,
+      enrolled: "1k+",
+      duration: "Self-paced",
+      format: "Live Virtual",
+      price: 299,
+      originalPrice: 499,
+      discount: 40,
+      image: DEFAULT_COURSE_IMAGE,
+      navigate,
+    };
+  });
 
 const buildCategory = (id: string, name: string, courseTitles: string[]): CategoryData => ({
   id,
@@ -312,6 +342,7 @@ export const categoryData: Record<string, CategoryData> = {
         badge: "Popular",
         image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300&fit=crop",
         nextDate: "Feb 22, 2026",
+        navigate: "/course/csm-certificaton-training",
       },
       {
         id: 2,
@@ -327,6 +358,7 @@ export const categoryData: Record<string, CategoryData> = {
         badge: "Trending",
         image: "https://images.unsplash.com/photo-1531482615713-2afd69097998?w=400&h=300&fit=crop",
         nextDate: "Feb 24, 2026",
+        navigate: "/allCourses/agile/Certified-Scrum-Product-Owner-(CSPO)-Certification-Training",
       }
     ],
     details: [
@@ -376,7 +408,8 @@ export const categoryData: Record<string, CategoryData> = {
         originalPrice: 990,
         discount: 50,
         badge: "Most Popular",
-        image: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=400&h=300&fit=crop"
+        image: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=400&h=300&fit=crop",
+        navigate: "/all-courses/project-management/pmp-certification-training"
       }
     ],
     details: [],

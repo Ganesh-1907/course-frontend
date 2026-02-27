@@ -416,55 +416,38 @@ const AdvancedCertifiedScrumMasterCertificationTraining = () => {
 
   const courseWhySimpliaxis = [
     {
-      icon: Globe,
-      title: 'Global Recognition',
-      description:
-        'Every Course is recognized by the most reputable certification organizations globally, ensuring credibility and acceptance across all industries. Our A-CSM certification, provided by the Scrum Alliance, offers global recognition in Scrum practices.',
+      "title": "Global Recognition",
+      "description": "Every Course is recognized by the most reputable certification organizations globally, ensuring credibility and acceptance across all industries. Our A-CSM certification, provided by the Scrum Alliance, offers global recognition in Scrum practices."
     },
     {
-      icon: User,
-      title: 'Expert Trainers',
-      description:
-        'Gain knowledge from trained and experienced trainers who impart real-world business insights as well as practical experience to the classes. Experienced CSTs deliver our Advanced Certified ScrumMaster (A-CSM) training, bringing over 15 years of experience.',
+      "title": "Expert Trainers",
+      "description": "Gain knowledge from trained and experienced trainers who impart real-world business insights as well as practical experience to the classes. Experienced CSTs deliver our Advanced Certified ScrumMaster (A-CSM) training, bringing over 15 years of experience."
     },
     {
-      icon: BookOpen,
-      title: 'Flexible Learning',
-      description:
-        'Our Advanced Certified ScrumMaster (A-CSM) certification training offers a variety of methods of learning, such as online, 1:1 doubt clearing, and corporate Training, that meet the needs of different individuals and their schedules.',
+      "title": "Flexible Learning",
+      "description": "Our Advanced Certified ScrumMaster (A-CSM) certification training offers a variety of methods of learning, such as online, 1:1 doubt clearing, and corporate Training, that meet the needs of different individuals and their schedules."
     },
     {
-      icon: Network,
-      title: 'Lifetime Access',
-      description:
-        'Enjoy all-year access to the recordings of A-CSM training sessions, course materials, and study tools.',
+      "title": "Lifetime Access",
+      "description": "Enjoy all-year access to the recordings of A-CSM training sessions, course materials, and study tools."
     },
     {
-      icon: Users,
-      title: 'Proven Track Record',
-      description:
-        'We are a reputable training provider with extensive experience in helping professional and business organizations enhance their capabilities and achieve their career objectives. You can trust us regarding your A-CSM training needs.',
+      "title": "Proven Track Record",
+      "description": "We are a reputable training provider with extensive experience in helping professional and business organizations enhance their capabilities and achieve their career objectives. You can trust us regarding your A-CSM training needs."
     },
     {
-      icon: Laptop,
-      title: 'End-to-End Assistance',
-      description:
-        'Vivon provides ongoing support before, during, and after training, including study materials, guidance for participants on A-CSM certification, and assistance with career choices.',
+      "title": "End-to-End Assistance",
+      "description": "Simpliaxis provides ongoing support before, during, and after training, including study materials, guidance for participants on A-CSM certification, and assistance with career choices."
     },
     {
-      icon: Headset,
-      title: 'Interactive and Engaging Training',
-      description:
-        'Our Advanced Certified ScrumMaster (A-CSM) training sessions are designed to be highly interactive, featuring real-world scenarios with group participation and Q&A sessions to facilitate a deeper understanding of the material.',
+      "title": "Interactive and Engaging Training",
+      "description": "Our Advanced Certified ScrumMaster (A-CSM) training sessions are designed to be highly interactive, featuring real-world scenarios with group participation and Q&A sessions to facilitate a deeper understanding of the material."
     },
     {
-      icon: TrendingUp,
-      title: 'Career Growth',
-      description:
-        'A-CSM certification is the new and additional certification introduced by Scrum Alliance. If you are working in a Scrum Master role, it can be a skill development process that helps in your career advancement and opens up multiple opportunities.',
-    },
-  ];
-
+      "title": "Career Growth",
+      "description": "A-CSM certification is the new and additional certification introduced by Scrum Alliance. If you are working in a Scrum Master role, it can be a skill development process that helps in your career advancement and opens up multiple opportunities."
+    }
+  ] ;
   const sidePanelSchedules = [
     {
       courseCode: 'SCM',
@@ -557,7 +540,7 @@ const AdvancedCertifiedScrumMasterCertificationTraining = () => {
   const sectionsLabels = {
     careerUpliftment: {
       outcomesTitle:
-        'What are the Learning Outcomes of the CSM Certification Course?',
+        `What are the Learning Outcomes of the ${heroData.courseName} Course?`,
       outcomesFooter:
         "After completing your Certified Scrum Master® Certification, a wide selection of career options will open up, and one can explore enhancements in one's career path. One can lead to higher positions in the job profile and the organization.",
     },
@@ -643,11 +626,11 @@ const AdvancedCertifiedScrumMasterCertificationTraining = () => {
           </div>
 
           <CourseHighlights
-            courseName={courseMetadata.shortName}
+            courseName={heroData.courseName}
             highlights={highlights}
           />
           <CourseCareerUpliftment
-            courseName={courseMetadata.shortName}
+            courseName={heroData.courseName}
             stats={careerStats}
             attendees={attendees}
             companies={companies}
@@ -664,12 +647,12 @@ const AdvancedCertifiedScrumMasterCertificationTraining = () => {
       content: (
         <div className="space-y-6">
           <CourseBenefits
-            courseName={courseMetadata.shortName}
+            courseName={heroData.courseName}
             individualBenefits={individualBenefits}
             corporateBenefits={corporateBenefits}
           />
           <CourseCommonAttendees
-            courseName={courseMetadata.shortName}
+            courseName={heroData.courseName}
             attendees={commonAttendeesList}
           />
         </div>
@@ -684,9 +667,11 @@ const AdvancedCertifiedScrumMasterCertificationTraining = () => {
             courseName={courseMetadata.shortNameAlt}
             prerequisites={prerequisites}
             subtitle={sectionsLabels.prerequisites.subtitle}
+            title={heroData.courseName}
+            
           />
           <CourseStepByStepProcess
-            courseName={courseMetadata.fullNameAlt}
+            courseName={heroData.courseName}
             steps={certificationSteps}
           />
           <CourseCertificate
@@ -764,7 +749,7 @@ const AdvancedCertifiedScrumMasterCertificationTraining = () => {
               <CourseTabs tabs={tabs} />
 
               <CourseLearningObjectives
-                courseName={courseMetadata.shortNameAlt}
+                courseName={heroData.courseName}
                 objectives={learningObjectives}
               />
 
