@@ -28,7 +28,15 @@ import {
   PMIAgileCertifiedPractitionerPMIACP,
   ProfessionalScrumMasterCertificationTraining,
   CertifiedAgileScalingPractitioner1Training,
-  AgileCoachingSkillsCertifiedFacilitatorTraining
+  AgileCoachingSkillsCertifiedFacilitatorTraining,
+  ProfessionalScrumMasterAdvancedCertificationTraining,
+  ICAgileCertifiedProfessionalinAgileCoachingICPACCertificationTraining,
+  ProfessionalScrumWithKanbanCertificationTraining,
+  ProfessionalScrumProductOwnerCertificationTraining,
+  ScrumAtScaleCertificationTraining,
+  ICAgileEnterpriseAgileCoachingCertificationTraining,
+  ProfessionalAgileLeadershipEssentialsCertificationTraining,
+  BehaviourDrivenDevelopmentBDDTraining
 } from './pages/allCourses/agile';
 
 const queryClient = new QueryClient();
@@ -115,6 +123,50 @@ const App = () => (
             path="/course/agile-coaching-skills-certified-facilitator-caf-training"
             element={<AgileCoachingSkillsCertifiedFacilitatorTraining />}
           />
+
+          <Route
+            path="/course/professional-scrum-master-advanced-psm-a-certification-training"
+            element={<ProfessionalScrumMasterAdvancedCertificationTraining />}
+          />
+
+          <Route
+            path="/course/icagile-certified-professional-in-agile-coaching-icp-acc-certification-training"
+            element={<ICAgileCertifiedProfessionalinAgileCoachingICPACCertificationTraining />}
+          />
+
+          <Route
+            path="/course/professional-scrum-with-kanban-psk-certification-training"
+            element={<ProfessionalScrumWithKanbanCertificationTraining />}
+          />
+
+          <Route
+            path="/course/professional-scrum-product-owner-certification-training"
+            element={<ProfessionalScrumProductOwnerCertificationTraining />}
+          />
+
+          <Route
+            path="/course/scrum-at-scale-certification-training"
+            element={<ScrumAtScaleCertificationTraining />}
+          />
+
+          <Route
+            path="/course/icagile-enterprise-agile-coaching-icp-cat-certification-training"
+            element={<ICAgileEnterpriseAgileCoachingCertificationTraining />}
+          />
+
+          <Route
+            path="/course/professional-agile-leadership-essentials-pal-e-certification-training"
+            element={<ProfessionalAgileLeadershipEssentialsCertificationTraining />}
+          />
+
+          <Route
+            path="/course/behaviour-driven-development-bdd-training"
+            element={<BehaviourDrivenDevelopmentBDDTraining />}
+          />
+          
+
+
+          {/*------------------------ Agile Courses ending----------------------- */}
 
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
