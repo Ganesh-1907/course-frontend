@@ -24,7 +24,11 @@ import {
   AdvancedCertifiedScrumMasterCertificationTraining,
   AdvancedCertifiedScrumProductOwnerCertificationTraining,
   CertifiedScrumDeveloperCertificationTraining,
-  AgileCourse5,
+  AgileAndScrumTraining,
+  PMIAgileCertifiedPractitionerPMIACP,
+  ProfessionalScrumMasterCertificationTraining,
+  CertifiedAgileScalingPractitioner1Training,
+  AgileCoachingSkillsCertifiedFacilitatorTraining
 } from './pages/allCourses/agile';
 
 const queryClient = new QueryClient();
@@ -86,6 +90,30 @@ const App = () => (
           <Route
             path="/course/csd-certification-training"
             element={<CertifiedScrumDeveloperCertificationTraining />}
+          />
+
+          <Route
+            path="/course/agile-and-scrum-training"
+            element={<AgileAndScrumTraining />}
+          />
+
+          <Route
+            path="/course/pmi-agile-certified-practitioner-pmi-acp-certification-training"
+            element={<PMIAgileCertifiedPractitionerPMIACP />}
+          />
+          <Route
+            path="/course/psm-i-certification-training"
+            element={<ProfessionalScrumMasterCertificationTraining />}
+          />
+
+          <Route
+            path="/course/casp-1-certification-training"
+            element={<CertifiedAgileScalingPractitioner1Training />}
+          />
+
+          <Route
+            path="/course/agile-coaching-skills-certified-facilitator-caf-training"
+            element={<AgileCoachingSkillsCertifiedFacilitatorTraining />}
           />
 
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
