@@ -56,6 +56,7 @@ const buildCourses = (category: string, titles: string[]): Course[] =>
     
     // Manual overrides with more robust checking
     const processedTitle = title.trim();
+   // ---------------------------------- Agile -------------------------------------------
     if (processedTitle.includes("Certified Scrum Master (CSM) Certification Training")) {
       navigate = "/course/csm-certificaton-training";
     } else if (processedTitle.includes("Certified Scrum Product Owner (CSPO) Certification Training")) {
@@ -68,6 +69,14 @@ const buildCourses = (category: string, titles: string[]): Course[] =>
       navigate = "/course/csd-certification-training";
     }else if (processedTitle.includes("Agile and Scrum Training")) {
       navigate = "/course/agile-and-scrum-training";
+    }else if (processedTitle.includes("PMI-Agile Certified Practitioner (PMI-ACP) Certification Training")) {
+      navigate = "/course/pmi-agile-certified-practitioner-pmi-acp-certification-training";
+    }else if (processedTitle.includes("Professional Scrum Master (PSM I) Certification Training")) {
+      navigate = "/course/psm-i-certification-training";
+    }else if (processedTitle.includes("Certified Agile Scaling Practitioner (CASP) Training")) {
+      navigate = "/course/casp-1-certification-training";
+    }else if (processedTitle.includes("Agile Coaching Skills - Certified Facilitator (CAF) Training")) {
+      navigate = "/course/agile-coaching-skills-certified-facilitator-caf-training";
     }
     
     return {
