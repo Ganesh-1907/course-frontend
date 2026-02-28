@@ -16,6 +16,7 @@ import SubCategoryPage from "./pages/SubCategoryPage";
 import DemoOne from "./pages/DemoOne";
 import NotFound from "./pages/NotFound";
 
+
 // ✨ BARREL EXPORT IMPORT - Import all agile courses from one place!
 // Instead of 5 separate import lines, we import all at once from the index.ts
 import {
@@ -24,7 +25,22 @@ import {
   AdvancedCertifiedScrumMasterCertificationTraining,
   AdvancedCertifiedScrumProductOwnerCertificationTraining,
   CertifiedScrumDeveloperCertificationTraining,
-  AgileCourse5,
+  ICAgileSystemsCoachingCertificationTraining,
+  ICAgilePeopleDevelopmentCertificationTraining,
+  ICAgileLeanPortfolioManagementCertificationTraining,
+  ICAgileFoundationsOfAICertificationTraining,
+  ICAgileAgileTeamFacilitationCertificationTraining,
+  ApplyingProfessionalKanbanCertificationCourse,
+  ICAgileAgileProductOwnershipICPAPOCertificationTraining,
+  PSPBMSkillsCertificationCourse,
+  ICAgileAgileProjectDeliveryManagementICPAPMCertificationTraining,
+  ICAgileProductManagementCertificationTraining,
+  ICAgileCertifiedAgileLeadershipTraining,
+  JiraSoftwareTrainingforAgileProjects,
+  AgileProjectManagementCourse,
+  CertifiedScrumProfessionalProductOwnerCertificationTraining,
+
+
 } from './pages/allCourses/agile';
 
 const queryClient = new QueryClient();
@@ -87,6 +103,69 @@ const App = () => (
             path="/course/csd-certification-training"
             element={<CertifiedScrumDeveloperCertificationTraining />}
           />
+          <Route
+            path="/course/icagile-systems-coaching-certification-training"
+            element={<ICAgileSystemsCoachingCertificationTraining />}
+          />
+          <Route
+            path="/course/icagile-people-development-certification-training"
+            element={<ICAgilePeopleDevelopmentCertificationTraining />}
+          />
+          <Route
+            path="/course/icagile-lean-portfolio-management-certification-training"
+            element={<ICAgileLeanPortfolioManagementCertificationTraining />}
+          />
+          <Route
+            path="/course/icagile-foundations-of-ai-certification-training"
+            element={<ICAgileFoundationsOfAICertificationTraining />}
+          />
+
+          <Route
+            path="/course/icagile-agile-team-facilitation-certification-training"
+            element={<ICAgileAgileTeamFacilitationCertificationTraining />}
+          />
+          <Route
+            path="/course/applying-professional-kanban-apk-certification-course"
+            element={<ApplyingProfessionalKanbanCertificationCourse />}
+          />
+          <Route
+            path="/course/icagile-agile-product-ownership-icp-apo-certification-training"
+            element={<ICAgileAgileProductOwnershipICPAPOCertificationTraining />}
+          />
+          <Route
+            path="/course/pspbm-skills-certification-course"
+            element={<PSPBMSkillsCertificationCourse />}
+          />
+          <Route
+            path="/course/icagile-agile-project-delivery-management-icp-apm-certification-training"
+            element={<ICAgileAgileProjectDeliveryManagementICPAPMCertificationTraining />}
+          />
+          <Route
+            path="/course/ICAgile-Product-Management-(ICP-PDM)-Certification-Training"
+            element={<ICAgileProductManagementCertificationTraining />}
+          />
+          <Route
+            path="/course/icagile-certified-agile-leadership-icp-lea-training"
+            element={<ICAgileCertifiedAgileLeadershipTraining />}
+          />
+          <Route
+            path="/course/jira-software-training-for-agile-projects"
+            element={<JiraSoftwareTrainingforAgileProjects />}
+          />
+          <Route
+            path="/course/agile-project-management-course"
+            element={<AgileProjectManagementCourse />}
+          />
+          <Route
+            path="/course/certified-scrum-professional-product-owner-csp-po-certification-training"
+            element={<CertifiedScrumProfessionalProductOwnerCertificationTraining />}
+          />
+
+
+
+
+
+
 
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
