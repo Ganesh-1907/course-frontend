@@ -292,67 +292,105 @@ const AgileAndScrumTraining = () => {
   ];
 
   const faqCategories = [
-    {
-      id: 'courses',
-      label: 'FAQ Courses',
-      items: [
-        {
-          question:
-            'What is an Advanced Certified ScrumMaster (A-CSM) Certification?',
-          answer:
-            'A-CSM is an advanced-level Scrum certification from Scrum Alliance that validates deeper knowledge of Scrum principles, Agile facilitation, coaching techniques, and team leadership skills beyond the foundational CSM level.',
-        },
-        {
-          question: 'What are the prerequisites for A-CSM certification?',
-          answer:
-            'To earn A-CSM certification, you must hold an active Certified ScrumMaster (CSM) certification and have at least 12 months of Scrum Master experience within the past five years.',
-        },
-        {
-          question: 'How long is the A-CSM certification valid?',
-          answer:
-            'The A-CSM certification is valid for two years. It can be renewed by earning Scrum Education Units (SEUs) and paying the renewal fee through Scrum Alliance.',
-        },
-        {
-          question: 'Is there an exam for A-CSM certification?',
-          answer:
-            'No, there is no formal exam for A-CSM. Certification is awarded after completing the required training and fulfilling Scrum Alliance criteria.',
-        },
-      ],
-    },
-    {
-      id: 'payment',
-      label: 'FAQ Payment',
-      items: [
-        {
-          question: 'What payment methods are available for A-CSM training?',
-          answer:
-            'We accept major credit cards, debit cards, net banking, PayPal, and bank transfers. Corporate participants can opt for invoice-based payments.',
-        },
-        {
-          question: 'Can I pay in installments?',
-          answer:
-            'Yes, installment options may be available depending on the training schedule and region. Please contact the support team for details.',
-        },
-      ],
-    },
-    {
-      id: 'generic',
-      label: 'FAQ Generic',
-      items: [
-        {
-          question:
-            'Will I receive a certificate after completing A-CSM training?',
-          answer:
-            'Yes, once you complete the training and meet Scrum Alliance requirements, you will receive your Advanced Certified ScrumMaster certification.',
-        },
-        {
-          question: 'Do you offer corporate A-CSM training?',
-          answer:
-            'Yes, we provide customized corporate training programs tailored to organizational needs.',
-        },
-      ],
-    },
-  ];
+  {
+    "id": "category_1",
+    "label": "Agile & Scrum Certification FAQs",
+    "items": [
+      {
+        "question": "What is Agile and Scrum Training?",
+        "answer": "Agile and Scrum Training provides a comprehensive understanding of Agile principles and the Scrum framework. It helps professionals learn how to deliver value incrementally, collaborate effectively, and adapt quickly to changing requirements."
+      },
+      {
+        "question": "Who should attend Agile and Scrum Training?",
+        "answer": "This course is ideal for Developers, Testers, Project Managers, Product Owners, Scrum Masters, Business Analysts, and anyone involved in Agile projects."
+      },
+      {
+        "question": "Are there any prerequisites for Agile and Scrum Training?",
+        "answer": "There are no strict prerequisites. However, having basic knowledge of software development or project management concepts is beneficial."
+      },
+      {
+        "question": "What will I learn in Agile and Scrum Training?",
+        "answer": "You will learn Agile values and principles, Scrum roles (Scrum Master, Product Owner, Developers), Scrum events, artifacts, sprint planning, backlog management, estimation techniques, and Agile best practices."
+      },
+      {
+        "question": "Is there an exam included in the training?",
+        "answer": "Depending on the certification track, an assessment may be included. Exam details such as number of questions, duration, and passing score vary based on the certification body."
+      },
+      {
+        "question": "How long is the Agile and Scrum certification valid?",
+        "answer": "Certification validity depends on the certifying organization. Some certifications are lifetime, while others require renewal through SEUs or PDUs."
+      },
+      {
+        "question": "How many PDUs and SEUs can I earn?",
+        "answer": "Participants can typically earn up to 14–16 PDUs and SEUs upon completion of the 2-day Agile and Scrum training program."
+      },
+      {
+        "question": "Is Agile and Scrum certification globally recognized?",
+        "answer": "Yes, Agile and Scrum certifications are globally recognized and highly valued across industries adopting Agile methodologies."
+      }
+    ]
+  },
+  {
+    "id": "category_2",
+    "label": "Training & Course Delivery FAQs",
+    "items": [
+      {
+        "question": "What is the duration of Agile and Scrum Training?",
+        "answer": "The training is typically delivered over 2 days (approximately 16 hours) of instructor-led sessions."
+      },
+      {
+        "question": "Is the training practical or theoretical?",
+        "answer": "The training is highly interactive and includes case studies, group activities, simulations, sprint exercises, and real-world scenarios."
+      },
+      {
+        "question": "Do I get hands-on Scrum experience during training?",
+        "answer": "Yes, participants engage in practical Scrum simulations including sprint planning, daily scrum exercises, backlog refinement, and retrospectives."
+      },
+      {
+        "question": "Is online training available?",
+        "answer": "Yes, Agile and Scrum training is available in live virtual instructor-led mode as well as corporate onsite programs."
+      },
+      {
+        "question": "Do you provide corporate Agile and Scrum training?",
+        "answer": "Yes, we offer customized corporate training tailored to organizational needs and Agile transformation goals."
+      },
+      {
+        "question": "Will I receive study materials?",
+        "answer": "Yes, participants receive comprehensive course materials, templates, and supporting learning resources."
+      }
+    ]
+  },
+  {
+    "id": "category_3",
+    "label": "Payment & Enrollment FAQs",
+    "items": [
+      {
+        "question": "How do I enroll in Agile and Scrum Training?",
+        "answer": "Choose your preferred schedule, complete the registration process, make the payment, and you will receive confirmation with course access details."
+      },
+      {
+        "question": "What payment methods are accepted?",
+        "answer": "We accept credit cards, debit cards, net banking, wire transfers, PayPal, Stripe, and other secure payment methods."
+      },
+      {
+        "question": "Do you offer installment payment options?",
+        "answer": "Yes, installment options may be available. Please contact support for detailed payment plans."
+      },
+      {
+        "question": "Are there group or corporate discounts available?",
+        "answer": "Yes, we provide special pricing for corporate teams and group enrollments."
+      },
+      {
+        "question": "Will I receive a payment receipt?",
+        "answer": "Yes, you will receive an official invoice and confirmation email after successful payment."
+      },
+      {
+        "question": "What is your refund policy?",
+        "answer": "Refunds are generally not provided. However, participants may reschedule their training as per policy terms."
+      }
+    ]
+  }
+];
   const courseFeatures = [
     {
       icon: Users,

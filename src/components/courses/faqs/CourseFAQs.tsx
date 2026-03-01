@@ -35,7 +35,7 @@ const CourseFAQs: React.FC<CourseFAQsProps> = ({
   courseName,
   title = "Learning Resource",
   subtitle = "Frequently Asked Questions",
-  description = `Everything you need to know about the ${courseName} certification and training process.`,
+  description = ``,
   footerTitle = "Still have questions?",
   footerDescription = "Our team of experts is ready to help you plan your career path.",
   footerButtonText = "Speak to an Expert",
