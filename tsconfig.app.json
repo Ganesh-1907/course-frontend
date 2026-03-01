@@ -27,5 +27,5 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["src", "src/pages/allCourses/agile/Certified-Scrum-Developer-(CSD)-Certification-Training.tsx", "src/pages/allCourses/agile/Agile-and-Scrum-Training.tsx"]
+  "include": ["src", "src/pages/allCourses/agile/Certified-Scrum-Developer-(CSD)-Certification-Training.tsx", "src/pages/allCourses/agile/Agile-and-Scrum-Training.tsx", "src/pages/allCourses/agile/Professional-Agile-Leadership-Essentials-(PAL-E)-Certification-Training.tsx"]
 }

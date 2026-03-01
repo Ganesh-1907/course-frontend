@@ -19,11 +19,11 @@ import CourseTrainers from "@/components/courses/CourseTrainers";
 import CourseFAQs from "@/components/courses/faqs/CourseFAQs";
 import CourseWhySimpliaxis from "@/components/courses/CourseWhySimpliaxis";
 
-import { 
-  Users, 
-  Monitor, 
-  Settings, 
-  UserCheck, 
+import {
+  Users,
+  Monitor,
+  Settings,
+  UserCheck,
   Map,
   Award,
   BookOpen,
@@ -39,61 +39,60 @@ import {
   Star
 } from "lucide-react";
 
-const AgileAndScrumTraining = () => {
-  const highlights =  [
-    { "text": "8 Hours of Live Instructor-Led Training" },
-    { "text": "Earn 8 PDUs and 8 SEUs" },
-    { "text": "Delivered by Certified Scrum Trainers (CSTs)" },
-    { "text": "Comprehensive Coverage of Agile and Scrum Fundamentals" },
-    { "text": "Hands-On Practical Exercises and Case Studies" },
-    { "text": "Course Completion Certificate from Simpliaxis" },
-    { "text": "24/7 Post-Training Support" },
-    { "text": "Dedicated Doubt-Clearing Sessions" }
+const ICAgileAgileTeamFacilitationCertificationTraining = () => {
+  const highlights = [
+    { "text": "14 hours of structured Agile facilitation training" },
+    { "text": "Earn 14 PDUs" },
+    { "text": "Instructor-led interactive learning sessions" },
+    { "text": "ICAgile-accredited courseware and materials" },
+    { "text": "Hands-on facilitation practice and simulations" },
+    { "text": "Lifetime certification validity" },
+    { "text": "Post-training guidance and support" }
   ];
 
   const individualBenefits = [
     {
-      "title": "Improved Adaptability",
-      "description": "Respond effectively to changing project requirements."
+      "title": "Individuals Benefits",
+      "description": "Develop strong facilitation skills to plan and guide Agile meetings effectively."
     },
     {
-      "title": "Enhanced Collaboration",
-      "description": "Work efficiently within cross-functional Agile teams."
+      "title": "Individuals Benefits",
+      "description": "Strengthen Agile leadership by enabling collaboration without authority."
     },
     {
-      "title": "Higher Productivity",
-      "description": "Increase efficiency and deliver value consistently."
+      "title": "Individuals Benefits",
+      "description": "Gain confidence handling team dynamics, resistance, and conflict."
     },
     {
-      "title": "Stronger Problem-Solving Skills",
-      "description": "Develop analytical thinking through Agile practices."
+      "title": "Individuals Benefits",
+      "description": "Improve professional credibility with the globally recognized ICP-ATF certification."
     },
     {
-      "title": "Career Growth Opportunities",
-      "description": "Unlock new career paths in Agile and Scrum roles."
+      "title": "Individuals Benefits",
+      "description": "Expand career opportunities in Scrum Master, Agile Coach, and facilitation roles."
     }
   ];
 
   const corporateBenefits = [
     {
-      "title": "Faster Project Delivery",
-      "description": "Accelerate time-to-market using Agile methodologies."
+      "title": "Corporate Benefits",
+      "description": "Improve meeting effectiveness through structured facilitation practices."
     },
     {
-      "title": "Improved Customer Satisfaction",
-      "description": "Deliver value-driven solutions aligned with customer needs."
+      "title": "Corporate Benefits",
+      "description": "Increase team engagement and collaboration across Agile teams."
     },
     {
-      "title": "Enhanced Product Quality",
-      "description": "Ensure continuous improvement through iterative development."
+      "title": "Corporate Benefits",
+      "description": "Enable better and faster team decision-making."
     },
     {
-      "title": "Greater Employee Engagement",
-      "description": "Encourage team ownership and collaboration."
+      "title": "Corporate Benefits",
+      "description": "Reduce conflict and miscommunication within teams."
     },
     {
-      "title": "Reduced Project Risk",
-      "description": "Identify and mitigate risks early through continuous feedback."
+      "title": "Corporate Benefits",
+      "description": "Build stronger self-organizing and autonomous Agile teams."
     }
   ];
 
@@ -106,14 +105,15 @@ const AgileAndScrumTraining = () => {
 
   const attendees = [
     {
-      group: [
-        'Scrum Masters',
-        'Delivery Managers',
-        'Product Owners',
-        'Agile Coaches',
-      ],
-    },
-    { group: ['Team Leads', 'Development Managers'] },
+      "group": [
+        "Facilitate Agile meetings with clear objectives and balanced participation",
+        "Design collaborative workshops that produce actionable outcomes",
+        "Apply facilitation tools to improve engagement and ownership",
+        "Manage group dynamics while maintaining psychological safety",
+        "Support self-organization without imposing solutions",
+        "Promote continuous improvement through structured reflection and feedback"
+      ]
+    }
   ];
 
   const companies = [
@@ -148,249 +148,120 @@ const AgileAndScrumTraining = () => {
   ];
 
   const outcomes = [
-    "Develop a strong foundation in Agile principles and Scrum practices.",
-    "Apply Scrum roles, artifacts, and ceremonies effectively in real projects.",
-    "Use Agile estimation techniques such as Story Points and Planning Poker.",
-    "Monitor progress using Agile metrics like burn-down and burn-up charts.",
-    "Understand scaling approaches for enterprise-level Agile implementation."
+    "Facilitate Agile team meetings with clarity and structure",
+    "Design effective collaborative workshops aligned with Agile objectives",
+    "Improve engagement using proven facilitation techniques",
+    "Manage group dynamics and conflict constructively",
+    "Support team self-organization and alignment",
+    "Drive continuous improvement through reflective practices"
   ];
-
   const prerequisites = [
-    "No prior experience is required to enroll in this Agile and Scrum Training.",
-    "Ideal for beginners and professionals planning to pursue certifications such as CSM, CSPO, PSM, or SAFe Scrum Master."
+    'No mandatory prerequisites are required.',
+    'Basic understanding of Scrum principles is recommended.',
+    'Completion of formal training by a Scrum Alliance-approved CSD trainer is required.',
   ];
 
   const certificationSteps = [
     {
-      title: 'Attend Training',
-      description:
-        'Complete the 16-hour A-CSM training delivered by Scrum Alliance-accredited trainers.',
+      "title": "Join the Training",
+      "description": "Enroll in an ICAgile-authorized ICP-ATF training program."
     },
     {
-      title: 'Validate Experience',
-      description: 'Confirm at least 12 months of Scrum Master experience.',
+      "title": "Practice Facilitation Skills",
+      "description": "Participate in guided exercises, simulations, and collaborative activities."
     },
     {
-      title: 'Accept License',
-      description:
-        'Log in to Scrum Alliance and acknowledge the license agreement.',
+      "title": "Complete Assessments",
+      "description": "Actively participate in ongoing assessments and practical evaluations."
     },
     {
-      title: 'Download Certificate',
-      description:
-        'Receive and download your Advanced Certified ScrumMaster credential.',
-    },
+      "title": "Earn Certification",
+      "description": "Receive the ICAgile Certified Professional – Agile Team Facilitation (ICP-ATF) credential upon completion."
+    }
   ];
 
-  const curriculumModules =[
+  const curriculumModules = [
     {
-      "title": "Module 1: Introduction to Agile",
+      "title": "Module 1: Agile Team Facilitation Foundations",
       "topics": [
-        "Evolution of Agile",
-        "Traditional vs Agile Project Management",
-        "Benefits of Agile Methodology"
+        "Facilitation fundamentals and Agile facilitation mindset",
+        "Facilitator development path",
+        "Assessing facilitator effectiveness",
+        "Serving Agile teams effectively"
       ]
     },
     {
-      "title": "Module 2: Agile Foundations",
+      "title": "Module 2: Designing and Conducting Facilitated Sessions",
       "topics": [
-        "Agile Manifesto",
-        "Agile Values and Principles",
-        "Customer Collaboration and Iterative Delivery"
+        "Encouraging full team participation",
+        "Facilitating collaborative conversations",
+        "Creating collaborative environments",
+        "Meeting organization tools and facilitator guides"
       ]
     },
     {
-      "title": "Module 3: Business Value in Agile",
+      "title": "Module 3: Facilitating Agile Framework Meetings",
       "topics": [
-        "User Stories and the 3Cs",
-        "Prioritization Techniques",
-        "Minimum Viable Product (MVP)"
+        "Facilitation plans for Scrum events",
+        "Facilitating retrospectives",
+        "Adapting facilitation based on team maturity",
+        "Scrum values and principles"
       ]
     },
     {
-      "title": "Module 4: Agile Frameworks",
+      "title": "Module 4: Facilitation of Key Agile Meetings",
       "topics": [
-        "Scrum Framework",
-        "Kanban",
-        "Extreme Programming (XP)",
-        "Feature-Driven Development (FDD)"
-      ]
-    },
-    {
-      "title": "Module 5: Agile Project Management",
-      "topics": [
-        "APM Framework Phases",
-        "Envision, Speculate, Explore, Adapt, Close"
-      ]
-    },
-    {
-      "title": "Module 6: Scrum Framework Deep Dive",
-      "topics": [
-        "Scrum Roles",
-        "Scrum Artifacts",
-        "Scrum Events"
-      ]
-    },
-    {
-      "title": "Module 7: Agile Estimation",
-      "topics": [
-        "Story Points",
-        "Planning Poker",
-        "T-Shirt Sizing"
-      ]
-    },
-    {
-      "title": "Module 8: Agile Planning and Tracking",
-      "topics": [
-        "Release Planning",
-        "Iteration Planning",
-        "Burn-down and Burn-up Charts"
-      ]
-    },
-    {
-      "title": "Module 9: Scaling Agile",
-      "topics": [
-        "SAFe",
-        "DAD",
-        "LeSS"
-      ]
-    },
-    {
-      "title": "Module 10: Agile Career Path",
-      "topics": [
-        "Agile Certifications",
-        "Enterprise Agile Roles"
+        "Facilitation planning for Sprint Planning and Review",
+        "Backlog refinement facilitation",
+        "Adjusting facilitation based on context",
+        "Applying facilitation in real team scenarios"
       ]
     }
   ];
 
   const learningObjectives = [
     {
-      "title": "Agile Fundamentals",
-      "description": "Understand Agile values and principles and explore frameworks such as Scrum, Kanban, and XP."
+      "title": "Understand the Role of an Agile Team Facilitator",
+      "description": "Develop clarity on the facilitator role and how it differs from traditional leadership approaches."
     },
     {
-      "title": "User Stories and Business Value",
-      "description": "Learn how to create effective user stories and prioritize development based on customer value."
+      "title": "Learn Core Facilitation Mindsets",
+      "description": "Build strong facilitation principles such as neutrality, transparency, and shared ownership."
     },
     {
-      "title": "Agile Planning",
-      "description": "Master product planning, release planning, and iteration planning techniques."
+      "title": "Explore Agile Facilitation Techniques",
+      "description": "Practice methods used in Agile ceremonies, workshops, and collaborative sessions."
     },
     {
-      "title": "Scrum Events",
-      "description": "Gain clarity on Scrum ceremonies including Sprint Planning, Daily Scrum, Sprint Review, and Retrospective."
+      "title": "Design Effective Team Sessions",
+      "description": "Structure meetings and workshops with clear objectives, flow, and expected outcomes."
     },
     {
-      "title": "Estimation and Metrics",
-      "description": "Apply estimation techniques and measure performance using Agile metrics."
+      "title": "Understand Group Dynamics",
+      "description": "Recognize how team behaviors and interactions impact collaboration."
     },
     {
-      "title": "Scaling Agile",
-      "description": "Learn how to scale Agile practices successfully across large organizations."
+      "title": "Create Inclusive Environments",
+      "description": "Promote participation, psychological safety, and balanced contribution."
+    },
+    {
+      "title": "Develop Observation and Adaptation Skills",
+      "description": "Adapt facilitation style in real time to improve team outcomes."
     }
   ];
 
   const faqCategories = [
-  {
-    "id": "category_1",
-    "label": "Agile & Scrum Certification FAQs",
-    "items": [
-      {
-        "question": "What is Agile and Scrum Training?",
-        "answer": "Agile and Scrum Training provides a comprehensive understanding of Agile principles and the Scrum framework. It helps professionals learn how to deliver value incrementally, collaborate effectively, and adapt quickly to changing requirements."
-      },
-      {
-        "question": "Who should attend Agile and Scrum Training?",
-        "answer": "This course is ideal for Developers, Testers, Project Managers, Product Owners, Scrum Masters, Business Analysts, and anyone involved in Agile projects."
-      },
-      {
-        "question": "Are there any prerequisites for Agile and Scrum Training?",
-        "answer": "There are no strict prerequisites. However, having basic knowledge of software development or project management concepts is beneficial."
-      },
-      {
-        "question": "What will I learn in Agile and Scrum Training?",
-        "answer": "You will learn Agile values and principles, Scrum roles (Scrum Master, Product Owner, Developers), Scrum events, artifacts, sprint planning, backlog management, estimation techniques, and Agile best practices."
-      },
-      {
-        "question": "Is there an exam included in the training?",
-        "answer": "Depending on the certification track, an assessment may be included. Exam details such as number of questions, duration, and passing score vary based on the certification body."
-      },
-      {
-        "question": "How long is the Agile and Scrum certification valid?",
-        "answer": "Certification validity depends on the certifying organization. Some certifications are lifetime, while others require renewal through SEUs or PDUs."
-      },
-      {
-        "question": "How many PDUs and SEUs can I earn?",
-        "answer": "Participants can typically earn up to 14–16 PDUs and SEUs upon completion of the 2-day Agile and Scrum training program."
-      },
-      {
-        "question": "Is Agile and Scrum certification globally recognized?",
-        "answer": "Yes, Agile and Scrum certifications are globally recognized and highly valued across industries adopting Agile methodologies."
-      }
-    ]
-  },
-  {
-    "id": "category_2",
-    "label": "Training & Course Delivery FAQs",
-    "items": [
-      {
-        "question": "What is the duration of Agile and Scrum Training?",
-        "answer": "The training is typically delivered over 2 days (approximately 16 hours) of instructor-led sessions."
-      },
-      {
-        "question": "Is the training practical or theoretical?",
-        "answer": "The training is highly interactive and includes case studies, group activities, simulations, sprint exercises, and real-world scenarios."
-      },
-      {
-        "question": "Do I get hands-on Scrum experience during training?",
-        "answer": "Yes, participants engage in practical Scrum simulations including sprint planning, daily scrum exercises, backlog refinement, and retrospectives."
-      },
-      {
-        "question": "Is online training available?",
-        "answer": "Yes, Agile and Scrum training is available in live virtual instructor-led mode as well as corporate onsite programs."
-      },
-      {
-        "question": "Do you provide corporate Agile and Scrum training?",
-        "answer": "Yes, we offer customized corporate training tailored to organizational needs and Agile transformation goals."
-      },
-      {
-        "question": "Will I receive study materials?",
-        "answer": "Yes, participants receive comprehensive course materials, templates, and supporting learning resources."
-      }
-    ]
-  },
-  {
-    "id": "category_3",
-    "label": "Payment & Enrollment FAQs",
-    "items": [
-      {
-        "question": "How do I enroll in Agile and Scrum Training?",
-        "answer": "Choose your preferred schedule, complete the registration process, make the payment, and you will receive confirmation with course access details."
-      },
-      {
-        "question": "What payment methods are accepted?",
-        "answer": "We accept credit cards, debit cards, net banking, wire transfers, PayPal, Stripe, and other secure payment methods."
-      },
-      {
-        "question": "Do you offer installment payment options?",
-        "answer": "Yes, installment options may be available. Please contact support for detailed payment plans."
-      },
-      {
-        "question": "Are there group or corporate discounts available?",
-        "answer": "Yes, we provide special pricing for corporate teams and group enrollments."
-      },
-      {
-        "question": "Will I receive a payment receipt?",
-        "answer": "Yes, you will receive an official invoice and confirmation email after successful payment."
-      },
-      {
-        "question": "What is your refund policy?",
-        "answer": "Refunds are generally not provided. However, participants may reschedule their training as per policy terms."
-      }
-    ]
-  }
-];
+    {
+      "id": "category_1",
+      "label": "FAQ Category 1",
+      "items": [
+        {
+          "question": "What is ICAgile ICP-ATF Certification?",
+          "answer": "ICP-ATF is an ICAgile certification focused on Agile team facilitation, collaboration, and group dynamics to help teams work more effectively."
+        }
+      ]
+    }
+  ];
   const courseFeatures = [
     {
       icon: Users,
@@ -508,38 +379,39 @@ const AgileAndScrumTraining = () => {
 
   const courseWhySimpliaxis = [
     {
-      "title": "Global Recognition",
-      "description": "Courses accredited by globally recognized certification bodies."
+      "title": "Official ICAgile Training Partner",
+      "description": "As an authorized ICAgile collaborator, Viovn ensures that every ICP-ATF session adheres to the latest educational standards and official benchmarks."
     },
     {
-      "title": "Expert Trainers",
-      "description": "Learn from certified professionals with real-world industry experience."
+      "title": "Experienced Agile Practitioners as Trainers",
+      "description": "Gain knowledge from veteran Agile coaches who bring years of actual facilitation and team leadership experience into the classroom."
     },
     {
-      "title": "Flexible Learning Options",
-      "description": "Choose from live virtual, online, or corporate training formats."
+      "title": "Practical, Hands-On Learning Approach",
+      "description": "Viovn emphasizes learning by doing, providing students with numerous opportunities to practice core Agile facilitation methods in a safe environment."
     },
     {
-      "title": "Lifetime Access",
-      "description": "Access session recordings and learning resources anytime."
+      "title": "Industry-Relevant ICP-ATF Curriculum",
+      "description": "The course material is carefully designed to reflect modern Agile methodologies used by leading organizations across diverse global sectors."
     },
     {
-      "title": "Proven Track Record",
-      "description": "Trusted by organizations worldwide for measurable training outcomes."
+      "title": "Interactive and Engaging Training Sessions",
+      "description": "Our facilitators create a dynamic learning atmosphere that encourages active participation, peer collaboration, and deep-dive discussions."
     },
     {
-      "title": "End-to-End Support",
-      "description": "Comprehensive assistance before, during, and after training."
+      "title": "Globally Recognized ICP-ATF Certification",
+      "description": "Upon completion, you will receive the prestigious ICAgile Agile Team Facilitation credential, an industry-standard badge recognized worldwide."
     },
     {
-      "title": "Interactive Learning",
-      "description": "Engaging sessions with real-world case studies and activities."
+      "title": "Flexible Training Schedules",
+      "description": "We provide various scheduling options for the ICP-ATF course, allowing busy professionals to enhance their skills without disrupting their work life."
     },
     {
-      "title": "Wide Course Portfolio",
-      "description": "International certifications across Agile, Scrum, SAFe, DevOps, and Project Management."
+      "title": "Focus on Real Agile Team Challenges",
+      "description": "Our curriculum specifically targets actual hurdles faced by teams, such as managing conflicts, facilitating decision-making, and ensuring alignment."
     }
   ]
+
   const sidePanelSchedules = [
     {
       courseCode: 'SCM',
@@ -563,16 +435,17 @@ const AgileAndScrumTraining = () => {
   ];
 
   const heroData = {
-    "courseName": "Agile and Scrum Training",
-    "breadcrumbName": "Agile and Scrum Foundational Training by Simpliaxis",
+    "courseName": "ICAgile Agile Team Facilitation (ICP-ATF) Certification Training",
+    "breadcrumbName": "ICAgile Agile Team Facilitation (ICP-ATF) Certification Training",
     "rating": "5.0",
     "enrolledCount": "",
-    "subtitle": "Build a strong foundation in Agile principles and the Scrum framework in just one day.",
+    "subtitle": "Intermediate Agile coaching program focused on facilitation mindset, collaboration, and team dynamics.",
     "benefits": [
-      "Attend a 1-Day Live Instructor-Led Training Session delivered by certified experts.",
-      "Develop essential Agile and Scrum skills to build high-performing teams.",
-      "Engage in interactive and practical learning for deeper conceptual clarity.",
-      "Begin your journey toward globally recognized certifications such as CSM and PSM."
+      "14 hours of live instructor-led Agile team facilitation training",
+      "Earn 14 PDUs while developing practical facilitation skills",
+      "Learn through ICAgile-authorized, outcome-based learning materials",
+      "Hands-on experiential activities and collaborative team exercises",
+      "Earn the ICAgile Certified Professional – Agile Team Facilitation (ICP-ATF) credential"
     ],
     "mainImage": "https://www.simpliaxis.com/../frontend_assets/image/ring_loader.gif",
     "badgeImage": "/csm-badge.png"
@@ -580,27 +453,44 @@ const AgileAndScrumTraining = () => {
 
   const overviewContent = {
     "title": "Course Overview",
-    "subtitle": "Comprehensive Introduction to Agile and Scrum",
+    "subtitle": "ICAgile Agile Team Facilitation (ICP-ATF) Course Overview",
     "description": [
-      "The Agile and Scrum Training by Simpliaxis validates your understanding of Agile principles and Scrum practices. This foundational program prepares professionals to pursue globally recognized certifications such as CSM, CSPO, PSM, and SAFe Scrum Master.",
-      "Delivered by certified Scrum trainers, this course bridges traditional project management approaches with Agile methodologies. It is ideal for aspiring Scrum Masters, Product Owners, Project Managers, and Agile team members.",
-      "Participants gain hands-on exposure through real-world exercises, enabling them to effectively implement Scrum within their organizations and improve project success rates."
+      "The ICAgile Agile Team Facilitation (ICP-ATF) course is designed to help professionals develop practical facilitation skills required to support Agile teams. This 14-hour program focuses on facilitation as a core Agile competency, enabling participants to design and lead effective meetings, workshops, and collaborative sessions that improve team performance and outcomes."
     ],
-    "whatIsTitle": "",
-    "whatIsDescription": [],
-    "whatsIncludedTitle": "",
-    "whatsIncludedDescription": [],
-    "skillsTitle": "",
-    "skills": [],
-    "modesTitle": "",
-    "modesDescription": []
+    "whatIsTitle": "What Is ICAgile Agile Team Facilitation (ICP-ATF)?",
+    "whatIsDescription": [
+      "ICP-ATF is an intermediate-level certification within the ICAgile Agile Coaching track. It helps professionals strengthen facilitation mindset, collaboration techniques, and group interaction skills to support self-organizing Agile teams and foster continuous improvement."
+    ],
+    "whatsIncludedTitle": "What’s Included in ICP-ATF Training",
+    "whatsIncludedDescription": [
+      "ICAgile-authorized learning content",
+      "Instructor-led facilitation practice sessions",
+      "Hands-on team activities and simulations",
+      "Practical facilitation frameworks and tools",
+      "Collaborative learning environment with peer interaction",
+      "Globally recognized ICAgile ICP-ATF credential"
+    ],
+    "skillsTitle": "Skills Covered in ICP-ATF Training",
+    "skills": [
+      "Agile facilitation mindset and principles",
+      "Designing and facilitating Agile workshops",
+      "Communication and collaboration techniques",
+      "Managing group dynamics and conflict",
+      "Supporting team decision-making",
+      "Facilitating continuous improvement",
+      "Adapting facilitation style to team maturity"
+    ],
+    "modesTitle": "Training Modes Available",
+    "modesDescription": [
+      "Training is delivered through instructor-led virtual sessions with interactive collaboration. Customized corporate training is also available for organizations looking to strengthen internal Agile facilitation capabilities."
+    ]
   };
 
-  const corporateData ={
-    "courseName": "Why Corporates Choose Us",
+  const corporateData = {
+    "courseName": "Why Viovn for Corporates",
     "label": "",
     "buttonText": "Corporate Group Enquiry",
-    "description": "Simpliaxis delivers customized corporate training programs designed to address specific organizational challenges. Our expert trainers provide industry-aligned modules that enhance workforce capabilities and help enterprises remain competitive."
+    "description": "Viovn provides tailored corporate training programs designed to improve facilitation, collaboration, and Agile maturity within organizations. Programs are customized to meet team-specific challenges and business goals."
   };
 
   const courseMetadata = {
@@ -742,7 +632,6 @@ const AgileAndScrumTraining = () => {
             prerequisites={prerequisites}
             subtitle={sectionsLabels.prerequisites.subtitle}
             title={heroData.courseName}
-            
           />
           <CourseStepByStepProcess
             courseName={heroData.courseName}
@@ -854,4 +743,4 @@ const AgileAndScrumTraining = () => {
   );
 };
 
-export default AgileAndScrumTraining;
+export default ICAgileAgileTeamFacilitationCertificationTraining;

@@ -19,11 +19,11 @@ import CourseTrainers from "@/components/courses/CourseTrainers";
 import CourseFAQs from "@/components/courses/faqs/CourseFAQs";
 import CourseWhySimpliaxis from "@/components/courses/CourseWhySimpliaxis";
 
-import { 
-  Users, 
-  Monitor, 
-  Settings, 
-  UserCheck, 
+import {
+  Users,
+  Monitor,
+  Settings,
+  UserCheck,
   Map,
   Award,
   BookOpen,
@@ -39,61 +39,61 @@ import {
   Star
 } from "lucide-react";
 
-const AgileAndScrumTraining = () => {
-  const highlights =  [
-    { "text": "8 Hours of Live Instructor-Led Training" },
-    { "text": "Earn 8 PDUs and 8 SEUs" },
-    { "text": "Delivered by Certified Scrum Trainers (CSTs)" },
-    { "text": "Comprehensive Coverage of Agile and Scrum Fundamentals" },
-    { "text": "Hands-On Practical Exercises and Case Studies" },
-    { "text": "Course Completion Certificate from Simpliaxis" },
-    { "text": "24/7 Post-Training Support" },
-    { "text": "Dedicated Doubt-Clearing Sessions" }
+const PSPBMSkillsCertificationCourse = () => {
+  const highlights = [
+    { "text": "1-day interactive live training by Professional Scrum Trainers (PSTs)" },
+    { "text": "Earn 7 PDUs and SEUs for professional development" },
+    { "text": "Free pass code for PSPBM Skills certification assessment" },
+    { "text": "Industry-recognized certification focused on Product Backlog Management" },
+    { "text": "Learn AI tools to simplify backlog refinement and prioritization" },
+    { "text": "Free second exam attempt within 14 days of training" },
+    { "text": "Resume building and exam preparation assistance" },
+    { "text": "24/7 customer support and learning assistance" }
   ];
 
   const individualBenefits = [
     {
-      "title": "Improved Adaptability",
-      "description": "Respond effectively to changing project requirements."
+      "title": "Individual Benefits",
+      "description": "Enhance Product Backlog management and prioritization skills."
     },
     {
-      "title": "Enhanced Collaboration",
-      "description": "Work efficiently within cross-functional Agile teams."
+      "title": "Individual Benefits",
+      "description": "Improve backlog transparency and clarity."
     },
     {
-      "title": "Higher Productivity",
-      "description": "Increase efficiency and deliver value consistently."
+      "title": "Individual Benefits",
+      "description": "Strengthen collaboration with Scrum teams, stakeholders, and customers."
     },
     {
-      "title": "Stronger Problem-Solving Skills",
-      "description": "Develop analytical thinking through Agile practices."
+      "title": "Individual Benefits",
+      "description": "Learn how technology supports effective Product Backlog creation."
     },
     {
-      "title": "Career Growth Opportunities",
-      "description": "Unlock new career paths in Agile and Scrum roles."
+      "title": "Individual Benefits",
+      "description": "Boost career growth with a recognized Scrum certification."
     }
   ];
 
   const corporateBenefits = [
     {
-      "title": "Faster Project Delivery",
-      "description": "Accelerate time-to-market using Agile methodologies."
+      "title": "Corporate Benefits",
+      "description": "Improve product quality through organized and transparent Product Backlogs."
     },
     {
-      "title": "Improved Customer Satisfaction",
-      "description": "Deliver value-driven solutions aligned with customer needs."
+      "title": "Corporate Benefits",
+      "description": "Reduce waste and align work with customer needs."
     },
     {
-      "title": "Enhanced Product Quality",
-      "description": "Ensure continuous improvement through iterative development."
+      "title": "Corporate Benefits",
+      "description": "Encourage innovation using tools and technologies for backlog refinement."
     },
     {
-      "title": "Greater Employee Engagement",
-      "description": "Encourage team ownership and collaboration."
+      "title": "Corporate Benefits",
+      "description": "Gain competitive advantage through value-focused Product Backlog management."
     },
     {
-      "title": "Reduced Project Risk",
-      "description": "Identify and mitigate risks early through continuous feedback."
+      "title": "Corporate Benefits",
+      "description": "Improve customer satisfaction through better product alignment."
     }
   ];
 
@@ -106,14 +106,16 @@ const AgileAndScrumTraining = () => {
 
   const attendees = [
     {
-      group: [
-        'Scrum Masters',
-        'Delivery Managers',
-        'Product Owners',
-        'Agile Coaches',
-      ],
-    },
-    { group: ['Team Leads', 'Development Managers'] },
+      "group": [
+        "Learn techniques to create and refine Product Backlogs",
+        "Develop effective collaboration with stakeholders",
+        "Recognize and interpret customer requirements",
+        "Create effective Product Backlog items aligned with customer needs",
+        "Improve transparency within the Product Backlog",
+        "Understand empiricism as a competitive advantage",
+        "Use AI tools to improve backlog management"
+      ]
+    }
   ];
 
   const companies = [
@@ -148,249 +150,102 @@ const AgileAndScrumTraining = () => {
   ];
 
   const outcomes = [
-    "Develop a strong foundation in Agile principles and Scrum practices.",
-    "Apply Scrum roles, artifacts, and ceremonies effectively in real projects.",
-    "Use Agile estimation techniques such as Story Points and Planning Poker.",
-    "Monitor progress using Agile metrics like burn-down and burn-up charts.",
-    "Understand scaling approaches for enterprise-level Agile implementation."
+    "Create and refine Product Backlogs effectively",
+    "Improve stakeholder collaboration and communication",
+    "Translate customer needs into backlog items",
+    "Increase Product Backlog transparency",
+    "Apply empiricism and AI tools in backlog management"
   ];
 
   const prerequisites = [
-    "No prior experience is required to enroll in this Agile and Scrum Training.",
-    "Ideal for beginners and professionals planning to pursue certifications such as CSM, CSPO, PSM, or SAFe Scrum Master."
+    "No mandatory prerequisites are required.",
+    "Basic understanding of Scrum, Agile, and Product Backlogs is recommended."
   ];
 
   const certificationSteps = [
     {
-      title: 'Attend Training',
-      description:
-        'Complete the 16-hour A-CSM training delivered by Scrum Alliance-accredited trainers.',
+      "title": "Step 1: Register",
+      "description": "Enroll in the PSPBM Skills Certification Training with Viovn."
     },
     {
-      title: 'Validate Experience',
-      description: 'Confirm at least 12 months of Scrum Master experience.',
+      "title": "Step 2: Gain Knowledge",
+      "description": "Complete training sessions delivered by Professional Scrum Trainers (PSTs)."
     },
     {
-      title: 'Accept License',
-      description:
-        'Log in to Scrum Alliance and acknowledge the license agreement.',
+      "title": "Step 3: Receive Assessment Access",
+      "description": "After training completion, receive access credentials for the PSPBM Skills assessment."
     },
     {
-      title: 'Download Certificate',
-      description:
-        'Receive and download your Advanced Certified ScrumMaster credential.',
-    },
+      "title": "Step 4: Get Certified",
+      "description": "Pass the PSPBM Skills assessment and receive a lifelong certification."
+    }
   ];
 
-  const curriculumModules =[
+  const curriculumModules = [
     {
-      "title": "Module 1: Introduction to Agile",
+      "title": "Curriculum",
       "topics": [
-        "Evolution of Agile",
-        "Traditional vs Agile Project Management",
-        "Benefits of Agile Methodology"
-      ]
-    },
-    {
-      "title": "Module 2: Agile Foundations",
-      "topics": [
-        "Agile Manifesto",
-        "Agile Values and Principles",
-        "Customer Collaboration and Iterative Delivery"
-      ]
-    },
-    {
-      "title": "Module 3: Business Value in Agile",
-      "topics": [
-        "User Stories and the 3Cs",
-        "Prioritization Techniques",
-        "Minimum Viable Product (MVP)"
-      ]
-    },
-    {
-      "title": "Module 4: Agile Frameworks",
-      "topics": [
-        "Scrum Framework",
-        "Kanban",
-        "Extreme Programming (XP)",
-        "Feature-Driven Development (FDD)"
-      ]
-    },
-    {
-      "title": "Module 5: Agile Project Management",
-      "topics": [
-        "APM Framework Phases",
-        "Envision, Speculate, Explore, Adapt, Close"
-      ]
-    },
-    {
-      "title": "Module 6: Scrum Framework Deep Dive",
-      "topics": [
-        "Scrum Roles",
-        "Scrum Artifacts",
-        "Scrum Events"
-      ]
-    },
-    {
-      "title": "Module 7: Agile Estimation",
-      "topics": [
-        "Story Points",
-        "Planning Poker",
-        "T-Shirt Sizing"
-      ]
-    },
-    {
-      "title": "Module 8: Agile Planning and Tracking",
-      "topics": [
-        "Release Planning",
-        "Iteration Planning",
-        "Burn-down and Burn-up Charts"
-      ]
-    },
-    {
-      "title": "Module 9: Scaling Agile",
-      "topics": [
-        "SAFe",
-        "DAD",
-        "LeSS"
-      ]
-    },
-    {
-      "title": "Module 10: Agile Career Path",
-      "topics": [
-        "Agile Certifications",
-        "Enterprise Agile Roles"
+        "Product Backlog Management",
+        "Aligning Product Backlog with Product Goals",
+        "Stakeholder collaboration techniques",
+        "Backlog refinement and decomposition",
+        "Use of AI tools in Product Backlog management",
+        "Transparency and empiricism in Scrum"
       ]
     }
   ];
 
   const learningObjectives = [
     {
-      "title": "Agile Fundamentals",
-      "description": "Understand Agile values and principles and explore frameworks such as Scrum, Kanban, and XP."
+      "title": "Create Effective Product Backlogs",
+      "description": "Develop skills to build clear, structured Product Backlogs that support sprint goals and improve product quality."
     },
     {
-      "title": "User Stories and Business Value",
-      "description": "Learn how to create effective user stories and prioritize development based on customer value."
+      "title": "Align Backlog with Business Goals",
+      "description": "Learn how Product Owners align backlog priorities with business outcomes and customer expectations."
     },
     {
-      "title": "Agile Planning",
-      "description": "Master product planning, release planning, and iteration planning techniques."
+      "title": "Apply Real-World Practices",
+      "description": "Use real-world case studies and practical scenarios to manage complex Product Backlogs effectively."
     },
     {
-      "title": "Scrum Events",
-      "description": "Gain clarity on Scrum ceremonies including Sprint Planning, Daily Scrum, Sprint Review, and Retrospective."
+      "title": "Improve Sprint Planning",
+      "description": "Understand how a well-defined Product Backlog enables efficient sprint planning and successful outcomes."
     },
     {
-      "title": "Estimation and Metrics",
-      "description": "Apply estimation techniques and measure performance using Agile metrics."
+      "title": "Strategic Backlog Implementation",
+      "description": "Plan and structure backlog items strategically to communicate priorities clearly with developers."
     },
     {
-      "title": "Scaling Agile",
-      "description": "Learn how to scale Agile practices successfully across large organizations."
+      "title": "Use AI in Product Backlog Management",
+      "description": "Learn how AI tools help simplify backlog refinement and improve transparency and decision-making."
     }
   ];
 
   const faqCategories = [
-  {
-    "id": "category_1",
-    "label": "Agile & Scrum Certification FAQs",
-    "items": [
-      {
-        "question": "What is Agile and Scrum Training?",
-        "answer": "Agile and Scrum Training provides a comprehensive understanding of Agile principles and the Scrum framework. It helps professionals learn how to deliver value incrementally, collaborate effectively, and adapt quickly to changing requirements."
-      },
-      {
-        "question": "Who should attend Agile and Scrum Training?",
-        "answer": "This course is ideal for Developers, Testers, Project Managers, Product Owners, Scrum Masters, Business Analysts, and anyone involved in Agile projects."
-      },
-      {
-        "question": "Are there any prerequisites for Agile and Scrum Training?",
-        "answer": "There are no strict prerequisites. However, having basic knowledge of software development or project management concepts is beneficial."
-      },
-      {
-        "question": "What will I learn in Agile and Scrum Training?",
-        "answer": "You will learn Agile values and principles, Scrum roles (Scrum Master, Product Owner, Developers), Scrum events, artifacts, sprint planning, backlog management, estimation techniques, and Agile best practices."
-      },
-      {
-        "question": "Is there an exam included in the training?",
-        "answer": "Depending on the certification track, an assessment may be included. Exam details such as number of questions, duration, and passing score vary based on the certification body."
-      },
-      {
-        "question": "How long is the Agile and Scrum certification valid?",
-        "answer": "Certification validity depends on the certifying organization. Some certifications are lifetime, while others require renewal through SEUs or PDUs."
-      },
-      {
-        "question": "How many PDUs and SEUs can I earn?",
-        "answer": "Participants can typically earn up to 14–16 PDUs and SEUs upon completion of the 2-day Agile and Scrum training program."
-      },
-      {
-        "question": "Is Agile and Scrum certification globally recognized?",
-        "answer": "Yes, Agile and Scrum certifications are globally recognized and highly valued across industries adopting Agile methodologies."
-      }
-    ]
-  },
-  {
-    "id": "category_2",
-    "label": "Training & Course Delivery FAQs",
-    "items": [
-      {
-        "question": "What is the duration of Agile and Scrum Training?",
-        "answer": "The training is typically delivered over 2 days (approximately 16 hours) of instructor-led sessions."
-      },
-      {
-        "question": "Is the training practical or theoretical?",
-        "answer": "The training is highly interactive and includes case studies, group activities, simulations, sprint exercises, and real-world scenarios."
-      },
-      {
-        "question": "Do I get hands-on Scrum experience during training?",
-        "answer": "Yes, participants engage in practical Scrum simulations including sprint planning, daily scrum exercises, backlog refinement, and retrospectives."
-      },
-      {
-        "question": "Is online training available?",
-        "answer": "Yes, Agile and Scrum training is available in live virtual instructor-led mode as well as corporate onsite programs."
-      },
-      {
-        "question": "Do you provide corporate Agile and Scrum training?",
-        "answer": "Yes, we offer customized corporate training tailored to organizational needs and Agile transformation goals."
-      },
-      {
-        "question": "Will I receive study materials?",
-        "answer": "Yes, participants receive comprehensive course materials, templates, and supporting learning resources."
-      }
-    ]
-  },
-  {
-    "id": "category_3",
-    "label": "Payment & Enrollment FAQs",
-    "items": [
-      {
-        "question": "How do I enroll in Agile and Scrum Training?",
-        "answer": "Choose your preferred schedule, complete the registration process, make the payment, and you will receive confirmation with course access details."
-      },
-      {
-        "question": "What payment methods are accepted?",
-        "answer": "We accept credit cards, debit cards, net banking, wire transfers, PayPal, Stripe, and other secure payment methods."
-      },
-      {
-        "question": "Do you offer installment payment options?",
-        "answer": "Yes, installment options may be available. Please contact support for detailed payment plans."
-      },
-      {
-        "question": "Are there group or corporate discounts available?",
-        "answer": "Yes, we provide special pricing for corporate teams and group enrollments."
-      },
-      {
-        "question": "Will I receive a payment receipt?",
-        "answer": "Yes, you will receive an official invoice and confirmation email after successful payment."
-      },
-      {
-        "question": "What is your refund policy?",
-        "answer": "Refunds are generally not provided. However, participants may reschedule their training as per policy terms."
-      }
-    ]
-  }
-];
+    {
+      "id": "category_1",
+      "label": "FAQ Category 1",
+      "items": [
+        {
+          "question": "What is PSPBM Skills Certification?",
+          "answer": "PSPBM Skills Certification focuses on Product Backlog Management, stakeholder collaboration, and customer-value alignment within Scrum."
+        },
+        {
+          "question": "Are prerequisites required?",
+          "answer": "No mandatory prerequisites are required, but Scrum and Agile knowledge is helpful."
+        },
+        {
+          "question": "How long is the certification valid?",
+          "answer": "The certification is valid for life with no renewal required."
+        },
+        {
+          "question": "What is the exam format?",
+          "answer": "The assessment consists of 20 multiple-choice questions to be completed in 30 minutes with an 85% passing score."
+        }
+      ]
+    }
+  ];
   const courseFeatures = [
     {
       icon: Users,
@@ -508,38 +363,39 @@ const AgileAndScrumTraining = () => {
 
   const courseWhySimpliaxis = [
     {
-      "title": "Global Recognition",
-      "description": "Courses accredited by globally recognized certification bodies."
+      "title": "Internationally Recognized Credentials",
+      "description": "Our training programs are endorsed by the world's most prestigious certification bodies, ensuring your professional expertise is respected and valued across all industries."
     },
     {
-      "title": "Expert Trainers",
-      "description": "Learn from certified professionals with real-world industry experience."
+      "title": "Industry-Leading Expert Instructors",
+      "description": "Gain specialized knowledge from seasoned project management veterans who share profound real-world insights and actionable business experience in every session."
     },
     {
-      "title": "Flexible Learning Options",
-      "description": "Choose from live virtual, online, or corporate training formats."
+      "title": "Versatile Learning Modalities",
+      "description": "Viovn offers a range of educational formats—from interactive virtual classrooms to specialized corporate sessions—tailored to your unique schedule and learning requirements."
     },
     {
-      "title": "Lifetime Access",
-      "description": "Access session recordings and learning resources anytime."
+      "title": "Persistent Access to Learning Assets",
+      "description": "Enjoy continuous, long-term access to all recorded sessions, masterclass materials, and advanced study tools to support your ongoing professional development."
     },
     {
-      "title": "Proven Track Record",
-      "description": "Trusted by organizations worldwide for measurable training outcomes."
+      "title": "Demonstrated Excellence",
+      "description": "As a distinguished global training provider, we have an extensive history of empowering both individual professionals and major enterprises to achieve superior performance."
     },
     {
-      "title": "End-to-End Support",
-      "description": "Comprehensive assistance before, during, and after training."
+      "title": "Holistic Career Guidance",
+      "description": "Viovn provides comprehensive support throughout your journey, including dedicated exam preparation, certification roadmaps, and strategic career counseling beyond the classroom."
     },
     {
-      "title": "Interactive Learning",
-      "description": "Engaging sessions with real-world case studies and activities."
+      "title": "Dynamic and Immersive Workshops",
+      "description": "Our training sessions are highly interactive, utilizing authentic industry simulations and collaborative activities to ensure practical mastery of complex project scenarios."
     },
     {
-      "title": "Wide Course Portfolio",
-      "description": "International certifications across Agile, Scrum, SAFe, DevOps, and Project Management."
+      "title": "Comprehensive Certification Portfolio",
+      "description": "Viovn delivers an expansive suite of globally acknowledged certifications in Agile, Scrum, SAFe, DevOps, and diverse Project Management methodologies."
     }
   ]
+
   const sidePanelSchedules = [
     {
       courseCode: 'SCM',
@@ -563,16 +419,17 @@ const AgileAndScrumTraining = () => {
   ];
 
   const heroData = {
-    "courseName": "Agile and Scrum Training",
-    "breadcrumbName": "Agile and Scrum Foundational Training by Simpliaxis",
+    "courseName": "PSPBM Skills Certification Course",
+    "breadcrumbName": "PSPBM Skills Certification Course",
     "rating": "5.0",
     "enrolledCount": "",
-    "subtitle": "Build a strong foundation in Agile principles and the Scrum framework in just one day.",
+    "subtitle": "Professional Scrum Product Backlog Management training focused on transparency, collaboration, and backlog refinement skills.",
     "benefits": [
-      "Attend a 1-Day Live Instructor-Led Training Session delivered by certified experts.",
-      "Develop essential Agile and Scrum skills to build high-performing teams.",
-      "Engage in interactive and practical learning for deeper conceptual clarity.",
-      "Begin your journey toward globally recognized certifications such as CSM and PSM."
+      "1-day interactive live sessions delivered by Professional Scrum Trainers (PSTs)",
+      "Earn 7 PDUs and SEUs with PSPBM Skills training",
+      "Learn techniques to maintain transparency in the Product Backlog",
+      "Improve collaboration with Scrum teams and stakeholders",
+      "Globally recognized certification with lifetime validity"
     ],
     "mainImage": "https://www.simpliaxis.com/../frontend_assets/image/ring_loader.gif",
     "badgeImage": "/csm-badge.png"
@@ -580,14 +437,16 @@ const AgileAndScrumTraining = () => {
 
   const overviewContent = {
     "title": "Course Overview",
-    "subtitle": "Comprehensive Introduction to Agile and Scrum",
+    "subtitle": "PSPBM Skills Certification Course Overview",
     "description": [
-      "The Agile and Scrum Training by Simpliaxis validates your understanding of Agile principles and Scrum practices. This foundational program prepares professionals to pursue globally recognized certifications such as CSM, CSPO, PSM, and SAFe Scrum Master.",
-      "Delivered by certified Scrum trainers, this course bridges traditional project management approaches with Agile methodologies. It is ideal for aspiring Scrum Masters, Product Owners, Project Managers, and Agile team members.",
-      "Participants gain hands-on exposure through real-world exercises, enabling them to effectively implement Scrum within their organizations and improve project success rates."
+      "The PSPBM Skills Certification Course is designed to help professionals develop practical techniques for managing and refining Product Backlogs effectively. A well-structured Product Backlog provides clarity, transparency, and alignment with product goals while enabling teams to deliver customer value.",
+      "This training includes hands-on experience with backlog refinement techniques such as slicing, decomposition, and prioritization of Product Backlog items. Participants also learn how simplicity and transparency improve overall backlog quality.",
+      "PSPBM Skills Certification helps Scrum Masters and Product Owners align backlog items with product goals, improve stakeholder collaboration, and support smooth Scrum execution throughout the product lifecycle."
     ],
-    "whatIsTitle": "",
-    "whatIsDescription": [],
+    "whatIsTitle": "What Is PSPBM Skills Certification?",
+    "whatIsDescription": [
+      "PSPBM Skills Certification focuses on developing Product Backlog Management skills within Scrum. It helps professionals improve backlog clarity, stakeholder collaboration, and value-driven delivery."
+    ],
     "whatsIncludedTitle": "",
     "whatsIncludedDescription": [],
     "skillsTitle": "",
@@ -596,11 +455,11 @@ const AgileAndScrumTraining = () => {
     "modesDescription": []
   };
 
-  const corporateData ={
-    "courseName": "Why Corporates Choose Us",
+  const corporateData = {
+    "courseName": "Why Viovn for Corporates?",
     "label": "",
     "buttonText": "Corporate Group Enquiry",
-    "description": "Simpliaxis delivers customized corporate training programs designed to address specific organizational challenges. Our expert trainers provide industry-aligned modules that enhance workforce capabilities and help enterprises remain competitive."
+    "description": "Viovn delivers specialized enterprise programs designed to accelerate project delivery, foster Agile cultural transformation, and enhance global workforce agility through bespoke training."
   };
 
   const courseMetadata = {
@@ -742,7 +601,6 @@ const AgileAndScrumTraining = () => {
             prerequisites={prerequisites}
             subtitle={sectionsLabels.prerequisites.subtitle}
             title={heroData.courseName}
-            
           />
           <CourseStepByStepProcess
             courseName={heroData.courseName}
@@ -854,4 +712,4 @@ const AgileAndScrumTraining = () => {
   );
 };
 
-export default AgileAndScrumTraining;
+export default PSPBMSkillsCertificationCourse;

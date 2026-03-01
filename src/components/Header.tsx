@@ -83,21 +83,21 @@ const Header: React.FC<HeaderProps> = ({ hidden = false }) => {
         scrolled ? "bg-white/95 backdrop-blur-md shadow-lg" : "bg-white"
       )}>
         <div className="container">
-          <div className="h-16 flex items-center justify-between gap-6">
+          <div className="h-16 md:h-20 flex items-center justify-between gap-6">
             
             {/* Logo */}
             <div className="flex items-center gap-6">
               <Link to="/" className="flex items-center gap-0 group">
-                <div className="relative flex items-center justify-center w-12 h-12 transition-all mr-3">
+                <div className="relative flex items-center justify-center h-12 md:h-16 transition-all mr-2">
                   <img 
-                    src="/logo.png" 
+                    src="/image.png" 
                     alt="Viovn Logo" 
-                    className="w-full h-full object-contain"
+                    className="h-full w-auto object-contain"
                   />
                 </div>
                 <div className="flex flex-col">
-                  <span className="text-2xl font-black text-[#001c3d] tracking-tighter leading-none">Viovn</span>
-                  <span className="text-[10px] font-bold text-blue-500/80 uppercase tracking-widest leading-none mt-0.5">Technologies</span>
+                  <span className="text-xl md:text-2xl font-black text-[#001c3d] tracking-tighter leading-none">Viovn</span>
+                  <span className="text-[9px] md:text-[10px] font-bold text-blue-500/80 uppercase tracking-widest leading-none mt-0.5">Technologies</span>
                 </div>
               </Link>
 
@@ -236,7 +236,10 @@ const Header: React.FC<HeaderProps> = ({ hidden = false }) => {
       </header>
       
       <div className="md:hidden bg-white border-b border-border py-4 px-4 flex items-center justify-between">
-        <div className="logo-text text-2xl">viovn</div>
+        <Link to="/" className="flex items-center">
+          <img src="/image.png" alt="Viovn Logo" className="h-10 w-auto object-contain mr-2" />
+          <div className="logo-text text-xl font-black">viovn</div>
+        </Link>
         <div className="flex items-center gap-4">
           <ShoppingCart className="w-6 h-6" />
           <Menu className="w-6 h-6" />

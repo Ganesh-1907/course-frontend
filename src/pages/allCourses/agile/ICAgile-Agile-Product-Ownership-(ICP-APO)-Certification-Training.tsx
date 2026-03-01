@@ -19,11 +19,11 @@ import CourseTrainers from "@/components/courses/CourseTrainers";
 import CourseFAQs from "@/components/courses/faqs/CourseFAQs";
 import CourseWhySimpliaxis from "@/components/courses/CourseWhySimpliaxis";
 
-import { 
-  Users, 
-  Monitor, 
-  Settings, 
-  UserCheck, 
+import {
+  Users,
+  Monitor,
+  Settings,
+  UserCheck,
   Map,
   Award,
   BookOpen,
@@ -39,61 +39,55 @@ import {
   Star
 } from "lucide-react";
 
-const AgileAndScrumTraining = () => {
-  const highlights =  [
-    { "text": "8 Hours of Live Instructor-Led Training" },
-    { "text": "Earn 8 PDUs and 8 SEUs" },
-    { "text": "Delivered by Certified Scrum Trainers (CSTs)" },
-    { "text": "Comprehensive Coverage of Agile and Scrum Fundamentals" },
-    { "text": "Hands-On Practical Exercises and Case Studies" },
-    { "text": "Course Completion Certificate from Simpliaxis" },
-    { "text": "24/7 Post-Training Support" },
-    { "text": "Dedicated Doubt-Clearing Sessions" }
+const ICAgileAgileProductOwnershipICPAPOCertificationTraining = () => {
+  const highlights = [
+    { "text": "14 hours of highly interactive training" },
+    { "text": "Earn 14 PDUs" },
+    { "text": "Value-driven product ownership approach" },
+    { "text": "Collaborative Agile learning environment" },
+    { "text": "Part of the ICAgile Product Ownership track" },
+    { "text": "Access to digital learning resources" },
+    { "text": "Lifetime certification with no renewal fees" },
+    { "text": "Globally recognized credential" },
+    { "text": "Framework-neutral learning approach" },
+    { "text": "Flexible remote learning options" }
   ];
 
   const individualBenefits = [
     {
-      "title": "Improved Adaptability",
-      "description": "Respond effectively to changing project requirements."
+      "title": "Individual Benefits",
+      "description": "Gain industry recognition with an ICAgile Agile Product Ownership credential."
     },
     {
-      "title": "Enhanced Collaboration",
-      "description": "Work efficiently within cross-functional Agile teams."
+      "title": "Individual Benefits",
+      "description": "Strengthen product vision, backlog management, and value prioritization skills."
     },
     {
-      "title": "Higher Productivity",
-      "description": "Increase efficiency and deliver value consistently."
+      "title": "Individual Benefits",
+      "description": "Improve stakeholder communication and confidence in decision-making."
     },
     {
-      "title": "Stronger Problem-Solving Skills",
-      "description": "Develop analytical thinking through Agile practices."
-    },
-    {
-      "title": "Career Growth Opportunities",
-      "description": "Unlock new career paths in Agile and Scrum roles."
+      "title": "Individual Benefits",
+      "description": "Expand career opportunities for Product Owner, Product Manager, and Agile leadership roles."
     }
   ];
 
   const corporateBenefits = [
     {
-      "title": "Faster Project Delivery",
-      "description": "Accelerate time-to-market using Agile methodologies."
+      "title": "Corporate Benefits",
+      "description": "Improve value delivery by focusing teams on high-impact work."
     },
     {
-      "title": "Improved Customer Satisfaction",
-      "description": "Deliver value-driven solutions aligned with customer needs."
+      "title": "Corporate Benefits",
+      "description": "Increase backlog clarity through refined user stories and prioritization."
     },
     {
-      "title": "Enhanced Product Quality",
-      "description": "Ensure continuous improvement through iterative development."
+      "title": "Corporate Benefits",
+      "description": "Strengthen alignment between business goals, customer needs, and delivery teams."
     },
     {
-      "title": "Greater Employee Engagement",
-      "description": "Encourage team ownership and collaboration."
-    },
-    {
-      "title": "Reduced Project Risk",
-      "description": "Identify and mitigate risks early through continuous feedback."
+      "title": "Corporate Benefits",
+      "description": "Enable faster feedback cycles and smarter product decisions."
     }
   ];
 
@@ -106,14 +100,13 @@ const AgileAndScrumTraining = () => {
 
   const attendees = [
     {
-      group: [
-        'Scrum Masters',
-        'Delivery Managers',
-        'Product Owners',
-        'Agile Coaches',
-      ],
-    },
-    { group: ['Team Leads', 'Development Managers'] },
+      "group": [
+        "Apply Agile product ownership practices to manage and prioritize product backlogs",
+        "Engage stakeholders effectively to ensure the right product outcomes",
+        "Use Agile frameworks such as Scrum and Kanban for product delivery",
+        "Drive continuous improvement using feedback loops and iterative delivery"
+      ]
+    }
   ];
 
   const companies = [
@@ -148,249 +141,124 @@ const AgileAndScrumTraining = () => {
   ];
 
   const outcomes = [
-    "Develop a strong foundation in Agile principles and Scrum practices.",
-    "Apply Scrum roles, artifacts, and ceremonies effectively in real projects.",
-    "Use Agile estimation techniques such as Story Points and Planning Poker.",
-    "Monitor progress using Agile metrics like burn-down and burn-up charts.",
-    "Understand scaling approaches for enterprise-level Agile implementation."
+    "Apply Agile product ownership practices effectively",
+    "Collaborate with stakeholders to align product goals",
+    "Use Agile frameworks to guide product delivery",
+    "Implement feedback-driven continuous improvement"
   ];
 
   const prerequisites = [
-    "No prior experience is required to enroll in this Agile and Scrum Training.",
-    "Ideal for beginners and professionals planning to pursue certifications such as CSM, CSPO, PSM, or SAFe Scrum Master."
+    'No mandatory prerequisites are required.',
+    'Basic understanding of Scrum principles is recommended.',
+    'Completion of formal training by a Scrum Alliance-approved CSD trainer is required.',
   ];
 
   const certificationSteps = [
     {
-      title: 'Attend Training',
-      description:
-        'Complete the 16-hour A-CSM training delivered by Scrum Alliance-accredited trainers.',
+      "title": "Attend Training",
+      "description": "Enroll in an ICAgile-authorized ICP-APO training program."
     },
     {
-      title: 'Validate Experience',
-      description: 'Confirm at least 12 months of Scrum Master experience.',
+      "title": "Gain Knowledge",
+      "description": "Participate actively in sessions covering product ownership, discovery, backlog management, and value delivery."
     },
     {
-      title: 'Accept License',
-      description:
-        'Log in to Scrum Alliance and acknowledge the license agreement.',
+      "title": "Complete Activities",
+      "description": "Successfully complete course exercises and assignments."
     },
     {
-      title: 'Download Certificate',
-      description:
-        'Receive and download your Advanced Certified ScrumMaster credential.',
-    },
+      "title": "Receive Certification",
+      "description": "Upon successful completion, receive the ICAgile ICP-APO certification and digital badge."
+    }
   ];
 
-  const curriculumModules =[
+  const curriculumModules = [
     {
-      "title": "Module 1: Introduction to Agile",
+      "title": "Module 1: Agile Product Ownership Maximizes Value",
       "topics": [
-        "Evolution of Agile",
-        "Traditional vs Agile Project Management",
-        "Benefits of Agile Methodology"
+        "Defining Agile Product Ownership",
+        "Understanding Value",
+        "Product ownership skills and behaviors",
+        "Developing relationships",
+        "Value-based decision-making",
+        "Facilitating shared understanding"
       ]
     },
     {
-      "title": "Module 2: Agile Foundations",
+      "title": "Module 2: Working with Customers and Stakeholders",
       "topics": [
-        "Agile Manifesto",
-        "Agile Values and Principles",
-        "Customer Collaboration and Iterative Delivery"
+        "Understanding customers and stakeholders",
+        "Connecting to customer problems",
+        "Stakeholder alignment techniques",
+        "Building shared understanding"
       ]
     },
     {
-      "title": "Module 3: Business Value in Agile",
+      "title": "Module 3: Defining and Delivering Products",
       "topics": [
-        "User Stories and the 3Cs",
-        "Prioritization Techniques",
-        "Minimum Viable Product (MVP)"
-      ]
-    },
-    {
-      "title": "Module 4: Agile Frameworks",
-      "topics": [
-        "Scrum Framework",
-        "Kanban",
-        "Extreme Programming (XP)",
-        "Feature-Driven Development (FDD)"
-      ]
-    },
-    {
-      "title": "Module 5: Agile Project Management",
-      "topics": [
-        "APM Framework Phases",
-        "Envision, Speculate, Explore, Adapt, Close"
-      ]
-    },
-    {
-      "title": "Module 6: Scrum Framework Deep Dive",
-      "topics": [
-        "Scrum Roles",
-        "Scrum Artifacts",
-        "Scrum Events"
-      ]
-    },
-    {
-      "title": "Module 7: Agile Estimation",
-      "topics": [
-        "Story Points",
-        "Planning Poker",
-        "T-Shirt Sizing"
-      ]
-    },
-    {
-      "title": "Module 8: Agile Planning and Tracking",
-      "topics": [
-        "Release Planning",
-        "Iteration Planning",
-        "Burn-down and Burn-up Charts"
-      ]
-    },
-    {
-      "title": "Module 9: Scaling Agile",
-      "topics": [
-        "SAFe",
-        "DAD",
-        "LeSS"
-      ]
-    },
-    {
-      "title": "Module 10: Agile Career Path",
-      "topics": [
-        "Agile Certifications",
-        "Enterprise Agile Roles"
+        "Product planning and development",
+        "Aligning with product vision",
+        "Measurable outcomes",
+        "Backlog management and prioritization",
+        "Launch and delivery strategies",
+        "Assessing delivered value",
+        "Capturing customer feedback",
+        "Continuous improvement decisions"
       ]
     }
   ];
 
   const learningObjectives = [
     {
-      "title": "Agile Fundamentals",
-      "description": "Understand Agile values and principles and explore frameworks such as Scrum, Kanban, and XP."
+      "title": "Understand the Product Owner Role",
+      "description": "Gain clarity on responsibilities, authority, and mindset required to maximize product value in Agile environments."
     },
     {
-      "title": "User Stories and Business Value",
-      "description": "Learn how to create effective user stories and prioritize development based on customer value."
+      "title": "Practice Customer-Centric Product Discovery",
+      "description": "Learn techniques to understand customer needs and validate assumptions through discovery practices."
     },
     {
-      "title": "Agile Planning",
-      "description": "Master product planning, release planning, and iteration planning techniques."
+      "title": "Prioritize Product Backlogs Effectively",
+      "description": "Develop skills to create, refine, and prioritize backlogs aligned with business goals."
     },
     {
-      "title": "Scrum Events",
-      "description": "Gain clarity on Scrum ceremonies including Sprint Planning, Daily Scrum, Sprint Review, and Retrospective."
+      "title": "Strengthen Stakeholder Collaboration",
+      "description": "Improve communication and alignment between stakeholders, customers, and Agile teams."
     },
     {
-      "title": "Estimation and Metrics",
-      "description": "Apply estimation techniques and measure performance using Agile metrics."
+      "title": "Use Outcome-Based Metrics",
+      "description": "Apply measurable outcomes and feedback loops to make value-driven product decisions."
     },
     {
-      "title": "Scaling Agile",
-      "description": "Learn how to scale Agile practices successfully across large organizations."
+      "title": "Deliver Value Through Continuous Improvement",
+      "description": "Adopt adaptive planning and iterative delivery to maximize customer value."
     }
   ];
 
   const faqCategories = [
-  {
-    "id": "category_1",
-    "label": "Agile & Scrum Certification FAQs",
-    "items": [
-      {
-        "question": "What is Agile and Scrum Training?",
-        "answer": "Agile and Scrum Training provides a comprehensive understanding of Agile principles and the Scrum framework. It helps professionals learn how to deliver value incrementally, collaborate effectively, and adapt quickly to changing requirements."
-      },
-      {
-        "question": "Who should attend Agile and Scrum Training?",
-        "answer": "This course is ideal for Developers, Testers, Project Managers, Product Owners, Scrum Masters, Business Analysts, and anyone involved in Agile projects."
-      },
-      {
-        "question": "Are there any prerequisites for Agile and Scrum Training?",
-        "answer": "There are no strict prerequisites. However, having basic knowledge of software development or project management concepts is beneficial."
-      },
-      {
-        "question": "What will I learn in Agile and Scrum Training?",
-        "answer": "You will learn Agile values and principles, Scrum roles (Scrum Master, Product Owner, Developers), Scrum events, artifacts, sprint planning, backlog management, estimation techniques, and Agile best practices."
-      },
-      {
-        "question": "Is there an exam included in the training?",
-        "answer": "Depending on the certification track, an assessment may be included. Exam details such as number of questions, duration, and passing score vary based on the certification body."
-      },
-      {
-        "question": "How long is the Agile and Scrum certification valid?",
-        "answer": "Certification validity depends on the certifying organization. Some certifications are lifetime, while others require renewal through SEUs or PDUs."
-      },
-      {
-        "question": "How many PDUs and SEUs can I earn?",
-        "answer": "Participants can typically earn up to 14–16 PDUs and SEUs upon completion of the 2-day Agile and Scrum training program."
-      },
-      {
-        "question": "Is Agile and Scrum certification globally recognized?",
-        "answer": "Yes, Agile and Scrum certifications are globally recognized and highly valued across industries adopting Agile methodologies."
-      }
-    ]
-  },
-  {
-    "id": "category_2",
-    "label": "Training & Course Delivery FAQs",
-    "items": [
-      {
-        "question": "What is the duration of Agile and Scrum Training?",
-        "answer": "The training is typically delivered over 2 days (approximately 16 hours) of instructor-led sessions."
-      },
-      {
-        "question": "Is the training practical or theoretical?",
-        "answer": "The training is highly interactive and includes case studies, group activities, simulations, sprint exercises, and real-world scenarios."
-      },
-      {
-        "question": "Do I get hands-on Scrum experience during training?",
-        "answer": "Yes, participants engage in practical Scrum simulations including sprint planning, daily scrum exercises, backlog refinement, and retrospectives."
-      },
-      {
-        "question": "Is online training available?",
-        "answer": "Yes, Agile and Scrum training is available in live virtual instructor-led mode as well as corporate onsite programs."
-      },
-      {
-        "question": "Do you provide corporate Agile and Scrum training?",
-        "answer": "Yes, we offer customized corporate training tailored to organizational needs and Agile transformation goals."
-      },
-      {
-        "question": "Will I receive study materials?",
-        "answer": "Yes, participants receive comprehensive course materials, templates, and supporting learning resources."
-      }
-    ]
-  },
-  {
-    "id": "category_3",
-    "label": "Payment & Enrollment FAQs",
-    "items": [
-      {
-        "question": "How do I enroll in Agile and Scrum Training?",
-        "answer": "Choose your preferred schedule, complete the registration process, make the payment, and you will receive confirmation with course access details."
-      },
-      {
-        "question": "What payment methods are accepted?",
-        "answer": "We accept credit cards, debit cards, net banking, wire transfers, PayPal, Stripe, and other secure payment methods."
-      },
-      {
-        "question": "Do you offer installment payment options?",
-        "answer": "Yes, installment options may be available. Please contact support for detailed payment plans."
-      },
-      {
-        "question": "Are there group or corporate discounts available?",
-        "answer": "Yes, we provide special pricing for corporate teams and group enrollments."
-      },
-      {
-        "question": "Will I receive a payment receipt?",
-        "answer": "Yes, you will receive an official invoice and confirmation email after successful payment."
-      },
-      {
-        "question": "What is your refund policy?",
-        "answer": "Refunds are generally not provided. However, participants may reschedule their training as per policy terms."
-      }
-    ]
-  }
-];
+    {
+      "id": "category_1",
+      "label": "FAQ Category 1",
+      "items": [
+        {
+          "question": "What is ICP-APO Certification?",
+          "answer": "ICP-APO is an ICAgile certification focused on Agile Product Ownership, including product discovery, backlog management, and value delivery."
+        },
+        {
+          "question": "Are there prerequisites for ICP-APO training?",
+          "answer": "There are no mandatory prerequisites. Basic Agile knowledge is helpful but not required."
+        },
+        {
+          "question": "Is there an exam for ICP-APO?",
+          "answer": "No formal exam is required. Certification is awarded based on successful course participation and completion."
+        },
+        {
+          "question": "How long is ICP-APO certification valid?",
+          "answer": "The ICP-APO certification is valid for life and requires no renewal."
+        }
+      ]
+    }
+  ];
   const courseFeatures = [
     {
       icon: Users,
@@ -508,38 +376,39 @@ const AgileAndScrumTraining = () => {
 
   const courseWhySimpliaxis = [
     {
-      "title": "Global Recognition",
-      "description": "Courses accredited by globally recognized certification bodies."
+      "title": "ICAgile-Authorized Training",
+      "description": "Master the complexities of Agile Product Ownership through an ICAgile-certified curriculum that adheres to global educational benchmarks."
     },
     {
-      "title": "Expert Trainers",
-      "description": "Learn from certified professionals with real-world industry experience."
+      "title": "Expert-Led, Practical Delivery",
+      "description": "Join workshops led by veteran Agile practitioners at Viovn who prioritize addressing actual product ownership hurdles over abstract theory."
     },
     {
-      "title": "Flexible Learning Options",
-      "description": "Choose from live virtual, online, or corporate training formats."
+      "title": "Highly Interactive Learning",
+      "description": "Boost your knowledge retention and skill application through immersive activities, collaborative dialogues, and authentic case exercises."
     },
     {
-      "title": "Lifetime Access",
-      "description": "Access session recordings and learning resources anytime."
+      "title": "Value-Driven Product Ownership Focus",
+      "description": "Cultivate essential competencies in maximizing value delivery, effective prioritization, stakeholder engagement, and strategic product choice."
     },
     {
-      "title": "Proven Track Record",
-      "description": "Trusted by organizations worldwide for measurable training outcomes."
+      "title": "Framework-Neutral Approach",
+      "description": "Achieve product ownership expertise that is universally applicable across Scrum, Kanban, Lean, and various hybrid Agile frameworks."
     },
     {
-      "title": "End-to-End Support",
-      "description": "Comprehensive assistance before, during, and after training."
+      "title": "Flexible Training Options",
+      "description": "Select from a range of flexible schedules and live virtual sessions tailored to meet the needs of both individual professionals and organizational teams."
     },
     {
-      "title": "Interactive Learning",
-      "description": "Engaging sessions with real-world case studies and activities."
+      "title": "Digital Learning Support",
+      "description": "Utilize a comprehensive suite of training tools, customizable templates, and expert resources designed to support your growth well beyond the classroom."
     },
     {
-      "title": "Wide Course Portfolio",
-      "description": "International certifications across Agile, Scrum, SAFe, DevOps, and Project Management."
+      "title": "A Wide Range of Courses",
+      "description": "Viovn provides a diverse array of internationally recognized certification programs in disciplines like Agile, Scrum, SAFe, DevOps, and Project Management."
     }
   ]
+
   const sidePanelSchedules = [
     {
       courseCode: 'SCM',
@@ -563,16 +432,17 @@ const AgileAndScrumTraining = () => {
   ];
 
   const heroData = {
-    "courseName": "Agile and Scrum Training",
-    "breadcrumbName": "Agile and Scrum Foundational Training by Simpliaxis",
+    "courseName": "ICAgile Agile Product Ownership (ICP-APO) Certification Training",
+    "breadcrumbName": "ICAgile Agile Product Ownership (ICP-APO) Certification Training",
     "rating": "5.0",
     "enrolledCount": "",
-    "subtitle": "Build a strong foundation in Agile principles and the Scrum framework in just one day.",
+    "subtitle": "Instructor-led Agile Product Ownership training focused on value delivery, stakeholder collaboration, and backlog management.",
     "benefits": [
-      "Attend a 1-Day Live Instructor-Led Training Session delivered by certified experts.",
-      "Develop essential Agile and Scrum skills to build high-performing teams.",
-      "Engage in interactive and practical learning for deeper conceptual clarity.",
-      "Begin your journey toward globally recognized certifications such as CSM and PSM."
+      "14 hours of immersive live instructor-led ICAgile ICP-APO training",
+      "Learn backlog prioritization and stakeholder alignment techniques",
+      "Hands-on interactive sessions with real-world product ownership practice",
+      "Improve collaboration, clarity, and innovation across Agile teams",
+      "Deliver maximum product value with confidence"
     ],
     "mainImage": "https://www.simpliaxis.com/../frontend_assets/image/ring_loader.gif",
     "badgeImage": "/csm-badge.png"
@@ -580,27 +450,49 @@ const AgileAndScrumTraining = () => {
 
   const overviewContent = {
     "title": "Course Overview",
-    "subtitle": "Comprehensive Introduction to Agile and Scrum",
+    "subtitle": "Overview of ICAgile Agile Product Ownership (ICP-APO) Certification Training",
     "description": [
-      "The Agile and Scrum Training by Simpliaxis validates your understanding of Agile principles and Scrum practices. This foundational program prepares professionals to pursue globally recognized certifications such as CSM, CSPO, PSM, and SAFe Scrum Master.",
-      "Delivered by certified Scrum trainers, this course bridges traditional project management approaches with Agile methodologies. It is ideal for aspiring Scrum Masters, Product Owners, Project Managers, and Agile team members.",
-      "Participants gain hands-on exposure through real-world exercises, enabling them to effectively implement Scrum within their organizations and improve project success rates."
+      "The ICAgile Agile Product Ownership (ICP-APO) Certification Training helps professionals strengthen their ability to manage product backlogs, align stakeholders, and deliver products that meet real customer needs using Agile practices.",
+      "This training develops practical skills in product prioritization, value-driven decision-making, customer-centric discovery, and cross-functional collaboration. Participants learn how to guide products through their lifecycle using Agile frameworks, tools, and feedback-driven approaches."
     ],
-    "whatIsTitle": "",
-    "whatIsDescription": [],
-    "whatsIncludedTitle": "",
-    "whatsIncludedDescription": [],
-    "skillsTitle": "",
-    "skills": [],
-    "modesTitle": "",
-    "modesDescription": []
+    "whatIsTitle": "What Is ICP-APO Certification?",
+    "whatIsDescription": [
+      "ICP-APO is an ICAgile credential focused on Agile Product Ownership. It emphasizes customer discovery, backlog management, collaboration, and value delivery through iterative product development."
+    ],
+    "whatsIncludedTitle": "What’s Included in ICP-APO Training",
+    "whatsIncludedDescription": [
+      "ICAgile-authorized official learning content",
+      "Real-world product ownership case studies and scenarios",
+      "Interactive exercises and collaborative simulations",
+      "Globally recognized ICP-APO credential",
+      "Guidance from experienced Agile practitioners",
+      "Career growth opportunities within the global Agile community"
+    ],
+    "skillsTitle": "Skills Covered in ICP-APO Training",
+    "skills": [
+      "Product backlog prioritization",
+      "Stakeholder communication and alignment",
+      "Product vision and roadmap creation",
+      "Agile frameworks and product practices",
+      "User story writing and refinement",
+      "Backlog grooming and value optimization",
+      "Collaborative decision-making",
+      "Release and sprint planning",
+      "Agile metrics and continuous improvement",
+      "Product ownership in complex environments"
+    ],
+    "modesTitle": "Training Modes Available",
+    "modesDescription": [
+      "Live online instructor-led training with real-time interaction",
+      "Corporate training programs customized for enterprise teams"
+    ]
   };
 
-  const corporateData ={
-    "courseName": "Why Corporates Choose Us",
+  const corporateData = {
+    "courseName": "Why Viovn for Corporates?",
     "label": "",
     "buttonText": "Corporate Group Enquiry",
-    "description": "Simpliaxis delivers customized corporate training programs designed to address specific organizational challenges. Our expert trainers provide industry-aligned modules that enhance workforce capabilities and help enterprises remain competitive."
+    "description": "Viovn delivers bespoke corporate education programs aimed at enhancing Agile product ownership capabilities, fostering collaboration, and promoting value-oriented product results throughout organizational teams."
   };
 
   const courseMetadata = {
@@ -742,7 +634,6 @@ const AgileAndScrumTraining = () => {
             prerequisites={prerequisites}
             subtitle={sectionsLabels.prerequisites.subtitle}
             title={heroData.courseName}
-            
           />
           <CourseStepByStepProcess
             courseName={heroData.courseName}
@@ -854,4 +745,4 @@ const AgileAndScrumTraining = () => {
   );
 };
 
-export default AgileAndScrumTraining;
+export default ICAgileAgileProductOwnershipICPAPOCertificationTraining;

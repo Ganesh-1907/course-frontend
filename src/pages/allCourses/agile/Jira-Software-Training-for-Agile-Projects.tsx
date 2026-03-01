@@ -19,11 +19,11 @@ import CourseTrainers from "@/components/courses/CourseTrainers";
 import CourseFAQs from "@/components/courses/faqs/CourseFAQs";
 import CourseWhySimpliaxis from "@/components/courses/CourseWhySimpliaxis";
 
-import { 
-  Users, 
-  Monitor, 
-  Settings, 
-  UserCheck, 
+import {
+  Users,
+  Monitor,
+  Settings,
+  UserCheck,
   Map,
   Award,
   BookOpen,
@@ -39,61 +39,61 @@ import {
   Star
 } from "lucide-react";
 
-const AgileAndScrumTraining = () => {
-  const highlights =  [
-    { "text": "8 Hours of Live Instructor-Led Training" },
-    { "text": "Earn 8 PDUs and 8 SEUs" },
-    { "text": "Delivered by Certified Scrum Trainers (CSTs)" },
-    { "text": "Comprehensive Coverage of Agile and Scrum Fundamentals" },
-    { "text": "Hands-On Practical Exercises and Case Studies" },
-    { "text": "Course Completion Certificate from Simpliaxis" },
-    { "text": "24/7 Post-Training Support" },
-    { "text": "Dedicated Doubt-Clearing Sessions" }
+const JiraSoftwareTrainingforAgileProjects = () => {
+  const highlights = [
+    { "text": "2-day live expert-led Jira training" },
+    { "text": "Comprehensive Jira Agile project management coverage" },
+    { "text": "Hands-on exercises with real-world scenarios" },
+    { "text": "30-day Jira tool access" },
+    { "text": "90-day retake option" },
+    { "text": "Course completion certificate" },
+    { "text": "24/7 post-training support" },
+    { "text": "Dedicated doubt-clearing sessions" }
   ];
 
   const individualBenefits = [
     {
-      "title": "Improved Adaptability",
-      "description": "Respond effectively to changing project requirements."
+      "title": "Individual Benefits",
+      "description": "Improve collaboration and team communication through shared visibility."
     },
     {
-      "title": "Enhanced Collaboration",
-      "description": "Work efficiently within cross-functional Agile teams."
+      "title": "Individual Benefits",
+      "description": "Increase productivity by mastering Jira workflows and task tracking."
     },
     {
-      "title": "Higher Productivity",
-      "description": "Increase efficiency and deliver value consistently."
+      "title": "Individual Benefits",
+      "description": "Improve sprint planning and forecasting accuracy."
     },
     {
-      "title": "Stronger Problem-Solving Skills",
-      "description": "Develop analytical thinking through Agile practices."
+      "title": "Individual Benefits",
+      "description": "Enhance accountability and clarity of roles in Agile projects."
     },
     {
-      "title": "Career Growth Opportunities",
-      "description": "Unlock new career paths in Agile and Scrum roles."
+      "title": "Individual Benefits",
+      "description": "Support continuous improvement using Agile retrospectives and Jira insights."
     }
   ];
 
   const corporateBenefits = [
     {
-      "title": "Faster Project Delivery",
-      "description": "Accelerate time-to-market using Agile methodologies."
+      "title": "Corporate Benefits",
+      "description": "Standardize Agile processes across teams for consistent delivery."
     },
     {
-      "title": "Improved Customer Satisfaction",
-      "description": "Deliver value-driven solutions aligned with customer needs."
+      "title": "Corporate Benefits",
+      "description": "Increase project visibility and risk awareness."
     },
     {
-      "title": "Enhanced Product Quality",
-      "description": "Ensure continuous improvement through iterative development."
+      "title": "Corporate Benefits",
+      "description": "Optimize resource allocation and project efficiency."
     },
     {
-      "title": "Greater Employee Engagement",
-      "description": "Encourage team ownership and collaboration."
+      "title": "Corporate Benefits",
+      "description": "Scale Agile practices effectively across teams."
     },
     {
-      "title": "Reduced Project Risk",
-      "description": "Identify and mitigate risks early through continuous feedback."
+      "title": "Corporate Benefits",
+      "description": "Improve delivery quality using structured workflows."
     }
   ];
 
@@ -106,14 +106,13 @@ const AgileAndScrumTraining = () => {
 
   const attendees = [
     {
-      group: [
-        'Scrum Masters',
-        'Delivery Managers',
-        'Product Owners',
-        'Agile Coaches',
-      ],
-    },
-    { group: ['Team Leads', 'Development Managers'] },
+      "group": [
+        "Confidently navigate Jira software interface",
+        "Plan, track, and manage Agile projects effectively",
+        "Improve collaboration and communication using Jira",
+        "Use data-driven insights for project decision-making"
+      ]
+    }
   ];
 
   const companies = [
@@ -148,249 +147,141 @@ const AgileAndScrumTraining = () => {
   ];
 
   const outcomes = [
-    "Develop a strong foundation in Agile principles and Scrum practices.",
-    "Apply Scrum roles, artifacts, and ceremonies effectively in real projects.",
-    "Use Agile estimation techniques such as Story Points and Planning Poker.",
-    "Monitor progress using Agile metrics like burn-down and burn-up charts.",
-    "Understand scaling approaches for enterprise-level Agile implementation."
+    "Understand Agile principles including Scrum and Kanban",
+    "Set up and configure Jira projects effectively",
+    "Use Jira boards for sprint planning and tracking",
+    "Create workflows, issue types, and custom fields",
+    "Generate reports and analyze project performance",
+    "Improve collaboration through shared project visibility"
   ];
 
   const prerequisites = [
-    "No prior experience is required to enroll in this Agile and Scrum Training.",
-    "Ideal for beginners and professionals planning to pursue certifications such as CSM, CSPO, PSM, or SAFe Scrum Master."
+    "Basic understanding of Agile principles",
+    "General project management knowledge",
+    "Basic computer literacy"
   ];
 
   const certificationSteps = [
     {
-      title: 'Attend Training',
-      description:
-        'Complete the 16-hour A-CSM training delivered by Scrum Alliance-accredited trainers.',
+      "title": "Enroll in Training",
+      "description": "Join the Jira Agile training program from Viovn."
     },
     {
-      title: 'Validate Experience',
-      description: 'Confirm at least 12 months of Scrum Master experience.',
+      "title": "Attend Live Sessions",
+      "description": "Participate in instructor-led sessions and practical exercises."
     },
     {
-      title: 'Accept License',
-      description:
-        'Log in to Scrum Alliance and acknowledge the license agreement.',
+      "title": "Complete Activities",
+      "description": "Practice Jira project setup, boards, dashboards, and reporting."
     },
     {
-      title: 'Download Certificate',
-      description:
-        'Receive and download your Advanced Certified ScrumMaster credential.',
-    },
+      "title": "Receive Certificate",
+      "description": "Get a course completion certificate after successfully completing training."
+    }
   ];
 
-  const curriculumModules =[
+  const curriculumModules = [
     {
-      "title": "Module 1: Introduction to Agile",
+      "title": "Introduction to Jira",
       "topics": [
-        "Evolution of Agile",
-        "Traditional vs Agile Project Management",
-        "Benefits of Agile Methodology"
+        "Jira basics and navigation",
+        "Project creation and configuration",
+        "Product backlog and sprint setup"
       ]
     },
     {
-      "title": "Module 2: Agile Foundations",
+      "title": "Working with Issues",
       "topics": [
-        "Agile Manifesto",
-        "Agile Values and Principles",
-        "Customer Collaboration and Iterative Delivery"
+        "Issue creation and editing",
+        "Subtasks, linking, and attachments",
+        "Issue lifecycle and best practices"
       ]
     },
     {
-      "title": "Module 3: Business Value in Agile",
+      "title": "Issue Management & Filters",
       "topics": [
-        "User Stories and the 3Cs",
-        "Prioritization Techniques",
-        "Minimum Viable Product (MVP)"
+        "JQL basics",
+        "Saved filters and sharing",
+        "Bulk issue updates and imports"
       ]
     },
     {
-      "title": "Module 4: Agile Frameworks",
+      "title": "Managing Jira Boards",
       "topics": [
-        "Scrum Framework",
-        "Kanban",
-        "Extreme Programming (XP)",
-        "Feature-Driven Development (FDD)"
+        "Scrum, Kanban, and Scrumban boards",
+        "Board customization and filters",
+        "Quick filters and card layout"
       ]
     },
     {
-      "title": "Module 5: Agile Project Management",
+      "title": "Dashboards & Reporting",
       "topics": [
-        "APM Framework Phases",
-        "Envision, Speculate, Explore, Adapt, Close"
-      ]
-    },
-    {
-      "title": "Module 6: Scrum Framework Deep Dive",
-      "topics": [
-        "Scrum Roles",
-        "Scrum Artifacts",
-        "Scrum Events"
-      ]
-    },
-    {
-      "title": "Module 7: Agile Estimation",
-      "topics": [
-        "Story Points",
-        "Planning Poker",
-        "T-Shirt Sizing"
-      ]
-    },
-    {
-      "title": "Module 8: Agile Planning and Tracking",
-      "topics": [
-        "Release Planning",
-        "Iteration Planning",
-        "Burn-down and Burn-up Charts"
-      ]
-    },
-    {
-      "title": "Module 9: Scaling Agile",
-      "topics": [
-        "SAFe",
-        "DAD",
-        "LeSS"
-      ]
-    },
-    {
-      "title": "Module 10: Agile Career Path",
-      "topics": [
-        "Agile Certifications",
-        "Enterprise Agile Roles"
+        "Creating dashboards",
+        "Adding gadgets and reports",
+        "Sharing dashboards and project insights"
       ]
     }
   ];
 
   const learningObjectives = [
     {
-      "title": "Agile Fundamentals",
-      "description": "Understand Agile values and principles and explore frameworks such as Scrum, Kanban, and XP."
+      "title": "Understanding Jira Fundamentals",
+      "description": "Learn what Jira is, why it is used, and how it supports Agile project management."
     },
     {
-      "title": "User Stories and Business Value",
-      "description": "Learn how to create effective user stories and prioritize development based on customer value."
+      "title": "Using Jira for Different Roles",
+      "description": "Understand how Scrum Masters, Product Owners, and Managers use Jira for project delivery."
     },
     {
-      "title": "Agile Planning",
-      "description": "Master product planning, release planning, and iteration planning techniques."
+      "title": "Project Creation in Jira",
+      "description": "Gain hands-on experience creating and configuring projects from scratch."
     },
     {
-      "title": "Scrum Events",
-      "description": "Gain clarity on Scrum ceremonies including Sprint Planning, Daily Scrum, Sprint Review, and Retrospective."
+      "title": "Scrum and Kanban Configuration",
+      "description": "Learn how to configure and manage Scrum and Kanban boards for Agile teams."
     },
     {
-      "title": "Estimation and Metrics",
-      "description": "Apply estimation techniques and measure performance using Agile metrics."
+      "title": "Sprint Boards and Planning",
+      "description": "Create and manage sprint boards to improve visualization and tracking."
     },
     {
-      "title": "Scaling Agile",
-      "description": "Learn how to scale Agile practices successfully across large organizations."
+      "title": "Roadmaps and Releases",
+      "description": "Build Agile roadmaps and release plans aligned with project goals."
+    },
+    {
+      "title": "Work Item Management",
+      "description": "Understand Epics, Stories, Tasks, and issue hierarchy inside Jira."
+    },
+    {
+      "title": "Dashboards and Reporting",
+      "description": "Create dashboards and reports to monitor progress and make informed decisions."
     }
   ];
 
   const faqCategories = [
-  {
-    "id": "category_1",
-    "label": "Agile & Scrum Certification FAQs",
-    "items": [
-      {
-        "question": "What is Agile and Scrum Training?",
-        "answer": "Agile and Scrum Training provides a comprehensive understanding of Agile principles and the Scrum framework. It helps professionals learn how to deliver value incrementally, collaborate effectively, and adapt quickly to changing requirements."
-      },
-      {
-        "question": "Who should attend Agile and Scrum Training?",
-        "answer": "This course is ideal for Developers, Testers, Project Managers, Product Owners, Scrum Masters, Business Analysts, and anyone involved in Agile projects."
-      },
-      {
-        "question": "Are there any prerequisites for Agile and Scrum Training?",
-        "answer": "There are no strict prerequisites. However, having basic knowledge of software development or project management concepts is beneficial."
-      },
-      {
-        "question": "What will I learn in Agile and Scrum Training?",
-        "answer": "You will learn Agile values and principles, Scrum roles (Scrum Master, Product Owner, Developers), Scrum events, artifacts, sprint planning, backlog management, estimation techniques, and Agile best practices."
-      },
-      {
-        "question": "Is there an exam included in the training?",
-        "answer": "Depending on the certification track, an assessment may be included. Exam details such as number of questions, duration, and passing score vary based on the certification body."
-      },
-      {
-        "question": "How long is the Agile and Scrum certification valid?",
-        "answer": "Certification validity depends on the certifying organization. Some certifications are lifetime, while others require renewal through SEUs or PDUs."
-      },
-      {
-        "question": "How many PDUs and SEUs can I earn?",
-        "answer": "Participants can typically earn up to 14–16 PDUs and SEUs upon completion of the 2-day Agile and Scrum training program."
-      },
-      {
-        "question": "Is Agile and Scrum certification globally recognized?",
-        "answer": "Yes, Agile and Scrum certifications are globally recognized and highly valued across industries adopting Agile methodologies."
-      }
-    ]
-  },
-  {
-    "id": "category_2",
-    "label": "Training & Course Delivery FAQs",
-    "items": [
-      {
-        "question": "What is the duration of Agile and Scrum Training?",
-        "answer": "The training is typically delivered over 2 days (approximately 16 hours) of instructor-led sessions."
-      },
-      {
-        "question": "Is the training practical or theoretical?",
-        "answer": "The training is highly interactive and includes case studies, group activities, simulations, sprint exercises, and real-world scenarios."
-      },
-      {
-        "question": "Do I get hands-on Scrum experience during training?",
-        "answer": "Yes, participants engage in practical Scrum simulations including sprint planning, daily scrum exercises, backlog refinement, and retrospectives."
-      },
-      {
-        "question": "Is online training available?",
-        "answer": "Yes, Agile and Scrum training is available in live virtual instructor-led mode as well as corporate onsite programs."
-      },
-      {
-        "question": "Do you provide corporate Agile and Scrum training?",
-        "answer": "Yes, we offer customized corporate training tailored to organizational needs and Agile transformation goals."
-      },
-      {
-        "question": "Will I receive study materials?",
-        "answer": "Yes, participants receive comprehensive course materials, templates, and supporting learning resources."
-      }
-    ]
-  },
-  {
-    "id": "category_3",
-    "label": "Payment & Enrollment FAQs",
-    "items": [
-      {
-        "question": "How do I enroll in Agile and Scrum Training?",
-        "answer": "Choose your preferred schedule, complete the registration process, make the payment, and you will receive confirmation with course access details."
-      },
-      {
-        "question": "What payment methods are accepted?",
-        "answer": "We accept credit cards, debit cards, net banking, wire transfers, PayPal, Stripe, and other secure payment methods."
-      },
-      {
-        "question": "Do you offer installment payment options?",
-        "answer": "Yes, installment options may be available. Please contact support for detailed payment plans."
-      },
-      {
-        "question": "Are there group or corporate discounts available?",
-        "answer": "Yes, we provide special pricing for corporate teams and group enrollments."
-      },
-      {
-        "question": "Will I receive a payment receipt?",
-        "answer": "Yes, you will receive an official invoice and confirmation email after successful payment."
-      },
-      {
-        "question": "What is your refund policy?",
-        "answer": "Refunds are generally not provided. However, participants may reschedule their training as per policy terms."
-      }
-    ]
-  }
-];
+    {
+      "id": "category_1",
+      "label": "FAQ Category 1",
+      "items": [
+        {
+          "question": "What is Jira used for?",
+          "answer": "Jira is a project management and issue tracking tool used for Agile project planning, task tracking, and reporting."
+        },
+        {
+          "question": "Do I need coding skills to use Jira?",
+          "answer": "No. Jira can be used effectively without coding knowledge."
+        },
+        {
+          "question": "How long does Jira training take?",
+          "answer": "This course is designed as a 2-day live instructor-led training."
+        },
+        {
+          "question": "Is Jira suitable for Agile methodologies?",
+          "answer": "Yes. Jira supports Scrum, Kanban, and scaled Agile frameworks."
+        }
+      ]
+    }
+  ];
   const courseFeatures = [
     {
       icon: Users,
@@ -508,38 +399,39 @@ const AgileAndScrumTraining = () => {
 
   const courseWhySimpliaxis = [
     {
-      "title": "Global Recognition",
-      "description": "Courses accredited by globally recognized certification bodies."
+      "title": "Globally Recognized Certification",
+      "description": "Our programs are endorsed by the world's most prestigious certification bodies, ensuring your credentials are valued and respected across all industries."
     },
     {
-      "title": "Expert Trainers",
-      "description": "Learn from certified professionals with real-world industry experience."
+      "title": "Expert-Led Instruction",
+      "description": "Gain deep insights from seasoned industry professionals who blend practical experience with real-world business wisdom in every class."
     },
     {
-      "title": "Flexible Learning Options",
-      "description": "Choose from live virtual, online, or corporate training formats."
+      "title": "Flexible Learning Formats",
+      "description": "We offer versatile training formats—including virtual classrooms and corporate sessions—designed to align with your personal schedule and professional goals."
     },
     {
-      "title": "Lifetime Access",
-      "description": "Access session recordings and learning resources anytime."
+      "title": "Continuous Resource Access",
+      "description": "Enjoy unrestricted, long-term access to all session recordings, comprehensive course materials, and advanced learning tools."
     },
     {
-      "title": "Proven Track Record",
-      "description": "Trusted by organizations worldwide for measurable training outcomes."
+      "title": "Demonstrated Success",
+      "description": "As a premier educational provider, we have a long history of helping individuals and enterprises enhance their capabilities and achieve their career milestones."
     },
     {
-      "title": "End-to-End Support",
-      "description": "Comprehensive assistance before, during, and after training."
+      "title": "Comprehensive Career Support",
+      "description": "Viovn delivers comprehensive support at every stage, offering exam preparation, certification guidance, and career counseling both during and after your training."
     },
     {
-      "title": "Interactive Learning",
-      "description": "Engaging sessions with real-world case studies and activities."
+      "title": "Interactive Workshop Experience",
+      "description": "Our sessions are crafted to be highly participatory, utilizing authentic business scenarios and collaborative activities to deepen your understanding."
     },
     {
-      "title": "Wide Course Portfolio",
-      "description": "International certifications across Agile, Scrum, SAFe, DevOps, and Project Management."
+      "title": "Expansive Course Portfolio",
+      "description": "Viovn provides a diverse portfolio of world-class certifications in disciplines such as Agile, Scrum, SAFe, DevOps, and Project Management."
     }
   ]
+
   const sidePanelSchedules = [
     {
       courseCode: 'SCM',
@@ -563,16 +455,17 @@ const AgileAndScrumTraining = () => {
   ];
 
   const heroData = {
-    "courseName": "Agile and Scrum Training",
-    "breadcrumbName": "Agile and Scrum Foundational Training by Simpliaxis",
+    "courseName": "Jira Software Training for Agile Projects",
+    "breadcrumbName": "Jira Software Training for Agile Project Management",
     "rating": "5.0",
     "enrolledCount": "",
-    "subtitle": "Build a strong foundation in Agile principles and the Scrum framework in just one day.",
+    "subtitle": "Hands-on Jira training designed to help professionals manage Agile projects efficiently using Scrum and Kanban practices.",
     "benefits": [
-      "Attend a 1-Day Live Instructor-Led Training Session delivered by certified experts.",
-      "Develop essential Agile and Scrum skills to build high-performing teams.",
-      "Engage in interactive and practical learning for deeper conceptual clarity.",
-      "Begin your journey toward globally recognized certifications such as CSM and PSM."
+      "2-day live expert-led Jira training",
+      "Hands-on exercises with real-world Agile scenarios",
+      "30-day Jira tool access",
+      "90-day retake option",
+      "Course completion certificate from Viovn"
     ],
     "mainImage": "https://www.simpliaxis.com/../frontend_assets/image/ring_loader.gif",
     "badgeImage": "/csm-badge.png"
@@ -580,27 +473,52 @@ const AgileAndScrumTraining = () => {
 
   const overviewContent = {
     "title": "Course Overview",
-    "subtitle": "Comprehensive Introduction to Agile and Scrum",
+    "subtitle": "Jira Agile Training Course Overview",
     "description": [
-      "The Agile and Scrum Training by Simpliaxis validates your understanding of Agile principles and Scrum practices. This foundational program prepares professionals to pursue globally recognized certifications such as CSM, CSPO, PSM, and SAFe Scrum Master.",
-      "Delivered by certified Scrum trainers, this course bridges traditional project management approaches with Agile methodologies. It is ideal for aspiring Scrum Masters, Product Owners, Project Managers, and Agile team members.",
-      "Participants gain hands-on exposure through real-world exercises, enabling them to effectively implement Scrum within their organizations and improve project success rates."
+      "Mastering Jira for Agile Projects is a comprehensive program designed to help professionals manage Agile workflows effectively using Atlassian Jira.",
+      "The training covers project creation, Scrum and Kanban configuration, roadmaps, dashboards, reporting, and Agile tracking practices.",
+      "Participants gain practical exposure through hands-on exercises and real-world project scenarios, enabling confident usage of Jira in Agile environments.",
+      "The course includes post-training support, doubt-clearing sessions, and certification guidance."
     ],
-    "whatIsTitle": "",
-    "whatIsDescription": [],
-    "whatsIncludedTitle": "",
-    "whatsIncludedDescription": [],
-    "skillsTitle": "",
-    "skills": [],
-    "modesTitle": "",
-    "modesDescription": []
+    "whatIsTitle": "What is Jira Training?",
+    "whatIsDescription": [
+      "Jira training helps professionals build project management and issue tracking skills using Jira software.",
+      "Participants learn installation, configuration, workflow management, and Agile project tracking to improve team collaboration and delivery efficiency."
+    ],
+    "whatsIncludedTitle": "What’s Included in Our Jira Training?",
+    "whatsIncludedDescription": [
+      "2-day live instructor-led training",
+      "Learning from certified Jira professionals",
+      "Hands-on exercises and real-world scenarios",
+      "30-day Jira tool access",
+      "90-day retake option",
+      "1:1 doubt-clearing sessions",
+      "24/7 post-class support",
+      "Course completion certificate"
+    ],
+    "skillsTitle": "Skills Covered in Jira Training",
+    "skills": [
+      "Understanding Jira fundamentals",
+      "Jira configuration and workflow management",
+      "Creating Scrum and Kanban boards",
+      "Sprint planning and backlog management",
+      "Dashboards and reporting",
+      "Data analysis and project tracking",
+      "Agile project collaboration using Jira"
+    ],
+    "modesTitle": "Training Modes",
+    "modesDescription": [
+      "Live online instructor-led training",
+      "Interactive e-learning modules with guided exercises",
+      "Corporate training programs customized for teams"
+    ]
   };
 
-  const corporateData ={
-    "courseName": "Why Corporates Choose Us",
+  const corporateData = {
+    "courseName": "Why Viovn for Corporates?",
     "label": "",
     "buttonText": "Corporate Group Enquiry",
-    "description": "Simpliaxis delivers customized corporate training programs designed to address specific organizational challenges. Our expert trainers provide industry-aligned modules that enhance workforce capabilities and help enterprises remain competitive."
+    "description": "Viovn delivers specialized Jira training solutions tailored to your team's needs, enhancing project visibility, workflow efficiency, and overall Agile execution."
   };
 
   const courseMetadata = {
@@ -742,7 +660,6 @@ const AgileAndScrumTraining = () => {
             prerequisites={prerequisites}
             subtitle={sectionsLabels.prerequisites.subtitle}
             title={heroData.courseName}
-            
           />
           <CourseStepByStepProcess
             courseName={heroData.courseName}
@@ -854,4 +771,4 @@ const AgileAndScrumTraining = () => {
   );
 };
 
-export default AgileAndScrumTraining;
+export default JiraSoftwareTrainingforAgileProjects;

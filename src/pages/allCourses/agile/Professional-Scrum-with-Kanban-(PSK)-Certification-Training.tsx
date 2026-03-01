@@ -39,61 +39,59 @@ import {
   Star
 } from "lucide-react";
 
-const AgileAndScrumTraining = () => {
-  const highlights =  [
-    { "text": "8 Hours of Live Instructor-Led Training" },
-    { "text": "Earn 8 PDUs and 8 SEUs" },
-    { "text": "Delivered by Certified Scrum Trainers (CSTs)" },
-    { "text": "Comprehensive Coverage of Agile and Scrum Fundamentals" },
-    { "text": "Hands-On Practical Exercises and Case Studies" },
-    { "text": "Course Completion Certificate from Simpliaxis" },
-    { "text": "24/7 Post-Training Support" },
-    { "text": "Dedicated Doubt-Clearing Sessions" }
+const ProfessionalScrumWithKanbanCertificationTraining = () => {
+  const highlights = [
+    { "text": "Professional Training Network Member – Scrum.org" },
+    { "text": "Learn from Certified Professional Scrum Trainers" },
+    { "text": "Real-Time Scenarios and Hands-On Kanban Practice" },
+    { "text": "Opportunity to Clear the PSK™ I Exam" },
+    { "text": "Lifetime Valid Certification" },
+    { "text": "Earn 16 PDUs After Course Completion" }
   ];
 
   const individualBenefits = [
     {
-      "title": "Improved Adaptability",
-      "description": "Respond effectively to changing project requirements."
+      "title": "Workflow Optimization",
+      "description": "Learn how to integrate Kanban practices within Scrum to improve transparency and delivery predictability."
     },
     {
-      "title": "Enhanced Collaboration",
-      "description": "Work efficiently within cross-functional Agile teams."
+      "title": "Improved Flow Management",
+      "description": "Understand flow metrics such as cycle time and throughput to enhance product delivery."
     },
     {
-      "title": "Higher Productivity",
-      "description": "Increase efficiency and deliver value consistently."
+      "title": "Enhanced Scrum Capability",
+      "description": "Strengthen your Scrum knowledge by applying Kanban during Sprints and Scrum events."
     },
     {
-      "title": "Stronger Problem-Solving Skills",
-      "description": "Develop analytical thinking through Agile practices."
+      "title": "Better Transparency",
+      "description": "Visualize work effectively and manage Work in Progress (WIP) efficiently."
     },
     {
-      "title": "Career Growth Opportunities",
-      "description": "Unlock new career paths in Agile and Scrum roles."
+      "title": "Global Credential",
+      "description": "Earn a globally recognized certification from Scrum.org with lifetime validity."
     }
   ];
 
   const corporateBenefits = [
     {
-      "title": "Faster Project Delivery",
-      "description": "Accelerate time-to-market using Agile methodologies."
+      "title": "Improved Delivery Predictability",
+      "description": "Kanban practices help organizations forecast and deliver products more consistently."
     },
     {
-      "title": "Improved Customer Satisfaction",
-      "description": "Deliver value-driven solutions aligned with customer needs."
+      "title": "Higher Transparency Across Teams",
+      "description": "Visualization improves cross-team coordination and reduces bottlenecks."
     },
     {
-      "title": "Enhanced Product Quality",
-      "description": "Ensure continuous improvement through iterative development."
+      "title": "Sustainable Pace",
+      "description": "WIP limits ensure balanced workloads and sustainable development practices."
     },
     {
-      "title": "Greater Employee Engagement",
-      "description": "Encourage team ownership and collaboration."
+      "title": "Reduced Workflow Risks",
+      "description": "Flow-based metrics help detect and resolve issues early."
     },
     {
-      "title": "Reduced Project Risk",
-      "description": "Identify and mitigate risks early through continuous feedback."
+      "title": "Enhanced Agile Maturity",
+      "description": "Combining Scrum and Kanban strengthens enterprise Agile implementation."
     }
   ];
 
@@ -107,13 +105,14 @@ const AgileAndScrumTraining = () => {
   const attendees = [
     {
       group: [
-        'Scrum Masters',
-        'Delivery Managers',
-        'Product Owners',
-        'Agile Coaches',
-      ],
-    },
-    { group: ['Team Leads', 'Development Managers'] },
+        "Scrum Masters",
+        "Product Owners",
+        "Developers",
+        "Agile Coaches",
+        "Scrum Practitioners",
+        "Experienced Scrum Professionals"
+      ]
+    }
   ];
 
   const companies = [
@@ -148,249 +147,143 @@ const AgileAndScrumTraining = () => {
   ];
 
   const outcomes = [
-    "Develop a strong foundation in Agile principles and Scrum practices.",
-    "Apply Scrum roles, artifacts, and ceremonies effectively in real projects.",
-    "Use Agile estimation techniques such as Story Points and Planning Poker.",
-    "Monitor progress using Agile metrics like burn-down and burn-up charts.",
-    "Understand scaling approaches for enterprise-level Agile implementation."
+    "Understand how Kanban complements Scrum.",
+    "Apply Kanban practices within Scrum events.",
+    "Manage and limit Work in Progress (WIP).",
+    "Use flow metrics to improve delivery predictability.",
+    "Improve transparency and team collaboration."
   ];
 
   const prerequisites = [
-    "No prior experience is required to enroll in this Agile and Scrum Training.",
-    "Ideal for beginners and professionals planning to pursue certifications such as CSM, CSPO, PSM, or SAFe Scrum Master."
+    "No mandatory prerequisites.",
+    "Strong understanding of Scrum framework is recommended.",
+    "Experience working in a Scrum environment is beneficial."
   ];
 
   const certificationSteps = [
     {
-      title: 'Attend Training',
-      description:
-        'Complete the 16-hour A-CSM training delivered by Scrum Alliance-accredited trainers.',
+      "title": "Attend Training",
+      "description": "Complete the 2-day Professional Scrum with Kanban™ instructor-led training."
     },
     {
-      title: 'Validate Experience',
-      description: 'Confirm at least 12 months of Scrum Master experience.',
+      "title": "Receive Exam Password",
+      "description": "Obtain your PSK I exam password from Scrum.org."
     },
     {
-      title: 'Accept License',
-      description:
-        'Log in to Scrum Alliance and acknowledge the license agreement.',
+      "title": "Attempt the Assessment",
+      "description": "Take the 60-minute online assessment and score at least 85%."
     },
     {
-      title: 'Download Certificate',
-      description:
-        'Receive and download your Advanced Certified ScrumMaster credential.',
-    },
+      "title": "Get Certified",
+      "description": "Receive your PSK I certification with lifetime validity."
+    }
   ];
 
-  const curriculumModules =[
+  const curriculumModules = [
     {
-      "title": "Module 1: Introduction to Agile",
+      "title": "Introduction to Kanban in Scrum",
       "topics": [
-        "Evolution of Agile",
-        "Traditional vs Agile Project Management",
-        "Benefits of Agile Methodology"
+        "Why Combine Scrum and Kanban",
+        "Benefits of Flow-Based Work",
+        "Common Workflow Challenges"
       ]
     },
     {
-      "title": "Module 2: Agile Foundations",
+      "title": "Kanban Practices",
       "topics": [
-        "Agile Manifesto",
-        "Agile Values and Principles",
-        "Customer Collaboration and Iterative Delivery"
+        "Visualizing Workflow",
+        "Limiting Work in Progress (WIP)",
+        "Managing Flow",
+        "Making Process Policies Explicit"
       ]
     },
     {
-      "title": "Module 3: Business Value in Agile",
+      "title": "Flow Metrics",
       "topics": [
-        "User Stories and the 3Cs",
-        "Prioritization Techniques",
-        "Minimum Viable Product (MVP)"
+        "Cycle Time",
+        "Throughput",
+        "Work Item Age",
+        "Forecasting with Metrics"
       ]
     },
     {
-      "title": "Module 4: Agile Frameworks",
+      "title": "Applying Kanban During Scrum Events",
       "topics": [
-        "Scrum Framework",
-        "Kanban",
-        "Extreme Programming (XP)",
-        "Feature-Driven Development (FDD)"
-      ]
-    },
-    {
-      "title": "Module 5: Agile Project Management",
-      "topics": [
-        "APM Framework Phases",
-        "Envision, Speculate, Explore, Adapt, Close"
-      ]
-    },
-    {
-      "title": "Module 6: Scrum Framework Deep Dive",
-      "topics": [
-        "Scrum Roles",
-        "Scrum Artifacts",
-        "Scrum Events"
-      ]
-    },
-    {
-      "title": "Module 7: Agile Estimation",
-      "topics": [
-        "Story Points",
-        "Planning Poker",
-        "T-Shirt Sizing"
-      ]
-    },
-    {
-      "title": "Module 8: Agile Planning and Tracking",
-      "topics": [
-        "Release Planning",
-        "Iteration Planning",
-        "Burn-down and Burn-up Charts"
-      ]
-    },
-    {
-      "title": "Module 9: Scaling Agile",
-      "topics": [
-        "SAFe",
-        "DAD",
-        "LeSS"
-      ]
-    },
-    {
-      "title": "Module 10: Agile Career Path",
-      "topics": [
-        "Agile Certifications",
-        "Enterprise Agile Roles"
+        "Kanban in Sprint Planning",
+        "Kanban in Daily Scrum",
+        "Kanban in Sprint Review",
+        "Continuous Improvement"
       ]
     }
   ];
 
   const learningObjectives = [
     {
-      "title": "Agile Fundamentals",
-      "description": "Understand Agile values and principles and explore frameworks such as Scrum, Kanban, and XP."
+      "title": "Scrum + Kanban Integration",
+      "description": "Understand how Kanban enhances Scrum without replacing it."
     },
     {
-      "title": "User Stories and Business Value",
-      "description": "Learn how to create effective user stories and prioritize development based on customer value."
+      "title": "Workflow Visualization",
+      "description": "Learn to visualize workflow for better transparency."
     },
     {
-      "title": "Agile Planning",
-      "description": "Master product planning, release planning, and iteration planning techniques."
+      "title": "Flow Optimization",
+      "description": "Use metrics to continuously improve delivery performance."
     },
     {
-      "title": "Scrum Events",
-      "description": "Gain clarity on Scrum ceremonies including Sprint Planning, Daily Scrum, Sprint Review, and Retrospective."
+      "title": "WIP Management",
+      "description": "Apply WIP limits to prevent overload and increase efficiency."
     },
     {
-      "title": "Estimation and Metrics",
-      "description": "Apply estimation techniques and measure performance using Agile metrics."
-    },
-    {
-      "title": "Scaling Agile",
-      "description": "Learn how to scale Agile practices successfully across large organizations."
+      "title": "Predictable Delivery",
+      "description": "Deliver value consistently through sustainable flow practices."
     }
   ];
 
   const faqCategories = [
-  {
-    "id": "category_1",
-    "label": "Agile & Scrum Certification FAQs",
-    "items": [
-      {
-        "question": "What is Agile and Scrum Training?",
-        "answer": "Agile and Scrum Training provides a comprehensive understanding of Agile principles and the Scrum framework. It helps professionals learn how to deliver value incrementally, collaborate effectively, and adapt quickly to changing requirements."
-      },
-      {
-        "question": "Who should attend Agile and Scrum Training?",
-        "answer": "This course is ideal for Developers, Testers, Project Managers, Product Owners, Scrum Masters, Business Analysts, and anyone involved in Agile projects."
-      },
-      {
-        "question": "Are there any prerequisites for Agile and Scrum Training?",
-        "answer": "There are no strict prerequisites. However, having basic knowledge of software development or project management concepts is beneficial."
-      },
-      {
-        "question": "What will I learn in Agile and Scrum Training?",
-        "answer": "You will learn Agile values and principles, Scrum roles (Scrum Master, Product Owner, Developers), Scrum events, artifacts, sprint planning, backlog management, estimation techniques, and Agile best practices."
-      },
-      {
-        "question": "Is there an exam included in the training?",
-        "answer": "Depending on the certification track, an assessment may be included. Exam details such as number of questions, duration, and passing score vary based on the certification body."
-      },
-      {
-        "question": "How long is the Agile and Scrum certification valid?",
-        "answer": "Certification validity depends on the certifying organization. Some certifications are lifetime, while others require renewal through SEUs or PDUs."
-      },
-      {
-        "question": "How many PDUs and SEUs can I earn?",
-        "answer": "Participants can typically earn up to 14–16 PDUs and SEUs upon completion of the 2-day Agile and Scrum training program."
-      },
-      {
-        "question": "Is Agile and Scrum certification globally recognized?",
-        "answer": "Yes, Agile and Scrum certifications are globally recognized and highly valued across industries adopting Agile methodologies."
-      }
-    ]
-  },
-  {
-    "id": "category_2",
-    "label": "Training & Course Delivery FAQs",
-    "items": [
-      {
-        "question": "What is the duration of Agile and Scrum Training?",
-        "answer": "The training is typically delivered over 2 days (approximately 16 hours) of instructor-led sessions."
-      },
-      {
-        "question": "Is the training practical or theoretical?",
-        "answer": "The training is highly interactive and includes case studies, group activities, simulations, sprint exercises, and real-world scenarios."
-      },
-      {
-        "question": "Do I get hands-on Scrum experience during training?",
-        "answer": "Yes, participants engage in practical Scrum simulations including sprint planning, daily scrum exercises, backlog refinement, and retrospectives."
-      },
-      {
-        "question": "Is online training available?",
-        "answer": "Yes, Agile and Scrum training is available in live virtual instructor-led mode as well as corporate onsite programs."
-      },
-      {
-        "question": "Do you provide corporate Agile and Scrum training?",
-        "answer": "Yes, we offer customized corporate training tailored to organizational needs and Agile transformation goals."
-      },
-      {
-        "question": "Will I receive study materials?",
-        "answer": "Yes, participants receive comprehensive course materials, templates, and supporting learning resources."
-      }
-    ]
-  },
-  {
-    "id": "category_3",
-    "label": "Payment & Enrollment FAQs",
-    "items": [
-      {
-        "question": "How do I enroll in Agile and Scrum Training?",
-        "answer": "Choose your preferred schedule, complete the registration process, make the payment, and you will receive confirmation with course access details."
-      },
-      {
-        "question": "What payment methods are accepted?",
-        "answer": "We accept credit cards, debit cards, net banking, wire transfers, PayPal, Stripe, and other secure payment methods."
-      },
-      {
-        "question": "Do you offer installment payment options?",
-        "answer": "Yes, installment options may be available. Please contact support for detailed payment plans."
-      },
-      {
-        "question": "Are there group or corporate discounts available?",
-        "answer": "Yes, we provide special pricing for corporate teams and group enrollments."
-      },
-      {
-        "question": "Will I receive a payment receipt?",
-        "answer": "Yes, you will receive an official invoice and confirmation email after successful payment."
-      },
-      {
-        "question": "What is your refund policy?",
-        "answer": "Refunds are generally not provided. However, participants may reschedule their training as per policy terms."
-      }
-    ]
-  }
-];
+    {
+      "id": "category_1",
+      "label": "Certification FAQs",
+      "items": [
+        {
+          "question": "How long is the PSK I certification valid?",
+          "answer": "The PSK I certification is valid for a lifetime."
+        },
+        {
+          "question": "What is the passing score?",
+          "answer": "The passing score for PSK I is 85%."
+        },
+        {
+          "question": "Is training mandatory?",
+          "answer": "Training is not mandatory but strongly recommended."
+        }
+      ]
+    },
+    {
+      "id": "category_2",
+      "label": "Payment FAQs",
+      "items": [
+        {
+          "question": "Can I pay in installments?",
+          "answer": "Yes, installment options are available."
+        },
+        {
+          "question": "Is there a refund policy?",
+          "answer": "Refunds are not available, but rescheduling is permitted."
+        }
+      ]
+    },
+    {
+      "id": "category_3",
+      "label": "General FAQs",
+      "items": [
+        {
+          "question": "Do you offer corporate training?",
+          "answer": "Yes, customized corporate training options are available."
+        }
+      ]
+    }
+  ];
   const courseFeatures = [
     {
       icon: Users,
@@ -509,37 +402,37 @@ const AgileAndScrumTraining = () => {
   const courseWhySimpliaxis = [
     {
       "title": "Global Recognition",
-      "description": "Courses accredited by globally recognized certification bodies."
+      "description": "PSK certification is globally recognized by Scrum.org."
     },
     {
       "title": "Expert Trainers",
-      "description": "Learn from certified professionals with real-world industry experience."
+      "description": "Delivered by certified Professional Scrum Trainers."
     },
     {
-      "title": "Flexible Learning Options",
-      "description": "Choose from live virtual, online, or corporate training formats."
+      "title": "Flexible Learning",
+      "description": "Live online and corporate training formats available."
     },
     {
-      "title": "Lifetime Access",
-      "description": "Access session recordings and learning resources anytime."
+      "title": "Lifetime Certification",
+      "description": "No renewal required after certification."
     },
     {
       "title": "Proven Track Record",
-      "description": "Trusted by organizations worldwide for measurable training outcomes."
+      "description": "Trusted by professionals and enterprises worldwide."
     },
     {
-      "title": "End-to-End Support",
-      "description": "Comprehensive assistance before, during, and after training."
+      "title": "End-to-End Assistance",
+      "description": "Support provided before, during, and after training."
     },
     {
-      "title": "Interactive Learning",
-      "description": "Engaging sessions with real-world case studies and activities."
+      "title": "Interactive Training",
+      "description": "Real-world scenarios and collaborative learning."
     },
     {
       "title": "Wide Course Portfolio",
-      "description": "International certifications across Agile, Scrum, SAFe, DevOps, and Project Management."
+      "description": "Access to multiple Agile and Scrum certifications."
     }
-  ]
+  ];
   const sidePanelSchedules = [
     {
       courseCode: 'SCM',
@@ -563,28 +456,30 @@ const AgileAndScrumTraining = () => {
   ];
 
   const heroData = {
-    "courseName": "Agile and Scrum Training",
-    "breadcrumbName": "Agile and Scrum Foundational Training by Simpliaxis",
+    "courseName": "Professional Scrum with Kanban™ (PSK) Training",
+    "breadcrumbName": "Professional Scrum™ with Kanban Training | PSK™ Certification",
     "rating": "5.0",
     "enrolledCount": "",
-    "subtitle": "Build a strong foundation in Agile principles and the Scrum framework in just one day.",
+    "subtitle": "Enhance Scrum with Kanban to optimize workflow and improve delivery predictability.",
     "benefits": [
-      "Attend a 1-Day Live Instructor-Led Training Session delivered by certified experts.",
-      "Develop essential Agile and Scrum skills to build high-performing teams.",
-      "Engage in interactive and practical learning for deeper conceptual clarity.",
-      "Begin your journey toward globally recognized certifications such as CSM and PSM."
+      "2-Day Live Instructor-Led Training",
+      "Certified Professional Scrum Trainers",
+      "Real-Time Case Studies",
+      "16 PDUs Earned",
+      "Lifetime Valid Certification"
     ],
     "mainImage": "https://www.simpliaxis.com/../frontend_assets/image/ring_loader.gif",
     "badgeImage": "/csm-badge.png"
   };
 
-  const overviewContent = {
+
+  const overviewContent ={
     "title": "Course Overview",
-    "subtitle": "Comprehensive Introduction to Agile and Scrum",
+    "subtitle": "Professional Scrum with Kanban™ (PSK) Certification Overview",
     "description": [
-      "The Agile and Scrum Training by Simpliaxis validates your understanding of Agile principles and Scrum practices. This foundational program prepares professionals to pursue globally recognized certifications such as CSM, CSPO, PSM, and SAFe Scrum Master.",
-      "Delivered by certified Scrum trainers, this course bridges traditional project management approaches with Agile methodologies. It is ideal for aspiring Scrum Masters, Product Owners, Project Managers, and Agile team members.",
-      "Participants gain hands-on exposure through real-world exercises, enabling them to effectively implement Scrum within their organizations and improve project success rates."
+      "The Professional Scrum with Kanban™ course teaches how to enhance Scrum by incorporating Kanban practices to optimize workflow and improve delivery predictability.",
+      "Participants learn to apply flow metrics, manage WIP, and improve transparency across Scrum Teams.",
+      "This course prepares professionals to confidently attempt the PSK I certification from Scrum.org."
     ],
     "whatIsTitle": "",
     "whatIsDescription": [],
@@ -596,12 +491,12 @@ const AgileAndScrumTraining = () => {
     "modesDescription": []
   };
 
-  const corporateData ={
+  const corporateData = {
     "courseName": "Why Corporates Choose Us",
     "label": "",
     "buttonText": "Corporate Group Enquiry",
-    "description": "Simpliaxis delivers customized corporate training programs designed to address specific organizational challenges. Our expert trainers provide industry-aligned modules that enhance workforce capabilities and help enterprises remain competitive."
-  };
+    "description": "We deliver tailored Scrum and Kanban training programs that enhance workflow efficiency, transparency, and enterprise Agile maturity across organizations."
+  }
 
   const courseMetadata = {
     shortName: 'CSM',
@@ -854,4 +749,4 @@ const AgileAndScrumTraining = () => {
   );
 };
 
-export default AgileAndScrumTraining;
+export default ProfessionalScrumWithKanbanCertificationTraining;

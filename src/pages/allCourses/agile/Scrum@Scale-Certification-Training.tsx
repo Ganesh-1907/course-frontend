@@ -39,81 +39,81 @@ import {
   Star
 } from "lucide-react";
 
-const AgileAndScrumTraining = () => {
-  const highlights =  [
-    { "text": "8 Hours of Live Instructor-Led Training" },
-    { "text": "Earn 8 PDUs and 8 SEUs" },
-    { "text": "Delivered by Certified Scrum Trainers (CSTs)" },
-    { "text": "Comprehensive Coverage of Agile and Scrum Fundamentals" },
-    { "text": "Hands-On Practical Exercises and Case Studies" },
-    { "text": "Course Completion Certificate from Simpliaxis" },
-    { "text": "24/7 Post-Training Support" },
-    { "text": "Dedicated Doubt-Clearing Sessions" }
+const ScrumAtScaleCertificationTraining = () => {
+  const highlights = [
+    { text: 'Training, Coaching & Consulting by Globally Acclaimed Trainers' },
+    { text: '2-Day Comprehensive Interactive Training' },
+    { text: 'Monthly Webinars & E-Books for Continuous Learning' },
+    { text: 'Access to Tutorials and Sample Papers by Industry Experts' },
+    { text: 'Join a Global Community of Scrum Professionals' },
+    { text: 'Learn from Experts Implementing Scrum@Scale in Real Projects' },
+    { text: 'Hands-On Activities and Real-Time Simulations' },
   ];
 
   const individualBenefits = [
     {
-      "title": "Improved Adaptability",
-      "description": "Respond effectively to changing project requirements."
+      title: 'Enterprise-Level Scaling Knowledge',
+      description: 'Learn how to scale Scrum effectively across multiple teams in large organizations.',
     },
     {
-      "title": "Enhanced Collaboration",
-      "description": "Work efficiently within cross-functional Agile teams."
+      title: 'Improved Cross-Team Collaboration',
+      description: 'Develop skills to coordinate work across multiple Scrum Teams efficiently.',
     },
     {
-      "title": "Higher Productivity",
-      "description": "Increase efficiency and deliver value consistently."
+      title: 'Leadership Development',
+      description: 'Strengthen your ability to lead at scale using Scrum@Scale principles.',
     },
     {
-      "title": "Stronger Problem-Solving Skills",
-      "description": "Develop analytical thinking through Agile practices."
+      title: 'Global Recognition',
+      description: 'Earn a widely respected Scrum@Scale certification.',
     },
     {
-      "title": "Career Growth Opportunities",
-      "description": "Unlock new career paths in Agile and Scrum roles."
-    }
+      title: 'Career Advancement',
+      description: 'Expand opportunities in enterprise Agile coaching and transformation roles.',
+    },
   ];
 
   const corporateBenefits = [
     {
-      "title": "Faster Project Delivery",
-      "description": "Accelerate time-to-market using Agile methodologies."
+      title: 'Improved Organizational Agility',
+      description: 'Enable enterprise-wide agility with a structured scaling framework.',
     },
     {
-      "title": "Improved Customer Satisfaction",
-      "description": "Deliver value-driven solutions aligned with customer needs."
+      title: 'Better Strategic Alignment',
+      description: 'Align product vision and execution across departments.',
     },
     {
-      "title": "Enhanced Product Quality",
-      "description": "Ensure continuous improvement through iterative development."
+      title: 'Higher Productivity',
+      description: 'Improve efficiency and reduce bottlenecks in large-scale development.',
     },
     {
-      "title": "Greater Employee Engagement",
-      "description": "Encourage team ownership and collaboration."
+      title: 'Enhanced Transparency',
+      description: 'Improve visibility across teams with structured scaling events.',
     },
     {
-      "title": "Reduced Project Risk",
-      "description": "Identify and mitigate risks early through continuous feedback."
-    }
+      title: 'Sustainable Growth',
+      description: 'Build an Agile operating system that supports long-term business growth.',
+    },
   ];
 
   const careerStats = {
-    averageIncome: '$110k-130k',
+    averageIncome: '$120k-150k',
     incomeLabel: 'per annum',
-    employmentGrowth: '67%',
-    growthLabel: '(2022-2025)',
+    employmentGrowth: '58%',
+    growthLabel: '(Projected)',
   };
 
   const attendees = [
     {
       group: [
         'Scrum Masters',
-        'Delivery Managers',
         'Product Owners',
         'Agile Coaches',
+        'Enterprise Leaders',
+        'Transformation Leaders',
+        'Scrum Practitioners'
       ],
     },
-    { group: ['Team Leads', 'Development Managers'] },
   ];
 
   const companies = [
@@ -148,249 +148,134 @@ const AgileAndScrumTraining = () => {
   ];
 
   const outcomes = [
-    "Develop a strong foundation in Agile principles and Scrum practices.",
-    "Apply Scrum roles, artifacts, and ceremonies effectively in real projects.",
-    "Use Agile estimation techniques such as Story Points and Planning Poker.",
-    "Monitor progress using Agile metrics like burn-down and burn-up charts.",
-    "Understand scaling approaches for enterprise-level Agile implementation."
+    'Understand the Scrum@Scale framework structure.',
+    'Learn how to scale Scrum across multiple teams.',
+    'Improve cross-team collaboration.',
+    'Implement scaled Scrum events and roles.',
+    'Align enterprise strategy with Agile execution.',
   ];
 
   const prerequisites = [
-    "No prior experience is required to enroll in this Agile and Scrum Training.",
-    "Ideal for beginners and professionals planning to pursue certifications such as CSM, CSPO, PSM, or SAFe Scrum Master."
+    'No mandatory prerequisites.',
+    'Basic understanding of Scrum is recommended.',
+    'CSM/CSPO certification or prior Scrum experience is beneficial.',
   ];
 
   const certificationSteps = [
     {
       title: 'Attend Training',
-      description:
-        'Complete the 16-hour A-CSM training delivered by Scrum Alliance-accredited trainers.',
+      description: 'Complete the 2-day Scrum@Scale training from an authorized training provider.',
     },
     {
-      title: 'Validate Experience',
-      description: 'Confirm at least 12 months of Scrum Master experience.',
+      title: 'Receive Exam Link',
+      description: 'Get access to the certification assessment after course completion.',
     },
     {
-      title: 'Accept License',
-      description:
-        'Log in to Scrum Alliance and acknowledge the license agreement.',
+      title: 'Take the Assessment',
+      description: 'Complete the open-book exam and score at least 75%.',
     },
     {
-      title: 'Download Certificate',
-      description:
-        'Receive and download your Advanced Certified ScrumMaster credential.',
+      title: 'Get Certified',
+      description: 'Earn your Scrum@Scale certification, valid for 2 years.',
     },
   ];
 
-  const curriculumModules =[
+  const curriculumModules = [
     {
-      "title": "Module 1: Introduction to Agile",
-      "topics": [
-        "Evolution of Agile",
-        "Traditional vs Agile Project Management",
-        "Benefits of Agile Methodology"
+      title: "Preface to the Scrum@Scale Guide",
+      topics: []
+    },
+    {
+      title: "Purpose of the Scrum@Scale Guide",
+      topics: []
+    },
+    {
+      title: "The Components of Scrum@Scale",
+      topics: [
+        "Values-Driven Culture",
+        "Installing an Agile Operating System",
+        "Scaling the Teams",
+        "The Team Process",
+        "Scrum of Scrums (SoS)",
+        "Scaling in Large Organizations",
+        "Scaled Events and Roles",
+        "Scaled Daily Scrum (SDS)",
+        "Scaled Retrospective"
       ]
     },
     {
-      "title": "Module 2: Agile Foundations",
-      "topics": [
-        "Agile Manifesto",
-        "Agile Values and Principles",
-        "Customer Collaboration and Iterative Delivery"
+      title: "The Scrum Master Cycle – Coordinating the 'How'",
+      topics: [
+        "Scrum of Scrums Master (SoSM)",
+        "Executive Action Team (EAT)",
+        "EAT Backlog & Responsibilities",
+        "Continuous Improvement",
+        "Cross-Team Coordination",
+        "Delivery"
       ]
     },
     {
-      "title": "Module 3: Business Value in Agile",
-      "topics": [
-        "User Stories and the 3Cs",
-        "Prioritization Techniques",
-        "Minimum Viable Product (MVP)"
+      title: "The Product Owner Cycle – Coordinating the 'What'",
+      topics: [
+        "Chief Product Owner (CPO)",
+        "Scaling the Product Owner Team",
+        "Executive MetaScrum (EMS)",
+        "Strategic Vision",
+        "Backlog Prioritization",
+        "Backlog Refinement",
+        "Release Planning"
       ]
     },
     {
-      "title": "Module 4: Agile Frameworks",
-      "topics": [
-        "Scrum Framework",
-        "Kanban",
-        "Extreme Programming (XP)",
-        "Feature-Driven Development (FDD)"
-      ]
-    },
-    {
-      "title": "Module 5: Agile Project Management",
-      "topics": [
-        "APM Framework Phases",
-        "Envision, Speculate, Explore, Adapt, Close"
-      ]
-    },
-    {
-      "title": "Module 6: Scrum Framework Deep Dive",
-      "topics": [
-        "Scrum Roles",
-        "Scrum Artifacts",
-        "Scrum Events"
-      ]
-    },
-    {
-      "title": "Module 7: Agile Estimation",
-      "topics": [
-        "Story Points",
-        "Planning Poker",
-        "T-Shirt Sizing"
-      ]
-    },
-    {
-      "title": "Module 8: Agile Planning and Tracking",
-      "topics": [
-        "Release Planning",
-        "Iteration Planning",
-        "Burn-down and Burn-up Charts"
-      ]
-    },
-    {
-      "title": "Module 9: Scaling Agile",
-      "topics": [
-        "SAFe",
-        "DAD",
-        "LeSS"
-      ]
-    },
-    {
-      "title": "Module 10: Agile Career Path",
-      "topics": [
-        "Agile Certifications",
-        "Enterprise Agile Roles"
+      title: "Connecting PO and SM Cycles",
+      topics: [
+        "Product & Release Feedback",
+        "Metrics & Transparency",
+        "Organizational Design Considerations"
       ]
     }
   ];
 
   const learningObjectives = [
     {
-      "title": "Agile Fundamentals",
-      "description": "Understand Agile values and principles and explore frameworks such as Scrum, Kanban, and XP."
+      title: "Enterprise Scrum Implementation",
+      description: "Learn how to implement Scrum@Scale across multiple teams."
     },
     {
-      "title": "User Stories and Business Value",
-      "description": "Learn how to create effective user stories and prioritize development based on customer value."
+      title: "Scaled Events & Roles",
+      description: "Understand the scaled roles and ceremonies in Scrum@Scale."
     },
     {
-      "title": "Agile Planning",
-      "description": "Master product planning, release planning, and iteration planning techniques."
+      title: "Strategic Alignment",
+      description: "Align product vision with enterprise-level execution."
     },
     {
-      "title": "Scrum Events",
-      "description": "Gain clarity on Scrum ceremonies including Sprint Planning, Daily Scrum, Sprint Review, and Retrospective."
+      title: "Impediment Removal",
+      description: "Use EAT to remove systemic organizational impediments."
     },
     {
-      "title": "Estimation and Metrics",
-      "description": "Apply estimation techniques and measure performance using Agile metrics."
-    },
-    {
-      "title": "Scaling Agile",
-      "description": "Learn how to scale Agile practices successfully across large organizations."
+      title: "Transparency & Metrics",
+      description: "Measure performance and improve transparency across teams."
     }
   ];
 
   const faqCategories = [
-  {
-    "id": "category_1",
-    "label": "Agile & Scrum Certification FAQs",
-    "items": [
-      {
-        "question": "What is Agile and Scrum Training?",
-        "answer": "Agile and Scrum Training provides a comprehensive understanding of Agile principles and the Scrum framework. It helps professionals learn how to deliver value incrementally, collaborate effectively, and adapt quickly to changing requirements."
-      },
-      {
-        "question": "Who should attend Agile and Scrum Training?",
-        "answer": "This course is ideal for Developers, Testers, Project Managers, Product Owners, Scrum Masters, Business Analysts, and anyone involved in Agile projects."
-      },
-      {
-        "question": "Are there any prerequisites for Agile and Scrum Training?",
-        "answer": "There are no strict prerequisites. However, having basic knowledge of software development or project management concepts is beneficial."
-      },
-      {
-        "question": "What will I learn in Agile and Scrum Training?",
-        "answer": "You will learn Agile values and principles, Scrum roles (Scrum Master, Product Owner, Developers), Scrum events, artifacts, sprint planning, backlog management, estimation techniques, and Agile best practices."
-      },
-      {
-        "question": "Is there an exam included in the training?",
-        "answer": "Depending on the certification track, an assessment may be included. Exam details such as number of questions, duration, and passing score vary based on the certification body."
-      },
-      {
-        "question": "How long is the Agile and Scrum certification valid?",
-        "answer": "Certification validity depends on the certifying organization. Some certifications are lifetime, while others require renewal through SEUs or PDUs."
-      },
-      {
-        "question": "How many PDUs and SEUs can I earn?",
-        "answer": "Participants can typically earn up to 14–16 PDUs and SEUs upon completion of the 2-day Agile and Scrum training program."
-      },
-      {
-        "question": "Is Agile and Scrum certification globally recognized?",
-        "answer": "Yes, Agile and Scrum certifications are globally recognized and highly valued across industries adopting Agile methodologies."
-      }
-    ]
-  },
-  {
-    "id": "category_2",
-    "label": "Training & Course Delivery FAQs",
-    "items": [
-      {
-        "question": "What is the duration of Agile and Scrum Training?",
-        "answer": "The training is typically delivered over 2 days (approximately 16 hours) of instructor-led sessions."
-      },
-      {
-        "question": "Is the training practical or theoretical?",
-        "answer": "The training is highly interactive and includes case studies, group activities, simulations, sprint exercises, and real-world scenarios."
-      },
-      {
-        "question": "Do I get hands-on Scrum experience during training?",
-        "answer": "Yes, participants engage in practical Scrum simulations including sprint planning, daily scrum exercises, backlog refinement, and retrospectives."
-      },
-      {
-        "question": "Is online training available?",
-        "answer": "Yes, Agile and Scrum training is available in live virtual instructor-led mode as well as corporate onsite programs."
-      },
-      {
-        "question": "Do you provide corporate Agile and Scrum training?",
-        "answer": "Yes, we offer customized corporate training tailored to organizational needs and Agile transformation goals."
-      },
-      {
-        "question": "Will I receive study materials?",
-        "answer": "Yes, participants receive comprehensive course materials, templates, and supporting learning resources."
-      }
-    ]
-  },
-  {
-    "id": "category_3",
-    "label": "Payment & Enrollment FAQs",
-    "items": [
-      {
-        "question": "How do I enroll in Agile and Scrum Training?",
-        "answer": "Choose your preferred schedule, complete the registration process, make the payment, and you will receive confirmation with course access details."
-      },
-      {
-        "question": "What payment methods are accepted?",
-        "answer": "We accept credit cards, debit cards, net banking, wire transfers, PayPal, Stripe, and other secure payment methods."
-      },
-      {
-        "question": "Do you offer installment payment options?",
-        "answer": "Yes, installment options may be available. Please contact support for detailed payment plans."
-      },
-      {
-        "question": "Are there group or corporate discounts available?",
-        "answer": "Yes, we provide special pricing for corporate teams and group enrollments."
-      },
-      {
-        "question": "Will I receive a payment receipt?",
-        "answer": "Yes, you will receive an official invoice and confirmation email after successful payment."
-      },
-      {
-        "question": "What is your refund policy?",
-        "answer": "Refunds are generally not provided. However, participants may reschedule their training as per policy terms."
-      }
-    ]
-  }
-];
+    {
+      id: "category_1",
+      label: "Certification FAQs",
+      items: []
+    },
+    {
+      id: "category_2",
+      label: "Payment FAQs",
+      items: []
+    },
+    {
+      id: "category_3",
+      label: "General FAQs",
+      items: []
+    }
+  ];
   const courseFeatures = [
     {
       icon: Users,
@@ -509,49 +394,49 @@ const AgileAndScrumTraining = () => {
   const courseWhySimpliaxis = [
     {
       "title": "Global Recognition",
-      "description": "Courses accredited by globally recognized certification bodies."
+      "description": "Scrum@Scale certification is globally recognized across industries."
     },
     {
       "title": "Expert Trainers",
-      "description": "Learn from certified professionals with real-world industry experience."
+      "description": "Learn from experienced professionals implementing Scrum@Scale in real environments."
     },
     {
-      "title": "Flexible Learning Options",
-      "description": "Choose from live virtual, online, or corporate training formats."
+      "title": "Flexible Learning",
+      "description": "Available in live virtual and corporate formats."
     },
     {
-      "title": "Lifetime Access",
-      "description": "Access session recordings and learning resources anytime."
+      "title": "Lifetime Learning Support",
+      "description": "Access to webinars, materials, and community support."
     },
     {
       "title": "Proven Track Record",
-      "description": "Trusted by organizations worldwide for measurable training outcomes."
+      "description": "Trusted training provider with enterprise Agile expertise."
     },
     {
-      "title": "End-to-End Support",
-      "description": "Comprehensive assistance before, during, and after training."
+      "title": "End-to-End Assistance",
+      "description": "Support provided before, during, and after training."
     },
     {
-      "title": "Interactive Learning",
-      "description": "Engaging sessions with real-world case studies and activities."
+      "title": "Interactive Sessions",
+      "description": "Hands-on simulations and real-world case discussions."
     },
     {
       "title": "Wide Course Portfolio",
-      "description": "International certifications across Agile, Scrum, SAFe, DevOps, and Project Management."
+      "description": "Access to multiple Agile, Scrum, and enterprise scaling certifications."
     }
-  ]
+  ] ;
   const sidePanelSchedules = [
     {
-      courseCode: 'SCM',
-      courseName: 'Advanced Certified Scrum Master (A-CSM®) Training',
-      dateRange: 'Feb 28 - Mar 01, 2026',
-      timeRange: '08:30 AM - 04:30 PM IST',
-      trainerName: 'Naveen Nanjundappa',
+      courseCode: 'S@S',
+      courseName: 'Scrum@Scale™ Certification Training',
+      dateRange: 'Mar 15 - Mar 16, 2026',
+      timeRange: '09:00 AM - 05:00 PM IST',
+      trainerName: 'Expert Scaled Consultant',
       trainerImage:
-        'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=100',
-      originalPrice: 'INR 49,080',
-      discountedPrice: 'INR 34,356',
-      discountPercentage: '30',
+        'https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=100',
+      originalPrice: 'INR 55,000',
+      discountedPrice: 'INR 45,833',
+      discountPercentage: '20',
     },
   ];
 
@@ -563,16 +448,17 @@ const AgileAndScrumTraining = () => {
   ];
 
   const heroData = {
-    "courseName": "Agile and Scrum Training",
-    "breadcrumbName": "Agile and Scrum Foundational Training by Simpliaxis",
+    "courseName": "Scrum@Scale™ Certification Training",
+    "breadcrumbName": "Scrum@Scale Certification | Certified Scrum@Scale Practitioner Course",
     "rating": "5.0",
     "enrolledCount": "",
-    "subtitle": "Build a strong foundation in Agile principles and the Scrum framework in just one day.",
+    "subtitle": "Scale Scrum effectively across the enterprise with the Scrum@Scale framework.",
     "benefits": [
-      "Attend a 1-Day Live Instructor-Led Training Session delivered by certified experts.",
-      "Develop essential Agile and Scrum skills to build high-performing teams.",
-      "Engage in interactive and practical learning for deeper conceptual clarity.",
-      "Begin your journey toward globally recognized certifications such as CSM and PSM."
+      "2-Day Live Instructor-Led Training",
+      "Enterprise Scaling Expertise",
+      "Open-Book Certification Exam",
+      "75% Passing Score",
+      "Valid for 2 Years"
     ],
     "mainImage": "https://www.simpliaxis.com/../frontend_assets/image/ring_loader.gif",
     "badgeImage": "/csm-badge.png"
@@ -580,35 +466,50 @@ const AgileAndScrumTraining = () => {
 
   const overviewContent = {
     "title": "Course Overview",
-    "subtitle": "Comprehensive Introduction to Agile and Scrum",
+    "subtitle": "Scrum@Scale™ Certification Overview",
     "description": [
-      "The Agile and Scrum Training by Simpliaxis validates your understanding of Agile principles and Scrum practices. This foundational program prepares professionals to pursue globally recognized certifications such as CSM, CSPO, PSM, and SAFe Scrum Master.",
-      "Delivered by certified Scrum trainers, this course bridges traditional project management approaches with Agile methodologies. It is ideal for aspiring Scrum Masters, Product Owners, Project Managers, and Agile team members.",
-      "Participants gain hands-on exposure through real-world exercises, enabling them to effectively implement Scrum within their organizations and improve project success rates."
+      "Scrum@Scale is a framework that enables organizations to scale Scrum across multiple teams working toward a shared product vision.",
+      "This 2-day interactive training provides practical insights into implementing an Agile operating system at enterprise scale.",
+      "Participants learn to coordinate Scrum Master and Product Owner cycles for improved strategic alignment and delivery."
     ],
     "whatIsTitle": "",
     "whatIsDescription": [],
-    "whatsIncludedTitle": "",
-    "whatsIncludedDescription": [],
-    "skillsTitle": "",
-    "skills": [],
-    "modesTitle": "",
-    "modesDescription": []
+    "whatsIncludedTitle": "What’s Included in This Course?",
+    "whatsIncludedDescription": [
+      "Scrum@Scale™ Practitioner Courseware",
+      "Access to the Scrum@Scale Practitioners Community",
+      "Certification Assessment Retake",
+      "Official Scrum@Scale Practitioner Certificate"
+    ],
+    "skillsTitle": "Skills Covered in S@S Training",
+    "skills": [
+      "Strategic Alignment",
+      "Organizational Design",
+      "Cross-Team Coordination",
+      "Scaling Backlog Management",
+      "Executive Leadership Liaison"
+    ],
+    "modesTitle": "Training Delivery Modes",
+    "modesDescription": [
+      "Live Online Training",
+      "Onsite/In-Person Training",
+      "Corporate Personalized Coaching"
+    ]
   };
 
-  const corporateData ={
-    "courseName": "Why Corporates Choose Us",
+  const corporateData = {
+    "courseName": "Why Corporate Opt Us",
     "label": "",
     "buttonText": "Corporate Group Enquiry",
-    "description": "Simpliaxis delivers customized corporate training programs designed to address specific organizational challenges. Our expert trainers provide industry-aligned modules that enhance workforce capabilities and help enterprises remain competitive."
+    "description": "We deliver enterprise-focused Scrum@Scale training tailored to organizational needs, enabling strategic alignment, improved agility, and sustainable scaling of Agile practices."
   };
 
   const courseMetadata = {
-    shortName: 'CSM',
-    shortNameAlt: 'A-CSM',
-    fullName: 'Advanced Certified Scrum Master (A-CSM®)',
-    fullNameAlt: 'Advance Certified Scrum Master (A-CSM)',
-    certificateName: 'Advanced Scrum Master',
+    shortName: 'S@S',
+    shortNameAlt: 'S@S',
+    fullName: 'Scrum@Scale™ Practitioner (S@SP)',
+    fullNameAlt: 'Scrum@Scale Certification',
+    certificateName: 'Scrum@Scale Practitioner',
   };
 
   const sectionsLabels = {
@@ -616,11 +517,11 @@ const AgileAndScrumTraining = () => {
       outcomesTitle:
         `What are the Learning Outcomes of the ${heroData.courseName} Course?`,
       outcomesFooter:
-        "After completing your Certified Scrum Master® Certification, a wide selection of career options will open up, and one can explore enhancements in one's career path. One can lead to higher positions in the job profile and the organization.",
+        "After completing your Scrum@Scale™ Practitioner certification, a wide selection of career options will open up, enabling you to lead large-scale transformations and high-performing networks of teams.",
     },
     prerequisites: {
       subtitle:
-        'What are the Prerequisites Required for Advanced Scrum Master Training?',
+        'What are the Prerequisites for Scrum@Scale Certification Training?',
     },
     certificate: {
       mockupName: 'ALEX BRYANT',
@@ -628,7 +529,7 @@ const AgileAndScrumTraining = () => {
       titlePrefix: 'Earn Your',
       titleHighlight: 'Global',
       titleSuffix: 'Recognition',
-      issuerName: 'Scrum Alliance',
+      issuerName: 'Scrum Inc.',
       certificateType: 'Certificate of Mastery',
       certifyText: 'This is to certify that',
       requirementText:
@@ -640,11 +541,11 @@ const AgileAndScrumTraining = () => {
 
   const commonAttendeesList = [
     'Scrum Masters',
-    'Team Leads',
-    'Development Managers',
-    'Delivery Managers',
     'Product Owners',
     'Agile Coaches',
+    'Managers & Executives',
+    'Project/Program Managers',
+    'Team Leads',
   ];
 
   const pageCaptions = {
@@ -659,7 +560,7 @@ const AgileAndScrumTraining = () => {
       referEarnText: 'Refer & Earn',
       enrolledSuffix: 'Enrolled',
       moneyBackText: '100% Money Back Guarantee',
-      ltpLabel: 'Global LTP of Scrum Alliance',
+      ltpLabel: 'Global LTP of Scrum Inc.',
       downloadBtnText: 'Download Brochure',
       viewSchedulesBtnText: 'View Schedules',
       freeAssessmentBtnText: 'Free Assesment',
@@ -695,7 +596,32 @@ const AgileAndScrumTraining = () => {
               <h3 className="text-2xl font-black text-[#001c3d] pt-4">
                 {overviewContent.whatsIncludedTitle}
               </h3>
-              <p>{overviewContent.whatsIncludedDescription}</p>
+              <ul className="list-disc pl-5 mt-2 space-y-2">
+                {overviewContent.whatsIncludedDescription.map((item, i) => (
+                  <li key={i}>{item}</li>
+                ))}
+              </ul>
+
+              <h3 className="text-2xl font-black text-[#001c3d] pt-4">
+                {overviewContent.skillsTitle}
+              </h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-2 mt-2">
+                {overviewContent.skills.map((skill, i) => (
+                  <div key={i} className="flex items-center gap-2">
+                    <span className="text-blue-500">✔</span>
+                    <span>{skill}</span>
+                  </div>
+                ))}
+              </div>
+
+              <h3 className="text-2xl font-black text-[#001c3d] pt-4">
+                {overviewContent.modesTitle}
+              </h3>
+              <ul className="list-disc pl-5 mt-2 space-y-2">
+                {overviewContent.modesDescription.map((mode, i) => (
+                  <li key={i}>{mode}</li>
+                ))}
+              </ul>
             </div>
           </div>
 
@@ -854,4 +780,4 @@ const AgileAndScrumTraining = () => {
   );
 };
 
-export default AgileAndScrumTraining;
+export default ScrumAtScaleCertificationTraining;

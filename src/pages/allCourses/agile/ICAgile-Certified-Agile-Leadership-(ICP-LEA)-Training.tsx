@@ -19,11 +19,11 @@ import CourseTrainers from "@/components/courses/CourseTrainers";
 import CourseFAQs from "@/components/courses/faqs/CourseFAQs";
 import CourseWhySimpliaxis from "@/components/courses/CourseWhySimpliaxis";
 
-import { 
-  Users, 
-  Monitor, 
-  Settings, 
-  UserCheck, 
+import {
+  Users,
+  Monitor,
+  Settings,
+  UserCheck,
   Map,
   Award,
   BookOpen,
@@ -39,61 +39,60 @@ import {
   Star
 } from "lucide-react";
 
-const AgileAndScrumTraining = () => {
-  const highlights =  [
-    { "text": "8 Hours of Live Instructor-Led Training" },
-    { "text": "Earn 8 PDUs and 8 SEUs" },
-    { "text": "Delivered by Certified Scrum Trainers (CSTs)" },
-    { "text": "Comprehensive Coverage of Agile and Scrum Fundamentals" },
-    { "text": "Hands-On Practical Exercises and Case Studies" },
-    { "text": "Course Completion Certificate from Simpliaxis" },
-    { "text": "24/7 Post-Training Support" },
-    { "text": "Dedicated Doubt-Clearing Sessions" }
+const ICAgileCertifiedAgileLeadershipTraining = () => {
+  const highlights = [
+    { "text": "14 hours of instructor-led training" },
+    { "text": "Earn 14 PDUs and 14 SEUs" },
+    { "text": "Highly interactive sessions led by ICAgile-certified professionals" },
+    { "text": "Courseware aligned with ICAgile Leading with Agility framework" },
+    { "text": "Practical leadership insights focused on trust and team autonomy" },
+    { "text": "Globally recognized ICAgile credential with lifetime validity" },
+    { "text": "Post-training guidance and continued learning support" }
   ];
 
   const individualBenefits = [
     {
-      "title": "Improved Adaptability",
-      "description": "Respond effectively to changing project requirements."
+      "title": "Individual Benefits",
+      "description": "Develop an Agile leadership mindset focused on adaptability and people-centric decision-making."
     },
     {
-      "title": "Enhanced Collaboration",
-      "description": "Work efficiently within cross-functional Agile teams."
+      "title": "Individual Benefits",
+      "description": "Improve career opportunities in leadership and transformation roles."
     },
     {
-      "title": "Higher Productivity",
-      "description": "Increase efficiency and deliver value consistently."
+      "title": "Individual Benefits",
+      "description": "Enhance influence, communication, and stakeholder management skills."
     },
     {
-      "title": "Stronger Problem-Solving Skills",
-      "description": "Develop analytical thinking through Agile practices."
+      "title": "Individual Benefits",
+      "description": "Strengthen decision-making in complex and uncertain environments."
     },
     {
-      "title": "Career Growth Opportunities",
-      "description": "Unlock new career paths in Agile and Scrum roles."
+      "title": "Individual Benefits",
+      "description": "Earn a globally recognized ICAgile leadership credential."
     }
   ];
 
   const corporateBenefits = [
     {
-      "title": "Faster Project Delivery",
-      "description": "Accelerate time-to-market using Agile methodologies."
+      "title": "Corporate Benefits",
+      "description": "Align leadership, strategy, and execution using Agile leadership principles."
     },
     {
-      "title": "Improved Customer Satisfaction",
-      "description": "Deliver value-driven solutions aligned with customer needs."
+      "title": "Corporate Benefits",
+      "description": "Improve organizational agility and adaptability to change."
     },
     {
-      "title": "Enhanced Product Quality",
-      "description": "Ensure continuous improvement through iterative development."
+      "title": "Corporate Benefits",
+      "description": "Increase team engagement and performance through trust-based leadership."
     },
     {
-      "title": "Greater Employee Engagement",
-      "description": "Encourage team ownership and collaboration."
+      "title": "Corporate Benefits",
+      "description": "Support successful Agile transformations with capable leadership."
     },
     {
-      "title": "Reduced Project Risk",
-      "description": "Identify and mitigate risks early through continuous feedback."
+      "title": "Corporate Benefits",
+      "description": "Improve cross-functional collaboration using systems thinking."
     }
   ];
 
@@ -106,14 +105,14 @@ const AgileAndScrumTraining = () => {
 
   const attendees = [
     {
-      group: [
-        'Scrum Masters',
-        'Delivery Managers',
-        'Product Owners',
-        'Agile Coaches',
-      ],
-    },
-    { group: ['Team Leads', 'Development Managers'] },
+      "group": [
+        "Lead teams effectively through uncertainty using Agile thinking",
+        "Create trust-based and collaborative team environments",
+        "Understand leadership influence on organizational culture",
+        "Improve decision-making balancing speed, risk, and value",
+        "Support Agile adoption across teams and organizations"
+      ]
+    }
   ];
 
   const companies = [
@@ -148,249 +147,131 @@ const AgileAndScrumTraining = () => {
   ];
 
   const outcomes = [
-    "Develop a strong foundation in Agile principles and Scrum practices.",
-    "Apply Scrum roles, artifacts, and ceremonies effectively in real projects.",
-    "Use Agile estimation techniques such as Story Points and Planning Poker.",
-    "Monitor progress using Agile metrics like burn-down and burn-up charts.",
-    "Understand scaling approaches for enterprise-level Agile implementation."
+    "Lead teams through change using Agile leadership practices",
+    "Build psychologically safe and collaborative cultures",
+    "Recognize cultural patterns that impact agility",
+    "Improve leadership decision-making in complex environments",
+    "Support organizational Agile adoption through mindset and influence"
   ];
 
   const prerequisites = [
-    "No prior experience is required to enroll in this Agile and Scrum Training.",
-    "Ideal for beginners and professionals planning to pursue certifications such as CSM, CSPO, PSM, or SAFe Scrum Master."
+    "Basic exposure to team collaboration or project delivery is helpful",
+    "Interest in developing Agile leadership capabilities",
+    "Prior Agile or Scrum knowledge is beneficial but not mandatory"
   ];
 
   const certificationSteps = [
     {
-      title: 'Attend Training',
-      description:
-        'Complete the 16-hour A-CSM training delivered by Scrum Alliance-accredited trainers.',
+      "title": "Enroll for the Course",
+      "description": "Register with an ICAgile-authorized training provider."
     },
     {
-      title: 'Validate Experience',
-      description: 'Confirm at least 12 months of Scrum Master experience.',
+      "title": "Attend the Training",
+      "description": "Participate in interactive sessions focused on Agile leadership mindset and practices."
     },
     {
-      title: 'Accept License',
-      description:
-        'Log in to Scrum Alliance and acknowledge the license agreement.',
+      "title": "Complete Learning Activities",
+      "description": "Engage in exercises, reflections, and discussions throughout the program."
     },
     {
-      title: 'Download Certificate',
-      description:
-        'Receive and download your Advanced Certified ScrumMaster credential.',
-    },
+      "title": "Receive Certification",
+      "description": "Receive the ICAgile ICP-LEA credential upon successful completion."
+    }
   ];
 
-  const curriculumModules =[
+  const curriculumModules = [
     {
-      "title": "Module 1: Introduction to Agile",
+      "title": "Agile Foundations & Mindset",
       "topics": [
-        "Evolution of Agile",
-        "Traditional vs Agile Project Management",
-        "Benefits of Agile Methodology"
+        "Origins of Agile",
+        "Agile Manifesto and principles",
+        "Agile beyond software development",
+        "Establishing Agile mindset"
       ]
     },
     {
-      "title": "Module 2: Agile Foundations",
+      "title": "Individuals & Interactions",
       "topics": [
-        "Agile Manifesto",
-        "Agile Values and Principles",
-        "Customer Collaboration and Iterative Delivery"
+        "Developing communication and soft skills",
+        "Collaboration techniques",
+        "Knowledge sharing",
+        "Role shifts in Agile environments"
       ]
     },
     {
-      "title": "Module 3: Business Value in Agile",
+      "title": "Value-Driven Development",
       "topics": [
-        "User Stories and the 3Cs",
-        "Prioritization Techniques",
-        "Minimum Viable Product (MVP)"
+        "Incremental delivery",
+        "Value-based work",
+        "Quality and continuous improvement",
+        "Work-in-progress management"
       ]
     },
     {
-      "title": "Module 4: Agile Frameworks",
+      "title": "Customer & User Development",
       "topics": [
-        "Scrum Framework",
-        "Kanban",
-        "Extreme Programming (XP)",
-        "Feature-Driven Development (FDD)"
+        "Understanding customers",
+        "User involvement",
+        "Feedback-driven improvement"
       ]
     },
     {
-      "title": "Module 5: Agile Project Management",
+      "title": "Planning & Adapting",
       "topics": [
-        "APM Framework Phases",
-        "Envision, Speculate, Explore, Adapt, Close"
-      ]
-    },
-    {
-      "title": "Module 6: Scrum Framework Deep Dive",
-      "topics": [
-        "Scrum Roles",
-        "Scrum Artifacts",
-        "Scrum Events"
-      ]
-    },
-    {
-      "title": "Module 7: Agile Estimation",
-      "topics": [
-        "Story Points",
-        "Planning Poker",
-        "T-Shirt Sizing"
-      ]
-    },
-    {
-      "title": "Module 8: Agile Planning and Tracking",
-      "topics": [
-        "Release Planning",
-        "Iteration Planning",
-        "Burn-down and Burn-up Charts"
-      ]
-    },
-    {
-      "title": "Module 9: Scaling Agile",
-      "topics": [
-        "SAFe",
-        "DAD",
-        "LeSS"
-      ]
-    },
-    {
-      "title": "Module 10: Agile Career Path",
-      "topics": [
-        "Agile Certifications",
-        "Enterprise Agile Roles"
+        "Adaptive planning",
+        "Estimation approaches",
+        "Process and product adaptation"
       ]
     }
   ];
 
   const learningObjectives = [
     {
-      "title": "Agile Fundamentals",
-      "description": "Understand Agile values and principles and explore frameworks such as Scrum, Kanban, and XP."
+      "title": "Develop an Agile Leadership Mindset",
+      "description": "Understand how Agile leadership differs from traditional management and emphasizes adaptability and shared ownership."
     },
     {
-      "title": "User Stories and Business Value",
-      "description": "Learn how to create effective user stories and prioritize development based on customer value."
+      "title": "Lead in Complex Environments",
+      "description": "Learn to make informed decisions and guide teams effectively through uncertainty and change."
     },
     {
-      "title": "Agile Planning",
-      "description": "Master product planning, release planning, and iteration planning techniques."
+      "title": "Build High-Trust Team Cultures",
+      "description": "Create psychologically safe environments that encourage collaboration and transparency."
     },
     {
-      "title": "Scrum Events",
-      "description": "Gain clarity on Scrum ceremonies including Sprint Planning, Daily Scrum, Sprint Review, and Retrospective."
+      "title": "Understand Leadership Impact on Culture",
+      "description": "Recognize how leadership behaviors shape organizational culture and agility."
     },
     {
-      "title": "Estimation and Metrics",
-      "description": "Apply estimation techniques and measure performance using Agile metrics."
-    },
-    {
-      "title": "Scaling Agile",
-      "description": "Learn how to scale Agile practices successfully across large organizations."
+      "title": "Balance Autonomy and Alignment",
+      "description": "Empower teams while maintaining clear purpose and organizational alignment."
     }
   ];
 
   const faqCategories = [
-  {
-    "id": "category_1",
-    "label": "Agile & Scrum Certification FAQs",
-    "items": [
-      {
-        "question": "What is Agile and Scrum Training?",
-        "answer": "Agile and Scrum Training provides a comprehensive understanding of Agile principles and the Scrum framework. It helps professionals learn how to deliver value incrementally, collaborate effectively, and adapt quickly to changing requirements."
-      },
-      {
-        "question": "Who should attend Agile and Scrum Training?",
-        "answer": "This course is ideal for Developers, Testers, Project Managers, Product Owners, Scrum Masters, Business Analysts, and anyone involved in Agile projects."
-      },
-      {
-        "question": "Are there any prerequisites for Agile and Scrum Training?",
-        "answer": "There are no strict prerequisites. However, having basic knowledge of software development or project management concepts is beneficial."
-      },
-      {
-        "question": "What will I learn in Agile and Scrum Training?",
-        "answer": "You will learn Agile values and principles, Scrum roles (Scrum Master, Product Owner, Developers), Scrum events, artifacts, sprint planning, backlog management, estimation techniques, and Agile best practices."
-      },
-      {
-        "question": "Is there an exam included in the training?",
-        "answer": "Depending on the certification track, an assessment may be included. Exam details such as number of questions, duration, and passing score vary based on the certification body."
-      },
-      {
-        "question": "How long is the Agile and Scrum certification valid?",
-        "answer": "Certification validity depends on the certifying organization. Some certifications are lifetime, while others require renewal through SEUs or PDUs."
-      },
-      {
-        "question": "How many PDUs and SEUs can I earn?",
-        "answer": "Participants can typically earn up to 14–16 PDUs and SEUs upon completion of the 2-day Agile and Scrum training program."
-      },
-      {
-        "question": "Is Agile and Scrum certification globally recognized?",
-        "answer": "Yes, Agile and Scrum certifications are globally recognized and highly valued across industries adopting Agile methodologies."
-      }
-    ]
-  },
-  {
-    "id": "category_2",
-    "label": "Training & Course Delivery FAQs",
-    "items": [
-      {
-        "question": "What is the duration of Agile and Scrum Training?",
-        "answer": "The training is typically delivered over 2 days (approximately 16 hours) of instructor-led sessions."
-      },
-      {
-        "question": "Is the training practical or theoretical?",
-        "answer": "The training is highly interactive and includes case studies, group activities, simulations, sprint exercises, and real-world scenarios."
-      },
-      {
-        "question": "Do I get hands-on Scrum experience during training?",
-        "answer": "Yes, participants engage in practical Scrum simulations including sprint planning, daily scrum exercises, backlog refinement, and retrospectives."
-      },
-      {
-        "question": "Is online training available?",
-        "answer": "Yes, Agile and Scrum training is available in live virtual instructor-led mode as well as corporate onsite programs."
-      },
-      {
-        "question": "Do you provide corporate Agile and Scrum training?",
-        "answer": "Yes, we offer customized corporate training tailored to organizational needs and Agile transformation goals."
-      },
-      {
-        "question": "Will I receive study materials?",
-        "answer": "Yes, participants receive comprehensive course materials, templates, and supporting learning resources."
-      }
-    ]
-  },
-  {
-    "id": "category_3",
-    "label": "Payment & Enrollment FAQs",
-    "items": [
-      {
-        "question": "How do I enroll in Agile and Scrum Training?",
-        "answer": "Choose your preferred schedule, complete the registration process, make the payment, and you will receive confirmation with course access details."
-      },
-      {
-        "question": "What payment methods are accepted?",
-        "answer": "We accept credit cards, debit cards, net banking, wire transfers, PayPal, Stripe, and other secure payment methods."
-      },
-      {
-        "question": "Do you offer installment payment options?",
-        "answer": "Yes, installment options may be available. Please contact support for detailed payment plans."
-      },
-      {
-        "question": "Are there group or corporate discounts available?",
-        "answer": "Yes, we provide special pricing for corporate teams and group enrollments."
-      },
-      {
-        "question": "Will I receive a payment receipt?",
-        "answer": "Yes, you will receive an official invoice and confirmation email after successful payment."
-      },
-      {
-        "question": "What is your refund policy?",
-        "answer": "Refunds are generally not provided. However, participants may reschedule their training as per policy terms."
-      }
-    ]
-  }
-];
+    {
+      "id": "category_1",
+      "label": "FAQ Category 1",
+      "items": [
+        {
+          "question": "What is ICP-LEA certification?",
+          "answer": "ICP-LEA is an ICAgile leadership certification focused on developing Agile leadership mindset, decision-making, and cultural alignment."
+        },
+        {
+          "question": "Is there an exam?",
+          "answer": "No. Certification is granted based on participation and course completion."
+        },
+        {
+          "question": "Are prerequisites required?",
+          "answer": "No formal prerequisites are required, though leadership or Agile exposure is helpful."
+        },
+        {
+          "question": "How long is the certification valid?",
+          "answer": "ICP-LEA certification is valid for life and does not require renewal."
+        }
+      ]
+    }
+  ];
   const courseFeatures = [
     {
       icon: Users,
@@ -508,38 +389,39 @@ const AgileAndScrumTraining = () => {
 
   const courseWhySimpliaxis = [
     {
-      "title": "Global Recognition",
-      "description": "Courses accredited by globally recognized certification bodies."
+      "title": "ICAgile-Authorized Training Partner",
+      "description": "Viovn is an officially accredited ICAgile training partner, ensuring the ICP-LEA curriculum rigorously follows global standards and grants industry-recognized credentials."
     },
     {
-      "title": "Expert Trainers",
-      "description": "Learn from certified professionals with real-world industry experience."
+      "title": "Expert Mentorship from Certified Coaches",
+      "description": "Our immersive workshops are led by veteran ICAgile-certified mentors who bring decades of practical experience in leading high-impact Agile transformations and enterprise-level leadership initiatives."
     },
     {
-      "title": "Flexible Learning Options",
-      "description": "Choose from live virtual, online, or corporate training formats."
+      "title": "Action-Oriented Leadership Development",
+      "description": "The ICP-LEA program is engineered to address contemporary leadership hurdles, prioritizing critical decision-making and transformative mindset shifts over abstract theory."
     },
     {
-      "title": "Lifetime Access",
-      "description": "Access session recordings and learning resources anytime."
+      "title": "Authentic Enterprise Scenarios",
+      "description": "Viovn provides a collaborative ecosystem where leaders analyze and solve actual challenges drawn from a wide spectrum of industries and complex organizational landscapes."
     },
     {
-      "title": "Proven Track Record",
-      "description": "Trusted by organizations worldwide for measurable training outcomes."
+      "title": "Dynamic and Synergistic Workshops",
+      "description": "Experience live, instructor-led sessions that foster peer-to-peer dialogue, shared reflection, and deep collaborative learning to achieve a profound understanding of leadership mastery."
     },
     {
-      "title": "End-to-End Support",
-      "description": "Comprehensive assistance before, during, and after training."
+      "title": "Premium ICAgile-Verified Resources",
+      "description": "Gain exclusive access to high-quality, officially vetted educational resources perfectly aligned with ICAgile’s core learning outcomes and certification criteria."
     },
     {
-      "title": "Interactive Learning",
-      "description": "Engaging sessions with real-world case studies and activities."
+      "title": "Continuing Education Credits (PDUs & SEUs)",
+      "description": "Successfully complete the course to earn 14 Professional Development Units (PDUs) and 14 Scrum Education Units (SEUs), directly supporting your PMI and Scrum Alliance credential maintenance."
     },
     {
-      "title": "Wide Course Portfolio",
-      "description": "International certifications across Agile, Scrum, SAFe, DevOps, and Project Management."
+      "title": "Internationally Distinguished Certification",
+      "description": "Achieve the ICP-LEA credential, a globally respected mark of excellence that accelerates career advancement across diverse geographical markets and industries."
     }
   ]
+
   const sidePanelSchedules = [
     {
       courseCode: 'SCM',
@@ -563,16 +445,17 @@ const AgileAndScrumTraining = () => {
   ];
 
   const heroData = {
-    "courseName": "Agile and Scrum Training",
-    "breadcrumbName": "Agile and Scrum Foundational Training by Simpliaxis",
+    "courseName": "ICAgile Certified Agile Leadership (ICP-LEA) Training",
+    "breadcrumbName": "ICAgile Agile Leadership (ICP-LEA) Certification Training",
     "rating": "5.0",
     "enrolledCount": "",
-    "subtitle": "Build a strong foundation in Agile principles and the Scrum framework in just one day.",
+    "subtitle": "Agile leadership training focused on mindset, emotional intelligence, and leading teams through change and complexity.",
     "benefits": [
-      "Attend a 1-Day Live Instructor-Led Training Session delivered by certified experts.",
-      "Develop essential Agile and Scrum skills to build high-performing teams.",
-      "Engage in interactive and practical learning for deeper conceptual clarity.",
-      "Begin your journey toward globally recognized certifications such as CSM and PSM."
+      "14 hours of live interactive training led by experienced Agile coaches",
+      "Earn 14 PDUs and 14 SEUs while strengthening Agile leadership skills",
+      "Structured course materials aligned with ICAgile Leading with Agility outcomes",
+      "Real leadership scenarios, reflection activities, and group discussions",
+      "Receive the ICAgile Certified Agile Leadership (ICP-LEA) credential"
     ],
     "mainImage": "https://www.simpliaxis.com/../frontend_assets/image/ring_loader.gif",
     "badgeImage": "/csm-badge.png"
@@ -580,27 +463,44 @@ const AgileAndScrumTraining = () => {
 
   const overviewContent = {
     "title": "Course Overview",
-    "subtitle": "Comprehensive Introduction to Agile and Scrum",
+    "subtitle": "Agile Leadership (ICP-LEA) Certification Course Overview",
     "description": [
-      "The Agile and Scrum Training by Simpliaxis validates your understanding of Agile principles and Scrum practices. This foundational program prepares professionals to pursue globally recognized certifications such as CSM, CSPO, PSM, and SAFe Scrum Master.",
-      "Delivered by certified Scrum trainers, this course bridges traditional project management approaches with Agile methodologies. It is ideal for aspiring Scrum Masters, Product Owners, Project Managers, and Agile team members.",
-      "Participants gain hands-on exposure through real-world exercises, enabling them to effectively implement Scrum within their organizations and improve project success rates."
+      "The Certified Agile Leadership (ICP-LEA) course helps professionals develop the leadership mindset and skills required to guide teams and organizations through change and complexity.",
+      "The training focuses on adaptive leadership, emotional intelligence, systems thinking, and relationship agility to enable sustainable Agile transformation."
     ],
-    "whatIsTitle": "",
-    "whatIsDescription": [],
-    "whatsIncludedTitle": "",
-    "whatsIncludedDescription": [],
-    "skillsTitle": "",
-    "skills": [],
+    "whatIsTitle": "What is the Certified Agile Leadership (ICP-LEA) Course?",
+    "whatIsDescription": [
+      "ICP-LEA is a professional leadership development program that builds capabilities for leading Agile teams and organizations.",
+      "Through reflection, practical exercises, and real-world scenarios, participants explore adaptive leadership behaviors that support agility in dynamic environments."
+    ],
+    "whatsIncludedTitle": "What’s Included in ICP-LEA Training?",
+    "whatsIncludedDescription": [
+      "Instructor-led ICAgile-aligned training sessions",
+      "Leadership-focused exercises and group discussions",
+      "Real-world leadership scenarios and reflections",
+      "ICAgile-approved learning materials",
+      "Practical guidance from experienced Agile coaches"
+    ],
+    "skillsTitle": "Skills Covered in ICP-LEA Certification",
+    "skills": [
+      "Agile leadership mindset and values",
+      "Self-awareness and emotional intelligence",
+      "Relationship building and trust-based leadership",
+      "Leading through change and uncertainty",
+      "Systems thinking and organizational awareness",
+      "Facilitating collaboration and shared ownership",
+      "Influencing without authority",
+      "Creating adaptive and learning-focused environments"
+    ],
     "modesTitle": "",
     "modesDescription": []
   };
 
-  const corporateData ={
-    "courseName": "Why Corporates Choose Us",
+  const corporateData = {
+    "courseName": "Why Viovn for Corporates?",
     "label": "",
     "buttonText": "Corporate Group Enquiry",
-    "description": "Simpliaxis delivers customized corporate training programs designed to address specific organizational challenges. Our expert trainers provide industry-aligned modules that enhance workforce capabilities and help enterprises remain competitive."
+    "description": "Viovn delivers specialized corporate leadership programs designed to cultivate an Agile mindset, strengthen adaptive decision-making, and drive sustainable organizational excellence."
   };
 
   const courseMetadata = {
@@ -742,7 +642,6 @@ const AgileAndScrumTraining = () => {
             prerequisites={prerequisites}
             subtitle={sectionsLabels.prerequisites.subtitle}
             title={heroData.courseName}
-            
           />
           <CourseStepByStepProcess
             courseName={heroData.courseName}
@@ -854,4 +753,4 @@ const AgileAndScrumTraining = () => {
   );
 };
 
-export default AgileAndScrumTraining;
+export default ICAgileCertifiedAgileLeadershipTraining;

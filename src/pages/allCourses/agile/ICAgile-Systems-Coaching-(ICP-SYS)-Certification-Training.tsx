@@ -19,11 +19,11 @@ import CourseTrainers from "@/components/courses/CourseTrainers";
 import CourseFAQs from "@/components/courses/faqs/CourseFAQs";
 import CourseWhySimpliaxis from "@/components/courses/CourseWhySimpliaxis";
 
-import { 
-  Users, 
-  Monitor, 
-  Settings, 
-  UserCheck, 
+import {
+  Users,
+  Monitor,
+  Settings,
+  UserCheck,
   Map,
   Award,
   BookOpen,
@@ -39,61 +39,62 @@ import {
   Star
 } from "lucide-react";
 
-const AgileAndScrumTraining = () => {
-  const highlights =  [
-    { "text": "8 Hours of Live Instructor-Led Training" },
-    { "text": "Earn 8 PDUs and 8 SEUs" },
-    { "text": "Delivered by Certified Scrum Trainers (CSTs)" },
-    { "text": "Comprehensive Coverage of Agile and Scrum Fundamentals" },
-    { "text": "Hands-On Practical Exercises and Case Studies" },
-    { "text": "Course Completion Certificate from Simpliaxis" },
-    { "text": "24/7 Post-Training Support" },
-    { "text": "Dedicated Doubt-Clearing Sessions" }
+const ICAgileSystemsCoachingCertificationTraining = () => {
+  const highlights = [
+    { "text": "14-hour intensive live training" },
+    { "text": "Earn 14 PDUs upon completion" },
+    { "text": "Focus on organizational-level coaching" },
+    { "text": "Deep systems thinking development" },
+    { "text": "Advanced ICAgile coaching pathway" },
+    { "text": "Digital learning resources included" },
+    { "text": "Lifetime certification validity" },
+    { "text": "Globally recognized credential" },
+    { "text": "Framework-agnostic coaching approach" }
   ];
 
   const individualBenefits = [
     {
-      "title": "Improved Adaptability",
-      "description": "Respond effectively to changing project requirements."
+      "title": "Individuals Benefits",
+      "description": "Strengthen professional credibility with advanced systems coaching expertise."
     },
     {
-      "title": "Enhanced Collaboration",
-      "description": "Work efficiently within cross-functional Agile teams."
+      "title": "Individuals Benefits",
+      "description": "Develop strategic coaching capabilities for complex organizations."
     },
     {
-      "title": "Higher Productivity",
-      "description": "Increase efficiency and deliver value consistently."
+      "title": "Individuals Benefits",
+      "description": "Improve career opportunities with higher compensation potential."
     },
     {
-      "title": "Stronger Problem-Solving Skills",
-      "description": "Develop analytical thinking through Agile practices."
+      "title": "Individuals Benefits",
+      "description": "Gain access to executive-level coaching opportunities."
     },
     {
-      "title": "Career Growth Opportunities",
-      "description": "Unlock new career paths in Agile and Scrum roles."
+      "title": "Individuals Benefits",
+      "description": "Expand into consulting, leadership, and transformation roles."
     }
   ];
 
   const corporateBenefits = [
     {
-      "title": "Faster Project Delivery",
-      "description": "Accelerate time-to-market using Agile methodologies."
+      "title": "Corporate Benefits",
+      "description": "Build internal coaching capabilities for large-scale transformation."
     },
     {
-      "title": "Improved Customer Satisfaction",
-      "description": "Deliver value-driven solutions aligned with customer needs."
+      "title": "Corporate Benefits",
+      "description": "Create sustainable organizational agility through systems thinking."
     },
     {
-      "title": "Enhanced Product Quality",
-      "description": "Ensure continuous improvement through iterative development."
+      "title": "Corporate Benefits",
+      "description": "Accelerate leadership development in complex environments."
     },
     {
-      "title": "Greater Employee Engagement",
-      "description": "Encourage team ownership and collaboration."
+      "title": "Corporate Benefits",
+      "description": "Increase ROI from transformation initiatives."
     },
     {
-      "title": "Reduced Project Risk",
-      "description": "Identify and mitigate risks early through continuous feedback."
+      "title": "Corporate Benefits",
+      "description": "Drive long-term cultural evolution across teams."
     }
   ];
 
@@ -106,14 +107,14 @@ const AgileAndScrumTraining = () => {
 
   const attendees = [
     {
-      group: [
-        'Scrum Masters',
-        'Delivery Managers',
-        'Product Owners',
-        'Agile Coaches',
-      ],
-    },
-    { group: ['Team Leads', 'Development Managers'] },
+      "group": [
+        "Apply systems thinking to identify patterns, feedback loops, and leverage points",
+        "Coach across teams, management, and executive leadership",
+        "Support cultural transformation through targeted interventions",
+        "Handle organizational politics while maintaining coaching integrity",
+        "Measure and communicate transformation outcomes effectively"
+      ]
+    }
   ];
 
   const companies = [
@@ -148,249 +149,107 @@ const AgileAndScrumTraining = () => {
   ];
 
   const outcomes = [
-    "Develop a strong foundation in Agile principles and Scrum practices.",
-    "Apply Scrum roles, artifacts, and ceremonies effectively in real projects.",
-    "Use Agile estimation techniques such as Story Points and Planning Poker.",
-    "Monitor progress using Agile metrics like burn-down and burn-up charts.",
-    "Understand scaling approaches for enterprise-level Agile implementation."
+    "Use systems thinking frameworks to identify organizational patterns and opportunities",
+    "Work across multiple organizational levels as a coach",
+    "Enable cultural change through effective facilitation and coaching",
+    "Navigate power dynamics professionally while maintaining ethical standards",
+    "Demonstrate business impact using measurable transformation indicators"
   ];
 
   const prerequisites = [
-    "No prior experience is required to enroll in this Agile and Scrum Training.",
-    "Ideal for beginners and professionals planning to pursue certifications such as CSM, CSPO, PSM, or SAFe Scrum Master."
+    'Active Certified ScrumMaster (CSM) certification',
+    'Minimum 12 months of Scrum Master experience within the last five years',
   ];
 
   const certificationSteps = [
     {
-      title: 'Attend Training',
-      description:
-        'Complete the 16-hour A-CSM training delivered by Scrum Alliance-accredited trainers.',
+      "title": "Attend Training",
+      "description": "Join an ICAgile-authorized ICP-SYS course delivered by an accredited provider."
     },
     {
-      title: 'Validate Experience',
-      description: 'Confirm at least 12 months of Scrum Master experience.',
+      "title": "Participate Actively",
+      "description": "Engage in learning sessions and coaching practices throughout the program."
     },
     {
-      title: 'Accept License',
-      description:
-        'Log in to Scrum Alliance and acknowledge the license agreement.',
+      "title": "Complete Activities",
+      "description": "Finish all exercises, simulations, and assignments successfully."
     },
     {
-      title: 'Download Certificate',
-      description:
-        'Receive and download your Advanced Certified ScrumMaster credential.',
-    },
-  ];
-
-  const curriculumModules =[
-    {
-      "title": "Module 1: Introduction to Agile",
-      "topics": [
-        "Evolution of Agile",
-        "Traditional vs Agile Project Management",
-        "Benefits of Agile Methodology"
-      ]
-    },
-    {
-      "title": "Module 2: Agile Foundations",
-      "topics": [
-        "Agile Manifesto",
-        "Agile Values and Principles",
-        "Customer Collaboration and Iterative Delivery"
-      ]
-    },
-    {
-      "title": "Module 3: Business Value in Agile",
-      "topics": [
-        "User Stories and the 3Cs",
-        "Prioritization Techniques",
-        "Minimum Viable Product (MVP)"
-      ]
-    },
-    {
-      "title": "Module 4: Agile Frameworks",
-      "topics": [
-        "Scrum Framework",
-        "Kanban",
-        "Extreme Programming (XP)",
-        "Feature-Driven Development (FDD)"
-      ]
-    },
-    {
-      "title": "Module 5: Agile Project Management",
-      "topics": [
-        "APM Framework Phases",
-        "Envision, Speculate, Explore, Adapt, Close"
-      ]
-    },
-    {
-      "title": "Module 6: Scrum Framework Deep Dive",
-      "topics": [
-        "Scrum Roles",
-        "Scrum Artifacts",
-        "Scrum Events"
-      ]
-    },
-    {
-      "title": "Module 7: Agile Estimation",
-      "topics": [
-        "Story Points",
-        "Planning Poker",
-        "T-Shirt Sizing"
-      ]
-    },
-    {
-      "title": "Module 8: Agile Planning and Tracking",
-      "topics": [
-        "Release Planning",
-        "Iteration Planning",
-        "Burn-down and Burn-up Charts"
-      ]
-    },
-    {
-      "title": "Module 9: Scaling Agile",
-      "topics": [
-        "SAFe",
-        "DAD",
-        "LeSS"
-      ]
-    },
-    {
-      "title": "Module 10: Agile Career Path",
-      "topics": [
-        "Agile Certifications",
-        "Enterprise Agile Roles"
-      ]
+      "title": "Earn Certification",
+      "description": "Receive your ICP-SYS certification and digital badge upon completion."
     }
   ];
+
+  const curriculumModules = [
+    {
+      "title": "Module 1: Systems Coaching Foundations",
+      "topics": [
+        "Systems Fundamentals",
+        "Systems Thinking",
+        "Complex Adaptive Systems",
+        "Introduction to Systems Coaching",
+        "System as a Client"
+      ]
+    },
+    {
+      "title": "Module 2: Coaching the System",
+      "topics": [
+        "Systems Coaching Conversations",
+        "Creating Awareness and Alignment",
+        "Facilitation Skills",
+        "Professional Coaching Practices"
+      ]
+    },
+    {
+      "title": "Module 3: The Coach’s Growth",
+      "topics": [
+        "Ethical Coaching Considerations",
+        "Managing Bias",
+        "Developing Coaching Range",
+        "Co-coaching Approaches"
+      ]
+    }
+  ]
 
   const learningObjectives = [
     {
-      "title": "Agile Fundamentals",
-      "description": "Understand Agile values and principles and explore frameworks such as Scrum, Kanban, and XP."
+      "title": "Build Multi-Level Coaching Skills",
+      "description": "Develop the ability to coach teams, managers, and executives within complex environments."
     },
     {
-      "title": "User Stories and Business Value",
-      "description": "Learn how to create effective user stories and prioritize development based on customer value."
+      "title": "Enable Cultural Transformation",
+      "description": "Learn practical strategies for shaping agile organizational culture."
     },
     {
-      "title": "Agile Planning",
-      "description": "Master product planning, release planning, and iteration planning techniques."
+      "title": "Navigate Organizational Politics",
+      "description": "Understand power structures and work effectively within enterprise environments."
     },
     {
-      "title": "Scrum Events",
-      "description": "Gain clarity on Scrum ceremonies including Sprint Planning, Daily Scrum, Sprint Review, and Retrospective."
+      "title": "Design Systemic Interventions",
+      "description": "Create holistic coaching solutions that drive sustainable change."
     },
     {
-      "title": "Estimation and Metrics",
-      "description": "Apply estimation techniques and measure performance using Agile metrics."
+      "title": "Coach Senior Leadership",
+      "description": "Gain skills for executive-level coaching and transformation guidance."
     },
     {
-      "title": "Scaling Agile",
-      "description": "Learn how to scale Agile practices successfully across large organizations."
+      "title": "Create Conditions for Emergence",
+      "description": "Design environments where innovation and adaptability naturally evolve."
     }
-  ];
+  ]
 
   const faqCategories = [
-  {
-    "id": "category_1",
-    "label": "Agile & Scrum Certification FAQs",
-    "items": [
-      {
-        "question": "What is Agile and Scrum Training?",
-        "answer": "Agile and Scrum Training provides a comprehensive understanding of Agile principles and the Scrum framework. It helps professionals learn how to deliver value incrementally, collaborate effectively, and adapt quickly to changing requirements."
-      },
-      {
-        "question": "Who should attend Agile and Scrum Training?",
-        "answer": "This course is ideal for Developers, Testers, Project Managers, Product Owners, Scrum Masters, Business Analysts, and anyone involved in Agile projects."
-      },
-      {
-        "question": "Are there any prerequisites for Agile and Scrum Training?",
-        "answer": "There are no strict prerequisites. However, having basic knowledge of software development or project management concepts is beneficial."
-      },
-      {
-        "question": "What will I learn in Agile and Scrum Training?",
-        "answer": "You will learn Agile values and principles, Scrum roles (Scrum Master, Product Owner, Developers), Scrum events, artifacts, sprint planning, backlog management, estimation techniques, and Agile best practices."
-      },
-      {
-        "question": "Is there an exam included in the training?",
-        "answer": "Depending on the certification track, an assessment may be included. Exam details such as number of questions, duration, and passing score vary based on the certification body."
-      },
-      {
-        "question": "How long is the Agile and Scrum certification valid?",
-        "answer": "Certification validity depends on the certifying organization. Some certifications are lifetime, while others require renewal through SEUs or PDUs."
-      },
-      {
-        "question": "How many PDUs and SEUs can I earn?",
-        "answer": "Participants can typically earn up to 14–16 PDUs and SEUs upon completion of the 2-day Agile and Scrum training program."
-      },
-      {
-        "question": "Is Agile and Scrum certification globally recognized?",
-        "answer": "Yes, Agile and Scrum certifications are globally recognized and highly valued across industries adopting Agile methodologies."
-      }
-    ]
-  },
-  {
-    "id": "category_2",
-    "label": "Training & Course Delivery FAQs",
-    "items": [
-      {
-        "question": "What is the duration of Agile and Scrum Training?",
-        "answer": "The training is typically delivered over 2 days (approximately 16 hours) of instructor-led sessions."
-      },
-      {
-        "question": "Is the training practical or theoretical?",
-        "answer": "The training is highly interactive and includes case studies, group activities, simulations, sprint exercises, and real-world scenarios."
-      },
-      {
-        "question": "Do I get hands-on Scrum experience during training?",
-        "answer": "Yes, participants engage in practical Scrum simulations including sprint planning, daily scrum exercises, backlog refinement, and retrospectives."
-      },
-      {
-        "question": "Is online training available?",
-        "answer": "Yes, Agile and Scrum training is available in live virtual instructor-led mode as well as corporate onsite programs."
-      },
-      {
-        "question": "Do you provide corporate Agile and Scrum training?",
-        "answer": "Yes, we offer customized corporate training tailored to organizational needs and Agile transformation goals."
-      },
-      {
-        "question": "Will I receive study materials?",
-        "answer": "Yes, participants receive comprehensive course materials, templates, and supporting learning resources."
-      }
-    ]
-  },
-  {
-    "id": "category_3",
-    "label": "Payment & Enrollment FAQs",
-    "items": [
-      {
-        "question": "How do I enroll in Agile and Scrum Training?",
-        "answer": "Choose your preferred schedule, complete the registration process, make the payment, and you will receive confirmation with course access details."
-      },
-      {
-        "question": "What payment methods are accepted?",
-        "answer": "We accept credit cards, debit cards, net banking, wire transfers, PayPal, Stripe, and other secure payment methods."
-      },
-      {
-        "question": "Do you offer installment payment options?",
-        "answer": "Yes, installment options may be available. Please contact support for detailed payment plans."
-      },
-      {
-        "question": "Are there group or corporate discounts available?",
-        "answer": "Yes, we provide special pricing for corporate teams and group enrollments."
-      },
-      {
-        "question": "Will I receive a payment receipt?",
-        "answer": "Yes, you will receive an official invoice and confirmation email after successful payment."
-      },
-      {
-        "question": "What is your refund policy?",
-        "answer": "Refunds are generally not provided. However, participants may reschedule their training as per policy terms."
-      }
-    ]
-  }
-];
+    {
+      "id": "category_1",
+      "label": "FAQ Category 1",
+      "items": [
+        {
+          "question": "What is ICP-SYS certification?",
+          "answer": "ICP-SYS is an ICAgile credential focused on systems coaching, organizational transformation, and enterprise-level agility."
+        }
+      ]
+    }
+  ];
   const courseFeatures = [
     {
       icon: Users,
@@ -508,38 +367,38 @@ const AgileAndScrumTraining = () => {
 
   const courseWhySimpliaxis = [
     {
-      "title": "Global Recognition",
-      "description": "Courses accredited by globally recognized certification bodies."
+      "title": "ICAgile Authorized Training",
+      "description": "As an accredited ICAgile partner, Viovn provides genuine systems training that adheres strictly to global industry standards."
     },
     {
-      "title": "Expert Trainers",
-      "description": "Learn from certified professionals with real-world industry experience."
+      "title": "Transformation-Proven Instructors",
+      "description": "Benefit from the expertise of systems coaches who have spent over 15 years leading Fortune 500 transformations across various sectors."
     },
     {
-      "title": "Flexible Learning Options",
-      "description": "Choose from live virtual, online, or corporate training formats."
+      "title": "Experiential Learning Methodology",
+      "description": "Develop practical competencies through a curriculum centered on immersive exercises, organizational simulations, and hands-on coaching."
     },
     {
-      "title": "Lifetime Access",
-      "description": "Access session recordings and learning resources anytime."
+      "title": "Real-World Transformation Focus",
+      "description": "Examine genuine corporate coaching hurdles and transformation success stories drawn directly from our instructors' professional consulting backgrounds."
     },
     {
-      "title": "Proven Track Record",
-      "description": "Trusted by organizations worldwide for measurable training outcomes."
+      "title": "Intimate Learning Cohorts",
+      "description": "Our small-group format ensures personal attention, intensive practice sessions, and the chance to build strong connections with fellow learners."
     },
     {
-      "title": "End-to-End Support",
-      "description": "Comprehensive assistance before, during, and after training."
+      "title": "Comprehensive Resource Ecosystem",
+      "description": "Gain access to a wealth of regularly updated frameworks, templates, and diagnostic tools to support your long-term coaching journey."
     },
     {
-      "title": "Interactive Learning",
-      "description": "Engaging sessions with real-world case studies and activities."
+      "title": "Flexible Professional Formats",
+      "description": "We offer various delivery methods and schedules tailored for busy coaches and corporate groups, maintaining high-quality experiential learning throughout."
     },
     {
-      "title": "Wide Course Portfolio",
-      "description": "International certifications across Agile, Scrum, SAFe, DevOps, and Project Management."
+      "title": "Ongoing Community Support",
+      "description": "Connect with a global network of alumni for peer collaboration, expert consultation, and continuous growth in the field of systems coaching."
     }
-  ]
+  ];
   const sidePanelSchedules = [
     {
       courseCode: 'SCM',
@@ -563,16 +422,17 @@ const AgileAndScrumTraining = () => {
   ];
 
   const heroData = {
-    "courseName": "Agile and Scrum Training",
-    "breadcrumbName": "Agile and Scrum Foundational Training by Simpliaxis",
+    "courseName": "ICAgile Systems Coaching (ICP-SYS) Certification Training",
+    "breadcrumbName": "ICAgile Systems Coaching (ICP-SYS) Certification Training",
     "rating": "5.0",
     "enrolledCount": "",
-    "subtitle": "Build a strong foundation in Agile principles and the Scrum framework in just one day.",
+    "subtitle": "Advanced certification program focused on enterprise-level systems coaching and organizational transformation.",
     "benefits": [
-      "Attend a 1-Day Live Instructor-Led Training Session delivered by certified experts.",
-      "Develop essential Agile and Scrum skills to build high-performing teams.",
-      "Engage in interactive and practical learning for deeper conceptual clarity.",
-      "Begin your journey toward globally recognized certifications such as CSM and PSM."
+      "14 hours of live, instructor-led ICAgile ICP-SYS training",
+      "Develop strong systems thinking and transformation leadership skills",
+      "Participate in practical, real-world coaching activities",
+      "Learn multi-level coaching for teams, leaders, and organizations",
+      "Enable sustainable enterprise agility with confidence"
     ],
     "mainImage": "https://www.simpliaxis.com/../frontend_assets/image/ring_loader.gif",
     "badgeImage": "/csm-badge.png"
@@ -580,29 +440,50 @@ const AgileAndScrumTraining = () => {
 
   const overviewContent = {
     "title": "Course Overview",
-    "subtitle": "Comprehensive Introduction to Agile and Scrum",
+    "subtitle": "Overview of ICAgile Systems Coaching (ICP-SYS) Certification Training",
     "description": [
-      "The Agile and Scrum Training by Simpliaxis validates your understanding of Agile principles and Scrum practices. This foundational program prepares professionals to pursue globally recognized certifications such as CSM, CSPO, PSM, and SAFe Scrum Master.",
-      "Delivered by certified Scrum trainers, this course bridges traditional project management approaches with Agile methodologies. It is ideal for aspiring Scrum Masters, Product Owners, Project Managers, and Agile team members.",
-      "Participants gain hands-on exposure through real-world exercises, enabling them to effectively implement Scrum within their organizations and improve project success rates."
+      "The ICP-SYS certification program is designed for experienced Agile professionals aiming to expand their coaching impact at the organizational level. The course introduces systems thinking, enterprise coaching practices, and transformation strategies that help professionals drive large-scale cultural and structural change."
     ],
     "whatIsTitle": "",
     "whatIsDescription": [],
-    "whatsIncludedTitle": "",
-    "whatsIncludedDescription": [],
-    "skillsTitle": "",
-    "skills": [],
-    "modesTitle": "",
-    "modesDescription": []
+    "whatsIncludedTitle": "What’s Included in the ICP-SYS Certification Training",
+    "whatsIncludedDescription": [
+      "14 hours of interactive and practical learning sessions",
+      "Globally recognized ICAgile ICP-SYS credential",
+      "Guidance from experienced transformation coaches",
+      "Career growth opportunities in enterprise coaching",
+      "Official ICAgile-approved learning material",
+      "Hands-on practice with real transformation scenarios"
+    ],
+    "skillsTitle": "Skills Covered in ICP-SYS Systems Coaching Training",
+    "skills": [
+      "Systems Thinking",
+      "Defining and Understanding Systems",
+      "Systems-Level Coaching",
+      "System as a Client",
+      "Creating Coaching Containers",
+      "Building Awareness and Alignment",
+      "Driving Action and Outcomes",
+      "Co-coaching Practices",
+      "Facilitation Techniques",
+      "Professional Coaching Skills",
+      "Ethical Coaching Practices",
+      "Managing Personal Bias",
+      "Expanding Coaching Range",
+      "Working with Complex Adaptive Systems"
+    ],
+    "modesTitle": "Training Modes Available",
+    "modesDescription": [
+      "Training is delivered through live virtual instructor-led sessions and customized corporate programs. Learners engage in interactive coaching practice, breakout collaboration, and real-time discussions designed for working professionals and enterprise teams."
+    ]
   };
 
-  const corporateData ={
-    "courseName": "Why Corporates Choose Us",
+  const corporateData = {
+    "courseName": "Why SimpliAxis Is a Preferred Choice for Corporates",
     "label": "",
     "buttonText": "Corporate Group Enquiry",
-    "description": "Simpliaxis delivers customized corporate training programs designed to address specific organizational challenges. Our expert trainers provide industry-aligned modules that enhance workforce capabilities and help enterprises remain competitive."
+    "description": "SimpliAxis delivers customized corporate training solutions designed to bridge skill gaps, strengthen organizational performance, and support enterprise transformation through expert-led programs."
   };
-
   const courseMetadata = {
     shortName: 'CSM',
     shortNameAlt: 'A-CSM',
@@ -742,7 +623,7 @@ const AgileAndScrumTraining = () => {
             prerequisites={prerequisites}
             subtitle={sectionsLabels.prerequisites.subtitle}
             title={heroData.courseName}
-            
+
           />
           <CourseStepByStepProcess
             courseName={heroData.courseName}
@@ -854,4 +735,4 @@ const AgileAndScrumTraining = () => {
   );
 };
 
-export default AgileAndScrumTraining;
+export default ICAgileSystemsCoachingCertificationTraining;

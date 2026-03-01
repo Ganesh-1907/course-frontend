@@ -19,11 +19,11 @@ import CourseTrainers from "@/components/courses/CourseTrainers";
 import CourseFAQs from "@/components/courses/faqs/CourseFAQs";
 import CourseWhySimpliaxis from "@/components/courses/CourseWhySimpliaxis";
 
-import { 
-  Users, 
-  Monitor, 
-  Settings, 
-  UserCheck, 
+import {
+  Users,
+  Monitor,
+  Settings,
+  UserCheck,
   Map,
   Award,
   BookOpen,
@@ -39,61 +39,59 @@ import {
   Star
 } from "lucide-react";
 
-const AgileAndScrumTraining = () => {
-  const highlights =  [
-    { "text": "8 Hours of Live Instructor-Led Training" },
-    { "text": "Earn 8 PDUs and 8 SEUs" },
-    { "text": "Delivered by Certified Scrum Trainers (CSTs)" },
-    { "text": "Comprehensive Coverage of Agile and Scrum Fundamentals" },
-    { "text": "Hands-On Practical Exercises and Case Studies" },
-    { "text": "Course Completion Certificate from Simpliaxis" },
-    { "text": "24/7 Post-Training Support" },
-    { "text": "Dedicated Doubt-Clearing Sessions" }
+const ICAgileProductManagementCertificationTraining = () => {
+  const highlights = [
+    { "text": "14-hour ICAgile-authorized training with PDUs" },
+    { "text": "Instructor-led sessions by ICAgile-certified practitioners" },
+    { "text": "Strong focus on customer discovery and product visioning" },
+    { "text": "Hands-on exercises for strategy and prioritization" },
+    { "text": "Practical Agile product management tools and techniques" },
+    { "text": "Real-world scenarios and interactive activities" },
+    { "text": "Lifetime-valid ICAgile certificate" }
   ];
-
   const individualBenefits = [
     {
-      "title": "Improved Adaptability",
-      "description": "Respond effectively to changing project requirements."
+      "title": "Individual Benefits",
+      "description": "Build practical Agile product management and roadmap planning skills."
     },
     {
-      "title": "Enhanced Collaboration",
-      "description": "Work efficiently within cross-functional Agile teams."
+      "title": "Individual Benefits",
+      "description": "Improve career opportunities for Product Manager, Product Owner, and Agile Product Lead roles."
     },
     {
-      "title": "Higher Productivity",
-      "description": "Increase efficiency and deliver value consistently."
+      "title": "Individual Benefits",
+      "description": "Strengthen decision-making using data-driven and outcome-based thinking."
     },
     {
-      "title": "Stronger Problem-Solving Skills",
-      "description": "Develop analytical thinking through Agile practices."
+      "title": "Individual Benefits",
+      "description": "Gain hands-on learning through case studies and real-world exercises."
     },
     {
-      "title": "Career Growth Opportunities",
-      "description": "Unlock new career paths in Agile and Scrum roles."
+      "title": "Individual Benefits",
+      "description": "Increase earning potential through validated product management expertise."
     }
   ];
 
   const corporateBenefits = [
     {
-      "title": "Faster Project Delivery",
-      "description": "Accelerate time-to-market using Agile methodologies."
+      "title": "Corporate Benefits",
+      "description": "Improve alignment between product strategy and business goals."
     },
     {
-      "title": "Improved Customer Satisfaction",
-      "description": "Deliver value-driven solutions aligned with customer needs."
+      "title": "Corporate Benefits",
+      "description": "Deliver products faster using iterative Agile approaches."
     },
     {
-      "title": "Enhanced Product Quality",
-      "description": "Ensure continuous improvement through iterative development."
+      "title": "Corporate Benefits",
+      "description": "Increase product success through customer-focused decision-making."
     },
     {
-      "title": "Greater Employee Engagement",
-      "description": "Encourage team ownership and collaboration."
+      "title": "Corporate Benefits",
+      "description": "Enable data-driven product investment decisions."
     },
     {
-      "title": "Reduced Project Risk",
-      "description": "Identify and mitigate risks early through continuous feedback."
+      "title": "Corporate Benefits",
+      "description": "Improve collaboration across product, engineering, and business teams."
     }
   ];
 
@@ -106,14 +104,14 @@ const AgileAndScrumTraining = () => {
 
   const attendees = [
     {
-      group: [
-        'Scrum Masters',
-        'Delivery Managers',
-        'Product Owners',
-        'Agile Coaches',
-      ],
-    },
-    { group: ['Team Leads', 'Development Managers'] },
+      "group": [
+        "Translate customer insights into actionable product strategies",
+        "Design and iterate MVPs to reduce risk and accelerate learning",
+        "Prioritize features and refine roadmaps using Agile methods",
+        "Integrate customer feedback to improve product outcomes",
+        "Lead cross-functional teams toward aligned product delivery"
+      ]
+    }
   ];
 
   const companies = [
@@ -148,249 +146,136 @@ const AgileAndScrumTraining = () => {
   ];
 
   const outcomes = [
-    "Develop a strong foundation in Agile principles and Scrum practices.",
-    "Apply Scrum roles, artifacts, and ceremonies effectively in real projects.",
-    "Use Agile estimation techniques such as Story Points and Planning Poker.",
-    "Monitor progress using Agile metrics like burn-down and burn-up charts.",
-    "Understand scaling approaches for enterprise-level Agile implementation."
+    "Convert customer insights into value-driven strategies",
+    "Build and iterate MVPs effectively",
+    "Apply Agile prioritization and backlog management",
+    "Use feedback loops to improve product adoption",
+    "Collaborate effectively across cross-functional teams"
   ];
 
   const prerequisites = [
-    "No prior experience is required to enroll in this Agile and Scrum Training.",
-    "Ideal for beginners and professionals planning to pursue certifications such as CSM, CSPO, PSM, or SAFe Scrum Master."
+    'No mandatory prerequisites are required.',
+    'Basic understanding of Scrum principles is recommended.',
+    'Completion of formal training by a Scrum Alliance-approved CSD trainer is required.',
   ];
 
   const certificationSteps = [
     {
-      title: 'Attend Training',
-      description:
-        'Complete the 16-hour A-CSM training delivered by Scrum Alliance-accredited trainers.',
+      "title": "Join the Course",
+      "description": "Enroll in ICAgile ICP-PDM certification training."
     },
     {
-      title: 'Validate Experience',
-      description: 'Confirm at least 12 months of Scrum Master experience.',
+      "title": "Develop Skills",
+      "description": "Learn customer discovery, prioritization, and roadmap planning."
     },
     {
-      title: 'Accept License',
-      description:
-        'Log in to Scrum Alliance and acknowledge the license agreement.',
+      "title": "Complete Training",
+      "description": "Participate in activities and practical assessments throughout the program."
     },
     {
-      title: 'Download Certificate',
-      description:
-        'Receive and download your Advanced Certified ScrumMaster credential.',
-    },
+      "title": "Receive Certification",
+      "description": "Earn the ICAgile ICP-PDM credential upon successful completion."
+    }
   ];
 
-  const curriculumModules =[
+  const curriculumModules = [
     {
-      "title": "Module 1: Introduction to Agile",
+      "title": "Understanding the Product & Market",
       "topics": [
-        "Evolution of Agile",
-        "Traditional vs Agile Project Management",
-        "Benefits of Agile Methodology"
+        "Product lifecycle and ecosystem",
+        "Market analysis and customer experience",
+        "Research-driven product ideas",
+        "Product manager responsibilities"
       ]
     },
     {
-      "title": "Module 2: Agile Foundations",
+      "title": "Product Strategy & Vision",
       "topics": [
-        "Agile Manifesto",
-        "Agile Values and Principles",
-        "Customer Collaboration and Iterative Delivery"
+        "Creating outcome-driven product vision",
+        "Defining value and key outcomes",
+        "Strategy validation and alignment"
       ]
     },
     {
-      "title": "Module 3: Business Value in Agile",
+      "title": "Discovery & Experimentation",
       "topics": [
-        "User Stories and the 3Cs",
-        "Prioritization Techniques",
-        "Minimum Viable Product (MVP)"
+        "Idea generation and continuous discovery",
+        "Hypothesis testing and experimentation",
+        "Prototyping and feedback loops"
       ]
     },
     {
-      "title": "Module 4: Agile Frameworks",
+      "title": "Planning & Roadmapping",
       "topics": [
-        "Scrum Framework",
-        "Kanban",
-        "Extreme Programming (XP)",
-        "Feature-Driven Development (FDD)"
+        "Outcome-oriented roadmaps",
+        "Backlog management and prioritization",
+        "Working effectively with product teams"
       ]
     },
     {
-      "title": "Module 5: Agile Project Management",
+      "title": "Metrics & Data",
       "topics": [
-        "APM Framework Phases",
-        "Envision, Speculate, Explore, Adapt, Close"
+        "Product performance metrics",
+        "Data-driven decision-making"
       ]
     },
     {
-      "title": "Module 6: Scrum Framework Deep Dive",
+      "title": "Agile & Team Collaboration",
       "topics": [
-        "Scrum Roles",
-        "Scrum Artifacts",
-        "Scrum Events"
-      ]
-    },
-    {
-      "title": "Module 7: Agile Estimation",
-      "topics": [
-        "Story Points",
-        "Planning Poker",
-        "T-Shirt Sizing"
-      ]
-    },
-    {
-      "title": "Module 8: Agile Planning and Tracking",
-      "topics": [
-        "Release Planning",
-        "Iteration Planning",
-        "Burn-down and Burn-up Charts"
-      ]
-    },
-    {
-      "title": "Module 9: Scaling Agile",
-      "topics": [
-        "SAFe",
-        "DAD",
-        "LeSS"
-      ]
-    },
-    {
-      "title": "Module 10: Agile Career Path",
-      "topics": [
-        "Agile Certifications",
-        "Enterprise Agile Roles"
+        "Applying Agile principles in product strategy",
+        "Cross-functional collaboration",
+        "Project-to-product mindset"
       ]
     }
   ];
 
   const learningObjectives = [
     {
-      "title": "Agile Fundamentals",
-      "description": "Understand Agile values and principles and explore frameworks such as Scrum, Kanban, and XP."
+      "title": "Understand Agile Product Management",
+      "description": "Learn Agile product principles, roles, and responsibilities in modern product organizations."
     },
     {
-      "title": "User Stories and Business Value",
-      "description": "Learn how to create effective user stories and prioritize development based on customer value."
+      "title": "Develop Customer-Centric Thinking",
+      "description": "Identify customer problems and frame opportunities using Agile discovery practices."
     },
     {
-      "title": "Agile Planning",
-      "description": "Master product planning, release planning, and iteration planning techniques."
+      "title": "Explore Product Discovery Techniques",
+      "description": "Validate ideas, test assumptions, and reduce risks through experimentation."
     },
     {
-      "title": "Scrum Events",
-      "description": "Gain clarity on Scrum ceremonies including Sprint Planning, Daily Scrum, Sprint Review, and Retrospective."
+      "title": "Apply Value-Driven Prioritization",
+      "description": "Prioritize initiatives based on business impact and customer value."
     },
     {
-      "title": "Estimation and Metrics",
-      "description": "Apply estimation techniques and measure performance using Agile metrics."
-    },
-    {
-      "title": "Scaling Agile",
-      "description": "Learn how to scale Agile practices successfully across large organizations."
+      "title": "Align Product Strategy with Business Goals",
+      "description": "Connect product decisions to organizational strategy and market dynamics."
     }
   ];
 
   const faqCategories = [
-  {
-    "id": "category_1",
-    "label": "Agile & Scrum Certification FAQs",
-    "items": [
-      {
-        "question": "What is Agile and Scrum Training?",
-        "answer": "Agile and Scrum Training provides a comprehensive understanding of Agile principles and the Scrum framework. It helps professionals learn how to deliver value incrementally, collaborate effectively, and adapt quickly to changing requirements."
-      },
-      {
-        "question": "Who should attend Agile and Scrum Training?",
-        "answer": "This course is ideal for Developers, Testers, Project Managers, Product Owners, Scrum Masters, Business Analysts, and anyone involved in Agile projects."
-      },
-      {
-        "question": "Are there any prerequisites for Agile and Scrum Training?",
-        "answer": "There are no strict prerequisites. However, having basic knowledge of software development or project management concepts is beneficial."
-      },
-      {
-        "question": "What will I learn in Agile and Scrum Training?",
-        "answer": "You will learn Agile values and principles, Scrum roles (Scrum Master, Product Owner, Developers), Scrum events, artifacts, sprint planning, backlog management, estimation techniques, and Agile best practices."
-      },
-      {
-        "question": "Is there an exam included in the training?",
-        "answer": "Depending on the certification track, an assessment may be included. Exam details such as number of questions, duration, and passing score vary based on the certification body."
-      },
-      {
-        "question": "How long is the Agile and Scrum certification valid?",
-        "answer": "Certification validity depends on the certifying organization. Some certifications are lifetime, while others require renewal through SEUs or PDUs."
-      },
-      {
-        "question": "How many PDUs and SEUs can I earn?",
-        "answer": "Participants can typically earn up to 14–16 PDUs and SEUs upon completion of the 2-day Agile and Scrum training program."
-      },
-      {
-        "question": "Is Agile and Scrum certification globally recognized?",
-        "answer": "Yes, Agile and Scrum certifications are globally recognized and highly valued across industries adopting Agile methodologies."
-      }
-    ]
-  },
-  {
-    "id": "category_2",
-    "label": "Training & Course Delivery FAQs",
-    "items": [
-      {
-        "question": "What is the duration of Agile and Scrum Training?",
-        "answer": "The training is typically delivered over 2 days (approximately 16 hours) of instructor-led sessions."
-      },
-      {
-        "question": "Is the training practical or theoretical?",
-        "answer": "The training is highly interactive and includes case studies, group activities, simulations, sprint exercises, and real-world scenarios."
-      },
-      {
-        "question": "Do I get hands-on Scrum experience during training?",
-        "answer": "Yes, participants engage in practical Scrum simulations including sprint planning, daily scrum exercises, backlog refinement, and retrospectives."
-      },
-      {
-        "question": "Is online training available?",
-        "answer": "Yes, Agile and Scrum training is available in live virtual instructor-led mode as well as corporate onsite programs."
-      },
-      {
-        "question": "Do you provide corporate Agile and Scrum training?",
-        "answer": "Yes, we offer customized corporate training tailored to organizational needs and Agile transformation goals."
-      },
-      {
-        "question": "Will I receive study materials?",
-        "answer": "Yes, participants receive comprehensive course materials, templates, and supporting learning resources."
-      }
-    ]
-  },
-  {
-    "id": "category_3",
-    "label": "Payment & Enrollment FAQs",
-    "items": [
-      {
-        "question": "How do I enroll in Agile and Scrum Training?",
-        "answer": "Choose your preferred schedule, complete the registration process, make the payment, and you will receive confirmation with course access details."
-      },
-      {
-        "question": "What payment methods are accepted?",
-        "answer": "We accept credit cards, debit cards, net banking, wire transfers, PayPal, Stripe, and other secure payment methods."
-      },
-      {
-        "question": "Do you offer installment payment options?",
-        "answer": "Yes, installment options may be available. Please contact support for detailed payment plans."
-      },
-      {
-        "question": "Are there group or corporate discounts available?",
-        "answer": "Yes, we provide special pricing for corporate teams and group enrollments."
-      },
-      {
-        "question": "Will I receive a payment receipt?",
-        "answer": "Yes, you will receive an official invoice and confirmation email after successful payment."
-      },
-      {
-        "question": "What is your refund policy?",
-        "answer": "Refunds are generally not provided. However, participants may reschedule their training as per policy terms."
-      }
-    ]
-  }
-];
+    {
+      "id": "category_1",
+      "label": "FAQ Category 1",
+      "items": [
+        {
+          "question": "What is ICP-PDM certification?",
+          "answer": "ICP-PDM is an ICAgile certification focused on Agile product management, customer discovery, strategy, and value delivery."
+        },
+        {
+          "question": "Is there an exam?",
+          "answer": "No. Certification is granted through participation and practical assessments during training."
+        },
+        {
+          "question": "Are prerequisites required?",
+          "answer": "No formal prerequisites are required. Beginners and experienced professionals can join."
+        },
+        {
+          "question": "Is ICP-PDM globally recognized?",
+          "answer": "Yes, the certification is globally recognized and valued by Agile organizations."
+        }
+      ]
+    }
+  ];
   const courseFeatures = [
     {
       icon: Users,
@@ -508,38 +393,39 @@ const AgileAndScrumTraining = () => {
 
   const courseWhySimpliaxis = [
     {
-      "title": "Global Recognition",
-      "description": "Courses accredited by globally recognized certification bodies."
+      "title": "Authorized ICAgile Training Partner",
+      "description": "Viovn is a certified ICAgile delivery partner, guaranteeing that our product management training is fully compliant with international quality and credentialing standards."
     },
     {
-      "title": "Expert Trainers",
-      "description": "Learn from certified professionals with real-world industry experience."
+      "title": "Experienced Agile Product Management Instructors",
+      "description": "Our ICP-PDM sessions are led by veteran product leaders who infuse deep practical knowledge, actionable strategies, and contemporary industry expertise into every lesson."
     },
     {
-      "title": "Flexible Learning Options",
-      "description": "Choose from live virtual, online, or corporate training formats."
+      "title": "Comprehensive ICAgile ICP-PDM Curriculum",
+      "description": "Master essential competencies in product discovery, prioritization, and strategic roadmap execution through a curriculum specifically engineered for high-performing Agile teams."
     },
     {
-      "title": "Lifetime Access",
-      "description": "Access session recordings and learning resources anytime."
+      "title": "Interactive, Hands-On Learning Experience",
+      "description": "We utilize immersive workshops, authentic case studies, and collaborative problem-solving to ensure you can confidently translate theoretical concepts into real-world business results."
     },
     {
-      "title": "Proven Track Record",
-      "description": "Trusted by organizations worldwide for measurable training outcomes."
+      "title": "Flexible Training Delivery Options",
+      "description": "Viovn offers both live virtual classrooms and bespoke corporate formats, allowing both individual specialists and entire organizations to progress at their own pace and convenience."
     },
     {
-      "title": "End-to-End Support",
-      "description": "Comprehensive assistance before, during, and after training."
+      "title": "Focus on Practical Product Skills",
+      "description": "Our educational approach is designed for immediate workplace application, focusing on improving your ability to build customer-centric products and drive superior business outcomes."
     },
     {
-      "title": "Interactive Learning",
-      "description": "Engaging sessions with real-world case studies and activities."
+      "title": "Structured Support and Guidance",
+      "description": "At Viovn, we empower our learners with premium ICAgile resources, practical rehearsal sessions, and continuous mentorship to ensure long-term mastery and retention."
     },
     {
-      "title": "Wide Course Portfolio",
-      "description": "International certifications across Agile, Scrum, SAFe, DevOps, and Project Management."
+      "title": "Real-World Agile Product Scenarios",
+      "description": "Analyze and solve challenges from actual product environments, gaining the specialized knowledge needed to bypass common pitfalls and lead products to success."
     }
   ]
+
   const sidePanelSchedules = [
     {
       courseCode: 'SCM',
@@ -563,16 +449,17 @@ const AgileAndScrumTraining = () => {
   ];
 
   const heroData = {
-    "courseName": "Agile and Scrum Training",
-    "breadcrumbName": "Agile and Scrum Foundational Training by Simpliaxis",
+    "courseName": "ICAgile Product Management (ICP-PDM) Certification Training",
+    "breadcrumbName": "ICAgile Product Management Certification | ICP-PDM Training",
     "rating": "5.0",
     "enrolledCount": "",
-    "subtitle": "Build a strong foundation in Agile principles and the Scrum framework in just one day.",
+    "subtitle": "Agile product management training focused on customer discovery, product strategy, and value-driven delivery.",
     "benefits": [
-      "Attend a 1-Day Live Instructor-Led Training Session delivered by certified experts.",
-      "Develop essential Agile and Scrum skills to build high-performing teams.",
-      "Engage in interactive and practical learning for deeper conceptual clarity.",
-      "Begin your journey toward globally recognized certifications such as CSM and PSM."
+      "Create a compelling product vision focused on solving customer challenges",
+      "Align product strategies with organizational goals",
+      "Master the full product lifecycle from ideation to evolution",
+      "Deliver innovative and customer-centric solutions",
+      "Earn 14–16 PDUs with ICAgile ICP-PDM training"
     ],
     "mainImage": "https://www.simpliaxis.com/../frontend_assets/image/ring_loader.gif",
     "badgeImage": "/csm-badge.png"
@@ -580,27 +467,47 @@ const AgileAndScrumTraining = () => {
 
   const overviewContent = {
     "title": "Course Overview",
-    "subtitle": "Comprehensive Introduction to Agile and Scrum",
+    "subtitle": "ICAgile Product Management (ICP-PDM) Course Overview",
     "description": [
-      "The Agile and Scrum Training by Simpliaxis validates your understanding of Agile principles and Scrum practices. This foundational program prepares professionals to pursue globally recognized certifications such as CSM, CSPO, PSM, and SAFe Scrum Master.",
-      "Delivered by certified Scrum trainers, this course bridges traditional project management approaches with Agile methodologies. It is ideal for aspiring Scrum Masters, Product Owners, Project Managers, and Agile team members.",
-      "Participants gain hands-on exposure through real-world exercises, enabling them to effectively implement Scrum within their organizations and improve project success rates."
+      "The ICP-PDM certification course is a 14-hour professional training program designed to build strong Agile product management capabilities.",
+      "It focuses on customer discovery, product vision, value proposition design, outcome-based roadmapping, and decision-making in uncertain environments."
     ],
-    "whatIsTitle": "",
-    "whatIsDescription": [],
-    "whatsIncludedTitle": "",
-    "whatsIncludedDescription": [],
-    "skillsTitle": "",
-    "skills": [],
-    "modesTitle": "",
-    "modesDescription": []
+    "whatIsTitle": "What is ICAgile Product Management (ICP-PDM)?",
+    "whatIsDescription": [
+      "ICP-PDM is an Agile product management mindset centered on discovery, experimentation, and evidence-based decision-making.",
+      "It helps professionals understand customer problems, test solutions, and continuously refine product strategy based on feedback."
+    ],
+    "whatsIncludedTitle": "What’s Included in ICP-PDM Training?",
+    "whatsIncludedDescription": [
+      "14 hours of ICAgile-authorized instructor-led training",
+      "Sessions led by ICAgile-certified practitioners",
+      "Interactive discussions and practical exercises",
+      "Real-world case-based learning",
+      "Official ICAgile-aligned curriculum"
+    ],
+    "skillsTitle": "Skills Covered in ICP-PDM Certification Training",
+    "skills": [
+      "Customer discovery and problem validation",
+      "Product vision creation and strategic alignment",
+      "Value proposition design and positioning",
+      "Outcome-based roadmapping and prioritization",
+      "Stakeholder collaboration and decision-making",
+      "Experimentation and continuous learning",
+      "Translating insights into product decisions",
+      "Continuous value delivery within Agile teams"
+    ],
+    "modesTitle": "Training Modes",
+    "modesDescription": [
+      "Virtual instructor-led live training",
+      "Corporate training programs customized for enterprise teams"
+    ]
   };
 
-  const corporateData ={
-    "courseName": "Why Corporates Choose Us",
+  const corporateData = {
+    "courseName": "Why Viovn for Corporates?",
     "label": "",
     "buttonText": "Corporate Group Enquiry",
-    "description": "Simpliaxis delivers customized corporate training programs designed to address specific organizational challenges. Our expert trainers provide industry-aligned modules that enhance workforce capabilities and help enterprises remain competitive."
+    "description": "Viovn delivers specialized enterprise training aimed at refining product strategy, fostering cross-functional synergy, and achieving higher delivery standards through customized learning tracks."
   };
 
   const courseMetadata = {
@@ -742,7 +649,6 @@ const AgileAndScrumTraining = () => {
             prerequisites={prerequisites}
             subtitle={sectionsLabels.prerequisites.subtitle}
             title={heroData.courseName}
-            
           />
           <CourseStepByStepProcess
             courseName={heroData.courseName}
@@ -854,4 +760,4 @@ const AgileAndScrumTraining = () => {
   );
 };
 
-export default AgileAndScrumTraining;
+export default ICAgileProductManagementCertificationTraining;

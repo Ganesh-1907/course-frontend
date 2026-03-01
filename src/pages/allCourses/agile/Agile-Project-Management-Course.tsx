@@ -19,11 +19,11 @@ import CourseTrainers from "@/components/courses/CourseTrainers";
 import CourseFAQs from "@/components/courses/faqs/CourseFAQs";
 import CourseWhySimpliaxis from "@/components/courses/CourseWhySimpliaxis";
 
-import { 
-  Users, 
-  Monitor, 
-  Settings, 
-  UserCheck, 
+import {
+  Users,
+  Monitor,
+  Settings,
+  UserCheck,
   Map,
   Award,
   BookOpen,
@@ -39,61 +39,47 @@ import {
   Star
 } from "lucide-react";
 
-const AgileAndScrumTraining = () => {
-  const highlights =  [
-    { "text": "8 Hours of Live Instructor-Led Training" },
-    { "text": "Earn 8 PDUs and 8 SEUs" },
-    { "text": "Delivered by Certified Scrum Trainers (CSTs)" },
-    { "text": "Comprehensive Coverage of Agile and Scrum Fundamentals" },
-    { "text": "Hands-On Practical Exercises and Case Studies" },
-    { "text": "Course Completion Certificate from Simpliaxis" },
-    { "text": "24/7 Post-Training Support" },
-    { "text": "Dedicated Doubt-Clearing Sessions" }
+const AgileProjectManagementCourse = () => {
+  const highlights = [
+    { "text": "11 weeks of training" },
+    { "text": "Hands-on tools: Confluence, Jira, Smartsheet" },
+    { "text": "Resume review support" },
+    { "text": "LinkedIn profile optimization" },
+    { "text": "Access to recruiters" },
+    { "text": "Career accelerator discount" }
   ];
 
   const individualBenefits = [
     {
-      "title": "Improved Adaptability",
-      "description": "Respond effectively to changing project requirements."
+      "title": "Individual Benefits",
+      "description": "Develop strong Agile and traditional project management skills."
     },
     {
-      "title": "Enhanced Collaboration",
-      "description": "Work efficiently within cross-functional Agile teams."
+      "title": "Individual Benefits",
+      "description": "Gain hands-on experience with industry tools like Jira and Confluence."
     },
     {
-      "title": "Higher Productivity",
-      "description": "Increase efficiency and deliver value consistently."
+      "title": "Individual Benefits",
+      "description": "Receive career mentoring and recruiter access."
     },
     {
-      "title": "Stronger Problem-Solving Skills",
-      "description": "Develop analytical thinking through Agile practices."
-    },
-    {
-      "title": "Career Growth Opportunities",
-      "description": "Unlock new career paths in Agile and Scrum roles."
+      "title": "Individual Benefits",
+      "description": "Improve professional visibility through resume and LinkedIn reviews."
     }
   ];
 
   const corporateBenefits = [
     {
-      "title": "Faster Project Delivery",
-      "description": "Accelerate time-to-market using Agile methodologies."
+      "title": "Corporate Benefits",
+      "description": "Improve project delivery consistency through standardized practices."
     },
     {
-      "title": "Improved Customer Satisfaction",
-      "description": "Deliver value-driven solutions aligned with customer needs."
+      "title": "Corporate Benefits",
+      "description": "Increase team efficiency with Agile tools and collaboration workflows."
     },
     {
-      "title": "Enhanced Product Quality",
-      "description": "Ensure continuous improvement through iterative development."
-    },
-    {
-      "title": "Greater Employee Engagement",
-      "description": "Encourage team ownership and collaboration."
-    },
-    {
-      "title": "Reduced Project Risk",
-      "description": "Identify and mitigate risks early through continuous feedback."
+      "title": "Corporate Benefits",
+      "description": "Reduce project risks through better planning and governance."
     }
   ];
 
@@ -148,249 +134,170 @@ const AgileAndScrumTraining = () => {
   ];
 
   const outcomes = [
-    "Develop a strong foundation in Agile principles and Scrum practices.",
-    "Apply Scrum roles, artifacts, and ceremonies effectively in real projects.",
-    "Use Agile estimation techniques such as Story Points and Planning Poker.",
-    "Monitor progress using Agile metrics like burn-down and burn-up charts.",
-    "Understand scaling approaches for enterprise-level Agile implementation."
+    "Understand core project management fundamentals and Agile principles",
+    "Work with SDLC, Waterfall, and Agile delivery models",
+    "Create stakeholder registers, project charters, and WBS structures",
+    "Manage schedules, risks, and project budgets",
+    "Use Jira and Confluence for Agile project execution",
+    "Participate in Scrum ceremonies and backlog management",
+    "Prepare for project management career opportunities"
   ];
 
   const prerequisites = [
-    "No prior experience is required to enroll in this Agile and Scrum Training.",
-    "Ideal for beginners and professionals planning to pursue certifications such as CSM, CSPO, PSM, or SAFe Scrum Master."
+    'No mandatory prerequisites are required to attend the training.',
+    'Basic understanding of Scrum or Agile methodologies is beneficial but not compulsory.',
+    'The course is suitable for professionals involved in project management or Agile teams.',
+    'Attending training delivered by certified instructors ensures proper knowledge transfer.',
   ];
 
   const certificationSteps = [
     {
-      title: 'Attend Training',
+      title: 'Attend the Training',
       description:
-        'Complete the 16-hour A-CSM training delivered by Scrum Alliance-accredited trainers.',
+        "Enroll in Viovn's A-CSM training, which is accredited by Scrum Alliance. Attend the 16 hours training program.",
+      color: '#ff843d',
     },
     {
-      title: 'Validate Experience',
-      description: 'Confirm at least 12 months of Scrum Master experience.',
+      title: 'Validate your Experience',
+      description:
+        'Authenticate your Scrum Master experience for at least 1 year or 12 months within the last five years.',
+      color: '#2ecc71',
     },
     {
-      title: 'Accept License',
+      title: 'License Agreement',
       description:
-        'Log in to Scrum Alliance and acknowledge the license agreement.',
+        "Acknowledge the welcome email sent by Scrum Alliance. You'll have to enter your credentials and log in to your account on Scrum Alliance's official website. Acknowledge the license agreement.",
+      color: '#3498db',
     },
     {
-      title: 'Download Certificate',
+      title: 'Certification',
       description:
-        'Receive and download your Advanced Certified ScrumMaster credential.',
+        'Download the A-CSM certification instantly and get A-CSM certified.',
+      color: '#e84393',
     },
   ];
 
-  const curriculumModules =[
+  const curriculumModules = [
     {
-      "title": "Module 1: Introduction to Agile",
+      "title": "Project Management Fundamentals",
       "topics": [
-        "Evolution of Agile",
-        "Traditional vs Agile Project Management",
-        "Benefits of Agile Methodology"
+        "Role of project manager",
+        "Project lifecycle and failures",
+        "PMP exam basics"
       ]
     },
     {
-      "title": "Module 2: Agile Foundations",
+      "title": "SDLC & Waterfall",
       "topics": [
-        "Agile Manifesto",
-        "Agile Values and Principles",
-        "Customer Collaboration and Iterative Delivery"
+        "Project stakeholders",
+        "SDLC process",
+        "Knowledge areas"
       ]
     },
     {
-      "title": "Module 3: Business Value in Agile",
+      "title": "Integration & Scope Management",
       "topics": [
-        "User Stories and the 3Cs",
-        "Prioritization Techniques",
-        "Minimum Viable Product (MVP)"
+        "Project charter creation",
+        "Stakeholder management",
+        "Change control processes"
       ]
     },
     {
-      "title": "Module 4: Agile Frameworks",
+      "title": "Quality, Schedule & Testing",
       "topics": [
-        "Scrum Framework",
-        "Kanban",
-        "Extreme Programming (XP)",
-        "Feature-Driven Development (FDD)"
+        "Requirements management",
+        "WBS creation",
+        "Testing techniques"
       ]
     },
     {
-      "title": "Module 5: Agile Project Management",
+      "title": "Cost & Risk Management",
       "topics": [
-        "APM Framework Phases",
-        "Envision, Speculate, Explore, Adapt, Close"
+        "Budget planning",
+        "Risk identification and mitigation"
       ]
     },
     {
-      "title": "Module 6: Scrum Framework Deep Dive",
+      "title": "Agile Scrum",
       "topics": [
-        "Scrum Roles",
-        "Scrum Artifacts",
-        "Scrum Events"
+        "Agile mindset",
+        "Scrum roles and ceremonies",
+        "Backlog development"
       ]
     },
     {
-      "title": "Module 7: Agile Estimation",
+      "title": "Scrum Tools Masterclass",
       "topics": [
-        "Story Points",
-        "Planning Poker",
-        "T-Shirt Sizing"
+        "Jira backlog migration",
+        "Sprint simulation",
+        "Confluence retrospectives"
       ]
     },
     {
-      "title": "Module 8: Agile Planning and Tracking",
+      "title": "Career Development",
       "topics": [
-        "Release Planning",
-        "Iteration Planning",
-        "Burn-down and Burn-up Charts"
-      ]
-    },
-    {
-      "title": "Module 9: Scaling Agile",
-      "topics": [
-        "SAFe",
-        "DAD",
-        "LeSS"
-      ]
-    },
-    {
-      "title": "Module 10: Agile Career Path",
-      "topics": [
-        "Agile Certifications",
-        "Enterprise Agile Roles"
+        "Resume preparation",
+        "Industry panel sessions",
+        "Recruiter networking"
       ]
     }
   ];
 
   const learningObjectives = [
     {
-      "title": "Agile Fundamentals",
-      "description": "Understand Agile values and principles and explore frameworks such as Scrum, Kanban, and XP."
+      "title": "Project Management Foundations",
+      "description": "Understand project manager roles, project types, and reasons projects fail."
     },
     {
-      "title": "User Stories and Business Value",
-      "description": "Learn how to create effective user stories and prioritize development based on customer value."
+      "title": "SDLC & Waterfall",
+      "description": "Learn software development lifecycle stages and project knowledge areas."
     },
     {
-      "title": "Agile Planning",
-      "description": "Master product planning, release planning, and iteration planning techniques."
+      "title": "Integration and Scope Management",
+      "description": "Create project charters, stakeholder registers, and scope management plans."
     },
     {
-      "title": "Scrum Events",
-      "description": "Gain clarity on Scrum ceremonies including Sprint Planning, Daily Scrum, Sprint Review, and Retrospective."
+      "title": "Quality and Schedule Management",
+      "description": "Develop WBS, testing approaches, scheduling strategies, and estimation techniques."
     },
     {
-      "title": "Estimation and Metrics",
-      "description": "Apply estimation techniques and measure performance using Agile metrics."
+      "title": "Cost and Risk Management",
+      "description": "Build project budgets and apply risk mitigation practices."
     },
     {
-      "title": "Scaling Agile",
-      "description": "Learn how to scale Agile practices successfully across large organizations."
+      "title": "Agile Scrum Practices",
+      "description": "Create product backlogs, prioritize stories, and execute Scrum ceremonies."
+    },
+    {
+      "title": "Jira & Confluence Masterclass",
+      "description": "Manage backlog, sprint planning, and retrospectives using Agile tools."
+    },
+    {
+      "title": "Career Development",
+      "description": "Improve resume, connect with recruiters, and prepare for industry roles."
     }
   ];
 
   const faqCategories = [
-  {
-    "id": "category_1",
-    "label": "Agile & Scrum Certification FAQs",
-    "items": [
-      {
-        "question": "What is Agile and Scrum Training?",
-        "answer": "Agile and Scrum Training provides a comprehensive understanding of Agile principles and the Scrum framework. It helps professionals learn how to deliver value incrementally, collaborate effectively, and adapt quickly to changing requirements."
-      },
-      {
-        "question": "Who should attend Agile and Scrum Training?",
-        "answer": "This course is ideal for Developers, Testers, Project Managers, Product Owners, Scrum Masters, Business Analysts, and anyone involved in Agile projects."
-      },
-      {
-        "question": "Are there any prerequisites for Agile and Scrum Training?",
-        "answer": "There are no strict prerequisites. However, having basic knowledge of software development or project management concepts is beneficial."
-      },
-      {
-        "question": "What will I learn in Agile and Scrum Training?",
-        "answer": "You will learn Agile values and principles, Scrum roles (Scrum Master, Product Owner, Developers), Scrum events, artifacts, sprint planning, backlog management, estimation techniques, and Agile best practices."
-      },
-      {
-        "question": "Is there an exam included in the training?",
-        "answer": "Depending on the certification track, an assessment may be included. Exam details such as number of questions, duration, and passing score vary based on the certification body."
-      },
-      {
-        "question": "How long is the Agile and Scrum certification valid?",
-        "answer": "Certification validity depends on the certifying organization. Some certifications are lifetime, while others require renewal through SEUs or PDUs."
-      },
-      {
-        "question": "How many PDUs and SEUs can I earn?",
-        "answer": "Participants can typically earn up to 14–16 PDUs and SEUs upon completion of the 2-day Agile and Scrum training program."
-      },
-      {
-        "question": "Is Agile and Scrum certification globally recognized?",
-        "answer": "Yes, Agile and Scrum certifications are globally recognized and highly valued across industries adopting Agile methodologies."
-      }
-    ]
-  },
-  {
-    "id": "category_2",
-    "label": "Training & Course Delivery FAQs",
-    "items": [
-      {
-        "question": "What is the duration of Agile and Scrum Training?",
-        "answer": "The training is typically delivered over 2 days (approximately 16 hours) of instructor-led sessions."
-      },
-      {
-        "question": "Is the training practical or theoretical?",
-        "answer": "The training is highly interactive and includes case studies, group activities, simulations, sprint exercises, and real-world scenarios."
-      },
-      {
-        "question": "Do I get hands-on Scrum experience during training?",
-        "answer": "Yes, participants engage in practical Scrum simulations including sprint planning, daily scrum exercises, backlog refinement, and retrospectives."
-      },
-      {
-        "question": "Is online training available?",
-        "answer": "Yes, Agile and Scrum training is available in live virtual instructor-led mode as well as corporate onsite programs."
-      },
-      {
-        "question": "Do you provide corporate Agile and Scrum training?",
-        "answer": "Yes, we offer customized corporate training tailored to organizational needs and Agile transformation goals."
-      },
-      {
-        "question": "Will I receive study materials?",
-        "answer": "Yes, participants receive comprehensive course materials, templates, and supporting learning resources."
-      }
-    ]
-  },
-  {
-    "id": "category_3",
-    "label": "Payment & Enrollment FAQs",
-    "items": [
-      {
-        "question": "How do I enroll in Agile and Scrum Training?",
-        "answer": "Choose your preferred schedule, complete the registration process, make the payment, and you will receive confirmation with course access details."
-      },
-      {
-        "question": "What payment methods are accepted?",
-        "answer": "We accept credit cards, debit cards, net banking, wire transfers, PayPal, Stripe, and other secure payment methods."
-      },
-      {
-        "question": "Do you offer installment payment options?",
-        "answer": "Yes, installment options may be available. Please contact support for detailed payment plans."
-      },
-      {
-        "question": "Are there group or corporate discounts available?",
-        "answer": "Yes, we provide special pricing for corporate teams and group enrollments."
-      },
-      {
-        "question": "Will I receive a payment receipt?",
-        "answer": "Yes, you will receive an official invoice and confirmation email after successful payment."
-      },
-      {
-        "question": "What is your refund policy?",
-        "answer": "Refunds are generally not provided. However, participants may reschedule their training as per policy terms."
-      }
-    ]
-  }
-];
+    {
+      "id": "category_1",
+      "label": "FAQ Category 1",
+      "items": [
+        {
+          "question": "Is the class live or pre-recorded?",
+          "answer": "The training is live and instructor-led with interactive sessions and practical exercises."
+        },
+        {
+          "question": "Who should learn project management?",
+          "answer": "Anyone interested in organizing teams, managing projects, and leading initiatives can benefit from project management training."
+        },
+        {
+          "question": "What industries can project managers work in?",
+          "answer": "Project managers work across IT, healthcare, finance, government, marketing, and construction industries."
+        }
+      ]
+    }
+  ];
   const courseFeatures = [
     {
       icon: Users,
@@ -508,38 +415,39 @@ const AgileAndScrumTraining = () => {
 
   const courseWhySimpliaxis = [
     {
-      "title": "Global Recognition",
-      "description": "Courses accredited by globally recognized certification bodies."
+      "title": "Internationally Recognized Credentials",
+      "description": "Our training programs are endorsed by the world's most reputable certification bodies, ensuring your professional expertise is respected and valued across all industries."
     },
     {
-      "title": "Expert Trainers",
-      "description": "Learn from certified professionals with real-world industry experience."
+      "title": "Industry-Leading Expert Instructors",
+      "description": "Gain specialized knowledge from seasoned project management veterans who share profound real-world insights and actionable business experience in every session."
     },
     {
-      "title": "Flexible Learning Options",
-      "description": "Choose from live virtual, online, or corporate training formats."
+      "title": "Versatile Learning Modalities",
+      "description": "Viovn offers a range of educational formats—from interactive virtual classrooms to specialized corporate sessions—tailored to your unique schedule and learning requirements."
     },
     {
-      "title": "Lifetime Access",
-      "description": "Access session recordings and learning resources anytime."
+      "title": "Persistent Access to Learning Assets",
+      "description": "Enjoy continuous, long-term access to all recorded sessions, masterclass materials, and advanced study tools to support your ongoing professional development."
     },
     {
-      "title": "Proven Track Record",
-      "description": "Trusted by organizations worldwide for measurable training outcomes."
+      "title": "Demonstrated Excellence",
+      "description": "As a distinguished global training provider, we have an extensive history of empowering both individual professionals and major enterprises to achieve superior performance."
     },
     {
-      "title": "End-to-End Support",
-      "description": "Comprehensive assistance before, during, and after training."
+      "title": "Holistic Career Guidance",
+      "description": "Viovn provides comprehensive support throughout your journey, including dedicated exam preparation, certification roadmaps, and strategic career counseling beyond the classroom."
     },
     {
-      "title": "Interactive Learning",
-      "description": "Engaging sessions with real-world case studies and activities."
+      "title": "Dynamic and Immersive Workshops",
+      "description": "Our training sessions are highly interactive, utilizing authentic industry simulations and collaborative activities to ensure practical mastery of complex project scenarios."
     },
     {
-      "title": "Wide Course Portfolio",
-      "description": "International certifications across Agile, Scrum, SAFe, DevOps, and Project Management."
+      "title": "Comprehensive Certification Portfolio",
+      "description": "Viovn offers an extensive suite of globally acknowledged certifications in Agile, Scrum, SAFe, DevOps, and diverse Project Management methodologies."
     }
   ]
+
   const sidePanelSchedules = [
     {
       courseCode: 'SCM',
@@ -563,16 +471,17 @@ const AgileAndScrumTraining = () => {
   ];
 
   const heroData = {
-    "courseName": "Agile and Scrum Training",
-    "breadcrumbName": "Agile and Scrum Foundational Training by Simpliaxis",
+    "courseName": "Agile Project Management Course",
+    "breadcrumbName": "Agile Project Management Course",
     "rating": "5.0",
     "enrolledCount": "",
-    "subtitle": "Build a strong foundation in Agile principles and the Scrum framework in just one day.",
+    "subtitle": "Comprehensive Agile project management training covering PMP fundamentals, SDLC, Agile Scrum, Jira, and career preparation.",
     "benefits": [
-      "Attend a 1-Day Live Instructor-Led Training Session delivered by certified experts.",
-      "Develop essential Agile and Scrum skills to build high-performing teams.",
-      "Engage in interactive and practical learning for deeper conceptual clarity.",
-      "Begin your journey toward globally recognized certifications such as CSM and PSM."
+      "11 weeks of live training",
+      "Hands-on tools: Jira, Confluence, Smartsheet",
+      "Resume review and LinkedIn optimization",
+      "Access to recruiters and industry mentors",
+      "Career accelerator discount"
     ],
     "mainImage": "https://www.simpliaxis.com/../frontend_assets/image/ring_loader.gif",
     "badgeImage": "/csm-badge.png"
@@ -580,27 +489,49 @@ const AgileAndScrumTraining = () => {
 
   const overviewContent = {
     "title": "Course Overview",
-    "subtitle": "Comprehensive Introduction to Agile and Scrum",
+    "subtitle": "Agile Project Management Course Overview",
     "description": [
-      "The Agile and Scrum Training by Simpliaxis validates your understanding of Agile principles and Scrum practices. This foundational program prepares professionals to pursue globally recognized certifications such as CSM, CSPO, PSM, and SAFe Scrum Master.",
-      "Delivered by certified Scrum trainers, this course bridges traditional project management approaches with Agile methodologies. It is ideal for aspiring Scrum Masters, Product Owners, Project Managers, and Agile team members.",
-      "Participants gain hands-on exposure through real-world exercises, enabling them to effectively implement Scrum within their organizations and improve project success rates."
+      "This Agile Project Management course provides structured training in project management fundamentals, SDLC, Agile methodologies, and industry tools such as Jira and Confluence.",
+      "Participants learn predictive and Agile approaches, project planning, integration, scope, schedule, cost, risk, and Scrum practices through practical sessions.",
+      "The program also focuses on career development with recruiter access, resume review, and industry mentorship."
     ],
-    "whatIsTitle": "",
-    "whatIsDescription": [],
-    "whatsIncludedTitle": "",
-    "whatsIncludedDescription": [],
-    "skillsTitle": "",
-    "skills": [],
-    "modesTitle": "",
-    "modesDescription": []
+    "whatIsTitle": "What is Agile Project Management Training?",
+    "whatIsDescription": [
+      "Agile Project Management training helps professionals plan, execute, and deliver projects using Agile principles and modern collaboration tools.",
+      "It combines traditional project management foundations with Agile frameworks like Scrum to support adaptive delivery and continuous improvement."
+    ],
+    "whatsIncludedTitle": "What’s Included in This Course?",
+    "whatsIncludedDescription": [
+      "11-week instructor-led live training",
+      "Hands-on practice with Jira, Confluence, and Smartsheet",
+      "Resume and LinkedIn profile review",
+      "Career mentoring and recruiter access",
+      "Industry panel sessions"
+    ],
+    "skillsTitle": "Skills Covered",
+    "skills": [
+      "Project management fundamentals",
+      "SDLC and Waterfall processes",
+      "Agile Scrum framework",
+      "Stakeholder and scope management",
+      "Schedule, cost, and risk management",
+      "Backlog creation and prioritization",
+      "Jira and Confluence usage",
+      "Career preparation for PM roles"
+    ],
+    "modesTitle": "Training Modes",
+    "modesDescription": [
+      "Live instructor-led online training",
+      "Interactive team-based learning",
+      "Hands-on practical project exercises"
+    ]
   };
 
-  const corporateData ={
-    "courseName": "Why Corporates Choose Us",
+  const corporateData = {
+    "courseName": "Why Viovn for Corporates?",
     "label": "",
     "buttonText": "Corporate Group Enquiry",
-    "description": "Simpliaxis delivers customized corporate training programs designed to address specific organizational challenges. Our expert trainers provide industry-aligned modules that enhance workforce capabilities and help enterprises remain competitive."
+    "description": "Viovn delivers specialized enterprise programs designed to accelerate project delivery, foster Agile cultural transformation, and enhance global workforce agility through bespoke training."
   };
 
   const courseMetadata = {
@@ -742,7 +673,6 @@ const AgileAndScrumTraining = () => {
             prerequisites={prerequisites}
             subtitle={sectionsLabels.prerequisites.subtitle}
             title={heroData.courseName}
-            
           />
           <CourseStepByStepProcess
             courseName={heroData.courseName}
@@ -854,4 +784,4 @@ const AgileAndScrumTraining = () => {
   );
 };
 
-export default AgileAndScrumTraining;
+export default AgileProjectManagementCourse;
