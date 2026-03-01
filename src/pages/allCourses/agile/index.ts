@@ -6,6 +6,23 @@ export { default as CertifiedScrumProductOwnerCertificationTraining } from './Ce
 export { default as AdvancedCertifiedScrumMasterCertificationTraining } from './Advanced-Certified-Scrum-Master-(A-CSM)-Certification-Training';
 export { default as AdvancedCertifiedScrumProductOwnerCertificationTraining } from './Advanced-Certified-Scrum-Product-Owner-(CSPO)-Certification-Training';
 export { default as CertifiedScrumDeveloperCertificationTraining } from './Certified-Scrum-Developer-(CSD)-Certification-Training';
+export { default as ICAgileSystemsCoachingCertificationTraining } from './ICAgile-Systems-Coaching-(ICP-SYS)-Certification-Training';
+export { default as ICAgilePeopleDevelopmentCertificationTraining } from './ICAgile-People-Development-(ICP-PDV)-Certification-Training';
+export { default as ICAgileLeanPortfolioManagementCertificationTraining } from './ICAgile-Lean-Portfolio-Management-(ICP-LPM)-Certification-Training';
+export { default as ICAgileFoundationsOfAICertificationTraining } from './ICAgile-Foundations-of-AI-(ICP-FAI)-Certification-Training';
+export { default as ICAgileAgileTeamFacilitationCertificationTraining } from './ICAgile-Agile-Team-Facilitation-(ICP-ATF)-Certification-Training';
+export { default as ApplyingProfessionalKanbanCertificationCourse } from './Applying-Professional-Kanban-(APK)-Certification-Course';
+export { default as ICAgileAgileProductOwnershipICPAPOCertificationTraining } from './ICAgile-Agile-Product-Ownership-(ICP-APO)-Certification-Training';
+export { default as PSPBMSkillsCertificationCourse } from './PSPBM-Skills-Certification-Course';
+export { default as ICAgileAgileProjectDeliveryManagementICPAPMCertificationTraining } from './ICAgile-Agile-Project&Delivery-Management-(ICP-APM)-Certification-Training';
+export { default as ICAgileProductManagementCertificationTraining } from './ICAgile-Product-Management-(ICP-PDM)-Certification-Training';
+export { default as ICAgileCertifiedAgileLeadershipTraining } from './ICAgile-Certified-Agile-Leadership-(ICP-LEA)-Training';
+export { default as JiraSoftwareTrainingforAgileProjects } from './Jira-Software-Training-for-Agile-Projects';
+export { default as AgileProjectManagementCourse } from './Agile-Project-Management-Course';
+export { default as CertifiedScrumProfessionalProductOwnerCertificationTraining } from './Certified-Scrum-Professional-Product-Owner-(CSP®-PO)-Certification-Training';
+
+
+
 export { default as AgileAndScrumTraining } from './Agile-and-Scrum-Training';
 export { default as PMIAgileCertifiedPractitionerPMIACP } from './PMI-Agile-Certified-Practitioner-(PMI-ACP)-Certification-Training';
 export { default as ProfessionalScrumMasterCertificationTraining } from './Professional-Scrum-Master-(PSM-I)-Certification-Training';
