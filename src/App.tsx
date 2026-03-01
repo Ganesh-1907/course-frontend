@@ -250,7 +250,7 @@ const App = () => (
             element={<CertifiedAgileLeaderCertificationTraining />}
           />
 
-          {/* Legacy Agile Routes */}
+  
           <Route
             path="/course/agile/applying-professional-scrum-certification-training"
             element={<ApplyingProfessionalScrumCertificationTraining />}
