@@ -83,16 +83,22 @@ const Header: React.FC<HeaderProps> = ({ hidden = false }) => {
         scrolled ? "bg-white/95 backdrop-blur-md shadow-lg" : "bg-white"
       )}>
         <div className="container">
-          <div className="h-20 flex items-center justify-between gap-6">
+          <div className="h-16 md:h-20 flex items-center justify-between gap-6">
             
             {/* Logo */}
             <div className="flex items-center gap-6">
-              <Link to="/" className="flex items-center group">
-                <img 
-                  src="/image.png" 
-                  alt="Viovn Logo" 
-                  className="h-20 w-auto object-contain"
-                />
+              <Link to="/" className="flex items-center gap-0 group">
+                <div className="relative flex items-center justify-center h-12 md:h-16 transition-all mr-2">
+                  <img 
+                    src="/image.png" 
+                    alt="Viovn Logo" 
+                    className="h-full w-auto object-contain"
+                  />
+                </div>
+                <div className="flex flex-col">
+                  <span className="text-xl md:text-2xl font-black text-[#001c3d] tracking-tighter leading-none">Viovn</span>
+                  <span className="text-[9px] md:text-[10px] font-bold text-blue-500/80 uppercase tracking-widest leading-none mt-0.5">Technologies</span>
+                </div>
               </Link>
 
               {/* All Courses Toggle */}
@@ -231,7 +237,8 @@ const Header: React.FC<HeaderProps> = ({ hidden = false }) => {
       
       <div className="md:hidden bg-white border-b border-border py-4 px-4 flex items-center justify-between">
         <Link to="/" className="flex items-center">
-          <img src="/image.png" alt="Viovn Logo" className="h-14 w-auto object-contain" />
+          <img src="/image.png" alt="Viovn Logo" className="h-10 w-auto object-contain mr-2" />
+          <div className="logo-text text-xl font-black">viovn</div>
         </Link>
         <div className="flex items-center gap-4">
           <ShoppingCart className="w-6 h-6" />
