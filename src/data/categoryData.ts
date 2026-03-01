@@ -69,7 +69,7 @@ const buildCourses = (category: string, titles: string[]): Course[] =>
       navigate = "/course/csd-certification-training";
     }else if (processedTitle.includes("Agile and Scrum Training")) {
       navigate = "/course/agile-and-scrum-training";
-    }else if (processedTitle.includes("ICAgile-Systems-Coaching-(ICP-SYS)-Certification-Training")) {
+    }else if (processedTitle.includes("ICAgile Systems Coaching (ICP-SYS) Certification Training")) {
       navigate = "/course/icagile-systems-coaching-certification-training";
     }else if (processedTitle.includes("ICAgile People Development (ICP-PDV) Certification Training")) {
       navigate = "/course/icagile-people-development-certification-training";
@@ -77,23 +77,23 @@ const buildCourses = (category: string, titles: string[]): Course[] =>
       navigate = "/course/icagile-lean-portfolio-management-certification-training";
     }else if (processedTitle.includes("ICAgile Foundations of AI for FAI Certification Training")) {
       navigate = "/course/icagile-foundations-of-ai-certification-training";
-    }else if (processedTitle.includes("ICAgile Agile Team Facilitation (ICP-ATF) Certification Training")) {
+    }else if (processedTitle.includes("ICAgile Agile Team Facilitation Certification (ICP-ATF) Training")) {
       navigate = "/course/icagile-agile-team-facilitation-certification-training";
     }else if (processedTitle.includes("Applying Professional Kanban (APK) Course")) {
-      navigate = "/course/applying-professional-kanban-certification-course";
+      navigate = "/course/applying-professional-kanban-apk-certification-course";
     }else if (processedTitle.includes("ICAgile Agile Product Ownership (ICP-APO) Certification Training")) {
-      navigate = "/course/icagile-agile-product-ownership-certification-training";
+      navigate = "/course/icagile-agile-product-ownership-icp-apo-certification-training";
     }else if (processedTitle.includes("ICAgile Agile Project and Delivery Management (ICP-APM) Training")) {
-      navigate = "/course/icagile-agile-project-delivery-management-certification-training";
+      navigate = "/course/icagile-agile-project-delivery-management-icp-apm-certification-training";
     }else if (processedTitle.includes("ICAgile Product Management (ICP-PDM) Certification Training")) {
       navigate = "/course/ICAgile-Product-Management-(ICP-PDM)-Certification-Training";
-    }else if (processedTitle.includes("ICAgile Certified Agile Leadership (ICP-LEA) Training")) {
-      navigate = "/course/icagile-certified-agile-leadership-icp-lea-training";
+    }else if (processedTitle.includes("ICAgile Agile Leadership (ICP-LEA) Certification Course Training")) {
+      navigate = "/course/icagile-certified-agile-leadership-icp-lea-training"; 
     }else if (processedTitle.includes("Jira Software Training for Agile Projects")) {
       navigate = "/course/jira-software-training-for-agile-projects";
-    }else if (processedTitle.includes("Agile Project Management Course")) {
+    }else if (processedTitle.includes("Agile Project Management Training")) {
       navigate = "/course/agile-project-management-course";
-    }else if (processedTitle.includes("Certified Scrum Professional® - Product Owner (CSP®-PO) Certification Training")) {
+    }else if (processedTitle.includes("Certified Scrum Professional - Product Owner (CSP-PO) Certification Training")) {
       navigate = "/course/certified-scrum-professional-product-owner-csp-po-certification-training";
     }else if (processedTitle.includes("Professional Scrum Product Backlog Management (PSBM) Skills Certification")) {
       navigate = "/course/pspbm-skills-certification-course";
