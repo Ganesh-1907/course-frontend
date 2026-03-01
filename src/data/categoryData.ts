@@ -124,6 +124,26 @@ const buildCourses = (category: string, titles: string[]): Course[] =>
     }
       
     
+    // ---------------------------------- Safe -------------------------------------------
+    if (processedTitle.includes("Leading SAFe 6.0 Certification Training")) {
+      navigate = "/course/leading-safe-certification-training";
+    }else if (processedTitle.includes("AI-Improved SAFe 6.0 Scrum Master (SSM) Certification Training")) {
+      navigate = "/course/ai-empowered-safe-scrum-master-ssm-certification-training";
+    }else if (processedTitle.includes("Product Manager (POPM) Certification Training")) {
+      navigate = "/course/product-manager-popm-certification-training";
+    }else if (processedTitle.includes("SAFe 6.0 Practice Consultant (SPC) Certification Training")) {
+      navigate = "/course/safe-practice-consultant-spc-certification-training";
+    }else if (processedTitle.includes("SAFe 6.0 Lean Portfolio Management (LPM) Certification Training")) {
+      navigate = "/course/safe-lean-portfolio-management-certification-training";
+    }else if (processedTitle.includes("SAFe 6.0 Architect Certification Training")) {
+      navigate = "/course/safe-architects-certification-training";
+    }
+
+
+
+
+
+
     return {
       id: generatedCourseId++,
       title,
@@ -204,10 +224,11 @@ const agileCourseTitles = [
   "ICAgile AI for Product Strategy Micro-credential Course",
   "ICAgile People Development (ICP-PDV) Certification Training",
   "ICAgile Systems Coaching (ICP-SYS) Certification Training",
-  "Leading SAFe 6.0 Certification Training",
 ];
 
 const safeCourseTitles = [
+
+  "Leading SAFe 6.0 Certification Training",
   "AI-Improved SAFe 6.0 Scrum Master (SSM) Certification Training",
   "AI-Improved SAFe 6.0 Product Owner/Product Manager (POPM) Certification Training",
   "SAFe 6.0 Practice Consultant (SPC) Certification Training",
