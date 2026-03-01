@@ -48,15 +48,27 @@ const COURSE_ROUTES: Record<string, string> = {
   "Advanced Certified Scrum Master (A-CSM) Certification Training": "/course/a-csm-certificaton-training",
   "Advanced Certified Scrum Product Owner (A-CSPO) Certification Training": "/course/a-cspo-certificaton-training",
   "Certified Scrum Developer (CSD) Certification Training": "/course/csd-certification-training",
+  "Applying Professional Scrum (APS) Certification Training": "/course/agile/applying-professional-scrum-certification-training",
+  "Agile Product Owner Training": "/course/agile/agile-product-owner-training",
+  "Agile for Managers Training": "/course/agile/agile-for-managers-training",
+  "Agile for Executives Training": "/course/agile/agile-for-executives-training",
+  "Manage Agile Projects Using Scrum Training": "/course/agile/manage-agile-projects-using-scrum-training",
+  "Agile Fundamentals: Including Scrum and Kanban Training": "/course/agile/agile-fundamentals-including-scrum-and-kanban-training",
+  "ICAgile (ICP) Fundamentals Certification Training": "/course/agile/icagile-icp-fundamentals-certification-training",
+  "ICAgile-Agility-In-The-Enterprise-(ICP-ENT)-Certification-Training": "/course/agile/icagile-agility-in-the-enterprise-icp-ent-certification-training",
+  "Test Driven Development (TDD) Training": "/course/agile/test-driven-development-tdd-training",
+  "Agile Release Planning Training": "/course/agile/agile-release-planning-training",
+  "ICAgile AI for Product Strategy Micro-credential Course": "/course/agile/icagile-ai-for-product-strategy-micro-credential-course",
+  "ICAgile AI for Customer Insights Micro-credential Training": "/course/agile/icagile-ai-for-customer-insights-micro-credential-training",
 };
 
 const buildCourses = (category: string, titles: string[]): Course[] =>
   titles.map((title) => {
     let navigate = `/course/${category.toLowerCase().replace(/\s+/g, '-')}/${title.toLowerCase().replace(/[^\w\s-]/g, '').replace(/\s+/g, '-')}`;
-    
+
     // Manual overrides with more robust checking
     const processedTitle = title.trim();
-   // ---------------------------------- Agile -------------------------------------------
+    // ---------------------------------- Agile -------------------------------------------
     if (processedTitle.includes("Certified Scrum Master (CSM) Certification Training")) {
       navigate = "/course/csm-certificaton-training";
     } else if (processedTitle.includes("Certified Scrum Product Owner (CSPO) Certification Training")) {
@@ -67,18 +79,42 @@ const buildCourses = (category: string, titles: string[]): Course[] =>
       navigate = "/course/a-cspo-certificaton-training";
     } else if (processedTitle.includes("Certified Scrum Developer (CSD) Certification Training")) {
       navigate = "/course/csd-certification-training";
-    }else if (processedTitle.includes("Agile and Scrum Training")) {
+    } else if (processedTitle.includes("Agile and Scrum Training")) {
       navigate = "/course/agile-and-scrum-training";
-    }else if (processedTitle.includes("PMI-Agile Certified Practitioner (PMI-ACP) Certification Training")) {
+    } else if (processedTitle.includes("PMI-Agile Certified Practitioner (PMI-ACP) Certification Training")) {
       navigate = "/course/pmi-agile-certified-practitioner-pmi-acp-certification-training";
-    }else if (processedTitle.includes("Professional Scrum Master (PSM I) Certification Training")) {
+    } else if (processedTitle.includes("Professional Scrum Master (PSM I) Certification Training")) {
       navigate = "/course/psm-i-certification-training";
-    }else if (processedTitle.includes("Certified Agile Scaling Practitioner (CASP) Training")) {
+    } else if (processedTitle.includes("Certified Agile Scaling Practitioner (CASP) Training")) {
       navigate = "/course/casp-1-certification-training";
-    }else if (processedTitle.includes("Agile Coaching Skills - Certified Facilitator (CAF) Training")) {
+    } else if (processedTitle.includes("Agile Coaching Skills - Certified Facilitator (CAF) Training")) {
       navigate = "/course/agile-coaching-skills-certified-facilitator-caf-training";
+    } else if (processedTitle.includes("Applying Professional Scrum (APS) Certification Training")) {
+      navigate = "/course/agile/applying-professional-scrum-certification-training";
+    } else if (processedTitle.includes("Agile Product Owner Training")) {
+      navigate = "/course/agile/agile-product-owner-training";
+    } else if (processedTitle.includes("Agile for Managers Training")) {
+      navigate = "/course/agile/agile-for-managers-training";
+    } else if (processedTitle.includes("Agile for Executives Training")) {
+      navigate = "/course/agile/agile-for-executives-training";
+    } else if (processedTitle.includes("Manage Agile Projects Using Scrum Training")) {
+      navigate = "/course/agile/manage-agile-projects-using-scrum-training";
+    } else if (processedTitle.includes("Agile Fundamentals: Including Scrum and Kanban Training")) {
+      navigate = "/course/agile/agile-fundamentals-including-scrum-and-kanban-training";
+    } else if (processedTitle.includes("ICAgile (ICP) Fundamentals Certification Training")) {
+      navigate = "/course/agile/icagile-icp-fundamentals-certification-training";
+    } else if (processedTitle.includes("ICAgile-Agility-In-The-Enterprise-(ICP-ENT)-Certification-Training")) {
+      navigate = "/course/agile/icagile-agility-in-the-enterprise-icp-ent-certification-training";
+    } else if (processedTitle.includes("Test Driven Development (TDD) Training")) {
+      navigate = "/course/agile/test-driven-development-tdd-training";
+    } else if (processedTitle.includes("Agile Release Planning Training")) {
+      navigate = "/course/agile/agile-release-planning-training";
+    } else if (processedTitle.includes("ICAgile AI for Product Strategy Micro-credential Course")) {
+      navigate = "/course/agile/icagile-ai-for-product-strategy-micro-credential-course";
+    } else if (processedTitle.includes("ICAgile AI for Customer Insights Micro-credential Training")) {
+      navigate = "/course/agile/icagile-ai-for-customer-insights-micro-credential-training";
     }
-    
+
     return {
       id: generatedCourseId++,
       title,
@@ -138,7 +174,7 @@ const agileCourseTitles = [
   "ICAgile (ICP) Fundamentals Certification Training",
   "Agile Fundamentals: Including Scrum and Kanban Training",
   "Manage Agile Projects Using Scrum Training",
-  "Agile for Executive Training",
+  "Agile for Executives Training",
   "Agile for Managers Training",
   "Agile Product Owner Training",
   "Applying Professional Scrum (APS) Certification Training",

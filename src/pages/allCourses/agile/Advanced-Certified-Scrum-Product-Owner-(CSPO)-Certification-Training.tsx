@@ -19,11 +19,11 @@ import CourseTrainers from "@/components/courses/CourseTrainers";
 import CourseFAQs from "@/components/courses/faqs/CourseFAQs";
 import CourseWhySimpliaxis from "@/components/courses/CourseWhySimpliaxis";
 
-import { 
-  Users, 
-  Monitor, 
-  Settings, 
-  UserCheck, 
+import {
+  Users,
+  Monitor,
+  Settings,
+  UserCheck,
   Map,
   Award,
   BookOpen,

@@ -28,7 +28,19 @@ import {
   PMIAgileCertifiedPractitionerPMIACP,
   ProfessionalScrumMasterCertificationTraining,
   CertifiedAgileScalingPractitioner1Training,
-  AgileCoachingSkillsCertifiedFacilitatorTraining
+  AgileCoachingSkillsCertifiedFacilitatorTraining,
+  ApplyingProfessionalScrumCertificationTraining,
+  AgileProductOwnerTraining,
+  AgileForManagersTraining,
+  AgileForExecutivesTraining,
+  ManageAgileProjectsUsingScrumTraining,
+  AgileFundamentalsIncludingScrumAndKanbanTraining,
+  ICAgileICPFundamentalCertificationTraining,
+  ICAgileAgilityInTheEnterpriseICPentCertificationTraining,
+  TestDrivenDevelopmentTDDTraining,
+  AgileReleasePlanningTraining,
+  ICAgileAIforProductStrategyMicroCredentialCourse,
+  ICAgileAIforCustomerInsightsMicroCredentialTraining
 } from './pages/allCourses/agile';
 
 const queryClient = new QueryClient();
@@ -115,6 +127,55 @@ const App = () => (
             path="/course/agile-coaching-skills-certified-facilitator-caf-training"
             element={<AgileCoachingSkillsCertifiedFacilitatorTraining />}
           />
+          <Route
+            path="/course/agile/applying-professional-scrum-certification-training"
+            element={<ApplyingProfessionalScrumCertificationTraining />}
+          />
+          <Route
+            path="/course/agile/agile-product-owner-training"
+            element={<AgileProductOwnerTraining />}
+          />
+          <Route
+            path="/course/agile/agile-for-managers-training"
+            element={<AgileForManagersTraining />}
+          />
+          <Route
+            path="/course/agile/agile-for-executives-training"
+            element={<AgileForExecutivesTraining />}
+          />
+          <Route
+            path="/course/agile/manage-agile-projects-using-scrum-training"
+            element={<ManageAgileProjectsUsingScrumTraining />}
+          />
+          <Route
+            path="/course/agile/agile-fundamentals-including-scrum-and-kanban-training"
+            element={<AgileFundamentalsIncludingScrumAndKanbanTraining />}
+          />
+          <Route
+            path="/course/agile/icagile-icp-fundamentals-certification-training"
+            element={<ICAgileICPFundamentalCertificationTraining />}
+          />
+          <Route
+            path="/course/agile/icagile-agility-in-the-enterprise-icp-ent-certification-training"
+            element={<ICAgileAgilityInTheEnterpriseICPentCertificationTraining />}
+          />
+          <Route
+            path="/course/agile/test-driven-development-tdd-training"
+            element={<TestDrivenDevelopmentTDDTraining />}
+          />
+          <Route
+            path="/course/agile/agile-release-planning-training"
+            element={<AgileReleasePlanningTraining />}
+          />
+          <Route
+            path="/course/agile/icagile-ai-for-product-strategy-micro-credential-course"
+            element={<ICAgileAIforProductStrategyMicroCredentialCourse />}
+          />
+          <Route
+            path="/course/agile/icagile-ai-for-customer-insights-micro-credential-training"
+            element={<ICAgileAIforCustomerInsightsMicroCredentialTraining />}
+          />
+
 
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />

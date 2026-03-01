@@ -19,11 +19,11 @@ import CourseTrainers from "@/components/courses/CourseTrainers";
 import CourseFAQs from "@/components/courses/faqs/CourseFAQs";
 import CourseWhySimpliaxis from "@/components/courses/CourseWhySimpliaxis";
 
-import { 
-  Users, 
-  Monitor, 
-  Settings, 
-  UserCheck, 
+import {
+  Users,
+  Monitor,
+  Settings,
+  UserCheck,
   Map,
   Award,
   BookOpen,
@@ -41,11 +41,11 @@ import {
 
 const AdvancedCertifiedScrumMasterCertificationTraining = () => {
   const highlights = [
-    { text: '16 Hours of Live Online Training' },
-    { text: 'Earn 16 PDUs and SEUs' },
-    { text: '2-Year Scrum Alliance Membership' },
-    { text: 'Training by Certified Scrum Trainers' },
-    { text: 'Global Recognition for Advanced ScrumMaster' },
+    { text: '16 Hours of Live Online Training', icon: <Star className="w-5 h-5" /> },
+    { text: 'Earn 16 PDUs and SEUs', icon: <Star className="w-5 h-5" /> },
+    { text: '2-Year Scrum Alliance Membership', icon: <Star className="w-5 h-5" /> },
+    { text: 'Training by Certified Scrum Trainers', icon: <Star className="w-5 h-5" /> },
+    { text: 'Global Recognition for Advanced ScrumMaster', icon: <Star className="w-5 h-5" /> },
   ];
 
   const individualBenefits = [
@@ -171,20 +171,24 @@ const AdvancedCertifiedScrumMasterCertificationTraining = () => {
       title: 'Attend Training',
       description:
         'Complete the 16-hour A-CSM training delivered by Scrum Alliance-accredited trainers.',
+      color: '#3B82F6'
     },
     {
       title: 'Validate Experience',
       description: 'Confirm at least 12 months of Scrum Master experience.',
+      color: '#F59E0B'
     },
     {
       title: 'Accept License',
       description:
         'Log in to Scrum Alliance and acknowledge the license agreement.',
+      color: '#10B981'
     },
     {
       title: 'Download Certificate',
       description:
         'Receive and download your Advanced Certified ScrumMaster credential.',
+      color: '#8B5CF6'
     },
   ];
 
@@ -447,7 +451,7 @@ const AdvancedCertifiedScrumMasterCertificationTraining = () => {
       "title": "Career Growth",
       "description": "A-CSM certification is the new and additional certification introduced by Scrum Alliance. If you are working in a Scrum Master role, it can be a skill development process that helps in your career advancement and opens up multiple opportunities."
     }
-  ] ;
+  ];
   const sidePanelSchedules = [
     {
       courseCode: 'SCM',
@@ -475,6 +479,7 @@ const AdvancedCertifiedScrumMasterCertificationTraining = () => {
     breadcrumbName:
       'Advanced Certified ScrumMaster (A-CSM®) Certification Training',
     rating: '5.0',
+    enrolledCount: '2500+ professionals trained',
     subtitle:
       'Advanced ScrumMaster Certification for Experienced Agile Professionals',
     benefits: [
@@ -524,6 +529,7 @@ const AdvancedCertifiedScrumMasterCertificationTraining = () => {
 
   const corporateData = {
     courseName: 'Corporate A-CSM Training Solutions',
+    label: 'Corporate Training',
     buttonText: 'Corporate Group Enquiry',
     description:
       'Customized enterprise A-CSM training programs designed to enhance Agile leadership, team collaboration, and productivity across organizations.',
@@ -668,7 +674,7 @@ const AdvancedCertifiedScrumMasterCertificationTraining = () => {
             prerequisites={prerequisites}
             subtitle={sectionsLabels.prerequisites.subtitle}
             title={heroData.courseName}
-            
+
           />
           <CourseStepByStepProcess
             courseName={heroData.courseName}
