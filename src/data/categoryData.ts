@@ -52,10 +52,11 @@ const COURSE_ROUTES: Record<string, string> = {
 
 const buildCourses = (category: string, titles: string[]): Course[] =>
   titles.map((title) => {
-    let navigate = `/course/${category.toLowerCase().replace(/\s+/g, '-')}/${title.toLowerCase().replace(/[^\w\s-]/g, '').replace(/\s+/g, '-')}`;
+    let navigate = ``;
     
     // Manual overrides with more robust checking
     const processedTitle = title.trim();
+   // ---------------------------------- Agile -------------------------------------------
     if (processedTitle.includes("Certified Scrum Master (CSM) Certification Training")) {
       navigate = "/course/csm-certificaton-training";
     } else if (processedTitle.includes("Certified Scrum Product Owner (CSPO) Certification Training")) {
@@ -96,6 +97,30 @@ const buildCourses = (category: string, titles: string[]): Course[] =>
       navigate = "/course/certified-scrum-professional-product-owner-csp-po-certification-training";
     }else if (processedTitle.includes("Professional Scrum Product Backlog Management (PSBM) Skills Certification")) {
       navigate = "/course/pspbm-skills-certification-course";
+    }else if (processedTitle.includes("PMI-Agile Certified Practitioner (PMI-ACP) Certification Training")) {
+      navigate = "/course/pmi-agile-certified-practitioner-pmi-acp-certification-training";
+    }else if (processedTitle.includes("Professional Scrum Master (PSM I) Certification Training")) {
+      navigate = "/course/psm-i-certification-training";
+    }else if (processedTitle.includes("Certified Agile Scaling Practitioner (CASP) Training")) {
+      navigate = "/course/casp-1-certification-training";
+    }else if (processedTitle.includes("Agile Coaching Skills - Certified Facilitator (CAF) Training")) {
+      navigate = "/course/agile-coaching-skills-certified-facilitator-caf-training";
+    }else if (processedTitle.includes("Professional Scrum Master - Advanced (PSM A) Certification Training")) {
+      navigate = "/course/professional-scrum-master-advanced-psm-a-certification-training";
+    }else if (processedTitle.includes("ICAgile Certified Professional in Agile Coaching (ICP-ACC) Certification Training")) {
+      navigate = "/course/icagile-certified-professional-in-agile-coaching-icp-acc-certification-training";
+    }else if (processedTitle.includes("Professional Scrum with Kanban (PSK) Certification Training")) {
+      navigate = "/course/professional-scrum-with-kanban-psk-certification-training";
+    }else if (processedTitle.includes("Professional Scrum Product Owner (PSPO) Certification Training")) {
+      navigate = "/course/professional-scrum-product-owner-certification-training";
+    }else if (processedTitle.includes("Scrum@Scale Certification Training")) {
+      navigate = "/course/scrum-at-scale-certification-training";
+    }else if (processedTitle.includes("ICAgile Enterprise Agile Coaching (ICP-ENT) Certification Training")) {
+      navigate = "/course/icagile-enterprise-agile-coaching-icp-cat-certification-training";
+    }else if (processedTitle.includes("Professional Agile Leadership Essentials (PAL-E) Certification Training")) {
+      navigate = "/course/professional-agile-leadership-essentials-pal-e-certification-training";
+    }else if (processedTitle.includes("Behaviour Driven Development (BDD) Training")) {
+      navigate = "/course/behaviour-driven-development-bdd-training";
     }
       
     
