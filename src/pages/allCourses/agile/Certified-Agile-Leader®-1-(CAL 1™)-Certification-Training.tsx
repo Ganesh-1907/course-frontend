@@ -39,59 +39,60 @@ import {
   Star
 } from "lucide-react";
 
-const AdvancedCertifiedScrumDeveloperCertificationTraining = () => {
+const CertifiedAgileLeaderCertificationTraining = () => {
   const highlights = [
-    { text: "16 Hours Live Online Training Session" },
-    { text: "Earn 16 SEUs & 16 PDUs" },
-    { text: "Interactive Hands-on Learning Experience" },
-    { text: "Globally Recognized Scrum Alliance Certification" },
-    { text: "Scrum Simulation-Based Learning" },
-    { text: "Dedicated 24/7 Customer Support" }
+    { text: "2 Days Instructor-Led Live Online Training" },
+    { text: "Earn 16 PDUs & 16 SEUs" },
+    { text: "Real-World Case Studies & Hands-on Activities" },
+    { text: "Lifetime Access to Course Materials" },
+    { text: "Access to Scrum Global Community" },
+    { text: "2-Year Scrum Alliance Membership" },
+    { text: "24/7 Customer Support" }
   ];
 
   const individualBenefits = [
     {
-      title: "Advanced Technical Expertise",
-      description: "Master advanced Agile engineering practices including TDD, CI, refactoring, and continuous delivery."
+      title: "Leadership Skill Development",
+      description: "Enhance communication, coaching, mentoring, and collaboration skills to lead Agile teams effectively."
     },
     {
       title: "Career Advancement",
-      description: "Enhance your resume with a prestigious Scrum Alliance credential and unlock senior Agile developer opportunities."
+      description: "Strengthen your professional profile with a globally recognized Scrum Alliance credential."
     },
     {
-      title: "Stronger Problem-Solving Skills",
-      description: "Apply advanced refactoring and test-driven techniques to solve complex development challenges."
+      title: "Positive Work Culture Creation",
+      description: "Build trust-based, autonomous, and accountable team environments."
     },
     {
-      title: "Enhanced Team Collaboration",
-      description: "Improve communication, collaboration, and team dynamics within Agile environments."
+      title: "Growth Mindset Adoption",
+      description: "Embrace continuous learning and improvement for personal and professional growth."
     },
     {
-      title: "Continuous Improvement Mindset",
-      description: "Adopt Lean and Agile principles to stay competitive in evolving software ecosystems."
+      title: "Effective Change Leadership",
+      description: "Lead organizational transformations and drive meaningful Agile change initiatives."
     }
   ];
 
   const corporateBenefits = [
     {
-      title: "Improved Productivity",
-      description: "Developers deliver high-quality software efficiently using advanced Agile engineering practices."
+      title: "Successful Agile Transformation",
+      description: "Equip leaders with skills to drive enterprise-wide Agile adoption."
     },
     {
-      title: "Higher Product Quality",
-      description: "Better refactoring and testing practices lead to reliable, maintainable codebases."
+      title: "Improved Collaboration",
+      description: "Enhance cross-functional alignment and teamwork across departments."
     },
     {
-      title: "Stronger Team Dynamics",
-      description: "Enhanced collaboration improves cross-functional performance and project outcomes."
+      title: "Higher Employee Engagement",
+      description: "Foster inclusive cultures that increase motivation and productivity."
     },
     {
-      title: "Scalability & Innovation",
-      description: "Agile architecture and design practices support scalable, innovative solutions."
+      title: "Faster Value Delivery",
+      description: "Accelerate product cycles through iterative and incremental value delivery."
     },
     {
-      title: "Faster Time-to-Market",
-      description: "Continuous integration and delivery pipelines accelerate release cycles."
+      title: "Data-Driven Decision Making",
+      description: "Enable leaders to use feedback loops and empirical evidence for strategic decisions."
     }
   ];
 
@@ -100,11 +101,11 @@ const AdvancedCertifiedScrumDeveloperCertificationTraining = () => {
   const attendees = [
     {
       group: [
-        "Certified Scrum Developers (CSD)",
-        "Agile Developers",
-        "Technical Leads",
-        "Software Engineers",
-        "Agile Team Members"
+        "Executives & Senior Leaders",
+        "Organizational Managers",
+        "Agile Coaches",
+        "Team Leaders",
+        "Transformation Leaders"
       ]
     }
   ];
@@ -112,144 +113,143 @@ const AdvancedCertifiedScrumDeveloperCertificationTraining = () => {
   const companies = [];
 
   const outcomes = [
-    "Implement advanced Continuous Integration & Continuous Delivery pipelines.",
-    "Apply Test-Driven Development (TDD) and refactoring techniques.",
-    "Improve Agile architecture and design practices.",
-    "Strengthen collaboration and communication in Scrum teams.",
-    "Adopt Lean engineering and quality-focused development."
+    "Understand Agile leadership principles and servant leadership.",
+    "Drive organizational culture change aligned with Agile values.",
+    "Support enterprise Agile transformations.",
+    "Build high-performing, empowered teams.",
+    "Lead sustainable continuous improvement initiatives."
   ];
 
   const prerequisites = [
-    "Hold a Certified Scrum Developer (CSD) certification (active or expired).",
-    "Complete an approved A-CSD course.",
-    "Validate at least 12 months of Scrum team experience within the last five years.",
-    "Successfully complete all required coursework and assignments."
+    "Basic familiarity with Agile methodologies such as Scrum, Kanban, or Lean is recommended."
   ];
 
   const certificationSteps = [
     {
-      title: "Complete Training",
-      description: "Attend the 16-hour live online A-CSD training program."
+      title: "Register for Training",
+      description: "Enroll in the CAL-1 training program through Simpliaxis."
     },
     {
-      title: "Participate Actively",
-      description: "Engage in simulations, exercises, and collaborative workshops."
+      title: "Attend 2-Day Live Session",
+      description: "Participate in the instructor-led live interactive training."
     },
     {
-      title: "Complete Assignments",
-      description: "Submit required coursework as guided by certified trainers."
+      title: "Accept Scrum Alliance License",
+      description: "Accept the certification license sent via email from Scrum Alliance."
     },
     {
-      title: "Earn Certification",
-      description: "Receive the Advanced Certified Scrum Developer® credential upon successful completion."
+      title: "Download Certification",
+      description: "Access and download your CAL-1 certificate from your Scrum Alliance dashboard."
     }
   ];
 
   const curriculumModules = [
     {
-      title: "Continuous Delivery",
+      title: "The Context for Agile",
       topics: [
-        "Continuous Delivery Concepts",
-        "Deployment Strategies",
-        "Delivery Feedback Loops",
-        "Hands-on Implementation"
+        "Rise of Agile Approaches",
+        "Management Trends",
+        "Employee Engagement",
+        "Benefits of Agile Leadership"
       ]
     },
     {
-      title: "Continuous Integration",
+      title: "Agile Overview",
       topics: [
-        "Automated Builds",
-        "Self-Testing Pipelines",
-        "CI Team Practices"
+        "Agile Manifesto Values & Principles",
+        "High-Performing Teams",
+        "Benefits of Agile Frameworks"
       ]
     },
     {
-      title: "Test Driven Development",
+      title: "Leadership in an Agile Context",
       topics: [
-        "TDD as Design Practice",
-        "Unit Testing Strategies",
-        "Improving Test Quality",
-        "Stakeholder Feedback Loops"
+        "Leadership Development Framework",
+        "Coaching Approach"
       ]
     },
     {
-      title: "Refactoring & Technical Debt",
+      title: "The Agile Organization",
       topics: [
-        "Code Smells",
-        "Technical Debt Management",
-        "Refactoring Techniques"
+        "Organizational Culture",
+        "Governance Policies",
+        "Structural Alignment",
+        "Case Studies"
       ]
     },
     {
-      title: "Architecture & Agile Design",
+      title: "Agile Approaches to Change",
       topics: [
-        "Emergent vs Upfront Architecture",
-        "System Constraints",
-        "Quality Metrics"
+        "Change Management",
+        "Removing Bottlenecks",
+        "Agile Transformation Case Studies"
       ]
     },
     {
-      title: "Team Collaboration & Dynamics",
+      title: "Organizational Design",
       topics: [
-        "Effective Communication",
-        "Backlog Sizing Techniques",
-        "Collaborative Engineering"
-      ]
-    },
-    {
-      title: "Lean, Agile & Scrum Practices",
-      topics: [
-        "Workflow Visualization",
-        "Waste Reduction",
-        "Definition of Done Evolution",
-        "Multi-Team Collaboration"
+        "Value Flow Optimization",
+        "Governance & Metrics",
+        "Culture & Organizational Design"
       ]
     }
   ];
 
   const learningObjectives = [
     {
-      title: "Lean & Agile Mastery",
-      description: "Deepen understanding of Lean, Agile, and Scrum in complex development environments."
+      title: "Agile Principles Mastery",
+      description: "Understand Agile values and principles deeply."
     },
     {
-      title: "Advanced Collaboration",
-      description: "Enhance teamwork and conflict resolution skills."
+      title: "Agile Leadership Mindset",
+      description: "Adopt servant leadership and systems thinking."
     },
     {
-      title: "Architectural Excellence",
-      description: "Apply advanced architecture and system design principles."
+      title: "Organizational Culture Building",
+      description: "Foster transparency, trust, and collaboration."
     },
     {
-      title: "Advanced Refactoring",
-      description: "Improve maintainability and code quality using modern techniques."
+      title: "Change Management Skills",
+      description: "Lead Agile transformation and overcome resistance."
     },
     {
-      title: "Continuous Integration",
-      description: "Implement automated CI pipelines to streamline delivery."
+      title: "Team Empowerment",
+      description: "Build self-organizing and value-driven teams."
+    },
+    {
+      title: "Effective Communication",
+      description: "Facilitate workshops and strategic decision-making."
+    },
+    {
+      title: "Continuous Improvement",
+      description: "Drive sustainable innovation and growth."
     }
   ];
 
   const faqCategories = [
     {
       id: "category_1",
-      label: "A-CSD Certification FAQs",
+      label: "CAL-1 Certification FAQs",
       items: [
         {
-          question: "1. What is A-CSD Certification?",
-          answer: "A-CSD is an advanced Scrum Alliance certification that builds on CSD and focuses on advanced Agile engineering practices."
+          question: "1. What is CAL-1 Certification?",
+          answer: "CAL-1 is a Scrum Alliance certification that equips leaders with Agile mindset, leadership skills, and organizational change capabilities."
         },
         {
-          question: "2. Is there an exam?",
-          answer: "No written exam is required. Certification is granted after successful completion of training and assignments."
+          question: "2. How many PDUs & SEUs will I earn?",
+          answer: "You will earn 16 PDUs and 16 SEUs upon completion."
         },
         {
           question: "3. Is renewal required?",
-          answer: "Yes, the certification must be renewed every two years with required SEUs."
+          answer: "Yes, renewal is required every two years with 10 SEUs and a $50 renewal fee."
         },
         {
-          question: "4. What is the duration of the course?",
-          answer: "The training typically runs for 2–3 days (16 hours live session)."
+          question: "4. Who should attend CAL-1?",
+          answer: "Executives, managers, team leaders, and professionals leading Agile initiatives."
+        },
+        {
+          question: "5. Does CAL-1 renew other certifications?",
+          answer: "Yes, completing CAL-1 helps renew other active Scrum Alliance certifications."
         }
       ]
     },
@@ -258,12 +258,12 @@ const AdvancedCertifiedScrumDeveloperCertificationTraining = () => {
       label: "Payment FAQs",
       items: [
         {
-          question: "1. Are installment payments available?",
+          question: "1. Are installment options available?",
           answer: "Yes, flexible payment options are available."
         },
         {
           question: "2. Is the course refundable?",
-          answer: "Refunds are not available, but rescheduling options are provided."
+          answer: "Refunds are not available, but rescheduling is permitted."
         }
       ]
     },
@@ -272,12 +272,12 @@ const AdvancedCertifiedScrumDeveloperCertificationTraining = () => {
       label: "General Training FAQs",
       items: [
         {
-          question: "1. Do I receive Scrum Alliance membership?",
-          answer: "Yes, certification includes Scrum Alliance membership benefits."
+          question: "1. Is online training available?",
+          answer: "Yes, the course is delivered via live virtual sessions."
         },
         {
-          question: "2. Is this training available online?",
-          answer: "Yes, the course is delivered via live online instructor-led sessions."
+          question: "2. Do I receive Scrum Alliance membership?",
+          answer: "Yes, a 2-year Scrum Alliance membership is included."
         }
       ]
     }
@@ -399,19 +399,19 @@ const AdvancedCertifiedScrumDeveloperCertificationTraining = () => {
 
   const courseWhySimpliaxis = [
     { "title": "Global Recognition", "description": "Recognized worldwide by Scrum Alliance." },
-    { "title": "Expert Trainers", "description": "Learn from experienced certified Scrum trainers." },
-    { "title": "Flexible Learning", "description": "Live virtual and corporate training options available." },
-    { "title": "Lifetime Learning Support", "description": "Access resources and guidance post-training." },
+    { "title": "Expert Trainers", "description": "Delivered by experienced Certified Scrum Trainers (CSTs)." },
+    { "title": "Flexible Learning", "description": "Live virtual and corporate training formats available." },
+    { "title": "Lifetime Learning Support", "description": "Access course materials anytime." },
     { "title": "Proven Track Record", "description": "Trusted by enterprises globally." },
     { "title": "End-to-End Assistance", "description": "Support from enrollment to certification renewal." },
-    { "title": "Interactive Sessions", "description": "Hands-on workshops and Scrum simulations." },
-    { "title": "Wide Course Portfolio", "description": "Comprehensive Agile and Scrum training programs." }
+    { "title": "Interactive Sessions", "description": "Hands-on activities and real-world case studies." },
+    { "title": "Wide Course Portfolio", "description": "Comprehensive Agile, Scrum, and SAFe programs." }
   ];
 
   const sidePanelSchedules = [
     {
-      courseCode: 'CSD',
-      courseName: 'Advanced Certified Scrum Developer (A-CSD®) Training',
+      courseCode: 'CAL-1',
+      courseName: 'Certified Agile Leader® (CAL-1™) Training',
       dateRange: 'Feb 28 - Mar 01, 2026',
       timeRange: '08:30 AM - 04:30 PM IST',
       trainerName: 'Naveen Nanjundappa',
@@ -431,16 +431,16 @@ const AdvancedCertifiedScrumDeveloperCertificationTraining = () => {
   ];
 
   const heroData = {
-    courseName: "Advanced Certified Scrum Developer® (A-CSD®) Certification Training",
-    breadcrumbName: "Advanced Certified Scrum Developer Course | A-CSD Training",
+    courseName: "Certified Agile Leader® (CAL-1™) Training",
+    breadcrumbName: "Certified Agile Leadership (CAL-1) Certification",
     rating: "5.0",
     enrolledCount: "",
-    subtitle: "Master Advanced Agile Engineering & Scrum Development Practices.",
+    subtitle: "Lead Agile Transformation with Confidence.",
     benefits: [
-      "16 Hours Live Training",
-      "Earn 16 SEUs & PDUs",
-      "Hands-on Simulation-Based Learning",
-      "Globally Recognized Scrum Alliance Credential"
+      "2-Day Live Interactive Training",
+      "Earn 16 PDUs & SEUs",
+      "2-Year Scrum Alliance Membership",
+      "Hands-on Case Studies"
     ],
     mainImage: "https://www.simpliaxis.com/../frontend_assets/image/ring_loader.gif",
     badgeImage: "/csm-badge.png"
@@ -448,10 +448,10 @@ const AdvancedCertifiedScrumDeveloperCertificationTraining = () => {
 
   const overviewContent = {
     title: "Course Overview",
-    subtitle: "Advanced Certified Scrum Developer (A-CSD) Overview",
+    subtitle: "CAL-1 Certification Overview",
     description: [
-      "The A-CSD certification builds on foundational Scrum Developer knowledge and focuses on advanced Agile engineering techniques.",
-      "Participants learn continuous integration, test-driven development, refactoring, architecture practices, and collaborative team dynamics."
+      "The Certified Agile Leader® (CAL-1™) course builds leadership capability for Agile environments.",
+      "Learn Agile mindset, servant leadership, organizational agility, and sustainable transformation practices."
     ],
     whatIsTitle: "",
     whatIsDescription: [],
@@ -464,18 +464,18 @@ const AdvancedCertifiedScrumDeveloperCertificationTraining = () => {
   };
 
   const corporateData = {
-    courseName: "Why Corporates Opt Us",
+    courseName: "Why Corporate Opt Us",
     label: "",
     buttonText: "Corporate Group Enquiry",
-    description: "We provide enterprise-focused Agile engineering training to enhance development excellence and accelerate product delivery."
+    description: "We provide enterprise-focused Agile leadership training tailored to your organizational needs to drive sustainable transformation."
   };
 
   const courseMetadata = {
-    shortName: 'A-CSD',
-    shortNameAlt: 'A-CSD',
-    fullName: 'Advanced Certified Scrum Developer® (A-CSD®)',
-    fullNameAlt: 'Advanced Certified Scrum Developer (A-CSD)',
-    certificateName: 'Advanced Scrum Developer',
+    shortName: 'CAL-1',
+    shortNameAlt: 'CAL-1',
+    fullName: 'Certified Agile Leader® (CAL-1™)',
+    fullNameAlt: 'Certified Agile Leader (CAL-1)',
+    certificateName: 'Certified Agile Leader',
   };
 
   const sectionsLabels = {
@@ -483,11 +483,11 @@ const AdvancedCertifiedScrumDeveloperCertificationTraining = () => {
       outcomesTitle:
         `What are the Learning Outcomes of the ${heroData.courseName} Course?`,
       outcomesFooter:
-        "After completing your Advanced Certified Scrum Developer® Certification, a wide selection of career options will open up, and one can explore enhancements in one's career path. One can lead to higher positions in the job profile and the organization.",
+        "After completing your Certified Agile Leader® (CAL-1™) Certification, a wide selection of career options will open up, and one can explore enhancements in one's career path. One can lead to higher positions in the job profile and the organization.",
     },
     prerequisites: {
       subtitle:
-        'What are the Prerequisites Required for Advanced Scrum Developer Training?',
+        'What are the Prerequisites Required for Certified Agile Leader Training?',
     },
     certificate: {
       mockupName: 'ALEX BRYANT',
@@ -506,11 +506,11 @@ const AdvancedCertifiedScrumDeveloperCertificationTraining = () => {
   };
 
   const commonAttendeesList = [
-    "Certified Scrum Developers (CSD)",
-    "Agile Developers",
-    "Technical Leads",
-    "Software Engineers",
-    "Agile Team Members"
+    "Executives & Senior Leaders",
+    "Organizational Managers",
+    "Agile Coaches",
+    "Team Leaders",
+    "Transformation Leaders"
   ];
 
   const pageCaptions = {
@@ -719,4 +719,4 @@ const AdvancedCertifiedScrumDeveloperCertificationTraining = () => {
   );
 };
 
-export default AdvancedCertifiedScrumDeveloperCertificationTraining;
+export default CertifiedAgileLeaderCertificationTraining;

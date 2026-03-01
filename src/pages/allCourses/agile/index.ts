@@ -46,7 +46,7 @@ export { default as AgileReleasePlanningTraining } from './Agile-Release-Plannin
 export { default as ICAgileAIforProductStrategyMicroCredentialCourse } from './ICAgile-AI-for-Product-Strategy-Micro-Credential-Course';
 export { default as ICAgileAIforCustomerInsightsMicroCredentialTraining } from './ICAgile-AI-for-Customer-Insights-Micro-credential-Training';
 export { default as AdvancedCertifiedScrumDeveloperCertificationTraining } from './Advanced-Certified-Scrum-Developer-(A-CSD)-Certification-Training';
-
+export { default as CertifiedAgileLeaderCertificationTraining } from './Certified-Agile-Leader®-1-(CAL 1™)-Certification-Training';
 // When you have 50 courses, just add more exports:
 // export { default as AgileCourse6 } from './AgileCourse6';
 // export { default as AgileCourse7 } from './AgileCourse7';
