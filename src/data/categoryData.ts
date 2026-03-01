@@ -103,7 +103,7 @@ const buildCourses = (category: string, titles: string[]): Course[] =>
     } else if (processedTitle.includes("Certified Agile Leader - 1 (CAL-1) Certification Training")) {
       navigate = "/course/icagile-certified-professional-in-agile-coaching-icp-acc-certification-training";
       } else if (processedTitle.includes("Advanced Certified Scrum Developer (A-CSD) Certification Training")) { 
-      navigate = "/course/advanced-certified-scrum-developer-a-csd-certification-training";
+      navigate = "/course/agile/advanced-certified-scrum-developer-a-csd-certification-training";
     } 
     else if (processedTitle.includes("Professional Scrum with Kanban (PSK) Certification Training")) {
       navigate = "/course/professional-scrum-with-kanban-psk-certification-training";
