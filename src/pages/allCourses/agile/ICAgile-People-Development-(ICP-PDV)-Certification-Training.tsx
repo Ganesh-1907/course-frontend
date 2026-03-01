@@ -371,36 +371,36 @@ const ICAgilePeopleDevelopmentCertificationTraining = () => {
 
   const courseWhySimpliaxis = [
     {
-      "title": "Get Global Recognition",
-      "description": "You can gain a global CSPO certification that demonstrates your proficiency as a Product Owner and gives you a competitive edge by completing the certification training."
+      "title": "ICAgile-Accredited Training Partner",
+      "description": "Viovn is an officially recognized ICAgile training partner, ensuring premium educational quality and immediate eligibility for certification."
     },
     {
-      "title": "Trained By Experienced CSTs",
-      "description": "You can obtain your CSPO certification with the assistance of experienced CSTs, who have at least 15 years of expertise. Using real-world experiences, case studies, and doubt-clearing sessions makes the learning practical and helpful."
-    },
-    {
-      "title": "Flexible Learning & Payment",
-      "description": "The extensive curriculum of our CSPO course is designed to enhance your capabilities as a Product Owner. You can accomplish your project goals by using a variety of learning techniques."
-    },
-    {
-      "title": "Access to Course Material",
-      "description": "After completing Simpliaxis's CSPO certification training, participants can access course materials, videos, and study aids."
+      "title": "Expert Trainers with Real-World Experience",
+      "description": "Our training is led by seasoned Agile coaches and people development professionals who have guided many organizations through complex transformation processes."
     },
     {
       "title": "Proven Track Record",
-      "description": "We are the Registered Education Allies of Scrum Alliance. Our CSPO training assisted numerous companies and professionals in reaching their career objectives and enhancing their skills."
+      "description": "Over the years, thousands of professionals have successfully achieved their ICAgile credentials with Viovn, advancing their careers and driving business excellence."
     },
     {
-      "title": "End-to-End Support",
-      "description": "Simpliaxis offers professionals CSPO certification training with end-to-end support. To assist you in understanding the procedure, we provide you with case studies, practical exercises, and study aids to help you know the facts."
+      "title": "Experiential Learning Focus",
+      "description": "We emphasize practical application and self-reflection over mere theory, helping you build genuine expertise in the field of people development."
     },
     {
-      "title": "Real-World Stimulation",
-      "description": "Real-world examples, group projects, and Q&A sessions are all incorporated into our dynamic CSPO training to assist learners in comprehending complex procedures."
+      "title": "Flexible Training Options",
+      "description": "Select from various delivery formats, including live online classes (weekends or weekdays) and customized corporate programs tailored to your needs."
     },
     {
-      "title": "Affordable Price",
-      "description": "Simpliaxis provides the most comprehensive CSPO certification training at affordable costs. We guarantee that your hard-earned investment will yield the best outcomes."
+      "title": "Comprehensive Learning Resources",
+      "description": "Benefit from a wealth of course-specific materials, templates, frameworks, and guides specifically designed to assist your continuous learning and daily practice."
+    },
+    {
+      "title": "Global Presence, Local Expertise",
+      "description": "With a global reach spanning multiple time zones, we blend international standards with a deep understanding of local business environments."
+    },
+    {
+      "title": "Post-Training Support",
+      "description": "Enjoy ongoing assistance through our alumni community and a suite of additional resources that continue to support you long after your training is complete."
     }
   ]
 

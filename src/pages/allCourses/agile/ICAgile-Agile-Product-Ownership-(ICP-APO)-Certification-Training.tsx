@@ -376,36 +376,36 @@ const ICAgileAgileProductOwnershipICPAPOCertificationTraining = () => {
 
   const courseWhySimpliaxis = [
     {
-      "title": "Global Recognition",
-      "description": "Every Course is recognized by the most reputable certification organizations globally that ensure credibility and acceptance in all industries."
+      "title": "ICAgile-Authorized Training",
+      "description": "Master the complexities of Agile Product Ownership through an ICAgile-certified curriculum that adheres to global educational benchmarks."
     },
     {
-      "title": "Expert Trainer",
-      "description": "Gain knowledge from trained and experienced trainers who impart real-world business insights as well as practical experience to the classes."
+      "title": "Expert-Led, Practical Delivery",
+      "description": "Join workshops led by veteran Agile practitioners at Viovn who prioritize addressing actual product ownership hurdles over abstract theory."
     },
     {
-      "title": "Flexible Learning",
-      "description": "Provides a variety of methods of learning, such as classes, online, and corporate Training, that meet the needs of different individuals and their schedules."
+      "title": "Highly Interactive Learning",
+      "description": "Boost your knowledge retention and skill application through immersive activities, collaborative dialogues, and authentic case exercises."
     },
     {
-      "title": "Lifetime Access",
-      "description": "Enjoy all-year access to the recordings of sessions, course materials, and study tools."
+      "title": "Value-Driven Product Ownership Focus",
+      "description": "Cultivate essential competencies in maximizing value delivery, effective prioritization, stakeholder engagement, and strategic product choice."
     },
     {
-      "title": "Proven Track Record",
-      "description": "A reputable training provider with impressive experience in helping professional and business organizations improve their abilities and meet their career ambitions."
+      "title": "Framework-Neutral Approach",
+      "description": "Achieve product ownership expertise that is universally applicable across Scrum, Kanban, Lean, and various hybrid Agile frameworks."
     },
     {
-      "title": "End-to-End Assistance",
-      "description": "Simpliaxis Offers ongoing assistance prior to, during, and after Training and includes study material exams, guidance for participants on certification, and career choices."
+      "title": "Flexible Training Options",
+      "description": "Select from a range of flexible schedules and live virtual sessions tailored to meet the needs of both individual professionals and organizational teams."
     },
     {
-      "title": "Interactive and engaging Training",
-      "description": "Our Training sessions are designed to be extremely interactive, featuring real-world scenarios with group participation, questions & answers to aid in understanding."
+      "title": "Digital Learning Support",
+      "description": "Utilize a comprehensive suite of training tools, customizable templates, and expert resources designed to support your growth well beyond the classroom."
     },
     {
-      "title": "A wide range of courses",
-      "description": "Simpliaxis offers various internationally acknowledged certification courses in Agile, Scrum, SAFe, DevOps, Project Management, and more."
+      "title": "A Wide Range of Courses",
+      "description": "Viovn provides a diverse array of internationally recognized certification programs in disciplines like Agile, Scrum, SAFe, DevOps, and Project Management."
     }
   ]
 
@@ -489,10 +489,10 @@ const ICAgileAgileProductOwnershipICPAPOCertificationTraining = () => {
   };
 
   const corporateData = {
-    "courseName": "Why Simpliaxis for Corporates?",
+    "courseName": "Why Viovn for Corporates?",
     "label": "",
     "buttonText": "Corporate Group Enquiry",
-    "description": "Simpliaxis provides customized corporate training programs designed to strengthen Agile product ownership skills, improve collaboration, and drive value-focused product delivery across enterprise teams."
+    "description": "Viovn delivers bespoke corporate education programs aimed at enhancing Agile product ownership capabilities, fostering collaboration, and promoting value-oriented product results throughout organizational teams."
   };
 
   const courseMetadata = {

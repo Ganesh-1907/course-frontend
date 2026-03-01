@@ -532,36 +532,36 @@ const ICAgileFoundationsOfAICertificationTraining = () => {
 
   const courseWhySimpliaxis = [
     {
-      "title": "Global Recognition",
-      "description": "Every Course is recognized by the most reputable certification organizations globally that ensure credibility and acceptance in all industries."
+      "title": "ICAgile‑Authorized Training Partner",
+      "description": "Viovn is a certified ICAgile partner, guaranteeing that our educational content meets international benchmarks and satisfies all certification criteria."
     },
     {
-      "title": "Expert Trainer",
-      "description": "Gain knowledge from trained and experienced trainers who impart real-world business insights as well as practical experience to the classes."
+      "title": "Expert Instructors with Real AI & Agile Experience",
+      "description": "Gain insights from experienced professionals who blend extensive Agile expertise with practical applications of AI in modern industry settings."
     },
     {
-      "title": "Flexible Learning",
-      "description": "Provides a variety of methods of learning, such as classes, online, and corporate Training, that meet the needs of different individuals and their schedules."
+      "title": "Hands‑On, Practical Learning Approach",
+      "description": "We prioritize active learning over passive theory, involving students in discussions, practical exercises, and tangible AI scenarios to build real competence."
     },
     {
-      "title": "Lifetime Access",
-      "description": "Enjoy all-year access to the recordings of sessions, course materials, and study tools."
+      "title": "Interactive & Engaging Live Training",
+      "description": "Viovn provides dynamic, instructor-led virtual classes where every participant is encouraged to contribute and collaborate throughout the session."
     },
     {
-      "title": "Proven Track Record",
-      "description": "A reputable training provider with impressive experience in helping professional and business organizations improve their abilities and meet their career ambitions."
+      "title": "Industry‑Relevant Case Studies",
+      "description": "Our curriculum features actual business examples that help you bridge the gap between AI principles and real-world organizational objectives."
     },
     {
-      "title": "End-to-End Assistance",
-      "description": "Simpliaxis Offers ongoing assistance prior to, during, and after Training and includes study material exams, guidance for participants on certification, and career choices."
+      "title": "Comprehensive Course Materials & Resources",
+      "description": "Access official ICAgile courseware alongside a selection of tailored tools and references designed to assist your professional evolution long after the course."
     },
     {
-      "title": "Interactive and engaging Training",
-      "description": "Our Training sessions are designed to be extremely interactive, featuring real-world scenarios with group participation, questions & answers to aid in understanding."
+      "title": "Flexible Delivery Options",
+      "description": "Select from our live virtual classroom schedules or bespoke corporate training packages structured to align with your personal or organizational requirements."
     },
     {
-      "title": "A wide range of courses",
-      "description": "Simpliaxis offers various internationally acknowledged certification courses in Agile, Scrum, SAFe, DevOps, Project Management, and more."
+      "title": "Strong Post‑Training Support",
+      "description": "Viovn remains your partner after certification, offering continuous mentorship, alumni network access, and expert advice to help you implement your new skills."
     }
   ]
 
@@ -647,10 +647,10 @@ const ICAgileFoundationsOfAICertificationTraining = () => {
   };
 
   const corporateData = {
-    "courseName": "Why SimpliAxis Is Preferred by Corporates",
+    "courseName": "Why Viovn Is Preferred by Corporates",
     "label": "",
     "buttonText": "Corporate Group Enquiry",
-    "description": "SimpliAxis provides corporate learning solutions designed to help organizations build AI literacy, reduce adoption risk, and enable teams to apply AI responsibly for measurable business impact."
+    "description": "Viovn provides corporate learning solutions designed to help organizations build AI literacy, reduce adoption risk, and enable teams to apply AI responsibly for measurable business impact."
   };
 
   const courseMetadata = {

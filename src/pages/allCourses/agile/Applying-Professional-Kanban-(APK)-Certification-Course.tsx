@@ -356,36 +356,36 @@ const ApplyingProfessionalKanbanCertificationCourse = () => {
 
   const courseWhySimpliaxis = [
     {
-      "title": "Get Global Recognition",
-      "description": "You can gain a global CSPO certification that demonstrates your proficiency as a Product Owner and gives you a competitive edge by completing the certification training."
+      "title": "Globally Acknowledged Certification",
+      "description": "Our programs are certified by the world's most distinguished organizations, guaranteeing professional credibility and widespread industry approval."
     },
     {
-      "title": "Trained By Experienced CSTs",
-      "description": "You can obtain your CSPO certification with the assistance of experienced CSTs, who have at least 15 years of expertise. Using real-world experiences, case studies, and doubt-clearing sessions makes the learning practical and helpful."
+      "title": "Expert-Led Instruction",
+      "description": "Learn from veteran educators who bring a wealth of practical business wisdom and hands-on experience to every session."
     },
     {
-      "title": "Flexible Learning & Payment",
-      "description": "The extensive curriculum of our CSPO course is designed to enhance your capabilities as a Product Owner. You can accomplish your project goals by using a variety of learning techniques."
+      "title": "Versatile Learning Options",
+      "description": "We offer a range of instructional methods—including virtual classrooms and corporate workshops—tailored to fit diverse schedules and requirements."
     },
     {
-      "title": "Access to Course Material",
-      "description": "After completing Simpliaxis's CSPO certification training, participants can access course materials, videos, and study aids."
+      "title": "Continuous Resource Access",
+      "description": "Benefit from round-the-clock access to recorded lectures, comprehensive study materials, and essential learning tools whenever you need them."
     },
     {
-      "title": "Proven Track Record",
-      "description": "We are the Registered Education Allies of Scrum Alliance. Our CSPO training assisted numerous companies and professionals in reaching their career objectives and enhancing their skills."
+      "title": "Demonstrated Success",
+      "description": "As a premier education provider, we have a long history of empowering individuals and enterprises to achieve their professional goals and expand their capabilities."
     },
     {
-      "title": "End-to-End Support",
-      "description": "Simpliaxis offers professionals CSPO certification training with end-to-end support. To assist you in understanding the procedure, we provide you with case studies, practical exercises, and study aids to help you know the facts."
+      "title": "Comprehensive Student Support",
+      "description": "Viovn provides dedicated guidance at every stage, offering exam preparation, career advice, and ongoing assistance even after your course is complete."
     },
     {
-      "title": "Real-World Stimulation",
-      "description": "Real-world examples, group projects, and Q&A sessions are all incorporated into our dynamic CSPO training to assist learners in comprehending complex procedures."
+      "title": "Dynamic and Participatory Sessions",
+      "description": "Our classes are designed to be highly engaging, utilizing real-world simulations and collaborative discussions to deepen your understanding."
     },
     {
-      "title": "Affordable Price",
-      "description": "Simpliaxis provides the most comprehensive CSPO certification training at affordable costs. We guarantee that your hard-earned investment will yield the best outcomes."
+      "title": "Diverse Course Catalog",
+      "description": "Viovn delivers a broad spectrum of world-class certifications across Agile, Scrum, SAFe, DevOps, and Project Management disciplines."
     }
   ]
 
@@ -465,10 +465,10 @@ const ApplyingProfessionalKanbanCertificationCourse = () => {
   };
 
   const corporateData = {
-    "courseName": "Why Simpliaxis for Corporates",
+    "courseName": "Why Viovn for Corporates",
     "label": "",
     "buttonText": "Corporate Group Enquiry",
-    "description": "Simpliaxis offers tailored corporate Kanban training programs to improve workflow visibility, efficiency, and value delivery across teams and organizations."
+    "description": "Viovn offers tailored corporate Kanban training programs to improve workflow visibility, efficiency, and value delivery across teams and organizations."
   };
 
   const courseMetadata = {

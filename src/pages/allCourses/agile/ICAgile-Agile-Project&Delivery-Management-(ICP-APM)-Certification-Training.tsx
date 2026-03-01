@@ -402,36 +402,36 @@ const ICAgileAgileProjectDeliveryManagementICPAPMCertificationTraining = () => {
 
   const courseWhySimpliaxis = [
     {
-      "title": "Get Global Recognition",
-      "description": "You can gain a global CSPO certification that demonstrates your proficiency as a Product Owner and gives you a competitive edge by completing the certification training."
+      "title": "Globally Recognized ICAgile Certification",
+      "description": "The ICP-APM certification program provided by Viovn is internationally respected for validating high-level proficiency in Agile project and delivery management."
     },
     {
-      "title": "Trained By Experienced CSTs",
-      "description": "You can obtain your CSPO certification with the assistance of experienced CSTs, who have at least 15 years of expertise. Using real-world experiences, case studies, and doubt-clearing sessions makes the learning practical and helpful."
+      "title": "Focus on Practical Agile Delivery Skills",
+      "description": "Our curriculum at Viovn prioritizes actionable Agile delivery strategies, moving beyond theoretical models to focus on real-world management application."
     },
     {
-      "title": "Flexible Learning & Payment",
-      "description": "The extensive curriculum of our CSPO course is designed to enhance your capabilities as a Product Owner. You can accomplish your project goals by using a variety of learning techniques."
+      "title": "Suitable for Agile and Hybrid Environments",
+      "description": "We deliver dynamic ICP-APM courses that empower professionals to lead effectively across Agile, hybrid, and progressively evolving organizational delivery frameworks."
     },
     {
-      "title": "Access to Course Material",
-      "description": "After completing Simpliaxis's CSPO certification training, participants can access course materials, videos, and study aids."
+      "title": "Covers End-to-End Agile Project Management",
+      "description": "The ICP-APM training from Viovn offers a comprehensive look at the entire project lifecycle, from strategic planning and risk mitigation to value realization."
     },
     {
-      "title": "Proven Track Record",
-      "description": "We are the Registered Education Allies of Scrum Alliance. Our CSPO training assisted numerous companies and professionals in reaching their career objectives and enhancing their skills."
+      "title": "Applicable Across Roles and Industries",
+      "description": "Our certification is designed for a broad range of professionals—including project managers, delivery leads, and Agile practitioners—across all global sectors."
     },
     {
-      "title": "End-to-End Support",
-      "description": "Simpliaxis offers professionals CSPO certification training with end-to-end support. To assist you in understanding the procedure, we provide you with case studies, practical exercises, and study aids to help you know the facts."
+      "title": "Strong Emphasis on Value-Driven Delivery",
+      "description": "This Agile project and delivery management course ensures professionals can synchronize project execution with core business objectives and customer-centric value."
     },
     {
-      "title": "Real-World Stimulation",
-      "description": "Real-world examples, group projects, and Q&A sessions are all incorporated into our dynamic CSPO training to assist learners in comprehending complex procedures."
+      "title": "Enhances Stakeholder and Team Collaboration",
+      "description": "Viovn’s ICP-APM course is designed to sharpen communication, facilitation, and cross-functional synergy within high-performing Agile teams."
     },
     {
-      "title": "Affordable Price",
-      "description": "Simpliaxis provides the most comprehensive CSPO certification training at affordable costs. We guarantee that your hard-earned investment will yield the best outcomes."
+      "title": "Led by ICAgile-Certified Instructors",
+      "description": "Receive top-tier instruction from Viovn’s veteran, ICAgile-authorized trainers who bring extensive, practical Agile delivery experience to every session."
     }
   ]
 
@@ -507,10 +507,10 @@ const ICAgileAgileProjectDeliveryManagementICPAPMCertificationTraining = () => {
   };
 
   const corporateData = {
-    "courseName": "Why Simpliaxis for Corporates?",
+    "courseName": "Why Viovn for Corporates?",
     "label": "",
     "buttonText": "Corporate Group Enquiry",
-    "description": "Simpliaxis provides enterprise-focused Agile training tailored to organizational delivery challenges, helping teams improve collaboration, planning, and value-driven outcomes."
+    "description": "Viovn provides enterprise-focused Agile training tailored to organizational delivery challenges, helping teams improve collaboration, planning, and value-driven outcomes."
   };
 
   const courseMetadata = {

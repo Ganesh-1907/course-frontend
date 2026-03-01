@@ -144,10 +144,10 @@ const AgileProjectManagementCourse = () => {
   ];
 
   const prerequisites = [
-    'No mandatory prerequisites are required to attend the CSPO training.',
+    'No mandatory prerequisites are required to attend the training.',
     'Basic understanding of Scrum or Agile methodologies is beneficial but not compulsory.',
-    'The course is suitable for professionals involved in product management or Agile teams.',
-    'Attending training delivered by a Certified Scrum Trainer ensures proper certification eligibility.',
+    'The course is suitable for professionals involved in project management or Agile teams.',
+    'Attending training delivered by certified instructors ensures proper knowledge transfer.',
   ];
 
   const certificationSteps = [
@@ -415,36 +415,36 @@ const AgileProjectManagementCourse = () => {
 
   const courseWhySimpliaxis = [
     {
-      "title": "Get Global Recognition",
-      "description": "You can gain a global CSPO certification that demonstrates your proficiency as a Product Owner and gives you a competitive edge by completing the certification training."
+      "title": "Internationally Recognized Credentials",
+      "description": "Our training programs are endorsed by the world's most reputable certification bodies, ensuring your professional expertise is respected and valued across all industries."
     },
     {
-      "title": "Trained By Experienced CSTs",
-      "description": "You can obtain your CSPO certification with the assistance of experienced CSTs, who have at least 15 years of expertise. Using real-world experiences, case studies, and doubt-clearing sessions makes the learning practical and helpful."
+      "title": "Industry-Leading Expert Instructors",
+      "description": "Gain specialized knowledge from seasoned project management veterans who share profound real-world insights and actionable business experience in every session."
     },
     {
-      "title": "Flexible Learning & Payment",
-      "description": "The extensive curriculum of our CSPO course is designed to enhance your capabilities as a Product Owner. You can accomplish your project goals by using a variety of learning techniques."
+      "title": "Versatile Learning Modalities",
+      "description": "Viovn offers a range of educational formats—from interactive virtual classrooms to specialized corporate sessions—tailored to your unique schedule and learning requirements."
     },
     {
-      "title": "Access to Course Material",
-      "description": "After completing Simpliaxis's CSPO certification training, participants can access course materials, videos, and study aids."
+      "title": "Persistent Access to Learning Assets",
+      "description": "Enjoy continuous, long-term access to all recorded sessions, masterclass materials, and advanced study tools to support your ongoing professional development."
     },
     {
-      "title": "Proven Track Record",
-      "description": "We are the Registered Education Allies of Scrum Alliance. Our CSPO training assisted numerous companies and professionals in reaching their career objectives and enhancing their skills."
+      "title": "Demonstrated Excellence",
+      "description": "As a distinguished global training provider, we have an extensive history of empowering both individual professionals and major enterprises to achieve superior performance."
     },
     {
-      "title": "End-to-End Support",
-      "description": "Simpliaxis offers professionals CSPO certification training with end-to-end support. To assist you in understanding the procedure, we provide you with case studies, practical exercises, and study aids to help you know the facts."
+      "title": "Holistic Career Guidance",
+      "description": "Viovn provides comprehensive support throughout your journey, including dedicated exam preparation, certification roadmaps, and strategic career counseling beyond the classroom."
     },
     {
-      "title": "Real-World Stimulation",
-      "description": "Real-world examples, group projects, and Q&A sessions are all incorporated into our dynamic CSPO training to assist learners in comprehending complex procedures."
+      "title": "Dynamic and Immersive Workshops",
+      "description": "Our training sessions are highly interactive, utilizing authentic industry simulations and collaborative activities to ensure practical mastery of complex project scenarios."
     },
     {
-      "title": "Affordable Price",
-      "description": "Simpliaxis provides the most comprehensive CSPO certification training at affordable costs. We guarantee that your hard-earned investment will yield the best outcomes."
+      "title": "Comprehensive Certification Portfolio",
+      "description": "Viovn offers an extensive suite of globally acknowledged certifications in Agile, Scrum, SAFe, DevOps, and diverse Project Management methodologies."
     }
   ]
 
@@ -528,10 +528,10 @@ const AgileProjectManagementCourse = () => {
   };
 
   const corporateData = {
-    "courseName": "Why Corporates Choose Us",
+    "courseName": "Why Viovn for Corporates?",
     "label": "",
     "buttonText": "Corporate Group Enquiry",
-    "description": "Simpliaxis provides tailored corporate training programs designed to improve project delivery, Agile adoption, and workforce capability through customized learning solutions."
+    "description": "Viovn delivers specialized enterprise programs designed to accelerate project delivery, foster Agile cultural transformation, and enhance global workforce agility through bespoke training."
   };
 
   const courseMetadata = {

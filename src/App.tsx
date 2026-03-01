@@ -132,6 +132,7 @@ const App = () => (
             path="/course/icagile-agile-product-ownership-icp-apo-certification-training"
             element={<ICAgileAgileProductOwnershipICPAPOCertificationTraining />}
           />
+
           <Route
             path="/course/pspbm-skills-certification-course"
             element={<PSPBMSkillsCertificationCourse />}

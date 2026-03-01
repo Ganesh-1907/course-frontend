@@ -393,36 +393,36 @@ const ICAgileProductManagementCertificationTraining = () => {
 
   const courseWhySimpliaxis = [
     {
-      "title": "Global Recognition",
-      "description": "Every Course is recognized by the most reputable certification organizations globally that ensure credibility and acceptance in all industries."
+      "title": "Authorized ICAgile Training Partner",
+      "description": "Viovn is a certified ICAgile delivery partner, guaranteeing that our product management training is fully compliant with international quality and credentialing standards."
     },
     {
-      "title": "Expert Trainer",
-      "description": "Gain knowledge from trained and experienced trainers who impart real-world business insights as well as practical experience to the classes."
+      "title": "Experienced Agile Product Management Instructors",
+      "description": "Our ICP-PDM sessions are led by veteran product leaders who infuse deep practical knowledge, actionable strategies, and contemporary industry expertise into every lesson."
     },
     {
-      "title": "Flexible Learning",
-      "description": "Provides a variety of methods of learning, such as classes, online, and corporate Training, that meet the needs of different individuals and their schedules."
+      "title": "Comprehensive ICAgile ICP-PDM Curriculum",
+      "description": "Master essential competencies in product discovery, prioritization, and strategic roadmap execution through a curriculum specifically engineered for high-performing Agile teams."
     },
     {
-      "title": "Lifetime Access",
-      "description": "Enjoy all-year access to the recordings of sessions, course materials, and study tools."
+      "title": "Interactive, Hands-On Learning Experience",
+      "description": "We utilize immersive workshops, authentic case studies, and collaborative problem-solving to ensure you can confidently translate theoretical concepts into real-world business results."
     },
     {
-      "title": "Proven Track Record",
-      "description": "A reputable training provider with impressive experience in helping professional and business organizations improve their abilities and meet their career ambitions."
+      "title": "Flexible Training Delivery Options",
+      "description": "Viovn offers both live virtual classrooms and bespoke corporate formats, allowing both individual specialists and entire organizations to progress at their own pace and convenience."
     },
     {
-      "title": "End-to-End Assistance",
-      "description": "Simpliaxis Offers ongoing assistance prior to, during, and after Training and includes study material exams, guidance for participants on certification, and career choices."
+      "title": "Focus on Practical Product Skills",
+      "description": "Our educational approach is designed for immediate workplace application, focusing on improving your ability to build customer-centric products and drive superior business outcomes."
     },
     {
-      "title": "Interactive and engaging Training",
-      "description": "Our Training sessions are designed to be extremely interactive, featuring real-world scenarios with group participation, questions & answers to aid in understanding."
+      "title": "Structured Support and Guidance",
+      "description": "At Viovn, we empower our learners with premium ICAgile resources, practical rehearsal sessions, and continuous mentorship to ensure long-term mastery and retention."
     },
     {
-      "title": "A wide range of courses",
-      "description": "Simpliaxis offers various internationally acknowledged certification courses in Agile, Scrum, SAFe, DevOps, Project Management, and more."
+      "title": "Real-World Agile Product Scenarios",
+      "description": "Analyze and solve challenges from actual product environments, gaining the specialized knowledge needed to bypass common pitfalls and lead products to success."
     }
   ]
 
@@ -504,10 +504,10 @@ const ICAgileProductManagementCertificationTraining = () => {
   };
 
   const corporateData = {
-    "courseName": "Why Simpliaxis for Corporates?",
+    "courseName": "Why Viovn for Corporates?",
     "label": "",
     "buttonText": "Corporate Group Enquiry",
-    "description": "Simpliaxis delivers enterprise-focused Agile training designed to improve product strategy, collaboration, and delivery outcomes through customized learning programs."
+    "description": "Viovn delivers specialized enterprise training aimed at refining product strategy, fostering cross-functional synergy, and achieving higher delivery standards through customized learning tracks."
   };
 
   const courseMetadata = {

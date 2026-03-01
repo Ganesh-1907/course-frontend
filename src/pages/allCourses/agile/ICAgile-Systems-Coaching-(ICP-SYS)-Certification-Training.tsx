@@ -367,36 +367,36 @@ const ICAgileSystemsCoachingCertificationTraining = () => {
 
   const courseWhySimpliaxis = [
     {
-      "title": "Global Recognition",
-      "description": "Every Course is recognized by the most reputable certification organizations globally, ensuring credibility and acceptance across all industries. Our A-CSM certification, provided by the Scrum Alliance, offers global recognition in Scrum practices."
+      "title": "ICAgile Authorized Training",
+      "description": "As an accredited ICAgile partner, Viovn provides genuine systems training that adheres strictly to global industry standards."
     },
     {
-      "title": "Expert Trainers",
-      "description": "Gain knowledge from trained and experienced trainers who impart real-world business insights as well as practical experience to the classes. Experienced CSTs deliver our Advanced Certified ScrumMaster (A-CSM) training, bringing over 15 years of experience."
+      "title": "Transformation-Proven Instructors",
+      "description": "Benefit from the expertise of systems coaches who have spent over 15 years leading Fortune 500 transformations across various sectors."
     },
     {
-      "title": "Flexible Learning",
-      "description": "Our Advanced Certified ScrumMaster (A-CSM) certification training offers a variety of methods of learning, such as online, 1:1 doubt clearing, and corporate Training, that meet the needs of different individuals and their schedules."
+      "title": "Experiential Learning Methodology",
+      "description": "Develop practical competencies through a curriculum centered on immersive exercises, organizational simulations, and hands-on coaching."
     },
     {
-      "title": "Lifetime Access",
-      "description": "Enjoy all-year access to the recordings of A-CSM training sessions, course materials, and study tools."
+      "title": "Real-World Transformation Focus",
+      "description": "Examine genuine corporate coaching hurdles and transformation success stories drawn directly from our instructors' professional consulting backgrounds."
     },
     {
-      "title": "Proven Track Record",
-      "description": "We are a reputable training provider with extensive experience in helping professional and business organizations enhance their capabilities and achieve their career objectives. You can trust us regarding your A-CSM training needs."
+      "title": "Intimate Learning Cohorts",
+      "description": "Our small-group format ensures personal attention, intensive practice sessions, and the chance to build strong connections with fellow learners."
     },
     {
-      "title": "End-to-End Assistance",
-      "description": "Simpliaxis provides ongoing support before, during, and after training, including study materials, guidance for participants on A-CSM certification, and assistance with career choices."
+      "title": "Comprehensive Resource Ecosystem",
+      "description": "Gain access to a wealth of regularly updated frameworks, templates, and diagnostic tools to support your long-term coaching journey."
     },
     {
-      "title": "Interactive and Engaging Training",
-      "description": "Our Advanced Certified ScrumMaster (A-CSM) training sessions are designed to be highly interactive, featuring real-world scenarios with group participation and Q&A sessions to facilitate a deeper understanding of the material."
+      "title": "Flexible Professional Formats",
+      "description": "We offer various delivery methods and schedules tailored for busy coaches and corporate groups, maintaining high-quality experiential learning throughout."
     },
     {
-      "title": "Career Growth",
-      "description": "A-CSM certification is the new and additional certification introduced by Scrum Alliance. If you are working in a Scrum Master role, it can be a skill development process that helps in your career advancement and opens up multiple opportunities."
+      "title": "Ongoing Community Support",
+      "description": "Connect with a global network of alumni for peer collaboration, expert consultation, and continuous growth in the field of systems coaching."
     }
   ];
   const sidePanelSchedules = [

@@ -164,7 +164,7 @@ const JiraSoftwareTrainingforAgileProjects = () => {
   const certificationSteps = [
     {
       "title": "Enroll in Training",
-      "description": "Join the Jira Agile training program from Simpliaxis."
+      "description": "Join the Jira Agile training program from Viovn."
     },
     {
       "title": "Attend Live Sessions",
@@ -399,36 +399,36 @@ const JiraSoftwareTrainingforAgileProjects = () => {
 
   const courseWhySimpliaxis = [
     {
-      "title": "Get Global Recognition",
-      "description": "You can gain a global CSPO certification that demonstrates your proficiency as a Product Owner and gives you a competitive edge by completing the certification training."
+      "title": "Globally Recognized Certification",
+      "description": "Our programs are endorsed by the world's most prestigious certification bodies, ensuring your credentials are valued and respected across all industries."
     },
     {
-      "title": "Trained By Experienced CSTs",
-      "description": "You can obtain your CSPO certification with the assistance of experienced CSTs, who have at least 15 years of expertise. Using real-world experiences, case studies, and doubt-clearing sessions makes the learning practical and helpful."
+      "title": "Expert-Led Instruction",
+      "description": "Gain deep insights from seasoned industry professionals who blend practical experience with real-world business wisdom in every class."
     },
     {
-      "title": "Flexible Learning & Payment",
-      "description": "The extensive curriculum of our CSPO course is designed to enhance your capabilities as a Product Owner. You can accomplish your project goals by using a variety of learning techniques."
+      "title": "Flexible Learning Formats",
+      "description": "We offer versatile training formats—including virtual classrooms and corporate sessions—designed to align with your personal schedule and professional goals."
     },
     {
-      "title": "Access to Course Material",
-      "description": "After completing Simpliaxis's CSPO certification training, participants can access course materials, videos, and study aids."
+      "title": "Continuous Resource Access",
+      "description": "Enjoy unrestricted, long-term access to all session recordings, comprehensive course materials, and advanced learning tools."
     },
     {
-      "title": "Proven Track Record",
-      "description": "We are the Registered Education Allies of Scrum Alliance. Our CSPO training assisted numerous companies and professionals in reaching their career objectives and enhancing their skills."
+      "title": "Demonstrated Success",
+      "description": "As a premier educational provider, we have a long history of helping individuals and enterprises enhance their capabilities and achieve their career milestones."
     },
     {
-      "title": "End-to-End Support",
-      "description": "Simpliaxis offers professionals CSPO certification training with end-to-end support. To assist you in understanding the procedure, we provide you with case studies, practical exercises, and study aids to help you know the facts."
+      "title": "Comprehensive Career Support",
+      "description": "Viovn delivers comprehensive support at every stage, offering exam preparation, certification guidance, and career counseling both during and after your training."
     },
     {
-      "title": "Real-World Stimulation",
-      "description": "Real-world examples, group projects, and Q&A sessions are all incorporated into our dynamic CSPO training to assist learners in comprehending complex procedures."
+      "title": "Interactive Workshop Experience",
+      "description": "Our sessions are crafted to be highly participatory, utilizing authentic business scenarios and collaborative activities to deepen your understanding."
     },
     {
-      "title": "Affordable Price",
-      "description": "Simpliaxis provides the most comprehensive CSPO certification training at affordable costs. We guarantee that your hard-earned investment will yield the best outcomes."
+      "title": "Expansive Course Portfolio",
+      "description": "Viovn provides a diverse portfolio of world-class certifications in disciplines such as Agile, Scrum, SAFe, DevOps, and Project Management."
     }
   ]
 
@@ -465,7 +465,7 @@ const JiraSoftwareTrainingforAgileProjects = () => {
       "Hands-on exercises with real-world Agile scenarios",
       "30-day Jira tool access",
       "90-day retake option",
-      "Course completion certificate from Simpliaxis"
+      "Course completion certificate from Viovn"
     ],
     "mainImage": "https://www.simpliaxis.com/../frontend_assets/image/ring_loader.gif",
     "badgeImage": "/csm-badge.png"
@@ -515,10 +515,10 @@ const JiraSoftwareTrainingforAgileProjects = () => {
   };
 
   const corporateData = {
-    "courseName": "Why Choose Jira Training with Simpliaxis?",
+    "courseName": "Why Viovn for Corporates?",
     "label": "",
     "buttonText": "Corporate Group Enquiry",
-    "description": "Simpliaxis provides enterprise-focused Jira training tailored to organizational needs, helping teams improve Agile project execution, visibility, and collaboration."
+    "description": "Viovn delivers specialized Jira training solutions tailored to your team's needs, enhancing project visibility, workflow efficiency, and overall Agile execution."
   };
 
   const courseMetadata = {

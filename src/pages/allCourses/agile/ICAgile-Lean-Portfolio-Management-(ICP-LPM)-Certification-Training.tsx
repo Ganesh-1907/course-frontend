@@ -363,36 +363,36 @@ const ICAgileLeanPortfolioManagementCertificationTraining = () => {
 
   const courseWhySimpliaxis = [
     {
-      "title": "Global Recognition",
-      "description": "Every Course is recognized by the most reputable certification organizations globally that ensure credibility and acceptance in all industries."
+      "title": "ICAgile-Authorized Training Partner",
+      "description": "Viovn provides ICP-LPM training sessions that strictly follow ICAgile's curriculum, quality benchmarks, and certification protocols."
     },
     {
-      "title": "Expert Trainer",
-      "description": "Gain knowledge from trained and experienced trainers who impart real-world business insights as well as practical experience to the classes."
+      "title": "Experienced Enterprise Practitioners",
+      "description": "Receive instruction from experts with a wealth of practical knowledge in implementing Lean Portfolio Management and enterprise-wide Agile strategies."
     },
     {
-      "title": "Flexible Learning",
-      "description": "Provides a variety of methods of learning, such as classes, online, and corporate Training, that meet the needs of different individuals and their schedules."
+      "title": "Practice-Focused Learning Approach",
+      "description": "Our curriculum prioritizes concrete application through hands-on exercises and simulations, moving beyond mere theoretical teaching."
     },
     {
-      "title": "Lifetime Access",
-      "description": "Enjoy all-year access to the recordings of sessions, course materials, and study tools."
+      "title": "Interactive and Engaging Sessions",
+      "description": "Join collaborative workshops and guided dialogues designed to foster deep comprehension and the development of actionable skills."
     },
     {
-      "title": "Proven Track Record",
-      "description": "A reputable training provider with impressive experience in helping professional and business organizations improve their abilities and meet their career ambitions."
+      "title": "Industry-Relevant Case Studies",
+      "description": "Explore actual corporate scenarios that illustrate the effective deployment of Lean Portfolio Management within intricate business landscapes."
     },
     {
-      "title": "End-to-End Assistance",
-      "description": "Simpliaxis Offers ongoing assistance prior to, during, and after Training and includes study material exams, guidance for participants on certification, and career choices."
+      "title": "Globally Recognized Certification",
+      "description": "Obtain the ICAgile ICP-LPM credential, a prestigious and internationally accepted certification valued by leading organizations everywhere."
     },
     {
-      "title": "Interactive and engaging Training",
-      "description": "Our Training sessions are designed to be extremely interactive, featuring real-world scenarios with group participation, questions & answers to aid in understanding."
+      "title": "Flexible Training Delivery Options",
+      "description": "Pick from various learning formats, such as live virtual classes or bespoke corporate sessions, created to align with your career commitments."
     },
     {
-      "title": "A wide range of courses",
-      "description": "Simpliaxis offers various internationally acknowledged certification courses in Agile, Scrum, SAFe, DevOps, Project Management, and more."
+      "title": "Strong Post-Training Support",
+      "description": "Viovn extends its commitment beyond the classroom, offering ongoing mentorship and a suite of resources to ensure successful implementation."
     }
   ]
 
@@ -470,10 +470,10 @@ const ICAgileLeanPortfolioManagementCertificationTraining = () => {
   };
 
   const corporateData = {
-    "courseName": "Why Simpliaxis for Corporates",
+    "courseName": "Why Viovn for Corporates",
     "label": "",
     "buttonText": "Corporate Group Enquiry",
-    "description": "Simpliaxis delivers customized corporate training solutions tailored to organizational needs. The programs help enterprises close skill gaps, improve portfolio decision-making, and accelerate transformation through expert-led, practical learning."
+    "description": "Viovn delivers customized corporate training solutions tailored to organizational needs. The programs help enterprises close skill gaps, improve portfolio decision-making, and accelerate transformation through expert-led, practical learning."
   };
   const courseMetadata = {
     shortName: 'CSM',

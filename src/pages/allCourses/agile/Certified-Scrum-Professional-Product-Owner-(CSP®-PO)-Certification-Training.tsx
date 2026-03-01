@@ -414,36 +414,36 @@ const CertifiedScrumProfessionalProductOwnerCertificationTraining = () => {
 
   const courseWhySimpliaxis = [
     {
-      "title": "Get Global Recognition",
-      "description": "You can gain a global CSPO certification that demonstrates your proficiency as a Product Owner and gives you a competitive edge by completing the certification training."
+      "title": "Hands-on Learning",
+      "description": "CSP-PO training from Viovn features exclusive Scrum activities, team-based practical exercises, and case-study driven sessions, facilitating immersive learning and deep knowledge acquisition."
     },
     {
-      "title": "Trained By Experienced CSTs",
-      "description": "You can obtain your CSPO certification with the assistance of experienced CSTs, who have at least 15 years of expertise. Using real-world experiences, case studies, and doubt-clearing sessions makes the learning practical and helpful."
+      "title": "Experienced Trainers",
+      "description": "We partner with elite Scrum Alliance-certified instructors who possess extensive multi-industry experience, ensuring our CSP-PO training equips participants with advanced expertise and practical strategies."
     },
     {
-      "title": "Flexible Learning & Payment",
-      "description": "The extensive curriculum of our CSPO course is designed to enhance your capabilities as a Product Owner. You can accomplish your project goals by using a variety of learning techniques."
+      "title": "Expert Guidance",
+      "description": "Acquire high-value insights, specialized techniques, and advanced tools directly from seasoned practitioners who are actively leading Agile transformations."
     },
     {
-      "title": "Access to Course Material",
-      "description": "After completing Simpliaxis's CSPO certification training, participants can access course materials, videos, and study aids."
+      "title": "Access to Scrum Network",
+      "description": "Expand your professional reach by joining the world's most prominent Scrum and Agile communities through a two-year premium membership with the Scrum Alliance."
     },
     {
-      "title": "Proven Track Record",
-      "description": "We are the Registered Education Allies of Scrum Alliance. Our CSPO training assisted numerous companies and professionals in reaching their career objectives and enhancing their skills."
+      "title": "Learning Support",
+      "description": "We provide a rich library of educational resources, including webinars, specialized e-books, expert tutorials, and strategic interview preparation to ensure your professional journey is both seamless and impactful."
     },
     {
-      "title": "End-to-End Support",
-      "description": "Simpliaxis offers professionals CSPO certification training with end-to-end support. To assist you in understanding the procedure, we provide you with case studies, practical exercises, and study aids to help you know the facts."
+      "title": "Post Career Guidance",
+      "description": "Benefit from continuous mentorship and professional guidance to help you navigate complex challenges and accelerate your growth within the Agile landscape."
     },
     {
-      "title": "Real-World Stimulation",
-      "description": "Real-world examples, group projects, and Q&A sessions are all incorporated into our dynamic CSPO training to assist learners in comprehending complex procedures."
+      "title": "Interactive and engaging Training",
+      "description": "Our training sessions are engineered for maximum engagement, utilizing authentic business simulations and collaborative Q&A to achieve profound conceptual understanding."
     },
     {
-      "title": "Affordable Price",
-      "description": "Simpliaxis provides the most comprehensive CSPO certification training at affordable costs. We guarantee that your hard-earned investment will yield the best outcomes."
+      "title": "A wide range of courses",
+      "description": "Viovn delivers a wide spectrum of internationally recognized certifications across Agile, Scrum, SAFe, DevOps, and Project Management disciplines."
     }
   ]
 
@@ -526,10 +526,10 @@ const CertifiedScrumProfessionalProductOwnerCertificationTraining = () => {
   };
 
   const corporateData = {
-    "courseName": "Why Corporates Choose Us for CSP-PO Training",
+    "courseName": "Why Viovn for Corporates?",
     "label": "",
     "buttonText": "Corporate Group Enquiry",
-    "description": "Simpliaxis provides tailored corporate CSP-PO training designed to align Agile product ownership practices with business goals and improve delivery effectiveness across teams."
+    "description": "Viovn delivers specialized enterprise CSP-PO training designed to integrate advanced Agile product ownership with strategic business objectives, enhancing cross-functional delivery and overall organizational impact."
   };
 
   const courseMetadata = {

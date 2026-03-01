@@ -389,36 +389,36 @@ const ICAgileCertifiedAgileLeadershipTraining = () => {
 
   const courseWhySimpliaxis = [
     {
-      "title": "Get Global Recognition",
-      "description": "You can gain a global CSPO certification that demonstrates your proficiency as a Product Owner and gives you a competitive edge by completing the certification training."
+      "title": "ICAgile-Authorized Training Partner",
+      "description": "Viovn is an officially accredited ICAgile training partner, ensuring the ICP-LEA curriculum rigorously follows global standards and grants industry-recognized credentials."
     },
     {
-      "title": "Trained By Experienced CSTs",
-      "description": "You can obtain your CSPO certification with the assistance of experienced CSTs, who have at least 15 years of expertise. Using real-world experiences, case studies, and doubt-clearing sessions makes the learning practical and helpful."
+      "title": "Expert Mentorship from Certified Coaches",
+      "description": "Our immersive workshops are led by veteran ICAgile-certified mentors who bring decades of practical experience in leading high-impact Agile transformations and enterprise-level leadership initiatives."
     },
     {
-      "title": "Flexible Learning & Payment",
-      "description": "The extensive curriculum of our CSPO course is designed to enhance your capabilities as a Product Owner. You can accomplish your project goals by using a variety of learning techniques."
+      "title": "Action-Oriented Leadership Development",
+      "description": "The ICP-LEA program is engineered to address contemporary leadership hurdles, prioritizing critical decision-making and transformative mindset shifts over abstract theory."
     },
     {
-      "title": "Access to Course Material",
-      "description": "After completing Simpliaxis's CSPO certification training, participants can access course materials, videos, and study aids."
+      "title": "Authentic Enterprise Scenarios",
+      "description": "Viovn provides a collaborative ecosystem where leaders analyze and solve actual challenges drawn from a wide spectrum of industries and complex organizational landscapes."
     },
     {
-      "title": "Proven Track Record",
-      "description": "We are the Registered Education Allies of Scrum Alliance. Our CSPO training assisted numerous companies and professionals in reaching their career objectives and enhancing their skills."
+      "title": "Dynamic and Synergistic Workshops",
+      "description": "Experience live, instructor-led sessions that foster peer-to-peer dialogue, shared reflection, and deep collaborative learning to achieve a profound understanding of leadership mastery."
     },
     {
-      "title": "End-to-End Support",
-      "description": "Simpliaxis offers professionals CSPO certification training with end-to-end support. To assist you in understanding the procedure, we provide you with case studies, practical exercises, and study aids to help you know the facts."
+      "title": "Premium ICAgile-Verified Resources",
+      "description": "Gain exclusive access to high-quality, officially vetted educational resources perfectly aligned with ICAgile’s core learning outcomes and certification criteria."
     },
     {
-      "title": "Real-World Stimulation",
-      "description": "Real-world examples, group projects, and Q&A sessions are all incorporated into our dynamic CSPO training to assist learners in comprehending complex procedures."
+      "title": "Continuing Education Credits (PDUs & SEUs)",
+      "description": "Successfully complete the course to earn 14 Professional Development Units (PDUs) and 14 Scrum Education Units (SEUs), directly supporting your PMI and Scrum Alliance credential maintenance."
     },
     {
-      "title": "Affordable Price",
-      "description": "Simpliaxis provides the most comprehensive CSPO certification training at affordable costs. We guarantee that your hard-earned investment will yield the best outcomes."
+      "title": "Internationally Distinguished Certification",
+      "description": "Achieve the ICP-LEA credential, a globally respected mark of excellence that accelerates career advancement across diverse geographical markets and industries."
     }
   ]
 
@@ -497,10 +497,10 @@ const ICAgileCertifiedAgileLeadershipTraining = () => {
   };
 
   const corporateData = {
-    "courseName": "Why Simpliaxis for Corporates?",
+    "courseName": "Why Viovn for Corporates?",
     "label": "",
     "buttonText": "Corporate Group Enquiry",
-    "description": "Simpliaxis provides enterprise-focused Agile leadership training tailored to organizational needs, helping teams improve collaboration, adaptability, and leadership effectiveness."
+    "description": "Viovn delivers specialized corporate leadership programs designed to cultivate an Agile mindset, strengthen adaptive decision-making, and drive sustainable organizational excellence."
   };
 
   const courseMetadata = {

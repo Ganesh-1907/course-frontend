@@ -379,36 +379,36 @@ const ICAgileAgileTeamFacilitationCertificationTraining = () => {
 
   const courseWhySimpliaxis = [
     {
-      "title": "Global Recognition",
-      "description": "Every Course is recognized by the most reputable certification organizations globally that ensure credibility and acceptance in all industries."
+      "title": "Official ICAgile Training Partner",
+      "description": "As an authorized ICAgile collaborator, Viovn ensures that every ICP-ATF session adheres to the latest educational standards and official benchmarks."
     },
     {
-      "title": "Expert Trainer",
-      "description": "Gain knowledge from trained and experienced trainers who impart real-world business insights as well as practical experience to the classes."
+      "title": "Experienced Agile Practitioners as Trainers",
+      "description": "Gain knowledge from veteran Agile coaches who bring years of actual facilitation and team leadership experience into the classroom."
     },
     {
-      "title": "Flexible Learning",
-      "description": "Provides a variety of methods of learning, such as classes, online, and corporate Training, that meet the needs of different individuals and their schedules."
+      "title": "Practical, Hands-On Learning Approach",
+      "description": "Viovn emphasizes learning by doing, providing students with numerous opportunities to practice core Agile facilitation methods in a safe environment."
     },
     {
-      "title": "Lifetime Access",
-      "description": "Enjoy all-year access to the recordings of sessions, course materials, and study tools."
+      "title": "Industry-Relevant ICP-ATF Curriculum",
+      "description": "The course material is carefully designed to reflect modern Agile methodologies used by leading organizations across diverse global sectors."
     },
     {
-      "title": "Proven Track Record",
-      "description": "A reputable training provider with impressive experience in helping professional and business organizations improve their abilities and meet their career ambitions."
+      "title": "Interactive and Engaging Training Sessions",
+      "description": "Our facilitators create a dynamic learning atmosphere that encourages active participation, peer collaboration, and deep-dive discussions."
     },
     {
-      "title": "End-to-End Assistance",
-      "description": "Simpliaxis Offers ongoing assistance prior to, during, and after Training and includes study material exams, guidance for participants on certification, and career choices."
+      "title": "Globally Recognized ICP-ATF Certification",
+      "description": "Upon completion, you will receive the prestigious ICAgile Agile Team Facilitation credential, an industry-standard badge recognized worldwide."
     },
     {
-      "title": "Interactive and engaging Training",
-      "description": "Our Training sessions are designed to be extremely interactive, featuring real-world scenarios with group participation, questions & answers to aid in understanding."
+      "title": "Flexible Training Schedules",
+      "description": "We provide various scheduling options for the ICP-ATF course, allowing busy professionals to enhance their skills without disrupting their work life."
     },
     {
-      "title": "A wide range of courses",
-      "description": "Simpliaxis offers various internationally acknowledged certification courses in Agile, Scrum, SAFe, DevOps, Project Management, and more."
+      "title": "Focus on Real Agile Team Challenges",
+      "description": "Our curriculum specifically targets actual hurdles faced by teams, such as managing conflicts, facilitating decision-making, and ensuring alignment."
     }
   ]
 
@@ -487,10 +487,10 @@ const ICAgileAgileTeamFacilitationCertificationTraining = () => {
   };
 
   const corporateData = {
-    "courseName": "Why Simpliaxis for Corporates",
+    "courseName": "Why Viovn for Corporates",
     "label": "",
     "buttonText": "Corporate Group Enquiry",
-    "description": "Simpliaxis provides tailored corporate training programs designed to improve facilitation, collaboration, and Agile maturity within organizations. Programs are customized to meet team-specific challenges and business goals."
+    "description": "Viovn provides tailored corporate training programs designed to improve facilitation, collaboration, and Agile maturity within organizations. Programs are customized to meet team-specific challenges and business goals."
   };
 
   const courseMetadata = {
