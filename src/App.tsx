@@ -19,6 +19,8 @@ import NotFound from "./pages/NotFound";
 
 // ✨ BARREL EXPORT IMPORT - Import all agile courses from one place!
 // Instead of 5 separate import lines, we import all at once from the index.ts
+
+// ----------------------------- Agile Courses -----------------------------
 import {
   CertifiedScrumMasterCertificationTraining,
   CertifiedScrumProductOwnerCertificationTraining,
@@ -39,8 +41,6 @@ import {
   JiraSoftwareTrainingforAgileProjects,
   AgileProjectManagementCourse,
   CertifiedScrumProfessionalProductOwnerCertificationTraining,
-
-
   AgileAndScrumTraining,
   PMIAgileCertifiedPractitionerPMIACP,
   ProfessionalScrumMasterCertificationTraining,
@@ -53,8 +53,17 @@ import {
   ScrumAtScaleCertificationTraining,
   ICAgileEnterpriseAgileCoachingCertificationTraining,
   ProfessionalAgileLeadershipEssentialsCertificationTraining,
-  BehaviourDrivenDevelopmentBDDTraining
+  BehaviourDrivenDevelopmentBDDTraining,
 } from './pages/allCourses/agile';
+
+// ----------------------------- Safe Courses -----------------------------
+import { LeadingSafeCertificationTraining, AiEmpoweredSafeScrumMasterSSMCertificationTraining,
+  ProductManagerPOPMCertificationTraining,
+  SafePracticeConsultantSPCCertificationTraining,
+  SafeLeanPortfolioManagementCertificationTraining,
+  SafeArchitectsCertificationTraining 
+
+ } from './pages/allCourses/safe';
 
 const queryClient = new QueryClient();
 
@@ -175,12 +184,6 @@ const App = () => (
             element={<CertifiedScrumProfessionalProductOwnerCertificationTraining />}
           />
 
-
-
-
-
-
-
           <Route
             path="/course/agile-and-scrum-training"
             element={<AgileAndScrumTraining />}
@@ -248,6 +251,37 @@ const App = () => (
 
 
           {/*------------------------ Agile Courses ending----------------------- */}
+
+          {/*------------------------ Safe Courses ----------------------- */}
+          <Route
+            path="/course/leading-safe-certification-training"
+            element={<LeadingSafeCertificationTraining />}
+          />
+
+          <Route
+            path="/course/ai-empowered-safe-scrum-master-ssm-certification-training"
+            element={<AiEmpoweredSafeScrumMasterSSMCertificationTraining />}
+          />
+          <Route
+            path="/course/product-manager-popm-certification-training"
+            element={<ProductManagerPOPMCertificationTraining />}
+          />
+          <Route
+            path="/course/safe-practice-consultant-spc-certification-training"
+            element={<SafePracticeConsultantSPCCertificationTraining />}
+          />
+
+          <Route
+            path="/course/safe-lean-portfolio-management-certification-training"
+            element={<SafeLeanPortfolioManagementCertificationTraining />}
+          />
+          
+          <Route
+            path="/course/safe-architects-certification-training"
+            element={<SafeArchitectsCertificationTraining />}
+          />
+
+          {/*------------------------ Safe Courses ending----------------------- */}
 
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
