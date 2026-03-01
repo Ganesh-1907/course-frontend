@@ -101,8 +101,10 @@ const buildCourses = (category: string, titles: string[]): Course[] =>
     } else if (processedTitle.includes("Professional Scrum Master - Advanced (PSM II) Certification Training")) {
       navigate = "/course/professional-scrum-master-advanced-psm-a-certification-training";
     } else if (processedTitle.includes("Certified Agile Leader - 1 (CAL-1) Certification Training")) {
+      navigate = "/course/certified-agile-leader®-1-(cal 1™)-certification-training";
+      }else if (processedTitle.includes("ICAgile Certified Professional in Agile Coaching (ICP-ACC) Certification Training")) {
       navigate = "/course/icagile-certified-professional-in-agile-coaching-icp-acc-certification-training";
-      } else if (processedTitle.includes("Advanced Certified Scrum Developer (A-CSD) Certification Training")) { 
+      }else if (processedTitle.includes("Advanced Certified Scrum Developer (A-CSD) Certification Training")) { 
       navigate = "/course/agile/advanced-certified-scrum-developer-a-csd-certification-training";
     } 
     else if (processedTitle.includes("Professional Scrum with Kanban (PSK) Certification Training")) {

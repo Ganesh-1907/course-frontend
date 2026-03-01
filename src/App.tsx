@@ -62,7 +62,9 @@ import {
   AgileReleasePlanningTraining,
   ICAgileAIforProductStrategyMicroCredentialCourse,
   ICAgileAIforCustomerInsightsMicroCredentialTraining,
-  AdvancedCertifiedScrumDeveloperCertificationTraining
+  AdvancedCertifiedScrumDeveloperCertificationTraining,
+  CertifiedAgileLeaderCertificationTraining,
+  
 } from './pages/allCourses/agile';
 
 // ----------------------------- Safe Courses -----------------------------
@@ -243,6 +245,11 @@ const App = () => (
             element={<BehaviourDrivenDevelopmentBDDTraining />}
           />
 
+          <Route
+            path="/course/certified-agile-leader®-1-(cal 1™)-certification-training"
+            element={<CertifiedAgileLeaderCertificationTraining />}
+          />
+
           {/* Legacy Agile Routes */}
           <Route
             path="/course/agile/applying-professional-scrum-certification-training"
@@ -296,6 +303,8 @@ const App = () => (
             path="/course/agile/advanced-certified-scrum-developer-a-csd-certification-training"
             element={<AdvancedCertifiedScrumDeveloperCertificationTraining />}
           />
+
+
 
           {/* ✨ SAFE COURSES */}
           <Route
