@@ -4,3 +4,14 @@ export { default as ProductManagerPOPMCertificationTraining } from './Product-Ma
 export { default as SafePracticeConsultantSPCCertificationTraining } from './SAFe-Practice-Consultant-(SPC)-Certification-Training';
 export { default as SafeLeanPortfolioManagementCertificationTraining } from './SAFe-Lean-Portfolio-Management-Certification-Training';
 export { default as SafeArchitectsCertificationTraining } from './SAFe-Architects-Certification-Training';
+export { default as SafeForTeamsCertificationTraining } from './SAFe-for-Teams-Certification-Training';
+export { default as AdvancedSAFePracticeConsultantASPCCertificationPath } from './Advanced-SAFe-Practice-Consultant-(ASPC)-Certification-Path';
+export { default as AIEmpoweredSAFeReleaseTrainEngineerRTECertificationTraining } from './AI-Empowered-SAFe-Release-Train-Engineer-(RTE)-Certification-Training';
+export { default as SAFEDevOpsCertificationTraining } from './SAFe-DevOps-Certification-Training';
+export { default as AdvancedFacilitatorConflictCollaborationMicroCredentialCourse } from './Advanced-Facilitator-Conflict-Collaboration-Micro-Credential-Course';
+export { default as AchievingResponsibleAICourse } from './Achieving-Responsible-AI-with-SAFe-Micro-credential-Course';
+export { default as AgileHRexplorerCourse } from './Agile-HR-Explorer-(AHRE)-Training-and-Certification';
+export { default as AdvancedScrumMasterCertificationPath } from './Advanced-Scrum-Master-Certification-Path';
+export { default as SAFeForHardwareCourse } from './SAFe-for-Hardware-Certification-Training';
+export { default as AiNativeFoundationsCertificationTrainingCourse } from './AI-Native-Foundations-Certification-Training-Course';
+export { default as AiNativeChangeAgentCertificationTrainingCourse } from './AI-Native-Change-Agent-Certification-Training-Course';
