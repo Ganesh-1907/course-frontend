@@ -64,18 +64,25 @@ import {
   ICAgileAIforCustomerInsightsMicroCredentialTraining,
   AdvancedCertifiedScrumDeveloperCertificationTraining,
   CertifiedAgileLeaderCertificationTraining,
-  
+
 } from './pages/allCourses/agile';
 
 // ----------------------------- Safe Courses -----------------------------
-import { 
-  LeadingSafeCertificationTraining, 
+import {
+  LeadingSafeCertificationTraining,
   AiEmpoweredSafeScrumMasterSSMCertificationTraining,
   ProductManagerPOPMCertificationTraining,
   SafePracticeConsultantSPCCertificationTraining,
   SafeLeanPortfolioManagementCertificationTraining,
-  SafeArchitectsCertificationTraining 
+  SafeArchitectsCertificationTraining
 } from './pages/allCourses/safe';
+import {
+  LeanSixSigmaBlackBelt,
+  LeanSixSigmaGreenBelt,
+  LeanSixSigmaYellowBelt,
+  QualityRootCauseAnalysis,
+  QualitySixSigmaFundamentals
+} from "./pages/allCourses/quality";
 
 const queryClient = new QueryClient();
 
@@ -88,13 +95,13 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
 
-           {/* categories routes */}
+          {/* categories routes */}
           <Route path="/category/agile-scrum" element={<AgileScrum />} />
-          <Route path="/category/project-management"  element={<ProjectManagement />}/>
-          <Route path="/category/it-service-management"  element={<ITServiceManagement />} />
-          <Route path="/category/quality-process"  element={<QualityProcess />} />
+          <Route path="/category/project-management" element={<ProjectManagement />} />
+          <Route path="/category/it-service-management" element={<ITServiceManagement />} />
+          <Route path="/category/quality-process" element={<QualityProcess />} />
           <Route path="/category/leadership-coaching" element={<LeadershipCoaching />} />
-          <Route path="/category/business-skills"  element={<BusinessSkills />} />
+          <Route path="/category/business-skills" element={<BusinessSkills />} />
           <Route path="/category/ai-technology" element={<AiTechnology />} />
           <Route path="/category/cyber-security" element={<CyberSecurity />} />
           <Route path="/sub-category" element={<SubCategoryPage />} />
@@ -238,7 +245,7 @@ const App = () => (
             element={<CertifiedAgileLeaderCertificationTraining />}
           />
 
-  
+
           <Route
             path="/course/agile/applying-professional-scrum-certification-training"
             element={<ApplyingProfessionalScrumCertificationTraining />}
@@ -319,6 +326,33 @@ const App = () => (
             path="/course/safe-architects-certification-training"
             element={<SafeArchitectsCertificationTraining />}
           />
+
+          {/*Add more Quality routes here as needed */}
+
+          <Route
+            path="/course/quality/six-sigma-fundamentals-training"
+            element={<QualitySixSigmaFundamentals />}
+          />
+
+          <Route
+            path="/course/quality/root-cause-analysis-rca-training"
+            element={<QualityRootCauseAnalysis />}
+          />
+
+          <Route
+            path="/course/quality/lean-six-sigma-yellow-belt-training"
+            element={<LeanSixSigmaYellowBelt />}
+          />
+          <Route
+            path="/course/quality/lean-six-sigma-green-belt-training"
+            element={<LeanSixSigmaGreenBelt />}
+          />
+
+          <Route
+            path="/course/quality/lean-six-sigma-black-belt-training"
+            element={<LeanSixSigmaBlackBelt />}
+          />
+
 
           <Route path="*" element={<NotFound />} />
         </Routes>
