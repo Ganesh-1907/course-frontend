@@ -87,31 +87,19 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
+
+           {/* categories routes */}
           <Route path="/category/agile-scrum" element={<AgileScrum />} />
-          <Route
-            path="/category/project-management"
-            element={<ProjectManagement />}
-          />
-          <Route
-            path="/category/it-service-management"
-            element={<ITServiceManagement />}
-          />
-          <Route
-            path="/category/quality-process"
-            element={<QualityProcess />}
-          />
-          <Route
-            path="/category/leadership-coaching"
-            element={<LeadershipCoaching />}
-          />
-          <Route
-            path="/category/business-skills"
-            element={<BusinessSkills />}
-          />
+          <Route path="/category/project-management"  element={<ProjectManagement />}/>
+          <Route path="/category/it-service-management"  element={<ITServiceManagement />} />
+          <Route path="/category/quality-process"  element={<QualityProcess />} />
+          <Route path="/category/leadership-coaching" element={<LeadershipCoaching />} />
+          <Route path="/category/business-skills"  element={<BusinessSkills />} />
           <Route path="/category/ai-technology" element={<AiTechnology />} />
           <Route path="/category/cyber-security" element={<CyberSecurity />} />
           <Route path="/sub-category" element={<SubCategoryPage />} />
           <Route path="/demo-one" element={<DemoOne />} />
+
 
           {/* ✨ AGILE COURSES */}
           <Route
