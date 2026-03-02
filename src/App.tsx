@@ -74,7 +74,18 @@ import {
   ProductManagerPOPMCertificationTraining,
   SafePracticeConsultantSPCCertificationTraining,
   SafeLeanPortfolioManagementCertificationTraining,
-  SafeArchitectsCertificationTraining 
+  SafeArchitectsCertificationTraining,
+  SafeForTeamsCertificationTraining,
+  AdvancedSAFePracticeConsultantASPCCertificationPath,
+  AIEmpoweredSAFeReleaseTrainEngineerRTECertificationTraining,
+  SAFEDevOpsCertificationTraining,
+  AdvancedFacilitatorConflictCollaborationMicroCredentialCourse,
+  AchievingResponsibleAICourse,
+  AgileHRexplorerCourse,
+  AdvancedScrumMasterCertificationPath,
+  SAFeForHardwareCourse,
+  AiNativeFoundationsCertificationTrainingCourse,
+  AiNativeChangeAgentCertificationTrainingCourse,
 } from './pages/allCourses/safe';
 
 const queryClient = new QueryClient();
@@ -318,6 +329,60 @@ const App = () => (
           <Route
             path="/course/safe-architects-certification-training"
             element={<SafeArchitectsCertificationTraining />}
+          />
+          <Route
+            path="/course/safe-for-teams-certification-training"
+            element={<SafeForTeamsCertificationTraining />}
+          />
+
+          <Route
+            path="/course/advanced-safe-practice-consultant-(aspc)-certification-path"
+            element={<AdvancedSAFePracticeConsultantASPCCertificationPath />}
+          />
+
+          <Route
+            path="/course/ai-empowered-safe-release-train-engineer-(rte)-certification-training"
+            element={<AIEmpoweredSAFeReleaseTrainEngineerRTECertificationTraining />}
+          />
+
+          <Route
+            path="/course/safe-devops-certification-training"
+            element={<SAFEDevOpsCertificationTraining />}
+          />
+
+          <Route
+            path="/course/advanced-facilitator-conflict-collaboration-micro-credential-course"
+            element={<AdvancedFacilitatorConflictCollaborationMicroCredentialCourse />}
+          />
+
+          <Route
+            path="/course/achieving-responsible-ai-with-safe-micro-credential-course"
+            element={<AchievingResponsibleAICourse />}
+          />
+
+          <Route
+            path="/course/agile-hr-explorer-(ahre)-training-and-certification"
+            element={<AgileHRexplorerCourse />}
+          />
+
+          <Route
+            path="/course/advanced-scrum-master-certification-path"
+            element={<AdvancedScrumMasterCertificationPath />}
+          />
+
+          <Route
+            path="/course/safe-for-hardware-certification-training"
+            element={<SAFeForHardwareCourse />}
+          />
+
+          <Route
+            path="/course/ai-native-foundations-certification-training-course"
+            element={<AiNativeFoundationsCertificationTrainingCourse />}
+          />
+
+          <Route
+            path="/course/ai-native-change-agent-certification-training-course"
+            element={<AiNativeChangeAgentCertificationTrainingCourse />}
           />
 
           <Route path="*" element={<NotFound />} />
