@@ -48,7 +48,7 @@ const buildCourses = (category: string, titles: string[]): Course[] =>
 
     // Manual overrides with more robust checking
     const processedTitle = title.trim();
-
+    
     // ---------------------------------- Agile -------------------------------------------
     if (processedTitle.includes("Certified Scrum Master (CSM) Certification Training")) {
       navigate = "/course/csm-certificaton-training";
@@ -104,10 +104,9 @@ const buildCourses = (category: string, titles: string[]): Course[] =>
       navigate = "/course/certified-agile-leader®-1-(cal 1™)-certification-training";
     } else if (processedTitle.includes("ICAgile Certified Professional in Agile Coaching (ICP-ACC) Certification Training")) {
       navigate = "/course/icagile-certified-professional-in-agile-coaching-icp-acc-certification-training";
-    } else if (processedTitle.includes("Advanced Certified Scrum Developer (A-CSD) Certification Training")) {
+    } else if (processedTitle.includes("Advanced Certified Scrum Developer (A-CSD) Certification Training")) { 
       navigate = "/course/agile/advanced-certified-scrum-developer-a-csd-certification-training";
-    }
-    else if (processedTitle.includes("Professional Scrum with Kanban (PSK) Certification Training")) {
+    } else if (processedTitle.includes("Professional Scrum with Kanban (PSK) Certification Training")) {
       navigate = "/course/professional-scrum-with-kanban-psk-certification-training";
     } else if (processedTitle.includes("Professional Scrum Product Owner (PSPO) Certification Training")) {
       navigate = "/course/professional-scrum-product-owner-certification-training";
@@ -158,8 +157,31 @@ const buildCourses = (category: string, titles: string[]): Course[] =>
       navigate = "/course/safe-lean-portfolio-management-certification-training";
     } else if (processedTitle.includes("SAFe 6.0 Architect Certification Training")) {
       navigate = "/course/safe-architects-certification-training";
+    } else if (processedTitle.includes("SAFe 6.0 for Teams Certification Training")) {
+      navigate = "/course/safe-for-teams-certification-training";
+    } else if (processedTitle.includes("Advanced SAFe Practice Consultant (ASPC) Certification Path")) {
+      navigate = "/course/advanced-safe-practice-consultant-(aspc)-certification-path";
+    } else if (processedTitle.includes("AI-Improved SAFe 6.0 Release Train Engineer (RTE) Certification Training")) {
+      navigate = "/course/ai-empowered-safe-release-train-engineer-(rte)-certification-training";
+    } else if (processedTitle.includes("SAFe 6.0 DevOps Certification Training")) {
+      navigate = "/course/safe-devops-certification-training";
+    } else if (processedTitle.includes("Advanced Facilitator: Conflict & Collaboration Micro-Credential Course")) {
+      navigate = "/course/advanced-facilitator-conflict-collaboration-micro-credential-course";
+    } else if (processedTitle.includes("Achieving Responsible AI with SAFe Micro-credential Course")) {
+      navigate = "/course/achieving-responsible-ai-with-safe-micro-credential-course";
+    } else if (processedTitle.includes("Agile HR Explorer (AHRE) Training and Certification")) {
+      navigate = "/course/agile-hr-explorer-(ahre)-training-and-certification";
+    } else if (processedTitle.includes("Advanced Scrum Master Certification Path")) {
+      navigate = "/course/advanced-scrum-master-certification-path";
+    } else if (processedTitle.includes("SAFe for Hardware Certification Training")) {
+      navigate = "/course/safe-for-hardware-certification-training";
+    } else if (processedTitle.includes("AI-Native Foundations Certification Training Course")) {
+      navigate = "/course/ai-native-foundations-certification-training-course";
+    } else if (processedTitle.includes("AI-Native Change Agent Certification Training Course")) {
+      navigate = "/course/ai-native-change-agent-certification-training-course";
     }
-    //==================================Project============================================
+    
+    // ---------------------------------- Project -------------------------------------------
     if (processedTitle.includes("Project Management Professional (PMP) Certification Training")) {
       navigate = "/course/project/project-management-professional-pmp-certification-training";
     } else if (processedTitle.includes("Project Management Techniques Training")) {
@@ -185,6 +207,20 @@ const buildCourses = (category: string, titles: string[]): Course[] =>
     } else if (processedTitle.includes("PMI-CPM")) {
       navigate = "/course/project/pmi-cpmai-certification-training";
     }
+
+    // ---------------------------------- Quality -------------------------------------------
+     if (processedTitle.includes("Six Sigma Fundamentals Training")) {
+      navigate = "/course/quality/six-sigma-fundamentals-training";
+    } else if (processedTitle.includes("Root Cause Analysis (RCA) Training")) {
+      navigate = "/course/quality/root-cause-analysis-rca-training";
+    } else if (processedTitle.includes("Lean Six Sigma Yellow Belt Training")) {
+      navigate = "/course/quality/lean-six-sigma-yellow-belt-training";
+    } else if (processedTitle.includes("Lean Six Sigma Green Belt Training")) {
+      navigate = "/course/quality/lean-six-sigma-green-belt-training";
+    } else if (processedTitle.includes("Lean Six Sigma Black Belt Training")) {
+      navigate = "/course/quality/lean-six-sigma-black-belt-training";
+    }
+
     return {
       id: generatedCourseId++,
       title,
@@ -279,9 +315,9 @@ const safeCourseTitles = [
   "Advanced SAFe Practice Consultant (ASPC) Certification Path",
   "AI-Improved SAFe 6.0 Release Train Engineer (RTE) Certification Training",
   "SAFe 6.0 DevOps Certification Training",
-  "Advanced Facilitation: Conflict and Collaboration Micro-credential Course",
+  "Advanced Facilitator: Conflict & Collaboration Micro-Credential Course",
   "Achieving Responsible AI with SAFe Micro-credential Course",
-  "Agile HR Explorer (AHR) Training and Certification",
+  "Agile HR Explorer (AHRE) Training and Certification",
   "Advanced Scrum Master Certification Path",
   "SAFe for Hardware Certification Training",
   "AI-Native Foundations Certification Training Course",
@@ -300,10 +336,10 @@ const projectCourseTitles = [
   "PRINCE2 Agile Practitioner Certification Training",
   "PRINCE2 Agile Foundation and Practitioner Certification Training",
   "Program Management Professional (PgMP) Certification Training",
-  "Project Management Fundamental Training",
+  "Project Management Fundamentals Training",
   "Portfolio Management Professional (PfMP) Certification Training",
   "Disciplined Agile Foundations (DAF) Training",
-  "PMI-CPMAI Certification Training",
+  "PMI-CPM Certification Training",
 ];
 
 const businessCourseTitles = [
@@ -474,7 +510,7 @@ export const categoryData: Record<string, CategoryData> = {
         badge: "Trending",
         image: "https://images.unsplash.com/photo-1531482615713-2afd69097998?w=400&h=300&fit=crop",
         nextDate: "Feb 24, 2026",
-        navigate: "/allCourses/agile/Certified-Scrum-Product-Owner-(CSPO)-Certification-Training",
+        navigate: "/course/cspo-certificaton-training",
       }
     ],
     details: [
