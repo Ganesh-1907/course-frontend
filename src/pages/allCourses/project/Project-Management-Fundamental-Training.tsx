@@ -17,7 +17,7 @@ import CourseCorporateOptUs from "@/components/courses/CourseCorporateOptUs";
 import CourseClients from "@/components/courses/CourseClients";
 import CourseTrainers from "@/components/courses/CourseTrainers";
 import CourseFAQs from "@/components/courses/faqs/CourseFAQs";
-import CourseWhySimpliaxis from "@/components/courses/CourseWhySimpliaxis";
+import CourseWhyViovn from "@/components/courses/CourseWhyViovn";
 
 import {
     Users,
@@ -46,7 +46,7 @@ const ProjectManagementFundamentalTraining = () => {
         { "text": "Earn 8 PDUs Upon Completion" },
         { "text": "Coaching From Project Management Experts" },
         { "text": "Hands-On Learning With Group Exercises" },
-        { "text": "Course Completion Certificate From Simpliaxis" },
+        { "text": "Course Completion Certificate From Viovn" },
         { "text": "Lifetime Access to Materials" },
         { "text": "Accessible on Mobile and Laptop" },
         { "text": "Guide for CAPM, PMP Exam Outline" },
@@ -284,8 +284,8 @@ const ProjectManagementFundamentalTraining = () => {
                     "answer": "You can study the principles and best practices of project management through real-world, hands-on tasks. You can make sure that you are providing business value by assessing the project's business case, identifying stakeholders and their connections to your project, capturing product requirements, and establishing quality metrics to guide the development of your product and reevaluate the business case. To give the team a clear understanding of the project's scope and to determine the product scope for project delivery, create a work breakdown structure."
                 },
                 {
-                    "question": "Why should I choose Simpliaxis for Project Management Fundamentals Training?",
-                    "answer": "You should choose Simpliaxis because they offer a complete 8-hour live course led by experienced instructors. You'll learn the basics of project management, participate in hands-on group activities, and earn 8 PDUs (Professional Development Units) when you finish. You’ll also get a certificate of completion, lifetime access to course materials, and support whenever needed—all accessible on your phone or computer."
+                    "question": "Why should I choose Viovn for Project Management Fundamentals Training?",
+                    "answer": "You should choose Viovn because they offer a complete 8-hour live course led by experienced instructors. You'll learn the basics of project management, participate in hands-on group activities, and earn 8 PDUs (Professional Development Units) when you finish. You’ll also get a certificate of completion, lifetime access to course materials, and support whenever needed—all accessible on your phone or computer."
                 },
                 {
                     "question": "What job opportunities will be available after I complete the Project Management Fundamentals Training?",
@@ -325,15 +325,15 @@ const ProjectManagementFundamentalTraining = () => {
         { name: 'Siemens', logo: 'https://upload.wikimedia.org/wikipedia/commons/5/5f/Siemens-logo.svg' }
     ];
 
-    const courseWhySimpliaxis = [
+    const courseWhyViovn = [
         { "title": "Global Recognition", "description": "Every Course is recognized by the most reputable certification organizations globally that ensure credibility and acceptance in all industries." },
         { "title": "Expert Trainer", "description": "Gain knowledge from trained and experienced trainers who impart real-world business insights as well as practical experience to the classes." },
         { "title": "Flexible Learning", "description": "Provides a variety of methods of learning, such as classes, online, and corporate Training, that meet the needs of different individuals and their schedules." },
         { "title": "Lifetime Access", "description": "Enjoy all-year access to the recordings of sessions, course materials, and study tools." },
         { "title": "Proven Track Record", "description": "A reputable training provider with impressive experience in helping professional and business organizations improve their abilities and meet their career ambitions." },
-        { "title": "End-to-End Assistance", "description": "Simpliaxis Offers ongoing assistance prior to, during, and after Training and includes study material exams, guidance for participants on certification, and career choices." },
+        { "title": "End-to-End Assistance", "description": "Viovn Offers ongoing assistance prior to, during, and after Training and includes study material exams, guidance for participants on certification, and career choices." },
         { "title": "Interactive and engaging Training", "description": "Our Training sessions are designed to be extremely interactive, featuring real-world scenarios with group participation, questions & answers to aid in understanding." },
-        { "title": "A wide range of courses", "description": "Simpliaxis offers various internationally acknowledged certification courses in Agile, Scrum, SAFe, DevOps, Project Management, and more." }
+        { "title": "A wide range of courses", "description": "Viovn offers various internationally acknowledged certification courses in Agile, Scrum, SAFe, DevOps, Project Management, and more." }
     ];
 
     const sidePanelSchedules = [
@@ -372,7 +372,7 @@ const ProjectManagementFundamentalTraining = () => {
         "description": [
             "Project Management Fundamental Training provides participants with a solid foundation in essential project management skills. This course covers core concepts, from planning to execution, helping learners manage projects efficiently and meet business objectives.",
             "The Project Management Fundamental Course includes topics like stakeholder management, risk analysis, and project scope definition. Ideal for aspiring project managers, team leaders, and coordinators, it enhances your career prospects by providing practical skills that are in high demand.",
-            "Simpliaxis' Project Management Fundamental Course helps participants grasp key project management principles through interactive, real-world scenarios. With expert-led instruction, flexible learning options, and a focus on industry best practices, Simpliaxis ensures learners are prepared to manage projects effectively and avoid common pitfalls."
+            "Viovn' Project Management Fundamental Course helps participants grasp key project management principles through interactive, real-world scenarios. With expert-led instruction, flexible learning options, and a focus on industry best practices, Viovn ensures learners are prepared to manage projects effectively and avoid common pitfalls."
         ],
         "whatIsTitle": "Why Begin With Fundamentals?",
         "whatIsDescription": [
@@ -397,10 +397,10 @@ const ProjectManagementFundamentalTraining = () => {
     };
 
     const corporateData = {
-        "courseName": "Why Corporates Choose Simpliaxis",
+        "courseName": "Why Corporates Choose Viovn",
         "label": "Enterprise Training",
         "buttonText": "Corporate Group Enquiry",
-        "description": "With learning targeted to your unique team environment, SimpliAxis helps resolve specific organizational issues with tailored training methods. We offer corporate training globally to keep organizations up to date by building the knowledge gap required and make them strive in the competitive world with the right skills according to industry needs. Trusted by MNCs, Startups, and organizations."
+        "description": "With learning targeted to your unique team environment, Viovn helps resolve specific organizational issues with tailored training methods. We offer corporate training globally to keep organizations up to date by building the knowledge gap required and make them strive in the competitive world with the right skills according to industry needs. Trusted by MNCs, Startups, and organizations."
     };
 
     const tabs = [
@@ -505,7 +505,7 @@ const ProjectManagementFundamentalTraining = () => {
                     referEarnText="Refer & Earn"
                     enrolledSuffix="Trained"
                     moneyBackText="100% Satisfaction Guarantee"
-                    ltpLabel="Simpliaxis Training"
+                    ltpLabel="Viovn Training"
                     downloadBtnText="Download Syllabus"
                     viewSchedulesBtnText="View Batches"
                     freeAssessmentBtnText="Enroll Now"
@@ -525,7 +525,7 @@ const ProjectManagementFundamentalTraining = () => {
                                 buttonText={corporateData.buttonText}
                             />
                             <CourseClients clients={courseClients} />
-                            <CourseWhySimpliaxis features={courseWhySimpliaxis} />
+                            <CourseWhyViovn features={courseWhyViovn} />
                         </div>
                         <div className="relative w-full lg:w-[340px] xl:w-[360px] lg:justify-self-end">
                             <div className="sticky top-24">

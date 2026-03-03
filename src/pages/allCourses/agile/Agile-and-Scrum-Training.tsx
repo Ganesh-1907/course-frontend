@@ -17,7 +17,7 @@ import CourseCorporateOptUs from "@/components/courses/CourseCorporateOptUs";
 import CourseClients from "@/components/courses/CourseClients";
 import CourseTrainers from "@/components/courses/CourseTrainers";
 import CourseFAQs from "@/components/courses/faqs/CourseFAQs";
-import CourseWhySimpliaxis from "@/components/courses/CourseWhySimpliaxis";
+import CourseWhyViovn from "@/components/courses/CourseWhyViovn";
 
 import { 
   Users, 
@@ -46,7 +46,7 @@ const AgileAndScrumTraining = () => {
     { "text": "Delivered by Certified Scrum Trainers (CSTs)" },
     { "text": "Comprehensive Coverage of Agile and Scrum Fundamentals" },
     { "text": "Hands-On Practical Exercises and Case Studies" },
-    { "text": "Course Completion Certificate from Simpliaxis" },
+    { "text": "Course Completion Certificate from Viovn" },
     { "text": "24/7 Post-Training Support" },
     { "text": "Dedicated Doubt-Clearing Sessions" }
   ];
@@ -506,7 +506,7 @@ const AgileAndScrumTraining = () => {
     },
   ];
 
-  const courseWhySimpliaxis = [
+  const courseWhyViovn = [
     {
       "title": "Global Recognition",
       "description": "Courses accredited by globally recognized certification bodies."
@@ -564,7 +564,7 @@ const AgileAndScrumTraining = () => {
 
   const heroData = {
     "courseName": "Agile and Scrum Training",
-    "breadcrumbName": "Agile and Scrum Foundational Training by Simpliaxis",
+    "breadcrumbName": "Agile and Scrum Foundational Training by Viovn",
     "rating": "5.0",
     "enrolledCount": "",
     "subtitle": "Build a strong foundation in Agile principles and the Scrum framework in just one day.",
@@ -574,7 +574,7 @@ const AgileAndScrumTraining = () => {
       "Engage in interactive and practical learning for deeper conceptual clarity.",
       "Begin your journey toward globally recognized certifications such as CSM and PSM."
     ],
-    "mainImage": "https://www.simpliaxis.com/../frontend_assets/image/ring_loader.gif",
+    "mainImage": "https://www.viovn.com/../frontend_assets/image/ring_loader.gif",
     "badgeImage": "/csm-badge.png"
   };
 
@@ -582,7 +582,7 @@ const AgileAndScrumTraining = () => {
     "title": "Course Overview",
     "subtitle": "Comprehensive Introduction to Agile and Scrum",
     "description": [
-      "The Agile and Scrum Training by Simpliaxis validates your understanding of Agile principles and Scrum practices. This foundational program prepares professionals to pursue globally recognized certifications such as CSM, CSPO, PSM, and SAFe Scrum Master.",
+      "The Agile and Scrum Training by Viovn validates your understanding of Agile principles and Scrum practices. This foundational program prepares professionals to pursue globally recognized certifications such as CSM, CSPO, PSM, and SAFe Scrum Master.",
       "Delivered by certified Scrum trainers, this course bridges traditional project management approaches with Agile methodologies. It is ideal for aspiring Scrum Masters, Product Owners, Project Managers, and Agile team members.",
       "Participants gain hands-on exposure through real-world exercises, enabling them to effectively implement Scrum within their organizations and improve project success rates."
     ],
@@ -600,7 +600,7 @@ const AgileAndScrumTraining = () => {
     "courseName": "Why Corporates Choose Us",
     "label": "",
     "buttonText": "Corporate Group Enquiry",
-    "description": "Simpliaxis delivers customized corporate training programs designed to address specific organizational challenges. Our expert trainers provide industry-aligned modules that enhance workforce capabilities and help enterprises remain competitive."
+    "description": "Viovn delivers customized corporate training programs designed to address specific organizational challenges. Our expert trainers provide industry-aligned modules that enhance workforce capabilities and help enterprises remain competitive."
   };
 
   const courseMetadata = {
@@ -836,7 +836,7 @@ const AgileAndScrumTraining = () => {
 
               <CourseClients clients={courseClients} />
               <CourseTrainers trainers={courseTrainers} />
-              <CourseWhySimpliaxis features={courseWhySimpliaxis} />
+              <CourseWhyViovn features={courseWhyViovn} />
             </div>
 
             {/* Right Side Panel */}

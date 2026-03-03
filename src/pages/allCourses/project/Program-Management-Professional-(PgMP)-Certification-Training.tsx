@@ -17,7 +17,7 @@ import CourseCorporateOptUs from "@/components/courses/CourseCorporateOptUs";
 import CourseClients from "@/components/courses/CourseClients";
 import CourseTrainers from "@/components/courses/CourseTrainers";
 import CourseFAQs from "@/components/courses/faqs/CourseFAQs";
-import CourseWhySimpliaxis from "@/components/courses/CourseWhySimpliaxis";
+import CourseWhyViovn from "@/components/courses/CourseWhyViovn";
 
 import {
     Users,
@@ -155,7 +155,7 @@ const ProgramManagementProfessionalPgMPCertificationTraining = () => {
         },
         {
             "title": "Enroll in Training",
-            "description": "Join a PgMP certification course offered by a PMI-authorized provider like Simpliaxis to learn structured guidance and exam-focused preparation."
+            "description": "Join a PgMP certification course offered by a PMI-authorized provider like Viovn to learn structured guidance and exam-focused preparation."
         },
         {
             "title": "Prepare for the Exam",
@@ -336,15 +336,15 @@ const ProgramManagementProfessionalPgMPCertificationTraining = () => {
         }
     ];
 
-    const courseWhySimpliaxis = [
-        { "title": "Globally Recognized Training Provider", "description": "Simpliaxis is a trusted PMI Authorized Training Partner adhering to all global PgMP training standards and best practices." },
+    const courseWhyViovn = [
+        { "title": "Globally Recognized Training Provider", "description": "Viovn is a trusted PMI Authorized Training Partner adhering to all global PgMP training standards and best practices." },
         { "title": "Expert Instructors", "description": "We offer courses delivered by certified PgMP professionals with extensive real-world experience in program management across various industries." },
         { "title": "Comprehensive Curriculum", "description": "Our training covers all PgMP domains: program strategy alignment, governance, lifecycle, benefits management, and stakeholder engagement." },
         { "title": "Scenario-Based Learning", "description": "We integrate real-world case studies and scenarios to help participants apply concepts to practical program management challenges." },
-        { "title": "Exam-Focused Preparation", "description": "Simpliaxis provides practice questions, exam simulations, and tailored tips to help candidates pass the PgMP exam on their first attempt." },
+        { "title": "Exam-Focused Preparation", "description": "Viovn provides practice questions, exam simulations, and tailored tips to help candidates pass the PgMP exam on their first attempt." },
         { "title": "Flexible Learning Options", "description": "We offer online, classroom, and corporate training formats to suit diverse professional schedules and commitments." },
         { "title": "Interactive Learning Experience", "description": "Our engaging workshops, discussions, and group activities ensure active participation and in-depth understanding of PgMP concepts." },
-        { "title": "Post-Training Support", "description": "Simpliaxis provides uninterrupted support including study resources, revision sessions, and updated learning materials after the PgMP course." }
+        { "title": "Post-Training Support", "description": "Viovn provides uninterrupted support including study resources, revision sessions, and updated learning materials after the PgMP course." }
     ];
 
     const sidePanelSchedules = [
@@ -389,7 +389,7 @@ const ProgramManagementProfessionalPgMPCertificationTraining = () => {
         "title": "Course Overview",
         "subtitle": "Overview of the PgMP® Certification Course",
         "description": [
-            "The PgMP® certification training program by Simpliaxis is tailored for senior professionals who manage multiple related projects and want a transition into strategic leadership roles. This course highlights the importance of aligning programs with organizational objectives, driving efficiency, and ensuring measurable benefits.",
+            "The PgMP® certification training program by Viovn is tailored for senior professionals who manage multiple related projects and want a transition into strategic leadership roles. This course highlights the importance of aligning programs with organizational objectives, driving efficiency, and ensuring measurable benefits.",
             "Our PgMP training is globally recognized and validates your understanding of program management, strengthening career opportunities for managing complex, high-impact initiatives across industries.",
             "Led by PMI-authorized trainers with real-world experience, the program delivers an immersive learning experience that prepares you for both the exam and practical application."
         ],
@@ -419,10 +419,10 @@ const ProgramManagementProfessionalPgMPCertificationTraining = () => {
     };
 
     const corporateData = {
-        "courseName": "Why Corporates Choose Simpliaxis for PgMP Training",
+        "courseName": "Why Corporates Choose Viovn for PgMP Training",
         "label": "Enterprise Training",
         "buttonText": "Corporate Group Enquiry",
-        "description": "With learning targeted to your unique team environment, Simpliaxis helps resolve specific organizational issues with tailored training methods. We offer corporate training globally to keep organizations up to date, building the knowledge gap required to thrive in the competitive world. Trusted by MNCs, Startups, and Organizations of all sectors worldwide."
+        "description": "With learning targeted to your unique team environment, Viovn helps resolve specific organizational issues with tailored training methods. We offer corporate training globally to keep organizations up to date, building the knowledge gap required to thrive in the competitive world. Trusted by MNCs, Startups, and Organizations of all sectors worldwide."
     };
 
     const tabs = [
@@ -584,7 +584,7 @@ const ProgramManagementProfessionalPgMPCertificationTraining = () => {
                             />
                             <CourseClients clients={courseClients} />
                             <CourseTrainers trainers={courseTrainers} />
-                            <CourseWhySimpliaxis features={courseWhySimpliaxis} />
+                            <CourseWhyViovn features={courseWhyViovn} />
                         </div>
                         <div className="relative w-full lg:w-[340px] xl:w-[360px] lg:justify-self-end">
                             <div className="sticky top-24">

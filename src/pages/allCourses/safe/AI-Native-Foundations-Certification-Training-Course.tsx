@@ -17,7 +17,7 @@ import CourseCorporateOptUs from "@/components/courses/CourseCorporateOptUs";
 import CourseClients from "@/components/courses/CourseClients";
 import CourseTrainers from "@/components/courses/CourseTrainers";
 import CourseFAQs from "@/components/courses/faqs/CourseFAQs";
-import CourseWhySimpliaxis from "@/components/courses/CourseWhySimpliaxis";
+import CourseWhyViovn from "@/components/courses/CourseWhyViovn";
 
 import { 
   Users, 
@@ -420,7 +420,7 @@ const AiNativeFoundationsCertificationTrainingCourse = () => {
     },
   ];
 
-  const courseWhySimpliaxis = [
+  const courseWhyViovn = [
     { "title": "Expert-Led Training", "description": "Delivered by certified AI specialists with enterprise experience." },
     { "title": "Globally Aligned Curriculum", "description": "Aligned with global AI competency frameworks." },
     { "title": "Hands-On Learning", "description": "Interactive labs and real-world case discussions." },
@@ -455,7 +455,7 @@ const AiNativeFoundationsCertificationTrainingCourse = () => {
 
   const heroData = {
     "courseName": "AI-Native Foundations Certification Training Course",
-    "breadcrumbName": "AI-Native Foundations Certification Training | Simpliaxis",
+    "breadcrumbName": "AI-Native Foundations Certification Training | Viovn",
     "rating": "5.0",
     "enrolledCount": "",
     "subtitle": "Build AI Literacy and Drive Responsible AI Adoption in Business.",
@@ -465,7 +465,7 @@ const AiNativeFoundationsCertificationTrainingCourse = () => {
       "Industry-Recognized Certification",
       "Hands-On Case Studies"
     ],
-    "mainImage": "https://www.simpliaxis.com/../frontend_assets/image/ring_loader.gif",
+    "mainImage": "https://www.viovn.com/../frontend_assets/image/ring_loader.gif",
     "badgeImage": "/csm-badge.png"
   };
 
@@ -504,7 +504,7 @@ const AiNativeFoundationsCertificationTrainingCourse = () => {
   };
 
   const corporateData = {
-    "courseName": "Why Simpliaxis for Corporates?",
+    "courseName": "Why Viovn for Corporates?",
     "label": "",
     "buttonText": "Corporate Group Enquiry",
     "description": "Enterprise-focused AI transformation training designed for scalable and responsible adoption."
@@ -514,7 +514,7 @@ const AiNativeFoundationsCertificationTrainingCourse = () => {
     shortName: 'AI Foundations',
     shortNameAlt: 'AI-Native Foundations',
     fullName: 'AI-Native Foundations Certification Training Course',
-    fullNameAlt: 'AI-Native Foundations Certification Training | Simpliaxis',
+    fullNameAlt: 'AI-Native Foundations Certification Training | Viovn',
     certificateName: 'AI-Native Foundations',
   };
 
@@ -535,7 +535,7 @@ const AiNativeFoundationsCertificationTrainingCourse = () => {
       titlePrefix: 'Earn Your',
       titleHighlight: 'Global',
       titleSuffix: 'Recognition',
-      issuerName: 'Simpliaxis',
+      issuerName: 'Viovn',
       certificateType: 'AI-Native Foundations Certification',
       certifyText: 'This is to certify that',
       requirementText:
@@ -778,7 +778,7 @@ const AiNativeFoundationsCertificationTrainingCourse = () => {
 
               <CourseClients clients={courseClients} />
               <CourseTrainers trainers={courseTrainers} />
-              <CourseWhySimpliaxis features={courseWhySimpliaxis} />
+              <CourseWhyViovn features={courseWhyViovn} />
             </div>
 
             {/* Right Side Panel */}

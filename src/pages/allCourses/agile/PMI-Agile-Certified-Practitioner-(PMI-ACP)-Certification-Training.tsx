@@ -17,7 +17,7 @@ import CourseCorporateOptUs from "@/components/courses/CourseCorporateOptUs";
 import CourseClients from "@/components/courses/CourseClients";
 import CourseTrainers from "@/components/courses/CourseTrainers";
 import CourseFAQs from "@/components/courses/faqs/CourseFAQs";
-import CourseWhySimpliaxis from "@/components/courses/CourseWhySimpliaxis";
+import CourseWhyViovn from "@/components/courses/CourseWhyViovn";
 
 import { 
   Users, 
@@ -530,7 +530,7 @@ const PMIAgileCertifiedPractitionerPMIACP = () => {
     },
   ];
 
-  const courseWhySimpliaxis = [
+  const courseWhyViovn = [
     {
       "title": "Global Recognition",
       "description": "PMI-ACP certification is globally recognized and valued across industries."
@@ -599,7 +599,7 @@ const PMIAgileCertifiedPractitionerPMIACP = () => {
       "Gain hands-on experience through real-world simulations and case studies.",
       "Comprehensive exam preparation aligned with PMI-ACP standards."
     ],
-    "mainImage": "https://www.simpliaxis.com/../frontend_assets/image/ring_loader.gif",
+    "mainImage": "https://www.viovn.com/../frontend_assets/image/ring_loader.gif",
     "badgeImage": "/csm-badge.png"
   };
 
@@ -644,7 +644,7 @@ const PMIAgileCertifiedPractitionerPMIACP = () => {
     "courseName": "Why Corporates Choose Us for PMI-ACP Training",
     "label": "",
     "buttonText": "Corporate Group Enquiry",
-    "description": "Simpliaxis delivers customized PMI-ACP corporate training programs tailored to organizational needs. Our expert trainers provide structured Agile learning solutions that improve workforce capabilities, enhance project efficiency, and strengthen competitive advantage."
+    "description": "Viovn delivers customized PMI-ACP corporate training programs tailored to organizational needs. Our expert trainers provide structured Agile learning solutions that improve workforce capabilities, enhance project efficiency, and strengthen competitive advantage."
   };
 
   const courseMetadata = {
@@ -880,7 +880,7 @@ const PMIAgileCertifiedPractitionerPMIACP = () => {
 
               <CourseClients clients={courseClients} />
               <CourseTrainers trainers={courseTrainers} />
-              <CourseWhySimpliaxis features={courseWhySimpliaxis} />
+              <CourseWhyViovn features={courseWhyViovn} />
             </div>
 
             {/* Right Side Panel */}

@@ -18,7 +18,7 @@ import CourseCorporateOptUs from "@/components/courses/CourseCorporateOptUs";
 import CourseClients from "@/components/courses/CourseClients";
 import CourseTrainers from "@/components/courses/CourseTrainers";
 import CourseFAQs from "@/components/courses/faqs/CourseFAQs";
-import CourseWhySimpliaxis from "@/components/courses/CourseWhySimpliaxis";
+import CourseWhyViovn from "@/components/courses/CourseWhyViovn";
 
 import { 
   Users, 
@@ -126,7 +126,7 @@ const SAFEDevOpsCertificationTraining = () => {
   const certificationSteps = [
     {
       "title": "Enroll in Training",
-      "description": "Register for Simpliaxis SAFe® DevOps training delivered by certified instructors."
+      "description": "Register for Viovn SAFe® DevOps training delivered by certified instructors."
     },
     {
       "title": "Gain Practical Knowledge",
@@ -387,7 +387,7 @@ const SAFEDevOpsCertificationTraining = () => {
     },
   ];
 
-  const courseWhySimpliaxis = [
+  const courseWhyViovn = [
     {
       "title": "Global Recognition",
       "description": "Recognized by leading certification authorities worldwide."
@@ -456,7 +456,7 @@ const SAFEDevOpsCertificationTraining = () => {
       "16 PDUs & SEUs",
       "Official SAFe® Courseware"
     ],
-    "mainImage": "https://www.simpliaxis.com/../frontend_assets/image/ring_loader.gif",
+    "mainImage": "https://www.viovn.com/../frontend_assets/image/ring_loader.gif",
     "badgeImage": "/csm-badge.png"
   };
 
@@ -740,7 +740,7 @@ const SAFEDevOpsCertificationTraining = () => {
 
               <CourseClients clients={courseClients} />
               <CourseTrainers trainers={courseTrainers} />
-              <CourseWhySimpliaxis features={courseWhySimpliaxis} />
+              <CourseWhyViovn features={courseWhyViovn} />
             </div>
 
             {/* Right Side Panel */}

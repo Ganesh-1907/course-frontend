@@ -17,7 +17,7 @@ import CourseCorporateOptUs from "@/components/courses/CourseCorporateOptUs";
 import CourseClients from "@/components/courses/CourseClients";
 import CourseTrainers from "@/components/courses/CourseTrainers";
 import CourseFAQs from "@/components/courses/faqs/CourseFAQs";
-import CourseWhySimpliaxis from "@/components/courses/CourseWhySimpliaxis";
+import CourseWhyViovn from "@/components/courses/CourseWhyViovn";
 
 import {
   Users,
@@ -127,7 +127,7 @@ const CertifiedAgileLeaderCertificationTraining = () => {
   const certificationSteps = [
     {
       title: "Register for Training",
-      description: "Enroll in the CAL-1 training program through Simpliaxis."
+      description: "Enroll in the CAL-1 training program through Viovn."
     },
     {
       title: "Attend 2-Day Live Session",
@@ -397,7 +397,7 @@ const CertifiedAgileLeaderCertificationTraining = () => {
     },
   ];
 
-  const courseWhySimpliaxis = [
+  const courseWhyViovn = [
     { "title": "Global Recognition", "description": "Recognized worldwide by Scrum Alliance." },
     { "title": "Expert Trainers", "description": "Delivered by experienced Certified Scrum Trainers (CSTs)." },
     { "title": "Flexible Learning", "description": "Live virtual and corporate training formats available." },
@@ -442,7 +442,7 @@ const CertifiedAgileLeaderCertificationTraining = () => {
       "2-Year Scrum Alliance Membership",
       "Hands-on Case Studies"
     ],
-    mainImage: "https://www.simpliaxis.com/../frontend_assets/image/ring_loader.gif",
+    mainImage: "https://www.viovn.com/../frontend_assets/image/ring_loader.gif",
     badgeImage: "/csm-badge.png"
   };
 
@@ -701,7 +701,7 @@ const CertifiedAgileLeaderCertificationTraining = () => {
 
               <CourseClients clients={courseClients} />
               <CourseTrainers trainers={courseTrainers} />
-              <CourseWhySimpliaxis features={courseWhySimpliaxis} />
+              <CourseWhyViovn features={courseWhyViovn} />
             </div>
 
             {/* Right Side Panel */}

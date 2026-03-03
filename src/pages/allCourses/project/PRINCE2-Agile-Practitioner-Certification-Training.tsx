@@ -17,7 +17,7 @@ import CourseCorporateOptUs from "@/components/courses/CourseCorporateOptUs";
 import CourseClients from "@/components/courses/CourseClients";
 import CourseTrainers from "@/components/courses/CourseTrainers";
 import CourseFAQs from "@/components/courses/faqs/CourseFAQs";
-import CourseWhySimpliaxis from "@/components/courses/CourseWhySimpliaxis";
+import CourseWhyViovn from "@/components/courses/CourseWhyViovn";
 
 import {
     Users,
@@ -202,7 +202,7 @@ const PRINCE2AgilePractitionerCertificationTraining = () => {
         },
         {
             "title": "Attend Training",
-            "description": "Enroll in an accredited PRINCE2 Practitioner training course from a PeopleCert Authorized Training Organization such as Simpliaxis."
+            "description": "Enroll in an accredited PRINCE2 Practitioner training course from a PeopleCert Authorized Training Organization such as Viovn."
         },
         {
             "title": "Study and Prepare",
@@ -370,10 +370,10 @@ const PRINCE2AgilePractitionerCertificationTraining = () => {
         }
     ];
 
-    const courseWhySimpliaxis = [
+    const courseWhyViovn = [
         {
             "title": "Authorized Training Partner",
-            "description": "Simpliaxis is an authorized training organization, ensuring you receive the most official and updated curriculum."
+            "description": "Viovn is an authorized training organization, ensuring you receive the most official and updated curriculum."
         },
         {
             "title": "High Success Rate",
@@ -433,7 +433,7 @@ const PRINCE2AgilePractitionerCertificationTraining = () => {
         "description": [
             "PRINCE2 Agile® Practitioner is the perfect solution for those who want to combine the governance of PRINCE2 with the flexibility and responsiveness of agile. This course focuses on the practical application and tailoring of the methodology to specific project scenarios.",
             "The training is designed for professionals who already have a basic understanding of PRINCE2 and want to prove they can implement agile concepts successfully in a structured environment.",
-            "Join Simpliaxis for an intensive 2-day session led by industry experts who bring real-world experience to help you bridge the gap between theory and practice."
+            "Join Viovn for an intensive 2-day session led by industry experts who bring real-world experience to help you bridge the gap between theory and practice."
         ],
         "whatIsTitle": "Why Agile Practitioner?",
         "whatIsDescription": [
@@ -643,7 +643,7 @@ const PRINCE2AgilePractitionerCertificationTraining = () => {
 
                             <CourseClients clients={courseClients} />
                             <CourseTrainers trainers={courseTrainers} />
-                            <CourseWhySimpliaxis features={courseWhySimpliaxis} />
+                            <CourseWhyViovn features={courseWhyViovn} />
                         </div>
 
                         <div className="relative w-full lg:w-[340px] xl:w-[360px] lg:justify-self-end">

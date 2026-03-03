@@ -17,7 +17,7 @@ import CourseCorporateOptUs from "@/components/courses/CourseCorporateOptUs";
 import CourseClients from "@/components/courses/CourseClients";
 import CourseTrainers from "@/components/courses/CourseTrainers";
 import CourseFAQs from "@/components/courses/faqs/CourseFAQs";
-import CourseWhySimpliaxis from "@/components/courses/CourseWhySimpliaxis";
+import CourseWhyViovn from "@/components/courses/CourseWhyViovn";
 
 import { 
   Users, 
@@ -394,7 +394,7 @@ const AdvancedSAFePracticeConsultantASPCCertificationPath = () => {
     },
   ];
 
-  const courseWhySimpliaxis = [
+  const courseWhyViovn = [
     {
       "title": "Authorized Platinum SPCT Partner",
       "description": "Official training aligned with Scaled Agile standards."
@@ -462,7 +462,7 @@ const AdvancedSAFePracticeConsultantASPCCertificationPath = () => {
       "AI-Driven Enterprise Insights",
       "One-Year SAFe® Community Access"
     ],
-    "mainImage": "https://www.simpliaxis.com/../frontend_assets/image/ring_loader.gif",
+    "mainImage": "https://www.viovn.com/../frontend_assets/image/ring_loader.gif",
     "badgeImage": "/csm-badge.png"
   };
 
@@ -495,7 +495,7 @@ const AdvancedSAFePracticeConsultantASPCCertificationPath = () => {
   };
 
   const corporateData = {
-    "courseName": "Why Simpliaxis for Corporates?",
+    "courseName": "Why Viovn for Corporates?",
     "label": "",
     "buttonText": "Corporate Group Enquiry",
     "description": "Enterprise-focused ASPC training tailored to align leadership strategy, portfolio governance, and transformation execution."
@@ -756,7 +756,7 @@ const AdvancedSAFePracticeConsultantASPCCertificationPath = () => {
 
               <CourseClients clients={courseClients} />
               <CourseTrainers trainers={courseTrainers} />
-              <CourseWhySimpliaxis features={courseWhySimpliaxis} />
+              <CourseWhyViovn features={courseWhyViovn} />
             </div>
 
             {/* Right Side Panel */}

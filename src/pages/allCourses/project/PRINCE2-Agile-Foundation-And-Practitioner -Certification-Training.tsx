@@ -17,7 +17,7 @@ import CourseCorporateOptUs from "@/components/courses/CourseCorporateOptUs";
 import CourseClients from "@/components/courses/CourseClients";
 import CourseTrainers from "@/components/courses/CourseTrainers";
 import CourseFAQs from "@/components/courses/faqs/CourseFAQs";
-import CourseWhySimpliaxis from "@/components/courses/CourseWhySimpliaxis";
+import CourseWhyViovn from "@/components/courses/CourseWhyViovn";
 
 import {
     Users,
@@ -220,7 +220,7 @@ const PRINCE2AgileFoundationAndPractitionerCertificationTraining = () => {
         },
         {
             "title": "Attend the Training",
-            "description": "Enroll with an accredited training provider like Simpliaxis to learn PRINCE2 Agile concepts and practices."
+            "description": "Enroll with an accredited training provider like Viovn to learn PRINCE2 Agile concepts and practices."
         },
         {
             "title": "Prepare for the Exam",
@@ -413,10 +413,10 @@ const PRINCE2AgileFoundationAndPractitionerCertificationTraining = () => {
         }
     ];
 
-    const courseWhySimpliaxis = [
+    const courseWhyViovn = [
         {
             "title": "Authorized Training Provider",
-            "description": "Simpliaxis is an authorized training organization by PeopleCert, ensuring official and up-to-date curriculum."
+            "description": "Viovn is an authorized training organization by PeopleCert, ensuring official and up-to-date curriculum."
         },
         {
             "title": "Hands-on Methodology",
@@ -484,7 +484,7 @@ const PRINCE2AgileFoundationAndPractitionerCertificationTraining = () => {
         "description": [
             "PRINCE2 Agile® is the world's most complete project management solution, combining the flexibility and responsiveness of agile with the clearly defined framework of PRINCE2®. This combined training program is designed to take professionals from the fundamental concepts to practitioner-level application.",
             "The Foundation level focuses on understanding agile working practices and the PRINCE2 governance framework, while the Practitioner level teaches how to blend these two worlds effectively to manage complex projects with speed and reliability.",
-            "Simpliaxis provides an immersive learning experience led by authorized trainers, ensuring you are fully prepared to pass both certification exams and implement these practices in your organization."
+            "Viovn provides an immersive learning experience led by authorized trainers, ensuring you are fully prepared to pass both certification exams and implement these practices in your organization."
         ],
         "whatIsTitle": "Why Choose PRINCE2 Agile?",
         "whatIsDescription": [
@@ -694,7 +694,7 @@ const PRINCE2AgileFoundationAndPractitionerCertificationTraining = () => {
 
                             <CourseClients clients={courseClients} />
                             <CourseTrainers trainers={courseTrainers} />
-                            <CourseWhySimpliaxis features={courseWhySimpliaxis} />
+                            <CourseWhyViovn features={courseWhyViovn} />
                         </div>
 
                         <div className="relative w-full lg:w-[340px] xl:w-[360px] lg:justify-self-end">
