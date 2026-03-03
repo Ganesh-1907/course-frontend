@@ -64,18 +64,34 @@ import {
   ICAgileAIforCustomerInsightsMicroCredentialTraining,
   AdvancedCertifiedScrumDeveloperCertificationTraining,
   CertifiedAgileLeaderCertificationTraining,
-  
+
 } from './pages/allCourses/agile';
 
 // ----------------------------- Safe Courses -----------------------------
-import { 
-  LeadingSafeCertificationTraining, 
+import {
+  LeadingSafeCertificationTraining,
   AiEmpoweredSafeScrumMasterSSMCertificationTraining,
   ProductManagerPOPMCertificationTraining,
   SafePracticeConsultantSPCCertificationTraining,
   SafeLeanPortfolioManagementCertificationTraining,
-  SafeArchitectsCertificationTraining 
+  SafeArchitectsCertificationTraining
 } from './pages/allCourses/safe';
+
+// ----------------------------- Project Courses -----------------------------
+import {
+  ProjectManagementProfessionalCertificationTraining,
+  ProjectManagementTechniquesTraining,
+  PRINCE2FoundationAndPractitionerCertificationTraining,
+  PRINCE2FoundationCertificationTraining,
+  PRINCE2PractitionerCertificationTraining,
+  PRINCE2AgileFoundationAndPractitionerCertificationTraining,
+  PRINCE2AgilePractitionerCertificationTraining,
+  ProgramManagementProfessionalPgMPCertificationTraining,
+  ProjectManagementFundamentalTraining,
+  PortfolioManagementProfessionalPfMPCertificationTraining,
+  DisciplinedAgileFoundationsDAFTraining,
+  PMICPMAICertificationTraining
+} from './pages/allCourses/project';
 
 const queryClient = new QueryClient();
 
@@ -250,7 +266,7 @@ const App = () => (
             element={<CertifiedAgileLeaderCertificationTraining />}
           />
 
-  
+
           <Route
             path="/course/agile/applying-professional-scrum-certification-training"
             element={<ApplyingProfessionalScrumCertificationTraining />}
@@ -330,6 +346,60 @@ const App = () => (
           <Route
             path="/course/safe-architects-certification-training"
             element={<SafeArchitectsCertificationTraining />}
+          />
+
+          {/* ✨ PROJECT COURSES */}
+          <Route
+            path="/course/project/project-management-professional-pmp-certification-training"
+            element={<ProjectManagementProfessionalCertificationTraining />}
+          />
+          <Route
+            path="/course/project/project-management-techniques-training"
+            element={<ProjectManagementTechniquesTraining />}
+          />
+          <Route
+            path="/course/project/prince2-foundation-and-practitioner-certification-training"
+            element={<PRINCE2FoundationAndPractitionerCertificationTraining />}
+          />
+          <Route
+            path="/course/project/prince2-foundation-certification-training"
+            element={<PRINCE2FoundationCertificationTraining />}
+          />
+          <Route
+            path="/course/project/prince2-practitioner-certification-training"
+            element={<PRINCE2PractitionerCertificationTraining />}
+          />
+          <Route
+            path="/course/project/prince2-agile-foundation-and-practitioner-certification-training"
+            element={<PRINCE2AgileFoundationAndPractitionerCertificationTraining />}
+          />
+          <Route
+            path="/course/project/prince2-agile-practitioner-certification-training"
+            element={<PRINCE2AgilePractitionerCertificationTraining />}
+          />
+          <Route
+            path="/course/project/program-management-professional-pgmp-certification-training"
+            element={<ProgramManagementProfessionalPgMPCertificationTraining />}
+          />
+          <Route
+            path="/course/project/project-management-fundamental-training"
+            element={<ProjectManagementFundamentalTraining />}
+          />
+          <Route
+            path="/course/project/portfolio-management-professional-pfmp-certification-training"
+            element={<PortfolioManagementProfessionalPfMPCertificationTraining />}
+          />
+          <Route
+            path="/course/project/disciplined-agile-foundations-daf-training"
+            element={<DisciplinedAgileFoundationsDAFTraining />}
+          />
+          <Route
+            path="/course/project/pmi-cpmai-certification-training"
+            element={<PMICPMAICertificationTraining />}
+          />
+          <Route
+            path="/course/project/pmi-cpm-certification-training"
+            element={<PMICPMAICertificationTraining />}
           />
 
           <Route path="*" element={<NotFound />} />

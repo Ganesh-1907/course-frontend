@@ -1,0 +1,12 @@
+export { default as ProjectManagementProfessionalCertificationTraining } from './Project-Management -Professional-Certification-Training';
+export { default as ProjectManagementTechniquesTraining } from './Project -Management-Techniques-Training';
+export { default as PRINCE2FoundationAndPractitionerCertificationTraining } from './PRINCE2-Foundation-And-Practitioner-Certification-Training';
+export { default as PRINCE2FoundationCertificationTraining } from './PRINCE2-Foundation-Certification-Training';
+export { default as PRINCE2PractitionerCertificationTraining } from './PRINCE2-Practitioner-Certification-Training';
+export { default as PRINCE2AgileFoundationAndPractitionerCertificationTraining } from './PRINCE2-Agile-Foundation-And-Practitioner -Certification-Training';
+export { default as PRINCE2AgilePractitionerCertificationTraining } from './PRINCE2-Agile-Practitioner-Certification-Training';
+export { default as ProgramManagementProfessionalPgMPCertificationTraining } from './Program-Management-Professional-(PgMP)-Certification-Training';
+export { default as ProjectManagementFundamentalTraining } from './Project-Management-Fundamental-Training';
+export { default as PortfolioManagementProfessionalPfMPCertificationTraining } from './Portfolio-Management-Professional-(PfMP)-Certification-Training';
+export { default as DisciplinedAgileFoundationsDAFTraining } from './Disciplined-Agile-Foundations-(DAF)-Training';
+export { default as PMICPMAICertificationTraining } from './PMI-CPMAI-Certification-Training';

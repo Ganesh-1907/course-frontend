@@ -48,7 +48,7 @@ const buildCourses = (category: string, titles: string[]): Course[] =>
 
     // Manual overrides with more robust checking
     const processedTitle = title.trim();
-    
+
     // ---------------------------------- Agile -------------------------------------------
     if (processedTitle.includes("Certified Scrum Master (CSM) Certification Training")) {
       navigate = "/course/csm-certificaton-training";
@@ -102,11 +102,11 @@ const buildCourses = (category: string, titles: string[]): Course[] =>
       navigate = "/course/professional-scrum-master-advanced-psm-a-certification-training";
     } else if (processedTitle.includes("Certified Agile Leader - 1 (CAL-1) Certification Training")) {
       navigate = "/course/certified-agile-leader®-1-(cal 1™)-certification-training";
-      }else if (processedTitle.includes("ICAgile Certified Professional in Agile Coaching (ICP-ACC) Certification Training")) {
+    } else if (processedTitle.includes("ICAgile Certified Professional in Agile Coaching (ICP-ACC) Certification Training")) {
       navigate = "/course/icagile-certified-professional-in-agile-coaching-icp-acc-certification-training";
-      }else if (processedTitle.includes("Advanced Certified Scrum Developer (A-CSD) Certification Training")) { 
+    } else if (processedTitle.includes("Advanced Certified Scrum Developer (A-CSD) Certification Training")) {
       navigate = "/course/agile/advanced-certified-scrum-developer-a-csd-certification-training";
-    } 
+    }
     else if (processedTitle.includes("Professional Scrum with Kanban (PSK) Certification Training")) {
       navigate = "/course/professional-scrum-with-kanban-psk-certification-training";
     } else if (processedTitle.includes("Professional Scrum Product Owner (PSPO) Certification Training")) {
@@ -159,7 +159,32 @@ const buildCourses = (category: string, titles: string[]): Course[] =>
     } else if (processedTitle.includes("SAFe 6.0 Architect Certification Training")) {
       navigate = "/course/safe-architects-certification-training";
     }
-
+    //==================================Project============================================
+    if (processedTitle.includes("Project Management Professional (PMP) Certification Training")) {
+      navigate = "/course/project/project-management-professional-pmp-certification-training";
+    } else if (processedTitle.includes("Project Management Techniques Training")) {
+      navigate = "/course/project/project-management-techniques-training";
+    } else if (processedTitle.includes("PRINCE2 Foundation and Practitioner Certification Training")) {
+      navigate = "/course/project/prince2-foundation-and-practitioner-certification-training";
+    } else if (processedTitle.includes("PRINCE2 Foundation Certification Training")) {
+      navigate = "/course/project/prince2-foundation-certification-training";
+    } else if (processedTitle.includes("PRINCE2 Practitioner Certification Training")) {
+      navigate = "/course/project/prince2-practitioner-certification-training";
+    } else if (processedTitle.includes("PRINCE2 Agile Foundation and Practitioner Certification Training")) {
+      navigate = "/course/project/prince2-agile-foundation-and-practitioner-certification-training";
+    } else if (processedTitle.includes("PgMP")) {
+      navigate = "/course/project/program-management-professional-pgmp-certification-training";
+    } else if (processedTitle.includes("Project Management Fundamental") || processedTitle.includes("Project Management Fundamentals")) {
+      navigate = "/course/project/project-management-fundamental-training";
+    } else if (processedTitle.includes("PfMP")) {
+      navigate = "/course/project/portfolio-management-professional-pfmp-certification-training";
+    } else if (processedTitle.includes("Disciplined Agile Foundations")) {
+      navigate = "/course/project/disciplined-agile-foundations-daf-training";
+    } else if (processedTitle.includes("PMI-CPMAI")) {
+      navigate = "/course/project/pmi-cpmai-certification-training";
+    } else if (processedTitle.includes("PMI-CPM")) {
+      navigate = "/course/project/pmi-cpmai-certification-training";
+    }
     return {
       id: generatedCourseId++,
       title,
@@ -275,10 +300,10 @@ const projectCourseTitles = [
   "PRINCE2 Agile Practitioner Certification Training",
   "PRINCE2 Agile Foundation and Practitioner Certification Training",
   "Program Management Professional (PgMP) Certification Training",
-  "Project Management Fundamentals Training",
+  "Project Management Fundamental Training",
   "Portfolio Management Professional (PfMP) Certification Training",
   "Disciplined Agile Foundations (DAF) Training",
-  "PMI-CPM Certification Training",
+  "PMI-CPMAI Certification Training",
 ];
 
 const businessCourseTitles = [
@@ -500,7 +525,7 @@ export const categoryData: Record<string, CategoryData> = {
         discount: 50,
         badge: "Most Popular",
         image: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=400&h=300&fit=crop",
-        navigate: "/all-courses/project-management/pmp-certification-training"
+        navigate: "/course/project/project-management-professional-pmp-certification-training"
       }
     ],
     details: [],
