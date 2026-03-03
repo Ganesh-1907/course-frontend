@@ -17,7 +17,7 @@ import CourseCorporateOptUs from "@/components/courses/CourseCorporateOptUs";
 import CourseClients from "@/components/courses/CourseClients";
 import CourseTrainers from "@/components/courses/CourseTrainers";
 import CourseFAQs from "@/components/courses/faqs/CourseFAQs";
-import CourseWhySimpliaxis from "@/components/courses/CourseWhySimpliaxis";
+import CourseWhyViovn from "@/components/courses/CourseWhyViovn";
 
 import { 
   Users, 
@@ -45,7 +45,7 @@ const AdvancedScrumMasterCertificationPath = () => {
     { "text": "Training by Leading SPCs and SPCTs", icon: <Award className="w-5 h-5" /> },
     { "text": "Hands-On Training Experience", icon: <Briefcase className="w-5 h-5" /> },
     { "text": "Free Practice Tests with Unlimited Attempts", icon: <FileText className="w-5 h-5" /> },
-    { "text": "Delivered by Simpliaxis – A Platinum SPCT Partner", icon: <Globe className="w-5 h-5" /> }
+    { "text": "Delivered by Viovn – A Platinum SPCT Partner", icon: <Globe className="w-5 h-5" /> }
   ];
 
   const individualBenefits = [
@@ -401,7 +401,7 @@ const AdvancedScrumMasterCertificationPath = () => {
     },
   ];
 
-  const courseWhySimpliaxis = [
+  const courseWhyViovn = [
     { "title": "Global Recognition", "description": "Globally recognized SAFe® certification program." },
     { "title": "Expert Trainers", "description": "Delivered by certified SPCs and SPCTs." },
     { "title": "Flexible Learning", "description": "Blended model with self-paced and instructor-led modules." },
@@ -446,7 +446,7 @@ const AdvancedScrumMasterCertificationPath = () => {
       "Free Practice Tests",
       "SAFe® Studio Access"
     ],
-    "mainImage": "https://www.simpliaxis.com/../frontend_assets/image/ring_loader.gif",
+    "mainImage": "https://www.viovn.com/../frontend_assets/image/ring_loader.gif",
     "badgeImage": "/csm-badge.png"
   };
 
@@ -469,7 +469,7 @@ const AdvancedScrumMasterCertificationPath = () => {
   };
 
   const corporateData = {
-    "courseName": "Why Simpliaxis Is the First Choice for Corporates",
+    "courseName": "Why Viovn Is the First Choice for Corporates",
     "label": "",
     "buttonText": "Corporate Group Enquiry",
     "description": "Enterprise-focused SAFe training delivered by Platinum SPCT Partner to drive Lean-Agile transformation."
@@ -743,7 +743,7 @@ const AdvancedScrumMasterCertificationPath = () => {
 
               <CourseClients clients={courseClients} />
               <CourseTrainers trainers={courseTrainers} />
-              <CourseWhySimpliaxis features={courseWhySimpliaxis} />
+              <CourseWhyViovn features={courseWhyViovn} />
             </div>
 
             {/* Right Side Panel */}

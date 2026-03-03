@@ -17,7 +17,7 @@ import CourseCorporateOptUs from "@/components/courses/CourseCorporateOptUs";
 import CourseClients from "@/components/courses/CourseClients";
 import CourseTrainers from "@/components/courses/CourseTrainers";
 import CourseFAQs from "@/components/courses/faqs/CourseFAQs";
-import CourseWhySimpliaxis from "@/components/courses/CourseWhySimpliaxis";
+import CourseWhyViovn from "@/components/courses/CourseWhyViovn";
 
 import { 
   Users, 
@@ -392,7 +392,7 @@ const ProfessionalScrumProductOwnerCertificationTraining = () => {
     },
   ];
 
-  const courseWhySimpliaxis = [
+  const courseWhyViovn = [
     {
       "title": "Global Recognition",
       "description": "PSPO-Advanced certification is globally recognized by Scrum.org."
@@ -461,7 +461,7 @@ const ProfessionalScrumProductOwnerCertificationTraining = () => {
       "Lifetime Valid Certification",
       "Expert Coaching by PSTs"
     ],
-    "mainImage": "https://www.simpliaxis.com/../frontend_assets/image/ring_loader.gif",
+    "mainImage": "https://www.viovn.com/../frontend_assets/image/ring_loader.gif",
     "badgeImage": "/csm-badge.png"
   };
 
@@ -501,7 +501,7 @@ const ProfessionalScrumProductOwnerCertificationTraining = () => {
   };
 
   const corporateData = {
-    "courseName": "Why Simpliaxis Is the First Choice for Corporates",
+    "courseName": "Why Viovn Is the First Choice for Corporates",
     "label": "",
     "buttonText": "Corporate Group Enquiry",
     "description": "We provide enterprise-focused Agile and Scrum training tailored to organizational needs, ensuring measurable improvements in product strategy, leadership, and value delivery."
@@ -765,7 +765,7 @@ const ProfessionalScrumProductOwnerCertificationTraining = () => {
 
               <CourseClients clients={courseClients} />
               <CourseTrainers trainers={courseTrainers} />
-              <CourseWhySimpliaxis features={courseWhySimpliaxis} />
+              <CourseWhyViovn features={courseWhyViovn} />
             </div>
 
             {/* Right Side Panel */}

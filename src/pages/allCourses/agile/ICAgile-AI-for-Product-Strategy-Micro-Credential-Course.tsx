@@ -18,7 +18,7 @@ import CourseCorporateOptUs from "@/components/courses/CourseCorporateOptUs";
 import CourseClients from "@/components/courses/CourseClients";
 import CourseTrainers from "@/components/courses/CourseTrainers";
 import CourseFAQs from "@/components/courses/faqs/CourseFAQs";
-import CourseWhySimpliaxis from "@/components/courses/CourseWhySimpliaxis";
+import CourseWhyViovn from "@/components/courses/CourseWhyViovn";
 
 import {
     Users,
@@ -119,7 +119,7 @@ const ICAgileAIforProductStrategyMicroCredentialCourse = () => {
     const certificationSteps = [
         {
             title: "Enroll for the Course",
-            description: "Register for the AI for Product Planning course through Simpliaxis.",
+            description: "Register for the AI for Product Planning course through Viovn.",
             color: "#3B82F6"
         },
         {
@@ -308,10 +308,10 @@ const ICAgileAIforProductStrategyMicroCredentialCourse = () => {
         },
     ];
 
-    const courseWhySimpliaxis = [
+    const courseWhyViovn = [
         {
             title: "ICAgile-Accredited Provider",
-            description: "Simpliaxis ensures that the course follows the highest global standards for AI leadership excellence."
+            description: "Viovn ensures that the course follows the highest global standards for AI leadership excellence."
         },
         {
             title: "Real-World AI Scenarios",
@@ -357,7 +357,7 @@ const ICAgileAIforProductStrategyMicroCredentialCourse = () => {
             "Implement ethical AI practices in product strategy",
             "Earn a Globally Recognized ICAgile Micro Credential"
         ],
-        mainImage: "https://www.simpliaxis.com/../frontend_assets/image/ring_loader.gif",
+        mainImage: "https://www.viovn.com/../frontend_assets/image/ring_loader.gif",
         badgeImage: "/csm-badge.png",
     };
 
@@ -390,7 +390,7 @@ const ICAgileAIforProductStrategyMicroCredentialCourse = () => {
         ],
         modesTitle: "Flexible Learning Options",
         modesDescription: [
-            "Simpliaxis provides interactive live virtual training sessions conducted by certified industry experts, suitable for individuals and corporate teams."
+            "Viovn provides interactive live virtual training sessions conducted by certified industry experts, suitable for individuals and corporate teams."
         ],
     };
 
@@ -632,7 +632,7 @@ const ICAgileAIforProductStrategyMicroCredentialCourse = () => {
 
                             <CourseClients clients={courseClients} />
                             <CourseTrainers trainers={courseTrainers} />
-                            <CourseWhySimpliaxis features={courseWhySimpliaxis} />
+                            <CourseWhyViovn features={courseWhyViovn} />
                         </div>
 
                         <div className="relative w-full lg:w-[340px] xl:w-[360px] lg:justify-self-end">

@@ -17,7 +17,7 @@ import CourseCorporateOptUs from "@/components/courses/CourseCorporateOptUs";
 import CourseClients from "@/components/courses/CourseClients";
 import CourseTrainers from "@/components/courses/CourseTrainers";
 import CourseFAQs from "@/components/courses/faqs/CourseFAQs";
-import CourseWhySimpliaxis from "@/components/courses/CourseWhySimpliaxis";
+import CourseWhyViovn from "@/components/courses/CourseWhyViovn";
 
 import {
     Users,
@@ -322,8 +322,8 @@ const PortfolioManagementProfessionalPfMPCertificationTraining = () => {
         { name: 'TCS', logo: 'https://upload.wikimedia.org/wikipedia/commons/b/b1/Tata_Consultancy_Services_Logo.svg' }
     ];
 
-    const courseWhySimpliaxis = [
-        { "title": "PMI Authorized Training Partner", "description": "Simpliaxis is an officially recognized PMI ATP, ensuring you receive the highest quality PfMP preparation." },
+    const courseWhyViovn = [
+        { "title": "PMI Authorized Training Partner", "description": "Viovn is an officially recognized PMI ATP, ensuring you receive the highest quality PfMP preparation." },
         { "title": "Expert PfMP Trainers", "description": "Learn from portfolio managers who have successfully implemented enterprise-level governance for Fortune 500 companies." },
         { "title": "Portfolio Roadmap Tools", "description": "Gain hands-on experience with tools and templates used to create portfolio scenarios and roadmaps." },
         { "title": "Application Assistance", "description": "The PfMP application process is rigorous; we provide end-to-end guidance for both your application and the panel review." },
@@ -373,7 +373,7 @@ const PortfolioManagementProfessionalPfMPCertificationTraining = () => {
         "description": [
             "The Portfolio Management Professional (PfMP)® certification is the most elite credential for professionals who manage a group of programs and projects to achieve strategic business objectives.",
             "Our 24-hour training program focuses on the five domains defined by PMI: Strategic Alignment, Governance, Portfolio Performance, Portfolio Risk Management, and Communications Management.",
-            "Simpliaxis provides a structured roadmap to help you navigate the panel review and pass the PfMP exam on your first attempt, positioning you as a strategic leader in your organization."
+            "Viovn provides a structured roadmap to help you navigate the panel review and pass the PfMP exam on your first attempt, positioning you as a strategic leader in your organization."
         ],
         "whatIsTitle": "Why Pursue PfMP?",
         "whatIsDescription": [
@@ -578,7 +578,7 @@ const PortfolioManagementProfessionalPfMPCertificationTraining = () => {
                             />
 
                             <CourseClients clients={courseClients} />
-                            <CourseWhySimpliaxis features={courseWhySimpliaxis} />
+                            <CourseWhyViovn features={courseWhyViovn} />
                         </div>
 
                         <div className="relative w-full lg:w-[340px] xl:w-[360px] lg:justify-self-end">

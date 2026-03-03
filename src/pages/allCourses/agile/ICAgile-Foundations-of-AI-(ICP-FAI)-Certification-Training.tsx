@@ -17,7 +17,7 @@ import CourseCorporateOptUs from "@/components/courses/CourseCorporateOptUs";
 import CourseClients from "@/components/courses/CourseClients";
 import CourseTrainers from "@/components/courses/CourseTrainers";
 import CourseFAQs from "@/components/courses/faqs/CourseFAQs";
-import CourseWhySimpliaxis from "@/components/courses/CourseWhySimpliaxis";
+import CourseWhyViovn from "@/components/courses/CourseWhyViovn";
 
 import {
   Users,
@@ -157,7 +157,7 @@ const ICAgileFoundationsOfAICertificationTraining = () => {
 
   const prerequisites = [
     'A basic understanding of Agile principles and the Scrum framework',
-    'Completion of a two-day (16-hour) CSM Certification training by Simpliaxis',
+    'Completion of a two-day (16-hour) CSM Certification training by Viovn',
   ];
 
   const certificationSteps = [
@@ -530,7 +530,7 @@ const ICAgileFoundationsOfAICertificationTraining = () => {
     },
   ];
 
-  const courseWhySimpliaxis = [
+  const courseWhyViovn = [
     {
       "title": "ICAgile‑Authorized Training Partner",
       "description": "Viovn is a certified ICAgile partner, guaranteeing that our educational content meets international benchmarks and satisfies all certification criteria."
@@ -600,7 +600,7 @@ const ICAgileFoundationsOfAICertificationTraining = () => {
       "Connect AI capabilities to real business value",
       "Earn a globally trusted ICAgile ICP-FAI credential"
     ],
-    "mainImage": "https://www.simpliaxis.com/../frontend_assets/image/ring_loader.gif",
+    "mainImage": "https://www.viovn.com/../frontend_assets/image/ring_loader.gif",
     "badgeImage": "/csm-badge.png"
   };
 
@@ -885,7 +885,7 @@ const ICAgileFoundationsOfAICertificationTraining = () => {
 
               <CourseClients clients={courseClients} />
               <CourseTrainers trainers={courseTrainers} />
-              <CourseWhySimpliaxis features={courseWhySimpliaxis} />
+              <CourseWhyViovn features={courseWhyViovn} />
             </div>
 
             {/* Right Side Panel */}

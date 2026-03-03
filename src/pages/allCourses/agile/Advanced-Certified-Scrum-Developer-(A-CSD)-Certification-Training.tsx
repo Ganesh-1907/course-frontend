@@ -17,7 +17,7 @@ import CourseCorporateOptUs from "@/components/courses/CourseCorporateOptUs";
 import CourseClients from "@/components/courses/CourseClients";
 import CourseTrainers from "@/components/courses/CourseTrainers";
 import CourseFAQs from "@/components/courses/faqs/CourseFAQs";
-import CourseWhySimpliaxis from "@/components/courses/CourseWhySimpliaxis";
+import CourseWhyViovn from "@/components/courses/CourseWhyViovn";
 
 import {
   Users,
@@ -397,7 +397,7 @@ const AdvancedCertifiedScrumDeveloperCertificationTraining = () => {
     },
   ];
 
-  const courseWhySimpliaxis = [
+  const courseWhyViovn = [
     { "title": "Global Recognition", "description": "Recognized worldwide by Scrum Alliance." },
     { "title": "Expert Trainers", "description": "Learn from experienced certified Scrum trainers." },
     { "title": "Flexible Learning", "description": "Live virtual and corporate training options available." },
@@ -442,7 +442,7 @@ const AdvancedCertifiedScrumDeveloperCertificationTraining = () => {
       "Hands-on Simulation-Based Learning",
       "Globally Recognized Scrum Alliance Credential"
     ],
-    mainImage: "https://www.simpliaxis.com/../frontend_assets/image/ring_loader.gif",
+    mainImage: "https://www.viovn.com/../frontend_assets/image/ring_loader.gif",
     badgeImage: "/csm-badge.png"
   };
 
@@ -701,7 +701,7 @@ const AdvancedCertifiedScrumDeveloperCertificationTraining = () => {
 
               <CourseClients clients={courseClients} />
               <CourseTrainers trainers={courseTrainers} />
-              <CourseWhySimpliaxis features={courseWhySimpliaxis} />
+              <CourseWhyViovn features={courseWhyViovn} />
             </div>
 
             {/* Right Side Panel */}

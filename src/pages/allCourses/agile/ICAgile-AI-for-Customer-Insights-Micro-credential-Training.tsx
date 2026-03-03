@@ -18,7 +18,7 @@ import CourseCorporateOptUs from "@/components/courses/CourseCorporateOptUs";
 import CourseClients from "@/components/courses/CourseClients";
 import CourseTrainers from "@/components/courses/CourseTrainers";
 import CourseFAQs from "@/components/courses/faqs/CourseFAQs";
-import CourseWhySimpliaxis from "@/components/courses/CourseWhySimpliaxis";
+import CourseWhyViovn from "@/components/courses/CourseWhyViovn";
 
 import {
     Users,
@@ -166,7 +166,7 @@ const ICAgileAIforCustomerInsightsMicroCredentialTraining = () => {
     const certificationSteps = [
         {
             title: "Join the Course",
-            description: "Enroll in an ICAgile-authorized AI for Customer Insights micro-credential training program offered by Simpliaxis.",
+            description: "Enroll in an ICAgile-authorized AI for Customer Insights micro-credential training program offered by Viovn.",
             color: "#3B82F6"
         },
         {
@@ -354,10 +354,10 @@ const ICAgileAIforCustomerInsightsMicroCredentialTraining = () => {
         { name: 'KPMG', url: 'https://upload.wikimedia.org/wikipedia/commons/d/dd/KPMG_logo.svg', logo: 'https://upload.wikimedia.org/wikipedia/commons/d/dd/KPMG_logo.svg' },
     ];
 
-    const courseWhySimpliaxis = [
+    const courseWhyViovn = [
         {
             title: "Authorized ICAgile Training Partner",
-            description: "Simpliaxis is an ICAgile-authorized provider and ensures the AI for Customer Insights course follows official learning outcomes."
+            description: "Viovn is an ICAgile-authorized provider and ensures the AI for Customer Insights course follows official learning outcomes."
         },
         {
             title: "Industry-Relevant Curriculum",
@@ -381,7 +381,7 @@ const ICAgileAIforCustomerInsightsMicroCredentialTraining = () => {
         },
         {
             title: "Collaborative Learning Options",
-            description: "Simpliaxis offers live virtual and enterprise training formats, allowing teams to upskill effectively."
+            description: "Viovn offers live virtual and enterprise training formats, allowing teams to upskill effectively."
         },
         {
             title: "Focus on Ethical AI",
@@ -423,7 +423,7 @@ const ICAgileAIforCustomerInsightsMicroCredentialTraining = () => {
             "Implement ethical AI in customer analytics",
             "Earn a Globally Recognized ICAgile Micro Credential"
         ],
-        mainImage: "https://www.simpliaxis.com/../frontend_assets/image/ring_loader.gif",
+        mainImage: "https://www.viovn.com/../frontend_assets/image/ring_loader.gif",
         badgeImage: "/csm-badge.png",
     };
 
@@ -456,7 +456,7 @@ const ICAgileAIforCustomerInsightsMicroCredentialTraining = () => {
         ],
         modesTitle: "Flexible Learning Options",
         modesDescription: [
-            "Simpliaxis provides interactive live virtual training sessions conducted by certified experts, suitable for individuals and corporate teams."
+            "Viovn provides interactive live virtual training sessions conducted by certified experts, suitable for individuals and corporate teams."
         ],
     };
 
@@ -699,7 +699,7 @@ const ICAgileAIforCustomerInsightsMicroCredentialTraining = () => {
 
                             <CourseClients clients={courseClients} />
                             <CourseTrainers trainers={courseTrainers} />
-                            <CourseWhySimpliaxis features={courseWhySimpliaxis} />
+                            <CourseWhyViovn features={courseWhyViovn} />
                         </div>
 
                         {/* Right Side Panel */}

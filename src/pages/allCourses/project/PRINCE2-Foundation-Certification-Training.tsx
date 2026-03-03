@@ -17,7 +17,7 @@ import CourseCorporateOptUs from "@/components/courses/CourseCorporateOptUs";
 import CourseClients from "@/components/courses/CourseClients";
 import CourseTrainers from "@/components/courses/CourseTrainers";
 import CourseFAQs from "@/components/courses/faqs/CourseFAQs";
-import CourseWhySimpliaxis from "@/components/courses/CourseWhySimpliaxis";
+import CourseWhyViovn from "@/components/courses/CourseWhyViovn";
 
 import {
     Users,
@@ -194,7 +194,7 @@ const PRINCE2FoundationCertificationTraining = () => {
         },
         {
             "title": "Attend Training",
-            "description": "Enroll in accredited PRINCE2 Foundation training from a PeopleCert Authorized Training Organization such as Simpliaxis."
+            "description": "Enroll in accredited PRINCE2 Foundation training from a PeopleCert Authorized Training Organization such as Viovn."
         },
         {
             "title": "Study and Prepare",
@@ -428,10 +428,10 @@ const PRINCE2FoundationCertificationTraining = () => {
         }
     ];
 
-    const courseWhySimpliaxis = [
+    const courseWhyViovn = [
         {
             "title": "Authorized Training Partner",
-            "description": "Simpliaxis is an authorized training organization, ensuring you receive official and up-to-date PRINCE2 curriculum."
+            "description": "Viovn is an authorized training organization, ensuring you receive official and up-to-date PRINCE2 curriculum."
         },
         {
             "title": "High Success Rate",
@@ -709,7 +709,7 @@ const PRINCE2FoundationCertificationTraining = () => {
 
                             <CourseClients clients={courseClients} />
                             <CourseTrainers trainers={courseTrainers} />
-                            <CourseWhySimpliaxis features={courseWhySimpliaxis} />
+                            <CourseWhyViovn features={courseWhyViovn} />
                         </div>
 
                         <div className="relative w-full lg:w-[340px] xl:w-[360px] lg:justify-self-end">

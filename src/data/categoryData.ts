@@ -208,6 +208,7 @@ const buildCourses = (category: string, titles: string[]): Course[] =>
       navigate = "/course/project/pmi-cpmai-certification-training";
     }
 
+
     // ---------------------------------- Quality -------------------------------------------
      if (processedTitle.includes("Six Sigma Fundamentals Training")) {
       navigate = "/course/quality/six-sigma-fundamentals-training";
@@ -219,6 +220,37 @@ const buildCourses = (category: string, titles: string[]): Course[] =>
       navigate = "/course/quality/lean-six-sigma-green-belt-training";
     } else if (processedTitle.includes("Lean Six Sigma Black Belt Training")) {
       navigate = "/course/quality/lean-six-sigma-black-belt-training";
+    }
+
+     // ---------------------------------- Generative AI -------------------------------------------
+     if (processedTitle.includes("Generative AI for Business and IT Leaders & Managers Training")) {
+      navigate = "/course/generative-ai/generative-ai-for-business-it-leaders-managers-training";
+    } else if (processedTitle.includes("Generative AI for Business Analysis & Functional IT Consultants Training")) {
+      navigate = "/course/generative-ai/generative-ai-for-business-analysts-functional-it-consultants-training";
+    } else if (processedTitle.includes("Cloud Fundamentals for Business Managers & Product Managers Training")) {
+      navigate = "/course/generative-ai/cloud-fundamentals-for-business-managers-product-managers-training";
+    } else if (processedTitle.includes("Multi-cloud FinOps: AWS, GCP, Azure")) {
+      navigate = "/course/generative-ai/multi-cloud-finops-aws-gcp-azure-training";
+    } else if (processedTitle.includes("Introduction to Generative AI Training")) {
+      navigate = "/course/generative-ai/introduction-to-generative-ai-training";
+    } else if (processedTitle.includes("Generative AI for Agile Leaders Training")) {
+      navigate = "/course/generative-ai/generative-ai-for-agile-leaders-training";
+    } else if (processedTitle.includes("Generative AI for Scrum Masters Training")) {
+      navigate = "/course/generative-ai/generative-ai-for-scrum-masters-training";
+    } else if (processedTitle.includes("Generative AI in HR Certification Course")) {
+      navigate = "/course/generative-ai/generative-ai-in-hr-certification-course";
+    } else if (processedTitle.includes("Generative AI for Software Developers Training")) {
+      navigate = "/course/generative-ai/generative-ai-for-software-developers-training";
+    } else if (processedTitle.includes("Generative AI for Project Managers Training")) {
+      navigate = "/course/generative-ai/generative-ai-for-project-managers-training";
+    } else if (processedTitle.includes("Prompt Engineering Course")) {
+      navigate = "/course/generative-ai/prompt-engineering-course";
+    } else if (processedTitle.includes("Mastering Generative AI Tools Online")) {
+      navigate = "/course/generative-ai/mastering-generative-ai-tools-online";
+    } else if (processedTitle.includes("Generative AI Architect - Advanced Program Training")) {
+      navigate = "/course/generative-ai/generative-ai-architect-advanced-program-training";
+    }else if (processedTitle.includes("Generative AI for Product Owners/Product Managers Certification Training")) {
+      navigate = "/course/generative-ai/generative-ai-for-product-owners-product-managers-certification-training";
     }
 
     return {
@@ -363,7 +395,7 @@ const generativeAiCourseTitles = [
   "Generative AI for Agile Leaders Training",
   "Generative AI for Scrum Masters Training",
   "Generative AI in HR Certification Course",
-  "Generative AI for Software Developers Course",
+  "Generative AI for Software Developers Training",
   "Generative AI for Project Managers Training",
   "Prompt Engineering Course",
   "Generative AI for Product Owners/Product Managers Certification Training",

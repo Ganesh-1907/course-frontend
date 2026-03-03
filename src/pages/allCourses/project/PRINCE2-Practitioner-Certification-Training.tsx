@@ -17,7 +17,7 @@ import CourseCorporateOptUs from "@/components/courses/CourseCorporateOptUs";
 import CourseClients from "@/components/courses/CourseClients";
 import CourseTrainers from "@/components/courses/CourseTrainers";
 import CourseFAQs from "@/components/courses/faqs/CourseFAQs";
-import CourseWhySimpliaxis from "@/components/courses/CourseWhySimpliaxis";
+import CourseWhyViovn from "@/components/courses/CourseWhyViovn";
 
 import {
     Users,
@@ -165,7 +165,7 @@ const PRINCE2PractitionerCertificationTraining = () => {
         },
         {
             "title": "Attend Training",
-            "description": "Enroll in an accredited PRINCE2 Practitioner training course from an ATO of PeopleCert, like Simpliaxis."
+            "description": "Enroll in an accredited PRINCE2 Practitioner training course from an ATO of PeopleCert, like Viovn."
         },
         {
             "title": "Study and Prepare",
@@ -226,7 +226,7 @@ const PRINCE2PractitionerCertificationTraining = () => {
         },
         {
             "title": "On Time Delivery",
-            "description": "The Simpliaxis PRINCE2 Practitioner certification enables individuals to deliver products more effectively."
+            "description": "The Viovn PRINCE2 Practitioner certification enables individuals to deliver products more effectively."
         },
         {
             "title": "Tailoring PRINCE2",
@@ -356,7 +356,7 @@ const PRINCE2PractitionerCertificationTraining = () => {
         }
     ];
 
-    const courseWhySimpliaxis = [
+    const courseWhyViovn = [
         {
             "title": "Get Global Recognition",
             "description": "The most reputable groups worldwide recognize our PRINCE2 Practitioner certification course, ensuring validity in all fields."
@@ -375,7 +375,7 @@ const PRINCE2PractitionerCertificationTraining = () => {
         },
         {
             "title": "End-to-End Assistance",
-            "description": "Simpliaxis offers ongoing support, including study materials, exam preparation, and certification guidance."
+            "description": "Viovn offers ongoing support, including study materials, exam preparation, and certification guidance."
         },
         {
             "title": "Engaging Training",
@@ -638,7 +638,7 @@ const PRINCE2PractitionerCertificationTraining = () => {
 
                             <CourseClients clients={courseClients} />
                             <CourseTrainers trainers={courseTrainers} />
-                            <CourseWhySimpliaxis features={courseWhySimpliaxis} />
+                            <CourseWhyViovn features={courseWhyViovn} />
                         </div>
 
                         <div className="relative w-full lg:w-[340px] xl:w-[360px] lg:justify-self-end">

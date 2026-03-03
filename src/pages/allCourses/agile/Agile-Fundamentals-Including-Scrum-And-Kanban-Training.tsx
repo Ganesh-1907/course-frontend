@@ -18,7 +18,7 @@ import CourseCorporateOptUs from "@/components/courses/CourseCorporateOptUs";
 import CourseClients from "@/components/courses/CourseClients";
 import CourseTrainers from "@/components/courses/CourseTrainers";
 import CourseFAQs from "@/components/courses/faqs/CourseFAQs";
-import CourseWhySimpliaxis from "@/components/courses/CourseWhySimpliaxis";
+import CourseWhyViovn from "@/components/courses/CourseWhyViovn";
 
 import {
     Users,
@@ -145,7 +145,7 @@ const AgileFundamentalsIncludingScrumAndKanbanTraining = () => {
         },
         {
             "title": "Certification",
-            "description": "Receive the Agile Fundamentals certification from Simpliaxis.",
+            "description": "Receive the Agile Fundamentals certification from Viovn.",
             "color": "#EF4444"
         }
     ];
@@ -296,7 +296,7 @@ const AgileFundamentalsIncludingScrumAndKanbanTraining = () => {
         }
     ];
 
-    const courseWhySimpliaxis = [
+    const courseWhyViovn = [
         {
             "title": "Industry Recognition",
             "description": "Our training programs are acknowledged by leading organizations worldwide and align with global industry standards."
@@ -315,7 +315,7 @@ const AgileFundamentalsIncludingScrumAndKanbanTraining = () => {
         },
         {
             "title": "Trusted Training Provider",
-            "description": "Simpliaxis has helped thousands of professionals upgrade their skills and advance their careers."
+            "description": "Viovn has helped thousands of professionals upgrade their skills and advance their careers."
         },
         {
             "title": "Complete Support System",
@@ -327,7 +327,7 @@ const AgileFundamentalsIncludingScrumAndKanbanTraining = () => {
         },
         {
             "title": "Extensive Course Portfolio",
-            "description": "Simpliaxis provides certifications in Agile, DevOps, Scrum, SAFe, Project Management, and several other in-demand technologies."
+            "description": "Viovn provides certifications in Agile, DevOps, Scrum, SAFe, Project Management, and several other in-demand technologies."
         }
     ];
 
@@ -364,7 +364,7 @@ const AgileFundamentalsIncludingScrumAndKanbanTraining = () => {
             "Hands-on Agile exercises",
             "Industry-recognized certification"
         ],
-        "mainImage": "https://www.simpliaxis.com/../frontend_assets/image/ring_loader.gif",
+        "mainImage": "https://www.viovn.com/../frontend_assets/image/ring_loader.gif",
         "badgeImage": "/csm-badge.png"
     };
 
@@ -399,7 +399,7 @@ const AgileFundamentalsIncludingScrumAndKanbanTraining = () => {
         "courseName": "Why Corporates Choose Us",
         "label": "Corporate Training",
         "buttonText": "Corporate Group Enquiry",
-        "description": "Simpliaxis provides tailored corporate training programs designed to help organizations build Agile capabilities within their teams. Our expert trainers deliver customized learning modules that address real organizational challenges while equipping employees with the skills required to thrive in dynamic business environments."
+        "description": "Viovn provides tailored corporate training programs designed to help organizations build Agile capabilities within their teams. Our expert trainers deliver customized learning modules that address real organizational challenges while equipping employees with the skills required to thrive in dynamic business environments."
     };
 
     const courseMetadata = {
@@ -427,7 +427,7 @@ const AgileFundamentalsIncludingScrumAndKanbanTraining = () => {
             titlePrefix: 'Earn Your',
             titleHighlight: 'Agile',
             titleSuffix: 'Recognition',
-            issuerName: 'Simpliaxis',
+            issuerName: 'Viovn',
             certificateType: 'Certificate of Achievement',
             certifyText: 'This is to certify that',
             requirementText:
@@ -449,7 +449,7 @@ const AgileFundamentalsIncludingScrumAndKanbanTraining = () => {
             referEarnText: 'Refer & Earn',
             enrolledSuffix: 'Enrolled',
             moneyBackText: '100% Money Back Guarantee',
-            ltpLabel: 'Simpliaxis Leading Training Provider',
+            ltpLabel: 'Viovn Leading Training Provider',
             downloadBtnText: 'Download Brochure',
             viewSchedulesBtnText: 'View Schedules',
             freeAssessmentBtnText: 'Free Assessment',
@@ -630,7 +630,7 @@ const AgileFundamentalsIncludingScrumAndKanbanTraining = () => {
 
                             <CourseClients clients={courseClients} />
                             <CourseTrainers trainers={courseTrainers} />
-                            <CourseWhySimpliaxis features={courseWhySimpliaxis} />
+                            <CourseWhyViovn features={courseWhyViovn} />
                         </div>
 
                         {/* Right Side Panel */}

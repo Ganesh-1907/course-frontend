@@ -17,7 +17,7 @@ import CourseCorporateOptUs from "@/components/courses/CourseCorporateOptUs";
 import CourseClients from "@/components/courses/CourseClients";
 import CourseTrainers from "@/components/courses/CourseTrainers";
 import CourseFAQs from "@/components/courses/faqs/CourseFAQs";
-import CourseWhySimpliaxis from "@/components/courses/CourseWhySimpliaxis";
+import CourseWhyViovn from "@/components/courses/CourseWhyViovn";
 
 import { 
   Users, 
@@ -461,7 +461,7 @@ const ICAgileEnterpriseAgileCoachingCertificationTraining = () => {
     },
   ];
 
-  const courseWhySimpliaxis = [
+  const courseWhyViovn = [
     {
       "title": "ICAgile-Authorized Training Partner",
       "description": "Programs fully aligned with ICAgile learning objectives and standards."
@@ -530,7 +530,7 @@ const ICAgileEnterpriseAgileCoachingCertificationTraining = () => {
       "Globally Recognized ICAgile Credential",
       "Lifetime Valid Certification"
     ],
-    "mainImage": "https://www.simpliaxis.com/../frontend_assets/image/ring_loader.gif",
+    "mainImage": "https://www.viovn.com/../frontend_assets/image/ring_loader.gif",
     "badgeImage": "/csm-badge.png"
   };
 
@@ -572,7 +572,7 @@ const ICAgileEnterpriseAgileCoachingCertificationTraining = () => {
   };
 
   const corporateData = {
-    "courseName": "Why Simpliaxis for Corporates?",
+    "courseName": "Why Viovn for Corporates?",
     "label": "",
     "buttonText": "Corporate Group Enquiry",
     "description": "We provide enterprise-focused ICAgile ICP-CAT training tailored to organizational transformation needs, enabling sustainable Agile adoption, leadership alignment, and measurable business outcomes."
@@ -836,7 +836,7 @@ const ICAgileEnterpriseAgileCoachingCertificationTraining = () => {
 
               <CourseClients clients={courseClients} />
               <CourseTrainers trainers={courseTrainers} />
-              <CourseWhySimpliaxis features={courseWhySimpliaxis} />
+              <CourseWhyViovn features={courseWhyViovn} />
             </div>
 
             {/* Right Side Panel */}

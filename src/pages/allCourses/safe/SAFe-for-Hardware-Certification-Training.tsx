@@ -17,7 +17,7 @@ import CourseCorporateOptUs from "@/components/courses/CourseCorporateOptUs";
 import CourseClients from "@/components/courses/CourseClients";
 import CourseTrainers from "@/components/courses/CourseTrainers";
 import CourseFAQs from "@/components/courses/faqs/CourseFAQs";
-import CourseWhySimpliaxis from "@/components/courses/CourseWhySimpliaxis";
+import CourseWhyViovn from "@/components/courses/CourseWhyViovn";
 
 import { 
   Users, 
@@ -394,7 +394,7 @@ const SAFeForHardwareCourse = () => {
     },
   ];
 
-  const courseWhySimpliaxis = [
+  const courseWhyViovn = [
     { "title": "Global Recognition", "description": "Globally recognized SAFe® certification aligned with industry standards." },
     { "title": "Expert Trainers", "description": "Delivered by certified SPCs and SPCTs." },
     { "title": "Flexible Learning", "description": "Instructor-led virtual training with interactive exercises." },
@@ -439,7 +439,7 @@ const SAFeForHardwareCourse = () => {
       "Official SAFe Studio Access",
       "Comprehensive Exam Support"
     ],
-    "mainImage": "https://www.simpliaxis.com/../frontend_assets/image/ring_loader.gif",
+    "mainImage": "https://www.viovn.com/../frontend_assets/image/ring_loader.gif",
     "badgeImage": "/csm-badge.png"
   };
 
@@ -462,7 +462,7 @@ const SAFeForHardwareCourse = () => {
   };
 
   const corporateData = {
-    "courseName": "Why Corporates Choose Simpliaxis",
+    "courseName": "Why Corporates Choose Viovn",
     "label": "",
     "buttonText": "Corporate Group Enquiry",
     "description": "Enterprise-focused SAFe training delivered by a Platinum SPCT Partner to accelerate Lean-Agile hardware transformations."
@@ -736,7 +736,7 @@ const SAFeForHardwareCourse = () => {
 
               <CourseClients clients={courseClients} />
               <CourseTrainers trainers={courseTrainers} />
-              <CourseWhySimpliaxis features={courseWhySimpliaxis} />
+              <CourseWhyViovn features={courseWhyViovn} />
             </div>
 
             {/* Right Side Panel */}

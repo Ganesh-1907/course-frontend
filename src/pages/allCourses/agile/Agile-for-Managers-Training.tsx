@@ -17,7 +17,7 @@ import CourseCorporateOptUs from "@/components/courses/CourseCorporateOptUs";
 import CourseClients from "@/components/courses/CourseClients";
 import CourseTrainers from "@/components/courses/CourseTrainers";
 import CourseFAQs from "@/components/courses/faqs/CourseFAQs";
-import CourseWhySimpliaxis from "@/components/courses/CourseWhySimpliaxis";
+import CourseWhyViovn from "@/components/courses/CourseWhyViovn";
 
 import {
     Users,
@@ -99,11 +99,11 @@ const AgileForManagersTraining = () => {
     ];
 
     const certificationSteps = [
-        { title: "Registration", description: "Enroll in the Agile for Managers workshop with Simpliaxis.", color: "#3B82F6" },
+        { title: "Registration", description: "Enroll in the Agile for Managers workshop with Viovn.", color: "#3B82F6" },
         { title: "Engagement", description: "Attend the instructor-led training sessions on both days.", color: "#F59E0B" },
         { title: "Collaboration", description: "Participate in discussions, exercises, and case studies.", color: "#10B981" },
         { title: "Completion", description: "Complete the workshop successfully to fulfill requirements.", color: "#8B5CF6" },
-        { title: "Certification", description: "Receive the Agile for Managers certificate from Simpliaxis.", color: "#EF4444" }
+        { title: "Certification", description: "Receive the Agile for Managers certificate from Viovn.", color: "#EF4444" }
     ];
 
     const curriculumModules = [
@@ -209,7 +209,7 @@ const AgileForManagersTraining = () => {
                 },
                 {
                     question: "2. If I want to know more about Training, whom should I connect with?",
-                    answer: "If you want to know more about the course you can connect us in mail hello@simpliaxis.com or you can call us.",
+                    answer: "If you want to know more about the course you can connect us in mail hello@viovn.com or you can call us.",
                 },
                 {
                     question: "3. Is there any option to complete the Training in the native language if a participant chooses to?",
@@ -221,7 +221,7 @@ const AgileForManagersTraining = () => {
                 },
                 {
                     question: "5. Where do I find the upcoming schedules of my course?",
-                    answer: "Select the course of your interest from the website and view all the upcoming workshop schedules. You can select your course from the website https://www.simpliaxis.com/",
+                    answer: "Select the course of your interest from the website and view all the upcoming workshop schedules. You can select your course from the website https://www.viovn.com/",
                 },
                 {
                     question: "6. After enrollment, can I change the date of my training class?",
@@ -236,11 +236,11 @@ const AgileForManagersTraining = () => {
                     answer: "Choose the course of your interest, schedule it at your convenience from our upcoming schedule list, and register for the training by submitting your details. Proceed to make a payment and you will receive a confirmation email of your course enrolment. Or you can connect our career advisors to consult & choose your course.",
                 },
                 {
-                    question: "9. What are the different courses offered by Simpliaxis?",
-                    answer: "At Simpliaxis we provide training for courses of all the in-demand technologies. One can choose a course from Project Management, Agile, IT, DevOps, Business, IT Service Management, Quality Management, etc based on their choice of interest. To know more, please visit https://www.simpliaxis.com/",
+                    question: "9. What are the different courses offered by Viovn?",
+                    answer: "At Viovn we provide training for courses of all the in-demand technologies. One can choose a course from Project Management, Agile, IT, DevOps, Business, IT Service Management, Quality Management, etc based on their choice of interest. To know more, please visit https://www.viovn.com/",
                 },
                 {
-                    question: "10. What are the different modes of Training available for Simpliaxis courses?",
+                    question: "10. What are the different modes of Training available for Viovn courses?",
                     answer: "We provide different modes of Training: virtual Online Training, Live Virtual Training, Corporate Training & also E-learning.",
                 },
                 {
@@ -256,23 +256,23 @@ const AgileForManagersTraining = () => {
                     answer: "All our trainers are highly qualified and certified, having numerous years of experience in the training industry. You can choose your instructors for your course.",
                 },
                 {
-                    question: "14. Is there any discount available for the Simpliaxis courses?",
+                    question: "14. Is there any discount available for the Viovn courses?",
                     answer: "Yes, we do provide discounts on multiple courses. Please visit the schedules page to view the available discounts.",
                 },
                 {
                     question: "15. Whom do I contact if I have more queries regarding my course?",
-                    answer: "You can reach out to our experienced career counselor or email us on support@simpliaxis.com or contact any of our phone numbers or you can chat with us anytime or visit our contact us page https://www.simpliaxis.com/contact-us",
+                    answer: "You can reach out to our experienced career counselor or email us on support@viovn.com or contact any of our phone numbers or you can chat with us anytime or visit our contact us page https://www.viovn.com/contact-us",
                 },
                 {
                     question: "16. Are your courses affordable?",
                     answer: "Yes, course fees for all technologies are affordable. Along with that, we do provide discounts on various courses.",
                 },
                 {
-                    question: "17. Why should I choose Simpliaxis?",
-                    answer: "Simpliaxis offers personalized corporate training programs designed for enterprise teams seeking to refine their employees' skills in various job processes or roles, whether through in-person sessions or live virtual instruction. Led by our skilled and certified trainers, these certification programs not only elevate learning curves but also empower teams to effectively apply their newfound skills to meet industry benchmarks. With over 40 certification programs available, the impact is profound, evident in a remarkable 45% improvement in employee retention rates. On average, there's been a notable 30% enhancement in both work satisfaction and capabilities, showcasing the tangible benefits of our training initiatives.",
+                    question: "17. Why should I choose Viovn?",
+                    answer: "Viovn offers personalized corporate training programs designed for enterprise teams seeking to refine their employees' skills in various job processes or roles, whether through in-person sessions or live virtual instruction. Led by our skilled and certified trainers, these certification programs not only elevate learning curves but also empower teams to effectively apply their newfound skills to meet industry benchmarks. With over 40 certification programs available, the impact is profound, evident in a remarkable 45% improvement in employee retention rates. On average, there's been a notable 30% enhancement in both work satisfaction and capabilities, showcasing the tangible benefits of our training initiatives.",
                 },
                 {
-                    question: "18. What is the object of Simpliaxis?",
+                    question: "18. What is the object of Viovn?",
                     answer: "To provide high-quality training and help our professional participants & clients to build a high-performing workforce.",
                 },
                 {
@@ -398,7 +398,7 @@ const AgileForManagersTraining = () => {
         },
     ];
 
-    const courseWhySimpliaxis = [
+    const courseWhyViovn = [
         {
             title: "Global Recognition",
             description: "Every Course is recognized by the most reputable certification organizations globally that ensure credibility and acceptance in all industries."
@@ -429,7 +429,7 @@ const AgileForManagersTraining = () => {
         },
         {
             title: "Wide Range of Courses",
-            description: "Simpliaxis offers various internationally acknowledged certification courses in Agile, Scrum, SAFe, DevOps, Project Management, and more."
+            description: "Viovn offers various internationally acknowledged certification courses in Agile, Scrum, SAFe, DevOps, Project Management, and more."
         }
     ];
 
@@ -466,7 +466,7 @@ const AgileForManagersTraining = () => {
             "Practical Agile leadership techniques",
             "Industry-recognized certification"
         ],
-        mainImage: "https://www.simpliaxis.com/../frontend_assets/image/ring_loader.gif",
+        mainImage: "https://www.viovn.com/../frontend_assets/image/ring_loader.gif",
         badgeImage: "/csm-badge.png",
     };
 
@@ -501,7 +501,7 @@ const AgileForManagersTraining = () => {
         courseName: "Why Corporate Opt Us",
         label: "",
         buttonText: "Corporate Group Enquiry",
-        description: "Simpliaxis delivers customized corporate training programs designed to help organizations enhance workforce capabilities and stay competitive. Our expert trainers provide tailored modules that help enterprises adopt Agile practices, improve leadership effectiveness, and build high-performing teams.",
+        description: "Viovn delivers customized corporate training programs designed to help organizations enhance workforce capabilities and stay competitive. Our expert trainers provide tailored modules that help enterprises adopt Agile practices, improve leadership effectiveness, and build high-performing teams.",
     };
 
     const courseMetadata = {
@@ -529,7 +529,7 @@ const AgileForManagersTraining = () => {
             titlePrefix: 'Earn Your',
             titleHighlight: 'Agile',
             titleSuffix: 'Recognition',
-            issuerName: 'Simpliaxis',
+            issuerName: 'Viovn',
             certificateType: 'Certificate of Achievement',
             certifyText: 'This is to certify that',
             requirementText:
@@ -551,7 +551,7 @@ const AgileForManagersTraining = () => {
             referEarnText: 'Refer & Earn',
             enrolledSuffix: 'Enrolled',
             moneyBackText: '100% Money Back Guarantee',
-            ltpLabel: 'Simpliaxis Leading Training Provider',
+            ltpLabel: 'Viovn Leading Training Provider',
             downloadBtnText: 'Download Brochure',
             viewSchedulesBtnText: 'View Schedules',
             freeAssessmentBtnText: 'Free Assessment',
@@ -746,7 +746,7 @@ const AgileForManagersTraining = () => {
 
                             <CourseClients clients={courseClients} />
                             <CourseTrainers trainers={courseTrainers} />
-                            <CourseWhySimpliaxis features={courseWhySimpliaxis} />
+                            <CourseWhyViovn features={courseWhyViovn} />
                         </div>
 
                         {/* Right Side Panel */}

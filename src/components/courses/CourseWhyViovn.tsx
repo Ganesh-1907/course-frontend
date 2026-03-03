@@ -18,14 +18,14 @@ interface Feature {
   description: string;
 }
 
-interface CourseWhySimpliaxisProps {
+interface CourseWhyViovnProps {
   title?: string;
   subtitle?: string;
   description?: string;
   features: Feature[];
 }
 
-const CourseWhySimpliaxis: React.FC<CourseWhySimpliaxisProps> = ({
+const CourseWhyViovn: React.FC<CourseWhyViovnProps> = ({
   title = "Excellence Defined",
   subtitle = "Why Choose Viovn?",
   description = "Empowering professionals with industry-leading expertise and holistic support systems.",
@@ -88,4 +88,4 @@ const CourseWhySimpliaxis: React.FC<CourseWhySimpliaxisProps> = ({
   );
 };
 
-export default CourseWhySimpliaxis;
+export default CourseWhyViovn;
