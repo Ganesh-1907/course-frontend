@@ -122,6 +122,65 @@ import {
   MasteringGenerativeAIToolsOnline
 } from './pages/allCourses/generativeAi';
 
+// ----------------------------- DevOps Courses -----------------------------
+
+import {
+  DevOpsFoundationCertificationTraining,
+  DockerAndKubernetesTraining,
+  DevSecOpsFoundationCertificationTraining
+} from './pages/allCourses/devops';
+
+// ----------------------------- Service Courses -----------------------------
+
+import {
+  ITILFoundationCertification
+} from './pages/allCourses/service';
+
+// ----------------------------- Cloud Courses -----------------------------
+
+import {
+  AWSSysOpsAdministratorCertificationTraining,
+  AWSDevOpsEngineerCertificationTraining,
+  AWSCloudPractitionerCertificationTraining,
+  AWSSolutionsArchitectProfessionalCertificationTraining,
+  CloudComputingWithAWSTraining
+} from './pages/allCourses/cloudComputing';
+
+// ----------------------------- Data Science Courses -----------------------------
+
+import {
+  DataScienceWithPythonTraining,
+  PythonDjangoTraining,
+  IntroductionToArtificialIntelligenceMachineLearning,
+  ArtificialIntelligenceTraining,
+  DataScienceTraining,
+  CertifiedArtificialIntelligenceForAgileLeadersTraining
+} from './pages/allCourses/dataScience';
+
+// ----------------------------- Technology Courses -----------------------------
+
+import {
+  AngularJSTraining,
+  ReactNativeTraining,
+  ReactJSTraining,
+  IntroductionToBlockchainTraining,
+  PythonforBeginnersTraining
+} from './pages/allCourses/Technology';
+
+// ----------------------------- Others Courses -----------------------------
+
+import {
+  PythonProgrammingTraining,
+  PCIDSSComplianceTraining,
+  MicrosoftAZDesigningImplementingMicrosoftDevOpsSolution,
+  MicrosoftPowerBITraining,
+  MicrosoftAzureFundamentalsAZCertificationTraining,
+  AZMicrosoftAzureAdministratorTraining,
+  MicrosoftAzureDeveloperAssociateCertificationCourse,
+  CertifiedInformationSystemsSecurityProfessionalTraining,
+  MicrosoftCertifiedAzureSolutionsArchitectExpertCertification
+} from './pages/allCourses/others';
+
 
 
 
@@ -144,7 +203,7 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
-          
+
           {/* categories routes */}
           <Route path="/category/agile-scrum" element={<AgileScrum />} />
           <Route
@@ -221,7 +280,9 @@ const App = () => (
           />
           <Route
             path="/course/icagile-agile-product-ownership-icp-apo-certification-training"
-            element={<ICAgileAgileProductOwnershipICPAPOCertificationTraining />}
+            element={
+              <ICAgileAgileProductOwnershipICPAPOCertificationTraining />
+            }
           />
           <Route
             path="/course/pspbm-skills-certification-course"
@@ -229,7 +290,9 @@ const App = () => (
           />
           <Route
             path="/course/icagile-agile-project-delivery-management-icp-apm-certification-training"
-            element={<ICAgileAgileProjectDeliveryManagementICPAPMCertificationTraining />}
+            element={
+              <ICAgileAgileProjectDeliveryManagementICPAPMCertificationTraining />
+            }
           />
           <Route
             path="/course/ICAgile-Product-Management-(ICP-PDM)-Certification-Training"
@@ -249,7 +312,9 @@ const App = () => (
           />
           <Route
             path="/course/certified-scrum-professional-product-owner-csp-po-certification-training"
-            element={<CertifiedScrumProfessionalProductOwnerCertificationTraining />}
+            element={
+              <CertifiedScrumProfessionalProductOwnerCertificationTraining />
+            }
           />
           <Route
             path="/course/agile-and-scrum-training"
@@ -277,7 +342,9 @@ const App = () => (
           />
           <Route
             path="/course/icagile-certified-professional-in-agile-coaching-icp-acc-certification-training"
-            element={<ICAgileCertifiedProfessionalinAgileCoachingICPACCertificationTraining />}
+            element={
+              <ICAgileCertifiedProfessionalinAgileCoachingICPACCertificationTraining />
+            }
           />
           <Route
             path="/course/professional-scrum-with-kanban-psk-certification-training"
@@ -297,7 +364,9 @@ const App = () => (
           />
           <Route
             path="/course/professional-agile-leadership-essentials-pal-e-certification-training"
-            element={<ProfessionalAgileLeadershipEssentialsCertificationTraining />}
+            element={
+              <ProfessionalAgileLeadershipEssentialsCertificationTraining />
+            }
           />
           <Route
             path="/course/behaviour-driven-development-bdd-training"
@@ -308,7 +377,6 @@ const App = () => (
             path="/course/certified-agile-leader®-1-(cal 1™)-certification-training"
             element={<CertifiedAgileLeaderCertificationTraining />}
           />
-
 
           <Route
             path="/course/agile/applying-professional-scrum-certification-training"
@@ -340,7 +408,9 @@ const App = () => (
           />
           <Route
             path="/course/agile/icagile-agility-in-the-enterprise-icp-ent-certification-training"
-            element={<ICAgileAgilityInTheEnterpriseICPentCertificationTraining />}
+            element={
+              <ICAgileAgilityInTheEnterpriseICPentCertificationTraining />
+            }
           />
           <Route
             path="/course/agile/test-driven-development-tdd-training"
@@ -400,7 +470,9 @@ const App = () => (
 
           <Route
             path="/course/ai-empowered-safe-release-train-engineer-(rte)-certification-training"
-            element={<AIEmpoweredSAFeReleaseTrainEngineerRTECertificationTraining />}
+            element={
+              <AIEmpoweredSAFeReleaseTrainEngineerRTECertificationTraining />
+            }
           />
 
           <Route
@@ -410,7 +482,9 @@ const App = () => (
 
           <Route
             path="/course/advanced-facilitator-conflict-collaboration-micro-credential-course"
-            element={<AdvancedFacilitatorConflictCollaborationMicroCredentialCourse />}
+            element={
+              <AdvancedFacilitatorConflictCollaborationMicroCredentialCourse />
+            }
           />
 
           <Route
@@ -443,7 +517,6 @@ const App = () => (
             element={<AiNativeChangeAgentCertificationTrainingCourse />}
           />
 
-
           {/* ✨ PROJECT COURSES */}
           <Route
             path="/course/project/project-management-professional-pmp-certification-training"
@@ -467,7 +540,9 @@ const App = () => (
           />
           <Route
             path="/course/project/prince2-agile-foundation-and-practitioner-certification-training"
-            element={<PRINCE2AgileFoundationAndPractitionerCertificationTraining />}
+            element={
+              <PRINCE2AgileFoundationAndPractitionerCertificationTraining />
+            }
           />
           <Route
             path="/course/project/prince2-agile-practitioner-certification-training"
@@ -483,7 +558,9 @@ const App = () => (
           />
           <Route
             path="/course/project/portfolio-management-professional-pfmp-certification-training"
-            element={<PortfolioManagementProfessionalPfMPCertificationTraining />}
+            element={
+              <PortfolioManagementProfessionalPfMPCertificationTraining />
+            }
           />
           <Route
             path="/course/project/disciplined-agile-foundations-daf-training"
@@ -523,21 +600,24 @@ const App = () => (
             element={<LeanSixSigmaBlackBelt />}
           />
 
-
-           {/* ✨ GENERATIVE AI COURSES */}
-           <Route
+          {/* ✨ GENERATIVE AI COURSES */}
+          <Route
             path="/course/generative-ai/generative-ai-for-business-it-leaders-managers-training"
             element={<GenerativeAIForBusinessITLeadersManagersTraining />}
           />
 
           <Route
             path="/course/generative-ai/generative-ai-for-business-analysts-functional-it-consultants-training"
-            element={<GenerativeAIForBusinessAnalystsFunctionalITConsultantsTraining />}
+            element={
+              <GenerativeAIForBusinessAnalystsFunctionalITConsultantsTraining />
+            }
           />
 
           <Route
             path="/course/generative-ai/cloud-fundamentals-for-business-managers-product-managers-training"
-            element={<CloudFundamentalsForBusinessManagersProductManagersTraining />}
+            element={
+              <CloudFundamentalsForBusinessManagersProductManagersTraining />
+            }
           />
 
           <Route
@@ -587,12 +667,173 @@ const App = () => (
 
           <Route
             path="/course/generative-ai/generative-ai-for-product-owners-product-managers-certification-training"
-            element={<GenerativeAIForProductOwnersProductManagersCertificationTraining />}
+            element={
+              <GenerativeAIForProductOwnersProductManagersCertificationTraining />
+            }
           />
 
           <Route
             path="/course/generative-ai/mastering-generative-ai-tools-online"
             element={<MasteringGenerativeAIToolsOnline />}
+          />
+
+          {/* ✨ DevOps  COURSES */}
+
+          <Route
+            path="/course/devOps/devops-foundation-certification"
+            element={<DevOpsFoundationCertificationTraining />}
+          />
+
+          <Route
+            path="/course/devOps/Docker-and-kubernetes"
+            element={<DockerAndKubernetesTraining />}
+          />
+
+          <Route
+            path="/course/devOps/devsecops-foundation-certification"
+            element={<DevSecOpsFoundationCertificationTraining />}
+          />
+
+          {/* ✨ Service  COURSES */}
+
+          <Route
+            path="/course/service/itil-foundation-cerification"
+            element={<ITILFoundationCertification />}
+          />
+
+          {/* ✨ Cloud Computing  COURSES */}
+
+          <Route
+            path="/course/cloud-computing/aws-sysops-administrator-certification"
+            element={<AWSSysOpsAdministratorCertificationTraining />}
+          />
+
+          <Route
+            path="/course/cloud-computing/aws-devops-engineer-certification"
+            element={<AWSDevOpsEngineerCertificationTraining />}
+          />
+
+          <Route
+            path="/course/cloud-computing/aws-cloud-practitioner-certification"
+            element={<AWSCloudPractitionerCertificationTraining />}
+          />
+
+          <Route
+            path="/course/cloud-computing/aws-solutions-architect-professional-certification"
+            element={<AWSSolutionsArchitectProfessionalCertificationTraining />}
+          />
+
+          <Route
+            path="/course/cloud-computing/cloud-computing-with-aws-training"
+            element={<CloudComputingWithAWSTraining />}
+          />
+
+
+          {/* ✨ Data Science  COURSES */}
+
+          <Route
+            path="/course/data-science/data-science-with-python-training"
+            element={<DataScienceWithPythonTraining />}
+          />
+
+          <Route
+            path="/course/data-science/python-django-pd-training"
+            element={<PythonDjangoTraining />}
+          />
+
+          <Route
+            path="/course/data-science/introduction-to-artificial-intelligence-and-machine-learning-ai-and-ml"
+            element={<IntroductionToArtificialIntelligenceMachineLearning />}
+          />
+
+          <Route
+            path="/course/data-science/artificial-intelligence-training"
+            element={<ArtificialIntelligenceTraining />}
+          />
+
+          <Route
+            path="/course/data-science/data-science-training"
+            element={<DataScienceTraining />}
+          />
+
+          <Route
+            path="/course/data-science/certified-artificial-intelligence-for-agile-leaders-training"
+            element={<CertifiedArtificialIntelligenceForAgileLeadersTraining />}
+          />
+
+          {/* ✨ Technology  COURSES */}
+
+          <Route
+            path="/course/technology/angular-js-training"
+            element={<AngularJSTraining />}
+          />
+
+          <Route
+            path="/course/technology/react-native-training"
+            element={<ReactNativeTraining />}
+          />
+
+
+          <Route
+            path="/course/technology/introduction-to-blockchain-training"
+            element={<IntroductionToBlockchainTraining />}
+          />
+
+          <Route
+            path="/course/technology/react-js-training"
+            element={<ReactJSTraining />}
+          />
+
+          <Route
+            path="/course/technology/python-for-beginners-training"
+            element={<PythonforBeginnersTraining />}
+          />
+
+          {/* ✨ Others Courses */}
+
+          <Route
+            path="/course/others/python-programming-training"
+            element={<PythonProgrammingTraining />}
+          />
+
+          <Route
+            path="/course/others/pci-dss-compliance-training"
+            element={<PCIDSSComplianceTraining />}
+          />
+
+          <Route
+            path="/course/others/microsoft-az-designing-implementing-microsoft-devops-solution"
+            element={<MicrosoftAZDesigningImplementingMicrosoftDevOpsSolution />}
+          />
+
+          <Route
+            path="/course/others/microsoft-power-bi-training"
+            element={<MicrosoftPowerBITraining />}
+          />
+
+          <Route
+            path="/course/others/microsoft-azure-fundamentals-az-certification-training"
+            element={<MicrosoftAzureFundamentalsAZCertificationTraining />}
+          />
+
+          <Route
+            path="/course/others/az-microsoft-azure-administrator-training"
+            element={<AZMicrosoftAzureAdministratorTraining />}
+          />
+
+          <Route
+            path="/course/others/microsoft-azure-developer-associate-certification-course"
+            element={<MicrosoftAzureDeveloperAssociateCertificationCourse />}
+          />
+
+          <Route
+            path="/course/others/certified-information-systems-security-professional-training"
+            element={<CertifiedInformationSystemsSecurityProfessionalTraining />}
+          />
+
+          <Route
+            path="/course/others/microsoft-certified-azure-solutions-architect-expert-certification"
+            element={<MicrosoftCertifiedAzureSolutionsArchitectExpertCertification />}
           />
 
           <Route path="*" element={<NotFound />} />
