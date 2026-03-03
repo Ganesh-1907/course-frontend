@@ -1,0 +1,9 @@
+export { default as PythonProgrammingTraining } from "./Python-Programming-Training";
+export { default as PCIDSSComplianceTraining } from "./PCI-DSS-Training";
+export { default as MicrosoftAZDesigningImplementingMicrosoftDevOpsSolution } from "./Microsoft-AZ-Designing-Implementing-Microsoft-DevOps-Solution";
+export { default as MicrosoftPowerBITraining } from "./Microsoft-Power-BI-Training";
+export { default as MicrosoftAzureFundamentalsAZCertificationTraining } from "./Microsoft-Azure-Fundamentals-AZ-Certification-Training";
+export { default as AZMicrosoftAzureAdministratorTraining } from "./AZ-Microsoft-Azure-Administrator-Training";
+export { default as MicrosoftAzureDeveloperAssociateCertificationCourse } from "./Microsoft-Azure-Developer-Associate-Certification-Course";
+export { default as CertifiedInformationSystemsSecurityProfessionalTraining } from "./Certified-Information-Systems-Security-Professional-Training";
+export { default as MicrosoftCertifiedAzureSolutionsArchitectExpertCertification } from "./Microsoft-Certified-Azure-Solutions-Architect-Expert-Certification";
