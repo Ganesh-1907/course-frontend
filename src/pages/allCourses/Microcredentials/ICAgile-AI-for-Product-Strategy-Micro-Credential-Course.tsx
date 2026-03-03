@@ -18,7 +18,7 @@ import CourseCorporateOptUs from "@/components/courses/CourseCorporateOptUs";
 import CourseClients from "@/components/courses/CourseClients";
 import CourseTrainers from "@/components/courses/CourseTrainers";
 import CourseFAQs from "@/components/courses/faqs/CourseFAQs";
-import CourseWhySimpliaxis from "@/components/courses/CourseWhySimpliaxis";
+import CourseWhyViovn from "@/components/courses/CourseWhyViovn";
 
 import {
     Users,
@@ -169,7 +169,7 @@ const ICAgileAIForProductStrategyMicroCredentialCourse = () => {
     ];
 
     const whySections = [
-        { title: "ICAgile-Authorized Training Partner", description: "Simpliaxis delivers fully accredited training aligned with ICAgile’s global standards and learning outcomes." },
+        { title: "ICAgile-Authorized Training Partner", description: "Viovn delivers fully accredited training aligned with ICAgile’s global standards and learning outcomes." },
         { title: "Industry-Relevant Case Studies", description: "Learn through real-world AI product strategy scenarios and practical business applications." },
         { title: "Globally Recognized Certification", description: "Earn an ICAgile micro-credential respected worldwide across industries." },
         { title: "Experienced AI Product Practitioners", description: "Learn from trainers with hands-on AI product strategy experience across diverse sectors." },
@@ -199,7 +199,7 @@ const ICAgileAIForProductStrategyMicroCredentialCourse = () => {
             "Ethical AI implementation for product leaders",
             "Earn a globally recognized ICAgile micro-credential"
         ],
-        mainImage: "https://www.simpliaxis.com/../frontend_assets/image/ring_loader.gif",
+        mainImage: "https://www.viovn.com/../frontend_assets/image/ring_loader.gif",
         badgeImage: "/csm-badge.png"
     };
 
@@ -349,7 +349,7 @@ const ICAgileAIForProductStrategyMicroCredentialCourse = () => {
                     referEarnText="Refer & Earn"
                     enrolledSuffix="Enrolled"
                     moneyBackText="100% Money Back Guarantee"
-                    ltpLabel="Simpliaxis Training"
+                    ltpLabel="Viovn Training"
                     downloadBtnText="Download Brochure"
                     viewSchedulesBtnText="View Schedules"
                     freeAssessmentBtnText="Free Assessment"
@@ -360,14 +360,14 @@ const ICAgileAIForProductStrategyMicroCredentialCourse = () => {
                         <div className="space-y-12">
                             <CourseTabs tabs={tabs} />
                             <CourseCorporateOptUs
-                                courseName="Why Simpliaxis for Corporate AI Product Strategy Training?"
-                                description="Simpliaxis provides tailored corporate training programs that help organizations integrate AI into product strategy responsibly and effectively."
+                                courseName="Why Viovn for Corporate AI Product Strategy Training?"
+                                description="Viovn provides tailored corporate training programs that help organizations integrate AI into product strategy responsibly and effectively."
                                 label=""
                                 buttonText="Corporate Group Enquiry"
                             />
                             <CourseClients clients={companies} />
                             <CourseTrainers trainers={[]} />
-                            <CourseWhySimpliaxis features={whySections} />
+                            <CourseWhyViovn features={whySections} />
                         </div>
                         <div className="relative">
                             <div className="sticky top-24">

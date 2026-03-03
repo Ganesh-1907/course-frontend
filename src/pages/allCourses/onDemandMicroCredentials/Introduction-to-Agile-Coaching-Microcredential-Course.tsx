@@ -18,7 +18,7 @@ import CourseCorporateOptUs from "@/components/courses/CourseCorporateOptUs";
 import CourseClients from "@/components/courses/CourseClients";
 import CourseTrainers from "@/components/courses/CourseTrainers";
 import CourseFAQs from "@/components/courses/faqs/CourseFAQs";
-import CourseWhySimpliaxis from "@/components/courses/CourseWhySimpliaxis";
+import CourseWhyViovn from "@/components/courses/CourseWhyViovn";
 
 import {
     Users,
@@ -204,7 +204,7 @@ const IntroductionToAgileCoachingMicrocredentialCourse = () => {
             "Foundational coaching and facilitation techniques.",
             "Earn a recognized Agile Coaching Microcredential."
         ],
-        mainImage: "https://www.simpliaxis.com/../frontend_assets/image/ring_loader.gif",
+        mainImage: "https://www.viovn.com/../frontend_assets/image/ring_loader.gif",
         badgeImage: "/csm-badge.png"
     };
 
@@ -352,7 +352,7 @@ const IntroductionToAgileCoachingMicrocredentialCourse = () => {
                     referEarnText="Refer & Earn"
                     enrolledSuffix="Enrolled"
                     moneyBackText="100% Money Back Guarantee"
-                    ltpLabel="Simpliaxis Training"
+                    ltpLabel="Viovn Training"
                     downloadBtnText="Download Brochure"
                     viewSchedulesBtnText="View Schedules"
                     freeAssessmentBtnText="Free Assessment"
@@ -363,14 +363,14 @@ const IntroductionToAgileCoachingMicrocredentialCourse = () => {
                         <div className="space-y-12">
                             <CourseTabs tabs={tabs} />
                             <CourseCorporateOptUs
-                                courseName="Why Simpliaxis for Corporate Agile Coaching Training?"
-                                description="Simpliaxis provides tailored corporate Agile coaching training programs designed to strengthen team collaboration and organizational agility. Our expert-led sessions help enterprises build coaching capabilities, drive Agile adoption, and achieve sustainable performance improvements across teams."
+                                courseName="Why Viovn for Corporate Agile Coaching Training?"
+                                description="Viovn provides tailored corporate Agile coaching training programs designed to strengthen team collaboration and organizational agility. Our expert-led sessions help enterprises build coaching capabilities, drive Agile adoption, and achieve sustainable performance improvements across teams."
                                 label=""
                                 buttonText="Corporate Group Enquiry"
                             />
                             <CourseClients clients={companies} />
                             <CourseTrainers trainers={[]} />
-                            <CourseWhySimpliaxis features={whySections} />
+                            <CourseWhyViovn features={whySections} />
                         </div>
                         <div className="relative">
                             <div className="sticky top-24">

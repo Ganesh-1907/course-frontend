@@ -18,7 +18,7 @@ import CourseCorporateOptUs from "@/components/courses/CourseCorporateOptUs";
 import CourseClients from "@/components/courses/CourseClients";
 import CourseTrainers from "@/components/courses/CourseTrainers";
 import CourseFAQs from "@/components/courses/faqs/CourseFAQs";
-import CourseWhySimpliaxis from "@/components/courses/CourseWhySimpliaxis";
+import CourseWhyViovn from "@/components/courses/CourseWhyViovn";
 
 import {
     Users,
@@ -194,7 +194,7 @@ const AgileCoachingSkillsMicrocredentialCourse = () => {
 
     const heroData = {
         courseName: "Agile Coaching Skills Microcredential Training Course",
-        breadcrumbName: "Agile Coaching Skills Microcredential Course | Simpliaxis",
+        breadcrumbName: "Agile Coaching Skills Microcredential Course | Viovn",
         rating: "5.0",
         enrolledCount: "1350+ professionals",
         subtitle: "Strengthen Your Agile Coaching and Leadership Capabilities",
@@ -204,7 +204,7 @@ const AgileCoachingSkillsMicrocredentialCourse = () => {
             "Real-world coaching case studies.",
             "Earn a recognized Agile Coaching Skills Microcredential."
         ],
-        mainImage: "https://www.simpliaxis.com/../frontend_assets/image/ring_loader.gif",
+        mainImage: "https://www.viovn.com/../frontend_assets/image/ring_loader.gif",
         badgeImage: "/csm-badge.png"
     };
 
@@ -352,7 +352,7 @@ const AgileCoachingSkillsMicrocredentialCourse = () => {
                     referEarnText="Refer & Earn"
                     enrolledSuffix="Enrolled"
                     moneyBackText="100% Money Back Guarantee"
-                    ltpLabel="Simpliaxis Training"
+                    ltpLabel="Viovn Training"
                     downloadBtnText="Download Brochure"
                     viewSchedulesBtnText="Start Learning"
                     freeAssessmentBtnText="Free Assessment"
@@ -363,14 +363,14 @@ const AgileCoachingSkillsMicrocredentialCourse = () => {
                         <div className="space-y-12">
                             <CourseTabs tabs={tabs} />
                             <CourseCorporateOptUs
-                                courseName="Why Simpliaxis for Agile Coaching Skills Training?"
-                                description="Simpliaxis delivers customized Agile coaching training programs designed to strengthen leadership capability and improve team performance. Our expert-led sessions help organizations build internal coaching expertise and achieve sustainable Agile transformation outcomes."
+                                courseName="Why Viovn for Agile Coaching Skills Training?"
+                                description="Viovn delivers customized Agile coaching training programs designed to strengthen leadership capability and improve team performance. Our expert-led sessions help organizations build internal coaching expertise and achieve sustainable Agile transformation outcomes."
                                 label=""
                                 buttonText="Corporate Group Enquiry"
                             />
                             <CourseClients clients={companies} />
                             <CourseTrainers trainers={[]} />
-                            <CourseWhySimpliaxis features={whySections} />
+                            <CourseWhyViovn features={whySections} />
                         </div>
                         <div className="relative">
                             <div className="sticky top-24">

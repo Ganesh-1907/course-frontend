@@ -18,7 +18,7 @@ import CourseCorporateOptUs from "@/components/courses/CourseCorporateOptUs";
 import CourseClients from "@/components/courses/CourseClients";
 import CourseTrainers from "@/components/courses/CourseTrainers";
 import CourseFAQs from "@/components/courses/faqs/CourseFAQs";
-import CourseWhySimpliaxis from "@/components/courses/CourseWhySimpliaxis";
+import CourseWhyViovn from "@/components/courses/CourseWhyViovn";
 
 import {
     Users,
@@ -336,7 +336,7 @@ const ConflictManagementTraining = () => {
         }
     ];
 
-    const courseWhySimpliaxis = [
+    const courseWhyViovn = [
         {
             "title": "Global Recognition",
             "description": "Every Course is recognized by the most reputable certification organizations globally that ensure credibility and acceptance in all industries."
@@ -359,7 +359,7 @@ const ConflictManagementTraining = () => {
         },
         {
             "title": "End-to-End Assistance",
-            "description": "Simpliaxis Offers ongoing assistance prior to, during, and after Training and includes study material, guidance for participants on certification, and career choices."
+            "description": "Viovn Offers ongoing assistance prior to, during, and after Training and includes study material, guidance for participants on certification, and career choices."
         }
     ];
 
@@ -396,7 +396,7 @@ const ConflictManagementTraining = () => {
             "Earn a microcredential with lifetime validity",
             "Gain SEUs upon completion of the training"
         ],
-        "mainImage": "https://www.simpliaxis.com/../frontend_assets/image/ring_loader.gif",
+        "mainImage": "https://www.viovn.com/../frontend_assets/image/ring_loader.gif",
         "badgeImage": "/csm-badge.png"
     };
 
@@ -443,7 +443,7 @@ const ConflictManagementTraining = () => {
             titlePrefix: 'Earn Your',
             titleHighlight: 'Conflict Management',
             titleSuffix: 'Badge',
-            issuerName: 'Simpliaxis',
+            issuerName: 'Viovn',
             certificateType: 'Micro-credential of Achievement',
             certifyText: 'This is to certify that',
             requirementText: 'Has successfully fulfilled all requirements to be recognized as a specialist in',
@@ -464,7 +464,7 @@ const ConflictManagementTraining = () => {
             referEarnText: 'Refer & Earn',
             enrolledSuffix: 'Enrolled',
             moneyBackText: '100% Money Back Guarantee',
-            ltpLabel: 'Simpliaxis Leading Training Provider',
+            ltpLabel: 'Viovn Leading Training Provider',
             downloadBtnText: 'Download Brochure',
             viewSchedulesBtnText: 'View Schedules',
             freeAssessmentBtnText: 'Free Assessment',
@@ -645,7 +645,7 @@ const ConflictManagementTraining = () => {
 
                             <CourseClients clients={courseClients} />
                             <CourseTrainers trainers={courseTrainers} />
-                            <CourseWhySimpliaxis features={courseWhySimpliaxis} />
+                            <CourseWhyViovn features={courseWhyViovn} />
                         </div>
 
                         {/* Right Side Panel */}

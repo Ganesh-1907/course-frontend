@@ -18,7 +18,7 @@ import CourseCorporateOptUs from "@/components/courses/CourseCorporateOptUs";
 import CourseClients from "@/components/courses/CourseClients";
 import CourseTrainers from "@/components/courses/CourseTrainers";
 import CourseFAQs from "@/components/courses/faqs/CourseFAQs";
-import CourseWhySimpliaxis from "@/components/courses/CourseWhySimpliaxis";
+import CourseWhyViovn from "@/components/courses/CourseWhyViovn";
 
 import {
     Users,
@@ -204,7 +204,7 @@ const MetricsThatMatterImprovingProductOutcomesMicrocredentialCourse = () => {
             "Real-world case studies and exercises.",
             "Earn a recognized Microcredential in Product Metrics."
         ],
-        mainImage: "https://www.simpliaxis.com/../frontend_assets/image/ring_loader.gif",
+        mainImage: "https://www.viovn.com/../frontend_assets/image/ring_loader.gif",
         badgeImage: "/csm-badge.png"
     };
 
@@ -354,7 +354,7 @@ const MetricsThatMatterImprovingProductOutcomesMicrocredentialCourse = () => {
                     referEarnText="Refer & Earn"
                     enrolledSuffix="Enrolled"
                     moneyBackText="100% Money Back Guarantee"
-                    ltpLabel="Simpliaxis Training"
+                    ltpLabel="Viovn Training"
                     downloadBtnText="Download Brochure"
                     viewSchedulesBtnText="View Schedules"
                     freeAssessmentBtnText="Free Assessment"
@@ -365,14 +365,14 @@ const MetricsThatMatterImprovingProductOutcomesMicrocredentialCourse = () => {
                         <div className="space-y-12">
                             <CourseTabs tabs={tabs} />
                             <CourseCorporateOptUs
-                                courseName="Why Simpliaxis for Corporate Product Metrics Training?"
-                                description="Simpliaxis delivers customized corporate training programs that help organizations adopt outcome-driven product measurement practices. Our expert-led sessions enable teams to align strategy with measurable impact, improve ROI, and build sustainable product success frameworks."
+                                courseName="Why Viovn for Corporate Product Metrics Training?"
+                                description="Viovn delivers customized corporate training programs that help organizations adopt outcome-driven product measurement practices. Our expert-led sessions enable teams to align strategy with measurable impact, improve ROI, and build sustainable product success frameworks."
                                 label=""
                                 buttonText="Corporate Group Enquiry"
                             />
                             <CourseClients clients={companies} />
                             <CourseTrainers trainers={[]} />
-                            <CourseWhySimpliaxis features={whySections} />
+                            <CourseWhyViovn features={whySections} />
                         </div>
                         <div className="relative">
                             <div className="sticky top-24">

@@ -18,7 +18,7 @@ import CourseCorporateOptUs from "@/components/courses/CourseCorporateOptUs";
 import CourseClients from "@/components/courses/CourseClients";
 import CourseTrainers from "@/components/courses/CourseTrainers";
 import CourseFAQs from "@/components/courses/faqs/CourseFAQs";
-import CourseWhySimpliaxis from "@/components/courses/CourseWhySimpliaxis";
+import CourseWhyViovn from "@/components/courses/CourseWhyViovn";
 
 import {
     Users,
@@ -131,7 +131,7 @@ const PlaceholderCourse = ({ courseName }: { courseName: string }) => {
         }
     ];
 
-    const courseWhySimpliaxis = [
+    const courseWhyViovn = [
         { "title": "Global Recognition", "description": "Every Course is recognized globally." }
     ];
 
@@ -156,7 +156,7 @@ const PlaceholderCourse = ({ courseName }: { courseName: string }) => {
         "enrolledCount": "500+ professionals",
         "subtitle": "Master the skills needed to succeed in today's competitive landscape.",
         "benefits": ["Expert-led sessions", "Hands-on projects", "Global recognition"],
-        "mainImage": "https://www.simpliaxis.com/../frontend_assets/image/ring_loader.gif",
+        "mainImage": "https://www.viovn.com/../frontend_assets/image/ring_loader.gif",
         "badgeImage": "/csm-badge.png"
     };
 
@@ -221,7 +221,7 @@ const PlaceholderCourse = ({ courseName }: { courseName: string }) => {
                     referEarnText="Refer & Earn"
                     enrolledSuffix="Enrolled"
                     moneyBackText="100% Money Back Guarantee"
-                    ltpLabel="Simpliaxis Leading Training Provider"
+                    ltpLabel="Viovn Leading Training Provider"
                     downloadBtnText="Download Brochure"
                     viewSchedulesBtnText="View Schedules"
                     freeAssessmentBtnText="Free Assessment"
@@ -235,7 +235,7 @@ const PlaceholderCourse = ({ courseName }: { courseName: string }) => {
                             <CourseCorporateOptUs courseName="Corporate Training" description="Customized training for teams." label="" buttonText="Enquire Now" />
                             <CourseClients clients={courseClients} />
                             <CourseTrainers trainers={courseTrainers} />
-                            <CourseWhySimpliaxis features={courseWhySimpliaxis} />
+                            <CourseWhyViovn features={courseWhyViovn} />
                         </div>
                         <div className="relative">
                             <div className="sticky top-24">

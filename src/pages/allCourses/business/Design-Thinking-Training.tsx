@@ -18,7 +18,7 @@ import CourseCorporateOptUs from "@/components/courses/CourseCorporateOptUs";
 import CourseClients from "@/components/courses/CourseClients";
 import CourseTrainers from "@/components/courses/CourseTrainers";
 import CourseFAQs from "@/components/courses/faqs/CourseFAQs";
-import CourseWhySimpliaxis from "@/components/courses/CourseWhySimpliaxis";
+import CourseWhyViovn from "@/components/courses/CourseWhyViovn";
 
 import {
     Users,
@@ -134,7 +134,7 @@ const DesignThinkingTraining = () => {
     const certificationSteps = [
         {
             "title": "Attend Training",
-            "description": "Enroll in the 21-hour live interactive training program offered by Simpliaxis.",
+            "description": "Enroll in the 21-hour live interactive training program offered by Viovn.",
             "color": "#3B82F6"
         },
         {
@@ -310,7 +310,7 @@ const DesignThinkingTraining = () => {
         }
     ];
 
-    const courseWhySimpliaxis = [
+    const courseWhyViovn = [
         {
             "title": "Global Recognition",
             "description": "Our courses align with internationally recognized certification standards accepted across industries."
@@ -379,7 +379,7 @@ const DesignThinkingTraining = () => {
             "Hands-on real-world case studies and workshops.",
             "Expert guidance from industry-leading practitioners."
         ],
-        "mainImage": "https://www.simpliaxis.com/../frontend_assets/image/ring_loader.gif",
+        "mainImage": "https://www.viovn.com/../frontend_assets/image/ring_loader.gif",
         "badgeImage": "/csm-badge.png"
     };
 
@@ -389,7 +389,7 @@ const DesignThinkingTraining = () => {
         "description": [
             "Design Thinking is a powerful methodology for innovation and problem-solving that focuses on understanding user needs and creating human-centric solutions.",
             "This training program provides a deep dive into the phases of Design Thinking, including empathy, definition, ideation, prototyping, and testing.",
-            "Simpliaxis delivers structured, hands-on training with expert instructors and real-world case studies to ensure you can apply Design Thinking principles immediately in your work.",
+            "Viovn delivers structured, hands-on training with expert instructors and real-world case studies to ensure you can apply Design Thinking principles immediately in your work.",
             "Whether you are a designer, product manager, or business leader, this course provides the tools needed to foster innovation and drive business success."
         ],
         "whatIsTitle": "What is Design Thinking?",
@@ -408,10 +408,10 @@ const DesignThinkingTraining = () => {
     };
 
     const corporateData = {
-        "courseName": "Why Corporates Choose Simpliaxis",
+        "courseName": "Why Corporates Choose Viovn",
         "label": "",
         "buttonText": "Corporate Group Enquiry",
-        "description": "Simpliaxis delivers customized corporate training solutions aligned with organizational goals. Our Design Thinking training enhances innovation capabilities, improves team productivity, and ensures human-centric problem solving. With experienced trainers and practical methodologies, we help organizations build skilled professionals ready to drive measurable results."
+        "description": "Viovn delivers customized corporate training solutions aligned with organizational goals. Our Design Thinking training enhances innovation capabilities, improves team productivity, and ensures human-centric problem solving. With experienced trainers and practical methodologies, we help organizations build skilled professionals ready to drive measurable results."
     };
 
     const courseMetadata = {
@@ -436,7 +436,7 @@ const DesignThinkingTraining = () => {
             titlePrefix: 'Earn Your',
             titleHighlight: 'Design Thinking',
             titleSuffix: 'Recognition',
-            issuerName: 'Simpliaxis',
+            issuerName: 'Viovn',
             certificateType: 'Certificate of Achievement',
             certifyText: 'This is to certify that',
             requirementText: 'Has successfully fulfilled all requirements to be recognized as a professional in',
@@ -457,7 +457,7 @@ const DesignThinkingTraining = () => {
             referEarnText: 'Refer & Earn',
             enrolledSuffix: 'Enrolled',
             moneyBackText: '100% Money Back Guarantee',
-            ltpLabel: 'Simpliaxis Leading Training Provider',
+            ltpLabel: 'Viovn Leading Training Provider',
             downloadBtnText: 'Download Brochure',
             viewSchedulesBtnText: 'View Schedules',
             freeAssessmentBtnText: 'Free Assessment',
@@ -638,7 +638,7 @@ const DesignThinkingTraining = () => {
 
                             <CourseClients clients={courseClients} />
                             <CourseTrainers trainers={courseTrainers} />
-                            <CourseWhySimpliaxis features={courseWhySimpliaxis} />
+                            <CourseWhyViovn features={courseWhyViovn} />
                         </div>
 
                         {/* Right Side Panel */}

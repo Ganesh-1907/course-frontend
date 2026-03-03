@@ -18,7 +18,7 @@ import CourseCorporateOptUs from "@/components/courses/CourseCorporateOptUs";
 import CourseClients from "@/components/courses/CourseClients";
 import CourseTrainers from "@/components/courses/CourseTrainers";
 import CourseFAQs from "@/components/courses/faqs/CourseFAQs";
-import CourseWhySimpliaxis from "@/components/courses/CourseWhySimpliaxis";
+import CourseWhyViovn from "@/components/courses/CourseWhyViovn";
 
 import {
     Users,
@@ -336,7 +336,7 @@ const CertificationOfCapabilityInBusinessAnalysisTraining = () => {
         }
     ];
 
-    const courseWhySimpliaxis = [
+    const courseWhyViovn = [
         {
             "title": "Global Recognition",
             "description": "CCBA® is globally recognized and valued across industries for validating BA expertise."
@@ -388,7 +388,7 @@ const CertificationOfCapabilityInBusinessAnalysisTraining = () => {
             "Earn 24 PDUs and 24 CDUs",
             "Full exam prep support"
         ],
-        "mainImage": "https://www.simpliaxis.com/../frontend_assets/image/ring_loader.gif",
+        "mainImage": "https://www.viovn.com/../frontend_assets/image/ring_loader.gif",
         "badgeImage": "/csm-badge.png"
     };
 
@@ -416,7 +416,7 @@ const CertificationOfCapabilityInBusinessAnalysisTraining = () => {
         "courseName": "Why Corporates Choose Us",
         "label": "",
         "buttonText": "Corporate Enquiry",
-        "description": "Simpliaxis deliver customized corporate training programs tailored to organizational goals. Our CCBA training helps enterprises strengthen business analysis capabilities and improve project success rates."
+        "description": "Viovn deliver customized corporate training programs tailored to organizational goals. Our CCBA training helps enterprises strengthen business analysis capabilities and improve project success rates."
     };
 
     const courseMetadata = {
@@ -462,7 +462,7 @@ const CertificationOfCapabilityInBusinessAnalysisTraining = () => {
             referEarnText: 'Refer & Earn',
             enrolledSuffix: 'Enrolled',
             moneyBackText: '100% Money Back Guarantee',
-            ltpLabel: 'Simpliaxis Leading Training Provider',
+            ltpLabel: 'Viovn Leading Training Provider',
             downloadBtnText: 'Download Brochure',
             viewSchedulesBtnText: 'View Schedules',
             freeAssessmentBtnText: 'Free Assessment',
@@ -643,7 +643,7 @@ const CertificationOfCapabilityInBusinessAnalysisTraining = () => {
 
                             <CourseClients clients={courseClients} />
                             <CourseTrainers trainers={courseTrainers} />
-                            <CourseWhySimpliaxis features={courseWhySimpliaxis} />
+                            <CourseWhyViovn features={courseWhyViovn} />
                         </div>
 
                         {/* Right Side Panel */}

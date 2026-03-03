@@ -18,7 +18,7 @@ import CourseCorporateOptUs from "@/components/courses/CourseCorporateOptUs";
 import CourseClients from "@/components/courses/CourseClients";
 import CourseTrainers from "@/components/courses/CourseTrainers";
 import CourseFAQs from "@/components/courses/faqs/CourseFAQs";
-import CourseWhySimpliaxis from "@/components/courses/CourseWhySimpliaxis";
+import CourseWhyViovn from "@/components/courses/CourseWhyViovn";
 
 import {
     Users,
@@ -132,7 +132,7 @@ const AIForScrumMastersMicroCredentialCourse = () => {
         },
         {
             title: "Enrollment",
-            description: "Register for AI for Scrum Masters training with Simpliaxis."
+            description: "Register for AI for Scrum Masters training with Viovn."
         },
         {
             title: "Attend Training",
@@ -288,7 +288,7 @@ const AIForScrumMastersMicroCredentialCourse = () => {
                 },
                 {
                     question: "2. If I want to know more about Training, whom should I connect with?",
-                    answer: "If you want to know more about the course you can connect us in mail hello@simpliaxis.com or you can call us."
+                    answer: "If you want to know more about the course you can connect us in mail hello@viovn.com or you can call us."
                 }
             ]
         }
@@ -317,7 +317,7 @@ const AIForScrumMastersMicroCredentialCourse = () => {
         },
         {
             title: "End-to-End Assistance",
-            description: "Simpliaxis Offers ongoing assistance prior to, during, and after Training and includes study material exams, guidance for participants on certification, and career choices."
+            description: "Viovn Offers ongoing assistance prior to, during, and after Training and includes study material exams, guidance for participants on certification, and career choices."
         },
         {
             title: "Interactive and engaging Training",
@@ -325,7 +325,7 @@ const AIForScrumMastersMicroCredentialCourse = () => {
         },
         {
             title: "A wide range of courses",
-            description: "Simpliaxis offers various internationally acknowledged certification courses in Agile, Scrum, SAFe, DevOps, Project Management, and more."
+            description: "Viovn offers various internationally acknowledged certification courses in Agile, Scrum, SAFe, DevOps, Project Management, and more."
         }
     ];
 
@@ -349,7 +349,7 @@ const AIForScrumMastersMicroCredentialCourse = () => {
             "Validate Your Skills in AI and Scrum with this Microcredential.",
             "Improve Your Career Opportunities with this Popular Certification."
         ],
-        mainImage: "https://www.simpliaxis.com/../frontend_assets/image/ring_loader.gif",
+        mainImage: "https://www.viovn.com/../frontend_assets/image/ring_loader.gif",
         badgeImage: "/csm-badge.png"
     };
 
@@ -373,7 +373,7 @@ const AIForScrumMastersMicroCredentialCourse = () => {
         description: [
             "AI for Scrum Masters is an ideal course for Scrum Masters, project managers, product managers, or anybody on an Agile team who want to learn to use AI in their daily work. You will see how AI can help to save time and automate activities.",
             "Identify AI tools for Scrum Masters that support team collaboration, decision making, productivity, and learn how an AI-enabled agile co-pilot being utilized to assist smarter work processes and increasing team productivity. Earn your microcredential in the process of working with AI.",
-            "Get hands-on experience in prompt engineering, AI-powered data analysis, and forecasting with the help of AI. Learn how to utilize AI to positively influence Scrum meetings, improve communication within the team, and advance on to other frameworks such as Kanban, Lean, and XP. Begin now and let us get you started with AI powered Scrum skills at Simpliaxis!"
+            "Get hands-on experience in prompt engineering, AI-powered data analysis, and forecasting with the help of AI. Learn how to utilize AI to positively influence Scrum meetings, improve communication within the team, and advance on to other frameworks such as Kanban, Lean, and XP. Begin now and let us get you started with AI powered Scrum skills at Viovn!"
         ],
     };
 
@@ -448,7 +448,7 @@ const AIForScrumMastersMicroCredentialCourse = () => {
                     referEarnText="Refer & Earn"
                     enrolledSuffix="Enrolled"
                     moneyBackText="100% Money Back Guarantee"
-                    ltpLabel="Simpliaxis Training"
+                    ltpLabel="Viovn Training"
                     downloadBtnText="Download Brochure"
                     viewSchedulesBtnText="View Schedules"
                     freeAssessmentBtnText="Free Assessment"
@@ -458,10 +458,10 @@ const AIForScrumMastersMicroCredentialCourse = () => {
                     <div className="grid grid-cols-1 gap-8 lg:grid-cols-[minmax(0,1fr)_340px]">
                         <div className="space-y-12">
                             <CourseTabs tabs={tabs} />
-                            <CourseCorporateOptUs courseName="Why SimpliAxis Is The First Choice For Corporates?" description="Simpliaxis delivers customized AI for Scrum Masters training tailored to organizational needs." label="" buttonText="Corporate Group enquiry" />
+                            <CourseCorporateOptUs courseName="Why SimpliAxis Is The First Choice For Corporates?" description="Viovn delivers customized AI for Scrum Masters training tailored to organizational needs." label="" buttonText="Corporate Group enquiry" />
                             <CourseClients clients={companies} />
                             <CourseTrainers trainers={[]} />
-                            <CourseWhySimpliaxis features={whySections} />
+                            <CourseWhyViovn features={whySections} />
                         </div>
                         <div className="relative">
                             <div className="sticky top-24">

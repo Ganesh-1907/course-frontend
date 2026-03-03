@@ -18,7 +18,7 @@ import CourseCorporateOptUs from "@/components/courses/CourseCorporateOptUs";
 import CourseClients from "@/components/courses/CourseClients";
 import CourseTrainers from "@/components/courses/CourseTrainers";
 import CourseFAQs from "@/components/courses/faqs/CourseFAQs";
-import CourseWhySimpliaxis from "@/components/courses/CourseWhySimpliaxis";
+import CourseWhyViovn from "@/components/courses/CourseWhyViovn";
 
 import {
     Users,
@@ -188,7 +188,7 @@ const ICAgileAIForProductMetricsMicroCredentialCourseTraining = () => {
     ];
 
     const whySections = [
-        { title: "ICAgile-Accredited Training Partner", description: "Simpliaxis is an ICAgile-accredited provider ensuring the course meets global quality standards." },
+        { title: "ICAgile-Accredited Training Partner", description: "Viovn is an ICAgile-accredited provider ensuring the course meets global quality standards." },
         { title: "Proven Expertise in Agile and Product Training", description: "We deliver high-impact ICAgile certification programs with consistently strong learner outcomes." },
         { title: "Experienced ICAgile-Authorized Instructors", description: "Training is delivered by ICAgile-accredited practitioners with real-world product analytics experience." },
         { title: "Industry-Aligned Curriculum", description: "Course content reflects current AI applications and evolving product measurement practices." },
@@ -218,7 +218,7 @@ const ICAgileAIForProductMetricsMicroCredentialCourseTraining = () => {
             "Earn 3 PDUs upon completion",
             "Receive a globally recognized ICAgile micro-credential"
         ],
-        mainImage: "https://www.simpliaxis.com/../frontend_assets/image/ring_loader.gif",
+        mainImage: "https://www.viovn.com/../frontend_assets/image/ring_loader.gif",
         badgeImage: "/csm-badge.png"
     };
 
@@ -366,7 +366,7 @@ const ICAgileAIForProductMetricsMicroCredentialCourseTraining = () => {
                     referEarnText="Refer & Earn"
                     enrolledSuffix="Enrolled"
                     moneyBackText="100% Money Back Guarantee"
-                    ltpLabel="Simpliaxis Training"
+                    ltpLabel="Viovn Training"
                     downloadBtnText="Download Brochure"
                     viewSchedulesBtnText="View Schedules"
                     freeAssessmentBtnText="Free Assessment"
@@ -384,7 +384,7 @@ const ICAgileAIForProductMetricsMicroCredentialCourseTraining = () => {
                             />
                             <CourseClients clients={companies} />
                             <CourseTrainers trainers={[]} />
-                            <CourseWhySimpliaxis features={whySections} />
+                            <CourseWhyViovn features={whySections} />
                         </div>
                         <div className="relative">
                             <div className="sticky top-24">
