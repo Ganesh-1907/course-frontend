@@ -17,7 +17,7 @@ import CourseCorporateOptUs from "@/components/courses/CourseCorporateOptUs";
 import CourseClients from "@/components/courses/CourseClients";
 import CourseTrainers from "@/components/courses/CourseTrainers";
 import CourseFAQs from "@/components/courses/faqs/CourseFAQs";
-import CourseWhySimpliaxis from "@/components/courses/CourseWhySimpliaxis";
+import CourseWhyViovn from "@/components/courses/CourseWhyViovn";
 
 import {
   Users,
@@ -365,7 +365,7 @@ const ICAgileSystemsCoachingCertificationTraining = () => {
     },
   ];
 
-  const courseWhySimpliaxis = [
+  const courseWhyViovn = [
     {
       "title": "ICAgile Authorized Training",
       "description": "As an accredited ICAgile partner, Viovn provides genuine systems training that adheres strictly to global industry standards."
@@ -434,7 +434,7 @@ const ICAgileSystemsCoachingCertificationTraining = () => {
       "Learn multi-level coaching for teams, leaders, and organizations",
       "Enable sustainable enterprise agility with confidence"
     ],
-    "mainImage": "https://www.simpliaxis.com/../frontend_assets/image/ring_loader.gif",
+    "mainImage": "https://www.viovn.com/../frontend_assets/image/ring_loader.gif",
     "badgeImage": "/csm-badge.png"
   };
 
@@ -479,10 +479,10 @@ const ICAgileSystemsCoachingCertificationTraining = () => {
   };
 
   const corporateData = {
-    "courseName": "Why SimpliAxis Is a Preferred Choice for Corporates",
+    "courseName": "Why Viovn Is a Preferred Choice for Corporates",
     "label": "",
     "buttonText": "Corporate Group Enquiry",
-    "description": "SimpliAxis delivers customized corporate training solutions designed to bridge skill gaps, strengthen organizational performance, and support enterprise transformation through expert-led programs."
+    "description": "Viovn delivers customized corporate training solutions designed to bridge skill gaps, strengthen organizational performance, and support enterprise transformation through expert-led programs."
   };
   const courseMetadata = {
     shortName: 'CSM',
@@ -717,7 +717,7 @@ const ICAgileSystemsCoachingCertificationTraining = () => {
 
               <CourseClients clients={courseClients} />
               <CourseTrainers trainers={courseTrainers} />
-              <CourseWhySimpliaxis features={courseWhySimpliaxis} />
+              <CourseWhyViovn features={courseWhyViovn} />
             </div>
 
             {/* Right Side Panel */}

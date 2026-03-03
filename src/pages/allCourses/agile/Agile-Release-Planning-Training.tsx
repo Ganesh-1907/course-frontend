@@ -17,7 +17,7 @@ import CourseCorporateOptUs from "@/components/courses/CourseCorporateOptUs";
 import CourseClients from "@/components/courses/CourseClients";
 import CourseTrainers from "@/components/courses/CourseTrainers";
 import CourseFAQs from "@/components/courses/faqs/CourseFAQs";
-import CourseWhySimpliaxis from "@/components/courses/CourseWhySimpliaxis";
+import CourseWhyViovn from "@/components/courses/CourseWhyViovn";
 
 import {
     Users,
@@ -367,7 +367,7 @@ const AgileReleasePlanningTraining = () => {
         },
     ];
 
-    const courseWhySimpliaxis = [
+    const courseWhyViovn = [
         {
             "title": "Global Recognition",
             "description": "Every Course is recognized by the most reputable certification organizations globally that ensure credibility and acceptance in all industries."
@@ -390,7 +390,7 @@ const AgileReleasePlanningTraining = () => {
         },
         {
             "title": "End-to-End Assistance",
-            "description": "Simpliaxis Offers ongoing assistance prior to, during, and after Training and includes study material exams, guidance for participants on certification, and career choices."
+            "description": "Viovn Offers ongoing assistance prior to, during, and after Training and includes study material exams, guidance for participants on certification, and career choices."
         },
         {
             "title": "Interactive and engaging Training",
@@ -398,7 +398,7 @@ const AgileReleasePlanningTraining = () => {
         },
         {
             "title": "A wide range of courses",
-            "description": "Simpliaxis offers various internationally acknowledged certification courses in Agile, Scrum, SAFe, DevOps, Project Management, and more."
+            "description": "Viovn offers various internationally acknowledged certification courses in Agile, Scrum, SAFe, DevOps, Project Management, and more."
         }
     ];
     const sidePanelSchedules = [
@@ -434,7 +434,7 @@ const AgileReleasePlanningTraining = () => {
             "Industry-recognized certification",
             "Real-world Agile case studies"
         ],
-        mainImage: "https://www.simpliaxis.com/../frontend_assets/image/ring_loader.gif",
+        mainImage: "https://www.viovn.com/../frontend_assets/image/ring_loader.gif",
         badgeImage: "/csm-badge.png"
     };
 
@@ -476,7 +476,7 @@ const AgileReleasePlanningTraining = () => {
         courseName: "Why Corporates Choose Us",
         label: "",
         buttonText: "Corporate Group enquiry",
-        description: "Simpliaxis offers customized corporate training programs designed to address the specific needs of organizations. Our expert trainers help teams strengthen Agile capabilities, close skill gaps, and improve productivity through industry-relevant knowledge and practical learning approaches."
+        description: "Viovn offers customized corporate training programs designed to address the specific needs of organizations. Our expert trainers help teams strengthen Agile capabilities, close skill gaps, and improve productivity through industry-relevant knowledge and practical learning approaches."
     };
 
     const courseMetadata = {
@@ -504,7 +504,7 @@ const AgileReleasePlanningTraining = () => {
             titlePrefix: 'Earn Your',
             titleHighlight: 'Global',
             titleSuffix: 'Recognition',
-            issuerName: 'Simpliaxis',
+            issuerName: 'Viovn',
             certificateType: 'Certificate of Completion',
             certifyText: 'This is to certify that',
             requirementText:
@@ -716,7 +716,7 @@ const AgileReleasePlanningTraining = () => {
 
                             <CourseClients clients={courseClients} />
                             <CourseTrainers trainers={courseTrainers} />
-                            <CourseWhySimpliaxis features={courseWhySimpliaxis} />
+                            <CourseWhyViovn features={courseWhyViovn} />
                         </div>
 
                         {/* Right Side Panel */}

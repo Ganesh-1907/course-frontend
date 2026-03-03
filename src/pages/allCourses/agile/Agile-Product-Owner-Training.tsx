@@ -18,7 +18,7 @@ import CourseCorporateOptUs from "@/components/courses/CourseCorporateOptUs";
 import CourseClients from "@/components/courses/CourseClients";
 import CourseTrainers from "@/components/courses/CourseTrainers";
 import CourseFAQs from "@/components/courses/faqs/CourseFAQs";
-import CourseWhySimpliaxis from "@/components/courses/CourseWhySimpliaxis";
+import CourseWhyViovn from "@/components/courses/CourseWhyViovn";
 
 import {
     Users,
@@ -215,7 +215,7 @@ const AgileProductOwnerTraining = () => {
         }
     ];
 
-    const courseWhySimpliaxis = [
+    const courseWhyViovn = [
         { title: "Industry Experts", description: "Learn from trainers who have led Agile transformations in global organizations." },
         { title: "Practical Approach", description: "Our training focus on real-world applications and simulations." },
         { title: "Global Recognition", description: "Certifications are recognized by top industries worldwide." }
@@ -314,7 +314,7 @@ const AgileProductOwnerTraining = () => {
             titlePrefix: 'Earn Your',
             titleHighlight: 'Agile PO',
             titleSuffix: 'Badge',
-            issuerName: 'Simpliaxis',
+            issuerName: 'Viovn',
             certificateType: 'Academic Certificate',
             certifyText: 'This certificate signifies that',
             requirementText: 'has mastered the skills of a Professional Agile Product Owner.',
@@ -335,7 +335,7 @@ const AgileProductOwnerTraining = () => {
             referEarnText: 'Refer & Earn',
             enrolledSuffix: 'Professionals Trained',
             moneyBackText: 'Money Back Guarantee',
-            ltpLabel: 'Simpliaxis: Leading Training Provider',
+            ltpLabel: 'Viovn: Leading Training Provider',
             downloadBtnText: 'Download Syllabus',
             viewSchedulesBtnText: 'View Schedules',
             freeAssessmentBtnText: 'Free Mock Test',
@@ -503,7 +503,7 @@ const AgileProductOwnerTraining = () => {
                             />
                             <CourseClients clients={courseClients} />
                             <CourseTrainers trainers={courseTrainers} />
-                            <CourseWhySimpliaxis features={courseWhySimpliaxis} />
+                            <CourseWhyViovn features={courseWhyViovn} />
                         </div>
                         <div className="relative w-full lg:w-[340px] xl:w-[360px] lg:justify-self-end">
                             <div className="sticky top-24">

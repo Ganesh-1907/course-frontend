@@ -17,7 +17,7 @@ import CourseCorporateOptUs from "@/components/courses/CourseCorporateOptUs";
 import CourseClients from "@/components/courses/CourseClients";
 import CourseTrainers from "@/components/courses/CourseTrainers";
 import CourseFAQs from "@/components/courses/faqs/CourseFAQs";
-import CourseWhySimpliaxis from "@/components/courses/CourseWhySimpliaxis";
+import CourseWhyViovn from "@/components/courses/CourseWhyViovn";
 
 import { 
   Users, 
@@ -382,7 +382,7 @@ const SafeArchitectsCertificationTraining = () => {
     },
   ];
 
-  const courseWhySimpliaxis = [
+  const courseWhyViovn = [
     { "title": "Global Recognition", "description": "Recognized worldwide by leading Agile enterprises." },
     { "title": "Expert Trainers", "description": "Learn from certified SPCT instructors with enterprise experience." },
     { "title": "Flexible Learning", "description": "Live online and corporate training formats available." },
@@ -427,7 +427,7 @@ const SafeArchitectsCertificationTraining = () => {
       "Official SAFe® Courseware",
       "Access to SAFe® Community"
     ],
-    "mainImage": "https://www.simpliaxis.com/../frontend_assets/image/ring_loader.gif",
+    "mainImage": "https://www.viovn.com/../frontend_assets/image/ring_loader.gif",
     "badgeImage": "/csm-badge.png"
   };
 
@@ -726,7 +726,7 @@ const SafeArchitectsCertificationTraining = () => {
 
               <CourseClients clients={courseClients} />
               <CourseTrainers trainers={courseTrainers} />
-              <CourseWhySimpliaxis features={courseWhySimpliaxis} />
+              <CourseWhyViovn features={courseWhyViovn} />
             </div>
 
             {/* Right Side Panel */}

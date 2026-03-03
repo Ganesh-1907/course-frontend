@@ -18,7 +18,7 @@ import CourseCorporateOptUs from "@/components/courses/CourseCorporateOptUs";
 import CourseClients from "@/components/courses/CourseClients";
 import CourseTrainers from "@/components/courses/CourseTrainers";
 import CourseFAQs from "@/components/courses/faqs/CourseFAQs";
-import CourseWhySimpliaxis from "@/components/courses/CourseWhySimpliaxis";
+import CourseWhyViovn from "@/components/courses/CourseWhyViovn";
 
 import {
     Users,
@@ -165,7 +165,7 @@ const ManageAgileProjectsUsingScrumTraining = () => {
         },
         {
             title: 'Get Certified',
-            description: 'Receive the certification from Simpliaxis.',
+            description: 'Receive the certification from Viovn.',
             color: '#8B5CF6'
         }
     ];
@@ -308,7 +308,7 @@ const ManageAgileProjectsUsingScrumTraining = () => {
         }
     ];
 
-    const courseWhySimpliaxis = [
+    const courseWhyViovn = [
         {
             "title": "Global Recognition",
             "description": "Our courses are recognized by leading certification bodies worldwide, ensuring credibility and acceptance across industries."
@@ -358,7 +358,7 @@ const ManageAgileProjectsUsingScrumTraining = () => {
             "Real-world Scrum case studies",
             "Industry-recognized certification"
         ],
-        mainImage: 'https://www.simpliaxis.com/../frontend_assets/image/ring_loader.gif',
+        mainImage: 'https://www.viovn.com/../frontend_assets/image/ring_loader.gif',
         badgeImage: '/csm-badge.png',
     };
 
@@ -393,7 +393,7 @@ const ManageAgileProjectsUsingScrumTraining = () => {
         courseName: 'Why Corporates Choose Us',
         label: 'Corporate Training',
         buttonText: 'Corporate Group Enquiry',
-        description: "Simpliaxis delivers customized corporate training programs designed to help organizations adopt Agile practices and improve workforce capabilities. Our expert trainers provide tailored learning modules that help enterprises bridge skill gaps, enhance productivity, and build high-performing Agile teams.",
+        description: "Viovn delivers customized corporate training programs designed to help organizations adopt Agile practices and improve workforce capabilities. Our expert trainers provide tailored learning modules that help enterprises bridge skill gaps, enhance productivity, and build high-performing Agile teams.",
     };
 
     const courseMetadata = {
@@ -418,7 +418,7 @@ const ManageAgileProjectsUsingScrumTraining = () => {
             titlePrefix: 'Earn Your',
             titleHighlight: 'Global',
             titleSuffix: 'Recognition',
-            issuerName: 'Simpliaxis',
+            issuerName: 'Viovn',
             certificateType: 'Certificate of Achievement',
             certifyText: 'This is to certify that',
             requirementText: 'Has successfully fulfilled all requirements to be recognized as an expert in',
@@ -629,7 +629,7 @@ const ManageAgileProjectsUsingScrumTraining = () => {
 
                             <CourseClients clients={courseClients} />
                             <CourseTrainers trainers={courseTrainers} />
-                            <CourseWhySimpliaxis features={courseWhySimpliaxis} />
+                            <CourseWhyViovn features={courseWhyViovn} />
                         </div>
 
                         {/* Right Side Panel */}

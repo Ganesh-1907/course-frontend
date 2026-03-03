@@ -17,7 +17,7 @@ import CourseCorporateOptUs from "@/components/courses/CourseCorporateOptUs";
 import CourseClients from "@/components/courses/CourseClients";
 import CourseTrainers from "@/components/courses/CourseTrainers";
 import CourseFAQs from "@/components/courses/faqs/CourseFAQs";
-import CourseWhySimpliaxis from "@/components/courses/CourseWhySimpliaxis";
+import CourseWhyViovn from "@/components/courses/CourseWhyViovn";
 
 import { 
   Users, 
@@ -237,7 +237,7 @@ const CertifiedScrumMasterCertificationTraining = () => {
 
   const prerequisites = [
     'A basic understanding of Agile principles and the Scrum framework',
-    'Completion of a two-day (16-hour) CSM Certification training by Simpliaxis',
+    'Completion of a two-day (16-hour) CSM Certification training by Viovn',
   ];
 
   const certificationSteps = [
@@ -517,7 +517,7 @@ const CertifiedScrumMasterCertificationTraining = () => {
           question:
             '2. What are the effective preparation strategies for passing the CSM certification exam?',
           answer:
-            "Here are some practical ways to complete your CSM Certification Exam Preparation-Understand its roles, events, and principles.Study the guides and materials aligned with the exam's content.Simpliaxis provides comprehensive training in Agile and Scrum.Get mock tests to evaluate your understanding.Gain hands-on experience in Scrum projects.Join workshops and discussions to apply knowledge.Understand the exam structure and topics.",
+            "Here are some practical ways to complete your CSM Certification Exam Preparation-Understand its roles, events, and principles.Study the guides and materials aligned with the exam's content.Viovn provides comprehensive training in Agile and Scrum.Get mock tests to evaluate your understanding.Gain hands-on experience in Scrum projects.Join workshops and discussions to apply knowledge.Understand the exam structure and topics.",
         },
         {
           question:
@@ -549,7 +549,7 @@ const CertifiedScrumMasterCertificationTraining = () => {
         {
           question: '8. What is the duration of the CSM course?',
           answer:
-            'To earn your CSM, you must attend a course taught by a Certified Scrum Trainer (CST) with the Scrum Alliance. The Simpliaxis CSM certification course is 16 hours long and can be attended Online or in person.',
+            'To earn your CSM, you must attend a course taught by a Certified Scrum Trainer (CST) with the Scrum Alliance. The Viovn CSM certification course is 16 hours long and can be attended Online or in person.',
         },
         {
           question: '9. What is the validity duration for CSM certification?',
@@ -642,7 +642,7 @@ const CertifiedScrumMasterCertificationTraining = () => {
           question:
             '2. If I want to know more about Training, whom should I connect with?',
           answer:
-            'If you want to know more about the course you can connect us in mail hello@simpliaxis.com or you can call us.',
+            'If you want to know more about the course you can connect us in mail hello@Viovn.com or you can call us.',
         },
         {
           question:
@@ -658,7 +658,7 @@ const CertifiedScrumMasterCertificationTraining = () => {
         {
           question: '5. Where do I find the upcoming schedules of my course?',
           answer:
-            'Select the course of your interest from the website and view all the upcoming workshop schedules. You can select your course from the website https://www.simpliaxis.com/',
+            'Select the course of your interest from the website and view all the upcoming workshop schedules. You can select your course from the website https://www.Viovn.com/',
         },
         {
           question:
@@ -678,13 +678,13 @@ const CertifiedScrumMasterCertificationTraining = () => {
             'Choose the course of your interest, schedule it at your convenience from our upcoming schedule list, and register for the training by submitting your details. Proceed to make a payment and you will receive a confirmation email of your course enrolment. Or you can connect our career advisors to consult & choose your course.',
         },
         {
-          question: '9. What are the different courses offered by Simpliaxis?',
+          question: '9. What are the different courses offered by Viovn?',
           answer:
-            'At Simpliaxis we provide training for courses of all the in-demand technologies. One can choose a course from Project Management, Agile, IT, DevOps, Business, IT Service Management, Quality Management, etc based on their choice of interest. To know more, please visit https://www.simpliaxis.com/',
+            'At Viovn we provide training for courses of all the in-demand technologies. One can choose a course from Project Management, Agile, IT, DevOps, Business, IT Service Management, Quality Management, etc based on their choice of interest. To know more, please visit https://www.Viovn.com/',
         },
         {
           question:
-            '10. What are the different modes of Training available for Simpliaxis courses?',
+            '10. What are the different modes of Training available for Viovn courses?',
           answer:
             'We provide different modes of Training: virtual Online Training, Live Virtual Training, Corporate Training & also E-learning.',
         },
@@ -704,7 +704,7 @@ const CertifiedScrumMasterCertificationTraining = () => {
         },
         {
           question:
-            '14. Is there any discount available for the Simpliaxis courses?',
+            '14. Is there any discount available for the Viovn courses?',
           answer:
             'Yes, we do provide discounts on multiple courses. Please visit the schedules page to view the available discounts.',
         },
@@ -712,7 +712,7 @@ const CertifiedScrumMasterCertificationTraining = () => {
           question:
             '15. Whom do I contact if I have more queries regarding my course?',
           answer:
-            'You can reach out to our experienced career counseloror email us on support@simpliaxis.comor contact any of our phone numbersor you can chat with us anytimeor visit our contact us page https://www.simpliaxis.com/contact-us',
+            'You can reach out to our experienced career counseloror email us on support@Viovn.comor contact any of our phone numbersor you can chat with us anytimeor visit our contact us page https://www.Viovn.com/contact-us',
         },
         {
           question: '16. Are your courses affordable?',
@@ -720,12 +720,12 @@ const CertifiedScrumMasterCertificationTraining = () => {
             'Yes, course fees for all technologies are affordable. Along with that, we do provide discounts on various courses.',
         },
         {
-          question: '17. Why should I choose Simpliaxis?',
+          question: '17. Why should I choose Viovn?',
           answer:
-            "Simpliaxis offers personalized corporate training programs designed for enterprise teams seeking to refine their employees' skills in various job processes or roles, whether through in-person sessions or live virtual instruction. Led by our skilled and certified trainers, these certification programs not only elevate learning curves but also empower teams to effectively apply their newfound skills to meet industry benchmarks. With over 40 certification programs available, the impact is profound, evident in a remarkable 45% improvement in employee retention rates. On average, there's been a notable 30% enhancement in both work satisfaction and capabilities, showcasing the tangible benefits of our training initiatives.",
+            "Viovn offers personalized corporate training programs designed for enterprise teams seeking to refine their employees' skills in various job processes or roles, whether through in-person sessions or live virtual instruction. Led by our skilled and certified trainers, these certification programs not only elevate learning curves but also empower teams to effectively apply their newfound skills to meet industry benchmarks. With over 40 certification programs available, the impact is profound, evident in a remarkable 45% improvement in employee retention rates. On average, there's been a notable 30% enhancement in both work satisfaction and capabilities, showcasing the tangible benefits of our training initiatives.",
         },
         {
-          question: '18. What is the object of Simpliaxis?',
+          question: '18. What is the object of Viovn?',
           answer:
             'To provide high-quality training and help our professional participants & clients to build a high-performing workforce.',
         },
@@ -853,7 +853,7 @@ const CertifiedScrumMasterCertificationTraining = () => {
     },
   ];
 
-  const courseWhySimpliaxis = [
+  const courseWhyViovn = [
     {
       "title": "Global Recognition",
       "description": "Every Course is recognized by the most reputable certification organizations globally that ensure credibility and acceptance in all industries."
@@ -876,7 +876,7 @@ const CertifiedScrumMasterCertificationTraining = () => {
     },
     {
       "title": "End-to-End Assistance",
-      "description": "Simpliaxis Offers ongoing assistance prior to, during, and after Training and includes study material exams, guidance for participants on certification, and career choices."
+      "description": "Viovn Offers ongoing assistance prior to, during, and after Training and includes study material exams, guidance for participants on certification, and career choices."
     },
     {
       "title": "Interactive and engaging Training",
@@ -884,7 +884,7 @@ const CertifiedScrumMasterCertificationTraining = () => {
     },
     {
       "title": "A wide range of courses",
-      "description": "Simpliaxis offers various internationally acknowledged certification courses in Agile, Scrum, SAFe, DevOps, Project Management, and more."
+      "description": "Viovn offers various internationally acknowledged certification courses in Agile, Scrum, SAFe, DevOps, Project Management, and more."
     }
   ]
 
@@ -933,10 +933,10 @@ const CertifiedScrumMasterCertificationTraining = () => {
     title: 'Course Overview',
     subtitle: 'CSM Certification Course Overview',
     description: [
-      'The CSM certification or Certified Scrum Master certification is a globally recognized entry-level credential from the Scrum Alliance validating your Scrum expertise. Simpliaxis offers 16 hours of extensive CSM certification training led by Certified Scrum Trainers , covering Scrum Master certification curriculum essentials like core Scrum concepts, Scrum Values, Principles, Empiricism and Iteration and Incremental Delivery.',
+      'The CSM certification or Certified Scrum Master certification is a globally recognized entry-level credential from the Scrum Alliance validating your Scrum expertise. Viovn offers 16 hours of extensive CSM certification training led by Certified Scrum Trainers , covering Scrum Master certification curriculum essentials like core Scrum concepts, Scrum Values, Principles, Empiricism and Iteration and Incremental Delivery.',
       'Participants gain proficiency in the roles and responsibilities of a Scrum Master, such as:',
       'As organisations increasingly adopt Agile methodologies, our CSM course equips you to resolve real-world scrum implementation challenges, boost team productivity, and make you stand out as a Certified ScrumMaster .',
-      'Simpliaxis is a Scrum Alliance’s Registered Education Ally, ensuring you pass the CSM certification exam on your first attempt. Whether you are new to Agile or looking for upskilling, our CSM Certification Course creates a successful path to earning the Scrum Master Certification. Enroll Now and join the next generation of agile leaders!',
+      'Viovn is a Scrum Alliance’s Registered Education Ally, ensuring you pass the CSM certification exam on your first attempt. Whether you are new to Agile or looking for upskilling, our CSM Certification Course creates a successful path to earning the Scrum Master Certification. Enroll Now and join the next generation of agile leaders!',
     ],
     whatIsTitle: '',
     whatIsDescription: [],
@@ -969,11 +969,11 @@ const CertifiedScrumMasterCertificationTraining = () => {
   };
 
   const corporateData = {
-    courseName: 'Why SimpliAxis Is the First Choice for Corporates?',
+    courseName: 'Why Viovn Is the First Choice for Corporates?',
     label: '',
     buttonText: 'Corporate Group enquiry',
     description:
-      'With learning targeted to your unique team environment, we at Simpliaxis help to resolve your specific issues and meet your specific needs with tailored training methods. We offer corporate training globally to keep Organizations up to date by building the knowledge gap required and make them strive in the competitive world with the right skills according to the industry needs. Preferred by many MNC’s, Startups, and Organizations among all sectors. Trusted by X clients and meet their training needs. Skilled training experts and professionals around the world with good command of the subjects. Delivering tailoring modules for your enterprises by highly qualified experts.',
+      'With learning targeted to your unique team environment, we at Viovn help to resolve your specific issues and meet your specific needs with tailored training methods. We offer corporate training globally to keep Organizations up to date by building the knowledge gap required and make them strive in the competitive world with the right skills according to the industry needs. Preferred by many MNC’s, Startups, and Organizations among all sectors. Trusted by X clients and meet their training needs. Skilled training experts and professionals around the world with good command of the subjects. Delivering tailoring modules for your enterprises by highly qualified experts.',
   };
 
   const courseMetadata = {
@@ -1208,7 +1208,7 @@ const CertifiedScrumMasterCertificationTraining = () => {
 
               <CourseClients clients={courseClients} />
               <CourseTrainers trainers={courseTrainers} />
-              <CourseWhySimpliaxis features={courseWhySimpliaxis} />
+              <CourseWhyViovn features={courseWhyViovn} />
             </div>
 
             {/* Right Side Panel */}

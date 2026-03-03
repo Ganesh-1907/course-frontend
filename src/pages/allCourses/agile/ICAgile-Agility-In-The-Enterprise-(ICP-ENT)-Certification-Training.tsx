@@ -18,7 +18,7 @@ import CourseCorporateOptUs from "@/components/courses/CourseCorporateOptUs";
 import CourseClients from "@/components/courses/CourseClients";
 import CourseTrainers from "@/components/courses/CourseTrainers";
 import CourseFAQs from "@/components/courses/faqs/CourseFAQs";
-import CourseWhySimpliaxis from "@/components/courses/CourseWhySimpliaxis";
+import CourseWhyViovn from "@/components/courses/CourseWhyViovn";
 
 import {
     Users,
@@ -169,7 +169,7 @@ const ICAgileAgilityInTheEnterpriseICPentCertificationTraining = () => {
     const certificationSteps = [
         {
             title: "Enroll for the Course",
-            description: "Register for the ICP-ENT course through an authorized provider, such as Simpliaxis, to receive ICAgile-accredited instruction and materials.",
+            description: "Register for the ICP-ENT course through an authorized provider, such as Viovn, to receive ICAgile-accredited instruction and materials.",
             color: "#3B82F6"
         },
         {
@@ -355,10 +355,10 @@ const ICAgileAgilityInTheEnterpriseICPentCertificationTraining = () => {
         },
     ];
 
-    const courseWhySimpliaxis = [
+    const courseWhyViovn = [
         {
             title: "ICAgile-Authorized Training Provider",
-            description: "Simpliaxis delivers the ICP-ENT certification through officially accredited ICAgile programs."
+            description: "Viovn delivers the ICP-ENT certification through officially accredited ICAgile programs."
         },
         {
             title: "Expert-Led Enterprise Coaching",
@@ -370,7 +370,7 @@ const ICAgileAgilityInTheEnterpriseICPentCertificationTraining = () => {
         },
         {
             title: "Systems Thinking Focus",
-            description: "Simpliaxis integrates systems thinking to help learners diagnose organizational constraints."
+            description: "Viovn integrates systems thinking to help learners diagnose organizational constraints."
         }
     ];
 
@@ -408,7 +408,7 @@ const ICAgileAgilityInTheEnterpriseICPentCertificationTraining = () => {
             "In-depth ICP-ENT Training with Real-world Simulations",
             "Get ICAgile ICP-ENT Certification for Lifetime Validation"
         ],
-        mainImage: "https://www.simpliaxis.com/../frontend_assets/image/ring_loader.gif",
+        mainImage: "https://www.viovn.com/../frontend_assets/image/ring_loader.gif",
         badgeImage: "/csm-badge.png",
     };
 
@@ -416,7 +416,7 @@ const ICAgileAgilityInTheEnterpriseICPentCertificationTraining = () => {
         title: "Course Overview",
         subtitle: "ICAgile Enterprise Agile Coaching (ICP-ENT) Training Overview",
         description: [
-            "The Enterprise Agile Coaching (ICP-ENT) course offered by Simpliaxis is tailored for experienced Agile practitioners who train teams, regardless of function, and influence organizational change.",
+            "The Enterprise Agile Coaching (ICP-ENT) course offered by Viovn is tailored for experienced Agile practitioners who train teams, regardless of function, and influence organizational change.",
             "This 14-hour training program helps participants develop the mindset, skills, and approaches needed to train executives, leaders, and business units in complex environments.",
             "The training is highly interactive, featuring real-world scenarios and practical exercises to help you apply enterprise Agile thinking immediately."
         ],
@@ -444,7 +444,7 @@ const ICAgileAgilityInTheEnterpriseICPentCertificationTraining = () => {
         ],
         modesTitle: "Training Modes",
         modesDescription: [
-            "Simpliaxis offers flexible delivery modes including instructor-led online training for live, interactive sessions with accredited trainers. We also provide customized corporate training programs."
+            "Viovn offers flexible delivery modes including instructor-led online training for live, interactive sessions with accredited trainers. We also provide customized corporate training programs."
         ],
     };
 
@@ -687,7 +687,7 @@ const ICAgileAgilityInTheEnterpriseICPentCertificationTraining = () => {
 
                             <CourseClients clients={courseClients} />
                             <CourseTrainers trainers={courseTrainers} />
-                            <CourseWhySimpliaxis features={courseWhySimpliaxis} />
+                            <CourseWhyViovn features={courseWhyViovn} />
                         </div>
 
                         {/* Right Side Panel */}
