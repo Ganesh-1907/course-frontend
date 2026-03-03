@@ -37,7 +37,7 @@ const CourseTrainers: React.FC<CourseTrainersProps> = ({
   return (
     <div className="py-24 bg-white relative overflow-hidden">
       {/* Background Glow */}
-      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-50/50 rounded-full blur-[120px] -translate-y-1/2 translate-x-1/2" />
+      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/5 rounded-full blur-[120px] -translate-y-1/2 translate-x-1/2" />
 
       <div className="container mx-auto relative z-10">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-16">
@@ -48,8 +48,8 @@ const CourseTrainers: React.FC<CourseTrainersProps> = ({
               </div>
               <span className="text-[12px] text-yellow-600 font-black uppercase tracking-[0.2em]">{title}</span>
             </div>
-            <h2 className="text-3xl md:text-5xl font-black text-[#001c3d] tracking-tight leading-[1.1]">
-              {subtitle.split("Elite")[0]}<span className="text-blue-600">Elite</span>{subtitle.split("Elite")[1]}
+            <h2 className="text-3xl md:text-4xl font-black text-[#001c3d] tracking-tight leading-[1.1]">
+              {subtitle.split("Elite")[0]}<span className="text-primary">Elite</span>{subtitle.split("Elite")[1]}
             </h2>
             <p className="text-slate-500 font-medium text-[15px] leading-relaxed">
               {description}
@@ -57,10 +57,10 @@ const CourseTrainers: React.FC<CourseTrainersProps> = ({
           </div>
           
           <div className="hidden md:flex gap-3">
-            <button className="w-12 h-12 rounded-xl border border-slate-200 flex items-center justify-center hover:bg-slate-50 hover:border-blue-600 hover:text-blue-600 transition-all text-slate-400 group">
+            <button className="w-12 h-12 rounded-xl border border-slate-200 flex items-center justify-center hover:bg-slate-50 hover:border-primary hover:text-primary transition-all text-slate-400 group">
               <ChevronLeft className="w-6 h-6 transition-transform group-hover:-translate-x-1" />
             </button>
-            <button className="w-12 h-12 rounded-xl border border-blue-600 flex items-center justify-center bg-blue-600 text-white hover:bg-blue-700 shadow-lg shadow-blue-500/20 transition-all group">
+            <button className="w-12 h-12 rounded-xl border border-primary flex items-center justify-center bg-primary text-white hover:bg-orange-600 shadow-lg shadow-primary/20 transition-all group">
               <ChevronRight className="w-6 h-6 transition-transform group-hover:translate-x-1" />
             </button>
           </div>
@@ -82,14 +82,14 @@ const CourseTrainers: React.FC<CourseTrainersProps> = ({
                   <ShieldCheck className="w-3.5 h-3.5" />
                   <span className="text-[10px] font-black uppercase tracking-wider">Verified</span>
                 </div>
-                <button className="p-2.5 bg-blue-50/50 rounded-xl hover:bg-[#0077b5] group/ln transition-all">
+                <button className="p-2.5 bg-accent rounded-xl hover:bg-[#0077b5] group/ln transition-all">
                   <Linkedin className="w-5 h-5 text-[#0077b5] fill-current group-hover/ln:text-white transition-colors" />
                 </button>
               </div>
 
               {/* Profile Image with Ring Animation */}
               <div className="relative mb-8">
-                <div className="absolute inset-0 bg-blue-500 rounded-full scale-0 group-hover:scale-110 opacity-0 group-hover:opacity-10 transition-all duration-500" />
+                <div className="absolute inset-0 bg-primary rounded-full scale-0 group-hover:scale-110 opacity-10 group-hover:opacity-10 transition-all duration-500" />
                 <div className="w-32 h-32 p-3 ring-1 ring-slate-100 rounded-full bg-white shadow-sm overflow-hidden z-10 relative">
                   <img 
                     src={trainer.image} 
@@ -105,7 +105,7 @@ const CourseTrainers: React.FC<CourseTrainersProps> = ({
               <div className="space-y-4 w-full">
                 <div className="space-y-1">
                   <h3 className="text-2xl font-black text-[#001c3d] tracking-tight">{trainer.name}</h3>
-                  <p className="text-[13px] font-black text-blue-600 bg-blue-50 py-1.5 px-4 rounded-full inline-block uppercase tracking-widest">{trainer.role}</p>
+                  <p className="text-[13px] font-black text-primary bg-accent py-1.5 px-4 rounded-full inline-block uppercase tracking-widest">{trainer.role}</p>
                 </div>
                 
                 <div className="flex items-center justify-center gap-6 py-4 border-y border-slate-50">
@@ -127,7 +127,7 @@ const CourseTrainers: React.FC<CourseTrainersProps> = ({
                   "{trainer.description}"
                 </p>
 
-                <Button variant="ghost" className="w-full text-blue-600 font-black text-[13px] uppercase tracking-widest group/btn py-6 hover:bg-blue-50 rounded-2xl">
+                <Button variant="ghost" className="w-full text-primary font-black text-[13px] uppercase tracking-widest group/btn py-6 hover:bg-accent rounded-2xl">
                   Profile Details <ArrowUpRight className="w-4 h-4 ml-1 transition-transform group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1" />
                 </Button>
               </div>

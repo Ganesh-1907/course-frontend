@@ -99,7 +99,7 @@ const AgileForManagersTraining = () => {
     ];
 
     const certificationSteps = [
-        { title: "Registration", description: "Enroll in the Agile for Managers workshop with Viovn.", color: "#3B82F6" },
+        { title: "Registration", description: "Enroll in the Agile for Managers workshop with Viovn.", color: "hsl(var(--primary))" },
         { title: "Engagement", description: "Attend the instructor-led training sessions on both days.", color: "#F59E0B" },
         { title: "Collaboration", description: "Participate in discussions, exercises, and case studies.", color: "#10B981" },
         { title: "Completion", description: "Complete the workshop successfully to fulfill requirements.", color: "#8B5CF6" },
@@ -288,7 +288,7 @@ const AgileForManagersTraining = () => {
             icon: Users,
             title: 'Guaranteed to',
             subtitle: 'Run Workshops',
-            color: 'bg-blue-50 text-blue-600',
+            color: 'bg-accent text-primary',
         },
         {
             icon: BookOpen,
@@ -574,12 +574,12 @@ const AgileForManagersTraining = () => {
             content: (
                 <div className="space-y-6">
                     <div className="bg-white border border-slate-200 rounded-none p-8 shadow-sm">
-                        <h4 className="text-[14px] text-slate-500 font-bold mb-2 uppercase tracking-tight flex items-center gap-2">
+                        <h4 className="text-[14px] text-primary font-bold mb-2 uppercase tracking-tight flex items-center gap-2">
                             {overviewContent.title}
                         </h4>
-                        <h2 className="text-2xl md:text-3xl font-black text-[#001c3d] mb-6 flex items-center gap-2">
+                        <h2 className="text-3xl md:text-4xl font-black text-[#001c3d] mb-6 flex items-center gap-2">
                             {overviewContent.subtitle}{' '}
-                            <span className="text-blue-400">✦</span>
+                            <span className="text-primary">✦</span>
                         </h2>
                         <div className="space-y-5 text-slate-700 font-medium leading-[1.7] text-[15px]">
                             {overviewContent.description.map((p, i) => (

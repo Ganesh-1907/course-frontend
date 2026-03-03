@@ -171,14 +171,14 @@ const CourseHero: React.FC<CourseHeroProps> = ({
             </div>
 
             <div className="flex flex-wrap items-center gap-3 pt-4">
-              <Button variant="outline" className="border-[#ff4d2a] text-[#ff4d2a] hover:bg-[#ff4d2a]/5 font-bold rounded-md h-[46px] px-6 text-[15px]">
+              <Button variant="outline" className="border-primary text-primary hover:bg-primary/5 font-bold rounded-md h-[46px] px-6 text-[15px]">
                 <Download className="w-4 h-4 mr-2" />
                 {downloadBtnText}
               </Button>
-              <Button className="bg-[#ff4d2a] hover:bg-[#e64526] text-white font-bold rounded-md h-[46px] px-8 text-[15px] shadow-lg shadow-orange-500/20">
+              <Button className="bg-primary hover:bg-orange-600 text-white font-bold rounded-md h-[46px] px-8 text-[15px] shadow-lg shadow-orange-500/20">
                 {viewSchedulesBtnText}
               </Button>
-              <Button variant="outline" className="border-[#2563eb] text-[#2563eb] hover:bg-[#2563eb]/5 font-bold rounded-md h-[46px] px-6 text-[15px]">
+              <Button variant="outline" className="border-primary text-primary hover:bg-primary/5 font-bold rounded-md h-[46px] px-6 text-[15px]">
                 <FileText className="w-4 h-4 mr-2" />
                 {freeAssessmentBtnText}
               </Button>

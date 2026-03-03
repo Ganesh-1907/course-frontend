@@ -187,7 +187,7 @@ const AgileForMarketingMicrocredentialCourse = () => {
 
     const courseFeatures = [
         { icon: Target, title: 'Agile Marketing', subtitle: 'Adaptive Planning', color: 'bg-pink-50 text-pink-600' },
-        { icon: Settings, title: 'Frameworks', subtitle: 'Iterative Model', color: 'bg-blue-50 text-blue-600' },
+        { icon: Settings, title: 'Frameworks', subtitle: 'Iterative Model', color: 'bg-accent text-primary' },
         { icon: Award, title: 'Credential', subtitle: 'Micro-badge', color: 'bg-purple-50 text-purple-600' },
         { icon: TrendingUp, title: 'Performance', subtitle: 'Data-Driven', color: 'bg-cyan-50 text-cyan-600' },
     ];
@@ -278,11 +278,11 @@ const AgileForMarketingMicrocredentialCourse = () => {
             content: (
                 <div className="space-y-6">
                     <div className="bg-white border border-slate-200 rounded-none p-8 shadow-sm">
-                        <h4 className="text-[14px] text-slate-500 font-bold mb-2 uppercase tracking-tight flex items-center gap-2">
+                        <h4 className="text-[14px] text-primary font-bold mb-2 uppercase tracking-tight flex items-center gap-2">
                             {overviewContent.title}
                         </h4>
-                        <h2 className="text-2xl md:text-3xl font-black text-[#001c3d] mb-6 flex items-center gap-2">
-                            {overviewContent.subtitle} <span className="text-blue-400">✦</span>
+                        <h2 className="text-3xl md:text-4xl font-black text-[#001c3d] mb-6 flex items-center gap-2">
+                            {overviewContent.subtitle} <span className="text-primary">✦</span>
                         </h2>
                         <div className="space-y-5 text-slate-700 font-medium leading-[1.7] text-[15px]">
                             {overviewContent.description.map((p, i) => (

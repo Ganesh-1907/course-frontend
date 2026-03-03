@@ -50,13 +50,13 @@ const CourseFAQs: React.FC<CourseFAQsProps> = ({
       {/* Header */}
       <div className="space-y-3">
         <div className="flex items-center gap-2">
-          <div className="p-2 bg-blue-50 rounded-lg">
-            <HelpCircle className="w-5 h-5 text-blue-600" />
+          <div className="p-2 bg-accent rounded-lg">
+            <HelpCircle className="w-5 h-5 text-primary" />
           </div>
-          <span className="text-[12px] text-blue-600 font-black uppercase tracking-[0.2em]">{title}</span>
+          <span className="text-[12px] text-primary font-black uppercase tracking-[0.2em]">{title}</span>
         </div>
         <h2 className="text-3xl md:text-4xl font-black text-[#001c3d] tracking-tight">
-          {subtitle.split("Questions")[0]}<span className="text-blue-600">Questions</span>{subtitle.split("Questions")[1]}
+          {subtitle.split("Questions")[0]}<span className="text-primary">Questions</span>{subtitle.split("Questions")[1]}
         </h2>
         <p className="text-slate-500 font-medium text-[15px] max-w-2xl">
           {description}
@@ -72,7 +72,7 @@ const CourseFAQs: React.FC<CourseFAQsProps> = ({
             className={cn(
               "px-6 py-3 text-[13px] font-black transition-all rounded-xl relative",
               activeCategory === category.id
-                ? "text-blue-600"
+                ? "text-primary"
                 : "text-slate-500 hover:text-slate-700"
             )}
           >
@@ -101,18 +101,18 @@ const CourseFAQs: React.FC<CourseFAQsProps> = ({
               <AccordionItem 
                 key={i} 
                 value={`item-${i}`}
-                className="border border-slate-100 bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md hover:border-blue-100 transition-all duration-300"
+                className="border border-slate-100 bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md hover:border-primary/20 transition-all duration-300"
               >
                 <AccordionTrigger className="px-8 py-6 hover:no-underline text-left group [&[data-state=open]]:bg-slate-50/50">
                   <div className="flex items-center gap-4">
-                    <MessageCircleQuestion className="w-5 h-5 text-blue-500 flex-shrink-0 group-hover:scale-110 transition-transform" />
+                    <MessageCircleQuestion className="w-5 h-5 text-primary flex-shrink-0 group-hover:scale-110 transition-transform" />
                     <span className="text-[16px] font-black text-slate-800 leading-tight">
                       {faq.question}
                     </span>
                   </div>
                 </AccordionTrigger>
                 <AccordionContent className="px-8 pb-8 pt-2">
-                  <div className="pl-9 border-l-2 border-blue-100/50 ml-2.5">
+                  <div className="pl-9 border-l-2 border-primary/20 ml-2.5">
                     <p className="text-[15px] font-bold text-slate-600 leading-relaxed italic">
                       {faq.answer}
                     </p>
@@ -125,14 +125,14 @@ const CourseFAQs: React.FC<CourseFAQsProps> = ({
       </AnimatePresence>
 
       {/* Contact Section */}
-      <div className="bg-blue-600 rounded-3xl p-8 md:p-12 relative overflow-hidden group">
+      <div className="bg-primary rounded-3xl p-8 md:p-12 relative overflow-hidden group">
         <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl" />
         <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-8">
           <div className="text-center md:text-left space-y-2">
             <h3 className="text-2xl font-black text-white">{footerTitle}</h3>
-            <p className="text-blue-100 font-medium text-[15px]">{footerDescription}</p>
+            <p className="text-orange-50 font-medium text-[15px]">{footerDescription}</p>
           </div>
-          <button className="bg-white text-blue-600 font-black px-8 py-4 rounded-xl shadow-lg hover:shadow-xl hover:scale-105 transition-all active:scale-95 whitespace-nowrap">
+          <button className="bg-white text-primary font-black px-8 py-4 rounded-xl shadow-lg hover:shadow-xl hover:scale-105 transition-all active:scale-95 whitespace-nowrap">
             {footerButtonText}
           </button>
         </div>

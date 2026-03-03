@@ -205,7 +205,7 @@ const AgileOKRsMicroCredentialTraining = () => {
     ];
 
     const courseFeatures = [
-        { icon: Users, title: '4+ Hours', subtitle: 'Live Training', color: 'bg-blue-50 text-blue-600' },
+        { icon: Users, title: '4+ Hours', subtitle: 'Live Training', color: 'bg-accent text-primary' },
         { icon: BookOpen, title: 'Expert-Led', subtitle: 'Workshops', color: 'bg-orange-50 text-orange-600' },
         { icon: Network, title: 'Global', subtitle: 'Scrum Community', color: 'bg-green-50 text-green-600' },
         { icon: Award, title: 'Digital Badge', subtitle: 'Included', color: 'bg-purple-50 text-purple-600' },
@@ -309,12 +309,12 @@ const AgileOKRsMicroCredentialTraining = () => {
                 <div className="space-y-8">
                     {/* Main Overview Section */}
                     <div className="bg-white border border-slate-200 rounded-none p-8 shadow-sm">
-                        <h4 className="text-[14px] text-slate-500 font-bold mb-2 uppercase tracking-tight flex items-center gap-2">
+                        <h4 className="text-[14px] text-primary font-bold mb-2 uppercase tracking-tight flex items-center gap-2">
                             {overviewContent.title}
                         </h4>
-                        <h2 className="text-2xl md:text-3xl font-black text-[#001c3d] mb-6 flex items-center gap-2">
+                        <h2 className="text-3xl md:text-4xl font-black text-[#001c3d] mb-6 flex items-center gap-2">
                             {overviewContent.subtitle}{' '}
-                            <span className="text-blue-400">✦</span>
+                            <span className="text-primary">✦</span>
                         </h2>
                         <div className="space-y-5 text-slate-700 font-medium leading-[1.7] text-[15px]">
                             {overviewContent.description.map((p, i) => (
