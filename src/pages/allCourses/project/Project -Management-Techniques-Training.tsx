@@ -17,7 +17,7 @@ import CourseCorporateOptUs from "@/components/courses/CourseCorporateOptUs";
 import CourseClients from "@/components/courses/CourseClients";
 import CourseTrainers from "@/components/courses/CourseTrainers";
 import CourseFAQs from "@/components/courses/faqs/CourseFAQs";
-import CourseWhySimpliaxis from "@/components/courses/CourseWhySimpliaxis";
+import CourseWhyViovn from "@/components/courses/CourseWhyViovn";
 
 import {
     Users,
@@ -44,7 +44,7 @@ const ProjectManagementTechniquesTraining = () => {
         { "text": "8 hours of Live Instructor-Led Training Sessions" },
         { "text": "Hands-On Exercises and Real-World Scenarios" },
         { "text": "Gantt Charts Optimize Project Tasks" },
-        { "text": "Course Completion Certificate by Simpliaxis" },
+        { "text": "Course Completion Certificate by Viovn" },
         { "text": "24/7 Post-Class Support and Learning Assistance" },
         { "text": "Doubt Clearing Sessions" }
     ];
@@ -157,7 +157,7 @@ const ProjectManagementTechniquesTraining = () => {
     const certificationSteps = [
         {
             "title": "Enroll in the Training",
-            "description": "Register for the Project Management Techniques training through Simpliaxis."
+            "description": "Register for the Project Management Techniques training through Viovn."
         },
         {
             "title": "Attend the Live Sessions",
@@ -169,7 +169,7 @@ const ProjectManagementTechniquesTraining = () => {
         },
         {
             "title": "Receive Certification",
-            "description": "Receive the Simpliaxis Project Management Techniques course completion certificate."
+            "description": "Receive the Viovn Project Management Techniques course completion certificate."
         }
     ];
 
@@ -339,7 +339,7 @@ const ProjectManagementTechniquesTraining = () => {
         }
     ];
 
-    const courseWhySimpliaxis = [
+    const courseWhyViovn = [
         {
             "title": "Global Recognition",
             "description": "Every Course is recognized by the most reputable certification organizations globally that ensure credibility and acceptance in all industries."
@@ -362,7 +362,7 @@ const ProjectManagementTechniquesTraining = () => {
         },
         {
             "title": "End-to-End Assistance",
-            "description": "Simpliaxis Offers ongoing assistance prior to, during, and after Training and includes study material exams and guidance for participants."
+            "description": "Viovn Offers ongoing assistance prior to, during, and after Training and includes study material exams and guidance for participants."
         }
     ];
 
@@ -398,7 +398,7 @@ const ProjectManagementTechniquesTraining = () => {
             "Join our 1-day live online Project Management Techniques Training!",
             "Learn to analyze projects for issues and opportunities!",
             "Use Gantt charts to visualize and improve your projects!",
-            "Get a certificate of completion from Simpliaxis!"
+            "Get a certificate of completion from Viovn!"
         ],
         "mainImage": "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80",
         "badgeImage": "/scrum-badge.png"
@@ -410,7 +410,7 @@ const ProjectManagementTechniquesTraining = () => {
         "description": [
             "Project Management Techniques Training provides a comprehensive understanding of essential tools and methodologies for successful project execution. This course is ideal for project managers, team leads, coordinators, and professionals aspiring to improve their project management skills.",
             "By mastering these techniques, you will gain the ability to effectively plan, execute, monitor, and control projects, ensuring on-time delivery and achieving organizational objectives.",
-            "Simpliaxis' Project Management Techniques Course is a stepping stone towards accredited project management certifications like PMP and PRINCE2. The skills and knowledge acquired during this training provide a solid foundation for pursuing these globally recognized credentials."
+            "Viovn' Project Management Techniques Course is a stepping stone towards accredited project management certifications like PMP and PRINCE2. The skills and knowledge acquired during this training provide a solid foundation for pursuing these globally recognized credentials."
         ],
         "whatIsTitle": "Why Attend This Course?",
         "whatIsDescription": [
@@ -441,7 +441,7 @@ const ProjectManagementTechniquesTraining = () => {
         "courseName": "Why Corporate Opt Us",
         "label": "Corporate Training",
         "buttonText": "Corporate Group Enquiry",
-        "description": "With learning targeted to your unique team environment, we at SimpliAxis help to resolve your specific issues and meet your specific needs with tailored training methods. We offer corporate training globally to keep Organizations up to date by building the knowledge gap required."
+        "description": "With learning targeted to your unique team environment, we at Viovn help to resolve your specific issues and meet your specific needs with tailored training methods. We offer corporate training globally to keep Organizations up to date by building the knowledge gap required."
     };
 
     const tabs = [
@@ -535,7 +535,7 @@ const ProjectManagementTechniquesTraining = () => {
                         titlePrefix="Earn Your"
                         titleHighlight="Course"
                         titleSuffix="Completion Certificate"
-                        issuerName="Simpliaxis"
+                        issuerName="Viovn"
                         certificateType="Certificate of Completion"
                         certifyText="This is to certify that"
                         requirementText="Has successfully completed the training in"
@@ -620,7 +620,7 @@ const ProjectManagementTechniquesTraining = () => {
 
                             <CourseClients clients={courseClients} />
                             <CourseTrainers trainers={courseTrainers} />
-                            <CourseWhySimpliaxis features={courseWhySimpliaxis} />
+                            <CourseWhyViovn features={courseWhyViovn} />
                         </div>
 
                         <div className="relative w-full lg:w-[340px] xl:w-[360px] lg:justify-self-end">

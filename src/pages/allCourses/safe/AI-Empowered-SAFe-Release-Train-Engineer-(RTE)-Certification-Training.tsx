@@ -17,7 +17,7 @@ import CourseCorporateOptUs from "@/components/courses/CourseCorporateOptUs";
 import CourseClients from "@/components/courses/CourseClients";
 import CourseTrainers from "@/components/courses/CourseTrainers";
 import CourseFAQs from "@/components/courses/faqs/CourseFAQs";
-import CourseWhySimpliaxis from "@/components/courses/CourseWhySimpliaxis";
+import CourseWhyViovn from "@/components/courses/CourseWhyViovn";
 
 import { 
   Users, 
@@ -137,7 +137,7 @@ const AIEmpoweredSAFeReleaseTrainEngineerRTECertificationTraining = () => {
   const certificationSteps = [
     {
       "title": "Complete the Training",
-      "description": "Attend 24-hour live instructor-led sessions with Simpliaxis."
+      "description": "Attend 24-hour live instructor-led sessions with Viovn."
     },
     {
       "title": "Prepare with Expert Guidance",
@@ -408,7 +408,7 @@ const AIEmpoweredSAFeReleaseTrainEngineerRTECertificationTraining = () => {
     },
   ];
 
-  const courseWhySimpliaxis = [
+  const courseWhyViovn = [
     {
       "title": "Authorized SAFe Training Partner",
       "description": "Official Platinum SPCT Partner of Scaled Agile."
@@ -476,7 +476,7 @@ const AIEmpoweredSAFeReleaseTrainEngineerRTECertificationTraining = () => {
       "24 PDUs & 24 SEUs",
       "One-Year SAFe® Membership"
     ],
-    "mainImage": "https://www.simpliaxis.com/../frontend_assets/image/ring_loader.gif",
+    "mainImage": "https://www.viovn.com/../frontend_assets/image/ring_loader.gif",
     "badgeImage": "/csm-badge.png"
   };
 
@@ -774,7 +774,7 @@ const AIEmpoweredSAFeReleaseTrainEngineerRTECertificationTraining = () => {
 
               <CourseClients clients={courseClients} />
               <CourseTrainers trainers={courseTrainers} />
-              <CourseWhySimpliaxis features={courseWhySimpliaxis} />
+              <CourseWhyViovn features={courseWhyViovn} />
             </div>
 
             {/* Right Side Panel */}

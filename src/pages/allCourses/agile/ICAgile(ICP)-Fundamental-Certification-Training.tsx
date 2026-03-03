@@ -18,7 +18,7 @@ import CourseCorporateOptUs from "@/components/courses/CourseCorporateOptUs";
 import CourseClients from "@/components/courses/CourseClients";
 import CourseTrainers from "@/components/courses/CourseTrainers";
 import CourseFAQs from "@/components/courses/faqs/CourseFAQs";
-import CourseWhySimpliaxis from "@/components/courses/CourseWhySimpliaxis";
+import CourseWhyViovn from "@/components/courses/CourseWhyViovn";
 
 import {
     Users,
@@ -163,7 +163,7 @@ const ICAgileICPFundamentalCertificationTraining = () => {
     const certificationSteps = [
         {
             title: "Enroll for the Course",
-            description: "Register for the ICP Fundamental course through an authorized provider such as Simpliaxis.",
+            description: "Register for the ICP Fundamental course through an authorized provider such as Viovn.",
             color: "#3B82F6"
         },
         {
@@ -427,10 +427,10 @@ const ICAgileICPFundamentalCertificationTraining = () => {
         },
     ];
 
-    const courseWhySimpliaxis = [
+    const courseWhyViovn = [
         {
             title: "Authorized Training Provider",
-            description: "Simpliaxis delivers officially accredited ICAgile Fundamental training aligned with ICAgile standards."
+            description: "Viovn delivers officially accredited ICAgile Fundamental training aligned with ICAgile standards."
         },
         {
             title: "Experienced Trainers",
@@ -454,7 +454,7 @@ const ICAgileICPFundamentalCertificationTraining = () => {
         },
         {
             title: "Career Growth",
-            description: "Simpliaxis supports long-term Agile career paths and leadership development for ICAgile-certified professionals."
+            description: "Viovn supports long-term Agile career paths and leadership development for ICAgile-certified professionals."
         },
         {
             title: "Learning Support",
@@ -496,7 +496,7 @@ const ICAgileICPFundamentalCertificationTraining = () => {
             "In-depth ICP Fundamental Training with Real-world Simulations",
             "Get ICAgile Fundamental Certification for Lifetime Validation"
         ],
-        mainImage: "https://www.simpliaxis.com/../frontend_assets/image/ring_loader.gif",
+        mainImage: "https://www.viovn.com/../frontend_assets/image/ring_loader.gif",
         badgeImage: "/csm-badge.png",
     };
 
@@ -504,7 +504,7 @@ const ICAgileICPFundamentalCertificationTraining = () => {
         title: "Course Overview",
         subtitle: "ICAgile (ICP) Fundamental Training Course Overview",
         description: [
-            "The ICAgile Fundamental course offered by Simpliaxis introduces the core Agile concepts, values, and principles necessary to build a solid foundation for Agile ways of working across teams and domains.",
+            "The ICAgile Fundamental course offered by Viovn introduces the core Agile concepts, values, and principles necessary to build a solid foundation for Agile ways of working across teams and domains.",
             "Participants explore the history of Agile, the Agile mindset, value-driven development, customer involvement, adaptive planning, and continuous improvement, rather than emphasizing a single framework.",
             "The training is highly interactive, featuring real-world scenarios and practical exercises to help you apply Agile thinking immediately in your workplace."
         ],
@@ -532,7 +532,7 @@ const ICAgileICPFundamentalCertificationTraining = () => {
         ],
         modesTitle: "Training Modes",
         modesDescription: [
-            "Simpliaxis offers flexible delivery modes including instructor-led online training for live, interactive sessions with accredited trainers. We also provide customized corporate training programs tailored to organizational requirements."
+            "Viovn offers flexible delivery modes including instructor-led online training for live, interactive sessions with accredited trainers. We also provide customized corporate training programs tailored to organizational requirements."
         ],
     };
 
@@ -777,7 +777,7 @@ const ICAgileICPFundamentalCertificationTraining = () => {
 
                             <CourseClients clients={courseClients} />
                             <CourseTrainers trainers={courseTrainers} />
-                            <CourseWhySimpliaxis features={courseWhySimpliaxis} />
+                            <CourseWhyViovn features={courseWhyViovn} />
                         </div>
 
                         {/* Right Side Panel */}

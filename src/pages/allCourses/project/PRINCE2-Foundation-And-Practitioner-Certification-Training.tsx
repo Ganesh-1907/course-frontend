@@ -17,7 +17,7 @@ import CourseCorporateOptUs from "@/components/courses/CourseCorporateOptUs";
 import CourseClients from "@/components/courses/CourseClients";
 import CourseTrainers from "@/components/courses/CourseTrainers";
 import CourseFAQs from "@/components/courses/faqs/CourseFAQs";
-import CourseWhySimpliaxis from "@/components/courses/CourseWhySimpliaxis";
+import CourseWhyViovn from "@/components/courses/CourseWhyViovn";
 
 import {
     Users,
@@ -187,7 +187,7 @@ const PRINCE2FoundationAndPractitionerCertificationTraining = () => {
         },
         {
             "title": "Attend Accredited Training",
-            "description": "Enroll in accredited PRINCE2 Foundation and Practitioner training from a PeopleCert Authorized Training Organization such as Simpliaxis."
+            "description": "Enroll in accredited PRINCE2 Foundation and Practitioner training from a PeopleCert Authorized Training Organization such as Viovn."
         },
         {
             "title": "Prepare for the Exams",
@@ -399,10 +399,10 @@ const PRINCE2FoundationAndPractitionerCertificationTraining = () => {
         }
     ];
 
-    const courseWhySimpliaxis = [
+    const courseWhyViovn = [
         {
             "title": "Authorized Training Partner",
-            "description": "Simpliaxis is an authorized training organization, ensuring you receive the most up-to-date and official PRINCE2 curriculum."
+            "description": "Viovn is an authorized training organization, ensuring you receive the most up-to-date and official PRINCE2 curriculum."
         },
         {
             "title": "High Pass Rate",
@@ -470,7 +470,7 @@ const PRINCE2FoundationAndPractitionerCertificationTraining = () => {
         "description": [
             "PRINCE2® (Projects IN Controlled Environments) is the global standard for project management, providing a structured framework that can be applied to any project regardless of size or industry. This combined training program covers both the Foundation and Practitioner levels, taking you from core concepts to expert application in just four days.",
             "The Foundation level introduces you to the PRINCE2 principles, themes, and processes, while the Practitioner level focuses on applying and tailoring the methodology to specific project scenarios. This course is fully aligned with the latest PRINCE2 7th Edition.",
-            "By earning your PRINCE2 certification with Simpliaxis, you join an elite group of professionals recognized worldwide for their ability to deliver projects on time, within budget, and to the required quality standards."
+            "By earning your PRINCE2 certification with Viovn, you join an elite group of professionals recognized worldwide for their ability to deliver projects on time, within budget, and to the required quality standards."
         ],
         "whatIsTitle": "Why Choose PRINCE2 Combined Training?",
         "whatIsDescription": [
@@ -680,7 +680,7 @@ const PRINCE2FoundationAndPractitionerCertificationTraining = () => {
 
                             <CourseClients clients={courseClients} />
                             <CourseTrainers trainers={courseTrainers} />
-                            <CourseWhySimpliaxis features={courseWhySimpliaxis} />
+                            <CourseWhyViovn features={courseWhyViovn} />
                         </div>
 
                         <div className="relative w-full lg:w-[340px] xl:w-[360px] lg:justify-self-end">

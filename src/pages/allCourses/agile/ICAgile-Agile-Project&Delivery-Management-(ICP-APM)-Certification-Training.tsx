@@ -17,7 +17,7 @@ import CourseCorporateOptUs from "@/components/courses/CourseCorporateOptUs";
 import CourseClients from "@/components/courses/CourseClients";
 import CourseTrainers from "@/components/courses/CourseTrainers";
 import CourseFAQs from "@/components/courses/faqs/CourseFAQs";
-import CourseWhySimpliaxis from "@/components/courses/CourseWhySimpliaxis";
+import CourseWhyViovn from "@/components/courses/CourseWhyViovn";
 
 import {
   Users,
@@ -400,7 +400,7 @@ const ICAgileAgileProjectDeliveryManagementICPAPMCertificationTraining = () => {
     },
   ];
 
-  const courseWhySimpliaxis = [
+  const courseWhyViovn = [
     {
       "title": "Globally Recognized ICAgile Certification",
       "description": "The ICP-APM certification program provided by Viovn is internationally respected for validating high-level proficiency in Agile project and delivery management."
@@ -470,7 +470,7 @@ const ICAgileAgileProjectDeliveryManagementICPAPMCertificationTraining = () => {
       "Hands-on learning through real delivery scenarios, planning exercises, and workshops",
       "Receive the globally recognized ICAgile ICP-APM credential"
     ],
-    "mainImage": "https://www.simpliaxis.com/../frontend_assets/image/ring_loader.gif",
+    "mainImage": "https://www.viovn.com/../frontend_assets/image/ring_loader.gif",
     "badgeImage": "/csm-badge.png"
   };
 
@@ -745,7 +745,7 @@ const ICAgileAgileProjectDeliveryManagementICPAPMCertificationTraining = () => {
 
               <CourseClients clients={courseClients} />
               <CourseTrainers trainers={courseTrainers} />
-              <CourseWhySimpliaxis features={courseWhySimpliaxis} />
+              <CourseWhyViovn features={courseWhyViovn} />
             </div>
 
             {/* Right Side Panel */}

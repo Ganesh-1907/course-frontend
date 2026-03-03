@@ -17,7 +17,7 @@ import CourseCorporateOptUs from "@/components/courses/CourseCorporateOptUs";
 import CourseClients from "@/components/courses/CourseClients";
 import CourseTrainers from "@/components/courses/CourseTrainers";
 import CourseFAQs from "@/components/courses/faqs/CourseFAQs";
-import CourseWhySimpliaxis from "@/components/courses/CourseWhySimpliaxis";
+import CourseWhyViovn from "@/components/courses/CourseWhyViovn";
 
 import {
   Users,
@@ -369,7 +369,7 @@ const ICAgilePeopleDevelopmentCertificationTraining = () => {
     },
   ];
 
-  const courseWhySimpliaxis = [
+  const courseWhyViovn = [
     {
       "title": "ICAgile-Accredited Training Partner",
       "description": "Viovn is an officially recognized ICAgile training partner, ensuring premium educational quality and immediate eligibility for certification."
@@ -439,7 +439,7 @@ const ICAgilePeopleDevelopmentCertificationTraining = () => {
       "Create lasting organizational impact using ICP-PDV frameworks",
       "Strengthen your Agile coaching career with a globally recognized credential"
     ],
-    "mainImage": "https://www.simpliaxis.com/../frontend_assets/image/ring_loader.gif",
+    "mainImage": "https://www.viovn.com/../frontend_assets/image/ring_loader.gif",
     "badgeImage": "/csm-badge.png"
   };
 
@@ -484,10 +484,10 @@ const ICAgilePeopleDevelopmentCertificationTraining = () => {
   };
 
   const corporateData = {
-    "courseName": "Why SimpliAxis Is Preferred by Corporates",
+    "courseName": "Why Viovn Is Preferred by Corporates",
     "label": "",
     "buttonText": "Corporate Group Enquiry",
-    "description": "SimpliAxis provides customized corporate training solutions designed to close skill gaps, enhance workforce capabilities, and support enterprise-wide Agile transformation through expert-led learning programs."
+    "description": "Viovn provides customized corporate training solutions designed to close skill gaps, enhance workforce capabilities, and support enterprise-wide Agile transformation through expert-led learning programs."
   };
 
   const courseMetadata = {
@@ -722,7 +722,7 @@ const ICAgilePeopleDevelopmentCertificationTraining = () => {
 
               <CourseClients clients={courseClients} />
               <CourseTrainers trainers={courseTrainers} />
-              <CourseWhySimpliaxis features={courseWhySimpliaxis} />
+              <CourseWhyViovn features={courseWhyViovn} />
             </div>
 
             {/* Right Side Panel */}

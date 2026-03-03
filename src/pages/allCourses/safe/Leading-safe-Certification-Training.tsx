@@ -17,7 +17,7 @@ import CourseCorporateOptUs from "@/components/courses/CourseCorporateOptUs";
 import CourseClients from "@/components/courses/CourseClients";
 import CourseTrainers from "@/components/courses/CourseTrainers";
 import CourseFAQs from "@/components/courses/faqs/CourseFAQs";
-import CourseWhySimpliaxis from "@/components/courses/CourseWhySimpliaxis";
+import CourseWhyViovn from "@/components/courses/CourseWhyViovn";
 
 import { 
   Users, 
@@ -390,7 +390,7 @@ const LeadingSafeCertificationTraining = () => {
     },
   ];
 
-  const courseWhySimpliaxis = [
+  const courseWhyViovn = [
     {
       title: "Globally Recognized Certification",
       description: "Earn SAFe® Agilist certification valued by global enterprises."
@@ -459,7 +459,7 @@ const LeadingSafeCertificationTraining = () => {
       "Access to SAFe® Community Platform",
       "Earn 16 PDUs & SEUs"
     ],
-    mainImage: "https://www.simpliaxis.com/../frontend_assets/image/ring_loader.gif",
+    mainImage: "https://www.viovn.com/../frontend_assets/image/ring_loader.gif",
     badgeImage: "/csm-badge.png"
   };
 
@@ -500,7 +500,7 @@ const LeadingSafeCertificationTraining = () => {
   };
 
   const corporateData = {
-    courseName: "Why Simpliaxis for Corporate?",
+    courseName: "Why Viovn for Corporate?",
     label: "",
     buttonText: "Corporate Group Enquiry",
     description: "We deliver customized enterprise SAFe training programs to help organizations scale Agile effectively, align strategy with execution, and accelerate value delivery."
@@ -760,7 +760,7 @@ const LeadingSafeCertificationTraining = () => {
 
               <CourseClients clients={courseClients} />
               <CourseTrainers trainers={courseTrainers} />
-              <CourseWhySimpliaxis features={courseWhySimpliaxis} />
+              <CourseWhyViovn features={courseWhyViovn} />
             </div>
 
             {/* Right Side Panel */}

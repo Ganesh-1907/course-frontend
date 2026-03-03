@@ -17,7 +17,7 @@ import CourseCorporateOptUs from "@/components/courses/CourseCorporateOptUs";
 import CourseClients from "@/components/courses/CourseClients";
 import CourseTrainers from "@/components/courses/CourseTrainers";
 import CourseFAQs from "@/components/courses/faqs/CourseFAQs";
-import CourseWhySimpliaxis from "@/components/courses/CourseWhySimpliaxis";
+import CourseWhyViovn from "@/components/courses/CourseWhyViovn";
 
 import { 
   Users, 
@@ -393,7 +393,7 @@ const AiNativeChangeAgentCertificationTrainingCourse = () => {
     },
   ];
 
-  const courseWhySimpliaxis = [
+  const courseWhyViovn = [
     { "title": "Authorized Scaled Agile Partner", "description": "Official course content aligned with Scaled Agile standards." },
     { "title": "Expert Instructors", "description": "Led by experienced enterprise AI transformation leaders." },
     { "title": "Enterprise-Focused Curriculum", "description": "Covers governance, lifecycle, scaling, and cross-functional execution." },
@@ -428,7 +428,7 @@ const AiNativeChangeAgentCertificationTrainingCourse = () => {
 
   const heroData = {
     "courseName": "AI-Native Change Agent Certification Training Course",
-    "breadcrumbName": "AI-Native Change Agent Certification Training | Simpliaxis",
+    "breadcrumbName": "AI-Native Change Agent Certification Training | Viovn",
     "rating": "5.0",
     "enrolledCount": "",
     "subtitle": "Lead and Scale Enterprise AI Transformation with Confidence",
@@ -438,7 +438,7 @@ const AiNativeChangeAgentCertificationTrainingCourse = () => {
       "Earn globally recognized certification",
       "Participate in expert-led enterprise case workshops"
     ],
-    "mainImage": "https://www.simpliaxis.com/../frontend_assets/image/ring_loader.gif",
+    "mainImage": "https://www.viovn.com/../frontend_assets/image/ring_loader.gif",
     "badgeImage": "/csm-badge.png"
   };
 
@@ -477,7 +477,7 @@ const AiNativeChangeAgentCertificationTrainingCourse = () => {
   };
 
   const corporateData = {
-    "courseName": "Why Simpliaxis for Corporates?",
+    "courseName": "Why Viovn for Corporates?",
     "label": "",
     "buttonText": "Corporate Group Enquiry",
     "description": "Enterprise-grade AI transformation programs designed to scale responsibly and strategically."
@@ -487,7 +487,7 @@ const AiNativeChangeAgentCertificationTrainingCourse = () => {
     shortName: 'AI Change Agent',
     shortNameAlt: 'AI-Native Change Agent',
     fullName: 'AI-Native Change Agent Certification Training Course',
-    fullNameAlt: 'AI-Native Change Agent Certification Training | Simpliaxis',
+    fullNameAlt: 'AI-Native Change Agent Certification Training | Viovn',
     certificateName: 'AI-Native Change Agent',
   };
 
@@ -508,7 +508,7 @@ const AiNativeChangeAgentCertificationTrainingCourse = () => {
       titlePrefix: 'Earn Your',
       titleHighlight: 'Global',
       titleSuffix: 'Recognition',
-      issuerName: 'Simpliaxis',
+      issuerName: 'Viovn',
       certificateType: 'AI-Native Change Agent Certification',
       certifyText: 'This is to certify that',
       requirementText:
@@ -751,7 +751,7 @@ const AiNativeChangeAgentCertificationTrainingCourse = () => {
 
               <CourseClients clients={courseClients} />
               <CourseTrainers trainers={courseTrainers} />
-              <CourseWhySimpliaxis features={courseWhySimpliaxis} />
+              <CourseWhyViovn features={courseWhyViovn} />
             </div>
 
             {/* Right Side Panel */}

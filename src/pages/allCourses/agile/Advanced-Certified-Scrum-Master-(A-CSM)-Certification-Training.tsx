@@ -17,7 +17,7 @@ import CourseCorporateOptUs from "@/components/courses/CourseCorporateOptUs";
 import CourseClients from "@/components/courses/CourseClients";
 import CourseTrainers from "@/components/courses/CourseTrainers";
 import CourseFAQs from "@/components/courses/faqs/CourseFAQs";
-import CourseWhySimpliaxis from "@/components/courses/CourseWhySimpliaxis";
+import CourseWhyViovn from "@/components/courses/CourseWhyViovn";
 
 import {
   Users,
@@ -418,7 +418,7 @@ const AdvancedCertifiedScrumMasterCertificationTraining = () => {
     },
   ];
 
-  const courseWhySimpliaxis = [
+  const courseWhyViovn = [
     {
       "title": "Global Recognition",
       "description": "Every Course is recognized by the most reputable certification organizations globally, ensuring credibility and acceptance across all industries. Our A-CSM certification, provided by the Scrum Alliance, offers global recognition in Scrum practices."
@@ -441,7 +441,7 @@ const AdvancedCertifiedScrumMasterCertificationTraining = () => {
     },
     {
       "title": "End-to-End Assistance",
-      "description": "Simpliaxis provides ongoing support before, during, and after training, including study materials, guidance for participants on A-CSM certification, and assistance with career choices."
+      "description": "Viovn provides ongoing support before, during, and after training, including study materials, guidance for participants on A-CSM certification, and assistance with career choices."
     },
     {
       "title": "Interactive and Engaging Training",
@@ -490,7 +490,7 @@ const AdvancedCertifiedScrumMasterCertificationTraining = () => {
       'Globally Recognized Advanced ScrumMaster Credential',
     ],
     mainImage:
-      'https://www.simpliaxis.com/../frontend_assets/image/ring_loader.gif',
+      'https://www.viovn.com/../frontend_assets/image/ring_loader.gif',
     badgeImage: '/csm-badge.png',
   };
 
@@ -768,7 +768,7 @@ const AdvancedCertifiedScrumMasterCertificationTraining = () => {
 
               <CourseClients clients={courseClients} />
               <CourseTrainers trainers={courseTrainers} />
-              <CourseWhySimpliaxis features={courseWhySimpliaxis} />
+              <CourseWhyViovn features={courseWhyViovn} />
             </div>
 
             {/* Right Side Panel */}

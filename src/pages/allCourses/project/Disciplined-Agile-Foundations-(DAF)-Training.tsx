@@ -17,7 +17,7 @@ import CourseCorporateOptUs from "@/components/courses/CourseCorporateOptUs";
 import CourseClients from "@/components/courses/CourseClients";
 import CourseTrainers from "@/components/courses/CourseTrainers";
 import CourseFAQs from "@/components/courses/faqs/CourseFAQs";
-import CourseWhySimpliaxis from "@/components/courses/CourseWhySimpliaxis";
+import CourseWhyViovn from "@/components/courses/CourseWhyViovn";
 
 import {
     Users,
@@ -140,7 +140,7 @@ const DisciplinedAgileFoundationsDAFTraining = () => {
     const certificationSteps = [
         {
             "title": "Register",
-            "description": "Enroll in a Disciplined Agile Foundations course by a PMI-approved training partner like Simpliaxis."
+            "description": "Enroll in a Disciplined Agile Foundations course by a PMI-approved training partner like Viovn."
         },
         {
             "title": "Learn",
@@ -267,7 +267,7 @@ const DisciplinedAgileFoundationsDAFTraining = () => {
             "items": [
                 {
                     "question": "Is the Disciplined Agile Foundation course instructor-led or self-paced?",
-                    "answer": "At Simpliaxis, we provide instructor-led online training for the Disciplined Agile Foundations (DAF) course to encourage participants to learn with interactive sessions."
+                    "answer": "At Viovn, we provide instructor-led online training for the Disciplined Agile Foundations (DAF) course to encourage participants to learn with interactive sessions."
                 },
                 {
                     "question": "What is the duration of the course?",
@@ -279,7 +279,7 @@ const DisciplinedAgileFoundationsDAFTraining = () => {
                 },
                 {
                     "question": "Do I get any certificate after completing the course?",
-                    "answer": "Yes. Participants receive a certificate of completion from Simpliaxis, PMI Authorized Training Partner (ATP)."
+                    "answer": "Yes. Participants receive a certificate of completion from Viovn, PMI Authorized Training Partner (ATP)."
                 },
                 {
                     "question": "Will I get access to course materials after the training?",
@@ -321,7 +321,7 @@ const DisciplinedAgileFoundationsDAFTraining = () => {
         { name: 'TCS', logo: 'https://upload.wikimedia.org/wikipedia/commons/b/b1/Tata_Consultancy_Services_Logo.svg' }
     ];
 
-    const courseWhySimpliaxis = [
+    const courseWhyViovn = [
         { "title": "Global Recognition", "description": "Every Course is recognized by the most reputable certification organizations globally that ensure credibility and acceptance in all industries." },
         { "title": "Expert Trainer", "description": "Gain knowledge from trained and experienced trainers who impart real-world business insights as well as practical experience to the classes." },
         { "title": "Flexible Learning", "description": "Provides a variety of methods of learning, such as classes, online, and corporate Training, that meet the needs of different individuals and their schedules." },
@@ -370,7 +370,7 @@ const DisciplinedAgileFoundationsDAFTraining = () => {
         "title": "Course Overview",
         "subtitle": "Disciplined Agile® Foundations Course Overview",
         "description": [
-            "The Disciplined Agile® Foundation Course by Simpliaxis is an entry-level, PMI-authorized training designed to build a strong understanding of the Disciplined Agile mindset and toolkit. Whether you’re working in Agile, Lean, hybrid, or traditional environments, this course enables you to customize your team’s Way of Working (WoW) with guidance tailored to your team and business context.",
+            "The Disciplined Agile® Foundation Course by Viovn is an entry-level, PMI-authorized training designed to build a strong understanding of the Disciplined Agile mindset and toolkit. Whether you’re working in Agile, Lean, hybrid, or traditional environments, this course enables you to customize your team’s Way of Working (WoW) with guidance tailored to your team and business context.",
             "Unlike prescriptive Agile methods like Scrum or SAFe, Disciplined Agile Training promotes context-sensitive decision-making, helping you apply Lean, Agile, and traditional approaches based on real-world needs.",
             "Through a structured curriculum, practical examples, and expert-led sessions, participants will learn how to navigate team challenges and optimize value streams effectively.",
             "This online PMI Disciplined Agile course is ideal for professionals seeking to master agile project management beyond conventional frameworks."
@@ -492,15 +492,15 @@ const DisciplinedAgileFoundationsDAFTraining = () => {
                         courseName="Disciplined Agile® Foundations"
                         certificateBenefits={certificateBenefits}
                         mockupName="SAMANTHA REED"
-                        label="Authorized Simpliaxis"
+                        label="Authorized Viovn"
                         titlePrefix="Earn Your"
                         titleHighlight="PMI"
                         titleSuffix="Authorized Foundation Badge"
-                        issuerName="Simpliaxis (PMI ATP)"
+                        issuerName="Viovn (PMI ATP)"
                         certificateType="Disciplined Agile® Foundations Completion Certificate"
                         certifyText="This is to certify that"
                         requirementText="Has successfully completed the 8-hour DAF training for"
-                        signer1Role="Founder, Simpliaxis"
+                        signer1Role="Founder, Viovn"
                         signer2Role="Authorized DA Trainer"
                     />
                 </div>
@@ -574,7 +574,7 @@ const DisciplinedAgileFoundationsDAFTraining = () => {
                             />
 
                             <CourseClients clients={courseClients} />
-                            <CourseWhySimpliaxis features={courseWhySimpliaxis} />
+                            <CourseWhyViovn features={courseWhyViovn} />
                         </div>
 
                         <div className="relative w-full lg:w-[340px] xl:w-[360px] lg:justify-self-end">

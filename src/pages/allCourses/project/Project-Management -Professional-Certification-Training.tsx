@@ -17,7 +17,7 @@ import CourseCorporateOptUs from "@/components/courses/CourseCorporateOptUs";
 import CourseClients from "@/components/courses/CourseClients";
 import CourseTrainers from "@/components/courses/CourseTrainers";
 import CourseFAQs from "@/components/courses/faqs/CourseFAQs";
-import CourseWhySimpliaxis from "@/components/courses/CourseWhySimpliaxis";
+import CourseWhyViovn from "@/components/courses/CourseWhyViovn";
 
 import {
     Users,
@@ -170,7 +170,7 @@ const ProjectManagementProfessionalCertificationTraining = () => {
         },
         {
             "title": "Exam Preparation",
-            "description": "Attend Simpliaxis’ PMI-authorized PMP training to learn core concepts, practice with mock tests, and strengthen exam readiness."
+            "description": "Attend Viovn’ PMI-authorized PMP training to learn core concepts, practice with mock tests, and strengthen exam readiness."
         },
         {
             "title": "Certification Exam",
@@ -328,7 +328,7 @@ const ProjectManagementProfessionalCertificationTraining = () => {
         },
     ];
 
-    const courseWhySimpliaxis = [
+    const courseWhyViovn = [
         {
             "title": "PMI Authorized Training Partner",
             "description": "Viovn is an officially recognized PMI Authorized Training Partner (ATP), ensuring you receive the highest quality of PMP exam preparation and official PMI content."
@@ -390,7 +390,7 @@ const ProjectManagementProfessionalCertificationTraining = () => {
             "Hands-on learning with real-world case studies",
             "End-to-end PMP exam application assistance"
         ],
-        "mainImage": "https://www.simpliaxis.com/../frontend_assets/image/ring_loader.gif",
+        "mainImage": "https://www.viovn.com/../frontend_assets/image/ring_loader.gif",
         "badgeImage": "/pmp-badge.png"
     };
 
@@ -428,10 +428,10 @@ const ProjectManagementProfessionalCertificationTraining = () => {
     };
 
     const corporateData = {
-        "courseName": "Why SimpliAxis Is Preferred by Corporates",
+        "courseName": "Why Viovn Is Preferred by Corporates",
         "label": "",
         "buttonText": "Corporate Group Enquiry",
-        "description": "SimpliAxis provides customized corporate training solutions designed to close skill gaps, enhance workforce capabilities, and support enterprise-wide Agile transformation through expert-led learning programs."
+        "description": "Viovn provides customized corporate training solutions designed to close skill gaps, enhance workforce capabilities, and support enterprise-wide Agile transformation through expert-led learning programs."
     };
 
     const courseMetadata = {
@@ -666,7 +666,7 @@ const ProjectManagementProfessionalCertificationTraining = () => {
 
                             <CourseClients clients={courseClients} />
                             <CourseTrainers trainers={courseTrainers} />
-                            <CourseWhySimpliaxis features={courseWhySimpliaxis} />
+                            <CourseWhyViovn features={courseWhyViovn} />
                         </div>
 
                         {/* Right Side Panel */}

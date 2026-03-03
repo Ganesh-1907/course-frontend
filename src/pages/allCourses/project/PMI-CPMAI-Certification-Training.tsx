@@ -17,7 +17,7 @@ import CourseCorporateOptUs from "@/components/courses/CourseCorporateOptUs";
 import CourseClients from "@/components/courses/CourseClients";
 import CourseTrainers from "@/components/courses/CourseTrainers";
 import CourseFAQs from "@/components/courses/faqs/CourseFAQs";
-import CourseWhySimpliaxis from "@/components/courses/CourseWhySimpliaxis";
+import CourseWhyViovn from "@/components/courses/CourseWhyViovn";
 
 import {
     Users,
@@ -146,7 +146,7 @@ const PMI_CPMAI_Certification_Training = () => {
     const certificationSteps = [
         {
             "title": "Register",
-            "description": "Enroll in the PMI Certified Professional in Managing AI (PMI-CPMAI)™ training offered by Simpliaxis."
+            "description": "Enroll in the PMI Certified Professional in Managing AI (PMI-CPMAI)™ training offered by Viovn."
         },
         {
             "title": "Attend Training",
@@ -239,7 +239,7 @@ const PMI_CPMAI_Certification_Training = () => {
             "items": [
                 {
                     "question": "Is the PMI-CPMAI training self-paced or instructor-led?",
-                    "answer": "At Simpliaxis, the PMI-CPMAI certification training is live online instructor-led sessions. These interactive online sessions help participants learn the concepts easily."
+                    "answer": "At Viovn, the PMI-CPMAI certification training is live online instructor-led sessions. These interactive online sessions help participants learn the concepts easily."
                 },
                 {
                     "question": "How long does the training take to complete?",
@@ -287,7 +287,7 @@ const PMI_CPMAI_Certification_Training = () => {
         { name: 'TCS', logo: 'https://upload.wikimedia.org/wikipedia/commons/b/b1/Tata_Consultancy_Services_Logo.svg' }
     ];
 
-    const courseWhySimpliaxis = [
+    const courseWhyViovn = [
         { "title": "PMI Authorized Training Partner", "description": "Guaranteed quality and alignment with the latest PMI standards and certification guidelines." },
         { "title": "AI Project Experts", "description": "Learn from instructors who bridge the gap between traditional project management and data science." },
         { "title": "Scenario-Based Learning", "description": "Engage with real-world AI use cases and CRISP-DM labs for practical mastery." },
@@ -539,7 +539,7 @@ const PMI_CPMAI_Certification_Training = () => {
                             />
 
                             <CourseClients clients={courseClients} />
-                            <CourseWhySimpliaxis features={courseWhySimpliaxis} />
+                            <CourseWhyViovn features={courseWhyViovn} />
                         </div>
 
                         <div className="relative w-full lg:w-[340px] xl:w-[360px] lg:justify-self-end">

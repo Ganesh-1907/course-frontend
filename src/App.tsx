@@ -104,6 +104,27 @@ import {
   PMICPMAICertificationTraining
 } from './pages/allCourses/project';
 
+// ----------------------------- Generative AI Courses -----------------------------
+import {
+  GenerativeAIForBusinessITLeadersManagersTraining,
+  GenerativeAIForBusinessAnalystsFunctionalITConsultantsTraining,
+  CloudFundamentalsForBusinessManagersProductManagersTraining,
+  GenerativeAIArchitectAdvancedProgramTraining,
+  MultiCloudFinOpsAWsgcpAzureTraining,
+  IntroductionToGenerativeAITraining,
+  GenerativeAIforAgileLeadersTraining,
+  GenerativeAIforScrumMastersTraining,
+  GenerativeAIinHRCertificationCourse,
+  GenerativeAIforSoftwareDevelopersTraining,
+  GenerativeAIForProjectManagersTraining,
+  PromptEngineeringCourse,
+  GenerativeAIForProductOwnersProductManagersCertificationTraining,
+  MasteringGenerativeAIToolsOnline
+} from './pages/allCourses/generativeAi';
+
+
+
+
 // ----------------------------- Quality Courses -----------------------------
 import {
   LeanSixSigmaBlackBelt,
@@ -500,6 +521,78 @@ const App = () => (
           <Route
             path="/course/quality/lean-six-sigma-black-belt-training"
             element={<LeanSixSigmaBlackBelt />}
+          />
+
+
+           {/* ✨ GENERATIVE AI COURSES */}
+           <Route
+            path="/course/generative-ai/generative-ai-for-business-it-leaders-managers-training"
+            element={<GenerativeAIForBusinessITLeadersManagersTraining />}
+          />
+
+          <Route
+            path="/course/generative-ai/generative-ai-for-business-analysts-functional-it-consultants-training"
+            element={<GenerativeAIForBusinessAnalystsFunctionalITConsultantsTraining />}
+          />
+
+          <Route
+            path="/course/generative-ai/cloud-fundamentals-for-business-managers-product-managers-training"
+            element={<CloudFundamentalsForBusinessManagersProductManagersTraining />}
+          />
+
+          <Route
+            path="/course/generative-ai/generative-ai-architect-advanced-program-training"
+            element={<GenerativeAIArchitectAdvancedProgramTraining />}
+          />
+
+          <Route
+            path="/course/generative-ai/multi-cloud-finops-aws-gcp-azure-training"
+            element={<MultiCloudFinOpsAWsgcpAzureTraining />}
+          />
+
+          <Route
+            path="/course/generative-ai/introduction-to-generative-ai-training"
+            element={<IntroductionToGenerativeAITraining />}
+          />
+
+          <Route
+            path="/course/generative-ai/generative-ai-for-agile-leaders-training"
+            element={<GenerativeAIforAgileLeadersTraining />}
+          />
+
+          <Route
+            path="/course/generative-ai/generative-ai-for-scrum-masters-training"
+            element={<GenerativeAIforScrumMastersTraining />}
+          />
+
+          <Route
+            path="/course/generative-ai/generative-ai-in-hr-certification-course"
+            element={<GenerativeAIinHRCertificationCourse />}
+          />
+
+          <Route
+            path="/course/generative-ai/generative-ai-for-software-developers-training"
+            element={<GenerativeAIforSoftwareDevelopersTraining />}
+          />
+
+          <Route
+            path="/course/generative-ai/generative-ai-for-project-managers-training"
+            element={<GenerativeAIForProjectManagersTraining />}
+          />
+
+          <Route
+            path="/course/generative-ai/prompt-engineering-course"
+            element={<PromptEngineeringCourse />}
+          />
+
+          <Route
+            path="/course/generative-ai/generative-ai-for-product-owners-product-managers-certification-training"
+            element={<GenerativeAIForProductOwnersProductManagersCertificationTraining />}
+          />
+
+          <Route
+            path="/course/generative-ai/mastering-generative-ai-tools-online"
+            element={<MasteringGenerativeAIToolsOnline />}
           />
 
           <Route path="*" element={<NotFound />} />
