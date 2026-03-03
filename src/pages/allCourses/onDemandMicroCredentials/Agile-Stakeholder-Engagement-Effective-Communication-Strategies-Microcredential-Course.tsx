@@ -18,7 +18,7 @@ import CourseCorporateOptUs from "@/components/courses/CourseCorporateOptUs";
 import CourseClients from "@/components/courses/CourseClients";
 import CourseTrainers from "@/components/courses/CourseTrainers";
 import CourseFAQs from "@/components/courses/faqs/CourseFAQs";
-import CourseWhySimpliaxis from "@/components/courses/CourseWhySimpliaxis";
+import CourseWhyViovn from "@/components/courses/CourseWhyViovn";
 
 import {
     Users,
@@ -204,7 +204,7 @@ const AgileStakeholderEngagementMicrocredentialCourse = () => {
             "Real-world stakeholder case studies.",
             "Earn a recognized Agile Stakeholder Engagement Microcredential."
         ],
-        mainImage: "https://www.simpliaxis.com/../frontend_assets/image/ring_loader.gif",
+        mainImage: "https://www.viovn.com/../frontend_assets/image/ring_loader.gif",
         badgeImage: "/csm-badge.png"
     };
 
@@ -351,7 +351,7 @@ const AgileStakeholderEngagementMicrocredentialCourse = () => {
                     referEarnText="Refer & Earn"
                     enrolledSuffix="Enrolled"
                     moneyBackText="100% Money Back Guarantee"
-                    ltpLabel="Simpliaxis Training"
+                    ltpLabel="Viovn Training"
                     downloadBtnText="Download Brochure"
                     viewSchedulesBtnText="View Schedules"
                     freeAssessmentBtnText="Free Assessment"
@@ -362,14 +362,14 @@ const AgileStakeholderEngagementMicrocredentialCourse = () => {
                         <div className="space-y-12">
                             <CourseTabs tabs={tabs} />
                             <CourseCorporateOptUs
-                                courseName="Why Simpliaxis for Agile Stakeholder Engagement Training?"
-                                description="Simpliaxis delivers customized Agile stakeholder engagement training programs designed to strengthen communication, improve collaboration, and align business objectives with Agile delivery. Our expert-led sessions empower organizations to enhance stakeholder satisfaction and achieve sustainable Agile success."
+                                courseName="Why Viovn for Agile Stakeholder Engagement Training?"
+                                description="Viovn delivers customized Agile stakeholder engagement training programs designed to strengthen communication, improve collaboration, and align business objectives with Agile delivery. Our expert-led sessions empower organizations to enhance stakeholder satisfaction and achieve sustainable Agile success."
                                 label=""
                                 buttonText="Corporate Group Enquiry"
                             />
                             <CourseClients clients={companies} />
                             <CourseTrainers trainers={[]} />
-                            <CourseWhySimpliaxis features={whySections} />
+                            <CourseWhyViovn features={whySections} />
                         </div>
                         <div className="relative">
                             <div className="sticky top-24">

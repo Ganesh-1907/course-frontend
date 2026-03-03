@@ -18,7 +18,7 @@ import CourseCorporateOptUs from "@/components/courses/CourseCorporateOptUs";
 import CourseClients from "@/components/courses/CourseClients";
 import CourseTrainers from "@/components/courses/CourseTrainers";
 import CourseFAQs from "@/components/courses/faqs/CourseFAQs";
-import CourseWhySimpliaxis from "@/components/courses/CourseWhySimpliaxis";
+import CourseWhyViovn from "@/components/courses/CourseWhyViovn";
 
 import {
     Users,
@@ -334,7 +334,7 @@ const AgileAnalysisCertification = () => {
         }
     ];
 
-    const courseWhySimpliaxis = [
+    const courseWhyViovn = [
         {
             "title": "Global Recognition",
             "description": "Aligned with globally recognized agile and business analysis standards."
@@ -402,7 +402,7 @@ const AgileAnalysisCertification = () => {
             "Structured exam preparation guidance.",
             "Expert-led interactive sessions."
         ],
-        "mainImage": "https://www.simpliaxis.com/../frontend_assets/image/ring_loader.gif",
+        "mainImage": "https://www.viovn.com/../frontend_assets/image/ring_loader.gif",
         "badgeImage": "/csm-badge.png"
     };
 
@@ -429,10 +429,10 @@ const AgileAnalysisCertification = () => {
     };
 
     const corporateData = {
-        "courseName": "Why Corporates Choose Simpliaxis",
+        "courseName": "Why Corporates Choose Viovn",
         "label": "",
         "buttonText": "Corporate Group Enquiry",
-        "description": "Simpliaxis provides customized agile analysis training programs tailored to organizational needs. Our expert-led sessions help enterprises strengthen agile business analysis capabilities, improve strategic alignment, and deliver measurable business value."
+        "description": "Viovn provides customized agile analysis training programs tailored to organizational needs. Our expert-led sessions help enterprises strengthen agile business analysis capabilities, improve strategic alignment, and deliver measurable business value."
     };
 
     const courseMetadata = {
@@ -478,7 +478,7 @@ const AgileAnalysisCertification = () => {
             referEarnText: 'Refer & Earn',
             enrolledSuffix: 'Enrolled',
             moneyBackText: '100% Money Back Guarantee',
-            ltpLabel: 'Simpliaxis Leading Training Provider',
+            ltpLabel: 'Viovn Leading Training Provider',
             downloadBtnText: 'Download Brochure',
             viewSchedulesBtnText: 'View Schedules',
             freeAssessmentBtnText: 'Free Assessment',
@@ -659,7 +659,7 @@ const AgileAnalysisCertification = () => {
 
                             <CourseClients clients={courseClients} />
                             <CourseTrainers trainers={courseTrainers} />
-                            <CourseWhySimpliaxis features={courseWhySimpliaxis} />
+                            <CourseWhyViovn features={courseWhyViovn} />
                         </div>
 
                         {/* Right Side Panel */}

@@ -18,7 +18,7 @@ import CourseCorporateOptUs from "@/components/courses/CourseCorporateOptUs";
 import CourseClients from "@/components/courses/CourseClients";
 import CourseTrainers from "@/components/courses/CourseTrainers";
 import CourseFAQs from "@/components/courses/faqs/CourseFAQs";
-import CourseWhySimpliaxis from "@/components/courses/CourseWhySimpliaxis";
+import CourseWhyViovn from "@/components/courses/CourseWhyViovn";
 
 import {
     Users,
@@ -135,7 +135,7 @@ const EntryCertificateInBusinessAnalysisECBACertificationTraining = () => {
     const certificationSteps = [
         {
             "title": "Attend training",
-            "description": "Enroll with 21 Hours of interactive online training offered by Simpliaxis.",
+            "description": "Enroll with 21 Hours of interactive online training offered by Viovn.",
             "color": "#3B82F6"
         },
         {
@@ -324,7 +324,7 @@ const EntryCertificateInBusinessAnalysisECBACertificationTraining = () => {
         }
     ];
 
-    const courseWhySimpliaxis = [
+    const courseWhyViovn = [
         {
             "title": "Global Recognition",
             "description": "Every Course is recognized by the most reputable certification organizations globally that ensure credibility and acceptance in all industries."
@@ -347,7 +347,7 @@ const EntryCertificateInBusinessAnalysisECBACertificationTraining = () => {
         },
         {
             "title": "End-to-End Assistance",
-            "description": "Simpliaxis Offers ongoing assistance prior to, during, and after Training and includes study material exams, guidance for participants on certification, and career choices."
+            "description": "Viovn Offers ongoing assistance prior to, during, and after Training and includes study material exams, guidance for participants on certification, and career choices."
         }
     ];
 
@@ -383,7 +383,7 @@ const EntryCertificateInBusinessAnalysisECBACertificationTraining = () => {
             "Earn a globally recognised certificate that includes 21 CDUs & 21 PDUs",
             "Master business analysis & stakeholder collaboration"
         ],
-        "mainImage": "https://www.simpliaxis.com/../frontend_assets/image/ring_loader.gif",
+        "mainImage": "https://www.viovn.com/../frontend_assets/image/ring_loader.gif",
         "badgeImage": "/csm-badge.png"
     };
 
@@ -411,7 +411,7 @@ const EntryCertificateInBusinessAnalysisECBACertificationTraining = () => {
         "courseName": "Why Corporates Opt Us",
         "label": "",
         "buttonText": "Corporate Group enquiry",
-        "description": "Simpliaxis delivers customized corporate training programs tailored to organizational objectives. Our ECBA training helps enterprises improve business analysis consistency and project success rates."
+        "description": "Viovn delivers customized corporate training programs tailored to organizational objectives. Our ECBA training helps enterprises improve business analysis consistency and project success rates."
     };
 
     const courseMetadata = {
@@ -436,7 +436,7 @@ const EntryCertificateInBusinessAnalysisECBACertificationTraining = () => {
             titlePrefix: 'Earn Your',
             titleHighlight: 'ECBA',
             titleSuffix: 'Recognition',
-            issuerName: 'Simpliaxis',
+            issuerName: 'Viovn',
             certificateType: 'Certificate of Achievement',
             certifyText: 'This is to certify that',
             requirementText: 'Has successfully fulfilled all requirements to be recognized as a professional',
@@ -457,7 +457,7 @@ const EntryCertificateInBusinessAnalysisECBACertificationTraining = () => {
             referEarnText: 'Refer & Earn',
             enrolledSuffix: 'Enrolled',
             moneyBackText: '100% Money Back Guarantee',
-            ltpLabel: 'Simpliaxis Leading Training Provider',
+            ltpLabel: 'Viovn Leading Training Provider',
             downloadBtnText: 'Download Brochure',
             viewSchedulesBtnText: 'View Schedules',
             freeAssessmentBtnText: 'Free Assessment',
@@ -638,7 +638,7 @@ const EntryCertificateInBusinessAnalysisECBACertificationTraining = () => {
 
                             <CourseClients clients={courseClients} />
                             <CourseTrainers trainers={courseTrainers} />
-                            <CourseWhySimpliaxis features={courseWhySimpliaxis} />
+                            <CourseWhyViovn features={courseWhyViovn} />
                         </div>
 
                         {/* Right Side Panel */}

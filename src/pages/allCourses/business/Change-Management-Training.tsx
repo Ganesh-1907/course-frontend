@@ -15,7 +15,7 @@ import CourseFAQs from '../../../components/courses/faqs/CourseFAQs';
 import CourseCorporateOptUs from '../../../components/courses/CourseCorporateOptUs';
 import CourseClients from '../../../components/courses/CourseClients';
 import CourseTrainers from '../../../components/courses/CourseTrainers';
-import CourseWhySimpliaxis from '../../../components/courses/CourseWhySimpliaxis';
+import CourseWhyViovn from '../../../components/courses/CourseWhyViovn';
 import CourseSidePanel from '../../../components/courses/CourseSidePanel';
 import CourseStepByStepProcess from '../../../components/courses/prerequisites/CourseStepByStepProcess';
 import CourseCertificate from '../../../components/courses/prerequisites/CourseCertificate';
@@ -132,7 +132,7 @@ const ChangeManagementTraining = () => {
     const certificationSteps = [
         {
             "title": "Complete Training",
-            "description": "Attend the 1-day Change Management training session conducted by Simpliaxis.",
+            "description": "Attend the 1-day Change Management training session conducted by Viovn.",
             "color": "#3B82F6"
         },
         {
@@ -142,7 +142,7 @@ const ChangeManagementTraining = () => {
         },
         {
             "title": "Get Certified",
-            "description": "Obtain your Change Management course completion certificate from Simpliaxis.",
+            "description": "Obtain your Change Management course completion certificate from Viovn.",
             "color": "#10B981"
         }
     ];
@@ -215,12 +215,12 @@ const ChangeManagementTraining = () => {
             "label": "General FAQs",
             "items": [
                 {
-                    "question": "1. Why choose Simpliaxis for this training?",
-                    "answer": "Simpliaxis provides expert-led sessions with practical methodologies and global best practices to ensure successful transformation."
+                    "question": "1. Why choose Viovn for this training?",
+                    "answer": "Viovn provides expert-led sessions with practical methodologies and global best practices to ensure successful transformation."
                 },
                 {
                     "question": "2. Is the course completion certificate recognized?",
-                    "answer": "Yes, Simpliaxis certificates are recognized across industries for professional development."
+                    "answer": "Yes, Viovn certificates are recognized across industries for professional development."
                 }
             ]
         }
@@ -285,7 +285,7 @@ const ChangeManagementTraining = () => {
         }
     ];
 
-    const courseWhySimpliaxis = [
+    const courseWhyViovn = [
         {
             "title": "Expert-Led Sessions",
             "description": "Gain knowledge from certified professionals who impart real-world insights and practical experience."
@@ -304,7 +304,7 @@ const ChangeManagementTraining = () => {
         },
         {
             "title": "Proven Success",
-            "description": "Simpliaxis is a top-rated training provider known for helping organizations successfully implement transformation."
+            "description": "Viovn is a top-rated training provider known for helping organizations successfully implement transformation."
         },
         {
             "title": "Comprehensive Support",
@@ -327,7 +327,7 @@ const ChangeManagementTraining = () => {
     ];
 
     const certificateBenefits = [
-        'Recognized Certificate of Completion from Simpliaxis',
+        'Recognized Certificate of Completion from Viovn',
         'Valid for lifetime',
         'Demonstrates expertise in leading organizational change',
         'Improved career mobility into transformation roles'
@@ -345,7 +345,7 @@ const ChangeManagementTraining = () => {
             "Real-world case studies",
             "Course completion certification"
         ],
-        "mainImage": "https://www.simpliaxis.com/../frontend_assets/image/ring_loader.gif",
+        "mainImage": "https://www.viovn.com/../frontend_assets/image/ring_loader.gif",
         "badgeImage": "/csm-badge.png"
     };
 
@@ -371,10 +371,10 @@ const ChangeManagementTraining = () => {
     };
 
     const corporateData = {
-        "courseName": "Why Corporates Choose Simpliaxis",
+        "courseName": "Why Corporates Choose Viovn",
         "label": "",
         "buttonText": "Corporate Group Enquiry",
-        "description": "Simpliaxis provides tailored corporate training programs designed to address specific organizational challenges. Our expert-led change management training helps enterprises reduce resistance, align initiatives with strategic objectives, and improve overall productivity."
+        "description": "Viovn provides tailored corporate training programs designed to address specific organizational challenges. Our expert-led change management training helps enterprises reduce resistance, align initiatives with strategic objectives, and improve overall productivity."
     };
 
     const courseMetadata = {
@@ -399,7 +399,7 @@ const ChangeManagementTraining = () => {
             titlePrefix: 'Earn Your',
             titleHighlight: 'Change Management',
             titleSuffix: 'Certification',
-            issuerName: 'Simpliaxis',
+            issuerName: 'Viovn',
             certificateType: 'Certificate of Achievement',
             certifyText: 'This is to certify that',
             requirementText: 'Has successfully fulfilled all requirements to be recognized as a leader in',
@@ -420,7 +420,7 @@ const ChangeManagementTraining = () => {
             referEarnText: 'Refer & Earn',
             enrolledSuffix: 'Enrolled',
             moneyBackText: '100% Money Back Guarantee',
-            ltpLabel: 'Simpliaxis Leading Training Provider',
+            ltpLabel: 'Viovn Leading Training Provider',
             downloadBtnText: 'Download Brochure',
             viewSchedulesBtnText: 'View Schedules',
             freeAssessmentBtnText: 'Free Assessment',
@@ -601,7 +601,7 @@ const ChangeManagementTraining = () => {
 
                             <CourseClients clients={courseClients} />
                             <CourseTrainers trainers={courseTrainers} />
-                            <CourseWhySimpliaxis features={courseWhySimpliaxis} />
+                            <CourseWhyViovn features={courseWhyViovn} />
                         </div>
 
                         {/* Right Side Panel */}

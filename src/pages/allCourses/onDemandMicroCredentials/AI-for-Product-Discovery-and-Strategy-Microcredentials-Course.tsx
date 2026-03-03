@@ -18,7 +18,7 @@ import CourseCorporateOptUs from "@/components/courses/CourseCorporateOptUs";
 import CourseClients from "@/components/courses/CourseClients";
 import CourseTrainers from "@/components/courses/CourseTrainers";
 import CourseFAQs from "@/components/courses/faqs/CourseFAQs";
-import CourseWhySimpliaxis from "@/components/courses/CourseWhySimpliaxis";
+import CourseWhyViovn from "@/components/courses/CourseWhyViovn";
 
 import {
     Users,
@@ -204,7 +204,7 @@ const AIForProductDiscoveryAndStrategyMicrocredentialCourse = () => {
             "Real-world product innovation case studies.",
             "Earn a recognized AI Product Strategy Microcredential."
         ],
-        mainImage: "https://www.simpliaxis.com/../frontend_assets/image/ring_loader.gif",
+        mainImage: "https://www.viovn.com/../frontend_assets/image/ring_loader.gif",
         badgeImage: "/csm-badge.png"
     };
 
@@ -352,7 +352,7 @@ const AIForProductDiscoveryAndStrategyMicrocredentialCourse = () => {
                     referEarnText="Refer & Earn"
                     enrolledSuffix="Enrolled"
                     moneyBackText="100% Money Back Guarantee"
-                    ltpLabel="Simpliaxis Training"
+                    ltpLabel="Viovn Training"
                     downloadBtnText="Download Brochure"
                     viewSchedulesBtnText="View Schedules"
                     freeAssessmentBtnText="Free Assessment"
@@ -363,14 +363,14 @@ const AIForProductDiscoveryAndStrategyMicrocredentialCourse = () => {
                         <div className="space-y-12">
                             <CourseTabs tabs={tabs} />
                             <CourseCorporateOptUs
-                                courseName="Why Simpliaxis for AI Product Strategy Training?"
-                                description="Simpliaxis delivers customized AI product strategy training programs designed to strengthen innovation capability and improve strategic decision-making. Our expert-led sessions empower organizations to integrate AI into product discovery processes and achieve measurable competitive advantages."
+                                courseName="Why Viovn for AI Product Strategy Training?"
+                                description="Viovn delivers customized AI product strategy training programs designed to strengthen innovation capability and improve strategic decision-making. Our expert-led sessions empower organizations to integrate AI into product discovery processes and achieve measurable competitive advantages."
                                 label=""
                                 buttonText="Corporate Group Enquiry"
                             />
                             <CourseClients clients={companies} />
                             <CourseTrainers trainers={[]} />
-                            <CourseWhySimpliaxis features={whySections} />
+                            <CourseWhyViovn features={whySections} />
                         </div>
                         <div className="relative">
                             <div className="sticky top-24">

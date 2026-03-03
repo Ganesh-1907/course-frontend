@@ -18,7 +18,7 @@ import CourseCorporateOptUs from "@/components/courses/CourseCorporateOptUs";
 import CourseClients from "@/components/courses/CourseClients";
 import CourseTrainers from "@/components/courses/CourseTrainers";
 import CourseFAQs from "@/components/courses/faqs/CourseFAQs";
-import CourseWhySimpliaxis from "@/components/courses/CourseWhySimpliaxis";
+import CourseWhyViovn from "@/components/courses/CourseWhyViovn";
 
 import {
     Users,
@@ -125,7 +125,7 @@ const ICAgileAIForCustomerInsightsMicroCredentialTraining = () => {
     const certificationSteps = [
         {
             title: "Enroll in the Course",
-            description: "Register for the ICAgile-authorized AI for Customer Insights micro-credential training offered by Simpliaxis."
+            description: "Register for the ICAgile-authorized AI for Customer Insights micro-credential training offered by Viovn."
         },
         {
             title: "Develop Practical Skills",
@@ -197,7 +197,7 @@ const ICAgileAIForCustomerInsightsMicroCredentialTraining = () => {
     ];
 
     const whySections = [
-        { title: "Authorized ICAgile Training Partner", description: "Simpliaxis delivers ICAgile-authorized training aligned with official learning outcomes and global standards." },
+        { title: "Authorized ICAgile Training Partner", description: "Viovn delivers ICAgile-authorized training aligned with official learning outcomes and global standards." },
         { title: "Industry-Relevant Curriculum", description: "Practical AI applications focused on customer behavior analysis, segmentation, and insight generation." },
         { title: "Experienced ICAgile-Accredited Instructors", description: "Training delivered by certified practitioners with real-world AI and analytics expertise." },
         { title: "Globally Recognized Micro-Credential", description: "Earn a respected ICAgile certification valued by employers worldwide." },
@@ -227,7 +227,7 @@ const ICAgileAIForCustomerInsightsMicroCredentialTraining = () => {
             "Ethical AI application for customer analytics.",
             "Globally recognized ICAgile micro-credential."
         ],
-        mainImage: "https://www.simpliaxis.com/../frontend_assets/image/ring_loader.gif",
+        mainImage: "https://www.viovn.com/../frontend_assets/image/ring_loader.gif",
         badgeImage: "/csm-badge.png"
     };
 
@@ -249,7 +249,7 @@ const ICAgileAIForCustomerInsightsMicroCredentialTraining = () => {
         title: "Course Overview",
         subtitle: "Overview of ICAgile AI for Customer Insights Micro-credential Training",
         description: [
-            "The ICAgile AI for Customer Insights Micro-credential offered by Simpliaxis is designed to help professionals effectively apply artificial intelligence to generate meaningful customer insights.",
+            "The ICAgile AI for Customer Insights Micro-credential offered by Viovn is designed to help professionals effectively apply artificial intelligence to generate meaningful customer insights.",
             "This program focuses on practical AI techniques for analyzing customer data, identifying patterns, and supporting informed business decisions.",
             "The course connects Agile principles, data literacy, and AI-driven insight generation within customer-focused environments."
         ],
@@ -376,7 +376,7 @@ const ICAgileAIForCustomerInsightsMicroCredentialTraining = () => {
                     referEarnText="Refer & Earn"
                     enrolledSuffix="Enrolled"
                     moneyBackText="100% Money Back Guarantee"
-                    ltpLabel="Simpliaxis Training"
+                    ltpLabel="Viovn Training"
                     downloadBtnText="Download Brochure"
                     viewSchedulesBtnText="View Schedules"
                     freeAssessmentBtnText="Free Assessment"
@@ -387,14 +387,14 @@ const ICAgileAIForCustomerInsightsMicroCredentialTraining = () => {
                         <div className="space-y-12">
                             <CourseTabs tabs={tabs} />
                             <CourseCorporateOptUs
-                                courseName="Why Simpliaxis for Corporate Training?"
-                                description="Simpliaxis provides tailored corporate AI training programs designed to strengthen customer insight capabilities across teams. Our expert instructors deliver practical, industry-aligned learning experiences that improve decision-making, enhance customer-centric strategies, and support responsible AI adoption within organizations."
+                                courseName="Why Viovn for Corporate Training?"
+                                description="Viovn provides tailored corporate AI training programs designed to strengthen customer insight capabilities across teams. Our expert instructors deliver practical, industry-aligned learning experiences that improve decision-making, enhance customer-centric strategies, and support responsible AI adoption within organizations."
                                 label=""
                                 buttonText="Corporate Group Enquiry"
                             />
                             <CourseClients clients={companies} />
                             <CourseTrainers trainers={[]} />
-                            <CourseWhySimpliaxis features={whySections} />
+                            <CourseWhyViovn features={whySections} />
                         </div>
                         <div className="relative">
                             <div className="sticky top-24">

@@ -18,7 +18,7 @@ import CourseCorporateOptUs from "@/components/courses/CourseCorporateOptUs";
 import CourseClients from "@/components/courses/CourseClients";
 import CourseTrainers from "@/components/courses/CourseTrainers";
 import CourseFAQs from "@/components/courses/faqs/CourseFAQs";
-import CourseWhySimpliaxis from "@/components/courses/CourseWhySimpliaxis";
+import CourseWhyViovn from "@/components/courses/CourseWhyViovn";
 
 import {
     Users,
@@ -121,7 +121,7 @@ const AIForProductOwnersMicroCredentialTraining = () => {
     const certificationSteps = [
         {
             title: "Register for the Course",
-            description: "Enroll in the AI for Product Owners Micro-credential training with Simpliaxis."
+            description: "Enroll in the AI for Product Owners Micro-credential training with Viovn."
         },
         {
             title: "Attend the Training",
@@ -280,7 +280,7 @@ const AIForProductOwnersMicroCredentialTraining = () => {
             "Hands-on AI labs and prompt engineering practice",
             "Lifetime credential validity"
         ],
-        mainImage: "https://www.simpliaxis.com/../frontend_assets/image/ring_loader.gif",
+        mainImage: "https://www.viovn.com/../frontend_assets/image/ring_loader.gif",
         badgeImage: "/csm-badge.png"
     };
 
@@ -413,7 +413,7 @@ const AIForProductOwnersMicroCredentialTraining = () => {
                     referEarnText="Refer & Earn"
                     enrolledSuffix="Enrolled"
                     moneyBackText="100% Money Back Guarantee"
-                    ltpLabel="Simpliaxis Training"
+                    ltpLabel="Viovn Training"
                     downloadBtnText="Download Brochure"
                     viewSchedulesBtnText="View Schedules"
                     freeAssessmentBtnText="Free Assessment"
@@ -423,10 +423,10 @@ const AIForProductOwnersMicroCredentialTraining = () => {
                     <div className="grid grid-cols-1 gap-8 lg:grid-cols-[minmax(0,1fr)_340px]">
                         <div className="space-y-12">
                             <CourseTabs tabs={tabs} />
-                            <CourseCorporateOptUs courseName="Why SimpliAxis Is the First Choice for Corporates" description="Simpliaxis provides tailored AI and Agile training programs designed to enhance enterprise product management capabilities." label="" buttonText="Corporate Group Enquiry" />
+                            <CourseCorporateOptUs courseName="Why SimpliAxis Is the First Choice for Corporates" description="Viovn provides tailored AI and Agile training programs designed to enhance enterprise product management capabilities." label="" buttonText="Corporate Group Enquiry" />
                             <CourseClients clients={companies} />
                             <CourseTrainers trainers={[]} />
-                            <CourseWhySimpliaxis features={whySections} />
+                            <CourseWhyViovn features={whySections} />
                         </div>
                         <div className="relative">
                             <div className="sticky top-24">

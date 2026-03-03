@@ -14,7 +14,7 @@ import CourseFAQs from '../../../components/courses/faqs/CourseFAQs';
 import CourseCorporateOptUs from '../../../components/courses/CourseCorporateOptUs';
 import CourseClients from '../../../components/courses/CourseClients';
 import CourseTrainers from '../../../components/courses/CourseTrainers';
-import CourseWhySimpliaxis from '../../../components/courses/CourseWhySimpliaxis';
+import CourseWhyViovn from '../../../components/courses/CourseWhyViovn';
 import CourseSidePanel from '../../../components/courses/CourseSidePanel';
 import CourseStepByStepProcess from '../../../components/courses/prerequisites/CourseStepByStepProcess';
 import CourseCertificate from '../../../components/courses/prerequisites/CourseCertificate';
@@ -138,7 +138,7 @@ const CertifiedBusinessAnalysisProfessionalCBAPCertificationTraining = () => {
         },
         {
             "title": "Complete Training",
-            "description": "Attend Simpliaxis’ 35-hour CBAP training aligned with BABOK® Guide v3.",
+            "description": "Attend Viovn’ 35-hour CBAP training aligned with BABOK® Guide v3.",
             "color": "#F59E0B"
         },
         {
@@ -252,8 +252,8 @@ const CertifiedBusinessAnalysisProfessionalCBAPCertificationTraining = () => {
             "label": "General Professional FAQs",
             "items": [
                 {
-                    "question": "1. Why choose Simpliaxis for CBAP training?",
-                    "answer": "Simpliaxis is a top-rated training provider offering expert-led sessions, comprehensive study materials, and 24/7 support to ensure you pass your CBAP exam on the first attempt."
+                    "question": "1. Why choose Viovn for CBAP training?",
+                    "answer": "Viovn is a top-rated training provider offering expert-led sessions, comprehensive study materials, and 24/7 support to ensure you pass your CBAP exam on the first attempt."
                 },
                 {
                     "question": "2. Is the CBAP certification recognized globally?",
@@ -322,7 +322,7 @@ const CertifiedBusinessAnalysisProfessionalCBAPCertificationTraining = () => {
         }
     ];
 
-    const courseWhySimpliaxis = [
+    const courseWhyViovn = [
         {
             "title": "IIBA Aligned Content",
             "description": "Every module is mapped to the BABOK® Guide v3 ensuring you get the most relevant training for the CBAP exam."
@@ -382,7 +382,7 @@ const CertifiedBusinessAnalysisProfessionalCBAPCertificationTraining = () => {
             "Full exam preparation with mock tests",
             "Application and exam support assistance"
         ],
-        "mainImage": "https://www.simpliaxis.com/../frontend_assets/image/ring_loader.gif",
+        "mainImage": "https://www.viovn.com/../frontend_assets/image/ring_loader.gif",
         "badgeImage": "/csm-badge.png"
     };
 
@@ -390,7 +390,7 @@ const CertifiedBusinessAnalysisProfessionalCBAPCertificationTraining = () => {
         "title": "Course Overview",
         "subtitle": "Overview of the CBAP Certification Training Course",
         "description": [
-            "The CBAP certification program by Simpliaxis is designed for experienced business analysts seeking advanced-level expertise. This comprehensive training aligns with the BABOK® Guide v3 and prepares professionals to manage complex requirements, strategic initiatives, and enterprise-level solutions.",
+            "The CBAP certification program by Viovn is designed for experienced business analysts seeking advanced-level expertise. This comprehensive training aligns with the BABOK® Guide v3 and prepares professionals to manage complex requirements, strategic initiatives, and enterprise-level solutions.",
             "Participants gain practical insights through real-world case studies, structured frameworks, and exam-focused preparation techniques. The program equips you to confidently pass the CBAP exam and advance into senior leadership roles within business analysis."
         ],
         "whatIsTitle": "What is Certified Business Analysis Professional (CBAP®)?",
@@ -408,10 +408,10 @@ const CertifiedBusinessAnalysisProfessionalCBAPCertificationTraining = () => {
     };
 
     const corporateData = {
-        "courseName": "Why Corporates Choose Simpliaxis for CBAP?",
+        "courseName": "Why Corporates Choose Viovn for CBAP?",
         "label": "",
         "buttonText": "Corporate Group Enquiry",
-        "description": "Simpliaxis delivers customized CBAP corporate training programs tailored to enterprise requirements. Our expert-led sessions help organizations standardize business analysis practices, reduce project risks, and enhance stakeholder collaboration."
+        "description": "Viovn delivers customized CBAP corporate training programs tailored to enterprise requirements. Our expert-led sessions help organizations standardize business analysis practices, reduce project risks, and enhance stakeholder collaboration."
     };
 
     const courseMetadata = {
@@ -436,7 +436,7 @@ const CertifiedBusinessAnalysisProfessionalCBAPCertificationTraining = () => {
             titlePrefix: 'Earn Your',
             titleHighlight: 'CBAP Professional',
             titleSuffix: 'Badge',
-            issuerName: 'IIBA® (Simpliaxis Partners)',
+            issuerName: 'IIBA® (Viovn Partners)',
             certificateType: 'Certificate of Achievement',
             certifyText: 'This is to certify that',
             requirementText: 'Has successfully fulfilled all requirements to be recognized as a specialist in',
@@ -457,7 +457,7 @@ const CertifiedBusinessAnalysisProfessionalCBAPCertificationTraining = () => {
             referEarnText: 'Refer & Earn',
             enrolledSuffix: 'Enrolled',
             moneyBackText: '100% Money Back Guarantee',
-            ltpLabel: 'Simpliaxis Leading Training Provider',
+            ltpLabel: 'Viovn Leading Training Provider',
             downloadBtnText: 'Download Brochure',
             viewSchedulesBtnText: 'View Schedules',
             freeAssessmentBtnText: 'Free Assessment',
@@ -638,7 +638,7 @@ const CertifiedBusinessAnalysisProfessionalCBAPCertificationTraining = () => {
 
                             <CourseClients clients={courseClients} />
                             <CourseTrainers trainers={courseTrainers} />
-                            <CourseWhySimpliaxis features={courseWhySimpliaxis} />
+                            <CourseWhyViovn features={courseWhyViovn} />
                         </div>
 
                         {/* Right Side Panel */}

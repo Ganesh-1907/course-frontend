@@ -18,7 +18,7 @@ import CourseCorporateOptUs from "@/components/courses/CourseCorporateOptUs";
 import CourseClients from "@/components/courses/CourseClients";
 import CourseTrainers from "@/components/courses/CourseTrainers";
 import CourseFAQs from "@/components/courses/faqs/CourseFAQs";
-import CourseWhySimpliaxis from "@/components/courses/CourseWhySimpliaxis";
+import CourseWhyViovn from "@/components/courses/CourseWhyViovn";
 
 import {
     Users,
@@ -202,7 +202,7 @@ const ScrumEssentialsMicrocredentialCourse = () => {
             "Practical real-world examples and case studies.",
             "Earn a recognized Scrum Essentials Microcredential."
         ],
-        mainImage: "https://www.simpliaxis.com/../frontend_assets/image/ring_loader.gif",
+        mainImage: "https://www.viovn.com/../frontend_assets/image/ring_loader.gif",
         badgeImage: "/csm-badge.png"
     };
 
@@ -351,7 +351,7 @@ const ScrumEssentialsMicrocredentialCourse = () => {
                     referEarnText="Refer & Earn"
                     enrolledSuffix="Enrolled"
                     moneyBackText="100% Money Back Guarantee"
-                    ltpLabel="Simpliaxis Training"
+                    ltpLabel="Viovn Training"
                     downloadBtnText="Download Brochure"
                     viewSchedulesBtnText="View Schedules"
                     freeAssessmentBtnText="Free Assessment"
@@ -362,14 +362,14 @@ const ScrumEssentialsMicrocredentialCourse = () => {
                         <div className="space-y-12">
                             <CourseTabs tabs={tabs} />
                             <CourseCorporateOptUs
-                                courseName="Why Simpliaxis for Corporate Scrum Training?"
-                                description="Simpliaxis provides tailored Scrum training programs designed to align teams with industry best practices. Our expert-designed learning experiences help organizations strengthen Agile capabilities, improve collaboration, and enhance project delivery performance across teams."
+                                courseName="Why Viovn for Corporate Scrum Training?"
+                                description="Viovn provides tailored Scrum training programs designed to align teams with industry best practices. Our expert-designed learning experiences help organizations strengthen Agile capabilities, improve collaboration, and enhance project delivery performance across teams."
                                 label=""
                                 buttonText="Corporate Group Enquiry"
                             />
                             <CourseClients clients={companies} />
                             <CourseTrainers trainers={[]} />
-                            <CourseWhySimpliaxis features={whySections} />
+                            <CourseWhyViovn features={whySections} />
                         </div>
                         <div className="relative">
                             <div className="sticky top-24">

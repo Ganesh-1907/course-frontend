@@ -18,7 +18,7 @@ import CourseCorporateOptUs from "@/components/courses/CourseCorporateOptUs";
 import CourseClients from "@/components/courses/CourseClients";
 import CourseTrainers from "@/components/courses/CourseTrainers";
 import CourseFAQs from "@/components/courses/faqs/CourseFAQs";
-import CourseWhySimpliaxis from "@/components/courses/CourseWhySimpliaxis";
+import CourseWhyViovn from "@/components/courses/CourseWhyViovn";
 
 import {
     Users,
@@ -194,7 +194,7 @@ const AgileOKRsMicroCredentialTraining = () => {
             items: [
                 { question: "1. What are OKRs in Agile?", answer: "Objectives and Key Results (OKRs) are a goal-setting framework that helps Agile teams define and track measurable outcomes." },
                 { question: "2. What is OKR in the Scrum framework?", answer: "While not part of Scrum by default, OKRs can complement Scrum by aligning sprint goals with strategic objectives." },
-                { question: "3. How do I enroll in the Agile OKRs course?", answer: "Visit the Simpliaxis website, select your schedule, complete registration, and make the payment to receive confirmation." },
+                { question: "3. How do I enroll in the Agile OKRs course?", answer: "Visit the Viovn website, select your schedule, complete registration, and make the payment to receive confirmation." },
                 { question: "4. How long is the course?", answer: "The course is a 4+ hour live instructor-led session." },
                 { question: "5. Who should attend this training?", answer: "Project managers, product owners, team leaders, executives, and Agile practitioners." },
                 { question: "6. How do I earn the certification?", answer: "Complete the live training session to receive your Scrum Alliance digital badge." },
@@ -255,7 +255,7 @@ const AgileOKRsMicroCredentialTraining = () => {
             "Hands-on OKR implementation guidance.",
             "Lifetime learning access."
         ],
-        mainImage: "https://www.simpliaxis.com/../frontend_assets/image/ring_loader.gif",
+        mainImage: "https://www.viovn.com/../frontend_assets/image/ring_loader.gif",
         badgeImage: "/csm-badge.png"
     };
 
@@ -296,7 +296,7 @@ const AgileOKRsMicroCredentialTraining = () => {
 
     const corporateData = {
         courseName: "Why Corporates Opt for Us",
-        description: "Simpliaxis delivers customized Agile OKR training tailored to organizational needs. Our expert-led programs help enterprises close skill gaps, strengthen strategic execution, and build high-performing Agile teams.",
+        description: "Viovn delivers customized Agile OKR training tailored to organizational needs. Our expert-led programs help enterprises close skill gaps, strengthen strategic execution, and build high-performing Agile teams.",
         label: "",
         buttonText: "Corporate Group Enquiry"
     };
@@ -489,7 +489,7 @@ const AgileOKRsMicroCredentialTraining = () => {
                     referEarnText="Refer & Earn"
                     enrolledSuffix="Enrolled"
                     moneyBackText="100% Money Back Guarantee"
-                    ltpLabel="Simpliaxis Leading Training Provider"
+                    ltpLabel="Viovn Leading Training Provider"
                     downloadBtnText="Download Brochure"
                     viewSchedulesBtnText="View Schedules"
                     freeAssessmentBtnText="Free Assessment"
@@ -511,7 +511,7 @@ const AgileOKRsMicroCredentialTraining = () => {
 
                             <CourseClients clients={courseClients} />
                             <CourseTrainers trainers={courseTrainers} />
-                            <CourseWhySimpliaxis features={whySections} />
+                            <CourseWhyViovn features={whySections} />
                         </div>
 
                         <div className="relative">

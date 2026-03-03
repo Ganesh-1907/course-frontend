@@ -18,7 +18,7 @@ import CourseCorporateOptUs from "@/components/courses/CourseCorporateOptUs";
 import CourseClients from "@/components/courses/CourseClients";
 import CourseTrainers from "@/components/courses/CourseTrainers";
 import CourseFAQs from "@/components/courses/faqs/CourseFAQs";
-import CourseWhySimpliaxis from "@/components/courses/CourseWhySimpliaxis";
+import CourseWhyViovn from "@/components/courses/CourseWhyViovn";
 
 import {
     Users,
@@ -326,7 +326,7 @@ const BusinessCaseWritingTraining = () => {
         }
     ];
 
-    const courseWhySimpliaxis = [
+    const courseWhyViovn = [
         {
             "title": "Global Recognition",
             "description": "Every Course is recognized by the most reputable certification organizations globally that ensure credibility and acceptance in all industries."
@@ -349,7 +349,7 @@ const BusinessCaseWritingTraining = () => {
         },
         {
             "title": "End-to-End Assistance",
-            "description": "Simpliaxis Offers ongoing assistance prior to, during, and after Training and includes study material exams, guidance for participants on certification, and career choices."
+            "description": "Viovn Offers ongoing assistance prior to, during, and after Training and includes study material exams, guidance for participants on certification, and career choices."
         }
     ];
 
@@ -385,7 +385,7 @@ const BusinessCaseWritingTraining = () => {
             "Gain 8 PDUs and 8 CDUs",
             "Official certificate of achievement"
         ],
-        "mainImage": "https://www.simpliaxis.com/../frontend_assets/image/ring_loader.gif",
+        "mainImage": "https://www.viovn.com/../frontend_assets/image/ring_loader.gif",
         "badgeImage": "/csm-badge.png"
     };
 
@@ -393,7 +393,7 @@ const BusinessCaseWritingTraining = () => {
         "title": "Course Overview",
         "subtitle": "Business Case Writing Course Overview",
         "description": [
-            "The Business Case Writing course by Simpliaxis is a highly valued professional training that equips participants with the skills to analyze, outline, write, and communicate a business case effectively. It focuses on risk assessment techniques to eliminate potential problems and helps participants explore all possible solutions to a problem for informed decision-making.",
+            "The Business Case Writing course by Viovn is a highly valued professional training that equips participants with the skills to analyze, outline, write, and communicate a business case effectively. It focuses on risk assessment techniques to eliminate potential problems and helps participants explore all possible solutions to a problem for informed decision-making.",
             "This training is particularly beneficial for project managers, as it aids in structuring the entire project life cycle, including design, risk elimination, and project documentation."
         ],
         "whatIsTitle": "What is Business Case Writing?",
@@ -421,7 +421,7 @@ const BusinessCaseWritingTraining = () => {
         "courseName": "Why Corporates Choose Us",
         "label": "",
         "buttonText": "Corporate Group Enquiry",
-        "description": "Simpliaxis offers customized corporate training programs designed for enterprise teams. Led by our skilled and certified trainers, these programs improve employee retention and work satisfaction while empowering teams to meet industry benchmarks through effective business case practices."
+        "description": "Viovn offers customized corporate training programs designed for enterprise teams. Led by our skilled and certified trainers, these programs improve employee retention and work satisfaction while empowering teams to meet industry benchmarks through effective business case practices."
     };
 
     const courseMetadata = {
@@ -446,7 +446,7 @@ const BusinessCaseWritingTraining = () => {
             titlePrefix: 'Earn Your',
             titleHighlight: 'Business Case',
             titleSuffix: 'Recognition',
-            issuerName: 'Simpliaxis',
+            issuerName: 'Viovn',
             certificateType: 'Certificate of Achievement',
             certifyText: 'This is to certify that',
             requirementText: 'Has successfully fulfilled all requirements to be recognized as a professional',
@@ -467,7 +467,7 @@ const BusinessCaseWritingTraining = () => {
             referEarnText: 'Refer & Earn',
             enrolledSuffix: 'Enrolled',
             moneyBackText: '100% Money Back Guarantee',
-            ltpLabel: 'Simpliaxis Leading Training Provider',
+            ltpLabel: 'Viovn Leading Training Provider',
             downloadBtnText: 'Download Brochure',
             viewSchedulesBtnText: 'View Schedules',
             freeAssessmentBtnText: 'Free Assessment',
@@ -648,7 +648,7 @@ const BusinessCaseWritingTraining = () => {
 
                             <CourseClients clients={courseClients} />
                             <CourseTrainers trainers={courseTrainers} />
-                            <CourseWhySimpliaxis features={courseWhySimpliaxis} />
+                            <CourseWhyViovn features={courseWhyViovn} />
                         </div>
 
                         {/* Right Side Panel */}
