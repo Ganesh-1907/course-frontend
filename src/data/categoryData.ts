@@ -48,7 +48,7 @@ const buildCourses = (category: string, titles: string[]): Course[] =>
 
     // Manual overrides with more robust checking
     const processedTitle = title.trim();
-    
+
     // ---------------------------------- Agile -------------------------------------------
     if (processedTitle.includes("Certified Scrum Master (CSM) Certification Training")) {
       navigate = "/course/csm-certificaton-training";
@@ -102,11 +102,11 @@ const buildCourses = (category: string, titles: string[]): Course[] =>
       navigate = "/course/professional-scrum-master-advanced-psm-a-certification-training";
     } else if (processedTitle.includes("Certified Agile Leader - 1 (CAL-1) Certification Training")) {
       navigate = "/course/certified-agile-leader®-1-(cal 1™)-certification-training";
-      }else if (processedTitle.includes("ICAgile Certified Professional in Agile Coaching (ICP-ACC) Certification Training")) {
+    } else if (processedTitle.includes("ICAgile Certified Professional in Agile Coaching (ICP-ACC) Certification Training")) {
       navigate = "/course/icagile-certified-professional-in-agile-coaching-icp-acc-certification-training";
-      }else if (processedTitle.includes("Advanced Certified Scrum Developer (A-CSD) Certification Training")) { 
+    } else if (processedTitle.includes("Advanced Certified Scrum Developer (A-CSD) Certification Training")) {
       navigate = "/course/agile/advanced-certified-scrum-developer-a-csd-certification-training";
-    } 
+    }
     else if (processedTitle.includes("Professional Scrum with Kanban (PSK) Certification Training")) {
       navigate = "/course/professional-scrum-with-kanban-psk-certification-training";
     } else if (processedTitle.includes("Professional Scrum Product Owner (PSPO) Certification Training")) {
@@ -180,6 +180,51 @@ const buildCourses = (category: string, titles: string[]): Course[] =>
       navigate = "/course/ai-native-foundations-certification-training-course";
     } else if (processedTitle.includes("AI-Native Change Agent Certification Training Course")) {
       navigate = "/course/ai-native-change-agent-certification-training-course";
+    }
+
+    // ---------------------------------- Business -------------------------------------------
+    if (processedTitle.includes("Business Case Writing Training")) {
+      navigate = "/course/business/business-case-writing-training";
+    } else if (processedTitle.includes("Conflict Management Training")) {
+      navigate = "/course/business/conflict-management-training";
+    } else if (processedTitle.includes("Certified Business Analysis Professional (CBAP) Certification Training")) {
+      navigate = "/course/business/certified-business-analysis-professional-cbap-certification-training";
+    } else if (processedTitle.includes("Change Management Training")) {
+      navigate = "/course/business/change-management-training";
+    } else if (processedTitle.includes("Certification of Capability in Business Analysis (CCBA) Training")) {
+      navigate = "/course/business/ccba-certification-training";
+    } else if (processedTitle.includes("Entry Certificate in Business Analysis (ECBA) Certification Training")) {
+      navigate = "/course/business/ecba-certification-training";
+    } else if (processedTitle.includes("Design Thinking Training")) {
+      navigate = "/course/business/design-thinking-training";
+    } else if (processedTitle.includes("Agile Analysis Certification")) {
+      navigate = "/course/business/agile-analysis-certification-iiba-aac-certification-training";
+    } else if (processedTitle.includes("Agile Objectives and Key Results")) {
+      navigate = "/course/micro-credentials/agile-objectives-and-key-results-agile-okrs-microcredential-training";
+    } else if (processedTitle.includes("AI for Scrum Masters Micro credential Course")) {
+      navigate = "/course/micro-credentials/ai-for-scrum-masters-micro-credential-course";
+    } else if (processedTitle.includes("AI for Product Owners Microcredential Training")) {
+      navigate = "/course/micro-credentials/ai-for-product-owners-micro-credential-training";
+    } else if (processedTitle.includes("Scrum Essentials")) {
+      navigate = "/course/micro-credentials/scrum-essentials";
+    } else if (processedTitle.includes("Conflict Management Skills Course")) {
+      navigate = "/course/micro-credentials/conflict-management-skills-course";
+    } else if (processedTitle.includes("ICAgile AI for Product Metrics")) {
+      navigate = "/course/micro-credentials/icagile-ai-for-product-metrics-micro-credential-course-training";
+    } else if (processedTitle.includes("ICAgile AI for Product Planning")) {
+      navigate = "/course/micro-credentials/icagile-ai-for-product-planning-micro-credential-course-training";
+    } else if (processedTitle.includes("Scrum Better with Kanban")) {
+      navigate = "/course/micro-credentials/scrum-better-with-kanban-sbk-micro-credential-training";
+    } else if (processedTitle.includes("ICAgile AI for Stakeholder Management")) {
+      navigate = "/course/micro-credentials/icagile-ai-for-stakeholder-management-micro-credential-course";
+    } else if (processedTitle.includes("ICAgile AI for Product Discovery")) {
+      navigate = "/course/micro-credentials/icagile-ai-for-product-discovery-micro-credential-course-training";
+    } else if (processedTitle.includes("ICAgile AI for Product Strategy")) {
+      navigate = "/course/micro-credentials/icagile-ai-for-product-strategy-micro-credential-course";
+    } else if (processedTitle.includes("ICAgile AI for Customer Insights")) {
+      navigate = "/course/micro-credentials/icagile-ai-for-customer-insights-micro-credential-training";
+    } else if (processedTitle.includes("Agile Coaching Skills Micro-credential Training")) {
+      navigate = "/course/micro-credentials/agile-coaching-skills-micro-credential-training";
     }
 
     return {
@@ -337,7 +382,7 @@ const microcredentialsCourseTitles = [
   "AI for Product Owners Microcredential Training",
   "Scrum Essentials",
   "Conflict Management Skills Course",
-  "ICAgile AI for Product Lifecycle Micro-credential Course Training",
+  "ICAgile AI for Product Metrics Micro-credential Course Training",
   "ICAgile AI for Product Planning Micro-credential Course Training",
   "Scrum Better with Kanban (SBK) Micro-credential Training",
   "ICAgile AI for Stakeholder Management Micro-credential Course",

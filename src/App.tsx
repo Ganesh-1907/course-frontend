@@ -95,6 +95,53 @@ import {
   QualitySixSigmaFundamentals
 } from "./pages/allCourses/quality";
 
+// ----------------------------- Business Courses -----------------------------
+import {
+  BusinessCaseWritingTraining,
+  ConflictManagementTraining,
+  CertifiedBusinessAnalysisProfessionalCBAPCertificationTraining,
+  ChangeManagementTraining,
+  CertificationOfCapabilityInBusinessAnalysisTraining,
+  EntryCertificateInBusinessAnalysisECBACertificationTraining,
+  DesignThinkingTraining,
+  AgileAnalysisCertification
+} from "./pages/allCourses/business";
+
+import {
+  AgileObjectivesAndKeyResultsAgileOKRsMicroCredentialTraining,
+  AIForScrumMastersMicroCredentialCourse,
+  AIForProductOwnersMicroCredentialTraining,
+  ScrumEssentials,
+  ConflictManagementSkillsCourse,
+  ICAgileAIForProductMetricsMicroCredentialCourseTraining,
+  ICAgileAIForProductPlanningMicroCredentialCourseTraining,
+  ScrumBetterWithKanbanSBKMicroCredentialTraining,
+  ICAgileAIForStakeholderManagementMicroCredentialCourse,
+  ICAgileAIForProductDiscoveryMicroCredentialCourseTraining,
+  ICAgileAIForProductStrategyMicroCredentialCourse,
+  ICAgileAIForCustomerInsightsMicroCredentialTraining,
+  AgileCoachingSkillsMicroCredentialTraining
+} from "./pages/allCourses/Microcredentials";
+
+import {
+  AIForScrumMastersMicrocredentialCourse,
+  AIForProductOwnersMicrocredentialCourse,
+  AgileEssentialsMicrocredentialCourse,
+  ScrumEssentialsMicrocredentialCourse,
+  MetricsThatMatterImprovingProductOutcomesMicrocredentialCourse,
+  IntroductionToAgileCoachingMicrocredentialCourse,
+  GetStartedWithDevOpsMicrocredentialCourse,
+  CoachingForTransformationSustainingChangeMicrocredentialCourse,
+  CoachingForChangeMakingAgilityWorkMicrocredentialCourse,
+  ChangeManagementMicrocredentialCourse,
+  BecomingAnAgileCoachMicrocredentialCourse,
+  AIForProductDiscoveryAndStrategyMicrocredentialsCourse,
+  AgileStakeholderEngagementEffectiveCommunicationStrategiesMicrocredentialCourse,
+  AgileForMarketingMicrocredentialsCourse,
+  AgileForHRMicrocredentialsCourse,
+  AgileCoachingSkillsMicrocredentialCourse
+} from "./pages/allCourses/onDemandMicroCredentials";
+
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -104,6 +151,40 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <Routes>
+          {/* ✨ BUSINESS COURSES */}
+          <Route
+            path="/course/business/business-case-writing-training"
+            element={<BusinessCaseWritingTraining />}
+          />
+          <Route
+            path="/course/business/conflict-management-training"
+            element={<ConflictManagementTraining />}
+          />
+          <Route
+            path="/course/business/certified-business-analysis-professional-cbap-certification-training"
+            element={<CertifiedBusinessAnalysisProfessionalCBAPCertificationTraining />}
+          />
+          <Route
+            path="/course/business/change-management-training"
+            element={<ChangeManagementTraining />}
+          />
+          <Route
+            path="/course/business/ccba-certification-training"
+            element={<CertificationOfCapabilityInBusinessAnalysisTraining />}
+          />
+          <Route
+            path="/course/business/ecba-certification-training"
+            element={<EntryCertificateInBusinessAnalysisECBACertificationTraining />}
+          />
+          <Route
+            path="/course/business/design-thinking-training"
+            element={<DesignThinkingTraining />}
+          />
+          <Route
+            path="/course/business/agile-analysis-certification-iiba-aac-certification-training"
+            element={<AgileAnalysisCertification />}
+          />
+
           <Route path="/" element={<Index />} />
 
           {/* categories routes */}
@@ -416,6 +497,125 @@ const App = () => (
           <Route
             path="/course/quality/lean-six-sigma-black-belt-training"
             element={<LeanSixSigmaBlackBelt />}
+          />
+
+          <Route
+            path="/course/micro-credentials/agile-objectives-and-key-results-agile-okrs-microcredential-training"
+            element={<AgileObjectivesAndKeyResultsAgileOKRsMicroCredentialTraining />}
+          />
+          <Route
+            path="/course/micro-credentials/ai-for-scrum-masters-micro-credential-course"
+            element={<AIForScrumMastersMicroCredentialCourse />}
+          />
+          <Route
+            path="/course/micro-credentials/ai-for-product-owners-micro-credential-training"
+            element={<AIForProductOwnersMicroCredentialTraining />}
+          />
+          <Route
+            path="/course/micro-credentials/scrum-essentials"
+            element={<ScrumEssentials />}
+          />
+          <Route
+            path="/course/micro-credentials/conflict-management-skills-course"
+            element={<ConflictManagementSkillsCourse />}
+          />
+          <Route
+            path="/course/micro-credentials/icagile-ai-for-product-metrics-micro-credential-course-training"
+            element={<ICAgileAIForProductMetricsMicroCredentialCourseTraining />}
+          />
+          <Route
+            path="/course/micro-credentials/icagile-ai-for-product-planning-micro-credential-course-training"
+            element={<ICAgileAIForProductPlanningMicroCredentialCourseTraining />}
+          />
+          <Route
+            path="/course/micro-credentials/scrum-better-with-kanban-sbk-micro-credential-training"
+            element={<ScrumBetterWithKanbanSBKMicroCredentialTraining />}
+          />
+          <Route
+            path="/course/micro-credentials/icagile-ai-for-stakeholder-management-micro-credential-course"
+            element={<ICAgileAIForStakeholderManagementMicroCredentialCourse />}
+          />
+          <Route
+            path="/course/micro-credentials/icagile-ai-for-product-discovery-micro-credential-course-training"
+            element={<ICAgileAIForProductDiscoveryMicroCredentialCourseTraining />}
+          />
+          <Route
+            path="/course/micro-credentials/icagile-ai-for-product-strategy-micro-credential-course"
+            element={<ICAgileAIForProductStrategyMicroCredentialCourse />}
+          />
+          <Route
+            path="/course/micro-credentials/icagile-ai-for-customer-insights-micro-credential-training"
+            element={<ICAgileAIForCustomerInsightsMicroCredentialTraining />}
+          />
+          <Route
+            path="/course/micro-credentials/agile-coaching-skills-micro-credential-training"
+            element={<AgileCoachingSkillsMicroCredentialTraining />}
+          />
+
+          {/* ✨ ON DEMAND MICRO-CREDENTIALS */}
+          <Route
+            path="/course/on-demand-microcredentials/ai-for-scrum-masters-microcredential-course"
+            element={<AIForScrumMastersMicrocredentialCourse />}
+          />
+          <Route
+            path="/course/on-demand-microcredentials/ai-for-product-owners-microcredential-course"
+            element={<AIForProductOwnersMicrocredentialCourse />}
+          />
+          <Route
+            path="/course/on-demand-microcredentials/agile-essentials-microcredential-course"
+            element={<AgileEssentialsMicrocredentialCourse />}
+          />
+          <Route
+            path="/course/on-demand-microcredentials/scrum-essentials-microcredential-course"
+            element={<ScrumEssentialsMicrocredentialCourse />}
+          />
+          <Route
+            path="/course/on-demand-microcredentials/metrics-that-matter-improving-product-outcomes-microcredential-course"
+            element={<MetricsThatMatterImprovingProductOutcomesMicrocredentialCourse />}
+          />
+          <Route
+            path="/course/on-demand-microcredentials/introduction-to-agile-coaching-microcredential-course"
+            element={<IntroductionToAgileCoachingMicrocredentialCourse />}
+          />
+          <Route
+            path="/course/on-demand-microcredentials/get-started-with-devops-microcredential-course"
+            element={<GetStartedWithDevOpsMicrocredentialCourse />}
+          />
+          <Route
+            path="/course/on-demand-microcredentials/coaching-for-transformation-sustaining-change-microcredential-course"
+            element={<CoachingForTransformationSustainingChangeMicrocredentialCourse />}
+          />
+          <Route
+            path="/course/on-demand-microcredentials/coaching-for-change-making-agility-work-microcredential-course"
+            element={<CoachingForChangeMakingAgilityWorkMicrocredentialCourse />}
+          />
+          <Route
+            path="/course/on-demand-microcredentials/change-management-microcredential-course"
+            element={<ChangeManagementMicrocredentialCourse />}
+          />
+          <Route
+            path="/course/on-demand-microcredentials/becoming-an-agile-coach-microcredential-course"
+            element={<BecomingAnAgileCoachMicrocredentialCourse />}
+          />
+          <Route
+            path="/course/on-demand-microcredentials/ai-for-product-discovery-and-strategy-microcredentials-course"
+            element={<AIForProductDiscoveryAndStrategyMicrocredentialsCourse />}
+          />
+          <Route
+            path="/course/on-demand-microcredentials/agile-stakeholder-engagement-effective-communication-strategies-microcredential-course"
+            element={<AgileStakeholderEngagementEffectiveCommunicationStrategiesMicrocredentialCourse />}
+          />
+          <Route
+            path="/course/on-demand-microcredentials/agile-for-marketing-microcredentials-course"
+            element={<AgileForMarketingMicrocredentialsCourse />}
+          />
+          <Route
+            path="/course/on-demand-microcredentials/agile-for-hr-microcredentials-course"
+            element={<AgileForHRMicrocredentialsCourse />}
+          />
+          <Route
+            path="/course/on-demand-microcredentials/agile-coaching-skills-microcredential-course"
+            element={<AgileCoachingSkillsMicrocredentialCourse />}
           />
 
 
