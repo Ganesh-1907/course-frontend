@@ -48,7 +48,7 @@ const buildCourses = (category: string, titles: string[]): Course[] =>
 
     // Manual overrides with more robust checking
     const processedTitle = title.trim();
-    
+
     // ---------------------------------- Agile -------------------------------------------
     if (processedTitle.includes("Certified Scrum Master (CSM) Certification Training")) {
       navigate = "/course/csm-certificaton-training";
@@ -104,9 +104,10 @@ const buildCourses = (category: string, titles: string[]): Course[] =>
       navigate = "/course/certified-agile-leader®-1-(cal 1™)-certification-training";
     } else if (processedTitle.includes("ICAgile Certified Professional in Agile Coaching (ICP-ACC) Certification Training")) {
       navigate = "/course/icagile-certified-professional-in-agile-coaching-icp-acc-certification-training";
-    } else if (processedTitle.includes("Advanced Certified Scrum Developer (A-CSD) Certification Training")) { 
+    } else if (processedTitle.includes("Advanced Certified Scrum Developer (A-CSD) Certification Training")) {
       navigate = "/course/agile/advanced-certified-scrum-developer-a-csd-certification-training";
-    } else if (processedTitle.includes("Professional Scrum with Kanban (PSK) Certification Training")) {
+    }
+    else if (processedTitle.includes("Professional Scrum with Kanban (PSK) Certification Training")) {
       navigate = "/course/professional-scrum-with-kanban-psk-certification-training";
     } else if (processedTitle.includes("Professional Scrum Product Owner (PSPO) Certification Training")) {
       navigate = "/course/professional-scrum-product-owner-certification-training";
@@ -180,77 +181,50 @@ const buildCourses = (category: string, titles: string[]): Course[] =>
     } else if (processedTitle.includes("AI-Native Change Agent Certification Training Course")) {
       navigate = "/course/ai-native-change-agent-certification-training-course";
     }
-    
-    // ---------------------------------- Project -------------------------------------------
-    if (processedTitle.includes("Project Management Professional (PMP) Certification Training")) {
-      navigate = "/course/project/project-management-professional-pmp-certification-training";
-    } else if (processedTitle.includes("Project Management Techniques Training")) {
-      navigate = "/course/project/project-management-techniques-training";
-    } else if (processedTitle.includes("PRINCE2 Foundation and Practitioner Certification Training")) {
-      navigate = "/course/project/prince2-foundation-and-practitioner-certification-training";
-    } else if (processedTitle.includes("PRINCE2 Foundation Certification Training")) {
-      navigate = "/course/project/prince2-foundation-certification-training";
-    } else if (processedTitle.includes("PRINCE2 Practitioner Certification Training")) {
-      navigate = "/course/project/prince2-practitioner-certification-training";
-    } else if (processedTitle.includes("PRINCE2 Agile Foundation and Practitioner Certification Training")) {
-      navigate = "/course/project/prince2-agile-foundation-and-practitioner-certification-training";
-    } else if (processedTitle.includes("PgMP")) {
-      navigate = "/course/project/program-management-professional-pgmp-certification-training";
-    } else if (processedTitle.includes("Project Management Fundamental") || processedTitle.includes("Project Management Fundamentals")) {
-      navigate = "/course/project/project-management-fundamental-training";
-    } else if (processedTitle.includes("PfMP")) {
-      navigate = "/course/project/portfolio-management-professional-pfmp-certification-training";
-    } else if (processedTitle.includes("Disciplined Agile Foundations")) {
-      navigate = "/course/project/disciplined-agile-foundations-daf-training";
-    } else if (processedTitle.includes("PMI-CPMAI")) {
-      navigate = "/course/project/pmi-cpmai-certification-training";
-    } else if (processedTitle.includes("PMI-CPM")) {
-      navigate = "/course/project/pmi-cpmai-certification-training";
-    }
 
-
-    // ---------------------------------- Quality -------------------------------------------
-     if (processedTitle.includes("Six Sigma Fundamentals Training")) {
-      navigate = "/course/quality/six-sigma-fundamentals-training";
-    } else if (processedTitle.includes("Root Cause Analysis (RCA) Training")) {
-      navigate = "/course/quality/root-cause-analysis-rca-training";
-    } else if (processedTitle.includes("Lean Six Sigma Yellow Belt Training")) {
-      navigate = "/course/quality/lean-six-sigma-yellow-belt-training";
-    } else if (processedTitle.includes("Lean Six Sigma Green Belt Training")) {
-      navigate = "/course/quality/lean-six-sigma-green-belt-training";
-    } else if (processedTitle.includes("Lean Six Sigma Black Belt Training")) {
-      navigate = "/course/quality/lean-six-sigma-black-belt-training";
-    }
-
-     // ---------------------------------- Generative AI -------------------------------------------
-     if (processedTitle.includes("Generative AI for Business and IT Leaders & Managers Training")) {
-      navigate = "/course/generative-ai/generative-ai-for-business-it-leaders-managers-training";
-    } else if (processedTitle.includes("Generative AI for Business Analysis & Functional IT Consultants Training")) {
-      navigate = "/course/generative-ai/generative-ai-for-business-analysts-functional-it-consultants-training";
-    } else if (processedTitle.includes("Cloud Fundamentals for Business Managers & Product Managers Training")) {
-      navigate = "/course/generative-ai/cloud-fundamentals-for-business-managers-product-managers-training";
-    } else if (processedTitle.includes("Multi-cloud FinOps: AWS, GCP, Azure")) {
-      navigate = "/course/generative-ai/multi-cloud-finops-aws-gcp-azure-training";
-    } else if (processedTitle.includes("Introduction to Generative AI Training")) {
-      navigate = "/course/generative-ai/introduction-to-generative-ai-training";
-    } else if (processedTitle.includes("Generative AI for Agile Leaders Training")) {
-      navigate = "/course/generative-ai/generative-ai-for-agile-leaders-training";
-    } else if (processedTitle.includes("Generative AI for Scrum Masters Training")) {
-      navigate = "/course/generative-ai/generative-ai-for-scrum-masters-training";
-    } else if (processedTitle.includes("Generative AI in HR Certification Course")) {
-      navigate = "/course/generative-ai/generative-ai-in-hr-certification-course";
-    } else if (processedTitle.includes("Generative AI for Software Developers Training")) {
-      navigate = "/course/generative-ai/generative-ai-for-software-developers-training";
-    } else if (processedTitle.includes("Generative AI for Project Managers Training")) {
-      navigate = "/course/generative-ai/generative-ai-for-project-managers-training";
-    } else if (processedTitle.includes("Prompt Engineering Course")) {
-      navigate = "/course/generative-ai/prompt-engineering-course";
-    } else if (processedTitle.includes("Mastering Generative AI Tools Online")) {
-      navigate = "/course/generative-ai/mastering-generative-ai-tools-online";
-    } else if (processedTitle.includes("Generative AI Architect - Advanced Program Training")) {
-      navigate = "/course/generative-ai/generative-ai-architect-advanced-program-training";
-    }else if (processedTitle.includes("Generative AI for Product Owners/Product Managers Certification Training")) {
-      navigate = "/course/generative-ai/generative-ai-for-product-owners-product-managers-certification-training";
+    // ---------------------------------- Business -------------------------------------------
+    if (processedTitle.includes("Business Case Writing Training")) {
+      navigate = "/course/business/business-case-writing-training";
+    } else if (processedTitle.includes("Conflict Management Training")) {
+      navigate = "/course/business/conflict-management-training";
+    } else if (processedTitle.includes("Certified Business Analysis Professional (CBAP) Certification Training")) {
+      navigate = "/course/business/certified-business-analysis-professional-cbap-certification-training";
+    } else if (processedTitle.includes("Change Management Training")) {
+      navigate = "/course/business/change-management-training";
+    } else if (processedTitle.includes("Certification of Capability in Business Analysis (CCBA) Training")) {
+      navigate = "/course/business/ccba-certification-training";
+    } else if (processedTitle.includes("Entry Certificate in Business Analysis (ECBA) Certification Training")) {
+      navigate = "/course/business/ecba-certification-training";
+    } else if (processedTitle.includes("Design Thinking Training")) {
+      navigate = "/course/business/design-thinking-training";
+    } else if (processedTitle.includes("Agile Analysis Certification")) {
+      navigate = "/course/business/agile-analysis-certification-iiba-aac-certification-training";
+    } else if (processedTitle.includes("Agile Objectives and Key Results")) {
+      navigate = "/course/micro-credentials/agile-objectives-and-key-results-agile-okrs-microcredential-training";
+    } else if (processedTitle.includes("AI for Scrum Masters Micro credential Course")) {
+      navigate = "/course/micro-credentials/ai-for-scrum-masters-micro-credential-course";
+    } else if (processedTitle.includes("AI for Product Owners Microcredential Training")) {
+      navigate = "/course/micro-credentials/ai-for-product-owners-micro-credential-training";
+    } else if (processedTitle.includes("Scrum Essentials")) {
+      navigate = "/course/micro-credentials/scrum-essentials";
+    } else if (processedTitle.includes("Conflict Management Skills Course")) {
+      navigate = "/course/micro-credentials/conflict-management-skills-course";
+    } else if (processedTitle.includes("ICAgile AI for Product Metrics")) {
+      navigate = "/course/micro-credentials/icagile-ai-for-product-metrics-micro-credential-course-training";
+    } else if (processedTitle.includes("ICAgile AI for Product Planning")) {
+      navigate = "/course/micro-credentials/icagile-ai-for-product-planning-micro-credential-course-training";
+    } else if (processedTitle.includes("Scrum Better with Kanban")) {
+      navigate = "/course/micro-credentials/scrum-better-with-kanban-sbk-micro-credential-training";
+    } else if (processedTitle.includes("ICAgile AI for Stakeholder Management")) {
+      navigate = "/course/micro-credentials/icagile-ai-for-stakeholder-management-micro-credential-course";
+    } else if (processedTitle.includes("ICAgile AI for Product Discovery")) {
+      navigate = "/course/micro-credentials/icagile-ai-for-product-discovery-micro-credential-course-training";
+    } else if (processedTitle.includes("ICAgile AI for Product Strategy")) {
+      navigate = "/course/micro-credentials/icagile-ai-for-product-strategy-micro-credential-course";
+    } else if (processedTitle.includes("ICAgile AI for Customer Insights")) {
+      navigate = "/course/micro-credentials/icagile-ai-for-customer-insights-micro-credential-training";
+    } else if (processedTitle.includes("Agile Coaching Skills Micro-credential Training")) {
+      navigate = "/course/micro-credentials/agile-coaching-skills-micro-credential-training";
     }
 
     return {
@@ -395,7 +369,7 @@ const generativeAiCourseTitles = [
   "Generative AI for Agile Leaders Training",
   "Generative AI for Scrum Masters Training",
   "Generative AI in HR Certification Course",
-  "Generative AI for Software Developers Training",
+  "Generative AI for Software Developers Course",
   "Generative AI for Project Managers Training",
   "Prompt Engineering Course",
   "Generative AI for Product Owners/Product Managers Certification Training",
@@ -408,7 +382,7 @@ const microcredentialsCourseTitles = [
   "AI for Product Owners Microcredential Training",
   "Scrum Essentials",
   "Conflict Management Skills Course",
-  "ICAgile AI for Product Lifecycle Micro-credential Course Training",
+  "ICAgile AI for Product Metrics Micro-credential Course Training",
   "ICAgile AI for Product Planning Micro-credential Course Training",
   "Scrum Better with Kanban (SBK) Micro-credential Training",
   "ICAgile AI for Stakeholder Management Micro-credential Course",
@@ -542,7 +516,7 @@ export const categoryData: Record<string, CategoryData> = {
         badge: "Trending",
         image: "https://images.unsplash.com/photo-1531482615713-2afd69097998?w=400&h=300&fit=crop",
         nextDate: "Feb 24, 2026",
-        navigate: "/course/cspo-certificaton-training",
+        navigate: "/allCourses/agile/Certified-Scrum-Product-Owner-(CSPO)-Certification-Training",
       }
     ],
     details: [
@@ -593,7 +567,7 @@ export const categoryData: Record<string, CategoryData> = {
         discount: 50,
         badge: "Most Popular",
         image: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=400&h=300&fit=crop",
-        navigate: "/course/project/project-management-professional-pmp-certification-training"
+        navigate: "/all-courses/project-management/pmp-certification-training"
       }
     ],
     details: [],
