@@ -95,10 +95,6 @@ const Header: React.FC<HeaderProps> = ({ hidden = false }) => {
                     className="h-full w-auto object-contain"
                   />
                 </div>
-                <div className="flex flex-col">
-                  <span className="text-xl md:text-2xl font-black text-[#001c3d] tracking-tighter leading-none">Viovn</span>
-                  <span className="text-[9px] md:text-[10px] font-bold text-blue-500/80 uppercase tracking-widest leading-none mt-0.5">Technologies</span>
-                </div>
               </Link>
 
               {/* All Courses Toggle */}

@@ -158,6 +158,28 @@ const buildCourses = (category: string, titles: string[]): Course[] =>
       navigate = "/course/safe-lean-portfolio-management-certification-training";
     } else if (processedTitle.includes("SAFe 6.0 Architect Certification Training")) {
       navigate = "/course/safe-architects-certification-training";
+    } else if (processedTitle.includes("SAFe 6.0 for Teams Certification Training")) {
+      navigate = "/course/safe-for-teams-certification-training";
+    } else if (processedTitle.includes("Advanced SAFe Practice Consultant (ASPC) Certification Path")) {
+      navigate = "/course/advanced-safe-practice-consultant-(aspc)-certification-path";
+    } else if (processedTitle.includes("AI-Improved SAFe 6.0 Release Train Engineer (RTE) Certification Training")) {
+      navigate = "/course/ai-empowered-safe-release-train-engineer-(rte)-certification-training";
+    } else if (processedTitle.includes("SAFe 6.0 DevOps Certification Training")) {
+      navigate = "/course/safe-devops-certification-training";
+    } else if (processedTitle.includes("Advanced Facilitator: Conflict & Collaboration Micro-Credential Course")) {
+      navigate = "/course/advanced-facilitator-conflict-collaboration-micro-credential-course";
+    } else if (processedTitle.includes("Achieving Responsible AI with SAFe Micro-credential Course")) {
+      navigate = "/course/achieving-responsible-ai-with-safe-micro-credential-course";
+    } else if (processedTitle.includes("Agile HR Explorer (AHRE) Training and Certification")) {
+      navigate = "/course/agile-hr-explorer-(ahre)-training-and-certification";
+    } else if (processedTitle.includes("Advanced Scrum Master Certification Path")) {
+      navigate = "/course/advanced-scrum-master-certification-path";
+    } else if (processedTitle.includes("SAFe for Hardware Certification Training")) {
+      navigate = "/course/safe-for-hardware-certification-training";
+    } else if (processedTitle.includes("AI-Native Foundations Certification Training Course")) {
+      navigate = "/course/ai-native-foundations-certification-training-course";
+    } else if (processedTitle.includes("AI-Native Change Agent Certification Training Course")) {
+      navigate = "/course/ai-native-change-agent-certification-training-course";
     }
 
     return {
@@ -254,9 +276,9 @@ const safeCourseTitles = [
   "Advanced SAFe Practice Consultant (ASPC) Certification Path",
   "AI-Improved SAFe 6.0 Release Train Engineer (RTE) Certification Training",
   "SAFe 6.0 DevOps Certification Training",
-  "Advanced Facilitation: Conflict and Collaboration Micro-credential Course",
+  "Advanced Facilitator: Conflict & Collaboration Micro-Credential Course",
   "Achieving Responsible AI with SAFe Micro-credential Course",
-  "Agile HR Explorer (AHR) Training and Certification",
+  "Agile HR Explorer (AHRE) Training and Certification",
   "Advanced Scrum Master Certification Path",
   "SAFe for Hardware Certification Training",
   "AI-Native Foundations Certification Training Course",
