@@ -87,6 +87,24 @@ import {
   AiNativeFoundationsCertificationTrainingCourse,
   AiNativeChangeAgentCertificationTrainingCourse,
 } from './pages/allCourses/safe';
+
+// ----------------------------- Project Courses -----------------------------
+import {
+  ProjectManagementProfessionalCertificationTraining,
+  ProjectManagementTechniquesTraining,
+  PRINCE2FoundationAndPractitionerCertificationTraining,
+  PRINCE2FoundationCertificationTraining,
+  PRINCE2PractitionerCertificationTraining,
+  PRINCE2AgileFoundationAndPractitionerCertificationTraining,
+  PRINCE2AgilePractitionerCertificationTraining,
+  ProgramManagementProfessionalPgMPCertificationTraining,
+  ProjectManagementFundamentalTraining,
+  PortfolioManagementProfessionalPfMPCertificationTraining,
+  DisciplinedAgileFoundationsDAFTraining,
+  PMICPMAICertificationTraining
+} from './pages/allCourses/project';
+
+// ----------------------------- Quality Courses -----------------------------
 import {
   LeanSixSigmaBlackBelt,
   LeanSixSigmaGreenBelt,
@@ -105,19 +123,33 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
-
+          
           {/* categories routes */}
           <Route path="/category/agile-scrum" element={<AgileScrum />} />
-          <Route path="/category/project-management" element={<ProjectManagement />} />
-          <Route path="/category/it-service-management" element={<ITServiceManagement />} />
-          <Route path="/category/quality-process" element={<QualityProcess />} />
-          <Route path="/category/leadership-coaching" element={<LeadershipCoaching />} />
-          <Route path="/category/business-skills" element={<BusinessSkills />} />
+          <Route
+            path="/category/project-management"
+            element={<ProjectManagement />}
+          />
+          <Route
+            path="/category/it-service-management"
+            element={<ITServiceManagement />}
+          />
+          <Route
+            path="/category/quality-process"
+            element={<QualityProcess />}
+          />
+          <Route
+            path="/category/leadership-coaching"
+            element={<LeadershipCoaching />}
+          />
+          <Route
+            path="/category/business-skills"
+            element={<BusinessSkills />}
+          />
           <Route path="/category/ai-technology" element={<AiTechnology />} />
           <Route path="/category/cyber-security" element={<CyberSecurity />} />
           <Route path="/sub-category" element={<SubCategoryPage />} />
           <Route path="/demo-one" element={<DemoOne />} />
-
 
           {/* ✨ AGILE COURSES */}
           <Route
@@ -310,8 +342,6 @@ const App = () => (
             element={<AdvancedCertifiedScrumDeveloperCertificationTraining />}
           />
 
-
-
           {/* ✨ SAFE COURSES */}
           <Route
             path="/course/leading-safe-certification-training"
@@ -392,8 +422,62 @@ const App = () => (
             element={<AiNativeChangeAgentCertificationTrainingCourse />}
           />
 
-          {/*Add more Quality routes here as needed */}
 
+          {/* ✨ PROJECT COURSES */}
+          <Route
+            path="/course/project/project-management-professional-pmp-certification-training"
+            element={<ProjectManagementProfessionalCertificationTraining />}
+          />
+          <Route
+            path="/course/project/project-management-techniques-training"
+            element={<ProjectManagementTechniquesTraining />}
+          />
+          <Route
+            path="/course/project/prince2-foundation-and-practitioner-certification-training"
+            element={<PRINCE2FoundationAndPractitionerCertificationTraining />}
+          />
+          <Route
+            path="/course/project/prince2-foundation-certification-training"
+            element={<PRINCE2FoundationCertificationTraining />}
+          />
+          <Route
+            path="/course/project/prince2-practitioner-certification-training"
+            element={<PRINCE2PractitionerCertificationTraining />}
+          />
+          <Route
+            path="/course/project/prince2-agile-foundation-and-practitioner-certification-training"
+            element={<PRINCE2AgileFoundationAndPractitionerCertificationTraining />}
+          />
+          <Route
+            path="/course/project/prince2-agile-practitioner-certification-training"
+            element={<PRINCE2AgilePractitionerCertificationTraining />}
+          />
+          <Route
+            path="/course/project/program-management-professional-pgmp-certification-training"
+            element={<ProgramManagementProfessionalPgMPCertificationTraining />}
+          />
+          <Route
+            path="/course/project/project-management-fundamental-training"
+            element={<ProjectManagementFundamentalTraining />}
+          />
+          <Route
+            path="/course/project/portfolio-management-professional-pfmp-certification-training"
+            element={<PortfolioManagementProfessionalPfMPCertificationTraining />}
+          />
+          <Route
+            path="/course/project/disciplined-agile-foundations-daf-training"
+            element={<DisciplinedAgileFoundationsDAFTraining />}
+          />
+          <Route
+            path="/course/project/pmi-cpmai-certification-training"
+            element={<PMICPMAICertificationTraining />}
+          />
+          <Route
+            path="/course/project/pmi-cpm-certification-training"
+            element={<PMICPMAICertificationTraining />}
+          />
+
+          {/* ✨ QUALITY COURSES */}
           <Route
             path="/course/quality/six-sigma-fundamentals-training"
             element={<QualitySixSigmaFundamentals />}
@@ -417,7 +501,6 @@ const App = () => (
             path="/course/quality/lean-six-sigma-black-belt-training"
             element={<LeanSixSigmaBlackBelt />}
           />
-
 
           <Route path="*" element={<NotFound />} />
         </Routes>
