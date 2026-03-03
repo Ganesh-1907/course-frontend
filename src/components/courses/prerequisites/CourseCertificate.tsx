@@ -43,21 +43,21 @@ const CourseCertificate: React.FC<CourseCertificateProps> = ({
   const defaultDescription = `Upon successful completion of the training, you will receive your ${courseName} certification, globally recognized and issued directly by the governing body.`;
   
   return (
-    <div className="bg-gradient-to-br from-slate-50 to-blue-50/30 border border-slate-100 rounded-[2.5rem] p-8 md:p-12 shadow-sm mt-12 relative overflow-hidden">
+    <div className="bg-gradient-to-br from-slate-50 to-orange-50/30 border border-slate-100 rounded-[2.5rem] p-8 md:p-12 shadow-sm mt-12 relative overflow-hidden">
       {/* Decorative background elements */}
-      <div className="absolute top-0 right-0 w-64 h-64 bg-blue-100/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
+      <div className="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
       
       <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <div className="space-y-8">
           <div className="space-y-4">
             <div className="flex items-center gap-2">
-              <div className="p-2 bg-blue-600 rounded-lg shadow-lg shadow-blue-600/20">
+              <div className="p-2 bg-primary rounded-lg shadow-lg shadow-primary/20">
                 <Award className="w-5 h-5 text-white" />
               </div>
-              <span className="text-[12px] text-blue-600 font-black uppercase tracking-[0.2em]">{label}</span>
+              <span className="text-[12px] text-primary font-black uppercase tracking-[0.2em]">{label}</span>
             </div>
-            <h2 className="text-3xl md:text-5xl font-black text-[#001c3d] tracking-tight leading-[1.1]">
-              {titlePrefix} <span className="text-blue-600">{titleHighlight}</span> {titleSuffix}
+            <h2 className="text-3xl md:text-4xl font-black text-[#001c3d] tracking-tight leading-[1.1]">
+              {titlePrefix} <span className="text-primary">{titleHighlight}</span> {titleSuffix}
             </h2>
             <p className="text-slate-500 font-medium text-[15px] leading-relaxed">
               {description || defaultDescription}
@@ -74,8 +74,8 @@ const CourseCertificate: React.FC<CourseCertificateProps> = ({
                 viewport={{ once: true }}
                 className="flex items-center gap-3"
               >
-                <div className="w-5 h-5 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0">
-                  <CheckCircle className="w-3.5 h-3.5 text-blue-600" />
+                <div className="w-5 h-5 rounded-full bg-accent flex items-center justify-center flex-shrink-0">
+                  <CheckCircle className="w-3.5 h-3.5 text-primary" />
                 </div>
                 <span className="text-[14px] font-bold text-slate-700">{item}</span>
               </motion.div>
@@ -102,8 +102,8 @@ const CourseCertificate: React.FC<CourseCertificateProps> = ({
               
               <div className="relative z-10 w-full flex flex-col items-center gap-4">
                 <div className="flex flex-col items-center gap-1">
-                  <div className="w-16 h-0.5 bg-blue-600 mb-2" />
-                  <span className="text-[10px] font-black text-blue-600 uppercase tracking-[0.3em]">{issuerName}</span>
+                  <div className="w-16 h-0.5 bg-primary mb-2" />
+                  <span className="text-[10px] font-black text-primary uppercase tracking-[0.3em]">{issuerName}</span>
                 </div>
                 <h5 className="text-[9px] font-black text-slate-400 uppercase tracking-widest">{certificateType}</h5>
               </div>
@@ -117,7 +117,7 @@ const CourseCertificate: React.FC<CourseCertificateProps> = ({
                 <p className="text-[11px] font-bold text-slate-500 max-w-[280px] leading-relaxed mx-auto italic">
                   {requirementText}
                 </p>
-                <h4 className="text-xl font-black text-blue-600 tracking-tight uppercase">{courseName}</h4>
+                <h4 className="text-xl font-black text-primary tracking-tight uppercase">{courseName}</h4>
               </div>
 
               <div className="w-full flex justify-between items-end px-10 relative z-10 mb-2">
@@ -127,9 +127,9 @@ const CourseCertificate: React.FC<CourseCertificateProps> = ({
                 </div>
                 
                 <div className="relative">
-                  <div className="w-16 h-16 rounded-full border border-blue-100 bg-blue-50/30 flex items-center justify-center relative overflow-hidden group-hover:rotate-12 transition-transform duration-1000">
-                    <div className="absolute inset-0 border-2 border-dashed border-blue-200/50 rounded-full animate-spin-slow" />
-                    <ShieldCheck className="w-8 h-8 text-blue-600/50" />
+                  <div className="w-16 h-16 rounded-full border border-primary/20 bg-accent/30 flex items-center justify-center relative overflow-hidden group-hover:rotate-12 transition-transform duration-1000">
+                    <div className="absolute inset-0 border-2 border-dashed border-primary/10 rounded-full animate-spin-slow" />
+                    <ShieldCheck className="w-8 h-8 text-primary/40" />
                   </div>
                   <div className="absolute -bottom-2 -right-2 bg-yellow-500 text-white p-1 rounded-md text-[8px] font-black shadow-lg">GOLD</div>
                 </div>

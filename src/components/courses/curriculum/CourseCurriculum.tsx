@@ -37,13 +37,13 @@ const CourseCurriculum: React.FC<CourseCurriculumProps> = ({
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-8 border-b border-slate-100 pb-10">
         <div className="space-y-4">
           <div className="flex items-center gap-2">
-            <div className="p-2 bg-blue-50 rounded-lg">
-              <BookCheck className="w-5 h-5 text-blue-600" />
+            <div className="p-2 bg-accent rounded-lg">
+              <BookCheck className="w-5 h-5 text-primary" />
             </div>
-            <span className="text-[12px] text-blue-600 font-black uppercase tracking-[0.2em]">{title}</span>
+            <span className="text-[12px] text-primary font-black uppercase tracking-[0.2em]">{title}</span>
           </div>
           <h2 className="text-3xl md:text-4xl font-black text-[#001c3d] tracking-tight leading-[1.1]">
-            {subtitle.split("Curriculum")[0]}<span className="text-blue-600">Curriculum</span>{subtitle.split("Curriculum")[1]}
+            {subtitle.split("Curriculum")[0]}<span className="text-primary">Curriculum</span>{subtitle.split("Curriculum")[1]}
           </h2>
           <p className="text-slate-500 font-medium text-[15px] max-w-xl">
             {description}
@@ -51,7 +51,7 @@ const CourseCurriculum: React.FC<CourseCurriculumProps> = ({
         </div>
         <Button 
           variant="outline" 
-          className="h-14 border-blue-600 text-blue-600 hover:bg-blue-50 font-black rounded-xl px-8 gap-3 shadow-sm hover:shadow-md transition-all active:scale-95"
+          className="h-14 border-primary text-primary hover:bg-accent font-black rounded-xl px-8 gap-3 shadow-sm hover:shadow-md transition-all active:scale-95"
         >
           <FileDown className="w-5 h-5" />
           {downloadText}
@@ -70,14 +70,14 @@ const CourseCurriculum: React.FC<CourseCurriculumProps> = ({
           >
             <AccordionItem 
               value={`item-${i}`}
-              className="border border-slate-100 bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md hover:border-blue-100 transition-all duration-300"
+              className="border border-slate-100 bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md hover:border-primary/20 transition-all duration-300"
             >
               <AccordionTrigger className="px-8 py-6 hover:no-underline group [&[data-state=open]]:bg-slate-50/50">
                 <div className="flex items-center gap-5">
-                  <span className="w-8 h-8 rounded-lg bg-blue-50 text-blue-600 flex items-center justify-center font-black text-xs">
+                  <span className="w-8 h-8 rounded-lg bg-accent text-primary flex items-center justify-center font-black text-xs">
                     {String(i + 1).padStart(2, '0')}
                   </span>
-                  <span className="text-[17px] font-black text-slate-800 text-left group-hover:text-blue-600 transition-colors">
+                  <span className="text-[17px] font-black text-slate-800 text-left group-hover:text-primary transition-colors">
                     {module.title}
                   </span>
                 </div>
@@ -86,7 +86,7 @@ const CourseCurriculum: React.FC<CourseCurriculumProps> = ({
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-4 pt-4 border-t border-slate-50">
                   {module.topics.map((topic, j) => (
                     <div key={j} className="flex items-start gap-4 group/item">
-                      <div className="w-5 h-5 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center flex-shrink-0 mt-0.5 group-hover/item:bg-blue-600 group-hover/item:text-white transition-colors">
+                      <div className="w-5 h-5 rounded-full bg-accent text-primary flex items-center justify-center flex-shrink-0 mt-0.5 group-hover/item:bg-primary group-hover/item:text-white transition-colors">
                         <ChevronDown className="w-3 h-3 -rotate-90" />
                       </div>
                       <span className="text-[15px] font-bold text-slate-600 leading-snug group-hover/item:text-slate-900 transition-colors">

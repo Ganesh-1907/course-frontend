@@ -36,10 +36,10 @@ const CourseBenefits: React.FC<CourseBenefitsProps> = ({
       {/* Header */}
       <div className="space-y-4 max-w-3xl">
         <div className="flex items-center gap-2">
-          <span className="text-blue-600 text-[12px] font-black uppercase tracking-[0.2em]">{title}</span>
+          <span className="text-primary text-[12px] font-black uppercase tracking-[0.2em]">{title}</span>
         </div>
-        <h2 className="text-3xl md:text-5xl font-black text-[#001c3d] tracking-tight leading-[1.1]">
-          {subtitle.split("Certification")[0]}<span className="text-blue-600">Certification</span>{subtitle.split("Certification")[1]}
+        <h2 className="text-3xl md:text-4xl font-black text-[#001c3d] tracking-tight leading-[1.1]">
+          {subtitle.split("Certification")[0]}<span className="text-primary">Certification</span>{subtitle.split("Certification")[1]}
         </h2>
         <p className="text-slate-500 font-medium text-[15px] leading-relaxed">
           {description}
@@ -53,7 +53,7 @@ const CourseBenefits: React.FC<CourseBenefitsProps> = ({
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
-          className="bg-gradient-to-br from-blue-600 to-indigo-700 rounded-[2.5rem] p-10 relative overflow-hidden flex flex-col h-full shadow-2xl shadow-blue-500/20"
+          className="bg-gradient-to-br from-primary to-orange-700 rounded-[2.5rem] p-10 relative overflow-hidden flex flex-col h-full shadow-2xl shadow-primary/20"
         >
           {/* Decorative Pattern */}
           <div className="absolute top-0 right-0 w-48 h-48 bg-white/10 rounded-full -translate-y-1/2 translate-x-1/2 blur-2xl" />
@@ -63,7 +63,7 @@ const CourseBenefits: React.FC<CourseBenefitsProps> = ({
               <User className="w-7 h-7 text-white" />
             </div>
             <h3 className="text-[24px] font-black text-white mb-10 tracking-tight">
-              {individualTitle.split("Growth")[0]}<span className="text-blue-200">Growth</span>{individualTitle.split("Growth")[1]}
+              {individualTitle.split("Growth")[0]}<span className="text-orange-200">Growth</span>{individualTitle.split("Growth")[1]}
             </h3>
 
             <div className="space-y-8 flex-grow">
@@ -79,7 +79,7 @@ const CourseBenefits: React.FC<CourseBenefitsProps> = ({
                   <div className="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center flex-shrink-0 mt-0.5">
                     <CheckCircle2 className="w-4 h-4 text-white" />
                   </div>
-                  <p className="text-[15px] font-medium text-blue-50 leading-relaxed">
+                  <p className="text-[15px] font-medium text-orange-50 leading-relaxed">
                     <span className="font-black text-white">{benefit.title}:</span> {benefit.description}
                   </p>
                 </motion.div>
@@ -97,11 +97,11 @@ const CourseBenefits: React.FC<CourseBenefitsProps> = ({
           className="bg-white border border-slate-100 rounded-[2.5rem] p-10 relative overflow-hidden flex flex-col h-full shadow-xl shadow-slate-200/50"
         >
           <div className="relative z-10">
-            <div className="w-14 h-14 bg-blue-50 rounded-2xl flex items-center justify-center mb-8">
-              <Building2 className="w-7 h-7 text-blue-600" />
+            <div className="w-14 h-14 bg-accent rounded-2xl flex items-center justify-center mb-8">
+              <Building2 className="w-7 h-7 text-primary" />
             </div>
             <h3 className="text-[24px] font-black text-[#001c3d] mb-10 tracking-tight">
-              {corporateTitle.split("Impact")[0]}<span className="text-blue-600">Impact</span>{corporateTitle.split("Impact")[1]}
+              {corporateTitle.split("Impact")[0]}<span className="text-primary">Impact</span>{corporateTitle.split("Impact")[1]}
             </h3>
 
             <div className="space-y-8 flex-grow">
@@ -114,8 +114,8 @@ const CourseBenefits: React.FC<CourseBenefitsProps> = ({
                   viewport={{ once: true }}
                   className="flex items-start gap-4"
                 >
-                  <div className="w-6 h-6 rounded-full bg-blue-50 flex items-center justify-center flex-shrink-0 mt-0.5">
-                    <CheckCircle2 className="w-4 h-4 text-blue-600" />
+                  <div className="w-6 h-6 rounded-full bg-accent flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <CheckCircle2 className="w-4 h-4 text-primary" />
                   </div>
                   <p className="text-[15px] font-bold text-slate-600 leading-relaxed">
                     <span className="font-black text-[#001c3d] tracking-tight">{benefit.title}:</span> {benefit.description}
@@ -129,7 +129,7 @@ const CourseBenefits: React.FC<CourseBenefitsProps> = ({
 
       {/* Footer Action */}
       <div className="flex justify-center md:justify-start pt-6">
-        <Button className="bg-blue-600 hover:bg-blue-700 text-white font-black px-12 py-8 text-[16px] rounded-2xl shadow-xl shadow-blue-500/30 transition-all hover:-translate-y-1 active:scale-[0.98]">
+        <Button className="bg-primary hover:bg-orange-700 text-white font-black px-12 py-8 text-[16px] rounded-2xl shadow-xl shadow-primary/30 transition-all hover:-translate-y-1 active:scale-[0.98]">
           {buttonText}
         </Button>
       </div>

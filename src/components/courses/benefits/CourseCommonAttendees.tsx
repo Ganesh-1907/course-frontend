@@ -17,7 +17,7 @@ const CourseCommonAttendees: React.FC<CourseCommonAttendeesProps> = ({
   professionalImage = "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=600"
 }) => {
   return (
-    <div className="bg-[#f0f9ff] border border-blue-200 rounded-none p-10 mt-10 relative overflow-hidden flex flex-col md:flex-row items-center justify-between min-h-[400px]">
+    <div className="bg-accent/50 border border-primary/20 rounded-none p-10 mt-10 relative overflow-hidden flex flex-col md:flex-row items-center justify-between min-h-[400px]">
       {/* Text Content */}
       <div className="relative z-10 space-y-8 flex-1">
         <div>
@@ -25,14 +25,14 @@ const CourseCommonAttendees: React.FC<CourseCommonAttendeesProps> = ({
             {title}
           </h4>
           <h2 className="text-2xl md:text-3xl font-extrabold text-[#001c3d] flex items-center gap-2">
-            {subtitle} <Sparkles className="w-7 h-7 text-blue-400 fill-blue-400" />
+            {subtitle} <Sparkles className="w-7 h-7 text-primary fill-primary" />
           </h2>
         </div>
 
         <ul className="grid grid-cols-1 gap-y-4">
           {attendees.map((attendee, i) => (
             <li key={i} className="flex items-center gap-3">
-              <CheckCircle2 className="w-5 h-5 text-[#2563eb] flex-shrink-0" />
+              <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0" />
               <span className="text-[17px] font-bold text-slate-900">{attendee}</span>
             </li>
           ))}
@@ -48,7 +48,7 @@ const CourseCommonAttendees: React.FC<CourseCommonAttendeesProps> = ({
             className="w-full h-auto object-contain transform translate-y-10"
           />
           {/* Subtle decoration/shield */}
-          <div className="absolute inset-0 bg-gradient-to-t from-[#f0f9ff] via-transparent to-transparent pointer-events-none" />
+          <div className="absolute inset-0 bg-gradient-to-t from-accent/50 via-transparent to-transparent pointer-events-none" />
         </div>
       </div>
     </div>

@@ -20,11 +20,11 @@ const CourseLearningObjectives: React.FC<CourseLearningObjectivesProps> = ({
   objectives
 }) => {
   return (
-    <div className="bg-[#f0f9ff] border border-blue-100 rounded-none p-8 md:p-10 mt-10 relative overflow-hidden">
+    <div className="bg-accent/50 border border-primary/20 rounded-none p-8 md:p-10 mt-10 relative overflow-hidden">
       {/* Decorative Wave at bottom right */}
       <div className="absolute bottom-0 right-0 opacity-10 pointer-events-none">
         <svg width="200" height="100" viewBox="0 0 200 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M0 100C50 50 150 150 200 100V100H0V100Z" fill="#2563eb" />
+          <path d="M0 100C50 50 150 150 200 100V100H0V100Z" fill="hsl(var(--primary))" />
         </svg>
       </div>
 
@@ -42,7 +42,7 @@ const CourseLearningObjectives: React.FC<CourseLearningObjectivesProps> = ({
           {objectives.map((obj, i) => (
             <div key={i} className="space-y-3">
               <div className="flex items-start gap-3">
-                <CheckCircle2 className="w-5 h-5 text-[#2563eb] mt-1 flex-shrink-0" />
+                <CheckCircle2 className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
                 <h3 className="text-[17px] font-black text-[#1a1a1a]">
                   {obj.title}:
                 </h3>

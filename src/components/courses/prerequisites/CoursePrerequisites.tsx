@@ -20,7 +20,7 @@ const CoursePrerequisites: React.FC<CoursePrerequisitesProps> = ({
         <h4 className="text-[13px] text-slate-500 font-bold mb-2 uppercase tracking-wide">
           {`Prerequisites for ${title} certification training`}
         </h4>
-        <h2 className="text-2xl md:text-3xl font-extrabold text-[#001c3d]">
+        <h2 className="text-3xl md:text-4xl font-extrabold text-[#001c3d]">
           {`What are the Prerequisites Required for ${title} Training?`}
         </h2>
       </div>
@@ -28,7 +28,7 @@ const CoursePrerequisites: React.FC<CoursePrerequisitesProps> = ({
       <ul className="space-y-6">
         {prerequisites.map((item, i) => (
           <li key={i} className="flex items-start gap-3">
-            <CheckCircle2 className="w-5 h-5 text-[#2563eb] mt-1 flex-shrink-0" />
+            <CheckCircle2 className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
             <p className="text-[17px] font-medium text-slate-700 leading-relaxed">
               {item}
             </p>

@@ -26,13 +26,13 @@ const CourseClients: React.FC<CourseClientsProps> = ({
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-20">
           <div className="space-y-4 max-w-2xl">
             <div className="flex items-center gap-2">
-              <div className="p-2 bg-blue-50 rounded-lg">
-                <Building2 className="w-5 h-5 text-blue-600" />
+              <div className="p-2 bg-accent rounded-lg">
+                <Building2 className="w-5 h-5 text-primary" />
               </div>
-              <span className="text-[12px] text-blue-600 font-black uppercase tracking-[0.2em]">{title}</span>
+              <span className="text-[12px] text-primary font-black uppercase tracking-[0.2em]">{title}</span>
             </div>
-            <h2 className="text-3xl md:text-5xl font-black text-[#001c3d] tracking-tight leading-[1.1]">
-              {subtitle.split("Industry Leaders")[0]}<span className="text-blue-600">Industry Leaders</span>
+            <h2 className="text-3xl md:text-4xl font-black text-[#001c3d] tracking-tight leading-[1.1]">
+              {subtitle.split("Industry Leaders")[0]}<span className="text-primary">Industry Leaders</span>
             </h2>
             <p className="text-slate-500 font-medium text-[15px] leading-relaxed">
               {description}

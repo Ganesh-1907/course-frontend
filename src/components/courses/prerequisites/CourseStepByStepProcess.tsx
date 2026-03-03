@@ -23,13 +23,13 @@ const CourseStepByStepProcess: React.FC<CourseStepByStepProcessProps> = ({
       {/* Decorative Wave at bottom right */}
       <div className="absolute bottom-0 right-0 opacity-10 pointer-events-none">
         <svg width="200" height="100" viewBox="0 0 200 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M0 100C50 50 150 150 200 100V100H0V100Z" fill="#2563eb" />
+          <path d="M0 100C50 50 150 150 200 100V100H0V100Z" fill="hsl(var(--primary))" />
         </svg>
       </div>
 
       <div className="relative z-10 space-y-10">
         <h2 className="text-xl md:text-2xl font-black text-[#001c3d] flex items-center gap-2 max-w-2xl leading-tight">
-          {title} <Sparkles className="w-6 h-6 text-blue-400 fill-blue-400 flex-shrink-0" />
+          {title} <Sparkles className="w-6 h-6 text-primary fill-primary flex-shrink-0" />
         </h2>
 
         {/* Visual Process Diagram (Simplified representation of the curved line with circles) */}

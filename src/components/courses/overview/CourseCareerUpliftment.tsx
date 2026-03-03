@@ -58,11 +58,14 @@ const CourseCareerUpliftment: React.FC<CourseCareerUpliftmentProps> = ({
       {/* Career Upliftment Header & Stats */}
       <div className="space-y-8">
         <div>
-          <h4 className="text-[13px] text-slate-500 font-bold mb-2 uppercase tracking-wide">
-            {title || "Career upliftment"}
-          </h4>
-          <h2 className="text-2xl md:text-3xl font-extrabold text-[#001c3d] flex items-center gap-2">
-            {subtitle || `Boost your career with the ${courseName} Certification Training.`} <Sparkles className="w-7 h-7 text-blue-400 fill-blue-400" />
+          <div className="flex items-center gap-2 mb-4">
+            <span className="h-px w-8 bg-primary/40" />
+            <h4 className="text-[12px] text-primary font-black uppercase tracking-[0.2em]">
+              {title || "Career upliftment"}
+            </h4>
+          </div>
+          <h2 className="text-3xl md:text-4xl font-extrabold text-[#001c3d] flex items-center gap-2">
+            {subtitle || `Boost your career with the ${courseName} Certification Training.`} <Sparkles className="w-7 h-7 text-primary fill-primary" />
           </h2>
         </div>
 
@@ -77,7 +80,7 @@ const CourseCareerUpliftment: React.FC<CourseCareerUpliftmentProps> = ({
               </div>
               <div className="flex items-end justify-center gap-1 h-12">
                 {[40, 70, 100, 60, 40].map((h, i) => (
-                  <div key={i} className="w-3 bg-red-400" style={{ height: `${h}%` }} />
+                  <div key={i} className="w-3 bg-primary/60" style={{ height: `${h}%` }} />
                 ))}
               </div>
             </div>
@@ -91,9 +94,9 @@ const CourseCareerUpliftment: React.FC<CourseCareerUpliftmentProps> = ({
                 <p className="text-xs font-bold text-slate-500">{stats.growthLabel}</p>
               </div>
               <div className="flex justify-center">
-                <div className="w-16 h-12 bg-red-100 relative rounded-none flex items-center justify-center">
-                  <Briefcase className="w-6 h-6 text-red-500" />
-                  <div className="absolute -top-1 left-1/2 -translate-x-1/2 w-6 h-2 border-2 border-red-500 border-b-0" />
+                <div className="w-16 h-12 bg-accent relative rounded-none flex items-center justify-center">
+                  <Briefcase className="w-6 h-6 text-primary" />
+                  <div className="absolute -top-1 left-1/2 -translate-x-1/2 w-6 h-2 border-2 border-primary border-b-0" />
                 </div>
               </div>
             </div>
@@ -107,7 +110,7 @@ const CourseCareerUpliftment: React.FC<CourseCareerUpliftmentProps> = ({
                   <ul key={i} className="space-y-1">
                     {col.group.map((item, j) => (
                       <li key={j} className="text-sm font-bold text-slate-700 flex items-center gap-2">
-                        <span className="w-1 h-1 bg-slate-900 rounded-full" />
+                        <span className="w-1.5 h-1.5 bg-primary rounded-full" />
                         {item}
                       </li>
                     ))}
@@ -146,7 +149,7 @@ const CourseCareerUpliftment: React.FC<CourseCareerUpliftmentProps> = ({
         {/* Decorative Wave */}
         <div className="absolute bottom-0 right-0 opacity-10 pointer-events-none">
           <svg width="200" height="100" viewBox="0 0 200 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0 100C50 50 150 150 200 100V100H0V100Z" fill="#2563eb" />
+            <path d="M0 100C50 50 150 150 200 100V100H0V100Z" fill="hsl(var(--primary))" />
           </svg>
         </div>
 
@@ -158,7 +161,7 @@ const CourseCareerUpliftment: React.FC<CourseCareerUpliftmentProps> = ({
           <div className="space-y-4">
             {outcomes.map((outcome, i) => (
               <div key={i} className="flex items-start gap-3">
-                <div className="mt-1 bg-blue-500 rounded-full p-0.5">
+                <div className="mt-1 bg-primary rounded-full p-0.5">
                   <CheckCircle2 className="w-3 h-3 text-white" />
                 </div>
                 <p className="text-[15px] font-medium text-slate-700 leading-snug">

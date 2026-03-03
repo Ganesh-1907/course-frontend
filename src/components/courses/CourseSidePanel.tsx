@@ -55,8 +55,8 @@ const CourseSidePanel: React.FC<CourseSidePanelProps> = ({ schedules }) => {
         <div className="p-3 space-y-3">
           <div className="flex items-center justify-between border-b border-slate-100 pb-2.5">
             <h3 className="text-[13px] font-black text-[#001c3d] flex items-center gap-1.5">
-              <div className="p-1 bg-blue-50 rounded-md">
-                <Calendar className="w-3 h-3 text-blue-600" />
+              <div className="p-1 bg-accent rounded-md">
+                <Calendar className="w-3 h-3 text-primary" />
               </div>
               Upcoming Schedule
             </h3>
@@ -65,7 +65,7 @@ const CourseSidePanel: React.FC<CourseSidePanelProps> = ({ schedules }) => {
           {featuredSchedule && (
             <div className="space-y-2.5">
               <div className="flex items-start gap-2.5">
-                <div className="w-9 h-9 flex-shrink-0 bg-slate-50 border border-slate-100 p-1.5 flex items-center justify-center rounded-md italic font-black text-[9px] text-blue-600">
+                <div className="w-9 h-9 flex-shrink-0 bg-slate-50 border border-slate-100 p-1.5 flex items-center justify-center rounded-md italic font-black text-[9px] text-primary">
                   {featuredSchedule.courseCode}
                 </div>
                 <p className="text-[12px] font-black text-slate-800 leading-tight">
@@ -90,7 +90,7 @@ const CourseSidePanel: React.FC<CourseSidePanelProps> = ({ schedules }) => {
                 </div>
                 <div className="flex-1">
                   <p className="text-[9px] font-black text-slate-400 uppercase tracking-widest">Master Trainer</p>
-                  <p className="text-[12px] font-black text-blue-600">{featuredSchedule.trainerName}</p>
+                  <p className="text-[12px] font-black text-primary">{featuredSchedule.trainerName}</p>
                 </div>
               </div>
 
@@ -111,7 +111,7 @@ const CourseSidePanel: React.FC<CourseSidePanelProps> = ({ schedules }) => {
             <Button className="w-full bg-[#ff4d2a] hover:bg-[#e64526] text-white font-black text-[13px] rounded-md h-9 shadow-md shadow-orange-500/20 transition-all active:scale-[0.98]">
               Enroll Now
             </Button>
-            <button className="w-full text-[10px] font-black text-slate-500 flex items-center justify-center gap-1 hover:text-blue-600 transition-colors uppercase tracking-widest">
+            <button className="w-full text-[10px] font-black text-slate-500 flex items-center justify-center gap-1 hover:text-primary transition-colors uppercase tracking-widest">
               View all Schedules <ChevronRight className="w-3 h-3" />
             </button>
           </div>
@@ -123,7 +123,7 @@ const CourseSidePanel: React.FC<CourseSidePanelProps> = ({ schedules }) => {
         initial={{ opacity: 0, x: 20 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ delay: 0.1 }}
-        className="bg-white border border-blue-200 rounded-lg shadow-sm p-2.5 space-y-2"
+        className="bg-white border border-primary/20 rounded-lg shadow-sm p-2.5 space-y-2"
       >
         <div className="space-y-0.5">
           <h3 className="text-[13px] md:text-[14px] font-black text-[#1f2937]">Request More Details</h3>
@@ -134,28 +134,28 @@ const CourseSidePanel: React.FC<CourseSidePanelProps> = ({ schedules }) => {
         
         <div className="space-y-1.5">
           <div className="relative group">
-            <User className="pointer-events-none absolute left-0 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-slate-400 group-focus-within:text-blue-600 transition-colors" />
+            <User className="pointer-events-none absolute left-0 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-slate-400 group-focus-within:text-primary transition-colors" />
             <Input
               placeholder="Full Name*"
-              className="h-7 rounded-none border-0 border-b border-b-slate-300 bg-transparent pl-5 pr-0 text-[11px] font-medium placeholder:text-slate-500 focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:border-b-blue-500"
+              className="h-7 rounded-none border-0 border-b border-b-slate-300 bg-transparent pl-5 pr-0 text-[11px] font-medium placeholder:text-slate-500 focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:border-b-primary"
             />
           </div>
 
           <div className="relative group">
-            <Mail className="pointer-events-none absolute left-0 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-slate-400 group-focus-within:text-blue-600 transition-colors" />
+            <Mail className="pointer-events-none absolute left-0 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-slate-400 group-focus-within:text-primary transition-colors" />
             <Input
               placeholder="Email Address*"
-              className="h-7 rounded-none border-0 border-b border-b-slate-300 bg-transparent pl-5 pr-0 text-[11px] font-medium placeholder:text-slate-500 focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:border-b-blue-500"
+              className="h-7 rounded-none border-0 border-b border-b-slate-300 bg-transparent pl-5 pr-0 text-[11px] font-medium placeholder:text-slate-500 focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:border-b-primary"
             />
           </div>
           
-          <div className="flex items-center gap-2 h-7 border-b border-b-slate-300 group focus-within:border-b-blue-500">
+          <div className="flex items-center gap-2 h-7 border-b border-b-slate-300 group focus-within:border-b-primary">
             <div className="w-12 flex items-center justify-start gap-1 pr-1">
               <span className="text-[12px] font-semibold">🇮🇳</span>
               <span className="text-[9px] text-slate-400">▼</span>
             </div>
             <div className="flex-1 relative">
-              <PhoneIcon className="pointer-events-none absolute left-0 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-slate-400 group-focus-within:text-blue-600 transition-colors" />
+              <PhoneIcon className="pointer-events-none absolute left-0 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-slate-400 group-focus-within:text-primary transition-colors" />
               <Input
                 placeholder="Mobile Number*"
                 className="h-7 border-0 bg-transparent pl-5 pr-0 text-[11px] font-medium placeholder:text-slate-500 focus-visible:ring-0 focus-visible:ring-offset-0"
@@ -164,10 +164,10 @@ const CourseSidePanel: React.FC<CourseSidePanelProps> = ({ schedules }) => {
           </div>
 
           <div className="relative group">
-            <MessageSquare className="pointer-events-none absolute left-0 top-3 w-3.5 h-3.5 text-slate-400 group-focus-within:text-blue-600 transition-colors" />
+            <MessageSquare className="pointer-events-none absolute left-0 top-3 w-3.5 h-3.5 text-slate-400 group-focus-within:text-primary transition-colors" />
             <Textarea 
               placeholder="Your Message..." 
-              className="min-h-[28px] max-h-[28px] rounded-none border-0 border-b border-b-slate-300 bg-transparent pl-5 pr-0 py-1 text-[11px] font-medium placeholder:text-slate-500 resize-none overflow-hidden focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:border-b-blue-500"
+              className="min-h-[28px] max-h-[28px] rounded-none border-0 border-b border-b-slate-300 bg-transparent pl-5 pr-0 py-1 text-[11px] font-medium placeholder:text-slate-500 resize-none overflow-hidden focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:border-b-primary"
             />
           </div>
 
