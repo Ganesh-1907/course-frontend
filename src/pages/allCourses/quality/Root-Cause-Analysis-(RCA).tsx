@@ -455,8 +455,8 @@ const QualityRootCauseAnalysis = () => {
 
 
     const heroData = {
-        courseName: "Root Cause Analysis Certification Training",
-        breadcrumbName: "Root Cause Analysis Training",
+        courseName: "Root Cause Analysis (RCA) Training",
+        breadcrumbName: "Root Cause Analysis (RCA) Training",
         rating: "4.9",
         enrolledCount: "38k+",
         subtitle:
