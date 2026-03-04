@@ -735,6 +735,8 @@ const LeanSixSigmaBlackBeltCertification = () => {
 
             <main className="pt-16">
                 <CourseHero
+          categoryName="quality"
+          categoryLink="/category/quality"
                     courseName={heroData.courseName}
                     breadcrumbName={heroData.breadcrumbName}
                     rating={heroData.rating}

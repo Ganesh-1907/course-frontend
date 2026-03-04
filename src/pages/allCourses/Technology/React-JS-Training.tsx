@@ -687,6 +687,8 @@ const ReactJSTraining = () => {
 
       <main className="pt-16">
         <CourseHero
+          categoryName="technology"
+          categoryLink="/category/technology"
           courseName={heroData.courseName}
           breadcrumbName={heroData.breadcrumbName}
           rating={heroData.rating}

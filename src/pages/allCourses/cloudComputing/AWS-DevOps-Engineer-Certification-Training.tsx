@@ -704,6 +704,8 @@ const AWSDevOpsEngineerCertificationTraining = () => {
 
       <main className="pt-16">
         <CourseHero
+          categoryName="cloud computing"
+          categoryLink="/category/cloud-computing"
           courseName={heroData.courseName}
           breadcrumbName={heroData.breadcrumbName}
           rating={heroData.rating}
