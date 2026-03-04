@@ -692,6 +692,8 @@ const ProfessionalScrumWithKanbanCertificationTraining = () => {
 
       <main className="pt-16">
         <CourseHero
+          categoryName="agile"
+          categoryLink="/category/agile"
           courseName={heroData.courseName}
           breadcrumbName={heroData.breadcrumbName}
           rating={heroData.rating}

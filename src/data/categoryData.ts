@@ -635,6 +635,35 @@ const buildCourses = (category: string, titles: string[]): Course[] =>
     } else if (processedTitle.includes('Microsoft Certified Azure Solutions Architect Expert (AZ-305) Certification Training')) {
       navigate = '/course/others/microsoft-certified-azure-solutions-architect-expert-certification';
     }
+//--------------------------- Micro-credentials
+
+    if (processedTitle.includes("Agile Objectives and Key Results")) {
+      navigate = "/course/micro-credentials/agile-objectives-and-key-results-agile-okrs-microcredential-training";
+    } else if (processedTitle.includes("AI for Scrum Masters Micro credential Course")) {
+      navigate = "/course/micro-credentials/ai-for-scrum-masters-micro-credential-course";
+    } else if (processedTitle.includes("AI for Product Owners Microcredential Training")) {
+      navigate = "/course/micro-credentials/ai-for-product-owners-micro-credential-training";
+    } else if (processedTitle.includes("Scrum Essentials")) {
+      navigate = "/course/micro-credentials/scrum-essentials";
+    } else if (processedTitle.includes("Conflict Management Skills Course")) {
+      navigate = "/course/micro-credentials/conflict-management-skills-course";
+    } else if (processedTitle.includes("ICAgile AI for Product Metrics")) {
+      navigate = "/course/micro-credentials/icagile-ai-for-product-metrics-micro-credential-course-training";
+    } else if (processedTitle.includes("ICAgile AI for Product Planning")) {
+      navigate = "/course/micro-credentials/icagile-ai-for-product-planning-micro-credential-course-training";
+    } else if (processedTitle.includes("Scrum Better with Kanban")) {
+      navigate = "/course/micro-credentials/scrum-better-with-kanban-sbk-micro-credential-training";
+    } else if (processedTitle.includes("ICAgile AI for Stakeholder Management")) {
+      navigate = "/course/micro-credentials/icagile-ai-for-stakeholder-management-micro-credential-course";
+    } else if (processedTitle.includes("ICAgile AI for Product Discovery")) {
+      navigate = "/course/micro-credentials/icagile-ai-for-product-discovery-micro-credential-course-training";
+    } else if (processedTitle.includes("ICAgile AI for Product Strategy")) {
+      navigate = "/course/micro-credentials/icagile-ai-for-product-strategy-micro-credential-course";
+    } else if (processedTitle.includes("ICAgile AI for Customer Insights")) {
+      navigate = "/course/micro-credentials/icagile-ai-for-customer-insights-micro-credential-training";
+    } else if (processedTitle.includes("Agile Coaching Skills Micro-credential Training")) {
+      navigate = "/course/micro-credentials/agile-coaching-skills-micro-credential-training";
+    }
 
 
 
@@ -878,8 +907,8 @@ const othersCourseTitles = [
 ];
 
 export const categoryData: Record<string, CategoryData> = {
-  "agile-scrum": {
-    id: "agile-scrum",
+  agile: {
+    id: "agile",
     name: "Agile & Scrum",
     breadcrumbName: "Agile",
     title: "Top Agile Certification Courses & Training",
@@ -897,40 +926,7 @@ export const categoryData: Record<string, CategoryData> = {
       { label: "Rating", value: "4.9/5" },
       { label: "Global Partners", value: "400+" }
     ],
-    courses: [
-      {
-        id: 1,
-        title: "Certified ScrumMaster (CSM®) Certification",
-        category: "Agile & Scrum",
-        rating: 5.0,
-        enrolled: "73k+",
-        duration: "2 Days",
-        format: "Live Classroom",
-        price: 349,
-        originalPrice: 499,
-        discount: 30,
-        badge: "Popular",
-        image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300&fit=crop",
-        nextDate: "Feb 22, 2026",
-        navigate: "/course/csm-certificaton-training",
-      },
-      {
-        id: 2,
-        title: "Certified Scrum Product Owner (CSPO®)",
-        category: "Agile & Scrum",
-        rating: 4.9,
-        enrolled: "45k+",
-        duration: "2 Days",
-        format: "Live Classroom",
-        price: 399,
-        originalPrice: 599,
-        discount: 33,
-        badge: "Trending",
-        image: "https://images.unsplash.com/photo-1531482615713-2afd69097998?w=400&h=300&fit=crop",
-        nextDate: "Feb 24, 2026",
-        navigate: "/course/cspo-certificaton-training",
-      }
-    ],
+    courses: buildCourses("Agile & Scrum", agileCourseTitles),
     details: [
       {
         title: "Why Agile Management?",
@@ -948,8 +944,8 @@ export const categoryData: Record<string, CategoryData> = {
       }
     ]
   },
-  "project-management": {
-    id: "project-management",
+  project: {
+    id: "project",
     name: "Project Management",
     title: "PROJECT MANAGEMENT PROFESSIONAL TRAINING",
     description: "Accelerate your career with globally recognized Project Management certifications. Learn to lead complex projects with confidence and precision.",
@@ -965,23 +961,7 @@ export const categoryData: Record<string, CategoryData> = {
       { label: "Average Hike", value: "25%" },
       { label: "Exam Pass Rate", value: "99.1%" }
     ],
-    courses: [
-      {
-        id: 3,
-        title: "PMP® Certification Training",
-        category: "Project Management",
-        rating: 5.0,
-        enrolled: "100k+",
-        duration: "4 Days",
-        format: "Live Virtual",
-        price: 495,
-        originalPrice: 990,
-        discount: 50,
-        badge: "Most Popular",
-        image: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=400&h=300&fit=crop",
-        navigate: "/course/project/project-management-professional-pmp-certification-training"
-      }
-    ],
+    courses: buildCourses("Project Management", projectCourseTitles),
     details: [],
     faqs: [
       {
@@ -998,8 +978,8 @@ export const categoryData: Record<string, CategoryData> = {
       }
     ]
   },
-  "it-service-management": {
-    id: "it-service-management",
+  service: {
+    id: "service",
     name: "IT Service Management",
     title: "IT SERVICE MANAGEMENT (ITSM) CERTIFICATION",
     description: "Align your IT services with business goals. Master ITIL 4 and other leading frameworks to drive efficiency and value in technology operations.",
@@ -1015,7 +995,7 @@ export const categoryData: Record<string, CategoryData> = {
       { label: "Corporate Batches", value: "200+" },
       { label: "Customer Rating", value: "4.8/5" }
     ],
-    courses: [],
+    courses: buildCourses("IT Service Management", serviceCourseTitles),
     details: [],
     faqs: [
       {
@@ -1028,8 +1008,8 @@ export const categoryData: Record<string, CategoryData> = {
       }
     ]
   },
-  "quality-process": {
-    id: "quality-process",
+  quality: {
+    id: "quality",
     name: "Quality & Process",
     title: "QUALITY & PROCESS IMPROVEMENT TRAINING",
     description: "Master Lean Six Sigma and other quality management methodologies. Drive operational excellence and reduce waste in your organization.",
@@ -1045,7 +1025,7 @@ export const categoryData: Record<string, CategoryData> = {
       { label: "Certified Belts", value: "12K+" },
       { label: "Projects Completed", value: "500+" }
     ],
-    courses: [],
+    courses: buildCourses("Quality & Process", qualityCourseTitles),
     details: [],
     faqs: [
       {
@@ -1084,8 +1064,8 @@ export const categoryData: Record<string, CategoryData> = {
       }
     ]
   },
-  "business-skills": {
-    id: "business-skills",
+  business: {
+    id: "business",
     name: "Business Skills",
     title: "ESSENTIAL BUSINESS SKILLS FOR CAREER GROWTH",
     description: "Master the soft and hard skills critical for modern business. From business analysis to effective communication.",
@@ -1101,7 +1081,7 @@ export const categoryData: Record<string, CategoryData> = {
       { label: "Corporate Trainers", value: "80+" },
       { label: "Career Pivoters", value: "2K+" }
     ],
-    courses: [],
+    courses: buildCourses("Business Skills", businessCourseTitles),
     details: [],
     faqs: [
       {
@@ -1110,8 +1090,8 @@ export const categoryData: Record<string, CategoryData> = {
       }
     ]
   },
-  "ai-technology": {
-    id: "ai-technology",
+  technology: {
+    id: "technology",
     name: "AI & Technology",
     title: "ARTIFICIAL INTELLIGENCE & EMERGING TECH",
     description: "Future-proof your career with cutting-edge technology training. From Generative AI to Cloud Architecture.",
@@ -1127,7 +1107,7 @@ export const categoryData: Record<string, CategoryData> = {
       { label: "Hands-on Labs", value: "100+" },
       { label: "Tech Mentors", value: "40+" }
     ],
-    courses: [],
+    courses: buildCourses("AI & Technology", technologyCourseTitles),
     details: [],
     faqs: [
       {
@@ -1182,10 +1162,39 @@ export const categoryData: Record<string, CategoryData> = {
       }
     ]
   },
-  agile: buildCategory("agile", "AGILE", agileCourseTitles),
-  safe: buildCategory("safe", "SAFE", safeCourseTitles),
-  project: buildCategory("project", "PROJECT", projectCourseTitles),
-  business: buildCategory("business", "BUSINESS", businessCourseTitles),
+  safe: {
+    id: "safe",
+    name: "SAFe Certification",
+    breadcrumbName: "SAFe",
+    title: "Scaled Agile Framework (SAFe) Certification Training",
+    subtitle: "Master Scaled Agile with our comprehensive SAFe certification programs.",
+    description: "Empower your organization with Scaled Agile Framework (SAFe) expertise. From Leading SAFe to SAFe Practice Consultant.",
+    enrolledCount: "95,000+",
+    highlights: [
+      "Official SAFe Training from Bronze Partner.",
+      "Get Trained by Certified SAFe Practice Consultants (SPCs).",
+      "Gain Practical Insights into Implementing SAFe at Scale."
+    ],
+    heroImage: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80",
+    stats: [
+      { label: "SAFe Professionals", value: "25K+" },
+      { label: "Partner Rating", value: "5.0/5" },
+      { label: "Global Presence", value: "30+ Countries" }
+    ],
+    courses: buildCourses("SAFE", safeCourseTitles),
+    details: [
+      {
+        title: "Why SAFe?",
+        content: "The Scaled Agile Framework (SAFe) is the world's leading framework for scaling Agile across the enterprise. It provides a proven system for aligning multiple teams and coordinating large-scale solution development."
+      }
+    ],
+    faqs: [
+      {
+        question: "What is the latest version of SAFe?",
+        answer: "The latest version is SAFe 6.0, which focuses on business agility and digital transformation."
+      }
+    ]
+  },
   "generative-ai": buildCategory("generative-ai", "Generative AI", generativeAiCourseTitles),
   microcredentials: buildCategory("microcredentials", "Microcredentials", microcredentialsCourseTitles),
   devops: buildCategory("devops", "DEVOPS", devopsCourseTitles),
@@ -1194,10 +1203,7 @@ export const categoryData: Record<string, CategoryData> = {
     "ON DEMAND MICROCREDENTIALS",
     onDemandMicrocredentialsCourseTitles
   ),
-  service: buildCategory("service", "SERVICE", serviceCourseTitles),
-  quality: buildCategory("quality", "QUALITY", qualityCourseTitles),
   "cloud-computing": buildCategory("cloud-computing", "CLOUD COMPUTING", cloudComputingCourseTitles),
   "data-science": buildCategory("data-science", "DATA SCIENCE", dataScienceCourseTitles),
-  technology: buildCategory("technology", "TECHNOLOGY", technologyCourseTitles),
   others: buildCategory("others", "OTHERS", othersCourseTitles),
 };

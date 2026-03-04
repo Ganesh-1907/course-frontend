@@ -50,7 +50,7 @@ const CourseHero: React.FC<CourseHeroProps> = ({
   breadcrumbHome = "Home",
   breadcrumbName,
   topLabel = "TOP RATED CERTIFIED SCRUM MASTER CERTIFICATION",
-  categoryName = "Agile",
+  categoryName = "Agile-hdi",
   categoryLink = "/category/agile",
   referEarnText = "Refer & Earn",
   referEarnLink = "#",

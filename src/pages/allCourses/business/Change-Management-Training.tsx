@@ -562,6 +562,8 @@ const ChangeManagementTraining = () => {
 
             <main className="pt-16">
                 <CourseHero
+                    categoryName="business"
+                    categoryLink="/category/business"
                     courseName={heroData.courseName}
                     breadcrumbName={heroData.breadcrumbName}
                     rating={heroData.rating}

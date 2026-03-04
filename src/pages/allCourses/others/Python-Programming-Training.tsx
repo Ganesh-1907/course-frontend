@@ -629,6 +629,8 @@ const PythonProgrammingTraining = () => {
 
       <main className="pt-16">
         <CourseHero
+          categoryName="others"
+          categoryLink="/category/others"
           courseName={heroData.courseName}
           breadcrumbName={heroData.breadcrumbName}
           rating={heroData.rating}

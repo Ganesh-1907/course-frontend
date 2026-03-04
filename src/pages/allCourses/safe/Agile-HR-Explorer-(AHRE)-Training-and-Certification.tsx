@@ -681,6 +681,8 @@ const AgileHRexplorerCourse = () => {
 
       <main className="pt-16">
         <CourseHero
+          categoryName="safe"
+          categoryLink="/category/safe"
           courseName={heroData.courseName}
           breadcrumbName={heroData.breadcrumbName}
           rating={heroData.rating}

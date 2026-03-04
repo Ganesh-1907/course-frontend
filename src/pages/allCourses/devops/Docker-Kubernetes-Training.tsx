@@ -636,6 +636,8 @@ const DockerAndKubernetesTraining = () => {
 
       <main className="pt-16">
         <CourseHero
+          categoryName="devops"
+          categoryLink="/category/devops"
           courseName={heroData.courseName}
           breadcrumbName={heroData.breadcrumbName}
           rating={heroData.rating}

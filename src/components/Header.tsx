@@ -17,20 +17,20 @@ import { Button } from "@/components/ui/button";
 import { categoryData } from "@/data/categoryData";
 
 const categories = [
-  { id: "agile", name: "AGILE", slug: "agile-scrum", count: 0 },
-  { id: "safe", name: "SAFE", slug: "agile-scrum", count: 0 },
-  { id: "project", name: "PROJECT", slug: "project-management", count: 0 },
-  { id: "business", name: "BUSINESS", slug: "business-skills", count: 0 },
-  { id: "cloud-computing", name: "CLOUD COMPUTING", slug: "ai-technology", count: 0 },
-  { id: "data-science", name: "DATA SCIENCE", slug: "ai-technology", count: 0 },
-  { id: "devops", name: "DEVOPS", slug: "ai-technology", count: 0 },
-  { id: "generative-ai", name: "Generative AI", slug: "ai-technology", count: 0 },
-  { id: "microcredentials", name: "Microcredentials", slug: "ai-technology", count: 0 },
-  { id: "on-demand-microcredentials", name: "ON DEMAND MICROCREDENTIALS", slug: "ai-technology", count: 0 },
-  { id: "others", name: "OTHERS", slug: "ai-technology", count: 0 },
-  { id: "service", name: "SERVICE", slug: "it-service-management", count: 0 },
-  { id: "quality", name: "QUALITY", slug: "quality-process", count: 0 },
-  { id: "technology", name: "TECHNOLOGY", slug: "ai-technology", count: 0 },
+  { id: "agile", name: "AGILE", slug: "agile", count: 0 },
+  { id: "safe", name: "SAFE", slug: "safe", count: 0 },
+  { id: "project", name: "PROJECT", slug: "project", count: 0 },
+  { id: "business", name: "BUSINESS", slug: "business", count: 0 },
+  { id: "cloud-computing", name: "CLOUD COMPUTING", slug: "cloud-computing", count: 0 },
+  { id: "data-science", name: "DATA SCIENCE", slug: "data-science", count: 0 },
+  { id: "devops", name: "DEVOPS", slug: "devops", count: 0 },
+  { id: "generative-ai", name: "Generative AI", slug: "generative-ai", count: 0 },
+  { id: "microcredentials", name: "Microcredentials", slug: "microcredentials", count: 0 },
+  { id: "on-demand-microcredentials", name: "ON DEMAND MICROCREDENTIALS", slug: "on-demand-microcredentials", count: 0 },
+  { id: "others", name: "OTHERS", slug: "others", count: 0 },
+  { id: "service", name: "SERVICE", slug: "service", count: 0 },
+  { id: "quality", name: "QUALITY", slug: "quality", count: 0 },
+  { id: "technology", name: "TECHNOLOGY", slug: "technology", count: 0 },
 ];
 
 interface HeaderProps {

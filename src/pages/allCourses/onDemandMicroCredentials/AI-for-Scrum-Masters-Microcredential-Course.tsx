@@ -352,6 +352,8 @@ const AIForScrumMastersMicrocredentialCourse = () => {
             <Header />
             <main className="pt-16">
                 <CourseHero
+          categoryName="on-demand microcredentials"
+          categoryLink="/category/on-demand-microcredentials"
                     {...heroData}
                     referEarnText="Refer & Earn"
                     enrolledSuffix="Enrolled"

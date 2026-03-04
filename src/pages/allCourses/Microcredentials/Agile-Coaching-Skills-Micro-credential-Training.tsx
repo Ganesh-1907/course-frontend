@@ -380,6 +380,8 @@ const AgileCoachingSkillsMicroCredentialTraining = () => {
             <Header />
             <main className="pt-16">
                 <CourseHero
+                    categoryName="microcredentials"
+                    categoryLink="/category/microcredentials"
                     {...heroData}
                     referEarnText="Refer & Earn"
                     enrolledSuffix="Enrolled"
