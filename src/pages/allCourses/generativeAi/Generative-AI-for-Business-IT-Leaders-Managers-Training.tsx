@@ -579,6 +579,8 @@ const GenerativeAIForBusinessITLeadersManagersTraining = () => {
 
       <main className="pt-16">
         <CourseHero
+          categoryName="generative ai"
+          categoryLink="/category/generative-ai"
           courseName={heroData.courseName}
           breadcrumbName={heroData.breadcrumbName}
           rating={heroData.rating}

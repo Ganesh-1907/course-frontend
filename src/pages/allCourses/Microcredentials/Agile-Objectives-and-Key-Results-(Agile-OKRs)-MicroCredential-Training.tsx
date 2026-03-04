@@ -478,6 +478,8 @@ const AgileOKRsMicroCredentialTraining = () => {
 
             <main className="pt-16">
                 <CourseHero
+                    categoryName="microcredentials"
+                    categoryLink="/category/microcredentials"
                     courseName={heroData.courseName}
                     breadcrumbName={heroData.breadcrumbName}
                     rating={heroData.rating}

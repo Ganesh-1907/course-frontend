@@ -711,6 +711,8 @@ const ArtificialIntelligenceTraining = () => {
 
       <main className="pt-16">
         <CourseHero
+          categoryName="data science"
+          categoryLink="/category/data-science"
           courseName={heroData.courseName}
           breadcrumbName={heroData.breadcrumbName}
           rating={heroData.rating}

@@ -627,6 +627,8 @@ const ProjectManagementProfessionalCertificationTraining = () => {
 
             <main className="pt-16">
                 <CourseHero
+          categoryName="project"
+          categoryLink="/category/project"
                     courseName={heroData.courseName}
                     breadcrumbName={heroData.breadcrumbName}
                     rating={heroData.rating}
