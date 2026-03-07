@@ -4,6 +4,9 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { AuthProvider } from "@/context/AuthContext";
+import { AuthModalProvider } from "@/context/AuthModalContext";
+import { CartProvider } from "@/context/CartContext";
+import { CartDrawer } from "@/components/CartDrawer";
 import Index from "./pages/Index";
 import DynamicCategoryPage from "./pages/categories/DynamicCategoryPage";
 import SubCategoryPage from "./pages/SubCategoryPage";
@@ -243,7 +246,9 @@ const App = () => (
     <TooltipProvider>
       <Sonner />
       <AuthProvider>
-        <BrowserRouter>
+        <AuthModalProvider>
+          <CartProvider>
+            <BrowserRouter>
           <Routes>
           <Route path="/" element={<Index />} />
 
@@ -1012,8 +1017,11 @@ const App = () => (
           />
 
           <Route path="*" element={<NotFound />} />
-        </Routes>
-      </BrowserRouter>
+          </Routes>
+          <CartDrawer />
+          </BrowserRouter>
+        </CartProvider>
+        </AuthModalProvider>
       </AuthProvider>
     </TooltipProvider>
   </QueryClientProvider>

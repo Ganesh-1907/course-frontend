@@ -2,18 +2,24 @@ import React from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { 
-  Calendar, 
-  Clock, 
+import {
+  Calendar,
+  Clock,
   ChevronRight,
   ShieldCheck,
   TrendingDown,
   User,
   Phone as PhoneIcon,
   Mail,
-  MessageSquare
+  MessageSquare,
+  ShoppingCart,
+  CheckCircle,
+  Loader2
 } from "lucide-react";
 import { motion } from "framer-motion";
+import { useCart } from "@/context/CartContext";
+import { useAuth } from "@/context/AuthContext";
+import { useAuthModal } from "@/context/AuthModalContext";
 
 interface Schedule {
   courseCode: string;
@@ -29,12 +35,44 @@ interface Schedule {
 
 interface CourseSidePanelProps {
   schedules: Schedule[];
+  courseId?: string;
+  courseName?: string;
 }
 
-const CourseSidePanel: React.FC<CourseSidePanelProps> = ({ schedules }) => {
+const CourseSidePanel: React.FC<CourseSidePanelProps> = ({ schedules, courseId, courseName }) => {
   // Use the first schedule as the featured one for now
   const featuredSchedule = schedules[0];
+  const { user } = useAuth();
+  const { openSignin } = useAuthModal();
+  const { addToCart, isInCart, loading } = useCart();
 
+  const name = courseName || featuredSchedule?.courseName || 'This course';
+  const inCart = isInCart(courseId || name);
+
+  // Parse price strings like "₹15,000" → 15000 for the payload
+  const parsePrice = (str?: string): number => {
+    if (!str) return 0;
+    const num = parseFloat(str.replace(/[^0-9.]/g, ''));
+    return isNaN(num) ? 0 : num;
+  };
+
+  const handleEnroll = async () => {
+    if (!user) {
+      openSignin();
+      return;
+    }
+
+    // Send full dummy course data to the backend.
+    // The backend stores it directly in the session — no DB lookup.
+    // TODO: When courses are in the DB, the backend will override price/image
+    //       with real values from the database.
+    await addToCart({
+      courseName: name,
+      courseId,
+      price: parsePrice(featuredSchedule?.originalPrice),
+      discountedPrice: parsePrice(featuredSchedule?.discountedPrice),
+    });
+  };
   return (
     <div className="space-y-3">
       {/* Upcoming Schedule Card */}
@@ -108,8 +146,22 @@ const CourseSidePanel: React.FC<CourseSidePanelProps> = ({ schedules }) => {
           )}
 
           <div className="space-y-1.5">
-            <Button className="w-full bg-[#ff4d2a] hover:bg-[#e64526] text-white font-black text-[13px] rounded-md h-9 shadow-md shadow-orange-500/20 transition-all active:scale-[0.98]">
-              Enroll Now
+            <Button
+              onClick={handleEnroll}
+              disabled={loading}
+              className={`w-full font-black text-[13px] rounded-md h-9 shadow-md transition-all active:scale-[0.98] flex items-center justify-center gap-2 ${
+                inCart
+                  ? 'bg-green-600 hover:bg-green-700 text-white shadow-green-500/20'
+                  : 'bg-[#ff4d2a] hover:bg-[#e64526] text-white shadow-orange-500/20'
+              }`}
+            >
+              {loading ? (
+                <Loader2 className="w-4 h-4 animate-spin" />
+              ) : inCart ? (
+                <><CheckCircle className="w-4 h-4" /> Added to Cart</>
+              ) : (
+                <><ShoppingCart className="w-4 h-4" /> Enroll Now</>
+              )}
             </Button>
             <button className="w-full text-[10px] font-black text-slate-500 flex items-center justify-center gap-1 hover:text-primary transition-colors uppercase tracking-widest">
               View all Schedules <ChevronRight className="w-3 h-3" />
