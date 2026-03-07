@@ -412,7 +412,7 @@ export const categoryData: Record<string, CategoryData> = {
       "Trained by Experienced Industry Experts with Over 15+ Years of Experience.",
       "Gain Hands-on Practical Experience with Our Top Agile Certifications & Training."
     ],
-    heroImage: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&q=80",
+    heroImage: "https://www.simpliaxis.com/frontend_assets/image/category_banner_f.webp",
     stats: [
       { label: "Students Trained", value: "50K+" },
       { label: "Rating", value: "4.9/5" },
@@ -431,7 +431,7 @@ export const categoryData: Record<string, CategoryData> = {
         originalPrice: 499,
         discount: 30,
         badge: "Popular",
-        image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300&fit=crop",
+        image: "https://www.simpliaxis.com/storage/images/service_container_image_service_container_image_LeadingSAFeService_1723465898_1761569686.webp",
         nextDate: "Feb 22, 2026",
         navigate: "/course/csm-certificaton-training",
       },
