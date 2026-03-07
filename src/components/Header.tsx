@@ -20,7 +20,17 @@ import { SigninModal } from "@/components/modals/SigninModal";
 import { ForgotPasswordModal } from "@/components/modals/ForgotPasswordModal";
 import { LikeModal } from "@/components/modals/LikeModal";
 import { useAuth } from "@/context/AuthContext";
-import { LogOut } from "lucide-react";
+import { LogOut, LayoutDashboard, History, UserCircle, Package, ClipboardList, Award, Library, LifeBuoy, Users } from "lucide-react";
+import { 
+  DropdownMenu, 
+  DropdownMenuContent, 
+  DropdownMenuItem, 
+  DropdownMenuTrigger,
+  DropdownMenuSeparator,
+  DropdownMenuLabel,
+  DropdownMenuGroup
+} from "@/components/ui/dropdown-menu";
+import { elearningCourses, resourceLinks, userDropdownItems } from "@/data/navigationData";
 
 const categories = [
   { id: "agile", name: "AGILE", slug: "agile", count: 0 },
@@ -94,7 +104,7 @@ const Header: React.FC<HeaderProps> = ({ hidden = false }) => {
         scrolled ? "bg-white/95 backdrop-blur-md shadow-lg" : "bg-white"
       )}>
         <div className="container">
-          <div className="h-16 md:h-20 flex items-center justify-between gap-6">
+          <div className="h-16 md:h-20 flex items-center justify-between gap-4">
             
             {/* Logo */}
             <div className="flex items-center gap-6">
@@ -114,8 +124,10 @@ const Header: React.FC<HeaderProps> = ({ hidden = false }) => {
                   onClick={() => setIsMegaMenuOpen(!isMegaMenuOpen)}
                   onMouseEnter={() => setIsMegaMenuOpen(true)}
                   className={cn(
-                    "flex items-center gap-2 px-5 py-2.5 rounded-xl font-bold text-sm transition-all",
-                    isMegaMenuOpen ? "bg-primary text-white shadow-xl shadow-primary/20" : "bg-muted hover:bg-muted-dark border border-border/50"
+                    "flex items-center gap-2.5 px-5 py-2.5 rounded-lg font-bold text-[15px] transition-all border",
+                    isMegaMenuOpen 
+                      ? "bg-primary text-white border-primary shadow-lg shadow-primary/20" 
+                      : "bg-[#eff6ff] text-slate-800 border-[#cbd5e1] hover:bg-slate-100 hover:border-slate-300"
                   )}
                 >
                   <Menu className="w-4 h-4" />
@@ -126,13 +138,13 @@ const Header: React.FC<HeaderProps> = ({ hidden = false }) => {
             </div>
 
             {/* Search Bar */}
-            <div className="flex-1 max-w-xl hidden lg:block mx-8">
+            <div className="flex-1 max-w-3xl hidden lg:block mx-2">
               <div className="relative group">
-                <SearchIcon className="absolute left-5 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground group-focus-within:text-blue-600 transition-colors" />
+                <SearchIcon className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400 group-focus-within:text-blue-600 transition-colors" />
                 <input 
                   type="text" 
-                  placeholder="What do you want to learn today?"
-                  className="w-full bg-slate-100 border-none rounded-full py-3.5 pl-14 pr-6 text-sm font-medium focus:ring-2 focus:ring-blue-600/10 transition-all outline-none text-slate-700"
+                  placeholder="What you want to learn today?"
+                  className="w-full bg-[#eff6ff] border border-[#cbd5e1] rounded-lg py-3 pl-12 pr-6 text-[15px] font-medium placeholder:text-slate-500 focus:bg-white focus:border-blue-500 focus:ring-4 focus:ring-blue-500/5 transition-all outline-none text-slate-700"
                 />
               </div>
             </div>
@@ -140,8 +152,44 @@ const Header: React.FC<HeaderProps> = ({ hidden = false }) => {
             {/* Nav Links & Actions */}
             <nav className="flex items-center gap-5">
               <div className="hidden xl:flex items-center gap-5 text-[13px] font-bold text-foreground/80">
+                <div className="relative group">
+                  <a href="#" className="flex items-center gap-1.5 hover:text-primary transition-colors">
+                    <span className="bg-slate-900 text-[9px] text-white px-1.5 py-0.5 rounded leading-none font-black uppercase">New</span>
+                    Combo Courses
+                  </a>
+                </div>
+
+                <DropdownMenu>
+                  <DropdownMenuTrigger className="flex items-center gap-1 hover:text-primary transition-colors outline-none cursor-pointer">
+                    E-learning <ChevronDown className="w-3.5 h-3.5" />
+                  </DropdownMenuTrigger>
+                  <DropdownMenuContent className="w-80 max-h-[400px] overflow-y-auto p-2 bg-white rounded-xl shadow-2xl border-border/50">
+                    <div className="grid gap-1">
+                      {elearningCourses.map((course, idx) => (
+                        <DropdownMenuItem key={idx} className="px-3 py-2 text-[13px] font-medium hover:bg-slate-50 cursor-pointer rounded-lg">
+                          {course}
+                        </DropdownMenuItem>
+                      ))}
+                    </div>
+                  </DropdownMenuContent>
+                </DropdownMenu>
+
+                <DropdownMenu>
+                  <DropdownMenuTrigger className="flex items-center gap-1 hover:text-primary transition-colors outline-none cursor-pointer">
+                    Resources <ChevronDown className="w-3.5 h-3.5" />
+                  </DropdownMenuTrigger>
+                  <DropdownMenuContent className="w-48 p-2 bg-white rounded-xl shadow-2xl border-border/50">
+                    <div className="grid gap-1">
+                      {resourceLinks.map((link, idx) => (
+                        <DropdownMenuItem key={idx} className="px-3 py-2 text-[13px] font-medium hover:bg-slate-50 cursor-pointer rounded-lg">
+                          {link}
+                        </DropdownMenuItem>
+                      ))}
+                    </div>
+                  </DropdownMenuContent>
+                </DropdownMenu>
+
                 <a href="#" className="hover:text-primary transition-colors">Corporate</a>
-                <a href="#" className="hover:text-primary transition-colors">Newsletter</a>
               </div>
 
               <div className="h-6 w-px bg-border hidden xl:block" />
@@ -152,33 +200,66 @@ const Header: React.FC<HeaderProps> = ({ hidden = false }) => {
                 </button>
                 <div className="flex items-center gap-3">
                   {!user ? (
-                    <div className="p-1 bg-muted rounded-xl flex items-center">
-                      <button 
-                        onClick={() => setIsSigninOpen(true)}
-                        className="flex items-center gap-2 font-black text-sm bg-white border border-border/50 px-4 py-1.5 rounded-lg shadow-sm hover:text-primary transition-colors"
-                      >
-                        Sign In
-                      </button>
-                      <button 
-                        onClick={() => setIsSignupOpen(true)}
-                        className="flex items-center gap-2 font-black text-sm bg-primary text-white px-4 py-1.5 rounded-lg shadow-md hover:bg-primary/90 transition-all ml-1"
-                      >
-                        Sign Up
-                      </button>
-                    </div>
+                    <button 
+                      onClick={() => setIsSignupOpen(true)}
+                      className="flex items-center gap-2 font-black text-sm bg-primary text-white px-6 py-2.5 rounded-xl shadow-[0_4px_14px_0_rgba(255,87,34,0.39)] hover:shadow-[0_6px_20px_rgba(255,87,34,0.23)] hover:bg-primary/90 transition-all active:scale-95 group"
+                    >
+                      Sign Up
+                      <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+                    </button>
                   ) : (
                     <div className="flex items-center gap-4">
-                      <div className="flex flex-col items-end">
-                        <span className="text-[12px] font-black leading-none">{user.name}</span>
-                        <span className="text-[10px] text-muted-foreground font-bold">{user.email}</span>
-                      </div>
-                      <button 
-                        onClick={logout}
-                        className="p-2 hover:bg-rose-50 hover:text-rose-600 rounded-xl transition-colors group"
-                        title="Logout"
-                      >
-                        <LogOut className="w-5 h-5 opacity-70 group-hover:opacity-100" />
-                      </button>
+                      <DropdownMenu>
+                        <DropdownMenuTrigger className="outline-none">
+                          <div className="flex items-center gap-1.5 p-1.5 hover:bg-muted rounded-full transition-all group">
+                            <div className="w-8 h-8 bg-slate-100 rounded-full flex items-center justify-center border border-border/50 group-hover:bg-primary/10 group-hover:border-primary/20 transition-all">
+                              <UserIcon className="w-4 h-4 text-slate-600 group-hover:text-primary" />
+                            </div>
+                            <ChevronDown className="w-3.5 h-3.5 text-slate-400 group-hover:text-primary transition-colors" />
+                          </div>
+                        </DropdownMenuTrigger>
+                        <DropdownMenuContent className="w-64 p-2 bg-white rounded-xl shadow-2xl border-border/50" align="end">
+                          <DropdownMenuLabel className="px-3 py-2">
+                            <div className="flex flex-col">
+                              <span className="text-sm font-black">{user.name}</span>
+                              <span className="text-[11px] text-muted-foreground font-medium">{user.email}</span>
+                            </div>
+                          </DropdownMenuLabel>
+                          <DropdownMenuSeparator className="my-2" />
+                          <DropdownMenuGroup>
+                            {userDropdownItems.map((item, idx) => {
+                              const Icon = {
+                                LayoutDashboard,
+                                Users,
+                                History,
+                                UserCircle,
+                                Package,
+                                ClipboardList,
+                                Award,
+                                Library,
+                                LifeBuoy
+                              }[item.icon];
+
+                              return (
+                                <DropdownMenuItem key={idx} className="flex items-center gap-3 px-3 py-2.5 text-[13px] font-bold text-slate-700 hover:bg-slate-50 hover:text-primary cursor-pointer rounded-lg transition-colors">
+                                  {Icon && <Icon className="w-4 h-4 opacity-70" />}
+                                  {item.label}
+                                </DropdownMenuItem>
+                              );
+                            })}
+                          </DropdownMenuGroup>
+                          <DropdownMenuSeparator className="my-2" />
+                          <div className="p-1">
+                            <button 
+                              onClick={logout}
+                              className="w-full flex items-center justify-center gap-2 py-2.5 bg-slate-900 text-white text-[13px] font-black rounded-lg hover:bg-slate-800 transition-all"
+                            >
+                              <LogOut className="w-4 h-4" />
+                              Logout
+                            </button>
+                          </div>
+                        </DropdownMenuContent>
+                      </DropdownMenu>
                     </div>
                   )}
                 </div>
