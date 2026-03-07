@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
-import { Star, Calendar, Users, Clock, MonitorPlay } from "lucide-react";
+import { Star, Calendar, Users, Clock, MonitorPlay, Heart } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useState } from "react";
+import { LikeModal } from "./modals/LikeModal";
 
 interface CourseCardProps {
   course: {
@@ -32,7 +34,10 @@ const categoryColors: Record<string, string> = {
 };
 
 const CourseCard = ({ course, index }: CourseCardProps) => {
+  const [isLikeModalOpen, setIsLikeModalOpen] = useState(false);
+
   return (
+    <>
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
@@ -54,9 +59,20 @@ const CourseCard = ({ course, index }: CourseCardProps) => {
             {course.badge}
           </div>
         )}
-        <div className="absolute top-3 right-3 bg-white/90 backdrop-blur-sm px-2 py-1 rounded flex items-center gap-1">
-          <Star className="w-4 h-4 fill-yellow-400 text-yellow-400" />
-          <span className="text-sm font-semibold">{course.rating}</span>
+        <div className="absolute top-3 right-3 flex flex-col gap-2">
+          <div className="bg-white/90 backdrop-blur-sm px-2 py-1 rounded flex items-center gap-1 shadow-sm">
+            <Star className="w-4 h-4 fill-yellow-400 text-yellow-400" />
+            <span className="text-sm font-semibold">{course.rating}</span>
+          </div>
+          <button 
+            onClick={(e) => {
+              e.preventDefault();
+              setIsLikeModalOpen(true);
+            }}
+            className="bg-white/90 backdrop-blur-sm p-2 rounded-full flex items-center justify-center shadow-sm hover:bg-rose-50 group transition-colors"
+          >
+            <Heart className="w-4 h-4 text-slate-400 group-hover:text-rose-500 transition-colors" />
+          </button>
         </div>
       </div>
 
@@ -111,7 +127,13 @@ const CourseCard = ({ course, index }: CourseCardProps) => {
           </Button>
         </div>
       </div>
+      <LikeModal 
+        isOpen={isLikeModalOpen} 
+        onClose={() => setIsLikeModalOpen(false)} 
+        courseTitle={course.title}
+      />
     </motion.div>
+    </>
   );
 };
 
