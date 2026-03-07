@@ -18,6 +18,7 @@ export const apiCall = async (endpoint: string, options: RequestOptions = {}) =>
 
   const { data, ...rest } = options;
   const config: RequestInit = {
+    credentials: 'include', // Always send cookies for session support
     ...rest,
     headers,
   };
