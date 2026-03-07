@@ -15,6 +15,12 @@ import {
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { categoryData } from "@/data/categoryData";
+import { SignupModal } from "@/components/modals/SignupModal";
+import { SigninModal } from "@/components/modals/SigninModal";
+import { ForgotPasswordModal } from "@/components/modals/ForgotPasswordModal";
+import { LikeModal } from "@/components/modals/LikeModal";
+import { useAuth } from "@/context/AuthContext";
+import { LogOut } from "lucide-react";
 
 const categories = [
   { id: "agile", name: "AGILE", slug: "agile", count: 0 },
@@ -41,6 +47,11 @@ const Header: React.FC<HeaderProps> = ({ hidden = false }) => {
   const [isMegaMenuOpen, setIsMegaMenuOpen] = useState(false);
   const [activeCategory, setActiveCategory] = useState("agile");
   const [scrolled, setScrolled] = useState(false);
+  const [isSignupOpen, setIsSignupOpen] = useState(false);
+  const [isSigninOpen, setIsSigninOpen] = useState(false);
+  const [isForgotPasswordOpen, setIsForgotPasswordOpen] = useState(false);
+  const [isLikeModalOpen, setIsLikeModalOpen] = useState(false);
+  const { user, logout } = useAuth();
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20);
@@ -139,10 +150,37 @@ const Header: React.FC<HeaderProps> = ({ hidden = false }) => {
                 <button className="hover:text-primary transition-colors hidden sm:block">
                   <Phone className="w-5 h-5 opacity-70 hover:opacity-100" />
                 </button>
-                <div className="p-1 bg-muted rounded-xl flex items-center">
-                  <button className="flex items-center gap-2 font-black text-sm bg-white border border-border/50 px-4 py-1.5 rounded-lg shadow-sm hover:text-primary transition-colors">
-                    Sign In
-                  </button>
+                <div className="flex items-center gap-3">
+                  {!user ? (
+                    <div className="p-1 bg-muted rounded-xl flex items-center">
+                      <button 
+                        onClick={() => setIsSigninOpen(true)}
+                        className="flex items-center gap-2 font-black text-sm bg-white border border-border/50 px-4 py-1.5 rounded-lg shadow-sm hover:text-primary transition-colors"
+                      >
+                        Sign In
+                      </button>
+                      <button 
+                        onClick={() => setIsSignupOpen(true)}
+                        className="flex items-center gap-2 font-black text-sm bg-primary text-white px-4 py-1.5 rounded-lg shadow-md hover:bg-primary/90 transition-all ml-1"
+                      >
+                        Sign Up
+                      </button>
+                    </div>
+                  ) : (
+                    <div className="flex items-center gap-4">
+                      <div className="flex flex-col items-end">
+                        <span className="text-[12px] font-black leading-none">{user.name}</span>
+                        <span className="text-[10px] text-muted-foreground font-bold">{user.email}</span>
+                      </div>
+                      <button 
+                        onClick={logout}
+                        className="p-2 hover:bg-rose-50 hover:text-rose-600 rounded-xl transition-colors group"
+                        title="Logout"
+                      >
+                        <LogOut className="w-5 h-5 opacity-70 group-hover:opacity-100" />
+                      </button>
+                    </div>
+                  )}
                 </div>
                 <div className="relative group cursor-pointer p-2 hover:bg-muted rounded-full transition-colors">
                   <ShoppingCart className="w-5 h-5 opacity-70 group-hover:opacity-100 transition-opacity" />
@@ -243,6 +281,35 @@ const Header: React.FC<HeaderProps> = ({ hidden = false }) => {
       </div>
       </motion.div>
       )}
+      <SignupModal 
+        isOpen={isSignupOpen} 
+        onClose={() => setIsSignupOpen(false)} 
+        onSwitchToSignin={() => {
+          setIsSignupOpen(false);
+          setIsSigninOpen(true);
+        }}
+      />
+      <SigninModal 
+        isOpen={isSigninOpen} 
+        onClose={() => setIsSigninOpen(false)} 
+        onSwitchToSignup={() => {
+          setIsSigninOpen(false);
+          setIsSignupOpen(true);
+        }}
+        onForgotPassword={() => {
+          setIsSigninOpen(false);
+          setIsForgotPasswordOpen(true);
+        }}
+      />
+      <ForgotPasswordModal
+        isOpen={isForgotPasswordOpen}
+        onClose={() => setIsForgotPasswordOpen(false)}
+        onBackToSignin={() => {
+          setIsForgotPasswordOpen(false);
+          setIsSigninOpen(true);
+        }}
+      />
+      <LikeModal isOpen={isLikeModalOpen} onClose={() => setIsLikeModalOpen(false)} />
     </AnimatePresence>
   );
 };
