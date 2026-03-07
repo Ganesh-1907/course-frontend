@@ -483,8 +483,8 @@ const LeanSixSigmaBlackBeltCertification = () => {
 
 
     const heroData = {
-        courseName: 'Lean Six Sigma Black Belt Certification Training',
-        breadcrumbName: 'Lean Six Sigma Black Belt',
+        courseName: 'Lean Six Sigma Black Belt Certification Training Program',
+        breadcrumbName: 'Lean Six Sigma Black Belt Training',
         rating: '5.0',
         enrolledCount: '52k+',
 

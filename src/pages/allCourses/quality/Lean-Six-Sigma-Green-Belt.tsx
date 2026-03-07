@@ -483,7 +483,7 @@ const LeanSixSigmaGreenBeltCertification = () => {
 
 
     const heroData = {
-        courseName: 'Lean Six Sigma Green Belt Certification Training',
+        courseName: 'Lean Six Sigma Green Belt Certification Training Program',
         breadcrumbName: 'Lean Six Sigma Green Belt Training',
         rating: '4.9',
         enrolledCount: '60k+',

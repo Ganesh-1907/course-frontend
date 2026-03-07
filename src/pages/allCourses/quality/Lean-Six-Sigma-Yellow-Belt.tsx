@@ -485,7 +485,7 @@ const LeanSixSigmaYellowBeltCertification = () => {
 
 
     const heroData = {
-        courseName: 'Lean Six Sigma Yellow Belt Certification Course',
+        courseName: 'Lean Six Sigma Yellow Belt Certification Training Program',
         breadcrumbName: 'Lean Six Sigma Yellow Belt Training',
         rating: '5.0',
         enrolledCount: '45k+',
