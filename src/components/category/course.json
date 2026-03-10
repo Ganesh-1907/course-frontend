@@ -1,0 +1,89 @@
+{
+    "label": "Top Agile Certification Courses & Training",
+    "category": {
+        "label": "SAFe",
+        "value": "safe"
+    },
+    "courses": [
+        {
+            "id": 711,
+            "title": "Generative AI for Business & IT Leaders & Managers Training",
+            "image": "https://www.simpliaxis.com/storage/images/service_container_image_Generative-AI-for-Business_IT-Leaders_Managers_1724847431.jpg",
+            "start_date": "16 Mar 2026",
+            "mode": "Live Classroom",
+            "rating": 5.0,
+            "skills": [
+                "AI Strategy Development",
+                "Generative AI Application"
+            ],
+            "duration_hours": 16,
+            "duration_days": 2,
+            "enrolled": "3.5K+",
+            "price": {
+                "current": 39999,
+                "original": 79998,
+                "discount": "50%"
+            },
+            "url": "https://www.simpliaxis.com/generative-ai-for-business-leaders#schedule-1"
+        },
+        {
+            "id": 721,
+            "title": "Generative AI for Business Analysts & Functional IT Consultants Training",
+            "image": "https://www.simpliaxis.com/storage/images/service_container_image_Generative-AI-for-Business-Analysts_Functional-IT-Consultants_1724847506.jpg",
+            "start_date": "16 Mar 2026",
+            "mode": "Live Classroom",
+            "rating": 5.0,
+            "skills": [
+                "AI-driven business insights",
+                "AI solution design"
+            ],
+            "duration_hours": 16,
+            "duration_days": 2,
+            "enrolled": "3K+",
+            "price": {
+                "current": 39999,
+                "original": 79998,
+                "discount": "50%"
+            },
+            "url": "https://www.simpliaxis.com/generative-ai-for-business-analysts-and-it-consultants#schedule-1"
+        },
+        {
+            "id": 727,
+            "title": "Cloud Fundamentals for Business Managers & Product Managers Training",
+            "image": "https://www.simpliaxis.com/storage/images/service_container_image_Cloud-Fundamentals-for-Business-Managers_Product-Managers_1724848668.jpg",
+            "start_date": null,
+            "mode": "Live Classroom",
+            "rating": 5.0,
+            "skills": [
+                "Cloud strategy planning",
+                "Business case development"
+            ],
+            "duration_hours": null,
+            "duration_days": null,
+            "enrolled": "1K+",
+            "price": null,
+            "url": "https://www.simpliaxis.com/cloud-fundamentals-for-business-managers-product-managers#schedule-1"
+        },
+        {
+            "id": 729,
+            "title": "Generative AI Architect - Advanced Program Training",
+            "image": "https://www.simpliaxis.com/storage/images/service_container_image_Generative-AI-Architect_Advanced-Program_1724848741.jpg",
+            "start_date": "16 Mar 2026",
+            "mode": "Live Classroom",
+            "rating": 5.0,
+            "skills": [
+                "Generative AI solutions",
+                "AI architecture strategies"
+            ],
+            "duration_hours": 16,
+            "duration_days": 2,
+            "enrolled": "1K+",
+            "price": {
+                "current": 39999,
+                "original": 79998,
+                "discount": "50%"
+            },
+            "url": "https://www.simpliaxis.com/generative-ai-architect-advanced-program#schedule-1"
+        }
+    ]
+}
