@@ -1,4 +1,4 @@
-import { Building2, Globe, GraduationCap, IconNode, Users } from "lucide-react";
+import { Award, BookOpen, Building2, CheckCircle, Globe, GraduationCap, IconNode, Monitor, Shield, Star, TrendingUp, Users, Zap } from "lucide-react";
 
 export interface Course {
   id: number;
@@ -422,7 +422,6 @@ const othersCourseTitles = [
   "Certified Information Systems Security Professional (CISSP) Training",
   "Microsoft Certified Azure Solutions Architect Expert (AZ-305) Certification Training",
 ];
-
 export const categoryData: Record<string, CategoryData> = {
   "agile-scrum": {
     id: "agile-scrum",
@@ -478,7 +477,6 @@ export const categoryData: Record<string, CategoryData> = {
         duration: "2 Days",
         format: "Live Classroom",
         skills: "AI Strategy Development,Generative AI Application",
-
         price: 349,
         originalPrice: 499,
         discount: 30,
@@ -513,15 +511,48 @@ export const categoryData: Record<string, CategoryData> = {
     ],
     faqs: [
       {
-        question: "What are the prerequisites for CSM?",
-        answer: "There are no formal prerequisites for the CSM course, but reading the Scrum Guide is highly recommended."
+        question: "What is Agile methodology and why is it important?",
+        answer: "Agile is an iterative project management approach that emphasizes flexibility, collaboration, and customer feedback. It enables teams to deliver value faster, adapt to changing requirements, and continuously improve processes — making it essential in today's fast-paced business environment."
       },
       {
-        question: "Is the exam fee included?",
-        answer: "Yes, the CSM examination fee is included in the course price."
+        question: "What Agile & Scrum certifications does Simpliaxis offer?",
+        answer: "Simpliaxis offers globally recognized certifications including Certified ScrumMaster (CSM®), Certified Scrum Product Owner (CSPO®), SAFe Agilist, and more — all delivered by experienced Agile practitioners with 15+ years of industry experience."
+      },
+      {
+        question: "Who should enroll in Agile & Scrum certification courses?",
+        answer: "These courses are ideal for project managers, software developers, business analysts, team leads, and anyone looking to adopt Agile practices to improve team productivity and project delivery."
+      },
+      {
+        question: "What is the difference between Agile and Scrum?",
+        answer: "Agile is a broad philosophy and set of principles for iterative development, while Scrum is a specific framework within Agile that defines roles (Scrum Master, Product Owner, Team), ceremonies (sprints, standups), and artifacts (backlog, burndown chart) to implement Agile in practice."
+      },
+      {
+        question: "How long does it take to complete a Scrum certification?",
+        answer: "Most Scrum certification courses like CSM® and CSPO® are 2-day intensive programs. After completing the training, you must pass the certification exam administered by the Scrum Alliance to earn your credential."
+      },
+      {
+        question: "Are Simpliaxis Agile certifications recognized globally?",
+        answer: "Yes. Simpliaxis is accredited by top Agile bodies including the Scrum Alliance and SAFe. Our certifications are recognized by employers worldwide across industries such as IT, finance, healthcare, and manufacturing."
+      },
+      {
+        question: "What is the format of Agile & Scrum training at Simpliaxis?",
+        answer: "Simpliaxis offers live classroom and live virtual training formats, with experienced trainers leading interactive sessions that include real-world simulations, group activities, and hands-on exercises."
+      },
+      {
+        question: "What is the salary potential after an Agile or Scrum certification?",
+        answer: "Certified ScrumMasters earn an average salary of $110,000–$140,000 per year in the US. Agile certifications consistently rank among the highest-paying professional credentials globally, with significant salary hikes after certification."
+      },
+      {
+        question: "Can I attend Agile training online?",
+        answer: "Yes. Simpliaxis offers live virtual instructor-led training sessions that replicate the classroom experience online, complete with group discussions, breakout sessions, and real-time doubt resolution."
+      },
+      {
+        question: "What support does Simpliaxis provide after completing the Agile course?",
+        answer: "Participants receive post-training access to course materials, exam preparation guides, practice tests, and access to a community of Agile professionals. Simpliaxis also provides exam guidance and ongoing mentorship support."
       }
     ]
   },
+
   "project-management": {
     id: "project-management",
     name: "Project Management",
@@ -535,9 +566,34 @@ export const categoryData: Record<string, CategoryData> = {
     ],
     heroImage: "https://images.unsplash.com/photo-1522071823991-b9671f30c46f?w=800&q=80",
     stats: [
-      { label: "PMP Certified", value: "30K+" },
-      { label: "Average Hike", value: "25%" },
-      { label: "Exam Pass Rate", value: "99.1%" }
+      {
+        icon: Users,
+        value: "30K+",
+        label: "PMP Certified",
+        color: "text-blue-600",
+        bgColor: "bg-blue-50",
+      },
+      {
+        icon: TrendingUp,
+        value: "25%",
+        label: "Average Salary Hike",
+        color: "text-emerald-600",
+        bgColor: "bg-emerald-50",
+      },
+      {
+        icon: Award,
+        value: "99.1%",
+        label: "Exam Pass Rate",
+        color: "text-amber-500",
+        bgColor: "bg-amber-50",
+      },
+      {
+        icon: Globe,
+        value: "100+",
+        label: "Countries Covered",
+        color: "text-rose-500",
+        bgColor: "bg-rose-50",
+      },
     ],
     courses: [
       {
@@ -559,19 +615,48 @@ export const categoryData: Record<string, CategoryData> = {
     details: [],
     faqs: [
       {
-        question: "What is PMP certification?",
-        answer: "The Project Management Professional (PMP) is a world-renowned certification for project managers."
+        question: "What is the PMP® certification and why is it valuable?",
+        answer: "The Project Management Professional (PMP®) certification, issued by PMI, is the world's most recognized project management credential. It validates your ability to lead projects across industries and consistently results in higher salaries and greater career opportunities globally."
       },
       {
-        question: "How long does it take to get PMP certified?",
-        answer: "Most students spend 2-3 months preparing for the exam after completing their 35 contact hours."
+        question: "What are the eligibility requirements for PMP® certification?",
+        answer: "To qualify, you need either a 4-year degree with 36 months of project management experience and 35 hours of PM education, or a high school diploma with 60 months of experience and 35 hours of PM education. Simpliaxis training covers the required 35 contact hours."
       },
       {
-        question: "Is PMP worth it in 2026?",
-        answer: "Yes, PMP remains the gold standard in project management with a significant impact on salary and job opportunities."
+        question: "What certifications does Simpliaxis offer in Project Management?",
+        answer: "Simpliaxis offers PMP® Certification Training, CAPM®, Prince2, and other PMI-aligned programs — all delivered by PMI-certified practitioners and designed to ensure exam success and real-world application."
+      },
+      {
+        question: "How does Simpliaxis help with PMP® exam preparation?",
+        answer: "Simpliaxis provides 1000+ PMP exam simulator questions, mock exams, study guides, and expert-led doubt-clearing sessions. Our structured curriculum is aligned with the latest PMI Exam Content Outline (ECO) to maximize pass rates."
+      },
+      {
+        question: "What is the PMP® exam format?",
+        answer: "The PMP® exam consists of 180 questions (multiple choice, matching, hotspot, and drag-and-drop formats) to be completed in 230 minutes. It covers predictive, agile, and hybrid project management approaches."
+      },
+      {
+        question: "How much can I earn after getting PMP® certified?",
+        answer: "According to PMI's Earning Power Survey, PMP-certified professionals earn 25% more than their non-certified peers. In the US, PMP holders earn an average salary of $120,000–$150,000 per year."
+      },
+      {
+        question: "Is the PMP® certification recognized globally?",
+        answer: "Yes. The PMP® is recognized in over 200 countries and is highly valued across industries including IT, construction, healthcare, finance, and manufacturing. Simpliaxis is an authorized PMI training partner."
+      },
+      {
+        question: "What training formats are available for Project Management courses?",
+        answer: "Simpliaxis offers live classroom training, live virtual instructor-led sessions, and corporate batch training. All formats include access to course materials, recorded sessions, and post-training support."
+      },
+      {
+        question: "How long does PMP® training take at Simpliaxis?",
+        answer: "The PMP® certification training is a 4-day intensive program that covers all domains of the PMBOK® Guide, agile methodologies, and includes the 35 contact hours required for exam eligibility."
+      },
+      {
+        question: "Can I cancel my enrollment and get a refund?",
+        answer: "Yes. Simpliaxis has a transparent refund policy. Cancellations made within the specified period are eligible for a full or partial refund depending on the timing. Please refer to the Simpliaxis refund policy page for complete details."
       }
     ]
   },
+
   "it-service-management": {
     id: "it-service-management",
     name: "IT Service Management",
@@ -585,23 +670,81 @@ export const categoryData: Record<string, CategoryData> = {
     ],
     heroImage: "https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&q=80",
     stats: [
-      { label: "ITIL Experts", value: "15K+" },
-      { label: "Corporate Batches", value: "200+" },
-      { label: "Customer Rating", value: "4.8/5" }
+      {
+        icon: Users,
+        value: "15K+",
+        label: "ITIL Experts Trained",
+        color: "text-purple-600",
+        bgColor: "bg-purple-50",
+      },
+      {
+        icon: Building2,
+        value: "200+",
+        label: "Corporate Batches",
+        color: "text-blue-600",
+        bgColor: "bg-blue-50",
+      },
+      {
+        icon: Star,
+        value: "4.8/5",
+        label: "Customer Rating",
+        color: "text-amber-500",
+        bgColor: "bg-amber-50",
+      },
+      {
+        icon: Globe,
+        value: "80+",
+        label: "Countries Served",
+        color: "text-emerald-600",
+        bgColor: "bg-emerald-50",
+      },
     ],
     courses: [],
     details: [],
     faqs: [
       {
-        question: "What is ITIL 4?",
-        answer: "ITIL 4 is the latest version of the IT Infrastructure Library, focusing on value co-creation and service management."
+        question: "What is IT Service Management (ITSM)?",
+        answer: "ITSM refers to the policies, processes, and procedures organizations use to design, deliver, manage, and improve IT services. It ensures IT services are aligned with business needs and delivered efficiently, reducing downtime and increasing customer satisfaction."
       },
       {
-        question: "Are there any prerequisites for ITIL Foundation?",
-        answer: "No, there are no formal prerequisites for the Foundation level certification."
+        question: "What is ITIL 4 and why should I get certified?",
+        answer: "ITIL 4 is the latest version of the globally recognized IT Infrastructure Library framework. Certification demonstrates your ability to manage modern IT services using best practices, making you highly valuable to employers in IT operations, support, and service delivery roles."
+      },
+      {
+        question: "What ITSM certifications does Simpliaxis offer?",
+        answer: "Simpliaxis offers ITIL 4 Foundation, ITIL Managing Professional, ITIL Strategic Leader, and other ITSM-related certifications — all with official Axelos exam vouchers included and delivered by certified ITIL practitioners."
+      },
+      {
+        question: "Who should pursue ITSM certifications?",
+        answer: "ITSM certifications are ideal for IT managers, service desk professionals, IT support staff, operations managers, and anyone involved in planning, delivering, or improving IT services within an organization."
+      },
+      {
+        question: "What is included in the ITIL 4 Foundation training?",
+        answer: "The training covers key ITIL 4 concepts including the Service Value System (SVS), four dimensions of service management, guiding principles, governance, and continual improvement — all with real-world case studies and an official exam voucher."
+      },
+      {
+        question: "How long does the ITIL 4 Foundation training take?",
+        answer: "The ITIL 4 Foundation course is typically a 2–3 day intensive program. Simpliaxis also offers flexible online self-paced options for professionals who need to fit training around their work schedules."
+      },
+      {
+        question: "What is the format of the ITIL 4 Foundation exam?",
+        answer: "The exam consists of 40 multiple-choice questions to be completed in 60 minutes. A passing score of 65% (26 out of 40) is required. Simpliaxis training includes mock exams and exam tips to ensure you are well-prepared."
+      },
+      {
+        question: "How much can I earn with an ITSM or ITIL certification?",
+        answer: "ITIL-certified professionals typically earn between $80,000 and $120,000 annually depending on their role and experience. Senior ITSM managers and ITIL Managing Professional holders often command significantly higher compensation."
+      },
+      {
+        question: "Does Simpliaxis provide post-training support for ITSM courses?",
+        answer: "Yes. After training, participants receive access to digital course materials, practice exams, exam vouchers, and mentorship sessions. Simpliaxis also provides guidance for those pursuing higher ITIL certification levels."
+      },
+      {
+        question: "Is ITIL certification valid internationally?",
+        answer: "Absolutely. ITIL is recognized in over 150 countries and is used by organizations including IBM, HP, Microsoft, and government agencies worldwide. It is one of the most sought-after credentials in the IT industry globally."
       }
     ]
   },
+
   "quality-process": {
     id: "quality-process",
     name: "Quality & Process",
@@ -615,23 +758,81 @@ export const categoryData: Record<string, CategoryData> = {
     ],
     heroImage: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&q=80",
     stats: [
-      { label: "Efficiency Gained", value: "40%" },
-      { label: "Certified Belts", value: "12K+" },
-      { label: "Projects Completed", value: "500+" }
+      {
+        icon: TrendingUp,
+        value: "40%",
+        label: "Efficiency Gained",
+        color: "text-emerald-600",
+        bgColor: "bg-emerald-50",
+      },
+      {
+        icon: Award,
+        value: "12K+",
+        label: "Certified Belts",
+        color: "text-amber-500",
+        bgColor: "bg-amber-50",
+      },
+      {
+        icon: CheckCircle,
+        value: "500+",
+        label: "Projects Completed",
+        color: "text-blue-600",
+        bgColor: "bg-blue-50",
+      },
+      {
+        icon: Globe,
+        value: "60+",
+        label: "Countries Served",
+        color: "text-rose-500",
+        bgColor: "bg-rose-50",
+      },
     ],
     courses: [],
     details: [],
     faqs: [
       {
-        question: "What is Lean Six Sigma?",
-        answer: "Lean Six Sigma is a method that relies on a collaborative team effort to improve performance by systematically removing waste."
+        question: "What is Lean Six Sigma and who should pursue it?",
+        answer: "Lean Six Sigma combines Lean manufacturing principles (eliminating waste) with Six Sigma methodology (reducing defects and variation). It is ideal for quality managers, process engineers, operations professionals, and anyone focused on continuous improvement across industries."
       },
       {
-        question: "What is the difference between Green and Black belt?",
-        answer: "Green belts lead smaller projects, while Black belts tackle complex, large-scale organizational improvements."
+        question: "What Quality & Process certifications does Simpliaxis offer?",
+        answer: "Simpliaxis offers Lean Six Sigma White Belt, Yellow Belt, Green Belt, and Black Belt certifications — all IASSC accredited. We also offer training in ISO standards, Total Quality Management (TQM), and other quality frameworks."
+      },
+      {
+        question: "What is the difference between Green Belt and Black Belt?",
+        answer: "A Green Belt leads smaller improvement projects as part of their regular job, while a Black Belt dedicates their full time to leading large-scale Six Sigma projects and mentoring Green Belts. Black Belts require deeper statistical knowledge and more project experience."
+      },
+      {
+        question: "What tools are covered in the Lean Six Sigma training?",
+        answer: "Training covers DMAIC methodology, statistical process control, root cause analysis, value stream mapping, control charts, process capability, hypothesis testing, and hands-on use of Minitab for statistical analysis."
+      },
+      {
+        question: "Is there a prerequisite for Lean Six Sigma certification?",
+        answer: "There are no prerequisites for White Belt and Yellow Belt. Green Belt requires basic process knowledge, while Black Belt typically requires prior Green Belt certification and project experience. Simpliaxis provides guidance to choose the right level."
+      },
+      {
+        question: "How long does Lean Six Sigma training take?",
+        answer: "White/Yellow Belt training takes 1–2 days. Green Belt is a 5–8 day program, and Black Belt training spans several weeks with structured modules and real-world project work. Simpliaxis offers flexible scheduling to suit working professionals."
+      },
+      {
+        question: "What industries benefit from Lean Six Sigma?",
+        answer: "Lean Six Sigma is applied across manufacturing, healthcare, banking, IT, logistics, retail, and government sectors. Any industry focused on reducing waste, improving quality, and increasing operational efficiency can benefit significantly."
+      },
+      {
+        question: "How much can I earn with a Lean Six Sigma certification?",
+        answer: "Lean Six Sigma Black Belts earn an average of $100,000–$130,000 annually in the US. Green Belt certified professionals see salary increases of 20–30% on average. The certification is widely associated with leadership roles and process excellence positions."
+      },
+      {
+        question: "Does Simpliaxis include real-world projects in quality training?",
+        answer: "Yes. Simpliaxis training includes hands-on projects, real case studies from industries like manufacturing and healthcare, and Minitab practice sessions. Participants complete project work as part of the Green and Black Belt certification process."
+      },
+      {
+        question: "Are Simpliaxis quality certifications recognized by employers?",
+        answer: "Yes. Simpliaxis is an IASSC-accredited training provider, and our certifications are recognized globally. Employers across industries regard IASSC-certified professionals as credible process improvement experts."
       }
     ]
   },
+
   "leadership-coaching": {
     id: "leadership-coaching",
     name: "Leadership & Coaching",
@@ -645,19 +846,81 @@ export const categoryData: Record<string, CategoryData> = {
     ],
     heroImage: "https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=800&q=80",
     stats: [
-      { label: "Leaders Coached", value: "5K+" },
-      { label: "Fortune 500 Clients", value: "150+" },
-      { label: "Net Promoter Score", value: "85" }
+      {
+        icon: Users,
+        value: "5K+",
+        label: "Leaders Coached",
+        color: "text-purple-600",
+        bgColor: "bg-purple-50",
+      },
+      {
+        icon: Building2,
+        value: "150+",
+        label: "Fortune 500 Clients",
+        color: "text-blue-600",
+        bgColor: "bg-blue-50",
+      },
+      {
+        icon: Star,
+        value: "85",
+        label: "Net Promoter Score",
+        color: "text-amber-500",
+        bgColor: "bg-amber-50",
+      },
+      {
+        icon: Globe,
+        value: "50+",
+        label: "Countries Reached",
+        color: "text-emerald-600",
+        bgColor: "bg-emerald-50",
+      },
     ],
     courses: [],
     details: [],
     faqs: [
       {
-        question: "How can leadership training help my career?",
-        answer: "It develops your ability to inspire teams, make strategic decisions, and navigate complex organizational changes."
+        question: "What leadership programs does Simpliaxis offer?",
+        answer: "Simpliaxis offers ICF-accredited coaching programs, Certified Agile Leadership (CAL), Emotional Intelligence (EQ) workshops, executive mentoring programs, and transformational leadership training designed for mid to senior-level professionals."
+      },
+      {
+        question: "Who should attend Simpliaxis leadership and coaching programs?",
+        answer: "These programs are designed for team leads, managers, Scrum Masters, Agile coaches, executives, and HR professionals who want to develop their leadership presence, coaching skills, and ability to inspire high-performing teams."
+      },
+      {
+        question: "What is the Certified Agile Leadership (CAL) program?",
+        answer: "CAL is a Scrum Alliance-certified program that equips leaders with the mindset and skills to build and support agile teams. It covers organizational agility, personal leadership development, and how to cultivate an environment of continuous improvement."
+      },
+      {
+        question: "What is ICF accreditation and why does it matter?",
+        answer: "The International Coaching Federation (ICF) is the globally recognized body for professional coaching standards. ICF-accredited programs ensure coaching training meets the highest global benchmarks, making your coaching credentials credible to employers and clients worldwide."
+      },
+      {
+        question: "What is Emotional Intelligence (EQ) and why is it important for leaders?",
+        answer: "Emotional Intelligence refers to the ability to recognize, understand, and manage your own emotions and those of others. Leaders with high EQ build stronger teams, handle conflict better, and drive greater organizational performance — making it one of the most sought-after leadership skills."
+      },
+      {
+        question: "What is the format of leadership training at Simpliaxis?",
+        answer: "Simpliaxis offers live virtual sessions, in-person workshops, and one-on-one executive coaching engagements. Programs combine theory, practical exercises, role-play scenarios, and real-world case studies for immersive learning experiences."
+      },
+      {
+        question: "How do leadership certifications impact career growth?",
+        answer: "Leadership certifications signal to organizations that you have the skills to drive change and lead teams effectively. Certified leaders often advance faster, take on higher-responsibility roles, and command 20–40% higher compensation compared to non-certified peers."
+      },
+      {
+        question: "Does Simpliaxis offer corporate leadership training for organizations?",
+        answer: "Yes. Simpliaxis provides customized corporate leadership development programs for Fortune 500 companies and growing organizations. Programs can be tailored to your organization's specific leadership challenges, culture, and strategic goals."
+      },
+      {
+        question: "What is the difference between coaching and mentoring?",
+        answer: "Coaching is a structured, goal-oriented process where a coach helps individuals unlock their own potential through questioning and reflection. Mentoring involves an experienced professional sharing knowledge and advice based on their own career journey. Simpliaxis programs incorporate both approaches."
+      },
+      {
+        question: "Can Simpliaxis leadership programs be attended online?",
+        answer: "Yes. Most Simpliaxis leadership and coaching programs are available in live online formats with interactive virtual workshops, breakout sessions, and one-on-one coaching calls — making them accessible to professionals worldwide."
       }
     ]
   },
+
   "business-skills": {
     id: "business-skills",
     name: "Business Skills",
@@ -671,19 +934,81 @@ export const categoryData: Record<string, CategoryData> = {
     ],
     heroImage: "https://images.unsplash.com/photo-1552581234-26160f608093?w=800&q=80",
     stats: [
-      { label: "Skills Covered", value: "100+" },
-      { label: "Corporate Trainers", value: "80+" },
-      { label: "Career Pivoters", value: "2K+" }
+      {
+        icon: BookOpen,
+        value: "100+",
+        label: "Skills Covered",
+        color: "text-blue-600",
+        bgColor: "bg-blue-50",
+      },
+      {
+        icon: Users,
+        value: "80+",
+        label: "Corporate Trainers",
+        color: "text-emerald-600",
+        bgColor: "bg-emerald-50",
+      },
+      {
+        icon: TrendingUp,
+        value: "2K+",
+        label: "Career Pivoters",
+        color: "text-amber-500",
+        bgColor: "bg-amber-50",
+      },
+      {
+        icon: Globe,
+        value: "40+",
+        label: "Countries Reached",
+        color: "text-rose-500",
+        bgColor: "bg-rose-50",
+      },
     ],
     courses: [],
     details: [],
     faqs: [
       {
-        question: "Why should I learn Business Analysis?",
-        answer: "Business analysis helps organizations identify their needs and determine solutions to business problems."
+        question: "What business skills courses does Simpliaxis offer?",
+        answer: "Simpliaxis offers training in Business Analysis (CBAP/CCBA), strategic thinking, data-driven decision making, effective communication, stakeholder management, and personal branding — covering both hard and soft skills critical for modern business professionals."
+      },
+      {
+        question: "Who should enroll in business skills training?",
+        answer: "Business skills programs are ideal for business analysts, project managers, aspiring leaders, entrepreneurs, and professionals seeking to enhance their strategic, analytical, and interpersonal capabilities to accelerate career growth."
+      },
+      {
+        question: "What is CBAP® certification and is it worth it?",
+        answer: "The Certified Business Analysis Professional (CBAP®) is IIBA's highest-level certification for business analysts. It validates expertise in requirements analysis, stakeholder engagement, and solution delivery — and is highly valued by employers globally, often resulting in significant salary increases."
+      },
+      {
+        question: "What are the prerequisites for CBAP® certification?",
+        answer: "CBAP® requires 7,500 hours of BA work experience in the last 10 years, 900 hours in at least 4 of the 6 BABOK® knowledge areas, 35 hours of professional development, and two references from career managers or CBAP® recipients."
+      },
+      {
+        question: "Why are business skills important alongside technical skills?",
+        answer: "Technical skills get you the job, but business skills help you excel and advance. Communication, strategic thinking, stakeholder management, and data literacy enable professionals to drive better outcomes, build relationships, and take on leadership roles effectively."
+      },
+      {
+        question: "What is business analysis and why is it in demand?",
+        answer: "Business analysis involves identifying business needs and determining solutions to business problems, often bridging the gap between IT and business stakeholders. With digital transformation accelerating, skilled business analysts are among the most in-demand professionals across every industry."
+      },
+      {
+        question: "Does Simpliaxis offer soft skills training for corporate teams?",
+        answer: "Yes. Simpliaxis offers customized corporate soft skills training covering communication, conflict resolution, emotional intelligence, time management, and leadership presence — tailored to your organization's specific needs and culture."
+      },
+      {
+        question: "How is data-driven decision making taught in Simpliaxis programs?",
+        answer: "Participants learn to gather, analyze, and interpret business data using tools and frameworks to make evidence-based decisions. Training includes case studies, hands-on workshops, and real business scenarios to build practical decision-making skills."
+      },
+      {
+        question: "Can business skills training be done online?",
+        answer: "Yes. All Simpliaxis business skills programs are available in live virtual formats with interactive sessions, group exercises, and expert Q&A — allowing working professionals to upskill without disrupting their schedules."
+      },
+      {
+        question: "What career opportunities open up after business skills training?",
+        answer: "Professionals who complete business skills training pursue roles such as Business Analyst, Product Manager, Strategy Consultant, Operations Lead, and Senior Project Manager — all of which command strong salaries and offer significant growth trajectories."
       }
     ]
   },
+
   "ai-technology": {
     id: "ai-technology",
     name: "AI & Technology",
@@ -697,23 +1022,81 @@ export const categoryData: Record<string, CategoryData> = {
     ],
     heroImage: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&q=80",
     stats: [
-      { label: "Latest Tech", value: "2025 Ready" },
-      { label: "Hands-on Labs", value: "100+" },
-      { label: "Tech Mentors", value: "40+" }
+      {
+        icon: Zap,
+        value: "2026 Ready",
+        label: "Latest Tech Curriculum",
+        color: "text-purple-600",
+        bgColor: "bg-purple-50",
+      },
+      {
+        icon: Monitor,
+        value: "100+",
+        label: "Hands-on Labs",
+        color: "text-blue-600",
+        bgColor: "bg-blue-50",
+      },
+      {
+        icon: Users,
+        value: "40+",
+        label: "Tech Mentors",
+        color: "text-emerald-600",
+        bgColor: "bg-emerald-50",
+      },
+      {
+        icon: Globe,
+        value: "90+",
+        label: "Countries Served",
+        color: "text-amber-500",
+        bgColor: "bg-amber-50",
+      },
     ],
     courses: [],
     details: [],
     faqs: [
       {
-        question: "Is AI replacing developers?",
-        answer: "No, AI is augmenting developers' capabilities, allowing them to focus on higher-level architectural and problem-solving tasks."
+        question: "What AI and technology courses does Simpliaxis offer?",
+        answer: "Simpliaxis offers training in Generative AI, Machine Learning, AWS and Azure Cloud certification, ethical AI governance, prompt engineering, and emerging technology programs designed to help professionals stay ahead in the rapidly evolving tech landscape."
       },
       {
-        question: "Which AI certification is best for beginners?",
-        answer: "Our Generative AI for Business is an excellent starting point for non-technical professionals."
+        question: "Who should take AI & Technology courses at Simpliaxis?",
+        answer: "These courses are suited for IT professionals, software developers, data scientists, project managers, and business leaders who want to understand and apply AI tools, cloud platforms, and emerging technologies in their roles and organizations."
+      },
+      {
+        question: "What is covered in Generative AI training?",
+        answer: "Generative AI training covers large language models (LLMs), prompt engineering, AI model fine-tuning, ChatGPT and similar tools, AI in business applications, ethical AI usage, and real-world implementation scenarios across industries including healthcare, finance, and marketing."
+      },
+      {
+        question: "Do I need a technical background to take AI courses at Simpliaxis?",
+        answer: "Not always. Simpliaxis offers both beginner-friendly AI for business courses (no coding required) and advanced technical AI/ML programs for developers. Course prerequisites are clearly specified so you can choose the right level."
+      },
+      {
+        question: "What cloud certifications does Simpliaxis offer?",
+        answer: "Simpliaxis offers training for AWS Certified Solutions Architect, AWS Cloud Practitioner, Microsoft Azure Fundamentals (AZ-900), Azure Administrator (AZ-104), and other leading cloud certifications aligned with industry-standard exam objectives."
+      },
+      {
+        question: "What is prompt engineering and why is it important?",
+        answer: "Prompt engineering is the skill of crafting effective inputs to AI language models to generate accurate, useful outputs. As AI tools become central to business workflows, prompt engineers are among the most in-demand new tech roles, with strong salary prospects."
+      },
+      {
+        question: "Does Simpliaxis provide hands-on lab experience for tech courses?",
+        answer: "Yes. Simpliaxis includes 100+ hands-on labs across AI, cloud, and DevOps programs. Participants work in real environments, building practical experience with actual tools and platforms used in the industry."
+      },
+      {
+        question: "What is Ethical AI and why does it matter?",
+        answer: "Ethical AI involves designing and deploying AI systems responsibly — addressing bias, privacy, transparency, and accountability. As AI regulation increases globally, professionals with ethical AI governance knowledge are increasingly essential for organizations implementing AI at scale."
+      },
+      {
+        question: "How much can I earn with an AI or Cloud certification?",
+        answer: "AI and Cloud roles are among the highest-paying in tech. AWS Solution Architects earn $130,000–$180,000 annually on average in the US. AI Engineers and ML Specialists command $140,000+ depending on experience and specialization."
+      },
+      {
+        question: "Are AI & Technology courses at Simpliaxis available online?",
+        answer: "Yes. All AI and technology programs are available as live instructor-led virtual courses with hands-on labs, real-time Q&A, and mentorship support — accessible to professionals worldwide regardless of location."
       }
     ]
   },
+
   "cyber-security": {
     id: "cyber-security",
     name: "Cyber Security",
@@ -727,35 +1110,81 @@ export const categoryData: Record<string, CategoryData> = {
     ],
     heroImage: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=800&q=80",
     stats: [
-      { label: "Bugs Found", value: "10K+" },
-      { label: "Security Experts", value: "8K+" },
-      { label: "Hackathons", value: "50+" }
+      {
+        icon: Shield,
+        value: "10K+",
+        label: "Vulnerabilities Found",
+        color: "text-rose-600",
+        bgColor: "bg-rose-50",
+      },
+      {
+        icon: Users,
+        value: "8K+",
+        label: "Security Experts Trained",
+        color: "text-blue-600",
+        bgColor: "bg-blue-50",
+      },
+      {
+        icon: Zap,
+        value: "50+",
+        label: "Hackathons Hosted",
+        color: "text-amber-500",
+        bgColor: "bg-amber-50",
+      },
+      {
+        icon: Globe,
+        value: "70+",
+        label: "Countries Served",
+        color: "text-emerald-600",
+        bgColor: "bg-emerald-50",
+      },
     ],
     courses: [],
     details: [],
     faqs: [
       {
-        question: "What is cyber security?",
-        answer: "Cybersecurity is the practice of protecting systems, networks, and programs from digital attacks."
+        question: "What cyber security certifications does Simpliaxis offer?",
+        answer: "Simpliaxis offers Certified Ethical Hacker (CEH), CompTIA Security+, Certified Information Systems Security Professional (CISSP), CISM, and network security courses — all led by certified security practitioners with 24/7 access to virtual security labs."
       },
       {
-        question: "Is cybersecurity a good career in 2026?",
-        answer: "Yes, the demand for cybersecurity professionals is growing at an unprecedented rate worldwide."
+        question: "Is cyber security a good career choice in 2026?",
+        answer: "Absolutely. Cybersecurity is one of the fastest-growing fields globally, with millions of unfilled roles worldwide. The demand for skilled security professionals continues to surge as cyber threats become more sophisticated, making it an excellent long-term career choice."
       },
       {
-        question: "What are the benefits of cyber security?",
-        answer: "Protects personal and corporate data, ensures business continuity, and builds trust with customers."
+        question: "What is ethical hacking and who should learn it?",
+        answer: "Ethical hacking (penetration testing) involves legally breaking into systems to identify vulnerabilities before malicious hackers can exploit them. It is ideal for IT professionals, network admins, and security analysts who want to advance into offensive security roles."
       },
       {
-        question: "What is the work of a cybersecurity professional?",
-        answer: "Their work involves monitoring networks, identifying vulnerabilities, and responding to security breaches."
+        question: "What are the prerequisites for cyber security courses?",
+        answer: "Entry-level courses like CompTIA Security+ require basic IT knowledge. Advanced programs like CEH or CISSP require networking fundamentals and prior IT experience. Simpliaxis advisors help you select the right course for your background."
       },
       {
-        question: "Do I need coding for cyber security?",
-        answer: "While not always mandatory for entry-level roles, basic coding knowledge is essential for advanced threat analysis."
+        question: "What is the CEH certification and how does it benefit my career?",
+        answer: "The Certified Ethical Hacker (CEH) by EC-Council is a globally recognized credential that validates your ability to think and act like a hacker to better protect organizations. CEH-certified professionals are in high demand in financial services, government, and technology sectors."
+      },
+      {
+        question: "Do I need to know coding for cyber security?",
+        answer: "Basic coding knowledge is helpful but not mandatory for entry-level roles. Understanding scripting languages like Python or Bash becomes important for advanced penetration testing and automation. Simpliaxis courses include foundational scripting as needed."
+      },
+      {
+        question: "Does Simpliaxis provide real lab environments for cyber security training?",
+        answer: "Yes. Simpliaxis provides 24/7 access to virtual security labs where participants practice ethical hacking, network attacks, vulnerability assessments, and defense techniques in safe, isolated environments that simulate real-world scenarios."
+      },
+      {
+        question: "How much can I earn as a cyber security professional?",
+        answer: "Cybersecurity salaries are among the highest in tech. Entry-level analysts earn $70,000–$90,000, while CEH-certified penetration testers and CISSP-certified professionals earn $110,000–$160,000+ annually in the US, with significant global demand driving compensation upward."
+      },
+      {
+        question: "What industries hire cyber security professionals?",
+        answer: "Every industry requires cyber security expertise — banking, healthcare, government, defense, retail, and technology are among the largest employers. Virtually every organization that handles digital data needs professionals to protect it from breaches and attacks."
+      },
+      {
+        question: "Are Simpliaxis cyber security certifications globally recognized?",
+        answer: "Yes. Certifications like CEH (EC-Council), CompTIA Security+, and CISSP are recognized worldwide and are often required by government agencies and top corporations. Simpliaxis training ensures full exam readiness for these globally respected credentials."
       }
     ]
   },
+
   agile: buildCategory("agile", "AGILE", agileCourseTitles),
   safe: buildCategory("safe", "SAFE", safeCourseTitles),
   project: buildCategory("project", "PROJECT", projectCourseTitles),
