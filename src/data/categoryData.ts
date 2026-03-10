@@ -1,3 +1,5 @@
+import { Building2, Globe, GraduationCap, IconNode, Users } from "lucide-react";
+
 export interface Course {
   id: number;
   title: string;
@@ -28,7 +30,7 @@ export interface CategoryData {
   description: string;
   highlights: string[];
   heroImage: string;
-  stats: { label: string; value: string }[];
+  stats: { icon: IconNode, label: string; value: string }[];
   courses: Course[];
   details: {
     title: string;
@@ -48,7 +50,7 @@ const buildCourses = (category: string, titles: string[]): Course[] =>
 
     // Manual overrides with more robust checking
     const processedTitle = title.trim();
-    
+
     // ---------------------------------- Agile -------------------------------------------
     if (processedTitle.includes("Certified Scrum Master (CSM) Certification Training")) {
       navigate = "/course/csm-certificaton-training";
@@ -102,11 +104,11 @@ const buildCourses = (category: string, titles: string[]): Course[] =>
       navigate = "/course/professional-scrum-master-advanced-psm-a-certification-training";
     } else if (processedTitle.includes("Certified Agile Leader - 1 (CAL-1) Certification Training")) {
       navigate = "/course/certified-agile-leader®-1-(cal 1™)-certification-training";
-      }else if (processedTitle.includes("ICAgile Certified Professional in Agile Coaching (ICP-ACC) Certification Training")) {
+    } else if (processedTitle.includes("ICAgile Certified Professional in Agile Coaching (ICP-ACC) Certification Training")) {
       navigate = "/course/icagile-certified-professional-in-agile-coaching-icp-acc-certification-training";
-      }else if (processedTitle.includes("Advanced Certified Scrum Developer (A-CSD) Certification Training")) { 
+    } else if (processedTitle.includes("Advanced Certified Scrum Developer (A-CSD) Certification Training")) {
       navigate = "/course/agile/advanced-certified-scrum-developer-a-csd-certification-training";
-    } 
+    }
     else if (processedTitle.includes("Professional Scrum with Kanban (PSK) Certification Training")) {
       navigate = "/course/professional-scrum-with-kanban-psk-certification-training";
     } else if (processedTitle.includes("Professional Scrum Product Owner (PSPO) Certification Training")) {
@@ -190,6 +192,7 @@ const buildCourses = (category: string, titles: string[]): Course[] =>
       enrolled: "1k+",
       duration: "Self-paced",
       format: "Live Virtual",
+      skills: "AI Strategy Development,Generative AI Application",
       price: 299,
       originalPrice: 499,
       discount: 40,
@@ -434,11 +437,36 @@ export const categoryData: Record<string, CategoryData> = {
       "Trained by Experienced Industry Experts with Over 15+ Years of Experience.",
       "Gain Hands-on Practical Experience with Our Top Agile Certifications & Training."
     ],
-    heroImage: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&q=80",
+    heroImage: "https://www.simpliaxis.com/frontend_assets/image/category_banner_f.webp",
     stats: [
-      { label: "Students Trained", value: "50K+" },
-      { label: "Rating", value: "4.9/5" },
-      { label: "Global Partners", value: "400+" }
+      {
+        icon: Users,
+        value: "500,000+",
+        label: "Professional Enrolled",
+        color: "text-emerald-600",
+        bgColor: "bg-emerald-50",
+      },
+      {
+        icon: GraduationCap,
+        value: "150+",
+        label: "Global Trainers",
+        color: "text-amber-500",
+        bgColor: "bg-amber-50",
+      },
+      {
+        icon: Building2,
+        value: "300+",
+        label: "Workshops Every Month",
+        color: "text-rose-500",
+        bgColor: "bg-rose-50",
+      },
+      {
+        icon: Globe,
+        value: "130+",
+        label: "Countries",
+        color: "text-blue-500",
+        bgColor: "bg-blue-50",
+      },
     ],
     courses: [
       {
@@ -449,11 +477,13 @@ export const categoryData: Record<string, CategoryData> = {
         enrolled: "73k+",
         duration: "2 Days",
         format: "Live Classroom",
+        skills: "AI Strategy Development,Generative AI Application",
+
         price: 349,
         originalPrice: 499,
         discount: 30,
         badge: "Popular",
-        image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300&fit=crop",
+        image: "https://www.simpliaxis.com/storage/images/service_container_image_service_container_image_LeadingSAFeService_1723465898_1761569686.webp",
         nextDate: "Feb 22, 2026",
         navigate: "/course/csm-certificaton-training",
       },
@@ -464,6 +494,7 @@ export const categoryData: Record<string, CategoryData> = {
         rating: 4.9,
         enrolled: "45k+",
         duration: "2 Days",
+        skills: "AI Strategy Development,Generative AI Application",
         format: "Live Classroom",
         price: 399,
         originalPrice: 599,

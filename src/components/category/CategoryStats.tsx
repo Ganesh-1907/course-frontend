@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Users, GraduationCap, Building2, Globe } from "lucide-react";
+import { CategoryData } from "@/data/categoryData";
 
 const stats = [
   {
@@ -33,25 +34,25 @@ const stats = [
   },
 ];
 
-const CategoryStats = () => {
+const CategoryStats = ({ data }:{data: CategoryData;}) => {
   return (
-    <div className="container relative z-20 -mt-12">
+    <div className="container relative flex justify-center  ">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        className="bg-white rounded-2xl shadow-xl shadow-slate-200/50 border border-slate-100 p-6 md:px-10"
+        className="bg-white rounded-full max-w-[1000px] shadow-xl shadow-slate-200/50 border border-slate-100 p-4 md:px-10"
       >
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
-          {stats.map((stat, i) => (
+          {data.stats.map((stat, i) => (
             <div key={i} className="flex flex-col items-center text-center group">
-              <div className={`w-10 h-10 rounded-lg ${stat.bgColor} flex items-center justify-center mb-3 transition-transform group-hover:scale-110 duration-300`}>
-                <stat.icon className={`w-5 h-5 ${stat.color}`} />
+              <div className={`w-10 h-10  flex items-center justify-center transition-transform group-hover:scale-110 duration-300`}>
+                {stat.icon && <stat.icon className={`w-5 h-5 ${stat.color}`} />}
               </div>
-              <h3 className="text-lg md:text-xl font-black text-[#001c3d] tracking-tight mb-0.5">
+              <h3 className="text-sm md:text-sm font-bold text-[#001c3d] mb-0.5">
                 {stat.value}
               </h3>
-              <p className="text-[10px] md:text-xs font-bold text-slate-500 uppercase tracking-wide">
+              <p className="md:text-sm font-light text-slate-500 tracking-wide">
                 {stat.label}
               </p>
             </div>

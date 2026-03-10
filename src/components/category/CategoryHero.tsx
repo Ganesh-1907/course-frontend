@@ -1,10 +1,11 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { CheckCircle2, Home, ChevronRight, ArrowUpRight } from "lucide-react";
+import { CheckCircle2, Home, ChevronRight, ArrowUpRight, CheckCircle, CircleCheck, Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { CategoryData } from "@/data/categoryData";
 import AdvisorModal from "@/components/modals/AdvisorModal";
 import { useState } from "react";
+import CategoryStats from "./CategoryStats";
 
 interface CategoryHeroProps {
   data: CategoryData;
@@ -22,8 +23,14 @@ const avatars = [
 const CategoryHero: React.FC<CategoryHeroProps> = ({ data }) => {
   const [isAdvisorOpen, setIsAdvisorOpen] = useState(false);
   return (
-    <section className="relative pt-8 pb-12 overflow-hidden bg-[#eff7fe]">
-      <div className="container relative z-10">
+    <section className="relative pt-8 pb-[8rem] overflow-hidden bg-[#f0f9ff]">
+      <div className="container relative z-10 px-12">
+        {/* Breadcrumbs */}
+        <div className="flex items-center gap-2 mb-4 text-slate-600 font-bold text-sm">
+          <Home className="w-4 h-4" />
+          <ChevronRight className="w-4 h-4 text-slate-400" />
+          <span className="text-slate-700 font-medium">{data.breadcrumbName || data.name}</span>
+        </div>
         <div className="grid lg:grid-cols-2 gap-8 items-center">
           {/* Left Content */}
           <motion.div
@@ -31,17 +38,12 @@ const CategoryHero: React.FC<CategoryHeroProps> = ({ data }) => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
           >
-            {/* Breadcrumbs */}
-            <div className="flex items-center gap-2 mb-6 text-slate-600 font-bold text-sm">
-              <Home className="w-4 h-4" />
-              <ChevronRight className="w-4 h-4 text-slate-400" />
-              <span className="text-slate-700 font-medium">{data.breadcrumbName || data.name}</span>
-            </div>
-            
-            <h1 className="text-2xl md:text-3xl font-black font-display tracking-tight mb-4 text-[#001c3d] leading-tight uppercase">
+
+
+            <h1 className="text-2xl md:text-3xl font-semibold font-display mb-4 text-[#001c3d] leading-tight ">
               {data.title}
             </h1>
-            
+
             <p className="text-base text-[#001c3d] font-bold mb-6 max-w-xl leading-relaxed opacity-90">
               {data.subtitle || data.description}
             </p>
@@ -58,59 +60,59 @@ const CategoryHero: React.FC<CategoryHeroProps> = ({ data }) => {
                   />
                 ))}
               </div>
-              <span className="text-sm font-black text-[#001c3d]">{data.enrolledCount || "144,000+"} Enrolled</span>
+              <span className="text-xs font-semibold text-[#001c3d]">{data.enrolledCount || "144,000+"} Enrolled</span>
             </div>
-            
+
             {/* feature list */}
             <div className="space-y-3 mb-6">
               {data.highlights.map((highlight, i) => (
                 <div key={i} className="flex items-center gap-3">
-                  <div className="w-5 h-5 rounded-full bg-emerald-500 flex items-center justify-center flex-shrink-0">
-                    <CheckCircle2 className="w-3.5 h-3.5 text-white" />
+                  <div className="rounded-full p-1 bg-green-700 flex items-center justify-center flex-shrink-0">
+                  <Check color="white" size={8} />
                   </div>
-                  <span className="text-xs font-bold text-[#001c3d] leading-tight">{highlight}</span>
+                  <span className="text-sm font-normal text-[#001c3d] leading-tight">{highlight}</span>
                 </div>
               ))}
             </div>
-            
+
             {/* CTAs */}
             <div className="flex flex-wrap gap-4">
-              <Button 
-                variant="outline" 
+              <button
                 onClick={() => setIsAdvisorOpen(true)}
-                className="h-10 px-5 rounded-lg border-2 border-[#ff4e25] text-[#001c3d] font-black hover:bg-white/50 transition-all text-xs"
+                className="h-8 px-5  border-[1.5px] rounded-[0.25rem] border-[#fa4a23] text-black  font-semibold hover:bg-white/50 transition-all text-xs"
               >
                 Contact Learning Advisor
-              </Button>
-              <Button 
-                className="h-10 px-5 rounded-lg bg-[#ff4e25] hover:bg-[#e43d1a] text-white font-black transition-all shadow-md flex items-center gap-2 text-xs"
+              </button>
+              <button
+                className="h-8 px-4 rounded-[0.25rem] bg-[#fa4a23] hover:bg-[#e43d1a] text-white font-semibold transition-all shadow-md flex items-center gap-2 text-xs"
               >
                 View Schedules
                 <ArrowUpRight className="w-3.5 h-3.5" />
-              </Button>
+              </button>
             </div>
 
             <AdvisorModal isOpen={isAdvisorOpen} onOpenChange={setIsAdvisorOpen} />
           </motion.div>
-          
+
           {/* Right Image */}
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="hidden lg:flex justify-center items-center relative"
+            className="hidden lg:flex justify-center items-end relative"
           >
             {/* Background Circle */}
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="w-[300px] h-[300px] bg-sky-200/50 rounded-full blur-[2px]" />
-            </div>
+
 
             {/* Main Image in Circle */}
-            <div className="relative w-[350px] h-[350px] rounded-full overflow-hidden border-[8px] border-white/30 shadow-xl flex items-center justify-center z-10">
-              <img 
-                src="https://images.unsplash.com/photo-1544717305-27a734ef1904?w=600&q=80" 
-                alt="Student Success" 
-                className="w-full h-full object-cover scale-110"
+            <div className="relative ">
+              <img
+                src={data.heroImage}
+                alt="Student Success"
+                height={'340'}
+                width={'340'}
+                className="object-cover"
+                style={{ marginLeft: '18%', }}
               />
             </div>
 
