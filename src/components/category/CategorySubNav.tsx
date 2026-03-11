@@ -94,7 +94,7 @@ const CategorySubNav: React.FC<CategorySubNavProps> = ({ forcedVisible }) => {
                </button>
                <Button 
                 onClick={() => setIsAdvisorOpen(true)}
-                className="h-10 px-6 rounded-lg bg-[#001c3d] text-white font-black text-xs"
+                className="h-10 px-6 bg-[#001c3d] text-white font-black text-xs"
                >
                  Contact Learning Advisor
                </Button>
