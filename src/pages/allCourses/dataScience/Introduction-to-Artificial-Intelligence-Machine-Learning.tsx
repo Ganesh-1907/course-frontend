@@ -420,20 +420,7 @@ const IntroductionToArtificialIntelligenceMachineLearning = () => {
     { "title": "Interactive Training", "description": "Hands-on labs and real-world discussions." },
     { "title": "Wide Course Portfolio", "description": "Access multiple globally recognized certifications." }
   ];
-  const sidePanelSchedules = [
-    {
-      courseCode: 'AIML',
-      courseName: 'Introduction to AI and ML Certification Training',
-      dateRange: 'Apr 15 - Apr 18, 2026',
-      timeRange: '08:00 PM - 10:00 PM IST',
-      trainerName: 'AI Expert',
-      trainerImage:
-        'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=100',
-      originalPrice: 'INR 15,000',
-      discountedPrice: 'INR 12,000',
-      discountPercentage: '20',
-    },
-  ];
+  
 
   const certificateBenefits = [
     'Digital Badge for LinkedIn & PDF Copy',
@@ -744,7 +731,7 @@ const IntroductionToArtificialIntelligenceMachineLearning = () => {
             {/* Right Side Panel */}
             <div className="relative w-full lg:w-[340px] xl:w-[360px] lg:justify-self-end">
               <div className="sticky top-24">
-                <CourseSidePanel schedules={sidePanelSchedules} />
+                <CourseSidePanel  courseName={heroData.courseName} />
               </div>
             </div>
           </div>

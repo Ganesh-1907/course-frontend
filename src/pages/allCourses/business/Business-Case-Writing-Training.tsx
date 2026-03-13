@@ -353,19 +353,7 @@ const BusinessCaseWritingTraining = () => {
         }
     ];
 
-    const sidePanelSchedules = [
-        {
-            courseCode: 'BCW',
-            courseName: 'Business Case Writing Training',
-            dateRange: 'Coming Soon',
-            timeRange: 'Flexible',
-            trainerName: 'Expert Trainer',
-            trainerImage: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=100',
-            originalPrice: 'INR 15,999',
-            discountedPrice: 'INR 9,999',
-            discountPercentage: '37',
-        },
-    ];
+    
 
     const certificateBenefits = [
         'Officially recognized Business Case Writer credential',
@@ -656,7 +644,7 @@ const BusinessCaseWritingTraining = () => {
                         {/* Right Side Panel */}
                         <div className="relative w-full lg:w-[340px] xl:w-[360px] lg:justify-self-end">
                             <div className="sticky top-24">
-                                <CourseSidePanel schedules={sidePanelSchedules} />
+                                <CourseSidePanel  courseName={heroData.courseName} />
                             </div>
                         </div>
                     </div>

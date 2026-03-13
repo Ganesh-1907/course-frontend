@@ -351,19 +351,7 @@ const EntryCertificateInBusinessAnalysisECBACertificationTraining = () => {
         }
     ];
 
-    const sidePanelSchedules = [
-        {
-            courseCode: 'ECBA',
-            courseName: 'ECBA™ Certification Training',
-            dateRange: 'Coming Soon',
-            timeRange: '21 Hours Live',
-            trainerName: 'Expert Trainer',
-            trainerImage: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=100',
-            originalPrice: 'INR 18,999',
-            discountedPrice: 'INR 12,999',
-            discountPercentage: '32',
-        },
-    ];
+    
 
     const certificateBenefits = [
         'Officially recognized ECBA micro-credential',
@@ -646,7 +634,7 @@ const EntryCertificateInBusinessAnalysisECBACertificationTraining = () => {
                         {/* Right Side Panel */}
                         <div className="relative w-full lg:w-[340px] xl:w-[360px] lg:justify-self-end">
                             <div className="sticky top-24">
-                                <CourseSidePanel schedules={sidePanelSchedules} />
+                                <CourseSidePanel  courseName={heroData.courseName} />
                             </div>
                         </div>
                     </div>

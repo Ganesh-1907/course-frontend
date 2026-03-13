@@ -7,6 +7,7 @@ import { AuthProvider } from "@/context/AuthContext";
 import { AuthModalProvider } from "@/context/AuthModalContext";
 import { CartProvider } from "@/context/CartContext";
 import { CartDrawer } from "@/components/CartDrawer";
+import ScrollToTop from "@/components/ScrollToTop";
 import Index from "./pages/Index";
 import DynamicCategoryPage from "./pages/categories/DynamicCategoryPage";
 import SubCategoryPage from "./pages/SubCategoryPage";
@@ -63,6 +64,8 @@ import {
   CertifiedAgileLeaderCertificationTraining,
 
 } from './pages/allCourses/agile';
+
+import SchedulesPage from "./pages/SchedulesPage";
 
 // ----------------------------- Safe Courses -----------------------------
 import {
@@ -249,8 +252,10 @@ const App = () => (
         <AuthModalProvider>
           <CartProvider>
             <BrowserRouter>
+              <ScrollToTop />
           <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/course/:courseName/schedules" element={<SchedulesPage />} />
 
           {/* categories routes */}
           <Route path="/category/:categoryId" element={<DynamicCategoryPage />} />
@@ -259,148 +264,148 @@ const App = () => (
 
           {/* ✨ AGILE COURSES */}
           <Route
-            path="/course/csm-certificaton-training"
+            path="/course/agile/csm-certificaton-training"
             element={<CertifiedScrumMasterCertificationTraining />}
           />
           <Route
-            path="/course/cspo-certificaton-training"
+            path="/course/agile/cspo-certificaton-training"
             element={<CertifiedScrumProductOwnerCertificationTraining />}
           />
           <Route
-            path="/course/a-csm-certificaton-training"
+            path="/course/agile/a-csm-certificaton-training"
             element={<AdvancedCertifiedScrumMasterCertificationTraining />}
           />
           <Route
-            path="/course/a-cspo-certificaton-training"
+            path="/course/agile/a-cspo-certificaton-training"
             element={
               <AdvancedCertifiedScrumProductOwnerCertificationTraining />
             }
           />
           <Route
-            path="/course/csd-certification-training"
+            path="/course/agile/csd-certification-training"
             element={<CertifiedScrumDeveloperCertificationTraining />}
           />
           <Route
-            path="/course/icagile-systems-coaching-certification-training"
+            path="/course/agile/icagile-systems-coaching-certification-training"
             element={<ICAgileSystemsCoachingCertificationTraining />}
           />
           <Route
-            path="/course/icagile-people-development-certification-training"
+            path="/course/agile/icagile-people-development-certification-training"
             element={<ICAgilePeopleDevelopmentCertificationTraining />}
           />
           <Route
-            path="/course/icagile-lean-portfolio-management-certification-training"
+            path="/course/agile/icagile-lean-portfolio-management-certification-training"
             element={<ICAgileLeanPortfolioManagementCertificationTraining />}
           />
           <Route
-            path="/course/icagile-foundations-of-ai-certification-training"
+            path="/course/agile/icagile-foundations-of-ai-certification-training"
             element={<ICAgileFoundationsOfAICertificationTraining />}
           />
           <Route
-            path="/course/icagile-agile-team-facilitation-certification-training"
+            path="/course/agile/icagile-agile-team-facilitation-certification-training"
             element={<ICAgileAgileTeamFacilitationCertificationTraining />}
           />
           <Route
-            path="/course/applying-professional-kanban-apk-certification-course"
+            path="/course/agile/applying-professional-kanban-apk-certification-course"
             element={<ApplyingProfessionalKanbanCertificationCourse />}
           />
           <Route
-            path="/course/icagile-agile-product-ownership-icp-apo-certification-training"
+            path="/course/agile/icagile-agile-product-ownership-icp-apo-certification-training"
             element={
               <ICAgileAgileProductOwnershipICPAPOCertificationTraining />
             }
           />
           <Route
-            path="/course/pspbm-skills-certification-course"
+            path="/course/agile/pspbm-skills-certification-course"
             element={<PSPBMSkillsCertificationCourse />}
           />
           <Route
-            path="/course/icagile-agile-project-delivery-management-icp-apm-certification-training"
+            path="/course/agile/icagile-agile-project-delivery-management-icp-apm-certification-training"
             element={
               <ICAgileAgileProjectDeliveryManagementICPAPMCertificationTraining />
             }
           />
           <Route
-            path="/course/ICAgile-Product-Management-(ICP-PDM)-Certification-Training"
+            path="/course/agile/ICAgile-Product-Management-(ICP-PDM)-Certification-Training"
             element={<ICAgileProductManagementCertificationTraining />}
           />
           <Route
-            path="/course/icagile-certified-agile-leadership-icp-lea-training"
+            path="/course/agile/icagile-certified-agile-leadership-icp-lea-training"
             element={<ICAgileCertifiedAgileLeadershipTraining />}
           />
           <Route
-            path="/course/jira-software-training-for-agile-projects"
+            path="/course/agile/jira-software-training-for-agile-projects"
             element={<JiraSoftwareTrainingforAgileProjects />}
           />
           <Route
-            path="/course/agile-project-management-course"
+            path="/course/agile/agile-project-management-course"
             element={<AgileProjectManagementCourse />}
           />
           <Route
-            path="/course/certified-scrum-professional-product-owner-csp-po-certification-training"
+            path="/course/agile/certified-scrum-professional-product-owner-csp-po-certification-training"
             element={
               <CertifiedScrumProfessionalProductOwnerCertificationTraining />
             }
           />
           <Route
-            path="/course/agile-and-scrum-training"
+            path="/course/agile/agile-and-scrum-training"
             element={<AgileAndScrumTraining />}
           />
           <Route
-            path="/course/pmi-agile-certified-practitioner-pmi-acp-certification-training"
+            path="/course/agile/pmi-agile-certified-practitioner-pmi-acp-certification-training"
             element={<PMIAgileCertifiedPractitionerPMIACP />}
           />
           <Route
-            path="/course/psm-i-certification-training"
+            path="/course/agile/psm-i-certification-training"
             element={<ProfessionalScrumMasterCertificationTraining />}
           />
           <Route
-            path="/course/casp-1-certification-training"
+            path="/course/agile/casp-1-certification-training"
             element={<CertifiedAgileScalingPractitioner1Training />}
           />
           <Route
-            path="/course/agile-coaching-skills-certified-facilitator-caf-training"
+            path="/course/agile/agile-coaching-skills-certified-facilitator-caf-training"
             element={<AgileCoachingSkillsCertifiedFacilitatorTraining />}
           />
           <Route
-            path="/course/professional-scrum-master-advanced-psm-a-certification-training"
+            path="/course/agile/professional-scrum-master-advanced-psm-a-certification-training"
             element={<ProfessionalScrumMasterAdvancedCertificationTraining />}
           />
           <Route
-            path="/course/icagile-certified-professional-in-agile-coaching-icp-acc-certification-training"
+            path="/course/agile/icagile-certified-professional-in-agile-coaching-icp-acc-certification-training"
             element={
               <ICAgileCertifiedProfessionalinAgileCoachingICPACCertificationTraining />
             }
           />
           <Route
-            path="/course/professional-scrum-with-kanban-psk-certification-training"
+            path="/course/agile/professional-scrum-with-kanban-psk-certification-training"
             element={<ProfessionalScrumWithKanbanCertificationTraining />}
           />
           <Route
-            path="/course/professional-scrum-product-owner-certification-training"
+            path="/course/agile/professional-scrum-product-owner-certification-training"
             element={<ProfessionalScrumProductOwnerCertificationTraining />}
           />
           <Route
-            path="/course/scrum-at-scale-certification-training"
+            path="/course/agile/scrum-at-scale-certification-training"
             element={<ScrumAtScaleCertificationTraining />}
           />
           <Route
-            path="/course/icagile-enterprise-agile-coaching-icp-cat-certification-training"
+            path="/course/agile/icagile-enterprise-agile-coaching-icp-cat-certification-training"
             element={<ICAgileEnterpriseAgileCoachingCertificationTraining />}
           />
           <Route
-            path="/course/professional-agile-leadership-essentials-pal-e-certification-training"
+            path="/course/agile/professional-agile-leadership-essentials-pal-e-certification-training"
             element={
               <ProfessionalAgileLeadershipEssentialsCertificationTraining />
             }
           />
           <Route
-            path="/course/behaviour-driven-development-bdd-training"
+            path="/course/agile/behaviour-driven-development-bdd-training"
             element={<BehaviourDrivenDevelopmentBDDTraining />}
           />
 
           <Route
-            path="/course/certified-agile-leader®-1-(cal 1™)-certification-training"
+            path="/course/agile/certified-agile-leader®-1-(cal 1™)-certification-training"
             element={<CertifiedAgileLeaderCertificationTraining />}
           />
 
@@ -461,85 +466,85 @@ const App = () => (
 
           {/* ✨ SAFE COURSES */}
           <Route
-            path="/course/leading-safe-certification-training"
+            path="/course/safe/leading-safe-certification-training"
             element={<LeadingSafeCertificationTraining />}
           />
           <Route
-            path="/course/ai-empowered-safe-scrum-master-ssm-certification-training"
+            path="/course/safe/ai-empowered-safe-scrum-master-ssm-certification-training"
             element={<AiEmpoweredSafeScrumMasterSSMCertificationTraining />}
           />
           <Route
-            path="/course/product-manager-popm-certification-training"
+            path="/course/safe/product-manager-popm-certification-training"
             element={<ProductManagerPOPMCertificationTraining />}
           />
           <Route
-            path="/course/safe-practice-consultant-spc-certification-training"
+            path="/course/safe/safe-practice-consultant-spc-certification-training"
             element={<SafePracticeConsultantSPCCertificationTraining />}
           />
           <Route
-            path="/course/safe-lean-portfolio-management-certification-training"
+            path="/course/safe/safe-lean-portfolio-management-certification-training"
             element={<SafeLeanPortfolioManagementCertificationTraining />}
           />
           <Route
-            path="/course/safe-architects-certification-training"
+            path="/course/safe/safe-architects-certification-training"
             element={<SafeArchitectsCertificationTraining />}
           />
           <Route
-            path="/course/safe-for-teams-certification-training"
+            path="/course/safe/safe-for-teams-certification-training"
             element={<SafeForTeamsCertificationTraining />}
           />
 
           <Route
-            path="/course/advanced-safe-practice-consultant-(aspc)-certification-path"
+            path="/course/safe/advanced-safe-practice-consultant-(aspc)-certification-path"
             element={<AdvancedSAFePracticeConsultantASPCCertificationPath />}
           />
 
           <Route
-            path="/course/ai-empowered-safe-release-train-engineer-(rte)-certification-training"
+            path="/course/safe/ai-empowered-safe-release-train-engineer-(rte)-certification-training"
             element={
               <AIEmpoweredSAFeReleaseTrainEngineerRTECertificationTraining />
             }
           />
 
           <Route
-            path="/course/safe-devops-certification-training"
+            path="/course/safe/safe-devops-certification-training"
             element={<SAFEDevOpsCertificationTraining />}
           />
 
           <Route
-            path="/course/advanced-facilitator-conflict-collaboration-micro-credential-course"
+            path="/course/safe/advanced-facilitator-conflict-collaboration-micro-credential-course"
             element={
               <AdvancedFacilitatorConflictCollaborationMicroCredentialCourse />
             }
           />
 
           <Route
-            path="/course/achieving-responsible-ai-with-safe-micro-credential-course"
+            path="/course/safe/achieving-responsible-ai-with-safe-micro-credential-course"
             element={<AchievingResponsibleAICourse />}
           />
 
           <Route
-            path="/course/agile-hr-explorer-(ahre)-training-and-certification"
+            path="/course/safe/agile-hr-explorer-(ahre)-training-and-certification"
             element={<AgileHRexplorerCourse />}
           />
 
           <Route
-            path="/course/advanced-scrum-master-certification-path"
+            path="/course/safe/advanced-scrum-master-certification-path"
             element={<AdvancedScrumMasterCertificationPath />}
           />
 
           <Route
-            path="/course/safe-for-hardware-certification-training"
+            path="/course/safe/safe-for-hardware-certification-training"
             element={<SAFeForHardwareCourse />}
           />
 
           <Route
-            path="/course/ai-native-foundations-certification-training-course"
+            path="/course/safe/ai-native-foundations-certification-training-course"
             element={<AiNativeFoundationsCertificationTrainingCourse />}
           />
 
           <Route
-            path="/course/ai-native-change-agent-certification-training-course"
+            path="/course/safe/ai-native-change-agent-certification-training-course"
             element={<AiNativeChangeAgentCertificationTrainingCourse />}
           />
 

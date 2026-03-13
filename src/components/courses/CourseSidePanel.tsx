@@ -20,6 +20,8 @@ import { motion } from "framer-motion";
 import { useCart } from "@/context/CartContext";
 import { useAuth } from "@/context/AuthContext";
 import { useAuthModal } from "@/context/AuthModalContext";
+import { useNavigate } from "react-router-dom";
+import { getRecentSchedule, ScheduleData } from "@/lib/courseService";
 
 interface Schedule {
   courseCode: string;
@@ -34,25 +36,50 @@ interface Schedule {
 }
 
 interface CourseSidePanelProps {
-  schedules: Schedule[];
+  schedules?: Schedule[];
   courseId?: string;
   courseName?: string;
 }
 
-const CourseSidePanel: React.FC<CourseSidePanelProps> = ({ schedules, courseId, courseName }) => {
-  // Use the first schedule as the featured one for now
-  const featuredSchedule = schedules[0];
+const CourseSidePanel: React.FC<CourseSidePanelProps> = ({ schedules = [], courseId, courseName }) => {
+  const [dynamicSchedule, setDynamicSchedule] = React.useState<ScheduleData | null>(null);
+  const [isFetching, setIsFetching] = React.useState(false);
+
+  // Prioritize dynamic schedule over initial props
+  const featuredSchedule = dynamicSchedule || (schedules?.length > 0 ? schedules[0] : null);
+  
   const { user } = useAuth();
   const { openSignin } = useAuthModal();
   const { addToCart, isInCart, loading } = useCart();
+  const navigate = useNavigate();
+
+  React.useEffect(() => {
+    if (courseName) {
+      const fetchSchedule = async () => {
+        setIsFetching(true);
+        try {
+          const data = await getRecentSchedule(courseName);
+          if (data) {
+            setDynamicSchedule(data);
+          }
+        } catch (error) {
+          console.error('Failed to fetch dynamic schedule:', error);
+        } finally {
+          setIsFetching(false);
+        }
+      };
+      fetchSchedule();
+    }
+  }, [courseName]);
 
   const name = courseName || featuredSchedule?.courseName || 'This course';
   const inCart = isInCart(courseId || name);
 
   // Parse price strings like "₹15,000" → 15000 for the payload
-  const parsePrice = (str?: string): number => {
-    if (!str) return 0;
-    const num = parseFloat(str.replace(/[^0-9.]/g, ''));
+  const parsePrice = (price?: string | number): number => {
+    if (price === undefined || price === null) return 0;
+    if (typeof price === "number") return price;
+    const num = parseFloat(price.replace(/[^0-9.]/g, ''));
     return isNaN(num) ? 0 : num;
   };
 
@@ -76,99 +103,113 @@ const CourseSidePanel: React.FC<CourseSidePanelProps> = ({ schedules, courseId, 
   return (
     <div className="space-y-3">
       {/* Upcoming Schedule Card */}
-      <motion.div 
-        initial={{ opacity: 0, x: 20 }}
-        animate={{ opacity: 1, x: 0 }}
-        className="bg-white border border-slate-100 rounded-xl shadow-md shadow-slate-200/30 relative overflow-hidden"
-      >
-        {/* Ribbon */}
-        {featuredSchedule?.discountPercentage && (
-          <div className="absolute top-0 right-0 w-20 h-20 overflow-hidden pointer-events-none z-10">
-            <div className="absolute top-3 -right-8 w-28 h-7 bg-red-500 text-white text-[9px] font-black flex items-center justify-center rotate-45 transform shadow-md uppercase tracking-tight">
-              {featuredSchedule.discountPercentage}% OFF
+      {(featuredSchedule || isFetching) && (
+        <motion.div 
+          initial={{ opacity: 0, x: 20 }}
+          animate={{ opacity: 1, x: 0 }}
+          className="bg-white border border-slate-100 rounded-xl shadow-md shadow-slate-200/30 relative overflow-hidden"
+        >
+          {isFetching ? (
+            <div className="p-8 flex flex-col items-center justify-center space-y-3">
+              <Loader2 className="w-6 h-6 animate-spin text-primary/50" />
+              <p className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Checking Schedules...</p>
             </div>
-          </div>
-        )}
-
-        <div className="p-3 space-y-3">
-          <div className="flex items-center justify-between border-b border-slate-100 pb-2.5">
-            <h3 className="text-[13px] font-black text-[#001c3d] flex items-center gap-1.5">
-              <div className="p-1 bg-accent rounded-md">
-                <Calendar className="w-3 h-3 text-primary" />
-              </div>
-              Upcoming Schedule
-            </h3>
-          </div>
-
-          {featuredSchedule && (
-            <div className="space-y-2.5">
-              <div className="flex items-start gap-2.5">
-                <div className="w-9 h-9 flex-shrink-0 bg-slate-50 border border-slate-100 p-1.5 flex items-center justify-center rounded-md italic font-black text-[9px] text-primary">
-                  {featuredSchedule.courseCode}
+          ) : (
+            <>
+              {/* Ribbon */}
+              {featuredSchedule?.discountPercentage && featuredSchedule.discountPercentage !== '0' && (
+                <div className="absolute top-0 right-0 w-20 h-20 overflow-hidden pointer-events-none z-10">
+                  <div className="absolute top-3 -right-8 w-28 h-7 bg-red-500 text-white text-[9px] font-black flex items-center justify-center rotate-45 transform shadow-md uppercase tracking-tight">
+                    {featuredSchedule.discountPercentage}% OFF
+                  </div>
                 </div>
-                <p className="text-[12px] font-black text-slate-800 leading-tight">
-                  {featuredSchedule.courseName}
-                </p>
-              </div>
-
-              <div className="grid grid-cols-1 gap-1.5 bg-slate-50/50 p-2.5 rounded-lg border border-slate-100">
-                <div className="flex items-center gap-2 text-[11px] font-bold text-slate-700">
-                  <Calendar className="w-3 h-3 text-orange-500" />
-                  <span>{featuredSchedule.dateRange}</span>
-                </div>
-                <div className="flex items-center gap-2 text-[11px] font-bold text-slate-700">
-                  <Clock className="w-3 h-3 text-orange-500" />
-                  <span>{featuredSchedule.timeRange}</span>
-                </div>
-              </div>
-
-              <div className="flex items-center gap-2.5">
-                <div className="w-9 h-9 rounded-md overflow-hidden bg-slate-200 ring-1 ring-white shadow-sm">
-                  <img src={featuredSchedule.trainerImage} alt={featuredSchedule.trainerName} className="w-full h-full object-cover" />
-                </div>
-                <div className="flex-1">
-                  <p className="text-[9px] font-black text-slate-400 uppercase tracking-widest">Master Trainer</p>
-                  <p className="text-[12px] font-black text-primary">{featuredSchedule.trainerName}</p>
-                </div>
-              </div>
-
-              <div className="flex items-end justify-between py-0.5">
-                 <div className="flex flex-col">
-                   <span className="text-[9px] text-slate-400 line-through font-bold">{featuredSchedule.originalPrice}</span>
-                   <span className="text-xl leading-none font-black text-[#001c3d]">{featuredSchedule.discountedPrice}</span>
-                 </div>
-                 <div className="bg-red-50 text-red-600 text-[9px] font-black px-2 py-0.5 rounded-md flex items-center gap-1 border border-red-100">
-                   <TrendingDown className="w-3 h-3" />
-                   {featuredSchedule.discountPercentage}% OFF
-                 </div>
-              </div>
-            </div>
-          )}
-
-          <div className="space-y-1.5">
-            <Button
-              onClick={handleEnroll}
-              disabled={loading}
-              className={`w-full font-black text-[13px] rounded-md h-9 shadow-md transition-all active:scale-[0.98] flex items-center justify-center gap-2 ${
-                inCart
-                  ? 'bg-green-600 hover:bg-green-700 text-white shadow-green-500/20'
-                  : 'bg-[#ff4d2a] hover:bg-[#e64526] text-white shadow-orange-500/20'
-              }`}
-            >
-              {loading ? (
-                <Loader2 className="w-4 h-4 animate-spin" />
-              ) : inCart ? (
-                <><CheckCircle className="w-4 h-4" /> Added to Cart</>
-              ) : (
-                <><ShoppingCart className="w-4 h-4" /> Enroll Now</>
               )}
-            </Button>
-            <button className="w-full text-[10px] font-black text-slate-500 flex items-center justify-center gap-1 hover:text-primary transition-colors uppercase tracking-widest">
-              View all Schedules <ChevronRight className="w-3 h-3" />
-            </button>
-          </div>
-        </div>
-      </motion.div>
+
+              <div className="p-3 space-y-3">
+                <div className="flex items-center justify-between border-b border-slate-100 pb-2.5">
+                  <h3 className="text-[13px] font-black text-[#001c3d] flex items-center gap-1.5">
+                    <div className="p-1 bg-accent rounded-md">
+                      <Calendar className="w-3 h-3 text-primary" />
+                    </div>
+                    Upcoming Schedule
+                  </h3>
+                </div>
+
+                <div className="space-y-2.5">
+                  <div className="flex items-start gap-2.5">
+                    <div className="w-9 h-9 flex-shrink-0 bg-slate-50 border border-slate-100 p-1.5 flex items-center justify-center rounded-md italic font-black text-[9px] text-primary">
+                      {featuredSchedule.courseCode}
+                    </div>
+                    <p className="text-[12px] font-black text-slate-800 leading-tight">
+                      {featuredSchedule.courseName}
+                    </p>
+                  </div>
+
+                  <div className="grid grid-cols-1 gap-1.5 bg-slate-50/50 p-2.5 rounded-lg border border-slate-100">
+                    <div className="flex items-center gap-2 text-[11px] font-bold text-slate-700">
+                      <Calendar className="w-3 h-3 text-orange-500" />
+                      <span>{featuredSchedule.dateRange}</span>
+                    </div>
+                    <div className="flex items-center gap-2 text-[11px] font-bold text-slate-700">
+                      <Clock className="w-3 h-3 text-orange-500" />
+                      <span>{featuredSchedule.timeRange}</span>
+                    </div>
+                  </div>
+
+                  <div className="flex items-center gap-2.5">
+                    <div className="w-9 h-9 rounded-md overflow-hidden bg-slate-200 ring-1 ring-white shadow-sm">
+                      <img src={featuredSchedule.trainerImage} alt={featuredSchedule.trainerName} className="w-full h-full object-cover" />
+                    </div>
+                    <div className="flex-1">
+                      <p className="text-[9px] font-black text-slate-400 uppercase tracking-widest">Master Trainer</p>
+                      <p className="text-[12px] font-black text-primary">{featuredSchedule.trainerName}</p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-end justify-between py-0.5">
+                     <div className="flex flex-col">
+                       <span className="text-[9px] text-slate-400 line-through font-bold">{featuredSchedule.originalPrice}</span>
+                       <span className="text-xl leading-none font-black text-[#001c3d]">{featuredSchedule.discountedPrice}</span>
+                     </div>
+                     {featuredSchedule.discountPercentage && featuredSchedule.discountPercentage !== '0' && (
+                       <div className="bg-red-50 text-red-600 text-[9px] font-black px-2 py-0.5 rounded-md flex items-center gap-1 border border-red-100">
+                         <TrendingDown className="w-3 h-3" />
+                         {featuredSchedule.discountPercentage}% OFF
+                       </div>
+                     )}
+                  </div>
+                </div>
+
+                <div className="space-y-1.5">
+                  <Button
+                    onClick={handleEnroll}
+                    disabled={loading}
+                    className={`w-full font-black text-[13px] rounded-md h-9 shadow-md transition-all active:scale-[0.98] flex items-center justify-center gap-2 ${
+                      inCart
+                        ? 'bg-green-600 hover:bg-green-700 text-white shadow-green-500/20'
+                        : 'bg-[#ff4d2a] hover:bg-[#e64526] text-white shadow-orange-500/20'
+                    }`}
+                  >
+                    {loading ? (
+                      <Loader2 className="w-4 h-4 animate-spin" />
+                    ) : inCart ? (
+                      <><CheckCircle className="w-4 h-4" /> Added to Cart</>
+                    ) : (
+                      <><ShoppingCart className="w-4 h-4" /> Enroll Now</>
+                    )}
+                  </Button>
+                  <button 
+                    onClick={() => navigate(`/course/${encodeURIComponent(name)}/schedules`)}
+                    className="w-full text-[10px] font-black text-slate-500 flex items-center justify-center gap-1 hover:text-primary transition-colors uppercase tracking-widest"
+                  >
+                    View all Schedules <ChevronRight className="w-3 h-3" />
+                  </button>
+                </div>
+              </div>
+            </>
+          )}
+        </motion.div>
+      )}
 
       {/* Enquiry Form Card */}
       <motion.div 

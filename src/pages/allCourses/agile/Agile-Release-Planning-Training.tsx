@@ -401,20 +401,7 @@ const AgileReleasePlanningTraining = () => {
             "description": "Viovn offers various internationally acknowledged certification courses in Agile, Scrum, SAFe, DevOps, Project Management, and more."
         }
     ];
-    const sidePanelSchedules = [
-        {
-            courseCode: 'ARP',
-            courseName: 'Agile Release Planning Training',
-            dateRange: 'Apr 20 - Apr 21, 2026',
-            timeRange: '08:30 AM - 04:30 PM IST',
-            trainerName: 'Axel Wilhelm Berle',
-            trainerImage:
-                'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=100',
-            originalPrice: 'INR 42,000',
-            discountedPrice: 'INR 32,000',
-            discountPercentage: '24',
-        },
-    ];
+    
 
     const certificateBenefits = [
         'Digital Badge for LinkedIn & PDF Copy',
@@ -724,7 +711,7 @@ const AgileReleasePlanningTraining = () => {
                         {/* Right Side Panel */}
                         <div className="relative w-full lg:w-[340px] xl:w-[360px] lg:justify-self-end">
                             <div className="sticky top-24">
-                                <CourseSidePanel schedules={sidePanelSchedules} />
+                                <CourseSidePanel  courseName={heroData.courseName} />
                             </div>
                         </div>
                     </div>

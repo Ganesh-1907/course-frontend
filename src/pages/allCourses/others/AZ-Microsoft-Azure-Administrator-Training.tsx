@@ -395,20 +395,7 @@ const AZMicrosoftAzureAdministratorTraining = () => {
     { "title": "Wide Course Portfolio", "description": "Access to multiple Microsoft and cloud certifications." }
   ];
 
-  const sidePanelSchedules = [
-    {
-      courseCode: 'AZ-104',
-      courseName: 'Microsoft Certified: Azure Administrator Associate Training',
-      dateRange: 'Jun 10 - Jun 12, 2026',
-      timeRange: '09:00 AM - 05:00 PM IST',
-      trainerName: 'Azure Solution Architect',
-      trainerImage:
-        'https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=100',
-      originalPrice: 'INR 25,000',
-      discountedPrice: 'INR 18,000',
-      discountPercentage: '28',
-    },
-  ];
+  
 
   const certificateBenefits = [
     'Digital Badge for LinkedIn & PDF Copy',
@@ -725,7 +712,7 @@ const AZMicrosoftAzureAdministratorTraining = () => {
             {/* Right Side Panel */}
             <div className="relative w-full lg:w-[340px] xl:w-[360px] lg:justify-self-end">
               <div className="sticky top-24">
-                <CourseSidePanel schedules={sidePanelSchedules} />
+                <CourseSidePanel  courseName={heroData.courseName} />
               </div>
             </div>
           </div>

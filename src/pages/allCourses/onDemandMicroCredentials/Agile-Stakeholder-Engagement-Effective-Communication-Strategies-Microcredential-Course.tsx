@@ -208,19 +208,7 @@ const AgileStakeholderEngagementMicrocredentialCourse = () => {
         badgeImage: "/csm-badge.png"
     };
 
-    const sidePanelSchedules = [
-        {
-            courseCode: 'OD-AG-STK-ENG',
-            courseName: heroData.courseName,
-            dateRange: 'Always Available',
-            timeRange: 'On-Demand',
-            trainerName: 'SimpliAxis Expert',
-            trainerImage: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=100',
-            originalPrice: 'INR 9,999',
-            discountedPrice: 'INR 4,999',
-            discountPercentage: '50',
-        },
-    ];
+    
 
     const overviewContent = {
         title: "Course Overview",
@@ -375,7 +363,7 @@ const AgileStakeholderEngagementMicrocredentialCourse = () => {
                         </div>
                         <div className="relative">
                             <div className="sticky top-24">
-                                <CourseSidePanel schedules={sidePanelSchedules} isOnDemand={true} />
+                                <CourseSidePanel courseName={heroData.courseName}  isOnDemand={true}  />
                             </div>
                         </div>
                     </div>

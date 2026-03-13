@@ -281,19 +281,7 @@ const GenerativeAIForBusinessAnalystsFunctionalITConsultantsTraining = () => {
     { title: "Global Network", description: "Access to a community of AI-enabled consultants." }
   ];
 
-  const sidePanelSchedules = [
-    {
-      courseCode: 'GAI-BA',
-      courseName: 'Gen AI for Business Analysts',
-      dateRange: 'Oct 12 - Oct 13, 2026',
-      timeRange: '10:00 AM - 06:00 PM IST',
-      trainerName: 'Expert Consultant',
-      trainerImage: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=100',
-      originalPrice: 'INR 40,000',
-      discountedPrice: 'INR 29,999',
-      discountPercentage: '25',
-    },
-  ];
+  
 
   const certificateBenefits = [
     'AI-Native Consultant Digital Badge',
@@ -627,7 +615,7 @@ const GenerativeAIForBusinessAnalystsFunctionalITConsultantsTraining = () => {
             {/* Right Side Panel */}
             <div className="relative w-full lg:w-[340px] xl:w-[360px] lg:justify-self-end">
               <div className="sticky top-24">
-                <CourseSidePanel schedules={sidePanelSchedules} />
+                <CourseSidePanel  courseName={heroData.courseName} />
               </div>
             </div>
           </div>

@@ -427,20 +427,7 @@ const TestDrivenDevelopmentTDDTraining = () => {
         }
     ];
 
-    const sidePanelSchedules = [
-        {
-            courseCode: 'TDD',
-            courseName: 'Test-Driven Development (TDD) Training',
-            dateRange: 'Mar 15 - Mar 16, 2026',
-            timeRange: '08:30 AM - 04:30 PM IST',
-            trainerName: 'Axel Wilhelm Berle',
-            trainerImage:
-                'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=100',
-            originalPrice: 'INR 45,000',
-            discountedPrice: 'INR 35,000',
-            discountPercentage: '22',
-        },
-    ];
+    
 
     const certificateBenefits = [
         'Digital Badge for LinkedIn & PDF Copy',
@@ -750,7 +737,7 @@ const TestDrivenDevelopmentTDDTraining = () => {
                         {/* Right Side Panel */}
                         <div className="relative w-full lg:w-[340px] xl:w-[360px] lg:justify-self-end">
                             <div className="sticky top-24">
-                                <CourseSidePanel schedules={sidePanelSchedules} />
+                                <CourseSidePanel  courseName={heroData.courseName} />
                             </div>
                         </div>
                     </div>

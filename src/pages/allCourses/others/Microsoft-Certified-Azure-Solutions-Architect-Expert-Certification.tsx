@@ -376,20 +376,7 @@ const MicrosoftCertifiedAzureSolutionsArchitectExpertCertification = () => {
     { "title": "Wide Course Portfolio", "description": "Access multiple Microsoft certification programs." }
   ];
 
-  const sidePanelSchedules = [
-    {
-      courseCode: 'AZ-305',
-      courseName: 'Microsoft Certified Azure Solutions Architect Expert Training',
-      dateRange: 'Oct 12 - Oct 16, 2026',
-      timeRange: '09:00 AM - 05:00 PM IST',
-      trainerName: 'Azure Architect Guru',
-      trainerImage:
-        'https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=100',
-      originalPrice: 'INR 42,000',
-      discountedPrice: 'INR 35,000',
-      discountPercentage: '16',
-    },
-  ];
+  
 
   const certificateBenefits = [
     'Microsoft Certified Badge',
@@ -710,7 +697,7 @@ const MicrosoftCertifiedAzureSolutionsArchitectExpertCertification = () => {
             {/* Right Side Panel */}
             <div className="relative w-full lg:w-[340px] xl:w-[360px] lg:justify-self-end">
               <div className="sticky top-24">
-                <CourseSidePanel schedules={sidePanelSchedules} />
+                <CourseSidePanel  courseName={heroData.courseName} />
               </div>
             </div>
           </div>

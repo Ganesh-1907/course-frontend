@@ -284,19 +284,7 @@ const AIForProductOwnersMicroCredentialTraining = () => {
         badgeImage: "/csm-badge.png"
     };
 
-    const sidePanelSchedules = [
-        {
-            courseCode: 'AI-PO',
-            courseName: heroData.courseName,
-            dateRange: 'Coming Soon',
-            timeRange: 'Flexible',
-            trainerName: 'Lead Product Strategist',
-            trainerImage: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=100',
-            originalPrice: 'INR 16,999',
-            discountedPrice: 'INR 12,499',
-            discountPercentage: '26',
-        },
-    ];
+    
 
     const overviewContent = {
         title: "Course Overview",
@@ -432,7 +420,7 @@ const AIForProductOwnersMicroCredentialTraining = () => {
                         </div>
                         <div className="relative">
                             <div className="sticky top-24">
-                                <CourseSidePanel schedules={sidePanelSchedules} />
+                                <CourseSidePanel  courseName={heroData.courseName} />
                             </div>
                         </div>
                     </div>

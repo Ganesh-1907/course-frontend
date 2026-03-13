@@ -402,20 +402,7 @@ const MicrosoftPowerBITraining = () => {
     { "title": "Wide Range of Courses", "description": "Access multiple Microsoft certifications." }
   ];
 
-  const sidePanelSchedules = [
-    {
-      courseCode: 'PL-300',
-      courseName: 'Microsoft Power BI Certification Training',
-      dateRange: 'Apr 25 - Apr 27, 2026',
-      timeRange: '09:00 AM - 05:00 PM IST',
-      trainerName: 'Power BI Expert',
-      trainerImage:
-        'https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=100',
-      originalPrice: 'INR 25,000',
-      discountedPrice: 'INR 18,000',
-      discountPercentage: '28',
-    },
-  ];
+  
 
   const certificateBenefits = [
     'Digital Badge for LinkedIn & PDF Copy',
@@ -726,7 +713,7 @@ const MicrosoftPowerBITraining = () => {
             {/* Right Side Panel */}
             <div className="relative w-full lg:w-[340px] xl:w-[360px] lg:justify-self-end">
               <div className="sticky top-24">
-                <CourseSidePanel schedules={sidePanelSchedules} />
+                <CourseSidePanel  courseName={heroData.courseName} />
               </div>
             </div>
           </div>

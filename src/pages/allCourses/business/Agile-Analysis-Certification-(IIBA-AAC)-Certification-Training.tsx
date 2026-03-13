@@ -369,19 +369,7 @@ const AgileAnalysisCertification = () => {
         }
     ];
 
-    const sidePanelSchedules = [
-        {
-            courseCode: 'IIBA-AAC',
-            courseName: 'IIBA®-AAC Certification Training',
-            dateRange: 'Coming Soon',
-            timeRange: 'Flexible',
-            trainerName: 'Expert Trainer',
-            trainerImage: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=100',
-            originalPrice: 'INR 28,999',
-            discountedPrice: 'INR 22,999',
-            discountPercentage: '21',
-        },
-    ];
+    
 
     const certificateBenefits = [
         'Globally recognized IIBA®-AAC credential',
@@ -667,7 +655,7 @@ const AgileAnalysisCertification = () => {
                         {/* Right Side Panel */}
                         <div className="relative w-full lg:w-[340px] xl:w-[360px] lg:justify-self-end">
                             <div className="sticky top-24">
-                                <CourseSidePanel schedules={sidePanelSchedules} />
+                                <CourseSidePanel  courseName={heroData.courseName} />
                             </div>
                         </div>
                     </div>

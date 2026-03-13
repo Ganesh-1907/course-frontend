@@ -442,20 +442,7 @@ const AIEmpoweredSAFeReleaseTrainEngineerRTECertificationTraining = () => {
       "description": "High success rate in SAFe certifications worldwide."
     }
   ];
-  const sidePanelSchedules = [
-    {
-      courseCode: 'RTE',
-      courseName: 'AI-Empowered SAFe® 6.0 Release Train Engineer (RTE) Certification Training',
-      dateRange: 'Mar 22 - Mar 25, 2026',
-      timeRange: '09:00 AM - 05:00 PM EST',
-      trainerName: 'Expert SPCT',
-      trainerImage:
-        'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=100',
-      originalPrice: 'INR 85,000',
-      discountedPrice: 'INR 68,000',
-      discountPercentage: '20',
-    },
-  ];
+  
 
   const certificateBenefits = [
     'Digital Badge for LinkedIn & PDF Copy',
@@ -782,7 +769,7 @@ const AIEmpoweredSAFeReleaseTrainEngineerRTECertificationTraining = () => {
             {/* Right Side Panel */}
             <div className="relative w-full lg:w-[340px] xl:w-[360px] lg:justify-self-end">
               <div className="sticky top-24">
-                <CourseSidePanel schedules={sidePanelSchedules} />
+                <CourseSidePanel  courseName={heroData.courseName} />
               </div>
             </div>
           </div>

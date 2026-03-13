@@ -216,19 +216,7 @@ const ICAgileAIForProductDiscoveryMicroCredentialCourseTraining = () => {
         badgeImage: "/csm-badge.png"
     };
 
-    const sidePanelSchedules = [
-        {
-            courseCode: 'ICA-AI-PD',
-            courseName: heroData.courseName,
-            dateRange: 'Coming Soon',
-            timeRange: 'Flexible',
-            trainerName: 'Senior Product Discovery Coach',
-            trainerImage: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=100',
-            originalPrice: 'INR 15,999',
-            discountedPrice: 'INR 11,499',
-            discountPercentage: '28',
-        },
-    ];
+    
 
     const overviewContent = {
         title: "Course Overview",
@@ -385,7 +373,7 @@ const ICAgileAIForProductDiscoveryMicroCredentialCourseTraining = () => {
                         </div>
                         <div className="relative">
                             <div className="sticky top-24">
-                                <CourseSidePanel schedules={sidePanelSchedules} />
+                                <CourseSidePanel  courseName={heroData.courseName} />
                             </div>
                         </div>
                     </div>

@@ -431,20 +431,7 @@ const AiNativeFoundationsCertificationTrainingCourse = () => {
     { "title": "Post-Training Support", "description": "Mentoring and peer-learning network access." }
   ];
 
-  const sidePanelSchedules = [
-    {
-      courseCode: 'AI-FND',
-      courseName: 'AI-Native Foundations Certification Training Course',
-      dateRange: 'Jul 10 - Jul 11, 2026',
-      timeRange: '09:00 AM - 05:00 PM',
-      trainerName: 'Expert AI Facilitator',
-      trainerImage:
-        'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=100',
-      originalPrice: 'INR 35,000',
-      discountedPrice: 'INR 29,750',
-      discountPercentage: '15',
-    },
-  ];
+  
 
   const certificateBenefits = [
     'Digital Badge for LinkedIn & PDF Copy',
@@ -786,7 +773,7 @@ const AiNativeFoundationsCertificationTrainingCourse = () => {
             {/* Right Side Panel */}
             <div className="relative w-full lg:w-[340px] xl:w-[360px] lg:justify-self-end">
               <div className="sticky top-24">
-                <CourseSidePanel schedules={sidePanelSchedules} />
+                <CourseSidePanel  courseName={heroData.courseName} />
               </div>
             </div>
           </div>

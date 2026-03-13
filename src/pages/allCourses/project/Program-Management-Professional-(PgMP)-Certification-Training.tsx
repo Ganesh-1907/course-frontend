@@ -347,19 +347,7 @@ const ProgramManagementProfessionalPgMPCertificationTraining = () => {
         { "title": "Post-Training Support", "description": "Viovn provides uninterrupted support including study resources, revision sessions, and updated learning materials after the PgMP course." }
     ];
 
-    const sidePanelSchedules = [
-        {
-            courseCode: 'PGMP',
-            courseName: 'PgMP Certification',
-            dateRange: 'May 08 - May 10, 2026',
-            timeRange: '09:00 AM - 05:00 PM IST',
-            trainerName: 'Rajiv Menon',
-            trainerImage: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=100',
-            originalPrice: 'INR 72,000',
-            discountedPrice: 'INR 60,000',
-            discountPercentage: '16',
-        },
-    ];
+    
 
     const certificateBenefits = [
         'PMI Official PgMP Digital Badge',
@@ -590,7 +578,7 @@ const ProgramManagementProfessionalPgMPCertificationTraining = () => {
                         </div>
                         <div className="relative w-full lg:w-[340px] xl:w-[360px] lg:justify-self-end">
                             <div className="sticky top-24">
-                                <CourseSidePanel schedules={sidePanelSchedules} />
+                                <CourseSidePanel  courseName={heroData.courseName} />
                             </div>
                         </div>
                     </div>
