@@ -242,6 +242,37 @@ import {
   AgileCoachingSkillsMicrocredentialCourse
 } from "./pages/allCourses/onDemandMicroCredentials";
 
+// ----------------------------- E-learning Courses -----------------------------
+import {
+    CertifiedAssociateInProjectManagementOnlineCourse,
+    ProjectManagementProfessionalPrepOnlineCourse,
+    LeanSixSigmaGreenBeltBasicsOnlineCourse,
+    LeanSixSigmaGreenBeltELearningCourse,
+    AccreditedAgileScrumMasterOnlineCourse,
+    AccreditedAgileRolesProductOwnerOnlineCourse,
+    LeanSixSigmaYellowBeltELearningCourse,
+    SimpliaxisPMPOrientationCourse,
+    ScrumMasterCertifiedCourse,
+    MicrosoftAzureFundamentalsCourse,
+    ProjectManagementFundamentalsCourse,
+    MicrosoftPowerBISkillsCourse,
+    PMIOrganizationalChangeManagementCourse,
+    AWSCertifiedCloudPractitionerCourse,
+    MicrosoftAzureAdministratorCourse,
+    ScrumProductOwnerTrainingCourse,
+    CertifiedInformationSecurityManagerCourse,
+    ScrumDeveloperTrainingCourse,
+    MicrosoftProject2013BasicCourse,
+    MicrosoftProject2013AdvancedCourse,
+    MicrosoftAzureSecurityTechnologiesAZ500Course,
+    AWSCertifiedDevOpsEngineerProfessionalCourse,
+    AccreditedDevOpsFoundationCourse,
+    CISSPTrainingCourse,
+    CISATrainingCourse,
+    MicrosoftAzureDeveloperAZ204Course,
+    MicrosoftAzureSolutionsArchitectAZ305Course
+} from "./pages/allCourses/eLearning";
+
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -706,6 +737,116 @@ const App = () => (
           <Route
             path="/course/generative-ai/mastering-generative-ai-tools-online"
             element={<MasteringGenerativeAIToolsOnline />}
+          />
+
+          {/* ✨ E-LEARNING COURSES */}
+          <Route
+            path="/elearning/accredited-agile-scrum-master-online-course"
+            element={<AccreditedAgileScrumMasterOnlineCourse />}
+          />
+          <Route
+            path="/elearning/capm-online-course"
+            element={<CertifiedAssociateInProjectManagementOnlineCourse />}
+          />
+          <Route
+            path="/elearning/pmp-online-course"
+            element={<ProjectManagementProfessionalPrepOnlineCourse />}
+          />
+          <Route
+            path="/elearning/pmp-orientation"
+            element={<SimpliaxisPMPOrientationCourse />}
+          />
+          <Route
+            path="/elearning/lean-six-sigma-green-belt-basics"
+            element={<LeanSixSigmaGreenBeltBasicsOnlineCourse />}
+          />
+          <Route
+            path="/elearning/lean-six-sigma-green-belt"
+            element={<LeanSixSigmaGreenBeltELearningCourse />}
+          />
+          <Route
+            path="/elearning/product-owner-online-course"
+            element={<AccreditedAgileRolesProductOwnerOnlineCourse />}
+          />
+          <Route
+            path="/elearning/lean-six-sigma-yellow-belt"
+            element={<LeanSixSigmaYellowBeltELearningCourse />}
+          />
+          <Route
+            path="/elearning/scrum-master-certified"
+            element={<ScrumMasterCertifiedCourse />}
+          />
+          <Route
+            path="/elearning/az-900-course"
+            element={<MicrosoftAzureFundamentalsCourse />}
+          />
+          <Route
+            path="/elearning/project-management-fundamentals-course"
+            element={<ProjectManagementFundamentalsCourse />}
+          />
+          <Route
+            path="/elearning/microsoft-power-bi-skills-course"
+            element={<MicrosoftPowerBISkillsCourse />}
+          />
+          <Route
+            path="/elearning/pmi-organizational-change-management-course"
+            element={<PMIOrganizationalChangeManagementCourse />}
+          />
+          <Route
+            path="/elearning/aws-certified-cloud-practitioner-course"
+            element={<AWSCertifiedCloudPractitionerCourse />}
+          />
+          <Route
+            path="/elearning/microsoft-azure-administrator-az-104-course"
+            element={<MicrosoftAzureAdministratorCourse />}
+          />
+          <Route
+            path="/elearning/scrum-product-owner-training-course"
+            element={<ScrumProductOwnerTrainingCourse />}
+          />
+          <Route
+            path="/elearning/certified-information-security-manager-course"
+            element={<CertifiedInformationSecurityManagerCourse />}
+          />
+          <Route
+            path="/elearning/scrum-developer-training-course"
+            element={<ScrumDeveloperTrainingCourse />}
+          />
+          <Route
+            path="/elearning/microsoft-project-2013-basic-course"
+            element={<MicrosoftProject2013BasicCourse />}
+          />
+          <Route
+            path="/elearning/microsoft-project-2013-advanced-course"
+            element={<MicrosoftProject2013AdvancedCourse />}
+          />
+          <Route
+            path="/elearning/microsoft-azure-security-technologies-az-500-course"
+            element={<MicrosoftAzureSecurityTechnologiesAZ500Course />}
+          />
+          <Route
+            path="/elearning/aws-certified-devops-engineer-professional-course"
+            element={<AWSCertifiedDevOpsEngineerProfessionalCourse />}
+          />
+          <Route
+            path="/elearning/accredited-devops-foundation-course"
+            element={<AccreditedDevOpsFoundationCourse />}
+          />
+          <Route
+            path="/elearning/cissp-training-course"
+            element={<CISSPTrainingCourse />}
+          />
+          <Route
+            path="/elearning/cisa-training-course"
+            element={<CISATrainingCourse />}
+          />
+          <Route
+            path="/elearning/microsoft-azure-developer-az-204-course"
+            element={<MicrosoftAzureDeveloperAZ204Course />}
+          />
+          <Route
+            path="/elearning/microsoft-azure-solutions-architect-az-305-course"
+            element={<MicrosoftAzureSolutionsArchitectAZ305Course />}
           />
 
           {/* ✨ DevOps  COURSES */}
