@@ -291,19 +291,7 @@ const IntroductionToGenerativeAITraining = () => {
     { title: "Lifetime Community", description: "Join a network of AI-forward professionals." }
   ];
 
-  const sidePanelSchedules = [
-    {
-      courseCode: 'GAI-INTRO',
-      courseName: 'Introduction to Generative AI Training',
-      dateRange: 'Aug 05 - Aug 06, 2026',
-      timeRange: '10:00 AM - 02:00 PM IST',
-      trainerName: 'Expert AI Instructor',
-      trainerImage: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=100',
-      originalPrice: 'INR 15,000',
-      discountedPrice: 'INR 9,999',
-      discountPercentage: '33',
-    },
-  ];
+  
 
   const certificateBenefits = [
     'Introduction to GenAI Digital Badge',
@@ -646,7 +634,7 @@ const IntroductionToGenerativeAITraining = () => {
             {/* Right Side Panel */}
             <div className="relative w-full lg:w-[340px] xl:w-[360px] lg:justify-self-end">
               <div className="sticky top-24">
-                <CourseSidePanel schedules={sidePanelSchedules} />
+                <CourseSidePanel  courseName={heroData.courseName} />
               </div>
             </div>
           </div>

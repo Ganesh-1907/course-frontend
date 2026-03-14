@@ -382,20 +382,7 @@ const CloudComputingWithAWSTraining = () => {
     { "title": "Wide Course Portfolio", "description": "Access additional AWS and DevOps certifications." }
   ];
 
-  const sidePanelSchedules = [
-    {
-      courseCode: 'AWS-CC',
-      courseName: 'AWS Cloud Computing Certification Training',
-      dateRange: 'Apr 05 - Apr 15, 2026',
-      timeRange: '07:00 PM - 10:00 PM IST',
-      trainerName: 'AWS Certified Expert',
-      trainerImage:
-        'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=100',
-      originalPrice: 'INR 55,000',
-      discountedPrice: 'INR 48,000',
-      discountPercentage: '12',
-    },
-  ];
+  
 
   const certificateBenefits = [
     'Official AWS Certified Solutions Architect Badge',
@@ -730,7 +717,7 @@ const CloudComputingWithAWSTraining = () => {
             {/* Right Side Panel */}
             <div className="relative w-full lg:w-[340px] xl:w-[360px] lg:justify-self-end">
               <div className="sticky top-24">
-                <CourseSidePanel schedules={sidePanelSchedules} />
+                <CourseSidePanel  courseName={heroData.courseName} />
               </div>
             </div>
           </div>

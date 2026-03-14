@@ -366,20 +366,7 @@ const PythonProgrammingTraining = () => {
     { "title": "Wide Range of Courses", "description": "Access multiple globally recognized certifications." }
   ];
 
-  const sidePanelSchedules = [
-    {
-      courseCode: 'PYPR',
-      courseName: 'Python Programming Certification Training',
-      dateRange: 'May 05 - May 08, 2026',
-      timeRange: '07:00 PM - 09:00 PM IST',
-      trainerName: 'Python Expert',
-      trainerImage:
-        'https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=100',
-      originalPrice: 'INR 25,000',
-      discountedPrice: 'INR 20,000',
-      discountPercentage: '20',
-    },
-  ];
+  
 
   const certificateBenefits = [
     'Digital Badge for LinkedIn & PDF Copy',
@@ -676,7 +663,7 @@ const PythonProgrammingTraining = () => {
             {/* Right Side Panel */}
             <div className="relative w-full lg:w-[340px] xl:w-[360px] lg:justify-self-end">
               <div className="sticky top-24">
-                <CourseSidePanel schedules={sidePanelSchedules} />
+                <CourseSidePanel  courseName={heroData.courseName} />
               </div>
             </div>
           </div>

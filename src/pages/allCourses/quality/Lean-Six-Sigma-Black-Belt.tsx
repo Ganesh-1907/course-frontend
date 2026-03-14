@@ -459,20 +459,7 @@ const LeanSixSigmaBlackBeltCertification = () => {
         },
     ];
 
-    const sidePanelSchedules = [
-        {
-            courseCode: 'LSSBB',
-            courseName: 'Lean Six Sigma Black Belt Certification',
-            dateRange: 'Mar 15 - Mar 30, 2026',
-            timeRange: '09:00 AM - 05:00 PM IST',
-            trainerName: 'Senior Master Black Belt',
-            trainerImage:
-                'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=100',
-            originalPrice: 'INR 85,000',
-            discountedPrice: 'INR 59,500',
-            discountPercentage: '30',
-        },
-    ];
+    
 
     const certificateBenefits = [
         'Industry-Recognized Lean Six Sigma Black Belt Certificate',
@@ -782,7 +769,7 @@ const LeanSixSigmaBlackBeltCertification = () => {
                         {/* Right Side Panel */}
                         <div className="relative w-full lg:w-[340px] xl:w-[360px] lg:justify-self-end">
                             <div className="sticky top-24">
-                                <CourseSidePanel schedules={sidePanelSchedules} />
+                                <CourseSidePanel  courseName={heroData.courseName} />
                             </div>
                         </div>
                     </div>

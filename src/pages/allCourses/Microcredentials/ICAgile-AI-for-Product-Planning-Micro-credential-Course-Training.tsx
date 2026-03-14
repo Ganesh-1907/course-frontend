@@ -240,19 +240,7 @@ const ICAgileAIForProductPlanningMicroCredentialCourseTraining = () => {
         badgeImage: "/csm-badge.png"
     };
 
-    const sidePanelSchedules = [
-        {
-            courseCode: 'ICA-AI-APP',
-            courseName: heroData.courseName,
-            dateRange: 'Starting Soon',
-            timeRange: 'Flexible',
-            trainerName: 'Consultant Agile Strategist',
-            trainerImage: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=100',
-            originalPrice: 'INR 17,999',
-            discountedPrice: 'INR 12,999',
-            discountPercentage: '28',
-        },
-    ];
+    
 
     const overviewContent = {
         title: "Course Overview",
@@ -408,7 +396,7 @@ const ICAgileAIForProductPlanningMicroCredentialCourseTraining = () => {
                         </div>
                         <div className="relative">
                             <div className="sticky top-24">
-                                <CourseSidePanel schedules={sidePanelSchedules} />
+                                <CourseSidePanel  courseName={heroData.courseName} />
                             </div>
                         </div>
                     </div>

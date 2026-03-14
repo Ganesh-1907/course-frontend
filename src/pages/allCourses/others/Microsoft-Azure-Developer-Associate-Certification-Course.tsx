@@ -476,20 +476,7 @@ const MicrosoftAzureDeveloperAssociateCertificationCourse = () => {
     }
   ];
 
-  const sidePanelSchedules = [
-    {
-      courseCode: 'AZ-204',
-      courseName: 'Microsoft Azure Developer Associate (AZ-204) Certification Course',
-      dateRange: 'Jul 15 - Jul 17, 2026',
-      timeRange: '09:00 AM - 05:00 PM IST',
-      trainerName: 'Azure Dev Expert',
-      trainerImage:
-        'https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=100',
-      originalPrice: 'INR 28,000',
-      discountedPrice: 'INR 21,000',
-      discountPercentage: '25',
-    },
-  ];
+  
 
   const certificateBenefits = [
     'Microsoft Certified Badge',
@@ -805,7 +792,7 @@ const MicrosoftAzureDeveloperAssociateCertificationCourse = () => {
             {/* Right Side Panel */}
             <div className="relative w-full lg:w-[340px] xl:w-[360px] lg:justify-self-end">
               <div className="sticky top-24">
-                <CourseSidePanel schedules={sidePanelSchedules} />
+                <CourseSidePanel  courseName={heroData.courseName} />
               </div>
             </div>
           </div>

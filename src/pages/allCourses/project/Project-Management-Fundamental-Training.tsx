@@ -336,19 +336,7 @@ const ProjectManagementFundamentalTraining = () => {
         { "title": "A wide range of courses", "description": "Viovn offers various internationally acknowledged certification courses in Agile, Scrum, SAFe, DevOps, Project Management, and more." }
     ];
 
-    const sidePanelSchedules = [
-        {
-            courseCode: 'PM-FUND',
-            courseName: 'Project Management Fundamentals',
-            dateRange: 'Mar 15 - Mar 16, 2026',
-            timeRange: '09:00 AM - 01:00 PM IST',
-            trainerName: 'Expert Instructor',
-            trainerImage: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=100',
-            originalPrice: 'INR 15,000',
-            discountedPrice: 'INR 12,500',
-            discountPercentage: '16',
-        },
-    ];
+    
 
     const heroData = {
         "courseName": "Project Management Fundamentals Training",
@@ -531,7 +519,7 @@ const ProjectManagementFundamentalTraining = () => {
                         </div>
                         <div className="relative w-full lg:w-[340px] xl:w-[360px] lg:justify-self-end">
                             <div className="sticky top-24">
-                                <CourseSidePanel schedules={sidePanelSchedules} />
+                                <CourseSidePanel  courseName={heroData.courseName} />
                             </div>
                         </div>
                     </div>

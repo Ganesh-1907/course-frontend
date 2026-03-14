@@ -363,19 +363,7 @@ const ConflictManagementTraining = () => {
         }
     ];
 
-    const sidePanelSchedules = [
-        {
-            courseCode: 'CMS',
-            courseName: 'Conflict Management Skills',
-            dateRange: 'Coming Soon',
-            timeRange: '8 Hours Live',
-            trainerName: 'Expert Trainer',
-            trainerImage: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=100',
-            originalPrice: 'INR 12,999',
-            discountedPrice: 'INR 7,999',
-            discountPercentage: '38',
-        },
-    ];
+    
 
     const certificateBenefits = [
         'Officially recognized Conflict Management micro-credential',
@@ -653,7 +641,7 @@ const ConflictManagementTraining = () => {
                         {/* Right Side Panel */}
                         <div className="relative w-full lg:w-[340px] xl:w-[360px] lg:justify-self-end">
                             <div className="sticky top-24">
-                                <CourseSidePanel schedules={sidePanelSchedules} />
+                                <CourseSidePanel  courseName={heroData.courseName} />
                             </div>
                         </div>
                     </div>

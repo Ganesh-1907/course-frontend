@@ -312,19 +312,7 @@ const ChangeManagementTraining = () => {
         }
     ];
 
-    const sidePanelSchedules = [
-        {
-            courseCode: 'CMT',
-            courseName: 'Change Management Training',
-            dateRange: 'Coming Soon',
-            timeRange: '8 Hours Live',
-            trainerName: 'Expert Consultant',
-            trainerImage: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=100',
-            originalPrice: 'INR 15,999',
-            discountedPrice: 'INR 9,999',
-            discountPercentage: '38',
-        },
-    ];
+    
 
     const certificateBenefits = [
         'Recognized Certificate of Completion from Viovn',
@@ -609,7 +597,7 @@ const ChangeManagementTraining = () => {
                         {/* Right Side Panel */}
                         <div className="relative w-full lg:w-[340px] xl:w-[360px] lg:justify-self-end">
                             <div className="sticky top-24">
-                                <CourseSidePanel schedules={sidePanelSchedules} />
+                                <CourseSidePanel  courseName={heroData.courseName} />
                             </div>
                         </div>
                     </div>

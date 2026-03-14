@@ -408,20 +408,7 @@ const PythonDjangoTraining = () => {
     { "title": "Interactive Training", "description": "Hands-on labs and real-world scenarios." },
     { "title": "Wide Course Portfolio", "description": "Access multiple certification tracks." }
   ];
-  const sidePanelSchedules = [
-    {
-      courseCode: 'PDC',
-      courseName: 'Python Django Certification Training',
-      dateRange: 'Apr 10 - Apr 15, 2026',
-      timeRange: '07:30 PM - 10:30 PM IST',
-      trainerName: 'Django Expert',
-      trainerImage:
-        'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=100',
-      originalPrice: 'INR 40,000',
-      discountedPrice: 'INR 32,000',
-      discountPercentage: '20',
-    },
-  ];
+  
 
   const certificateBenefits = [
     'Digital Badge for LinkedIn & PDF Copy',
@@ -732,7 +719,7 @@ const PythonDjangoTraining = () => {
             {/* Right Side Panel */}
             <div className="relative w-full lg:w-[340px] xl:w-[360px] lg:justify-self-end">
               <div className="sticky top-24">
-                <CourseSidePanel schedules={sidePanelSchedules} />
+                <CourseSidePanel  courseName={heroData.courseName} />
               </div>
             </div>
           </div>

@@ -366,20 +366,7 @@ const ProjectManagementTechniquesTraining = () => {
         }
     ];
 
-    const sidePanelSchedules = [
-        {
-            courseCode: 'PMT',
-            courseName: 'Project Management Techniques Training',
-            dateRange: 'Mar 15 - Mar 16, 2026',
-            timeRange: '09:00 AM - 05:00 PM IST',
-            trainerName: 'Ram Srinivasan',
-            trainerImage:
-                'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=100',
-            originalPrice: 'INR 25,000',
-            discountedPrice: 'INR 17,500',
-            discountPercentage: '30',
-        },
-    ];
+    
 
     const certificateBenefits = [
         'Digital Badge for LinkedIn & PDF Copy',
@@ -627,7 +614,7 @@ const ProjectManagementTechniquesTraining = () => {
 
                         <div className="relative w-full lg:w-[340px] xl:w-[360px] lg:justify-self-end">
                             <div className="sticky top-24">
-                                <CourseSidePanel schedules={sidePanelSchedules} />
+                                <CourseSidePanel  courseName={heroData.courseName} />
                             </div>
                         </div>
                     </div>

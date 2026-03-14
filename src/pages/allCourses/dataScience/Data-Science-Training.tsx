@@ -436,20 +436,7 @@ const DataScienceTraining = () => {
     { "title": "Interactive Training", "description": "Engaging and practical sessions." },
     { "title": "Wide Range of Courses", "description": "Multiple globally recognized certifications." }
   ];
-  const sidePanelSchedules = [
-    {
-      courseCode: 'DSCT',
-      courseName: 'Data Science Certification Training',
-      dateRange: 'May 10 - May 15, 2026',
-      timeRange: '08:00 PM - 11:00 PM IST',
-      trainerName: 'Data Science Guru',
-      trainerImage:
-        'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=100',
-      originalPrice: 'INR 48,000',
-      discountedPrice: 'INR 38,400',
-      discountPercentage: '20',
-    },
-  ];
+  
 
   const certificateBenefits = [
     'Digital Badge for LinkedIn & PDF Copy',
@@ -756,7 +743,7 @@ const DataScienceTraining = () => {
             {/* Right Side Panel */}
             <div className="relative w-full lg:w-[340px] xl:w-[360px] lg:justify-self-end">
               <div className="sticky top-24">
-                <CourseSidePanel schedules={sidePanelSchedules} />
+                <CourseSidePanel  courseName={heroData.courseName} />
               </div>
             </div>
           </div>

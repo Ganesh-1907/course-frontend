@@ -458,19 +458,7 @@ const AgileOKRsMicroCredentialTraining = () => {
         },
     ];
 
-    const sidePanelSchedules = [
-        {
-            courseCode: 'AG-OKR',
-            courseName: heroData.courseName,
-            dateRange: 'Starting Soon',
-            timeRange: 'Flexible',
-            trainerName: 'Lead Trainer',
-            trainerImage: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=100',
-            originalPrice: 'INR 15,999',
-            discountedPrice: 'INR 11,999',
-            discountPercentage: '25',
-        },
-    ];
+    
 
     return (
         <div className="min-h-screen bg-white font-sans">
@@ -518,7 +506,7 @@ const AgileOKRsMicroCredentialTraining = () => {
 
                         <div className="relative">
                             <div className="sticky top-24">
-                                <CourseSidePanel schedules={sidePanelSchedules} />
+                                <CourseSidePanel  courseName={heroData.courseName} />
                             </div>
                         </div>
                     </div>

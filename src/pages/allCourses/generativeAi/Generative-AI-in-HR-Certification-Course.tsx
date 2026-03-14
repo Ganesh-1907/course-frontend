@@ -412,20 +412,7 @@ const GenerativeAIinHRCertificationCourse = () => {
     { title: "Wide Range of Courses", description: "Access to multiple AI and HR certifications." }
   ];
 
-  const sidePanelSchedules = [
-    {
-      courseCode: 'GAI-HR',
-      courseName: 'Generative AI in HR Certification Course',
-      dateRange: 'Oct 05 - Oct 06, 2026',
-      timeRange: '08:30 AM - 04:30 PM IST',
-      trainerName: 'Expert HR Leader',
-      trainerImage:
-        'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=100',
-      originalPrice: 'INR 38,000',
-      discountedPrice: 'INR 26,600',
-      discountPercentage: '30',
-    },
-  ];
+  
 
   const certificateBenefits = [
     'Professional Certificate from Viovn',
@@ -761,7 +748,7 @@ const GenerativeAIinHRCertificationCourse = () => {
             {/* Right Side Panel */}
             <div className="relative w-full lg:w-[340px] xl:w-[360px] lg:justify-self-end">
               <div className="sticky top-24">
-                <CourseSidePanel schedules={sidePanelSchedules} />
+                <CourseSidePanel  courseName={heroData.courseName} />
               </div>
             </div>
           </div>

@@ -422,20 +422,7 @@ const MicrosoftAzureFundamentalsAZCertificationTraining = () => {
     { "title": "Wide Range of Courses", "description": "Access multiple Microsoft certifications." }
   ];
 
-  const sidePanelSchedules = [
-    {
-      courseCode: 'AZ-900',
-      courseName: 'Microsoft Azure Fundamentals Certification Training',
-      dateRange: 'May 05 - May 06, 2026',
-      timeRange: '09:00 AM - 05:00 PM IST',
-      trainerName: 'Azure Expert',
-      trainerImage:
-        'https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=100',
-      originalPrice: 'INR 15,000',
-      discountedPrice: 'INR 10,000',
-      discountPercentage: '33',
-    },
-  ];
+  
 
   const certificateBenefits = [
     'Digital Badge for LinkedIn & PDF Copy',
@@ -752,7 +739,7 @@ const MicrosoftAzureFundamentalsAZCertificationTraining = () => {
             {/* Right Side Panel */}
             <div className="relative w-full lg:w-[340px] xl:w-[360px] lg:justify-self-end">
               <div className="sticky top-24">
-                <CourseSidePanel schedules={sidePanelSchedules} />
+                <CourseSidePanel  courseName={heroData.courseName} />
               </div>
             </div>
           </div>

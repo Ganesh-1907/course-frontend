@@ -401,20 +401,7 @@ const AWSSolutionsArchitectProfessionalCertificationTraining = () => {
     { "title": "Wide Course Portfolio", "description": "Access additional AWS and DevOps certifications." }
   ];
 
-  const sidePanelSchedules = [
-    {
-      courseCode: 'SAA-C03',
-      courseName: 'AWS Certified Solutions Architect – Associate Training',
-      dateRange: 'Mar 28 - Mar 30, 2026',
-      timeRange: '09:30 AM - 05:30 PM IST',
-      trainerName: 'AWS Architect',
-      trainerImage:
-        'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=100',
-      originalPrice: 'INR 45,000',
-      discountedPrice: 'INR 38,000',
-      discountPercentage: '15',
-    },
-  ];
+  
 
   const certificateBenefits = [
     'Official AWS Certified Solutions Architect Badge',
@@ -749,7 +736,7 @@ const AWSSolutionsArchitectProfessionalCertificationTraining = () => {
             {/* Right Side Panel */}
             <div className="relative w-full lg:w-[340px] xl:w-[360px] lg:justify-self-end">
               <div className="sticky top-24">
-                <CourseSidePanel schedules={sidePanelSchedules} />
+                <CourseSidePanel  courseName={heroData.courseName} />
               </div>
             </div>
           </div>

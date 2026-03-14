@@ -381,20 +381,7 @@ const SafePracticeConsultantSPCCertificationTraining = () => {
     { "title": "Globally Recognized Credential", "description": "Earn one of the most prestigious SAFe® certifications." },
     { "title": "Career Acceleration", "description": "Unlock enterprise Agile leadership roles worldwide." }
   ];
-  const sidePanelSchedules = [
-    {
-      courseCode: 'SPC',
-      courseName: 'SAFe® 6.0 Practice Consultant (SPC) Certification Training',
-      dateRange: 'Feb 28 - Mar 03, 2026',
-      timeRange: '08:30 AM - 04:30 PM IST',
-      trainerName: 'Expert SPCT',
-      trainerImage:
-        'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=100',
-      originalPrice: 'INR 1,20,000',
-      discountedPrice: 'INR 95,000',
-      discountPercentage: '20',
-    },
-  ];
+  
 
   const certificateBenefits = [
     'Digital Badge for LinkedIn & PDF Copy',
@@ -723,7 +710,7 @@ const SafePracticeConsultantSPCCertificationTraining = () => {
             {/* Right Side Panel */}
             <div className="relative w-full lg:w-[340px] xl:w-[360px] lg:justify-self-end">
               <div className="sticky top-24">
-                <CourseSidePanel schedules={sidePanelSchedules} />
+                <CourseSidePanel  courseName={heroData.courseName} />
               </div>
             </div>
           </div>

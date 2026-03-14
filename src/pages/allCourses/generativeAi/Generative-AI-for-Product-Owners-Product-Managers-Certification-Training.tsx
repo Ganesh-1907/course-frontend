@@ -433,20 +433,7 @@ const GenerativeAIForProductOwnersProductManagersCertificationTraining = () => {
     { title: "Wide Range of Courses", description: "Access multiple AI and product management certifications." }
   ];
 
-  const sidePanelSchedules = [
-    {
-      courseCode: 'GAI-PO-PM',
-      courseName: 'Generative AI for Product Owners/Product Managers Certification Training',
-      dateRange: 'May 15 - May 16, 2026',
-      timeRange: '08:30 AM - 04:30 PM IST',
-      trainerName: 'Expert AI & Product Trainer',
-      trainerImage:
-        'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=100',
-      originalPrice: 'INR 48,000',
-      discountedPrice: 'INR 35,000',
-      discountPercentage: '27',
-    },
-  ];
+  
 
   const certificateBenefits = [
     'Digital Badge for LinkedIn & PDF Copy',
@@ -768,7 +755,7 @@ const GenerativeAIForProductOwnersProductManagersCertificationTraining = () => {
             {/* Right Side Panel */}
             <div className="relative w-full lg:w-[340px] xl:w-[360px] lg:justify-self-end">
               <div className="sticky top-24">
-                <CourseSidePanel schedules={sidePanelSchedules} />
+                <CourseSidePanel  courseName={heroData.courseName} />
               </div>
             </div>
           </div>

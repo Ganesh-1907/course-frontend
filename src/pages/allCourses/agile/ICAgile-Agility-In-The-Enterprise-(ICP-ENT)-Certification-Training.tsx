@@ -374,19 +374,7 @@ const ICAgileAgilityInTheEnterpriseICPentCertificationTraining = () => {
         }
     ];
 
-    const sidePanelSchedules = [
-        {
-            courseCode: "ICP-ENT",
-            courseName: "ICAgile Agility in the Enterprise (ICP-ENT) Certification Training",
-            dateRange: "Apr 05 - Apr 07, 2026",
-            timeRange: "09:00 AM - 05:00 PM IST",
-            trainerName: "Ram Srinivasan",
-            trainerImage: "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=100",
-            originalPrice: "INR 65,000",
-            discountedPrice: "INR 48,500",
-            discountPercentage: "25",
-        },
-    ];
+    
 
     const certificateBenefits = [
         "Globally recognized ICAgile (ICP-ENT) Credential",
@@ -695,7 +683,7 @@ const ICAgileAgilityInTheEnterpriseICPentCertificationTraining = () => {
                         {/* Right Side Panel */}
                         <div className="relative w-full lg:w-[340px] xl:w-[360px] lg:justify-self-end">
                             <div className="sticky top-24">
-                                <CourseSidePanel schedules={sidePanelSchedules} />
+                                <CourseSidePanel  courseName={heroData.courseName} />
                             </div>
                         </div>
                     </div>

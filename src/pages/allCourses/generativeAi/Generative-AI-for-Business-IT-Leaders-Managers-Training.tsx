@@ -280,19 +280,7 @@ const GenerativeAIForBusinessITLeadersManagersTraining = () => {
     { title: "Executive Network", description: "Connect with other leaders driving AI change." }
   ];
 
-  const sidePanelSchedules = [
-    {
-      courseCode: 'GAI-LEAD',
-      courseName: 'Gen AI for Business & IT Leaders',
-      dateRange: 'Sep 10 - Sep 11, 2026',
-      timeRange: '09:00 AM - 05:00 PM IST',
-      trainerName: 'Expert AI Leader',
-      trainerImage: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=100',
-      originalPrice: 'INR 55,000',
-      discountedPrice: 'INR 45,000',
-      discountPercentage: '18',
-    },
-  ];
+  
 
   const certificateBenefits = [
     'Executive AI Leadership Digital Badge',
@@ -626,7 +614,7 @@ const GenerativeAIForBusinessITLeadersManagersTraining = () => {
             {/* Right Side Panel */}
             <div className="relative w-full lg:w-[340px] xl:w-[360px] lg:justify-self-end">
               <div className="sticky top-24">
-                <CourseSidePanel schedules={sidePanelSchedules} />
+                <CourseSidePanel  courseName={heroData.courseName} />
               </div>
             </div>
           </div>

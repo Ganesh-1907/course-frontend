@@ -456,20 +456,7 @@ const DataScienceWithPythonTraining = () => {
     { "title": "Interactive Training", "description": "Hands-on labs and real-world scenarios." },
     { "title": "Wide Course Portfolio", "description": "Multiple globally recognized certifications." }
   ];
-  const sidePanelSchedules = [
-    {
-      courseCode: 'PDS',
-      courseName: 'Data Science with Python Training',
-      dateRange: 'Mar 25 - Mar 30, 2026',
-      timeRange: '08:00 PM - 11:00 PM IST',
-      trainerName: 'Data Science Expert',
-      trainerImage:
-        'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=100',
-      originalPrice: 'INR 35,000',
-      discountedPrice: 'INR 28,000',
-      discountPercentage: '20',
-    },
-  ];
+  
 
   const certificateBenefits = [
     'Digital Badge for LinkedIn & PDF Copy',
@@ -781,7 +768,7 @@ const DataScienceWithPythonTraining = () => {
             {/* Right Side Panel */}
             <div className="relative w-full lg:w-[340px] xl:w-[360px] lg:justify-self-end">
               <div className="sticky top-24">
-                <CourseSidePanel schedules={sidePanelSchedules} />
+                <CourseSidePanel  courseName={heroData.courseName} />
               </div>
             </div>
           </div>

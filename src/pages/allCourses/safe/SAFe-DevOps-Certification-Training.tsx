@@ -422,20 +422,7 @@ const SAFEDevOpsCertificationTraining = () => {
     }
   ];
 
-  const sidePanelSchedules = [
-    {
-      courseCode: 'SDP',
-      courseName: 'SAFe® 6.0 DevOps (SDP) Certification Training',
-      dateRange: 'Mar 25 - Mar 26, 2026',
-      timeRange: '09:00 AM - 05:00 PM EST',
-      trainerName: 'Expert SAFe Consultant',
-      trainerImage:
-        'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=100',
-      originalPrice: 'INR 45,000',
-      discountedPrice: 'INR 39,500',
-      discountPercentage: '12',
-    },
-  ];
+  
 
   const certificateBenefits = [
     'Digital Badge for LinkedIn & PDF Copy',
@@ -748,7 +735,7 @@ const SAFEDevOpsCertificationTraining = () => {
             {/* Right Side Panel */}
             <div className="relative w-full lg:w-[340px] xl:w-[360px] lg:justify-self-end">
               <div className="sticky top-24">
-                <CourseSidePanel schedules={sidePanelSchedules} />
+                <CourseSidePanel  courseName={heroData.courseName} />
               </div>
             </div>
           </div>

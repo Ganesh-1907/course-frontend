@@ -380,20 +380,7 @@ const DockerAndKubernetesTraining = () => {
     { title: "Wide Course Portfolio", description: "Access additional DevOps and Cloud certifications." }
   ];
 
-  const sidePanelSchedules = [
-    {
-      courseCode: 'DKT',
-      courseName: 'Docker and Kubernetes Training',
-      dateRange: 'Feb 28 - Mar 01, 2026',
-      timeRange: '08:30 AM - 04:30 PM IST',
-      trainerName: 'Naveen Nanjundappa',
-      trainerImage:
-        'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=100',
-      originalPrice: 'INR 49,080',
-      discountedPrice: 'INR 34,356',
-      discountPercentage: '30',
-    },
-  ];
+  
 
   const certificateBenefits = [
     'Digital Badge for LinkedIn & PDF Copy',
@@ -683,7 +670,7 @@ const DockerAndKubernetesTraining = () => {
             {/* Right Side Panel */}
             <div className="relative w-full lg:w-[340px] xl:w-[360px] lg:justify-self-end">
               <div className="sticky top-24">
-                <CourseSidePanel schedules={sidePanelSchedules} />
+                <CourseSidePanel  courseName={heroData.courseName} />
               </div>
             </div>
           </div>

@@ -389,20 +389,7 @@ const AgileHRexplorerCourse = () => {
     { "title": "Comprehensive Agile Portfolio", "description": "Access to globally recognized Agile and SAFe certifications." }
   ];
 
-  const sidePanelSchedules = [
-    {
-      courseCode: 'Agile-HR',
-      courseName: 'Agile HR Explorer (AHRE) Training and Certification',
-      dateRange: 'Apr 20 - Apr 20, 2026',
-      timeRange: '10:00 AM - 04:00 PM EST',
-      trainerName: 'Expert Agile HR Trainer',
-      trainerImage:
-        'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=100',
-      originalPrice: 'INR 25,000',
-      discountedPrice: 'INR 21,250',
-      discountPercentage: '15',
-    },
-  ];
+  
 
   const certificateBenefits = [
     'Digital Badge for LinkedIn & PDF Copy',
@@ -728,7 +715,7 @@ const AgileHRexplorerCourse = () => {
             {/* Right Side Panel */}
             <div className="relative w-full lg:w-[340px] xl:w-[360px] lg:justify-self-end">
               <div className="sticky top-24">
-                <CourseSidePanel schedules={sidePanelSchedules} />
+                <CourseSidePanel  courseName={heroData.courseName} />
               </div>
             </div>
           </div>

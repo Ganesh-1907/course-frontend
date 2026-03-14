@@ -221,19 +221,7 @@ const AgileProductOwnerTraining = () => {
         { title: "Global Recognition", description: "Certifications are recognized by top industries worldwide." }
     ];
 
-    const sidePanelSchedules = [
-        {
-            courseCode: 'APO',
-            courseName: 'Agile Product Owner Training',
-            dateRange: 'Upcoming Sessions',
-            timeRange: 'Flexible Time',
-            trainerName: 'Expert Trainer',
-            trainerImage: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=100',
-            originalPrice: '$799',
-            discountedPrice: '$599',
-            discountPercentage: '25',
-        },
-    ];
+    
 
     const certificateBenefits = [
         'Globally Recognized Certification',
@@ -509,7 +497,7 @@ const AgileProductOwnerTraining = () => {
                         </div>
                         <div className="relative w-full lg:w-[340px] xl:w-[360px] lg:justify-self-end">
                             <div className="sticky top-24">
-                                <CourseSidePanel schedules={sidePanelSchedules} />
+                                <CourseSidePanel  courseName={heroData.courseName} />
                             </div>
                         </div>
                     </div>
