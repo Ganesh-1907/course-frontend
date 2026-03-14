@@ -203,19 +203,7 @@ const ICAgileAIForProductStrategyMicroCredentialCourse = () => {
         badgeImage: "/csm-badge.png"
     };
 
-    const sidePanelSchedules = [
-        {
-            courseCode: 'ICA-AI-PS',
-            courseName: heroData.courseName,
-            dateRange: 'Coming Soon',
-            timeRange: 'Flexible',
-            trainerName: 'AI Strategy Specialist',
-            trainerImage: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=100',
-            originalPrice: 'INR 16,999',
-            discountedPrice: 'INR 11,999',
-            discountPercentage: '29',
-        },
-    ];
+    
 
     const overviewContent = {
         title: "Course Overview",
@@ -373,7 +361,7 @@ const ICAgileAIForProductStrategyMicroCredentialCourse = () => {
                         </div>
                         <div className="relative">
                             <div className="sticky top-24">
-                                <CourseSidePanel schedules={sidePanelSchedules} />
+                                <CourseSidePanel  courseName={heroData.courseName} />
                             </div>
                         </div>
                     </div>

@@ -345,19 +345,7 @@ const DesignThinkingTraining = () => {
         }
     ];
 
-    const sidePanelSchedules = [
-        {
-            courseCode: 'DT',
-            courseName: 'Design Thinking Training',
-            dateRange: 'Coming Soon',
-            timeRange: '21 Hours Live',
-            trainerName: 'Expert Trainer',
-            trainerImage: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=100',
-            originalPrice: 'INR 15,999',
-            discountedPrice: 'INR 10,999',
-            discountPercentage: '31',
-        },
-    ];
+    
 
     const certificateBenefits = [
         'Globally recognized achievement certificate',
@@ -646,7 +634,7 @@ const DesignThinkingTraining = () => {
                         {/* Right Side Panel */}
                         <div className="relative w-full lg:w-[340px] xl:w-[360px] lg:justify-self-end">
                             <div className="sticky top-24">
-                                <CourseSidePanel schedules={sidePanelSchedules} />
+                                <CourseSidePanel  courseName={heroData.courseName} />
                             </div>
                         </div>
                     </div>

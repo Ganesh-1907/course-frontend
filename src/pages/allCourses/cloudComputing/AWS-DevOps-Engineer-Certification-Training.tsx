@@ -402,20 +402,7 @@ const AWSDevOpsEngineerCertificationTraining = () => {
     { "title": "Wide Course Portfolio", "description": "Access additional AWS and DevOps certifications." }
   ];
 
-  const sidePanelSchedules = [
-    {
-      courseCode: 'DOP-C02',
-      courseName: 'AWS Certified DevOps Engineer – Professional Training',
-      dateRange: 'Mar 25 - Mar 27, 2026',
-      timeRange: '09:00 AM - 05:00 PM IST',
-      trainerName: 'AWS Professional',
-      trainerImage:
-        'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=100',
-      originalPrice: 'INR 55,000',
-      discountedPrice: 'INR 48,000',
-      discountPercentage: '12',
-    },
-  ];
+  
 
   const certificateBenefits = [
     'Official AWS Certified DevOps Engineer Badge',
@@ -751,7 +738,7 @@ const AWSDevOpsEngineerCertificationTraining = () => {
             {/* Right Side Panel */}
             <div className="relative w-full lg:w-[340px] xl:w-[360px] lg:justify-self-end">
               <div className="sticky top-24">
-                <CourseSidePanel schedules={sidePanelSchedules} />
+                <CourseSidePanel  courseName={heroData.courseName} />
               </div>
             </div>
           </div>

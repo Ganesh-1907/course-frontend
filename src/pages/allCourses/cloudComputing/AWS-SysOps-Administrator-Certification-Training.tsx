@@ -400,20 +400,7 @@ const AWSSysOpsAdministratorCertificationTraining = () => {
     { "title": "Wide Course Portfolio", "description": "Access additional AWS and DevOps certifications." }
   ];
 
-  const sidePanelSchedules = [
-    {
-      courseCode: 'SOA-C02',
-      courseName: 'AWS Certified SysOps Administrator – Associate Training',
-      dateRange: 'Mar 21 - Mar 23, 2026',
-      timeRange: '09:30 AM - 05:30 PM IST',
-      trainerName: 'AWS certified Expert',
-      trainerImage:
-        'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=100',
-      originalPrice: 'INR 45,000',
-      discountedPrice: 'INR 38,000',
-      discountPercentage: '15',
-    },
-  ];
+  
 
   const certificateBenefits = [
     'Official AWS Certified SysOps Administrator Badge',
@@ -749,7 +736,7 @@ const AWSSysOpsAdministratorCertificationTraining = () => {
             {/* Right Side Panel */}
             <div className="relative w-full lg:w-[340px] xl:w-[360px] lg:justify-self-end">
               <div className="sticky top-24">
-                <CourseSidePanel schedules={sidePanelSchedules} />
+                <CourseSidePanel  courseName={heroData.courseName} />
               </div>
             </div>
           </div>

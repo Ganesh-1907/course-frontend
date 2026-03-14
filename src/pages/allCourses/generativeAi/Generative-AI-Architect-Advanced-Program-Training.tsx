@@ -421,20 +421,7 @@ const GenerativeAIArchitectAdvancedProgramTraining = () => {
     { title: "Wide Course Portfolio", description: "Access to diverse technology and leadership certifications." }
   ];
 
-  const sidePanelSchedules = [
-    {
-      courseCode: 'GAI-ARCH',
-      courseName: 'Generative AI Architect - Advanced Program Training',
-      dateRange: 'Jun 20 - Jun 21, 2026',
-      timeRange: '08:30 AM - 04:30 PM IST',
-      trainerName: 'Expert AI Architect',
-      trainerImage:
-        'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=100',
-      originalPrice: 'INR 60,000',
-      discountedPrice: 'INR 42,000',
-      discountPercentage: '30',
-    },
-  ];
+  
 
   const certificateBenefits = [
     'Advanced Digital Badge for Professional Profiles',
@@ -769,7 +756,7 @@ const GenerativeAIArchitectAdvancedProgramTraining = () => {
             {/* Right Side Panel */}
             <div className="relative w-full lg:w-[340px] xl:w-[360px] lg:justify-self-end">
               <div className="sticky top-24">
-                <CourseSidePanel schedules={sidePanelSchedules} />
+                <CourseSidePanel  courseName={heroData.courseName} />
               </div>
             </div>
           </div>

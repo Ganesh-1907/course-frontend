@@ -389,19 +389,7 @@ const ICAgileAIforCustomerInsightsMicroCredentialTraining = () => {
         }
     ];
 
-    const sidePanelSchedules = [
-        {
-            courseCode: "AI-CI",
-            courseName: "ICAgile AI for Customer Insights",
-            dateRange: "June 20 - June 20, 2026",
-            timeRange: "05:00 PM - 08:00 PM IST",
-            trainerName: "ICAgile Expert",
-            trainerImage: "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=100",
-            originalPrice: "INR 28,000",
-            discountedPrice: "INR 19,500",
-            discountPercentage: "30",
-        },
-    ];
+    
 
     const certificateBenefits = [
         "Globally recognized ICAgile Micro-credential",
@@ -707,7 +695,7 @@ const ICAgileAIforCustomerInsightsMicroCredentialTraining = () => {
                         {/* Right Side Panel */}
                         <div className="relative w-full lg:w-[340px] xl:w-[360px] lg:justify-self-end">
                             <div className="sticky top-24">
-                                <CourseSidePanel schedules={sidePanelSchedules} />
+                                <CourseSidePanel  courseName={heroData.courseName} />
                             </div>
                         </div>
                     </div>

@@ -329,19 +329,7 @@ const DisciplinedAgileFoundationsDAFTraining = () => {
         { "title": "Proven Track Record", "description": "A reputable training provider with impressive experience in helping professional and business organizations improve their abilities and meet their career ambitions." }
     ];
 
-    const sidePanelSchedules = [
-        {
-            courseCode: 'DAF',
-            courseName: 'DA Foundations Training',
-            dateRange: 'Jul 05 - Jul 05, 2026',
-            timeRange: '09:00 AM - 05:00 PM IST',
-            trainerName: 'Expert DA Trainer',
-            trainerImage: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=100',
-            originalPrice: 'INR 25,000',
-            discountedPrice: 'INR 20,000',
-            discountPercentage: '20',
-        },
-    ];
+    
 
     const certificateBenefits = [
         'PMI Authorized DAF Certificate',
@@ -581,7 +569,7 @@ const DisciplinedAgileFoundationsDAFTraining = () => {
 
                         <div className="relative w-full lg:w-[340px] xl:w-[360px] lg:justify-self-end">
                             <div className="sticky top-24">
-                                <CourseSidePanel schedules={sidePanelSchedules} />
+                                <CourseSidePanel  courseName={heroData.courseName} />
                             </div>
                         </div>
                     </div>

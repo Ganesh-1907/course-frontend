@@ -373,20 +373,7 @@ const ReactNativeTraining = () => {
     { "title": "Wide Range of Courses", "description": "Access multiple globally recognized certifications." }
   ];
 
-  const sidePanelSchedules = [
-    {
-      courseCode: 'RNT',
-      courseName: 'React Native Training',
-      dateRange: 'Mar 25 - Mar 27, 2026',
-      timeRange: '08:00 PM - 11:00 PM IST',
-      trainerName: 'Mobile Development Expert',
-      trainerImage:
-        'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=100',
-      originalPrice: 'INR 42,000',
-      discountedPrice: 'INR 33,600',
-      discountPercentage: '20',
-    },
-  ];
+  
 
   const certificateBenefits = [
     'Digital Badge for LinkedIn & PDF Copy',
@@ -684,7 +671,7 @@ const ReactNativeTraining = () => {
             {/* Right Side Panel */}
             <div className="relative w-full lg:w-[340px] xl:w-[360px] lg:justify-self-end">
               <div className="sticky top-24">
-                <CourseSidePanel schedules={sidePanelSchedules} />
+                <CourseSidePanel  courseName={heroData.courseName} />
               </div>
             </div>
           </div>

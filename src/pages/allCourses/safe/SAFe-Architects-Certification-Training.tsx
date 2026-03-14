@@ -392,20 +392,7 @@ const SafeArchitectsCertificationTraining = () => {
     { "title": "Interactive Sessions", "description": "Hands-on exercises and real-world case studies." },
     { "title": "Wide Course Portfolio", "description": "Comprehensive Agile, Scrum, SAFe®, and DevOps programs." }
   ];
-  const sidePanelSchedules = [
-    {
-      courseCode: 'ARCH',
-      courseName: 'SAFe® 6.0 for Architects (ARCH) Certification Training',
-      dateRange: 'Mar 15 - Mar 17, 2026',
-      timeRange: '09:00 AM - 05:00 PM IST',
-      trainerName: 'Expert SPCT',
-      trainerImage:
-        'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=100',
-      originalPrice: 'INR 65,000',
-      discountedPrice: 'INR 49,999',
-      discountPercentage: '23',
-    },
-  ];
+  
 
   const certificateBenefits = [
     'Digital Badge for LinkedIn & PDF Copy',
@@ -734,7 +721,7 @@ const SafeArchitectsCertificationTraining = () => {
             {/* Right Side Panel */}
             <div className="relative w-full lg:w-[340px] xl:w-[360px] lg:justify-self-end">
               <div className="sticky top-24">
-                <CourseSidePanel schedules={sidePanelSchedules} />
+                <CourseSidePanel  courseName={heroData.courseName} />
               </div>
             </div>
           </div>

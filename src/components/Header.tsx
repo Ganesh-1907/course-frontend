@@ -172,8 +172,13 @@ const Header: React.FC<HeaderProps> = ({ hidden = false }) => {
                   <DropdownMenuContent className="w-80 max-h-[400px] overflow-y-auto p-2 bg-white rounded-xl shadow-2xl border-border/50">
                     <div className="grid gap-1">
                       {elearningCourses.map((course, idx) => (
-                        <DropdownMenuItem key={idx} className="px-3 py-2 text-[13px] font-medium hover:bg-slate-50 cursor-pointer rounded-lg">
-                          {course}
+                        <DropdownMenuItem key={idx} className="p-0">
+                          <Link 
+                            to={course.path}
+                            className="w-full px-3 py-2 text-[13px] font-medium hover:bg-slate-50 cursor-pointer rounded-lg block"
+                          >
+                            {course.label}
+                          </Link>
                         </DropdownMenuItem>
                       ))}
                     </div>

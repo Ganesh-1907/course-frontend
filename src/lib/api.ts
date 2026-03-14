@@ -1,4 +1,4 @@
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5007/api';
 const APP_TOKEN = import.meta.env.VITE_APP_TOKEN || 'CMS-V3-SECURE-ACCESS';
 
 interface RequestOptions extends RequestInit {
@@ -7,11 +7,11 @@ interface RequestOptions extends RequestInit {
 
 export const apiCall = async (endpoint: string, options: RequestOptions = {}) => {
   const token = localStorage.getItem('token');
-  
+
   const headers = new Headers(options.headers);
   headers.set('Content-Type', 'application/json');
   headers.set('x-cms-app-token', APP_TOKEN);
-  
+
   if (token) {
     headers.set('Authorization', `Bearer ${token}`);
   }

@@ -330,19 +330,7 @@ const PortfolioManagementProfessionalPfMPCertificationTraining = () => {
         { "title": "Comprehensive PFMP Mock Exams", "description": "Practice with 170-question mock exams designed to simulate the real PMI PfMP environment." }
     ];
 
-    const sidePanelSchedules = [
-        {
-            courseCode: 'PFMP',
-            courseName: 'PfMP Certification Training',
-            dateRange: 'Jun 20 - Jun 23, 2026',
-            timeRange: '09:00 AM - 05:00 PM IST',
-            trainerName: 'Expert PfMP Trainer',
-            trainerImage: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=100',
-            originalPrice: 'INR 95,000',
-            discountedPrice: 'INR 85,000',
-            discountPercentage: '10',
-        },
-    ];
+    
 
     const certificateBenefits = [
         'Elite PMI PfMP Digital Badge',
@@ -585,7 +573,7 @@ const PortfolioManagementProfessionalPfMPCertificationTraining = () => {
 
                         <div className="relative w-full lg:w-[340px] xl:w-[360px] lg:justify-self-end">
                             <div className="sticky top-24">
-                                <CourseSidePanel schedules={sidePanelSchedules} />
+                                <CourseSidePanel  courseName={heroData.courseName} />
                             </div>
                         </div>
                     </div>

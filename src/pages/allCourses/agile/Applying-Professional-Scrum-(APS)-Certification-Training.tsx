@@ -226,19 +226,7 @@ const ApplyingProfessionalScrumCertificationTraining = () => {
         { title: "Post-Training Support", description: "Continuous guidance until you pass your assessment." }
     ];
 
-    const sidePanelSchedules = [
-        {
-            courseCode: 'APS',
-            courseName: 'Applying Professional Scrum Training',
-            dateRange: 'Weekly Batches',
-            timeRange: '9 AM - 5 PM',
-            trainerName: 'PST expert',
-            trainerImage: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=100',
-            originalPrice: '$899',
-            discountedPrice: '$699',
-            discountPercentage: '22',
-        },
-    ];
+    
 
     const certificateBenefits = [
         'Globally Recognized PSM I access',
@@ -514,7 +502,7 @@ const ApplyingProfessionalScrumCertificationTraining = () => {
                         </div>
                         <div className="relative w-full lg:w-[340px] xl:w-[360px] lg:justify-self-end">
                             <div className="sticky top-24">
-                                <CourseSidePanel schedules={sidePanelSchedules} />
+                                <CourseSidePanel  courseName={heroData.courseName} />
                             </div>
                         </div>
                     </div>

@@ -423,20 +423,7 @@ const PromptEngineeringCourse = () => {
     { title: "Wide Range of AI Programs", description: "Access advanced AI and automation courses." }
   ];
 
-  const sidePanelSchedules = [
-    {
-      courseCode: 'PE-01',
-      courseName: 'Prompt Engineering Course',
-      dateRange: 'May 15 - May 16, 2026',
-      timeRange: '08:30 AM - 04:30 PM IST',
-      trainerName: 'Expert AI Trainer',
-      trainerImage:
-        'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=100',
-      originalPrice: 'INR 45,000',
-      discountedPrice: 'INR 32,000',
-      discountPercentage: '30',
-    },
-  ];
+  
 
   const certificateBenefits = [
     'Digital Badge for LinkedIn & PDF Copy',
@@ -770,7 +757,7 @@ const PromptEngineeringCourse = () => {
             {/* Right Side Panel */}
             <div className="relative w-full lg:w-[340px] xl:w-[360px] lg:justify-self-end">
               <div className="sticky top-24">
-                <CourseSidePanel schedules={sidePanelSchedules} />
+                <CourseSidePanel  courseName={heroData.courseName} />
               </div>
             </div>
           </div>

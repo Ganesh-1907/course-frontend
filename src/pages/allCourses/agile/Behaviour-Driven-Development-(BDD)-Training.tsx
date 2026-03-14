@@ -468,20 +468,7 @@ const BehaviourDrivenDevelopmentBDDTraining = () => {
       "description": "Access to multiple Agile and DevOps certifications."
     }
   ];
-  const sidePanelSchedules = [
-    {
-      courseCode: 'BDD',
-      courseName: 'Behaviour Driven Development (BDD) Training',
-      dateRange: 'May 12 - May 13, 2026',
-      timeRange: '09:30 AM - 05:30 PM IST',
-      trainerName: 'BDD Expert',
-      trainerImage:
-        'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=100',
-      originalPrice: 'INR 28,000',
-      discountedPrice: 'INR 23,800',
-      discountPercentage: '15',
-    },
-  ];
+  
 
   const certificateBenefits = [
     'Digital Badge for LinkedIn & PDF Copy',
@@ -815,7 +802,7 @@ const BehaviourDrivenDevelopmentBDDTraining = () => {
             {/* Right Side Panel */}
             <div className="relative w-full lg:w-[340px] xl:w-[360px] lg:justify-self-end">
               <div className="sticky top-24">
-                <CourseSidePanel schedules={sidePanelSchedules} />
+                <CourseSidePanel  courseName={heroData.courseName} />
               </div>
             </div>
           </div>

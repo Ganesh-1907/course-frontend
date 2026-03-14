@@ -353,19 +353,7 @@ const AIForScrumMastersMicroCredentialCourse = () => {
         badgeImage: "/csm-badge.png"
     };
 
-    const sidePanelSchedules = [
-        {
-            courseCode: 'AI-SM',
-            courseName: heroData.courseName,
-            dateRange: 'Coming Soon',
-            timeRange: 'Flexible',
-            trainerName: 'Senior AI Specialist',
-            trainerImage: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=100',
-            originalPrice: 'INR 14,999',
-            discountedPrice: 'INR 9,999',
-            discountPercentage: '33',
-        },
-    ];
+    
 
     const overviewContent = {
         title: "Course Overview",
@@ -467,7 +455,7 @@ const AIForScrumMastersMicroCredentialCourse = () => {
                         </div>
                         <div className="relative">
                             <div className="sticky top-24">
-                                <CourseSidePanel schedules={sidePanelSchedules} />
+                                <CourseSidePanel  courseName={heroData.courseName} />
                             </div>
                         </div>
                     </div>

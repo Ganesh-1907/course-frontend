@@ -1,33 +1,112 @@
 export const elearningCourses = [
-  "Certified Associate in Project Management (CAPM®) Online Course",
-  "Project Management Professional Prep (PMP) Online Course",
-  "Lean Six Sigma Green Belt Basics Online Course",
-  "Lean Six Sigma - Green Belt E-learning Course",
-  "Accredited Agile Scrum Master Online Course",
-  "Accredited Agile Roles - Product Owner Online Course",
-  "Lean Six Sigma - Yellow Belt E-learning Course",
-  "Simpliaxis PMP Orientation",
-  "Scrum Master Certified Course",
-  "Microsoft Azure Fundamentals (AZ-900) Course",
-  "Project Management Fundamentals Course",
-  "Microsoft Power BI Skills Course",
-  "PMI: Organizational Change Management Course",
-  "AWS Certified Cloud Practitioner CLF-C02 Course",
-  "Microsoft Azure Administrator (AZ-104) Course",
-  "Scrum Product Owner Training Course",
-  "Certified Information Security Manager (CISM) Course",
-  "AWS Certified Solutions Architect - Associate (SAA-CO3) Course",
-  "Scrum Developer Training Course",
-  "Microsoft Project 2013: Basic Training Course",
-  "Microsoft Project 2013: Advanced Training",
-  "Microsoft Azure Security Technologies AZ-500 Course",
-  "AWS Certified DevOps Engineer - Professional Course",
-  "Accredited DevOps Foundation Training Course",
-  "CISSP Certified Information Systems Security Professional (2024) Training",
-  "Certified Information Systems Auditor: CISA Training",
-  "Developing Solutions for Microsoft Azure (AZ-204) Course",
-  "Designing Microsoft Azure Infrastructure Solutions (AZ-305) Course",
-  "PMP Course #116"
+  { 
+    label: "Accredited Agile Scrum Master Online Course", 
+    path: "/elearning/accredited-agile-scrum-master-online-course" 
+  },
+  { 
+    label: "Certified Associate in Project Management (CAPM®) Online Course", 
+    path: "/elearning/capm-online-course" 
+  },
+  { 
+    label: "Project Management Professional Prep (PMP) Online Course", 
+    path: "/elearning/pmp-online-course" 
+  },
+  { 
+    label: "Simpliaxis PMP Orientation Course", 
+    path: "/elearning/pmp-orientation" 
+  },
+  { 
+    label: "Lean Six Sigma Green Belt Basics Online Course", 
+    path: "/elearning/lean-six-sigma-green-belt-basics" 
+  },
+  { 
+    label: "Lean Six Sigma - Green Belt E-learning Course", 
+    path: "/elearning/lean-six-sigma-green-belt" 
+  },
+  { 
+    label: "Accredited Agile Roles - Product Owner Online Course", 
+    path: "/elearning/product-owner-online-course" 
+  },
+  { 
+    label: "Lean Six Sigma - Yellow Belt E-learning Course", 
+    path: "/elearning/lean-six-sigma-yellow-belt" 
+  },
+  { 
+    label: "Scrum Master Certified Course", 
+    path: "/elearning/scrum-master-certified" 
+  },
+  { 
+    label: "Microsoft Azure Fundamentals (AZ-900) Course", 
+    path: "/elearning/az-900-course" 
+  },
+  { 
+    label: "Project Management Fundamentals Course", 
+    path: "/elearning/project-management-fundamentals-course" 
+  },
+  { 
+    label: "Microsoft Power BI Skills Course", 
+    path: "/elearning/microsoft-power-bi-skills-course" 
+  },
+  { 
+    label: "PMI Organizational Change Management Course", 
+    path: "/elearning/pmi-organizational-change-management-course" 
+  },
+  { 
+    label: "AWS Certified Cloud Practitioner Course", 
+    path: "/elearning/aws-certified-cloud-practitioner-course" 
+  },
+  { 
+    label: "Microsoft Azure Administrator (AZ-104) Course", 
+    path: "/elearning/microsoft-azure-administrator-az-104-course" 
+  },
+  { 
+    label: "Scrum Product Owner Training Course", 
+    path: "/elearning/scrum-product-owner-training-course" 
+  },
+  { 
+    label: "Certified Information Security Manager (CISM) Course", 
+    path: "/elearning/certified-information-security-manager-course" 
+  },
+  { 
+    label: "Scrum Developer Training Course", 
+    path: "/elearning/scrum-developer-training-course" 
+  },
+  { 
+    label: "Microsoft Project 2013: Basic Training Course", 
+    path: "/elearning/microsoft-project-2013-basic-course" 
+  },
+  { 
+    label: "Microsoft Project 2013: Advanced Training Course", 
+    path: "/elearning/microsoft-project-2013-advanced-course" 
+  },
+  { 
+    label: "Microsoft Azure Security Technologies AZ-500 Course", 
+    path: "/elearning/microsoft-azure-security-technologies-az-500-course" 
+  },
+  { 
+    label: "AWS Certified DevOps Engineer - Professional Course", 
+    path: "/elearning/aws-certified-devops-engineer-professional-course" 
+  },
+  { 
+    label: "Accredited DevOps Foundation Training Course", 
+    path: "/elearning/accredited-devops-foundation-course" 
+  },
+  { 
+    label: "CISSP Certified Information Systems Security Professional Training", 
+    path: "/elearning/cissp-training-course" 
+  },
+  { 
+    label: "Certified Information Systems Auditor: CISA Training", 
+    path: "/elearning/cisa-training-course" 
+  },
+  { 
+    label: "Developing Solutions for Microsoft Azure (AZ-204) Course", 
+    path: "/elearning/microsoft-azure-developer-az-204-course" 
+  },
+  { 
+    label: "Designing Microsoft Azure Infrastructure Solutions (AZ-305) Course", 
+    path: "/elearning/microsoft-azure-solutions-architect-az-305-course" 
+  }
 ];
 
 export const resourceLinks = [

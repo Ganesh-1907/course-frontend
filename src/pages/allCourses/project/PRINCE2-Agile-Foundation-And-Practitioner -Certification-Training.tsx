@@ -440,20 +440,7 @@ const PRINCE2AgileFoundationAndPractitionerCertificationTraining = () => {
         }
     ];
 
-    const sidePanelSchedules = [
-        {
-            courseCode: 'P2A-FP',
-            courseName: 'PRINCE2 Agile F&P',
-            dateRange: 'May 12 - May 15, 2026',
-            timeRange: '09:00 AM - 05:00 PM IST',
-            trainerName: 'Ram Srinivasan',
-            trainerImage:
-                'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=100',
-            originalPrice: 'INR 75,000',
-            discountedPrice: 'INR 65,000',
-            discountPercentage: '13',
-        },
-    ];
+    
 
     const certificateBenefits = [
         'Dual Certification Badge (F&P)',
@@ -701,7 +688,7 @@ const PRINCE2AgileFoundationAndPractitionerCertificationTraining = () => {
 
                         <div className="relative w-full lg:w-[340px] xl:w-[360px] lg:justify-self-end">
                             <div className="sticky top-24">
-                                <CourseSidePanel schedules={sidePanelSchedules} />
+                                <CourseSidePanel  courseName={heroData.courseName} />
                             </div>
                         </div>
                     </div>

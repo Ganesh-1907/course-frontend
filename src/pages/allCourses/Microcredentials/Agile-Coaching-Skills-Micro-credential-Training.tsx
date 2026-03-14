@@ -238,19 +238,7 @@ const AgileCoachingSkillsMicroCredentialTraining = () => {
         badgeImage: "/csm-badge.png"
     };
 
-    const sidePanelSchedules = [
-        {
-            courseCode: 'ACS-MC',
-            courseName: heroData.courseName,
-            dateRange: 'Coming Soon',
-            timeRange: 'Flexible',
-            trainerName: 'Certified Scrum Trainer®',
-            trainerImage: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=100',
-            originalPrice: 'INR 12,999',
-            discountedPrice: 'INR 8,499',
-            discountPercentage: '35',
-        },
-    ];
+    
 
     const overviewContent = {
         title: "Course Overview",
@@ -408,7 +396,7 @@ const AgileCoachingSkillsMicroCredentialTraining = () => {
                         </div>
                         <div className="relative">
                             <div className="sticky top-24">
-                                <CourseSidePanel schedules={sidePanelSchedules} />
+                                <CourseSidePanel  courseName={heroData.courseName} />
                             </div>
                         </div>
                     </div>

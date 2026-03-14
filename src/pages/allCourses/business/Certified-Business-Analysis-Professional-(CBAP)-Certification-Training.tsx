@@ -349,19 +349,7 @@ const CertifiedBusinessAnalysisProfessionalCBAPCertificationTraining = () => {
         }
     ];
 
-    const sidePanelSchedules = [
-        {
-            courseCode: 'CBAP',
-            courseName: 'CBAP Certification Training',
-            dateRange: 'Coming Soon',
-            timeRange: '35 Hours Live',
-            trainerName: 'Expert CBAP Trainer',
-            trainerImage: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=100',
-            originalPrice: 'INR 45,999',
-            discountedPrice: 'INR 28,999',
-            discountPercentage: '37',
-        },
-    ];
+    
 
     const certificateBenefits = [
         'Globally benchmarked CBAP credential from IIBA',
@@ -646,7 +634,7 @@ const CertifiedBusinessAnalysisProfessionalCBAPCertificationTraining = () => {
                         {/* Right Side Panel */}
                         <div className="relative w-full lg:w-[340px] xl:w-[360px] lg:justify-self-end">
                             <div className="sticky top-24">
-                                <CourseSidePanel schedules={sidePanelSchedules} />
+                                <CourseSidePanel  courseName={heroData.courseName} />
                             </div>
                         </div>
                     </div>

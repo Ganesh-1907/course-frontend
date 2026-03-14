@@ -135,19 +135,7 @@ const PlaceholderCourse = ({ courseName }: { courseName: string }) => {
         { "title": "Global Recognition", "description": "Every Course is recognized globally." }
     ];
 
-    const sidePanelSchedules = [
-        {
-            courseCode: 'COURSE',
-            courseName: courseName,
-            dateRange: 'Coming Soon',
-            timeRange: 'Flexible',
-            trainerName: 'Expert Trainer',
-            trainerImage: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=100',
-            originalPrice: 'INR 15,000',
-            discountedPrice: 'INR 10,000',
-            discountPercentage: '33',
-        },
-    ];
+    
 
     const heroData = {
         "courseName": courseName,
@@ -241,7 +229,7 @@ const PlaceholderCourse = ({ courseName }: { courseName: string }) => {
                         </div>
                         <div className="relative">
                             <div className="sticky top-24">
-                                <CourseSidePanel schedules={sidePanelSchedules} />
+                                <CourseSidePanel  courseName={heroData.courseName} />
                             </div>
                         </div>
                     </div>

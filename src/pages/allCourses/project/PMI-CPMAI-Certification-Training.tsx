@@ -295,19 +295,7 @@ const PMI_CPMAI_Certification_Training = () => {
         { "title": "Career Acceleration", "description": "Position yourself at the forefront of the AI revolution with a globally recognized credential." }
     ];
 
-    const sidePanelSchedules = [
-        {
-            courseCode: 'PMI-CPMAI',
-            courseName: 'PMI-CPMAI Training',
-            dateRange: 'Aug 12 - Aug 16, 2026',
-            timeRange: '09:00 AM - 05:00 PM IST',
-            trainerName: 'AI PM Expert',
-            trainerImage: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=100',
-            originalPrice: 'INR 45,000',
-            discountedPrice: 'INR 38,000',
-            discountPercentage: '15',
-        },
-    ];
+    
 
     const certificateBenefits = [
         'Globally Recognized AI Project Credential',
@@ -546,7 +534,7 @@ const PMI_CPMAI_Certification_Training = () => {
 
                         <div className="relative w-full lg:w-[340px] xl:w-[360px] lg:justify-self-end">
                             <div className="sticky top-24">
-                                <CourseSidePanel schedules={sidePanelSchedules} />
+                                <CourseSidePanel  courseName={heroData.courseName} />
                             </div>
                         </div>
                     </div>

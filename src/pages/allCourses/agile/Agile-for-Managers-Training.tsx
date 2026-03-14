@@ -433,20 +433,7 @@ const AgileForManagersTraining = () => {
         }
     ];
 
-    const sidePanelSchedules = [
-        {
-            courseCode: 'AMW',
-            courseName: 'Agile for Managers Training',
-            dateRange: 'Coming Soon',
-            timeRange: 'Flexible',
-            trainerName: 'Expert Trainer',
-            trainerImage:
-                'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=100',
-            originalPrice: 'INR 24,999',
-            discountedPrice: 'INR 14,999',
-            discountPercentage: '40',
-        },
-    ];
+    
 
     const certificateBenefits = [
         'Digital Badge for LinkedIn & PDF Copy',
@@ -754,7 +741,7 @@ const AgileForManagersTraining = () => {
                         {/* Right Side Panel */}
                         <div className="relative w-full lg:w-[340px] xl:w-[360px] lg:justify-self-end">
                             <div className="sticky top-24">
-                                <CourseSidePanel schedules={sidePanelSchedules} />
+                                <CourseSidePanel  courseName={heroData.courseName} />
                             </div>
                         </div>
                     </div>
