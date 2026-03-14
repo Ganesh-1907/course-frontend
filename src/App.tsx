@@ -12,6 +12,7 @@ import DynamicCategoryPage from "./pages/categories/DynamicCategoryPage";
 import SubCategoryPage from "./pages/SubCategoryPage";
 import DemoOne from "./pages/DemoOne";
 import NotFound from "./pages/NotFound";
+import Enroll from "./pages/Enroll";
 
 // ✨ BARREL EXPORT IMPORT - Import all agile courses from one place!
 import {
@@ -256,6 +257,7 @@ const App = () => (
           <Route path="/category/:categoryId" element={<DynamicCategoryPage />} />
           <Route path="/sub-category" element={<SubCategoryPage />} />
           <Route path="/demo-one" element={<DemoOne />} />
+          <Route path="/enroll" element={<Enroll />} />
 
           {/* ✨ AGILE COURSES */}
           <Route

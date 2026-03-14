@@ -118,7 +118,7 @@ const Header: React.FC<HeaderProps> = ({ hidden = false }) => {
                 <div className="relative flex items-center justify-center h-12 md:h-16 transition-all mr-2">
                   <img 
                     src="/image.png" 
-                    alt="Viovn Logo" 
+                    alt="Vivion Logo" 
                     className="h-full w-auto object-contain"
                   />
                 </div>
@@ -364,7 +364,7 @@ const Header: React.FC<HeaderProps> = ({ hidden = false }) => {
       <div className="md:hidden bg-white border-b border-border py-4 px-4 flex items-center justify-between">
         <Link to="/" className="flex items-center">
           <img src="/image.png" alt="Viovn Logo" className="h-10 w-auto object-contain mr-2" />
-          <div className="logo-text text-xl font-black">viovn</div>
+          <div className="logo-text text-xl font-black">vivion</div>
         </Link>
         <div className="flex items-center gap-4">
           <div className="relative cursor-pointer" onClick={handleCartClick}>
