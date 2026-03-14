@@ -8,6 +8,7 @@ export interface CartItem {
   price: number;
   discountedPrice?: number;
   image?: string;
+  plan?: 'Basic' | 'Premium';
 }
 
 /**
@@ -22,6 +23,7 @@ export interface AddToCartPayload {
   price?: number;
   discountedPrice?: number;
   image?: string;
+  plan?: 'Basic' | 'Premium';
 }
 
 interface CartContextType {
@@ -43,54 +45,80 @@ export const CartProvider: React.FC<{ children: React.ReactNode }> = ({ children
   const [cart, setCart] = useState<CartItem[]>([]);
   const [loading, setLoading] = useState(false);
   const [isCartOpen, setIsCartOpen] = useState(false);
+  
+  // Local storage for plans since we can't touch the backend
+  const [localPlans, setLocalPlans] = useState<Record<string, { plan: 'Basic' | 'Premium', discountedPrice: number }>>(() => {
+    const saved = localStorage.getItem('cart_plans');
+    return saved ? JSON.parse(saved) : {};
+  });
+
+  useEffect(() => {
+    localStorage.setItem('cart_plans', JSON.stringify(localPlans));
+  }, [localPlans]);
+
+  const mapCartItem = useCallback((item: any): CartItem => {
+    const id = String(item.id || item.courseId);
+    const lp = localPlans[id];
+    
+    return {
+      courseId: id,
+      courseName: item.courseName || item.name,
+      price: item.price || item.pricing?.original || 0,
+      discountedPrice: lp?.discountedPrice || item.discountedPrice || item.pricing?.discounted || 0,
+      image: item.image,
+      plan: lp?.plan || item.plan || 'Basic'
+    };
+  }, [localPlans]);
 
   const fetchCart = useCallback(async () => {
     try {
       const response = await apiCall('/user/cart', { method: 'GET' });
-      if (response.success) {
-        setCart(response.data || []);
+      if (response.success && response.data) {
+        setCart(response.data.map(mapCartItem));
       }
     } catch (error) {
-      // Silently fail — session may not exist yet for new visitors
       console.warn('Cart fetch failed:', error);
     }
-  }, []);
+  }, [mapCartItem]);
 
   useEffect(() => {
     fetchCart();
   }, [fetchCart]);
 
   const addToCart = async (payload: AddToCartPayload) => {
-    const { courseName, courseId, price, discountedPrice, image } = payload;
+    const { courseName, courseId, price, discountedPrice, image, plan } = payload;
+    
+    // Save plan locally
+    if (courseId && plan) {
+      setLocalPlans(prev => ({
+        ...prev,
+        [courseId]: { plan, discountedPrice: discountedPrice || 0 }
+      }));
+    }
+
     setLoading(true);
     try {
       const response = await apiCall('/user/cart/add', {
         method: 'POST',
-        // Send full dummy data — backend stores it directly into the session.
-        // TODO: When DB is ready, backend will use courseId/courseName to look up
-        //       real price/image and ignore the client-provided values.
-        data: { courseId, courseName, price, discountedPrice, image },
+        data: { courseId, courseName, price, discountedPrice, image, plan },
       });
       if (response.success) {
-        setCart(response.data || []);
+        // If data is returned, map it. Otherwise refetch.
+        if (response.data) {
+           setCart(response.data.map(mapCartItem));
+        } else {
+           await fetchCart();
+        }
 
         const key = courseId || courseName;
-        const alreadyInCart = cart.some(item => item.courseId === key || item.courseName === courseName);
+        const alreadyInCart = cart.some(item => String(item.courseId) === String(key) || item.courseName === courseName);
 
-        if (alreadyInCart) {
-          toast.info(`"${courseName}" is already in your cart.`, {
-            description: 'Go to your cart to proceed.',
-          });
-        } else {
-          toast.success(`"${courseName}" added to cart! 🛒`, {
-            description: 'You can view your cart anytime.',
-          });
+        if (!alreadyInCart) {
+          toast.success(`"${courseName}" added to cart! 🛒`);
         }
       }
     } catch (error: any) {
-      toast.error('Failed to add course to cart', {
-        description: error.message || 'Please try again.',
-      });
+      toast.error('Failed to add to cart');
     } finally {
       setLoading(false);
     }
@@ -103,11 +131,11 @@ export const CartProvider: React.FC<{ children: React.ReactNode }> = ({ children
         method: 'DELETE',
       });
       if (response.success) {
-        setCart(response.data || []);
+        setCart((response.data || []).map(mapCartItem));
         toast.success('Course removed from cart.');
       }
     } catch (error: any) {
-      toast.error('Failed to remove course', { description: error.message });
+      toast.error('Failed to remove course');
     } finally {
       setLoading(false);
     }
@@ -121,10 +149,11 @@ export const CartProvider: React.FC<{ children: React.ReactNode }> = ({ children
       });
       if (response.success) {
         setCart([]);
+        setLocalPlans({});
         toast.success('Cart cleared.');
       }
     } catch (error: any) {
-      toast.error('Failed to clear cart', { description: error.message });
+      toast.error('Failed to clear cart');
     } finally {
       setLoading(false);
     }
@@ -132,7 +161,7 @@ export const CartProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
   const isInCart = (courseIdentifier: string) =>
     cart.some(
-      item => item.courseId === courseIdentifier || item.courseName === courseIdentifier
+      item => String(item.courseId) === String(courseIdentifier) || item.courseName === courseIdentifier
     );
 
   return (

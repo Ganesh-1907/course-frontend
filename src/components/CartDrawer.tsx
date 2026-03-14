@@ -7,15 +7,22 @@ import {
 } from '@/components/ui/sheet';
 import { useCart } from '@/context/CartContext';
 import { Button } from '@/components/ui/button';
+import { useNavigate } from 'react-router-dom';
 import { ShoppingCart, Trash2, ArrowRight } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 export const CartDrawer: React.FC = () => {
   const { cart, isCartOpen, setIsCartOpen, removeFromCart, clearCart, loading, cartCount } = useCart();
+  const navigate = useNavigate();
 
   // Total calculation (always parsing the number logic or picking the property)
   const calculateTotal = () => {
     return cart.reduce((total, item) => total + (item.discountedPrice || item.price || 0), 0);
+  };
+
+  const handleCheckout = () => {
+    setIsCartOpen(false);
+    navigate('/enroll');
   };
 
   return (
@@ -129,6 +136,7 @@ export const CartDrawer: React.FC = () => {
 
             <div className="space-y-3">
               <Button 
+                onClick={handleCheckout}
                 className="w-full h-12 bg-primary hover:bg-primary-dark text-white font-black rounded-xl text-[15px] shadow-lg shadow-primary/20 flex items-center justify-center gap-2 transition-all active:scale-[0.98]"
               >
                 Proceed to Checkout
