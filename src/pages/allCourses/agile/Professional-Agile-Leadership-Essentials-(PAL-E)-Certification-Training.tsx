@@ -470,7 +470,20 @@ const ProfessionalAgileLeadershipEssentialsCertificationTraining = () => {
       "description": "Access to multiple Agile and Scrum certifications."
     }
   ];
-  
+  const sidePanelSchedules = [
+    {
+      courseCode: 'PAL-E',
+      courseName: 'Professional Agile Leadership - Essentials (PAL-E) Training',
+      dateRange: 'Apr 05 - Apr 06, 2026',
+      timeRange: '09:00 AM - 05:00 PM IST',
+      trainerName: 'Expert PST-L',
+      trainerImage:
+        'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=100',
+      originalPrice: 'INR 35,000',
+      discountedPrice: 'INR 29,750',
+      discountPercentage: '15',
+    },
+  ];
 
   const certificateBenefits = [
     'Digital Badge for LinkedIn & PDF Copy',
@@ -804,7 +817,7 @@ const ProfessionalAgileLeadershipEssentialsCertificationTraining = () => {
             {/* Right Side Panel */}
             <div className="relative w-full lg:w-[340px] xl:w-[360px] lg:justify-self-end">
               <div className="sticky top-24">
-                <CourseSidePanel  courseName={heroData.courseName} />
+                <CourseSidePanel schedules={sidePanelSchedules} courseName={heroData.courseName} />
               </div>
             </div>
           </div>

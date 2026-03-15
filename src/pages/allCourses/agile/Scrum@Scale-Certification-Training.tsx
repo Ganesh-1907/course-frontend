@@ -425,7 +425,20 @@ const ScrumAtScaleCertificationTraining = () => {
       "description": "Access to multiple Agile, Scrum, and enterprise scaling certifications."
     }
   ] ;
-  
+  const sidePanelSchedules = [
+    {
+      courseCode: 'S@S',
+      courseName: 'Scrum@Scale™ Certification Training',
+      dateRange: 'Mar 15 - Mar 16, 2026',
+      timeRange: '09:00 AM - 05:00 PM IST',
+      trainerName: 'Expert Scaled Consultant',
+      trainerImage:
+        'https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=100',
+      originalPrice: 'INR 55,000',
+      discountedPrice: 'INR 45,833',
+      discountPercentage: '20',
+    },
+  ];
 
   const certificateBenefits = [
     'Digital Badge for LinkedIn & PDF Copy',
@@ -757,7 +770,7 @@ const ScrumAtScaleCertificationTraining = () => {
             {/* Right Side Panel */}
             <div className="relative w-full lg:w-[340px] xl:w-[360px] lg:justify-self-end">
               <div className="sticky top-24">
-                <CourseSidePanel  courseName={heroData.courseName} />
+                <CourseSidePanel schedules={sidePanelSchedules} courseName={heroData.courseName} />
               </div>
             </div>
           </div>

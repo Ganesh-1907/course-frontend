@@ -495,7 +495,20 @@ const ICAgileEnterpriseAgileCoachingCertificationTraining = () => {
       "description": "Ongoing guidance and learning resources beyond course completion."
     }
   ];
-  
+  const sidePanelSchedules = [
+    {
+      courseCode: 'ICP-CAT',
+      courseName: 'ICAgile Coaching Agile Transformations (ICP-CAT) Training',
+      dateRange: 'Mar 25 - Mar 26, 2026',
+      timeRange: '10:00 AM - 06:00 PM IST',
+      trainerName: 'Expert Enterprise Coach',
+      trainerImage:
+        'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=100',
+      originalPrice: 'INR 65,000',
+      discountedPrice: 'INR 58,500',
+      discountPercentage: '10',
+    },
+  ];
 
   const certificateBenefits = [
     'Digital Badge for LinkedIn & PDF Copy',
@@ -831,7 +844,7 @@ const ICAgileEnterpriseAgileCoachingCertificationTraining = () => {
             {/* Right Side Panel */}
             <div className="relative w-full lg:w-[340px] xl:w-[360px] lg:justify-self-end">
               <div className="sticky top-24">
-                <CourseSidePanel  courseName={heroData.courseName} />
+                <CourseSidePanel schedules={sidePanelSchedules} courseName={heroData.courseName} />
               </div>
             </div>
           </div>
