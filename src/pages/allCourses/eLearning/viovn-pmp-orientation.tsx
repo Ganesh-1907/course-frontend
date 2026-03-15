@@ -12,14 +12,14 @@ import ELearningFAQs from "@/components/E-learning-courses/ELearningFAQs";
 import ELearningReviews from "@/components/E-learning-courses/ELearningReviews";
 import ELearningOtherCourses from "@/components/E-learning-courses/ELearningOtherCourses";
 
-const SimpliaxisPMPOrientationCourse = () => {
+const ViovnPMPOrientationCourse = () => {
   const courseData = {
-    courseName: "Simpliaxis PMP Orientation",
+    courseName: "Viovn PMP Orientation",
     rating: "4.8",
     enrolledCount: "1k+",
     duration: "4Hrs",
     level: "Beginner",
-    description: "The Project Management Professional (PMP) certification is a globally recognized credential for project managers that validates their ability to lead teams and successfully manage projects. Achieving PMP certification requires proper training along with dedicated self-study. Without the right guidance and preparation, passing the exam can be challenging. In this orientation, we explain why Simpliaxis is a reliable choice for PMP certification training. Our sessions use interactive flash-based slides instead of traditional presentations to create engaging learning experiences. We also utilize tools such as Menti and Miro to encourage collaboration and simplify complex concepts. Join our PMP certification program to benefit from expert guidance, personalized support, and structured exam preparation.",
+    description: "The Project Management Professional (PMP) certification is a globally recognized credential for project managers that validates their ability to lead teams and successfully manage projects. Achieving PMP certification requires proper training along with dedicated self-study. Without the right guidance and preparation, passing the exam can be challenging. In this orientation, we explain why Viovn is a reliable choice for PMP certification training. Our sessions use interactive flash-based slides instead of traditional presentations to create engaging learning experiences. We also utilize tools such as Menti and Miro to encourage collaboration and simplify complex concepts. Join our PMP certification program to benefit from expert guidance, personalized support, and structured exam preparation.",
     heroImage: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=800",
     previewImage: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=800",
     pricing: {
@@ -32,14 +32,14 @@ const SimpliaxisPMPOrientationCourse = () => {
       { text: "4 hours of video content", image: "https://cdn-icons-png.flaticon.com/512/3048/3048381.png" },
       { text: "Learning materials overview", image: "https://cdn-icons-png.flaticon.com/512/2991/2991195.png" },
       { text: "Study plan and preparation guidance", image: "https://cdn-icons-png.flaticon.com/512/689/689307.png" },
-      { text: "Sample content from Simpliaxis mock exams", image: "https://cdn-icons-png.flaticon.com/512/4305/4305432.png" },
+      { text: "Sample content from Viovn mock exams", image: "https://cdn-icons-png.flaticon.com/512/4305/4305432.png" },
       { text: "Overview of PMP exam details", image: "https://cdn-icons-png.flaticon.com/512/2912/2912761.png" }
     ],
     sidePanelInclusions: [
       "4 hours of video content",
       "Learning materials overview",
       "Study plan and preparation guidance",
-      "Sample content from Simpliaxis mock exams",
+      "Sample content from Viovn mock exams",
       "Overview of PMP exam details"
     ],
     benefits: [
@@ -57,7 +57,7 @@ const SimpliaxisPMPOrientationCourse = () => {
       },
       {
         title: "Cost-Effective Introduction:",
-        description: "This complimentary orientation helps participants understand the training approach offered by Simpliaxis and evaluate the course before investing in the full program."
+        description: "This complimentary orientation helps participants understand the training approach offered by Viovn and evaluate the course before investing in the full program."
       },
       {
         title: "Exam Preparation Guidance:",
@@ -76,8 +76,8 @@ const SimpliaxisPMPOrientationCourse = () => {
           { title: "PMP Question Format" },
           { title: "Complete PMP Journey: Bootcamp, Application Guidance, Self-Study, and Exam Preparation" },
           { title: "Study Plan and Preparation Guidance" },
-          { title: "Sample Simpliaxis Mock Exam Content" },
-          { title: "Sample Simpliaxis Affinity Board for High-Velocity Learning" },
+          { title: "Sample Viovn Mock Exam Content" },
+          { title: "Sample Viovn Affinity Board for High-Velocity Learning" },
           { title: "Sample Concept Flow Mind Map" }
         ]
       }
@@ -85,7 +85,7 @@ const SimpliaxisPMPOrientationCourse = () => {
     faqs: [
       {
         question: "1. How does the orientation help in making a decision?",
-        answer: "The orientation provides a clear overview of the PMP training process and the support provided by Simpliaxis. This helps participants make an informed decision when choosing a training provider."
+        answer: "The orientation provides a clear overview of the PMP training process and the support provided by Viovn. This helps participants make an informed decision when choosing a training provider."
       },
       {
         question: "2. Is the PMP exam difficult to pass?",
@@ -93,7 +93,7 @@ const SimpliaxisPMPOrientationCourse = () => {
       },
       {
         question: "3. Why are PMP exam applications sometimes rejected?",
-        answer: "Applications may be rejected if specific instructions or documentation requirements are not followed correctly. Simpliaxis provides guidance to help applicants complete the process accurately."
+        answer: "Applications may be rejected if specific instructions or documentation requirements are not followed correctly. Viovn provides guidance to help applicants complete the process accurately."
       },
       {
         question: "4. Is studying the PMBOK Guide enough to pass the exam?",
@@ -180,4 +180,4 @@ const SimpliaxisPMPOrientationCourse = () => {
   );
 };
 
-export default SimpliaxisPMPOrientationCourse;
+export default ViovnPMPOrientationCourse;

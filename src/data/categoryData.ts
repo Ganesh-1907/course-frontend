@@ -937,7 +937,7 @@ export const categoryData: Record<string, CategoryData> = {
       "Trained by Experienced Industry Experts with Over 15+ Years of Experience.",
       "Gain Hands-on Practical Experience with Our Top Agile Certifications & Training."
     ],
-    heroImage: "https://www.simpliaxis.com/frontend_assets/image/category_banner_f.webp",
+    heroImage: "https://www.viovn.com/frontend_assets/image/category_banner_f.webp",
     stats: [
       {
         icon: Users,
@@ -981,8 +981,8 @@ export const categoryData: Record<string, CategoryData> = {
         answer: "Agile is an iterative project management approach that emphasizes flexibility, collaboration, and customer feedback. It enables teams to deliver value faster, adapt to changing requirements, and continuously improve processes — making it essential in today's fast-paced business environment."
       },
       {
-        question: "What Agile & Scrum certifications does Simpliaxis offer?",
-        answer: "Simpliaxis offers globally recognized certifications including Certified ScrumMaster (CSM®), Certified Scrum Product Owner (CSPO®), SAFe Agilist, and more — all delivered by experienced Agile practitioners with 15+ years of industry experience."
+        question: "What Agile & Scrum certifications does Viovn offer?",
+        answer: "Viovn offers globally recognized certifications including Certified ScrumMaster (CSM®), Certified Scrum Product Owner (CSPO®), SAFe Agilist, and more — all delivered by experienced Agile practitioners with 15+ years of industry experience."
       },
       {
         question: "Who should enroll in Agile & Scrum certification courses?",
@@ -997,12 +997,12 @@ export const categoryData: Record<string, CategoryData> = {
         answer: "Most Scrum certification courses like CSM® and CSPO® are 2-day intensive programs. After completing the training, you must pass the certification exam administered by the Scrum Alliance to earn your credential."
       },
       {
-        question: "Are Simpliaxis Agile certifications recognized globally?",
-        answer: "Yes. Simpliaxis is accredited by top Agile bodies including the Scrum Alliance and SAFe. Our certifications are recognized by employers worldwide across industries such as IT, finance, healthcare, and manufacturing."
+        question: "Are Viovn Agile certifications recognized globally?",
+        answer: "Yes. Viovn is accredited by top Agile bodies including the Scrum Alliance and SAFe. Our certifications are recognized by employers worldwide across industries such as IT, finance, healthcare, and manufacturing."
       },
       {
-        question: "What is the format of Agile & Scrum training at Simpliaxis?",
-        answer: "Simpliaxis offers live classroom and live virtual training formats, with experienced trainers leading interactive sessions that include real-world simulations, group activities, and hands-on exercises."
+        question: "What is the format of Agile & Scrum training at Viovn?",
+        answer: "Viovn offers live classroom and live virtual training formats, with experienced trainers leading interactive sessions that include real-world simulations, group activities, and hands-on exercises."
       },
       {
         question: "What is the salary potential after an Agile or Scrum certification?",
@@ -1010,11 +1010,11 @@ export const categoryData: Record<string, CategoryData> = {
       },
       {
         question: "Can I attend Agile training online?",
-        answer: "Yes. Simpliaxis offers live virtual instructor-led training sessions that replicate the classroom experience online, complete with group discussions, breakout sessions, and real-time doubt resolution."
+        answer: "Yes. Viovn offers live virtual instructor-led training sessions that replicate the classroom experience online, complete with group discussions, breakout sessions, and real-time doubt resolution."
       },
       {
-        question: "What support does Simpliaxis provide after completing the Agile course?",
-        answer: "Participants receive post-training access to course materials, exam preparation guides, practice tests, and access to a community of Agile professionals. Simpliaxis also provides exam guidance and ongoing mentorship support."
+        question: "What support does Viovn provide after completing the Agile course?",
+        answer: "Participants receive post-training access to course materials, exam preparation guides, practice tests, and access to a community of Agile professionals. Viovn also provides exam guidance and ongoing mentorship support."
       }
     ]
   },
@@ -1069,15 +1069,15 @@ export const categoryData: Record<string, CategoryData> = {
       },
       {
         question: "What are the eligibility requirements for PMP® certification?",
-        answer: "To qualify, you need either a 4-year degree with 36 months of project management experience and 35 hours of PM education, or a high school diploma with 60 months of experience and 35 hours of PM education. Simpliaxis training covers the required 35 contact hours."
+        answer: "To qualify, you need either a 4-year degree with 36 months of project management experience and 35 hours of PM education, or a high school diploma with 60 months of experience and 35 hours of PM education. Viovn training covers the required 35 contact hours."
       },
       {
-        question: "What certifications does Simpliaxis offer in Project Management?",
-        answer: "Simpliaxis offers PMP® Certification Training, CAPM®, Prince2, and other PMI-aligned programs — all delivered by PMI-certified practitioners and designed to ensure exam success and real-world application."
+        question: "What certifications does Viovn offer in Project Management?",
+        answer: "Viovn offers PMP® Certification Training, CAPM®, Prince2, and other PMI-aligned programs — all delivered by PMI-certified practitioners and designed to ensure exam success and real-world application."
       },
       {
-        question: "How does Simpliaxis help with PMP® exam preparation?",
-        answer: "Simpliaxis provides 1000+ PMP exam simulator questions, mock exams, study guides, and expert-led doubt-clearing sessions. Our structured curriculum is aligned with the latest PMI Exam Content Outline (ECO) to maximize pass rates."
+        question: "How does Viovn help with PMP® exam preparation?",
+        answer: "Viovn provides 1000+ PMP exam simulator questions, mock exams, study guides, and expert-led doubt-clearing sessions. Our structured curriculum is aligned with the latest PMI Exam Content Outline (ECO) to maximize pass rates."
       },
       {
         question: "What is the PMP® exam format?",
@@ -1089,19 +1089,19 @@ export const categoryData: Record<string, CategoryData> = {
       },
       {
         question: "Is the PMP® certification recognized globally?",
-        answer: "Yes. The PMP® is recognized in over 200 countries and is highly valued across industries including IT, construction, healthcare, finance, and manufacturing. Simpliaxis is an authorized PMI training partner."
+        answer: "Yes. The PMP® is recognized in over 200 countries and is highly valued across industries including IT, construction, healthcare, finance, and manufacturing. Viovn is an authorized PMI training partner."
       },
       {
         question: "What training formats are available for Project Management courses?",
-        answer: "Simpliaxis offers live classroom training, live virtual instructor-led sessions, and corporate batch training. All formats include access to course materials, recorded sessions, and post-training support."
+        answer: "Viovn offers live classroom training, live virtual instructor-led sessions, and corporate batch training. All formats include access to course materials, recorded sessions, and post-training support."
       },
       {
-        question: "How long does PMP® training take at Simpliaxis?",
+        question: "How long does PMP® training take at Viovn?",
         answer: "The PMP® certification training is a 4-day intensive program that covers all domains of the PMBOK® Guide, agile methodologies, and includes the 35 contact hours required for exam eligibility."
       },
       {
         question: "Can I cancel my enrollment and get a refund?",
-        answer: "Yes. Simpliaxis has a transparent refund policy. Cancellations made within the specified period are eligible for a full or partial refund depending on the timing. Please refer to the Simpliaxis refund policy page for complete details."
+        answer: "Yes. Viovn has a transparent refund policy. Cancellations made within the specified period are eligible for a full or partial refund depending on the timing. Please refer to the Viovn refund policy page for complete details."
       }
     ]
   },
@@ -1159,8 +1159,8 @@ export const categoryData: Record<string, CategoryData> = {
         answer: "ITIL 4 is the latest version of the globally recognized IT Infrastructure Library framework. Certification demonstrates your ability to manage modern IT services using best practices, making you highly valuable to employers in IT operations, support, and service delivery roles."
       },
       {
-        question: "What ITSM certifications does Simpliaxis offer?",
-        answer: "Simpliaxis offers ITIL 4 Foundation, ITIL Managing Professional, ITIL Strategic Leader, and other ITSM-related certifications — all with official Axelos exam vouchers included and delivered by certified ITIL practitioners."
+        question: "What ITSM certifications does Viovn offer?",
+        answer: "Viovn offers ITIL 4 Foundation, ITIL Managing Professional, ITIL Strategic Leader, and other ITSM-related certifications — all with official Axelos exam vouchers included and delivered by certified ITIL practitioners."
       },
       {
         question: "Who should pursue ITSM certifications?",
@@ -1172,19 +1172,19 @@ export const categoryData: Record<string, CategoryData> = {
       },
       {
         question: "How long does the ITIL 4 Foundation training take?",
-        answer: "The ITIL 4 Foundation course is typically a 2–3 day intensive program. Simpliaxis also offers flexible online self-paced options for professionals who need to fit training around their work schedules."
+        answer: "The ITIL 4 Foundation course is typically a 2–3 day intensive program. Viovn also offers flexible online self-paced options for professionals who need to fit training around their work schedules."
       },
       {
         question: "What is the format of the ITIL 4 Foundation exam?",
-        answer: "The exam consists of 40 multiple-choice questions to be completed in 60 minutes. A passing score of 65% (26 out of 40) is required. Simpliaxis training includes mock exams and exam tips to ensure you are well-prepared."
+        answer: "The exam consists of 40 multiple-choice questions to be completed in 60 minutes. A passing score of 65% (26 out of 40) is required. Viovn training includes mock exams and exam tips to ensure you are well-prepared."
       },
       {
         question: "How much can I earn with an ITSM or ITIL certification?",
         answer: "ITIL-certified professionals typically earn between $80,000 and $120,000 annually depending on their role and experience. Senior ITSM managers and ITIL Managing Professional holders often command significantly higher compensation."
       },
       {
-        question: "Does Simpliaxis provide post-training support for ITSM courses?",
-        answer: "Yes. After training, participants receive access to digital course materials, practice exams, exam vouchers, and mentorship sessions. Simpliaxis also provides guidance for those pursuing higher ITIL certification levels."
+        question: "Does Viovn provide post-training support for ITSM courses?",
+        answer: "Yes. After training, participants receive access to digital course materials, practice exams, exam vouchers, and mentorship sessions. Viovn also provides guidance for those pursuing higher ITIL certification levels."
       },
       {
         question: "Is ITIL certification valid internationally?",
@@ -1242,8 +1242,8 @@ export const categoryData: Record<string, CategoryData> = {
         answer: "Lean Six Sigma combines Lean manufacturing principles (eliminating waste) with Six Sigma methodology (reducing defects and variation). It is ideal for quality managers, process engineers, operations professionals, and anyone focused on continuous improvement across industries."
       },
       {
-        question: "What Quality & Process certifications does Simpliaxis offer?",
-        answer: "Simpliaxis offers Lean Six Sigma White Belt, Yellow Belt, Green Belt, and Black Belt certifications — all IASSC accredited. We also offer training in ISO standards, Total Quality Management (TQM), and other quality frameworks."
+        question: "What Quality & Process certifications does Viovn offer?",
+        answer: "Viovn offers Lean Six Sigma White Belt, Yellow Belt, Green Belt, and Black Belt certifications — all IASSC accredited. We also offer training in ISO standards, Total Quality Management (TQM), and other quality frameworks."
       },
       {
         question: "What is the difference between Green Belt and Black Belt?",
@@ -1255,11 +1255,11 @@ export const categoryData: Record<string, CategoryData> = {
       },
       {
         question: "Is there a prerequisite for Lean Six Sigma certification?",
-        answer: "There are no prerequisites for White Belt and Yellow Belt. Green Belt requires basic process knowledge, while Black Belt typically requires prior Green Belt certification and project experience. Simpliaxis provides guidance to choose the right level."
+        answer: "There are no prerequisites for White Belt and Yellow Belt. Green Belt requires basic process knowledge, while Black Belt typically requires prior Green Belt certification and project experience. Viovn provides guidance to choose the right level."
       },
       {
         question: "How long does Lean Six Sigma training take?",
-        answer: "White/Yellow Belt training takes 1–2 days. Green Belt is a 5–8 day program, and Black Belt training spans several weeks with structured modules and real-world project work. Simpliaxis offers flexible scheduling to suit working professionals."
+        answer: "White/Yellow Belt training takes 1–2 days. Green Belt is a 5–8 day program, and Black Belt training spans several weeks with structured modules and real-world project work. Viovn offers flexible scheduling to suit working professionals."
       },
       {
         question: "What industries benefit from Lean Six Sigma?",
@@ -1270,12 +1270,12 @@ export const categoryData: Record<string, CategoryData> = {
         answer: "Lean Six Sigma Black Belts earn an average of $100,000–$130,000 annually in the US. Green Belt certified professionals see salary increases of 20–30% on average. The certification is widely associated with leadership roles and process excellence positions."
       },
       {
-        question: "Does Simpliaxis include real-world projects in quality training?",
-        answer: "Yes. Simpliaxis training includes hands-on projects, real case studies from industries like manufacturing and healthcare, and Minitab practice sessions. Participants complete project work as part of the Green and Black Belt certification process."
+        question: "Does Viovn include real-world projects in quality training?",
+        answer: "Yes. Viovn training includes hands-on projects, real case studies from industries like manufacturing and healthcare, and Minitab practice sessions. Participants complete project work as part of the Green and Black Belt certification process."
       },
       {
-        question: "Are Simpliaxis quality certifications recognized by employers?",
-        answer: "Yes. Simpliaxis is an IASSC-accredited training provider, and our certifications are recognized globally. Employers across industries regard IASSC-certified professionals as credible process improvement experts."
+        question: "Are Viovn quality certifications recognized by employers?",
+        answer: "Yes. Viovn is an IASSC-accredited training provider, and our certifications are recognized globally. Employers across industries regard IASSC-certified professionals as credible process improvement experts."
       }
     ]
   },
@@ -1326,11 +1326,11 @@ export const categoryData: Record<string, CategoryData> = {
     details: [],
     faqs: [
       {
-        question: "What leadership programs does Simpliaxis offer?",
-        answer: "Simpliaxis offers ICF-accredited coaching programs, Certified Agile Leadership (CAL), Emotional Intelligence (EQ) workshops, executive mentoring programs, and transformational leadership training designed for mid to senior-level professionals."
+        question: "What leadership programs does Viovn offer?",
+        answer: "Viovn offers ICF-accredited coaching programs, Certified Agile Leadership (CAL), Emotional Intelligence (EQ) workshops, executive mentoring programs, and transformational leadership training designed for mid to senior-level professionals."
       },
       {
-        question: "Who should attend Simpliaxis leadership and coaching programs?",
+        question: "Who should attend Viovn leadership and coaching programs?",
         answer: "These programs are designed for team leads, managers, Scrum Masters, Agile coaches, executives, and HR professionals who want to develop their leadership presence, coaching skills, and ability to inspire high-performing teams."
       },
       {
@@ -1346,24 +1346,24 @@ export const categoryData: Record<string, CategoryData> = {
         answer: "Emotional Intelligence refers to the ability to recognize, understand, and manage your own emotions and those of others. Leaders with high EQ build stronger teams, handle conflict better, and drive greater organizational performance — making it one of the most sought-after leadership skills."
       },
       {
-        question: "What is the format of leadership training at Simpliaxis?",
-        answer: "Simpliaxis offers live virtual sessions, in-person workshops, and one-on-one executive coaching engagements. Programs combine theory, practical exercises, role-play scenarios, and real-world case studies for immersive learning experiences."
+        question: "What is the format of leadership training at Viovn?",
+        answer: "Viovn offers live virtual sessions, in-person workshops, and one-on-one executive coaching engagements. Programs combine theory, practical exercises, role-play scenarios, and real-world case studies for immersive learning experiences."
       },
       {
         question: "How do leadership certifications impact career growth?",
         answer: "Leadership certifications signal to organizations that you have the skills to drive change and lead teams effectively. Certified leaders often advance faster, take on higher-responsibility roles, and command 20–40% higher compensation compared to non-certified peers."
       },
       {
-        question: "Does Simpliaxis offer corporate leadership training for organizations?",
-        answer: "Yes. Simpliaxis provides customized corporate leadership development programs for Fortune 500 companies and growing organizations. Programs can be tailored to your organization's specific leadership challenges, culture, and strategic goals."
+        question: "Does Viovn offer corporate leadership training for organizations?",
+        answer: "Yes. Viovn provides customized corporate leadership development programs for Fortune 500 companies and growing organizations. Programs can be tailored to your organization's specific leadership challenges, culture, and strategic goals."
       },
       {
         question: "What is the difference between coaching and mentoring?",
-        answer: "Coaching is a structured, goal-oriented process where a coach helps individuals unlock their own potential through questioning and reflection. Mentoring involves an experienced professional sharing knowledge and advice based on their own career journey. Simpliaxis programs incorporate both approaches."
+        answer: "Coaching is a structured, goal-oriented process where a coach helps individuals unlock their own potential through questioning and reflection. Mentoring involves an experienced professional sharing knowledge and advice based on their own career journey. Viovn programs incorporate both approaches."
       },
       {
-        question: "Can Simpliaxis leadership programs be attended online?",
-        answer: "Yes. Most Simpliaxis leadership and coaching programs are available in live online formats with interactive virtual workshops, breakout sessions, and one-on-one coaching calls — making them accessible to professionals worldwide."
+        question: "Can Viovn leadership programs be attended online?",
+        answer: "Yes. Most Viovn leadership and coaching programs are available in live online formats with interactive virtual workshops, breakout sessions, and one-on-one coaching calls — making them accessible to professionals worldwide."
       }
     ]
   },
@@ -1413,8 +1413,8 @@ export const categoryData: Record<string, CategoryData> = {
     details: [],
     faqs: [
       {
-        question: "What business skills courses does Simpliaxis offer?",
-        answer: "Simpliaxis offers training in Business Analysis (CBAP/CCBA), strategic thinking, data-driven decision making, effective communication, stakeholder management, and personal branding — covering both hard and soft skills critical for modern business professionals."
+        question: "What business skills courses does Viovn offer?",
+        answer: "Viovn offers training in Business Analysis (CBAP/CCBA), strategic thinking, data-driven decision making, effective communication, stakeholder management, and personal branding — covering both hard and soft skills critical for modern business professionals."
       },
       {
         question: "Who should enroll in business skills training?",
@@ -1437,16 +1437,16 @@ export const categoryData: Record<string, CategoryData> = {
         answer: "Business analysis involves identifying business needs and determining solutions to business problems, often bridging the gap between IT and business stakeholders. With digital transformation accelerating, skilled business analysts are among the most in-demand professionals across every industry."
       },
       {
-        question: "Does Simpliaxis offer soft skills training for corporate teams?",
-        answer: "Yes. Simpliaxis offers customized corporate soft skills training covering communication, conflict resolution, emotional intelligence, time management, and leadership presence — tailored to your organization's specific needs and culture."
+        question: "Does Viovn offer soft skills training for corporate teams?",
+        answer: "Yes. Viovn offers customized corporate soft skills training covering communication, conflict resolution, emotional intelligence, time management, and leadership presence — tailored to your organization's specific needs and culture."
       },
       {
-        question: "How is data-driven decision making taught in Simpliaxis programs?",
+        question: "How is data-driven decision making taught in Viovn programs?",
         answer: "Participants learn to gather, analyze, and interpret business data using tools and frameworks to make evidence-based decisions. Training includes case studies, hands-on workshops, and real business scenarios to build practical decision-making skills."
       },
       {
         question: "Can business skills training be done online?",
-        answer: "Yes. All Simpliaxis business skills programs are available in live virtual formats with interactive sessions, group exercises, and expert Q&A — allowing working professionals to upskill without disrupting their schedules."
+        answer: "Yes. All Viovn business skills programs are available in live virtual formats with interactive sessions, group exercises, and expert Q&A — allowing working professionals to upskill without disrupting their schedules."
       },
       {
         question: "What career opportunities open up after business skills training?",
@@ -1500,11 +1500,11 @@ export const categoryData: Record<string, CategoryData> = {
     details: [],
     faqs: [
       {
-        question: "What AI and technology courses does Simpliaxis offer?",
-        answer: "Simpliaxis offers training in Generative AI, Machine Learning, AWS and Azure Cloud certification, ethical AI governance, prompt engineering, and emerging technology programs designed to help professionals stay ahead in the rapidly evolving tech landscape."
+        question: "What AI and technology courses does Viovn offer?",
+        answer: "Viovn offers training in Generative AI, Machine Learning, AWS and Azure Cloud certification, ethical AI governance, prompt engineering, and emerging technology programs designed to help professionals stay ahead in the rapidly evolving tech landscape."
       },
       {
-        question: "Who should take AI & Technology courses at Simpliaxis?",
+        question: "Who should take AI & Technology courses at Viovn?",
         answer: "These courses are suited for IT professionals, software developers, data scientists, project managers, and business leaders who want to understand and apply AI tools, cloud platforms, and emerging technologies in their roles and organizations."
       },
       {
@@ -1512,20 +1512,20 @@ export const categoryData: Record<string, CategoryData> = {
         answer: "Generative AI training covers large language models (LLMs), prompt engineering, AI model fine-tuning, ChatGPT and similar tools, AI in business applications, ethical AI usage, and real-world implementation scenarios across industries including healthcare, finance, and marketing."
       },
       {
-        question: "Do I need a technical background to take AI courses at Simpliaxis?",
-        answer: "Not always. Simpliaxis offers both beginner-friendly AI for business courses (no coding required) and advanced technical AI/ML programs for developers. Course prerequisites are clearly specified so you can choose the right level."
+        question: "Do I need a technical background to take AI courses at Viovn?",
+        answer: "Not always. Viovn offers both beginner-friendly AI for business courses (no coding required) and advanced technical AI/ML programs for developers. Course prerequisites are clearly specified so you can choose the right level."
       },
       {
-        question: "What cloud certifications does Simpliaxis offer?",
-        answer: "Simpliaxis offers training for AWS Certified Solutions Architect, AWS Cloud Practitioner, Microsoft Azure Fundamentals (AZ-900), Azure Administrator (AZ-104), and other leading cloud certifications aligned with industry-standard exam objectives."
+        question: "What cloud certifications does Viovn offer?",
+        answer: "Viovn offers training for AWS Certified Solutions Architect, AWS Cloud Practitioner, Microsoft Azure Fundamentals (AZ-900), Azure Administrator (AZ-104), and other leading cloud certifications aligned with industry-standard exam objectives."
       },
       {
         question: "What is prompt engineering and why is it important?",
         answer: "Prompt engineering is the skill of crafting effective inputs to AI language models to generate accurate, useful outputs. As AI tools become central to business workflows, prompt engineers are among the most in-demand new tech roles, with strong salary prospects."
       },
       {
-        question: "Does Simpliaxis provide hands-on lab experience for tech courses?",
-        answer: "Yes. Simpliaxis includes 100+ hands-on labs across AI, cloud, and DevOps programs. Participants work in real environments, building practical experience with actual tools and platforms used in the industry."
+        question: "Does Viovn provide hands-on lab experience for tech courses?",
+        answer: "Yes. Viovn includes 100+ hands-on labs across AI, cloud, and DevOps programs. Participants work in real environments, building practical experience with actual tools and platforms used in the industry."
       },
       {
         question: "What is Ethical AI and why does it matter?",
@@ -1536,7 +1536,7 @@ export const categoryData: Record<string, CategoryData> = {
         answer: "AI and Cloud roles are among the highest-paying in tech. AWS Solution Architects earn $130,000–$180,000 annually on average in the US. AI Engineers and ML Specialists command $140,000+ depending on experience and specialization."
       },
       {
-        question: "Are AI & Technology courses at Simpliaxis available online?",
+        question: "Are AI & Technology courses at Viovn available online?",
         answer: "Yes. All AI and technology programs are available as live instructor-led virtual courses with hands-on labs, real-time Q&A, and mentorship support — accessible to professionals worldwide regardless of location."
       }
     ]
@@ -1588,8 +1588,8 @@ export const categoryData: Record<string, CategoryData> = {
     details: [],
     faqs: [
       {
-        question: "What cyber security certifications does Simpliaxis offer?",
-        answer: "Simpliaxis offers Certified Ethical Hacker (CEH), CompTIA Security+, Certified Information Systems Security Professional (CISSP), CISM, and network security courses — all led by certified security practitioners with 24/7 access to virtual security labs."
+        question: "What cyber security certifications does Viovn offer?",
+        answer: "Viovn offers Certified Ethical Hacker (CEH), CompTIA Security+, Certified Information Systems Security Professional (CISSP), CISM, and network security courses — all led by certified security practitioners with 24/7 access to virtual security labs."
       },
       {
         question: "Is cyber security a good career choice in 2026?",
@@ -1601,7 +1601,7 @@ export const categoryData: Record<string, CategoryData> = {
       },
       {
         question: "What are the prerequisites for cyber security courses?",
-        answer: "Entry-level courses like CompTIA Security+ require basic IT knowledge. Advanced programs like CEH or CISSP require networking fundamentals and prior IT experience. Simpliaxis advisors help you select the right course for your background."
+        answer: "Entry-level courses like CompTIA Security+ require basic IT knowledge. Advanced programs like CEH or CISSP require networking fundamentals and prior IT experience. Viovn advisors help you select the right course for your background."
       },
       {
         question: "What is the CEH certification and how does it benefit my career?",
@@ -1609,11 +1609,11 @@ export const categoryData: Record<string, CategoryData> = {
       },
       {
         question: "Do I need to know coding for cyber security?",
-        answer: "Basic coding knowledge is helpful but not mandatory for entry-level roles. Understanding scripting languages like Python or Bash becomes important for advanced penetration testing and automation. Simpliaxis courses include foundational scripting as needed."
+        answer: "Basic coding knowledge is helpful but not mandatory for entry-level roles. Understanding scripting languages like Python or Bash becomes important for advanced penetration testing and automation. Viovn courses include foundational scripting as needed."
       },
       {
-        question: "Does Simpliaxis provide real lab environments for cyber security training?",
-        answer: "Yes. Simpliaxis provides 24/7 access to virtual security labs where participants practice ethical hacking, network attacks, vulnerability assessments, and defense techniques in safe, isolated environments that simulate real-world scenarios."
+        question: "Does Viovn provide real lab environments for cyber security training?",
+        answer: "Yes. Viovn provides 24/7 access to virtual security labs where participants practice ethical hacking, network attacks, vulnerability assessments, and defense techniques in safe, isolated environments that simulate real-world scenarios."
       },
       {
         question: "How much can I earn as a cyber security professional?",
@@ -1624,8 +1624,8 @@ export const categoryData: Record<string, CategoryData> = {
         answer: "Every industry requires cyber security expertise — banking, healthcare, government, defense, retail, and technology are among the largest employers. Virtually every organization that handles digital data needs professionals to protect it from breaches and attacks."
       },
       {
-        question: "Are Simpliaxis cyber security certifications globally recognized?",
-        answer: "Yes. Certifications like CEH (EC-Council), CompTIA Security+, and CISSP are recognized worldwide and are often required by government agencies and top corporations. Simpliaxis training ensures full exam readiness for these globally respected credentials."
+        question: "Are Viovn cyber security certifications globally recognized?",
+        answer: "Yes. Certifications like CEH (EC-Council), CompTIA Security+, and CISSP are recognized worldwide and are often required by government agencies and top corporations. Viovn training ensures full exam readiness for these globally respected credentials."
       }
     ]
   },

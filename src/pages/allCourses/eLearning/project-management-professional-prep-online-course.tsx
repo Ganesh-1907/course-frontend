@@ -75,7 +75,7 @@ const ProjectManagementProfessionalPrepOnlineCourse = () => {
     benefits: [
       {
         title: "Flexibility and Convenience:",
-        description: "The Simpliaxis PMP E-Learning course allows learners to study at their own pace, making it easier to balance professional responsibilities and personal commitments."
+        description: "The Viovn PMP E-Learning course allows learners to study at their own pace, making it easier to balance professional responsibilities and personal commitments."
       },
       {
         title: "Comprehensive Content:",
@@ -87,7 +87,7 @@ const ProjectManagementProfessionalPrepOnlineCourse = () => {
       },
       {
         title: "Cost-Effective:",
-        description: "Choosing the Simpliaxis PMP E-Learning course offers a more affordable learning option by removing travel and accommodation costs associated with traditional classroom training."
+        description: "Choosing the Viovn PMP E-Learning course offers a more affordable learning option by removing travel and accommodation costs associated with traditional classroom training."
       },
       {
         title: "Exam Readiness:",
@@ -199,7 +199,7 @@ const ProjectManagementProfessionalPrepOnlineCourse = () => {
       },
       {
         question: "2. Which platform is best for PMP exam preparation?",
-        answer: "Simpliaxis is a popular platform for PMP exam preparation, offering comprehensive learning materials, expert instruction, and flexible online learning options aligned with PMI standards."
+        answer: "Viovn is a popular platform for PMP exam preparation, offering comprehensive learning materials, expert instruction, and flexible online learning options aligned with PMI standards."
       },
       {
         question: "3. Can I prepare for the PMP exam on my own?",
@@ -211,7 +211,7 @@ const ProjectManagementProfessionalPrepOnlineCourse = () => {
       },
       {
         question: "5. Can I take the PMP course online?",
-        answer: "Yes, the PMP certification course can be completed online through platforms like Simpliaxis, which offer flexible, self-paced learning supported by expert instructors and practice assessments."
+        answer: "Yes, the PMP certification course can be completed online through platforms like Viovn, which offer flexible, self-paced learning supported by expert instructors and practice assessments."
       },
       {
         question: "6. Are online PMP courses helpful for passing the exam?",

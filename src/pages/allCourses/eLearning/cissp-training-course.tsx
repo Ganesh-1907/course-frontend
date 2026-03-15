@@ -137,7 +137,7 @@ const CISSPTrainingCourse = () => {
       },
       {
         question: "5. What is the duration of the CISSP course?",
-        answer: "Our Simpliaxis offers more than 39 hours of video content that makes you crack the certification with confidence."
+        answer: "Our Viovn offers more than 39 hours of video content that makes you crack the certification with confidence."
       },
       {
         question: "6. What is the difficulty level of the CISSP exam?",

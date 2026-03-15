@@ -401,7 +401,7 @@ const DockerAndKubernetesTraining = () => {
       "Learn Docker & Kubernetes from Experts",
       "Industry-Recognized Certificate"
     ],
-    mainImage: "https://www.simpliaxis.com/../frontend_assets/image/ring_loader.gif",
+    mainImage: "https://www.viovn.com/../frontend_assets/image/ring_loader.gif",
     badgeImage: "/csm-badge.png"
   };
 
@@ -425,10 +425,10 @@ const DockerAndKubernetesTraining = () => {
   };
 
   const corporateData = {
-    courseName: "Why Corporates Choose Simpliaxis",
+    courseName: "Why Corporates Choose Viovn",
     label: "",
     buttonText: "Corporate Group Enquiry",
-    description: "Simpliaxis delivers tailored Docker and Kubernetes training programs globally, helping organizations adopt containerization and orchestration efficiently while bridging skill gaps."
+    description: "Viovn delivers tailored Docker and Kubernetes training programs globally, helping organizations adopt containerization and orchestration efficiently while bridging skill gaps."
   };
 
   const courseMetadata = {
@@ -456,7 +456,7 @@ const DockerAndKubernetesTraining = () => {
       titlePrefix: 'Earn Your',
       titleHighlight: 'Global',
       titleSuffix: 'Recognition',
-      issuerName: 'Simpliaxis',
+      issuerName: 'Viovn',
       certificateType: 'Certificate of Mastery',
       certifyText: 'This is to certify that',
       requirementText:

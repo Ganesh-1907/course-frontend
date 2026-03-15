@@ -228,7 +228,7 @@ const MicrosoftPowerBITraining = () => {
         { "question": "7. Job roles?", "answer": "Power BI Developer, Data Analyst, BI Analyst, Reporting Analyst." },
         { "question": "8. Hiring companies?", "answer": "Accenture, IBM, Concentrix, and other global firms." },
         { "question": "9. Job benefits?", "answer": "Higher salaries and better career growth." },
-        { "question": "10. Does Simpliaxis offer training?", "answer": "Yes, with expert instructors and hands-on projects." }
+        { "question": "10. Does Viovn offer training?", "answer": "Yes, with expert instructors and hands-on projects." }
       ]
     },
 
@@ -266,7 +266,7 @@ const MicrosoftPowerBITraining = () => {
         { "question": "11. Instructor expertise?", "answer": "Certified Power BI experts." },
         { "question": "12. Discounts?", "answer": "Available periodically." },
         { "question": "13. Affordable?", "answer": "Competitively priced courses." },
-        { "question": "14. Why choose Simpliaxis?", "answer": "Expert trainers with global recognition." },
+        { "question": "14. Why choose Viovn?", "answer": "Expert trainers with global recognition." },
         { "question": "15. Lifetime access?", "answer": "Yes, access to LMS resources." },
         { "question": "16. Support?", "answer": "24/7 assistance available." },
         { "question": "17. Career growth?", "answer": "High demand in analytics and BI domains." },
@@ -423,7 +423,7 @@ const MicrosoftPowerBITraining = () => {
       "PL-300 Exam Prep",
       "Industry-Recognized Certification"
     ],
-    "mainImage": "https://www.simpliaxis.com/../frontend_assets/image/ring_loader.gif",
+    "mainImage": "https://www.viovn.com/../frontend_assets/image/ring_loader.gif",
     "badgeImage": "/csm-badge.png"
   };
 

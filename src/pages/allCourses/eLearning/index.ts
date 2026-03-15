@@ -5,7 +5,7 @@ export { default as LeanSixSigmaGreenBeltELearningCourse } from "./lean-six-sigm
 export { default as AccreditedAgileScrumMasterOnlineCourse } from "./accredited-agile-scrum-master-online-course";
 export { default as AccreditedAgileRolesProductOwnerOnlineCourse } from "./product-owner-online-course";
 export { default as LeanSixSigmaYellowBeltELearningCourse } from "./lean-six-sigma-yellow-belt-e-learning-course";
-export { default as SimpliaxisPMPOrientationCourse } from "./simpliaxis-pmp-orientation";
+export { default as ViovnPMPOrientationCourse } from "./viovn-pmp-orientation";
 export { default as ScrumMasterCertifiedCourse } from "./scrum-master-certified-course";
 export { default as MicrosoftAzureFundamentalsCourse } from "./az-900-course";
 export { default as ProjectManagementFundamentalsCourse } from "./project-management-fundamentals-course";

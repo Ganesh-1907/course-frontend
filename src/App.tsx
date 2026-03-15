@@ -15,6 +15,20 @@ import DemoOne from "./pages/DemoOne";
 import NotFound from "./pages/NotFound";
 import Enroll from "./pages/Enroll";
 
+// ----------------------------- Resource Pages -----------------------------
+import FreeCoursePage from "./pages/resources/FreeCoursePage";
+import ComboCoursesPage from "./pages/ComboCoursesPage";
+import CorporateTrainingPage from "./pages/CorporateTrainingPage";
+import PracticeTestPage from "./pages/resources/PracticeTestPage";
+import WebinarsPage from "./pages/resources/WebinarsPage";
+import BlogsPage from "./pages/resources/BlogsPage";
+import CourseInfoPage from "./pages/resources/CourseInfoPage";
+import TrainersPage from "./pages/resources/TrainersPage";
+import LearningPathPage from "./pages/resources/LearningPathPage";
+import QuestionsPage from "./pages/resources/QuestionsPage";
+import QuizPage from "./pages/resources/QuizPage";
+import CareersPage from "./pages/resources/CareersPage";
+
 // ✨ BARREL EXPORT IMPORT - Import all agile courses from one place!
 import {
   CertifiedScrumMasterCertificationTraining,
@@ -252,7 +266,7 @@ import {
     AccreditedAgileScrumMasterOnlineCourse,
     AccreditedAgileRolesProductOwnerOnlineCourse,
     LeanSixSigmaYellowBeltELearningCourse,
-    SimpliaxisPMPOrientationCourse,
+    ViovnPMPOrientationCourse,
     ScrumMasterCertifiedCourse,
     MicrosoftAzureFundamentalsCourse,
     ProjectManagementFundamentalsCourse,
@@ -756,7 +770,7 @@ const App = () => (
           />
           <Route
             path="/elearning/pmp-orientation"
-            element={<SimpliaxisPMPOrientationCourse />}
+            element={<ViovnPMPOrientationCourse />}
           />
           <Route
             path="/elearning/lean-six-sigma-green-belt-basics"
@@ -1163,6 +1177,20 @@ const App = () => (
             path="/course/on-demand-microcredentials/agile-coaching-skills-microcredential-course"
             element={<AgileCoachingSkillsMicrocredentialCourse />}
           />
+
+          {/* ✨ RESOURCE PAGES */}
+          <Route path="/combo-courses" element={<ComboCoursesPage />} />
+          <Route path="/corporate-training" element={<CorporateTrainingPage />} />
+          <Route path="/resources/free-courses" element={<FreeCoursePage />} />
+          <Route path="/resources/practice-tests" element={<PracticeTestPage />} />
+          <Route path="/resources/webinars" element={<WebinarsPage />} />
+          <Route path="/resources/blogs" element={<BlogsPage />} />
+          <Route path="/resources/course-info" element={<CourseInfoPage />} />
+          <Route path="/resources/trainers" element={<TrainersPage />} />
+          <Route path="/resources/learning-path" element={<LearningPathPage />} />
+          <Route path="/resources/questions" element={<QuestionsPage />} />
+          <Route path="/resources/quiz" element={<QuizPage />} />
+          <Route path="/resources/careers" element={<CareersPage />} />
 
           <Route path="*" element={<NotFound />} />
           </Routes>

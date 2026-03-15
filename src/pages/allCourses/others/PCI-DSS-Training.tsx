@@ -252,7 +252,7 @@ const PCIDSSComplianceTraining = () => {
         { "question": "11. Instructor expertise?", "answer": "Certified PCI DSS professionals." },
         { "question": "12. Discounts?", "answer": "Available periodically." },
         { "question": "13. Affordable?", "answer": "Yes, competitively priced." },
-        { "question": "14. Why choose Simpliaxis?", "answer": "Expert trainers and global recognition." },
+        { "question": "14. Why choose Viovn?", "answer": "Expert trainers and global recognition." },
         { "question": "15. Lifetime access?", "answer": "Access to learning resources provided." },
         { "question": "16. Support?", "answer": "24/7 assistance available." },
         { "question": "17. Career growth?", "answer": "High demand in cybersecurity and compliance domains." },
@@ -409,7 +409,7 @@ const PCIDSSComplianceTraining = () => {
       "Practical Risk Assessment Skills",
       "Compliance & Security Expertise"
     ],
-    "mainImage": "https://www.simpliaxis.com/../frontend_assets/image/ring_loader.gif",
+    "mainImage": "https://www.viovn.com/../frontend_assets/image/ring_loader.gif",
     "badgeImage": "/csm-badge.png"
   };
 

@@ -169,7 +169,7 @@ const ScrumProductOwnerTrainingCourse = () => {
       },
       {
         question: "10. Will I get a certificate after completion?",
-        answer: "Yes, you will receive a Course Completion Certificate from Simpliaxis after successfully completing all modules and quizzes."
+        answer: "Yes, you will receive a Course Completion Certificate from Viovn after successfully completing all modules and quizzes."
       }
     ],
     whoCanBuy: [

@@ -145,7 +145,7 @@ const MicrosoftAzureSolutionsArchitectAZ305Course = () => {
       },
       {
         question: "6. Will I receive a certificate after completion?",
-        answer: "Yes, you will receive a course completion certificate from Simpliaxis after finishing all modules."
+        answer: "Yes, you will receive a course completion certificate from Viovn after finishing all modules."
       },
       {
         question: "7. Can beginners join this program?",

@@ -12,7 +12,7 @@ export const elearningCourses = [
     path: "/elearning/pmp-online-course" 
   },
   { 
-    label: "Simpliaxis PMP Orientation Course", 
+    label: "Viovn PMP Orientation Course", 
     path: "/elearning/pmp-orientation" 
   },
   { 
@@ -110,16 +110,16 @@ export const elearningCourses = [
 ];
 
 export const resourceLinks = [
-  "Free Course",
-  "Practice Test",
-  "Webinars",
-  "Blogs",
-  "Course Info",
-  "Trainers",
-  "Learning Path",
-  "Questions",
-  "Quiz",
-  "Careers"
+  { label: "Free Course", path: "/resources/free-courses" },
+  { label: "Practice Test", path: "/resources/practice-tests" },
+  { label: "Webinars", path: "/resources/webinars" },
+  { label: "Blogs", path: "/resources/blogs" },
+  { label: "Course Info", path: "/resources/course-info" },
+  { label: "Trainers", path: "/resources/trainers" },
+  { label: "Learning Path", path: "/resources/learning-path" },
+  { label: "Questions", path: "/resources/questions" },
+  { label: "Quiz", path: "/resources/quiz" },
+  { label: "Careers", path: "/resources/careers" },
 ];
 
 export const userDropdownItems = [

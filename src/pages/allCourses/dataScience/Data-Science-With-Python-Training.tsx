@@ -324,7 +324,7 @@ const DataScienceWithPythonTraining = () => {
         { "question": "4. Corporate training?", "answer": "Customized enterprise training available." },
         { "question": "5. Certificate provided?", "answer": "Yes." },
         { "question": "6. Discounts?", "answer": "Available periodically." },
-        { "question": "7. Why choose Simpliaxis?", "answer": "Experienced trainers and global recognition." },
+        { "question": "7. Why choose Viovn?", "answer": "Experienced trainers and global recognition." },
         { "question": "8. Affordable courses?", "answer": "Yes, competitive pricing." },
         { "question": "9. Language options?", "answer": "English preferred; custom options available." },
         { "question": "10. Enrollment process?", "answer": "Register online and complete payment." }
@@ -477,7 +477,7 @@ const DataScienceWithPythonTraining = () => {
       "Master Python for Data Science",
       "Machine Learning & Statistical Techniques"
     ],
-    "mainImage": "https://www.simpliaxis.com/../frontend_assets/image/ring_loader.gif",
+    "mainImage": "https://www.viovn.com/../frontend_assets/image/ring_loader.gif",
     "badgeImage": "/csm-badge.png"
   };
 
@@ -512,7 +512,7 @@ const DataScienceWithPythonTraining = () => {
   };
 
   const corporateData = {
-    "courseName": "Why Corporates Choose Simpliaxis",
+    "courseName": "Why Corporates Choose Viovn",
     "label": "Corporate Training",
     "buttonText": "Corporate Group Enquiry",
     "description": "Customized Data Science training programs tailored to enterprise needs."
@@ -543,7 +543,7 @@ const DataScienceWithPythonTraining = () => {
       titlePrefix: 'Earn Your',
       titleHighlight: 'Global',
       titleSuffix: 'Recognition',
-      issuerName: 'Simpliaxis',
+      issuerName: 'Viovn',
       certificateType: 'Certificate of Excellence',
       certifyText: 'This is to certify that',
       requirementText:

@@ -18,7 +18,7 @@ function CourseCard({ course }: { course: Course }) {
 
           <div className="absolute top-[7%] right-[0%]">
             <img
-              src="https://www.simpliaxis.com/frontend_assets/image/popularcards.webp"
+              src="https://www.viovn.com/frontend_assets/image/popularcards.webp"
               width="96"
               height="30"
               alt="popular"

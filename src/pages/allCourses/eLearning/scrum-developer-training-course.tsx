@@ -124,8 +124,8 @@ const ScrumDeveloperTrainingCourse = () => {
     },
     faqs: [
       {
-        question: "1. What is Simpliaxis’s Scrum Developer Training?",
-        answer: "Simpliaxis Scrum Developer Training is a recorded video learning program designed to help software developers work effectively within Scrum and Agile environments."
+        question: "1. What is Viovn’s Scrum Developer Training?",
+        answer: "Viovn Scrum Developer Training is a recorded video learning program designed to help software developers work effectively within Scrum and Agile environments."
       },
       {
         question: "2. Who all are eligible to take this training?",
@@ -145,7 +145,7 @@ const ScrumDeveloperTrainingCourse = () => {
       },
       {
         question: "6. Will I get a certification?",
-        answer: "Yes, you will receive a Simpliaxis course completion certificate and gain preparation for Scrum Developer certifications like CSD or PSD."
+        answer: "Yes, you will receive a Viovn course completion certificate and gain preparation for Scrum Developer certifications like CSD or PSD."
       },
       {
         question: "7. What is the duration of this course?",

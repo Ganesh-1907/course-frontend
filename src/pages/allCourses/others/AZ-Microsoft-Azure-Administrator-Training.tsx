@@ -416,7 +416,7 @@ const AZMicrosoftAzureAdministratorTraining = () => {
       "Aligned with AZ-104 Exam",
       "Microsoft Certified Credential"
     ],
-    "mainImage": "https://www.simpliaxis.com/../frontend_assets/image/ring_loader.gif",
+    "mainImage": "https://www.viovn.com/../frontend_assets/image/ring_loader.gif",
     "badgeImage": "/csm-badge.png"
   };
 
@@ -454,7 +454,7 @@ const AZMicrosoftAzureAdministratorTraining = () => {
   };
 
   const corporateData = {
-    "courseName": "Why SimpliAxis Is the First Choice for Corporates?",
+    "courseName": "Why Viovn Is the First Choice for Corporates?",
     "label": "",
     "buttonText": "Corporate Group Enquiry",
     "description": "Tailored Azure training solutions to enhance enterprise cloud capabilities."

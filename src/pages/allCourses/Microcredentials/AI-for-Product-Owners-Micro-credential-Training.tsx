@@ -413,7 +413,7 @@ const AIForProductOwnersMicroCredentialTraining = () => {
                     <div className="grid grid-cols-1 gap-8 lg:grid-cols-[minmax(0,1fr)_340px]">
                         <div className="space-y-12">
                             <CourseTabs tabs={tabs} />
-                            <CourseCorporateOptUs courseName="Why SimpliAxis Is the First Choice for Corporates" description="Viovn provides tailored AI and Agile training programs designed to enhance enterprise product management capabilities." label="" buttonText="Corporate Group Enquiry" />
+                            <CourseCorporateOptUs courseName="Why Viovn Is the First Choice for Corporates" description="Viovn provides tailored AI and Agile training programs designed to enhance enterprise product management capabilities." label="" buttonText="Corporate Group Enquiry" />
                             <CourseClients clients={companies} />
                             <CourseTrainers trainers={[]} />
                             <CourseWhyViovn features={whySections} />

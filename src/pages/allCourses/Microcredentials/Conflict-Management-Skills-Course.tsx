@@ -378,7 +378,7 @@ const ConflictManagementSkillsCourse = () => {
                             <CourseTabs tabs={tabs} />
                             <CourseCorporateOptUs
                                 courseName="Corporate Conflict Management Training"
-                                description="SimpliAxis delivers tailored corporate training programs designed to address specific organizational challenges."
+                                description="Viovn delivers tailored corporate training programs designed to address specific organizational challenges."
                                 label=""
                                 buttonText="Corporate Group Enquiry"
                             />

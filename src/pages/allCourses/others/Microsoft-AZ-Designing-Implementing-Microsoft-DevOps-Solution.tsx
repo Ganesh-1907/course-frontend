@@ -138,7 +138,7 @@ const MicrosoftAZDesigningImplementingMicrosoftDevOpsSolution = () => {
     },
     {
       "title": "Join Training",
-      "description": "Enroll in the Simpliaxis AZ-400 Certification course.",
+      "description": "Enroll in the Viovn AZ-400 Certification course.",
       "color": "bg-orange-500"
     },
     {
@@ -439,7 +439,7 @@ const MicrosoftAZDesigningImplementingMicrosoftDevOpsSolution = () => {
       "Exam Preparation Support",
       "Industry-Recognized Certification"
     ],
-    "mainImage": "https://www.simpliaxis.com/../frontend_assets/image/ring_loader.gif",
+    "mainImage": "https://www.viovn.com/../frontend_assets/image/ring_loader.gif",
     "badgeImage": "/csm-badge.png"
   };
 

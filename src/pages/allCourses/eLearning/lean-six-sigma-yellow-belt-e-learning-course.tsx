@@ -157,7 +157,7 @@ const LeanSixSigmaYellowBeltELearningCourse = () => {
       },
       {
         question: "9. Which platform is best for preparing for the Lean Six Sigma Yellow Belt exam?",
-        answer: "Simpliaxis offers structured Lean Six Sigma courses with flexible learning options, practical insights, and comprehensive materials designed to help learners prepare effectively for certification."
+        answer: "Viovn offers structured Lean Six Sigma courses with flexible learning options, practical insights, and comprehensive materials designed to help learners prepare effectively for certification."
       }
     ],
     whoCanBuy: [

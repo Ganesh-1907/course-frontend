@@ -385,8 +385,8 @@ const ICAgileAIForProductPlanningMicroCredentialCourseTraining = () => {
                         <div className="space-y-12">
                             <CourseTabs tabs={tabs} />
                             <CourseCorporateOptUs
-                                courseName="Why SimpliAxis Is the First Choice for Corporates?"
-                                description="SimpliAxis delivers customized corporate training solutions designed to strengthen AI-enabled product planning capabilities."
+                                courseName="Why Viovn Is the First Choice for Corporates?"
+                                description="Viovn delivers customized corporate training solutions designed to strengthen AI-enabled product planning capabilities."
                                 label=""
                                 buttonText="Corporate Group Enquiry"
                             />
