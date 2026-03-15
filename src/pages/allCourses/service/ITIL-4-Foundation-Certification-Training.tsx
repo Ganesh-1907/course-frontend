@@ -47,7 +47,7 @@ const ITILFoundationCertification = () => {
     { text: "Exam Fee Included in Training Cost", icon: <CreditCard className="w-5 h-5" /> },
     { text: "Official eBook & PeopleCert Study Material Included", icon: <BookOpen className="w-5 h-5" /> },
     { text: "Mock Tests and Practice Assessments", icon: <FileText className="w-5 h-5" /> },
-    { text: "24/7 Simpliaxis Support and Assistance", icon: <Headset className="w-5 h-5" /> }
+    { text: "24/7 Viovn Support and Assistance", icon: <Headset className="w-5 h-5" /> }
   ];
 
   const individualBenefits = [
@@ -448,7 +448,7 @@ const ITILFoundationCertification = () => {
       "Official Study Materials",
       "16 CPDs Awarded"
     ],
-    "mainImage": "https://www.simpliaxis.com/../frontend_assets/image/ring_loader.gif",
+    "mainImage": "https://www.viovn.com/../frontend_assets/image/ring_loader.gif",
     "badgeImage": "/csm-badge.png"
   };
 
@@ -486,10 +486,10 @@ const ITILFoundationCertification = () => {
   };
 
   const corporateData = {
-    "courseName": "Why Corporates Choose Simpliaxis",
+    "courseName": "Why Corporates Choose Viovn",
     "label": "",
     "buttonText": "Corporate Group Enquiry",
-    "description": "Simpliaxis provides tailored ITIL training solutions globally, helping enterprises strengthen service management, governance, and digital transformation initiatives."
+    "description": "Viovn provides tailored ITIL training solutions globally, helping enterprises strengthen service management, governance, and digital transformation initiatives."
   };
 
   const courseMetadata = {

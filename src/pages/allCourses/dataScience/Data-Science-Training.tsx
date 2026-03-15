@@ -240,7 +240,7 @@ const DataScienceTraining = () => {
         },
         {
           "question": "4. How do I obtain the Data Science course certification?",
-          "answer": "For attaining the Data Science course certification, you just need to pass the exams that come under the course with an average score. After successful completion, Simpliaxis issues the course completion certificate."
+          "answer": "For attaining the Data Science course certification, you just need to pass the exams that come under the course with an average score. After successful completion, Viovn issues the course completion certificate."
         },
         {
           "question": "5. How long does the Data Science certification be valid?",
@@ -302,7 +302,7 @@ const DataScienceTraining = () => {
         { "question": "11. Instructor expertise?", "answer": "Certified trainers with industry experience." },
         { "question": "12. Discounts?", "answer": "Available periodically." },
         { "question": "13. Affordable courses?", "answer": "Yes, competitively priced." },
-        { "question": "14. Why choose Simpliaxis?", "answer": "Experienced trainers and global certification portfolio." },
+        { "question": "14. Why choose Viovn?", "answer": "Experienced trainers and global certification portfolio." },
         { "question": "15. Lifetime access?", "answer": "Yes, lifetime access to course materials." },
         { "question": "16. Support availability?", "answer": "24/7 support available." },
         { "question": "17. Career growth?", "answer": "High demand globally for certified data scientists." },
@@ -457,7 +457,7 @@ const DataScienceTraining = () => {
       "Advanced modeling techniques",
       "Lifetime certification validity"
     ],
-    "mainImage": "https://www.simpliaxis.com/../frontend_assets/image/ring_loader.gif",
+    "mainImage": "https://www.viovn.com/../frontend_assets/image/ring_loader.gif",
     "badgeImage": "/csm-badge.png"
   };
 
@@ -517,7 +517,7 @@ const DataScienceTraining = () => {
       titlePrefix: 'Earn Your',
       titleHighlight: 'Global',
       titleSuffix: 'Recognition',
-      issuerName: 'Simpliaxis',
+      issuerName: 'Viovn',
       certificateType: 'Certificate of Excellence',
       certifyText: 'This is to certify that',
       requirementText:

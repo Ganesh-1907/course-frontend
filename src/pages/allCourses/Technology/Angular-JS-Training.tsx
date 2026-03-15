@@ -259,7 +259,7 @@ const AngularJSTraining = () => {
         { "question": "11. Instructor expertise?", "answer": "Certified professionals with industry experience." },
         { "question": "12. Discounts?", "answer": "Available periodically." },
         { "question": "13. Affordable?", "answer": "Yes, competitively priced." },
-        { "question": "14. Why choose Simpliaxis?", "answer": "Expert trainers and global recognition." },
+        { "question": "14. Why choose Viovn?", "answer": "Expert trainers and global recognition." },
         { "question": "15. Lifetime access?", "answer": "Yes." },
         { "question": "16. Support?", "answer": "24/7 assistance available." },
         { "question": "17. Career growth?", "answer": "High demand in frontend development roles." },
@@ -414,7 +414,7 @@ const AngularJSTraining = () => {
       "Certification upon completion",
       "Industry-recognized training"
     ],
-    "mainImage": "https://www.simpliaxis.com/../frontend_assets/image/ring_loader.gif",
+    "mainImage": "https://www.viovn.com/../frontend_assets/image/ring_loader.gif",
     "badgeImage": "/csm-badge.png"
   };
 
@@ -474,7 +474,7 @@ const AngularJSTraining = () => {
       titlePrefix: 'Earn Your',
       titleHighlight: 'Global',
       titleSuffix: 'Recognition',
-      issuerName: 'Simpliaxis',
+      issuerName: 'Viovn',
       certificateType: 'Course Completion Certificate',
       certifyText: 'This is to certify that',
       requirementText:

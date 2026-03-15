@@ -421,7 +421,7 @@ const AWSSysOpsAdministratorCertificationTraining = () => {
       "SOA-C02 Exam Preparation",
       "Lifetime Course Access"
     ],
-    "mainImage": "https://www.simpliaxis.com/../frontend_assets/image/ring_loader.gif",
+    "mainImage": "https://www.viovn.com/../frontend_assets/image/ring_loader.gif",
     "badgeImage": "/csm-badge.png"
   };
 
@@ -461,10 +461,10 @@ const AWSSysOpsAdministratorCertificationTraining = () => {
   };
 
   const corporateData = {
-    "courseName": "Why Corporates Choose Simpliaxis",
+    "courseName": "Why Corporates Choose Viovn",
     "label": "",
     "buttonText": "Corporate Group Enquiry",
-    "description": "Simpliaxis provides tailored AWS training solutions to help organizations strengthen cloud governance, security, scalability, and operational excellence."
+    "description": "Viovn provides tailored AWS training solutions to help organizations strengthen cloud governance, security, scalability, and operational excellence."
   };
 
   const courseMetadata = {

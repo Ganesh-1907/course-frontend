@@ -8,7 +8,7 @@ interface ELearningContactBarProps {
 
 const ELearningContactBar: React.FC<ELearningContactBarProps> = ({ 
   phone = "+91-9036554933", 
-  email = "hello@simpliaxis.com" 
+  email = "hello@viovn.com" 
 }) => {
   return (
     <div className="fixed bottom-0 left-0 right-0 z-[100] bg-[#1a1a1a] text-white overflow-hidden hidden md:block">

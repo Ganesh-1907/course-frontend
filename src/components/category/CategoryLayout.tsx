@@ -101,14 +101,14 @@ function ContactAdvisor() {
 
           <div className="hidden lg:block ">
             <img
-              src="https://www.simpliaxis.com/frontend_assets/image/corpo2.webp"
+              src="https://www.viovn.com/frontend_assets/image/corpo2.webp"
               className="absolute bottom-0"
               width="150"
               height="120"
               alt="background"
             />
             <img
-              src="https://www.simpliaxis.com/frontend_assets/image/corpo1.webp"
+              src="https://www.viovn.com/frontend_assets/image/corpo1.webp"
               className="relative top-6 align-middle"
               width="120"
               height="120"
@@ -184,16 +184,16 @@ function TrainersSection() {
     {
       name: "Aakash Srinivasan, CST",
       image:
-        "https://www.simpliaxis.com/storage/images/trainer_module_trainer_module_Aakash_CST_1636618351_1763109653.webp",
+        "https://www.viovn.com/storage/images/trainer_module_trainer_module_Aakash_CST_1636618351_1763109653.webp",
       certifications: "Certified Scrum Master (CSM®), Certified Scrum Product Owner (CSPO®)",
       description:
-        "Aakash Srinivasan is an experienced Agile transformation leader and co-founder of SimpliAxis Inc.",
+        "Aakash Srinivasan is an experienced Agile transformation leader and co-founder of Viovn Inc.",
       experience: "15+ Years",
     },
     {
       name: "Michel Goldenberg, CST",
       image:
-        "https://www.simpliaxis.com/storage/images/trainer_module_trainer_module_1573740473939_1623738195_1763109987.webp",
+        "https://www.viovn.com/storage/images/trainer_module_trainer_module_1573740473939_1623738195_1763109987.webp",
       certifications:
         "Certified Scrum Master (CSM®), ACSM®, CSPO®, ACSPO®, CSD®, ACSD®",
       description:
@@ -203,7 +203,7 @@ function TrainersSection() {
     {
       name: "Raj Kasturi, CST",
       image:
-        "https://www.simpliaxis.com/storage/images/trainer_module_trainer_module_Raj_CST_1636465024_1761813371.webp",
+        "https://www.viovn.com/storage/images/trainer_module_trainer_module_Raj_CST_1636465024_1761813371.webp",
       certifications: "CSM",
       description:
         "Raj is an experienced Scrum Trainer helping organizations transition to Agile.",
@@ -280,7 +280,7 @@ function TrainersSection() {
               </span>
 
               <a
-                href="https://www.linkedin.com/company/simpliaxis-inc"
+                href="https://www.linkedin.com/company/viovn-inc"
                 target="_blank"
               >
                 <svg
@@ -318,12 +318,12 @@ function CorporateTrainingSection() {
         </p>
 
         <h2 className="text-xl sm:text-2xl font-bold text-slate-900 mt-2 mb-4">
-          Why SimpliAxis Is The First Choice For Corporates?
+          Why Viovn Is The First Choice For Corporates?
         </h2>
 
         {/* Description */}
         <p className="text-sm sm:text-base text-slate-700 leading-relaxed mb-3">
-          Simpliaxis provides In person and live virtual instructor-led corporate training
+          Viovn provides In person and live virtual instructor-led corporate training
           program customized for enterprise teams who wish to train their employees on
           specific aspects of their job processes or responsibilities. The corporate training
           by our expert certified trainers will enhance your learning curve and enable your
@@ -408,7 +408,7 @@ function CourseReviews() {
     {
       name: "Jai Kumar Jadhav",
       image:
-        "https://www.simpliaxis.com/storage/images/testimonial_module_jaikumarjadhav_1763386533.jfif",
+        "https://www.viovn.com/storage/images/testimonial_module_jaikumarjadhav_1763386533.jfif",
       text:
         "I’m happy to share that I’ve obtained a new certification: Certified Scrum Product Owner (CSPO)...",
     },
@@ -417,7 +417,7 @@ function CourseReviews() {
       role: "Assistant Vice President",
       company: "Citi",
       image:
-        "https://www.simpliaxis.com/storage/images/testimonial_module_komal_1762341028.jfif",
+        "https://www.viovn.com/storage/images/testimonial_module_komal_1762341028.jfif",
       text:
         "I am delighted to complete my Certified Scrum Master Certification and Training...",
     },
@@ -429,7 +429,7 @@ function CourseReviews() {
 
         {/* Title */}
         <p className="text-[#01203d] font-bold text-lg sm:text-[1.3rem] mb-4">
-          Find out why 1,000+ professionals love SimpliAxis
+          Find out why 1,000+ professionals love Viovn
         </p>
 
         {/* Tabs */}
@@ -616,7 +616,7 @@ function PracticeTestSection() {
           <div className="w-full sm:w-[320px] px-2 py-2 bg-white rounded-lg shadow-md">
 
             <img
-              src="https://www.simpliaxis.com/frontend_assets/image/practicetestbg.webp"
+              src="https://www.viovn.com/frontend_assets/image/practicetestbg.webp"
               className="h-[3.25rem] w-full object-cover"
               alt="practice"
             />
@@ -644,7 +644,7 @@ function PracticeTestSection() {
               </div>
 
               <a
-                href="https://www.simpliaxis.com/practice-tests"
+                href="https://www.viovn.com/practice-tests"
                 className="block mt-3 text-right"
               >
                 <button className="px-3 py-1 bg-[#fa4a23] text-white rounded text-xs sm:text-sm">
@@ -672,8 +672,8 @@ function LatestBlogs() {
         "Product Manager Certification Guide Salary, Cost & Career Path",
       desc:
         "Complete guide to product manager certification, global salary, eligibility, cost, career path & top options like SAFe POPM ,SAFe APM ,ICP-PDM.",
-      img: "https://www.simpliaxis.com/frontend_assets/image/home-blog-img.webp",
-      link: "https://www.simpliaxis.com/resources/product-manager-certification-guide",
+      img: "https://www.viovn.com/frontend_assets/image/home-blog-img.webp",
+      link: "https://www.viovn.com/resources/product-manager-certification-guide",
     },
   ];
 
@@ -743,67 +743,67 @@ function RelatedCourses() {
   const courses = [
     {
       title: "Generative AI For Business Leaders",
-      url: "https://www.simpliaxis.com/generative-ai-for-business-leaders",
+      url: "https://www.viovn.com/generative-ai-for-business-leaders",
     },
     {
       title: "Generative AI For Business Analysts and IT Consultants",
-      url: "https://www.simpliaxis.com/generative-ai-for-business-analysts-and-it-consultants",
+      url: "https://www.viovn.com/generative-ai-for-business-analysts-and-it-consultants",
     },
     {
       title: "Cloud Fundamentals For Business Managers and Product Managers",
-      url: "https://www.simpliaxis.com/cloud-fundamentals-for-business-managers-product-managers",
+      url: "https://www.viovn.com/cloud-fundamentals-for-business-managers-product-managers",
     },
     {
       title: "Generative AI Architect Advanced Program",
-      url: "https://www.simpliaxis.com/generative-ai-architect-advanced-program",
+      url: "https://www.viovn.com/generative-ai-architect-advanced-program",
     },
     {
       title: "Multi Cloud Finops AWS GCP Azure",
-      url: "https://www.simpliaxis.com/multi-cloud-finops-aws-gcp-azure",
+      url: "https://www.viovn.com/multi-cloud-finops-aws-gcp-azure",
     },
     {
       title: "Introduction To Generative AI",
-      url: "https://www.simpliaxis.com/introduction-to-generative-ai",
+      url: "https://www.viovn.com/introduction-to-generative-ai",
     },
     {
       title: "Generative AI For Agile Leaders",
-      url: "https://www.simpliaxis.com/generative-ai-for-agile-leaders-training",
+      url: "https://www.viovn.com/generative-ai-for-agile-leaders-training",
     },
     {
       title: "Mastering Generative AI Tools Online",
-      url: "https://www.simpliaxis.com/mastering-generative-ai-tools-online",
+      url: "https://www.viovn.com/mastering-generative-ai-tools-online",
     },
     {
       title: "Generative AI For Product Owners Managers",
-      url: "https://www.simpliaxis.com/generative-ai-for-product-owners-managers-training",
+      url: "https://www.viovn.com/generative-ai-for-product-owners-managers-training",
     },
     {
       title: "Prompt Engineering",
-      url: "https://www.simpliaxis.com/prompt-engineering-course",
+      url: "https://www.viovn.com/prompt-engineering-course",
     },
     {
       title: "Generative AI For Project Managers",
-      url: "https://www.simpliaxis.com/generative-ai-for-project-managers-training",
+      url: "https://www.viovn.com/generative-ai-for-project-managers-training",
     },
     {
       title: "Generative AI For Software Developers",
-      url: "https://www.simpliaxis.com/generative-ai-for-software-developers",
+      url: "https://www.viovn.com/generative-ai-for-software-developers",
     },
     {
       title: "Generative AI in HR",
-      url: "https://www.simpliaxis.com/generative-ai-hr-certification-course",
+      url: "https://www.viovn.com/generative-ai-hr-certification-course",
     },
     {
       title: "Generative AI For Scrum Masters",
-      url: "https://www.simpliaxis.com/generative-ai-for-scrum-masters-training",
+      url: "https://www.viovn.com/generative-ai-for-scrum-masters-training",
     },
     {
       title: "AI-Native Change Agent",
-      url: "https://www.simpliaxis.com/ai-native-change-agent-certification-training",
+      url: "https://www.viovn.com/ai-native-change-agent-certification-training",
     },
     {
       title: "AI-Native Foundations Agent",
-      url: "https://www.simpliaxis.com/ai-native-foundations-certification-training",
+      url: "https://www.viovn.com/ai-native-foundations-certification-training",
     },
   ];
 
@@ -882,7 +882,7 @@ const CategoryLayout: React.FC<CategoryLayoutProps> = ({ data }) => {
               <ContactAdvisor />
             </section>
             <section className="my-2">
-              <CategoryOverview content={{ preview: "Scaled Agile Framework has emerged as the most trusted system for aligning teams, improving collaboration, and achieving enterprise-wide agility. Through Simpliaxis’s SAFe® Certification Trainings, professionals gain the skills and confidence to lead Agile transformations and accelerate business success in a structured, globally recognized way.What..." }} />
+              <CategoryOverview content={{ preview: "Scaled Agile Framework has emerged as the most trusted system for aligning teams, improving collaboration, and achieving enterprise-wide agility. Through Viovn’s SAFe® Certification Trainings, professionals gain the skills and confidence to lead Agile transformations and accelerate business success in a structured, globally recognized way.What..." }} />
             </section>
 
             <section id="trainers">

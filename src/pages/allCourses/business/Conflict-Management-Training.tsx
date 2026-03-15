@@ -403,10 +403,10 @@ const ConflictManagementTraining = () => {
     };
 
     const corporateData = {
-        "courseName": "Why SimpliAxis Is The First Choice For Corporates?",
+        "courseName": "Why Viovn Is The First Choice For Corporates?",
         "label": "",
         "buttonText": "Corporate Group enquiry",
-        "description": "With learning targeted to your unique team environment, we at SimpliAxis help to resolve your specific issues and meet your specific needs with tailored training methods. We offer corporate training globally to keep Organizations up to date by building the knowledge gap required and make them strive in the competitive world with the right skills according to the industry needs."
+        "description": "With learning targeted to your unique team environment, we at Viovn help to resolve your specific issues and meet your specific needs with tailored training methods. We offer corporate training globally to keep Organizations up to date by building the knowledge gap required and make them strive in the competitive world with the right skills according to the industry needs."
     };
 
     const courseMetadata = {

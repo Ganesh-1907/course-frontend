@@ -491,7 +491,7 @@ const CertifiedInformationSystemsSecurityProfessionalTraining = () => {
       "Exam Preparation Guidance",
       "Global Recognition"
     ],
-    "mainImage": "https://www.simpliaxis.com/../frontend_assets/image/ring_loader.gif",
+    "mainImage": "https://www.viovn.com/../frontend_assets/image/ring_loader.gif",
     "badgeImage": "/csm-badge.png"
   };
 

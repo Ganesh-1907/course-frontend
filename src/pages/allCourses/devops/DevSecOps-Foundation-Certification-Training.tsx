@@ -441,7 +441,7 @@ const DevSecOpsFoundationCertificationTraining = () => {
       "Globally Recognized Certification",
       "16 PDUs & 16 SEUs"
     ],
-    mainImage: "https://www.simpliaxis.com/../frontend_assets/image/ring_loader.gif",
+    mainImage: "https://www.viovn.com/../frontend_assets/image/ring_loader.gif",
     badgeImage: "/csm-badge.png"
   };
 
@@ -465,10 +465,10 @@ const DevSecOpsFoundationCertificationTraining = () => {
   };
 
   const corporateData = {
-    courseName: "Why Corporates Choose Simpliaxis",
+    courseName: "Why Corporates Choose Viovn",
     label: "",
     buttonText: "Corporate Group Enquiry",
-    description: "Simpliaxis delivers tailored DevOps training programs globally to help organizations bridge skill gaps, improve collaboration, and enhance operational efficiency through industry-aligned methodologies."
+    description: "Viovn delivers tailored DevOps training programs globally to help organizations bridge skill gaps, improve collaboration, and enhance operational efficiency through industry-aligned methodologies."
   };
 
   const courseMetadata = {

@@ -134,7 +134,7 @@ const MicrosoftProject2013AdvancedCourse = () => {
       },
       {
         question: "6. Will I get a certification?",
-        answer: "Yes, you will receive a course completion certificate from Simpliaxis."
+        answer: "Yes, you will receive a course completion certificate from Viovn."
       },
       {
         question: "7. What is the length of this class?",

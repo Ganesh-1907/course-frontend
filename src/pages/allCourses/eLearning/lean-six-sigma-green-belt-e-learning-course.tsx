@@ -23,7 +23,7 @@ const LeanSixSigmaGreenBeltELearningCourse = () => {
     enrolledCount: "1k+",
     duration: "10Hrs",
     level: "Intermediate",
-    description: "Enhance your career growth with the Simpliaxis Lean Six Sigma Green Belt E-learning course. This program is specifically designed for professionals who want to specialize in process improvement and operational excellence. The course explores advanced Six Sigma concepts, tools, and methodologies that help organizations improve quality and efficiency. Ideal for team leaders, project managers, and quality assurance professionals, this training equips learners with the skills needed to lead process improvement initiatives and drive organizational excellence using the Six Sigma framework.",
+    description: "Enhance your career growth with the Viovn Lean Six Sigma Green Belt E-learning course. This program is specifically designed for professionals who want to specialize in process improvement and operational excellence. The course explores advanced Six Sigma concepts, tools, and methodologies that help organizations improve quality and efficiency. Ideal for team leaders, project managers, and quality assurance professionals, this training equips learners with the skills needed to lead process improvement initiatives and drive organizational excellence using the Six Sigma framework.",
     heroImage: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=800",
     previewImage: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=800",
     pricing: {
@@ -75,7 +75,7 @@ const LeanSixSigmaGreenBeltELearningCourse = () => {
     benefits: [
       {
         title: "Cost-Efficiency:",
-        description: "The Simpliaxis Six Sigma Green Belt E-learning program eliminates travel and printed material expenses, making it a cost-effective training option for both individuals and organizations."
+        description: "The Viovn Six Sigma Green Belt E-learning program eliminates travel and printed material expenses, making it a cost-effective training option for both individuals and organizations."
       },
       {
         title: "Time Savings:",
@@ -91,7 +91,7 @@ const LeanSixSigmaGreenBeltELearningCourse = () => {
       },
       {
         title: "Consistent Learning Experience:",
-        description: "Simpliaxis E-learning ensures a standardized learning experience where all participants receive the same high-quality course content, assessments, and learning support."
+        description: "Viovn E-learning ensures a standardized learning experience where all participants receive the same high-quality course content, assessments, and learning support."
       }
     ],
     modules: [
@@ -150,7 +150,7 @@ const LeanSixSigmaGreenBeltELearningCourse = () => {
       },
       {
         question: "6. Can I learn Six Sigma online?",
-        answer: "Yes, Six Sigma can be learned online through flexible E-learning programs. Simpliaxis offers online training that includes video lectures, interactive materials, and assessments to support effective learning."
+        answer: "Yes, Six Sigma can be learned online through flexible E-learning programs. Viovn offers online training that includes video lectures, interactive materials, and assessments to support effective learning."
       },
       {
         question: "7. Does access to the Six Sigma Green Belt course expire?",
@@ -158,7 +158,7 @@ const LeanSixSigmaGreenBeltELearningCourse = () => {
       },
       {
         question: "8. Which platform is best for Lean Six Sigma Green Belt exam preparation?",
-        answer: "Simpliaxis provides a well-structured Lean Six Sigma Green Belt training program with flexible online learning, comprehensive course materials, and practical insights designed to help learners prepare effectively for certification."
+        answer: "Viovn provides a well-structured Lean Six Sigma Green Belt training program with flexible online learning, comprehensive course materials, and practical insights designed to help learners prepare effectively for certification."
       }
     ],
     whoCanBuy: [

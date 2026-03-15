@@ -279,7 +279,7 @@ const IntroductionToArtificialIntelligenceMachineLearning = () => {
         { "question": "4. Corporate training?", "answer": "Customized enterprise training available." },
         { "question": "5. Certificate provided?", "answer": "Yes." },
         { "question": "6. Discounts?", "answer": "Available periodically." },
-        { "question": "7. Why choose Simpliaxis?", "answer": "Experienced trainers and global recognition." },
+        { "question": "7. Why choose Viovn?", "answer": "Experienced trainers and global recognition." },
         { "question": "8. Affordable courses?", "answer": "Yes, competitive pricing." },
         { "question": "9. Language options?", "answer": "English preferred; custom options available." },
         { "question": "10. Enrollment process?", "answer": "Register online and complete payment." },
@@ -441,7 +441,7 @@ const IntroductionToArtificialIntelligenceMachineLearning = () => {
       "Lifetime-valid certification",
       "Beginner-friendly course"
     ],
-    "mainImage": "https://www.simpliaxis.com/../frontend_assets/image/ring_loader.gif",
+    "mainImage": "https://www.viovn.com/../frontend_assets/image/ring_loader.gif",
     "badgeImage": "/csm-badge.png"
   };
 
@@ -506,7 +506,7 @@ const IntroductionToArtificialIntelligenceMachineLearning = () => {
       titlePrefix: 'Earn Your',
       titleHighlight: 'Global',
       titleSuffix: 'Recognition',
-      issuerName: 'Simpliaxis',
+      issuerName: 'Viovn',
       certificateType: 'Certificate of Achievement',
       certifyText: 'This is to certify that',
       requirementText:
