@@ -1,10 +1,10 @@
 import React from "react";
-import { Sparkles } from "lucide-react";
+import { Sparkles, CheckCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 
 interface HighlightItem {
-  icon: React.ReactNode;
+  icon?: React.ReactNode;
   text: string;
 }
 
@@ -59,7 +59,7 @@ const CourseHighlights: React.FC<CourseHighlightsProps> = ({
               className="flex items-start gap-4 p-4 rounded-2xl bg-white/50 border border-white hover:border-primary/20 hover:bg-white transition-all duration-300 shadow-sm hover:shadow-md"
             >
               <div className="flex-shrink-0 w-10 h-10 bg-primary shadow-lg shadow-primary/20 rounded-xl flex items-center justify-center text-white [&_svg]:text-white">
-                {item.icon}
+                {item.icon ?? <CheckCircle className="w-5 h-5" />}
               </div>
               <p className="text-[15px] font-bold text-slate-700 leading-snug pt-1">
                 {item.text}

@@ -323,7 +323,19 @@ const ICAgileAIforProductStrategyMicroCredentialCourse = () => {
         }
     ];
 
-    
+    const sidePanelSchedules = [
+        {
+            courseCode: "AI-PP",
+            courseName: "ICAgile AI for Product Planning",
+            dateRange: "May 15 - May 15, 2026",
+            timeRange: "05:00 PM - 08:00 PM IST",
+            trainerName: "ICAgile Expert",
+            trainerImage: "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=100",
+            originalPrice: "INR 28,000",
+            discountedPrice: "INR 19,500",
+            discountPercentage: "30",
+        },
+    ];
 
     const certificateBenefits = [
         "Globally recognized ICAgile Micro-credential",
@@ -627,7 +639,7 @@ const ICAgileAIforProductStrategyMicroCredentialCourse = () => {
 
                         <div className="relative w-full lg:w-[340px] xl:w-[360px] lg:justify-self-end">
                             <div className="sticky top-24">
-                                <CourseSidePanel  courseName={heroData.courseName} />
+                                <CourseSidePanel schedules={sidePanelSchedules} courseName={heroData.courseName} />
                             </div>
                         </div>
                     </div>

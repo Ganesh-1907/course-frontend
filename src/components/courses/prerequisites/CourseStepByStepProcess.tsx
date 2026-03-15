@@ -4,7 +4,7 @@ import { Sparkles } from "lucide-react";
 interface Step {
   title: string;
   description: string;
-  color: string;
+  color?: string;
 }
 
 interface CourseStepByStepProcessProps {
@@ -61,7 +61,7 @@ const CourseStepByStepProcess: React.FC<CourseStepByStepProcessProps> = ({
             <div key={i} className="flex gap-6 items-start">
               <span 
                 className="text-5xl md:text-6xl font-black leading-none select-none"
-                style={{ color: step.color }}
+                style={{ color: step.color || '#ff4d2a' }}
               >
                 {i + 1}
               </span>
