@@ -154,7 +154,7 @@ const LeanSixSigmaGreenBeltBasicsOnlineCourse = () => {
       },
       {
         question: "6. Which platform is best for preparing for the Lean Six Sigma Green Belt Basics certification?",
-        answer: "Simpliaxis offers a well-structured Lean Six Sigma Green Belt Basics course with flexible online learning, practical insights, and accessible resources that help learners prepare effectively."
+        answer: "Viovn offers a well-structured Lean Six Sigma Green Belt Basics course with flexible online learning, practical insights, and accessible resources that help learners prepare effectively."
       },
       {
         question: "7. What is the difference between Six Sigma Green Belt and Lean Six Sigma Green Belt Basics?",
@@ -166,7 +166,7 @@ const LeanSixSigmaGreenBeltBasicsOnlineCourse = () => {
       },
       {
         question: "9. How can I register for the Lean Six Sigma Green Belt Basics course?",
-        answer: "To register, visit the Simpliaxis website, create an account, select the Lean Six Sigma Green Belt Basics course from the catalog, complete the registration form, and finalize the payment process. Once registration is complete, you can log in and begin the course."
+        answer: "To register, visit the Viovn website, create an account, select the Lean Six Sigma Green Belt Basics course from the catalog, complete the registration form, and finalize the payment process. Once registration is complete, you can log in and begin the course."
       },
       {
         question: "10. Can the Lean Six Sigma Green Belt Basics course be accessed on any device?",

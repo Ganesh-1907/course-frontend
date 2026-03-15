@@ -366,7 +366,7 @@ const ScrumBetterWithKanbanSBKMicroCredentialTraining = () => {
                             <CourseTabs tabs={tabs} />
                             <CourseCorporateOptUs
                                 courseName="Corporate Scrum-Kanban Training"
-                                description="SimpliAxis provides customized corporate Agile training solutions designed to improve workflow efficiency and delivery performance."
+                                description="Viovn provides customized corporate Agile training solutions designed to improve workflow efficiency and delivery performance."
                                 label=""
                                 buttonText="Corporate Group Enquiry"
                             />

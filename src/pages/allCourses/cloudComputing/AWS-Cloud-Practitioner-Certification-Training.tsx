@@ -441,7 +441,7 @@ const AWSCloudPractitionerCertificationTraining = () => {
       "Foundational AWS Knowledge",
       "Pathway to Advanced AWS Certifications"
     ],
-    "mainImage": "https://www.simpliaxis.com/../frontend_assets/image/ring_loader.gif",
+    "mainImage": "https://www.viovn.com/../frontend_assets/image/ring_loader.gif",
     "badgeImage": "/csm-badge.png"
   };
 
@@ -480,7 +480,7 @@ const AWSCloudPractitionerCertificationTraining = () => {
   };
 
   const corporateData = {
-    "courseName": "Why Corporates Choose Simpliaxis",
+    "courseName": "Why Corporates Choose Viovn",
     "label": "",
     "buttonText": "Corporate Group Enquiry",
     "description": "We provide tailored AWS corporate training programs to enhance cloud adoption, security, and operational excellence across organizations."

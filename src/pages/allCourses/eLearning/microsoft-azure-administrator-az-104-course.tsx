@@ -161,7 +161,7 @@ const MicrosoftAzureAdministratorCourse = () => {
         answer: "Common job roles include Azure Administrator, Cloud Administrator, Systems Administrator, Network Administrator, and IT Support Specialist focused on cloud services."
       },
       {
-        question: "7. What practical experience will I gain from Simpliaxis training?",
+        question: "7. What practical experience will I gain from Viovn training?",
         answer: "Learners gain practical experience through hands-on labs, real-world scenarios, and training with Azure Portal, PowerShell, and CLI tools."
       },
       {

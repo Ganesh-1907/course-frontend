@@ -159,10 +159,10 @@ const Header: React.FC<HeaderProps> = ({ hidden = false }) => {
             <nav className="flex items-center gap-5">
               <div className="hidden xl:flex items-center gap-5 text-[13px] font-bold text-foreground/80">
                 <div className="relative group">
-                  <a href="#" className="flex items-center gap-1.5 hover:text-primary transition-colors">
+                  <Link to="/combo-courses" className="flex items-center gap-1.5 hover:text-primary transition-colors">
                     <span className="bg-slate-900 text-[9px] text-white px-1.5 py-0.5 rounded leading-none font-black uppercase">New</span>
                     Combo Courses
-                  </a>
+                  </Link>
                 </div>
 
                 <DropdownMenu>
@@ -192,15 +192,20 @@ const Header: React.FC<HeaderProps> = ({ hidden = false }) => {
                   <DropdownMenuContent className="w-48 p-2 bg-white rounded-xl shadow-2xl border-border/50">
                     <div className="grid gap-1">
                       {resourceLinks.map((link, idx) => (
-                        <DropdownMenuItem key={idx} className="px-3 py-2 text-[13px] font-medium hover:bg-slate-50 cursor-pointer rounded-lg">
-                          {link}
+                        <DropdownMenuItem key={idx} className="p-0">
+                          <Link
+                            to={link.path}
+                            className="w-full px-3 py-2 text-[13px] font-medium hover:bg-slate-50 cursor-pointer rounded-lg block"
+                          >
+                            {link.label}
+                          </Link>
                         </DropdownMenuItem>
                       ))}
                     </div>
                   </DropdownMenuContent>
                 </DropdownMenu>
 
-                <a href="#" className="hover:text-primary transition-colors">Corporate</a>
+                <Link to="/corporate-training" className="hover:text-primary transition-colors">Corporate</Link>
               </div>
 
               <div className="h-6 w-px bg-border hidden xl:block" />

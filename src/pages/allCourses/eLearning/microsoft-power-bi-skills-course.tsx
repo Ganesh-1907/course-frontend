@@ -22,7 +22,7 @@ const MicrosoftPowerBISkillsCourse = () => {
     enrolledCount: "1k+",
     duration: "6Hrs",
     level: "Beginner",
-    description: "The Microsoft Power BI Skills eLearning Course from Simpliaxis helps learners transform raw data into meaningful dashboards, reports, and visual insights for business decision-making. Through practical exercises and guided lessons, participants will learn Power Query, data modeling, advanced BI tools, and data visualization techniques. This course is suitable for both beginners and professionals who want to strengthen their data analysis skills, interpret business data effectively, and create powerful Power BI reports that support informed decision-making.",
+    description: "The Microsoft Power BI Skills eLearning Course from Viovn helps learners transform raw data into meaningful dashboards, reports, and visual insights for business decision-making. Through practical exercises and guided lessons, participants will learn Power Query, data modeling, advanced BI tools, and data visualization techniques. This course is suitable for both beginners and professionals who want to strengthen their data analysis skills, interpret business data effectively, and create powerful Power BI reports that support informed decision-making.",
     heroImage: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=800",
     previewImage: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=800",
     pricing: {
@@ -151,7 +151,7 @@ const MicrosoftPowerBISkillsCourse = () => {
       },
       {
         question: "10. Will I receive a certificate after completion?",
-        answer: "Yes, you will receive a Simpliaxis Course Completion Certificate after successfully finishing the Power BI Skills course."
+        answer: "Yes, you will receive a Viovn Course Completion Certificate after successfully finishing the Power BI Skills course."
       }
     ],
     whoCanBuy: [

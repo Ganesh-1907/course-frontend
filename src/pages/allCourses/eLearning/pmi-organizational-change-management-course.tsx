@@ -22,7 +22,7 @@ const PMIOrganizationalChangeManagementCourse = () => {
     enrolledCount: "1k+",
     duration: "5Hrs",
     level: "Beginner",
-    description: "The PMI Organizational Change Management (OCM) course from Simpliaxis equips professionals with the essential knowledge and skills required to manage and lead organizational change effectively. The course focuses on critical topics such as stakeholder engagement, communication strategies, leadership alignment, and cultural transformation. Participants will learn practical approaches to plan, implement, and sustain successful change initiatives within organizations. Upon completion, learners will earn 4 PDUs and gain a strong understanding of OCM principles and best practices to drive sustainable business transformation.",
+    description: "The PMI Organizational Change Management (OCM) course from Viovn equips professionals with the essential knowledge and skills required to manage and lead organizational change effectively. The course focuses on critical topics such as stakeholder engagement, communication strategies, leadership alignment, and cultural transformation. Participants will learn practical approaches to plan, implement, and sustain successful change initiatives within organizations. Upon completion, learners will earn 4 PDUs and gain a strong understanding of OCM principles and best practices to drive sustainable business transformation.",
     heroImage: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=800",
     previewImage: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=800",
     pricing: {
@@ -123,7 +123,7 @@ const PMIOrganizationalChangeManagementCourse = () => {
       },
       {
         question: "3. Will I receive a certificate after completion?",
-        answer: "Yes, participants will receive a Simpliaxis course completion certificate after successfully finishing the course."
+        answer: "Yes, participants will receive a Viovn course completion certificate after successfully finishing the course."
       },
       {
         question: "4. Is this course suitable for PMP aspirants?",

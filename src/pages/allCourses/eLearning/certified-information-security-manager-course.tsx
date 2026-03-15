@@ -129,7 +129,7 @@ const CertifiedInformationSecurityManagerCourse = () => {
       },
       {
         question: "5. What is the length of the course?",
-        answer: "The Simpliaxis CISM course includes approximately 14 hours of self-paced video learning with lifetime access."
+        answer: "The Viovn CISM course includes approximately 14 hours of self-paced video learning with lifetime access."
       },
       {
         question: "6. What is the career impact after this course?",
@@ -141,7 +141,7 @@ const CertifiedInformationSecurityManagerCourse = () => {
       },
       {
         question: "8. Do I get a certificate upon completion?",
-        answer: "Yes, Simpliaxis provides a course completion certificate after successfully finishing the course modules."
+        answer: "Yes, Viovn provides a course completion certificate after successfully finishing the course modules."
       },
       {
         question: "9. What job opportunities are available after CISM certification?",

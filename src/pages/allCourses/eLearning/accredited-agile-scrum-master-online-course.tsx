@@ -143,7 +143,7 @@ const AccreditedAgileScrumMasterOnlineCourse = () => {
       },
       {
         question: "2. How do I enroll in the Accredited Agile Scrum Master online course?",
-        answer: "To enroll, visit the Simpliaxis website and navigate to the E-Learning section. Select the Accredited Agile Scrum Master course, review the course details, complete the registration form, and make the payment. After registration is confirmed, you will receive login credentials to access the course materials and begin learning."
+        answer: "To enroll, visit the Viovn website and navigate to the E-Learning section. Select the Accredited Agile Scrum Master course, review the course details, complete the registration form, and make the payment. After registration is confirmed, you will receive login credentials to access the course materials and begin learning."
       },
       {
         question: "3. Is prior Agile experience required to enroll?",
@@ -163,7 +163,7 @@ const AccreditedAgileScrumMasterOnlineCourse = () => {
       },
       {
         question: "7. Will I receive a certificate after completing the course?",
-        answer: "Yes, participants will receive a course completion certificate from Simpliaxis after successfully finishing the training."
+        answer: "Yes, participants will receive a course completion certificate from Viovn after successfully finishing the training."
       },
       {
         question: "8. Can I access the course on different devices?",

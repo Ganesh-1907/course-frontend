@@ -20,7 +20,7 @@ const MicrosoftAzureDeveloperAZ204Course = () => {
     enrolledCount: "1.4k+",
     duration: "14.5Hrs",
     level: "Intermediate",
-    description: "Are you passionate about building secure, scalable cloud applications and becoming a certified Azure Developer? This AZ-204 course by Simpliaxis helps you master Azure app development, APIs, storage, identity, containers, serverless functions, and deployment, aligned with Microsoft’s exam objectives. Gain hands-on skills, real project confidence, and land in a higher-pay cloud computing field. Let’s start your Azure Developer learning path today. Enroll Now!",
+    description: "Are you passionate about building secure, scalable cloud applications and becoming a certified Azure Developer? This AZ-204 course by Viovn helps you master Azure app development, APIs, storage, identity, containers, serverless functions, and deployment, aligned with Microsoft’s exam objectives. Gain hands-on skills, real project confidence, and land in a higher-pay cloud computing field. Let’s start your Azure Developer learning path today. Enroll Now!",
     heroImage: "https://images.unsplash.com/photo-1558494949-ef010cbdcc51?auto=format&fit=crop&q=80&w=800",
     previewImage: "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&q=80&w=800",
     pricing: {

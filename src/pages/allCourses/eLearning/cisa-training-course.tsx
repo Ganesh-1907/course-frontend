@@ -20,7 +20,7 @@ const CISATrainingCourse = () => {
     enrolledCount: "1.8k+",
     duration: "26.5Hrs",
     level: "Intermediate",
-    description: "Are you aiming to become a trusted IT auditor and make yourself a credible player in the cybersecurity field? This course by Simpliaxis helps you to master IS audit essentials, governance, risk, system lifecycle, and security controls aligned with ISACA’s CISA exam domains. Get real-world audit skills and confidence to crack the CISA certification and stand out in the industry. Let’s begin your dream career as a Certified Information Systems Auditor with us. Enroll Today!",
+    description: "Are you aiming to become a trusted IT auditor and make yourself a credible player in the cybersecurity field? This course by Viovn helps you to master IS audit essentials, governance, risk, system lifecycle, and security controls aligned with ISACA’s CISA exam domains. Get real-world audit skills and confidence to crack the CISA certification and stand out in the industry. Let’s begin your dream career as a Certified Information Systems Auditor with us. Enroll Today!",
     heroImage: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=800",
     previewImage: "https://images.unsplash.com/photo-1554224155-1696413565d3?auto=format&fit=crop&q=80&w=800",
     pricing: {

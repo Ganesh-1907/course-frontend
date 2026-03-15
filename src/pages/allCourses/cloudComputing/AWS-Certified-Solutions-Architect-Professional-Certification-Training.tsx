@@ -271,7 +271,7 @@ const AWSSolutionsArchitectProfessionalCertificationTraining = () => {
         { question: "7. Certificate after completion?", answer: "Yes, provided after successful training completion." },
         { question: "8. Enrollment process?", answer: "Register online and complete payment." },
         { question: "9. Modes of training?", answer: "Online, live virtual, corporate, and e-learning." },
-        { question: "10. Why choose Simpliaxis?", answer: "Trusted provider with experienced trainers and global recognition." }
+        { question: "10. Why choose Viovn?", answer: "Trusted provider with experienced trainers and global recognition." }
       ]
     }
   ];
@@ -422,7 +422,7 @@ const AWSSolutionsArchitectProfessionalCertificationTraining = () => {
       "Exam-Focused Preparation",
       "Lifetime Learning Access"
     ],
-    "mainImage": "https://www.simpliaxis.com/../frontend_assets/image/ring_loader.gif",
+    "mainImage": "https://www.viovn.com/../frontend_assets/image/ring_loader.gif",
     "badgeImage": "/csm-badge.png"
   };
 
@@ -461,7 +461,7 @@ const AWSSolutionsArchitectProfessionalCertificationTraining = () => {
   };
 
   const corporateData = {
-    "courseName": "Why Corporates Choose Simpliaxis",
+    "courseName": "Why Corporates Choose Viovn",
     "label": "",
     "buttonText": "Corporate Group Enquiry",
     "description": "We deliver customized AWS Solutions Architect corporate training programs to enhance cloud strategy, governance, and architecture excellence."

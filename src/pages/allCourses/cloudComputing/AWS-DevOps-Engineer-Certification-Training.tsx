@@ -423,7 +423,7 @@ const AWSDevOpsEngineerCertificationTraining = () => {
       "CI/CD & Infrastructure Automation",
       "DOP-C02 Exam Preparation"
     ],
-    "mainImage": "https://www.simpliaxis.com/../frontend_assets/image/ring_loader.gif",
+    "mainImage": "https://www.viovn.com/../frontend_assets/image/ring_loader.gif",
     "badgeImage": "/csm-badge.png"
   };
 
@@ -463,7 +463,7 @@ const AWSDevOpsEngineerCertificationTraining = () => {
   };
 
   const corporateData = {
-    "courseName": "Why Corporates Choose Simpliaxis",
+    "courseName": "Why Corporates Choose Viovn",
     "label": "",
     "buttonText": "Corporate Group Enquiry",
     "description": "We deliver tailored AWS DevOps corporate training programs to strengthen automation, cloud governance, and continuous delivery capabilities across enterprises."

@@ -251,7 +251,7 @@ const CloudComputingWithAWSTraining = () => {
         { "question": "6. Certificate provided?", "answer": "Yes, after completion." },
         { "question": "7. Corporate training?", "answer": "Customized enterprise training available." },
         { "question": "8. Discounts?", "answer": "Available periodically." },
-        { "question": "9. Why Simpliaxis?", "answer": "Experienced trainers and globally recognized programs." },
+        { "question": "9. Why Viovn?", "answer": "Experienced trainers and globally recognized programs." },
         { "question": "10. Course affordability?", "answer": "Affordable pricing with offers available." }
       ]
     }
@@ -403,7 +403,7 @@ const CloudComputingWithAWSTraining = () => {
       "Exam-Focused Preparation",
       "Career-Oriented Cloud Skills"
     ],
-    "mainImage": "https://www.simpliaxis.com/../frontend_assets/image/ring_loader.gif",
+    "mainImage": "https://www.viovn.com/../frontend_assets/image/ring_loader.gif",
     "badgeImage": "/csm-badge.png"
   };
 
@@ -442,7 +442,7 @@ const CloudComputingWithAWSTraining = () => {
   };
 
   const corporateData = {
-    "courseName": "Why Corporates Choose Simpliaxis",
+    "courseName": "Why Corporates Choose Viovn",
     "label": "",
     "buttonText": "Corporate Group Enquiry",
     "description": "We provide customized AWS cloud training to help organizations improve scalability, security, and operational efficiency."

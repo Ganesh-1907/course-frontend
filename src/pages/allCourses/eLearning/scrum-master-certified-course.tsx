@@ -29,14 +29,14 @@ const ScrumMasterCertifiedCourse = () => {
       { text: "4 hours of video content", image: "https://cdn-icons-png.flaticon.com/512/3048/3048381.png" },
       { text: "Learning materials overview", image: "https://cdn-icons-png.flaticon.com/512/2991/2991195.png" },
       { text: "Study plan and preparation guidance", image: "https://cdn-icons-png.flaticon.com/512/689/689307.png" },
-      { text: "Sample Simpliaxis mock exam content", image: "https://cdn-icons-png.flaticon.com/512/4305/4305432.png" },
+      { text: "Sample Viovn mock exam content", image: "https://cdn-icons-png.flaticon.com/512/4305/4305432.png" },
       { text: "Exam details overview", image: "https://cdn-icons-png.flaticon.com/512/2912/2912761.png" }
     ],
     sidePanelInclusions: [
       "4 hours of video content",
       "Learning materials overview",
       "Study plan and preparation guidance",
-      "Sample Simpliaxis mock exam content",
+      "Sample Viovn mock exam content",
       "Exam details overview"
     ],
     modules: [
