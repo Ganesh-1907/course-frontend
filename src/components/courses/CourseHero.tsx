@@ -59,12 +59,8 @@ const CourseHero: React.FC<CourseHeroProps> = ({
   enrolledSuffix = "Enrolled",
   subtitle,
   moneyBackText = "100% Money Back Guarantee",
-  ltpLabel = "Global LTP of Scrum Alliance",
-  ltpLogos = [
-    { src: "https://www.scrumalliance.org/ScrumAlliance/media/ScrumAllianceMedia/Logos/Scrum-Alliance-Logo.svg", alt: "Scrum Alliance" },
-    { src: "https://www.scrumalliance.org/ScrumAlliance/media/ScrumAllianceMedia/Logos/Badge-CSM-Master.png", alt: "CSM" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Seal_of_the_United_States_Department_of_Education.svg/450px-Seal_of_the_United_States_Department_of_Education.svg.png", alt: "LTP" }
-  ],
+  ltpLabel,
+  ltpLogos,
   downloadBtnText = "Download Brochure",
   viewSchedulesBtnText = "View Schedules",
   freeAssessmentBtnText = "Free Assesment",
@@ -157,18 +153,20 @@ const CourseHero: React.FC<CourseHeroProps> = ({
               ))}
             </ul>
 
-            <div className="flex flex-col sm:flex-row items-center gap-6 pt-4">
-              <div className="flex items-center gap-3">
-                <span className="text-[13px] font-bold text-slate-900">{ltpLabel}</span>
-                <div className="flex items-center gap-2">
-                    {ltpLogos.map((logo, i) => (
-                      <div key={i} className="w-10 h-10 rounded-none border border-slate-200 flex items-center justify-center p-1.5 bg-white shadow-sm transition-transform hover:scale-110">
-                        <img src={logo.src} alt={logo.alt} className="w-full h-full object-contain" />
-                      </div>
-                    ))}
+            {ltpLabel && ltpLogos && ltpLogos.length > 0 && (
+              <div className="flex flex-col sm:flex-row items-center gap-6 pt-4">
+                <div className="flex items-center gap-3">
+                  <span className="text-[13px] font-bold text-slate-900">{ltpLabel}</span>
+                  <div className="flex items-center gap-2">
+                      {ltpLogos.map((logo, i) => (
+                        <div key={i} className="w-10 h-10 rounded-none border border-slate-200 flex items-center justify-center p-1.5 bg-white shadow-sm transition-transform hover:scale-110">
+                          <img src={logo.src} alt={logo.alt} className="w-full h-full object-contain" />
+                        </div>
+                      ))}
+                  </div>
                 </div>
               </div>
-            </div>
+            )}
 
             <div className="flex flex-wrap items-center gap-3 pt-4">
               <Button variant="outline" className="border-primary text-primary hover:bg-primary/5 font-bold rounded-md h-[46px] px-6 text-[15px]">

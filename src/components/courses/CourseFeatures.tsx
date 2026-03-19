@@ -26,7 +26,7 @@ interface CourseFeaturesProps {
 const CourseFeatures: React.FC<CourseFeaturesProps> = ({
   title = "Our Exclusive Prime",
   subtitle = "Our Key to Exam and Career Success",
-  description = "Unlocking professional potential through curated learning experiences.",
+  description,
   features
 }) => {
   return (
@@ -39,9 +39,11 @@ const CourseFeatures: React.FC<CourseFeaturesProps> = ({
               {subtitle}
             </h2>
           </div>
-          <p className="text-slate-500 font-medium text-sm max-w-xs leading-relaxed">
-            {description}
-          </p>
+          {description && (
+            <p className="text-slate-500 font-medium text-sm max-w-xs leading-relaxed">
+              {description}
+            </p>
+          )}
         </div>
         
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-6">

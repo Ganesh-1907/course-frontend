@@ -18,7 +18,8 @@ import {
   TrendingDown,
   CheckCircle,
   ShieldCheck,
-  Loader2
+  Loader2,
+  User
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Button } from '@/components/ui/button';
@@ -48,6 +49,19 @@ const TIME_SLOTS: TimeSlot[] = [
   { id: 'evening', label: 'Evening (5 PM - 7 PM)', hours: [17, 19] },
   { id: 'night', label: 'Night (After 7 PM)', hours: [19, 24] },
 ];
+
+const getCurrencySymbol = (currency: string | undefined) => {
+  switch (currency) {
+    case 'INR': return '₹';
+    case 'USD': return '$';
+    case 'CAD': return 'C$';
+    case 'AUD': return 'A$';
+    case 'GBP': return '£';
+    case 'EUR': return '€';
+    case 'SGD': return 'S$';
+    default: return currency || '₹';
+  }
+};
 
 const SchedulesPage: React.FC = () => {
   const { courseName } = useParams<{ courseName: string }>();
@@ -236,8 +250,7 @@ const SchedulesPage: React.FC = () => {
             <span className="text-[10px] font-black text-primary uppercase tracking-[0.3em] bg-primary/5 px-3 py-1 rounded-full border border-primary/10">Course Schedules</span>
             <h1 className="text-4xl md:text-5xl font-black text-[#001c3d] leading-[1.15] tracking-tight">
               Schedules for <br />
-              <span className="text-primary italic inline-block mt-2">{decodedCourseName}</span> <br />
-              in India
+              <span className="text-primary italic inline-block mt-2">{decodedCourseName}</span>
             </h1>
           </div>
         </div>
@@ -395,8 +408,8 @@ const SchedulesPage: React.FC = () => {
 
                       {/* Trainer */}
                       <div className="flex items-center gap-3 pt-4 border-t border-slate-50">
-                        <div className="w-12 h-12 rounded-xl bg-slate-100 overflow-hidden ring-2 ring-white shadow-md">
-                          <img src={schedule.trainerImage} alt={schedule.trainerName} className="w-full h-full object-cover" />
+                        <div className="w-12 h-12 rounded-xl bg-slate-50 flex items-center justify-center ring-2 ring-slate-100 shadow-sm">
+                          <User className="w-6 h-6 text-primary" />
                         </div>
                         <div>
                           <p className="text-[9px] font-black text-slate-400 uppercase tracking-widest">Master Trainer</p>
@@ -420,14 +433,12 @@ const SchedulesPage: React.FC = () => {
                             <button className="text-slate-400 hover:text-primary transition-colors font-black text-lg">+</button>
                          </div>
 
-                         <div className="flex items-center gap-1.5 text-[11px] font-bold text-red-500 animate-pulse">
-                           <AlertCircle className="w-3.5 h-3.5" />
-                           Only {schedule.capacityRemaining || 5} seats left!
-                         </div>
-
-                         <button className="text-[11px] font-black text-primary hover:underline uppercase tracking-tight">
-                           Enquire Now »
-                         </button>
+                         {schedule.capacityRemaining !== undefined && schedule.capacityRemaining !== null && schedule.capacityRemaining > 0 && schedule.capacityRemaining <= 10 && (
+                           <div className="flex items-center gap-1.5 text-[11px] font-bold text-red-500 animate-pulse">
+                             <AlertCircle className="w-3.5 h-3.5" />
+                             Only {schedule.capacityRemaining} seats left!
+                           </div>
+                         )}
                       </div>
                     </div>
 
@@ -436,13 +447,12 @@ const SchedulesPage: React.FC = () => {
                       <div className="text-center md:text-right">
                         <p className="text-[11px] font-black text-slate-400 uppercase tracking-widest mb-1 italic">Hurry! Sale Ends Soon</p>
                         <div className="flex items-center justify-center md:justify-end gap-2 mb-1">
-                          <span className="text-slate-400 line-through text-sm font-bold">₹{schedule.originalPrice?.toLocaleString()}</span>
+                          <span className="text-slate-400 line-through text-sm font-bold">{getCurrencySymbol(schedule.currency)}{schedule.originalPrice?.toLocaleString()}</span>
                           <span className="bg-red-50 text-red-600 text-[10px] font-black px-1.5 py-0.5 rounded border border-red-100">
                             {schedule.discountPercentage}% OFF
                           </span>
                         </div>
-                        <h2 className="text-2xl font-black text-[#001c3d]">₹{schedule.discountedPrice?.toLocaleString()}</h2>
-                        <p className="text-[10px] font-bold text-slate-400 mt-1">As low as ₹2,863 /month <Zap className="w-3 h-3 inline fill-slate-300" /></p>
+                        <h2 className="text-2xl font-black text-[#001c3d]">{getCurrencySymbol(schedule.currency)}{schedule.discountedPrice?.toLocaleString()}</h2>
                       </div>
 
                       <div className="flex flex-col w-full gap-2 pt-2">
