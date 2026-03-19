@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { cn } from "@/lib/utils";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -14,16 +14,30 @@ interface CourseTabsProps {
 
 const CourseTabs: React.FC<CourseTabsProps> = ({ tabs }) => {
   const [activeTab, setActiveTab] = useState(tabs[0].id);
+  const tabsRef = useRef<HTMLDivElement>(null);
+
+  const handleTabClick = (id: string) => {
+    setActiveTab(id);
+    
+    // Scroll to the top of the tabs section with an offset for the sticky header
+    if (tabsRef.current) {
+      const yOffset = -92; // Account for sticky header (72px) + small gap (20px)
+      const element = tabsRef.current;
+      const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+      
+      window.scrollTo({ top: y, behavior: 'smooth' });
+    }
+  };
 
   return (
-    <div className="w-full">
+    <div className="w-full" ref={tabsRef}>
       {/* Tab Navigation - Sticky with Glassmorphism */}
-      <div className="sticky top-16 left-0 right-0 z-40 bg-white/90 backdrop-blur-md border-b border-slate-100 shadow-sm overflow-x-auto no-scrollbar">
+      <div className="sticky top-[72px] left-0 right-0 z-40 bg-white/90 backdrop-blur-md border-b border-slate-100 shadow-sm overflow-x-auto no-scrollbar">
         <div className="flex items-center gap-10 min-w-max">
           {tabs.map((tab) => (
             <button
               key={tab.id}
-              onClick={() => setActiveTab(tab.id)}
+              onClick={() => handleTabClick(tab.id)}
               className={cn(
                 "py-5 px-1 text-[13px] uppercase tracking-widest font-black transition-all relative group",
                 activeTab === tab.id 

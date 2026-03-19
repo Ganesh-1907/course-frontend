@@ -1,4 +1,5 @@
-import { Link } from "react-router-dom";
+import React from "react";
+import { Link, useNavigate } from "react-router-dom";
 import { 
   Star, 
   Users, 
@@ -10,6 +11,7 @@ import {
   Share2,
   Info
 } from "lucide-react";
+import { getRecentSchedule } from "@/lib/courseService";
 import { Button } from "@/components/ui/button";
 import {
   Breadcrumb,
@@ -43,6 +45,7 @@ interface CourseHeroProps {
   benefits: string[];
   mainImage: string;
   badgeImage: string;
+  hasSchedules?: boolean;
 }
 
 const CourseHero: React.FC<CourseHeroProps> = ({
@@ -66,8 +69,23 @@ const CourseHero: React.FC<CourseHeroProps> = ({
   freeAssessmentBtnText = "Free Assesment",
   benefits,
   mainImage,
-  badgeImage
+  badgeImage,
+  hasSchedules: initialHasSchedules
 }) => {
+  const navigate = useNavigate();
+  const [hasSchedules, setHasSchedules] = React.useState<boolean | undefined>(initialHasSchedules);
+
+  React.useEffect(() => {
+    if (initialHasSchedules === undefined) {
+      const checkSchedules = async () => {
+        const data = await getRecentSchedule(courseName);
+        setHasSchedules(!!data);
+      };
+      checkSchedules();
+    } else {
+      setHasSchedules(initialHasSchedules);
+    }
+  }, [courseName, initialHasSchedules]);
   return (
     <section className="bg-white py-8 md:py-10">
       <div className="container mx-auto">
@@ -173,9 +191,14 @@ const CourseHero: React.FC<CourseHeroProps> = ({
                 <Download className="w-4 h-4 mr-2" />
                 {downloadBtnText}
               </Button>
-              <Button className="bg-primary hover:bg-orange-600 text-white font-bold rounded-md h-[46px] px-8 text-[15px] shadow-lg shadow-orange-500/20">
-                {viewSchedulesBtnText}
-              </Button>
+              {hasSchedules && (
+                <Button 
+                  onClick={() => navigate(`/course/${encodeURIComponent(courseName)}/schedules`)}
+                  className="bg-primary hover:bg-orange-600 text-white font-bold rounded-md h-[46px] px-8 text-[15px] shadow-lg shadow-orange-500/20"
+                >
+                  {viewSchedulesBtnText}
+                </Button>
+              )}
               <Button variant="outline" className="border-primary text-primary hover:bg-primary/5 font-bold rounded-md h-[46px] px-6 text-[15px]">
                 <FileText className="w-4 h-4 mr-2" />
                 {freeAssessmentBtnText}

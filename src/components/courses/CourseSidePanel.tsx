@@ -58,35 +58,12 @@ const CourseSidePanel: React.FC<CourseSidePanelProps> = ({ schedules = [], cours
   const [formMessage, setFormMessage] = React.useState('');
   const [formSubmitted, setFormSubmitted] = React.useState(false);
 
-  // Build a default fallback schedule so there's always something to display
-  const buildDefaultSchedule = React.useCallback((name: string): Schedule => {
-    const now = new Date();
-    const daysUntilSat = ((6 - now.getDay()) + 7) % 7 || 7;
-    const startDate = new Date(now);
-    startDate.setDate(now.getDate() + daysUntilSat);
-    const endDate = new Date(startDate);
-    endDate.setDate(startDate.getDate() + 1);
-    const fmt = (d: Date) => d.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
-    const dateRange = `${fmt(startDate)} - ${fmt(endDate)}, ${startDate.getFullYear()}`;
-    const code = name.split(' ').map(w => w[0]).join('').slice(0, 4).toUpperCase();
-    return {
-      courseCode: code,
-      courseName: name,
-      dateRange,
-      timeRange: '09:00 AM - 05:00 PM IST',
-      trainerName: 'Expert Trainer',
-      trainerImage: `https://ui-avatars.com/api/?name=${encodeURIComponent(code)}&background=001c3d&color=fff&size=100`,
-      originalPrice: 'INR 49,990',
-      discountedPrice: 'INR 34,993',
-      discountPercentage: '30',
-    };
-  }, []);
+
 
   // Priority: dynamic → static props → generated fallback
   const featuredSchedule: Schedule | ScheduleData | null =
     dynamicSchedule ||
-    (schedules.length > 0 ? schedules[0] : null) ||
-    (courseName ? buildDefaultSchedule(courseName) : null);
+    (schedules.length > 0 ? schedules[0] : null);
 
   const { user } = useAuth();
   const { openSignin } = useAuthModal();
@@ -217,13 +194,8 @@ const CourseSidePanel: React.FC<CourseSidePanelProps> = ({ schedules = [], cours
                     </div>
 
                     <div className="flex items-center gap-2.5">
-                      <div className="w-9 h-9 rounded-md overflow-hidden bg-slate-200 ring-1 ring-white shadow-sm">
-                        <img
-                          src={featuredSchedule.trainerImage}
-                          alt={featuredSchedule.trainerName}
-                          className="w-full h-full object-cover"
-                          onError={(e) => { (e.target as HTMLImageElement).src = 'https://ui-avatars.com/api/?name=' + encodeURIComponent(featuredSchedule.trainerName); }}
-                        />
+                      <div className="w-9 h-9 rounded-md bg-slate-50 flex items-center justify-center ring-1 ring-slate-100 shadow-sm">
+                        <User className="w-5 h-5 text-primary" />
                       </div>
                       <div className="flex-1">
                         <p className="text-[9px] font-black text-slate-400 uppercase tracking-widest">Master Trainer</p>
@@ -313,92 +285,92 @@ const CourseSidePanel: React.FC<CourseSidePanelProps> = ({ schedules = [], cours
         </motion.div>
       )}
 
-      {/* Enquiry Form Card — always visible */}
-      <motion.div
-        initial={{ opacity: 0, x: 20 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ delay: 0.1 }}
-        className="bg-white border border-primary/20 rounded-lg shadow-sm p-2.5 space-y-2"
-      >
-        <div className="space-y-0.5">
-          <h3 className="text-[13px] md:text-[14px] font-black text-[#1f2937]">Request More Details</h3>
-          <p className="text-[10px] font-medium text-slate-600">Need more details about the course?</p>
-        </div>
-
-        {formSubmitted ? (
-          <div className="py-4 flex flex-col items-center justify-center gap-2">
-            <CheckCircle className="w-8 h-8 text-green-500" />
-            <p className="text-[12px] font-black text-green-600">Thank you! We'll be in touch soon.</p>
+      {/* Enquiry Form Card — only shown when schedule exists as requested by user */}
+      {(featuredSchedule || isFetching) && (
+        <motion.div
+          initial={{ opacity: 0, x: 20 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ delay: 0.1 }}
+          className="bg-white border border-primary/20 rounded-lg shadow-sm p-2.5 space-y-2"
+        >
+          <div className="space-y-0.5">
+            <h3 className="text-[13px] md:text-[14px] font-black text-[#1f2937]">Request More Details</h3>
+            <p className="text-[10px] font-medium text-slate-600">Need more details about the course?</p>
           </div>
-        ) : (
-          <form onSubmit={handleEnquirySubmit} className="space-y-1.5">
-            <div className="relative group">
-              <User className="pointer-events-none absolute left-0 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-slate-400 group-focus-within:text-primary transition-colors" />
-              <Input
-                placeholder="Full Name*"
-                value={formName}
-                onChange={(e) => setFormName(e.target.value)}
-                required
-                className="h-7 rounded-none border-0 border-b border-b-slate-300 bg-transparent pl-5 pr-0 text-[11px] font-medium placeholder:text-slate-500 focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:border-b-primary"
-              />
-            </div>
 
-            <div className="relative group">
-              <Mail className="pointer-events-none absolute left-0 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-slate-400 group-focus-within:text-primary transition-colors" />
-              <Input
-                placeholder="Email Address*"
-                type="email"
-                value={formEmail}
-                onChange={(e) => setFormEmail(e.target.value)}
-                required
-                className="h-7 rounded-none border-0 border-b border-b-slate-300 bg-transparent pl-5 pr-0 text-[11px] font-medium placeholder:text-slate-500 focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:border-b-primary"
-              />
-            </div>
-
-            <div className="flex items-center gap-2 h-7 border-b border-b-slate-300 group focus-within:border-b-primary">
-              <div className="w-12 flex items-center justify-start gap-1 pr-1">
-                <span className="text-[12px] font-semibold">🇮🇳</span>
-                <span className="text-[9px] text-slate-400">▼</span>
+          {formSubmitted ? (
+            <div className="py-6 flex flex-col items-center justify-center gap-3 bg-green-50/50 rounded-xl border border-green-100">
+              <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
+                <CheckCircle className="w-6 h-6 text-green-600" />
               </div>
-              <div className="flex-1 relative">
-                <PhoneIcon className="pointer-events-none absolute left-0 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-slate-400 group-focus-within:text-primary transition-colors" />
+              <div className="text-center">
+                <p className="text-[14px] font-black text-green-700">Message Sent!</p>
+                <p className="text-[11px] font-medium text-green-600/80">We'll get back to you within 24 hours.</p>
+              </div>
+            </div>
+          ) : (
+            <form onSubmit={handleEnquirySubmit} className="space-y-3">
+              <div className="relative group">
+                <User className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400 group-focus-within:text-primary transition-colors" />
+                <Input
+                  placeholder="Full Name*"
+                  value={formName}
+                  onChange={(e) => setFormName(e.target.value)}
+                  required
+                  className="h-10 rounded-xl border-slate-200 bg-slate-50/50 pl-10 text-[12px] font-medium placeholder:text-slate-400 focus-visible:ring-primary/20 focus-visible:border-primary transition-all"
+                />
+              </div>
+
+              <div className="relative group">
+                <Mail className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400 group-focus-within:text-primary transition-colors" />
+                <Input
+                  placeholder="Email Address*"
+                  type="email"
+                  value={formEmail}
+                  onChange={(e) => setFormEmail(e.target.value)}
+                  required
+                  className="h-10 rounded-xl border-slate-200 bg-slate-50/50 pl-10 text-[12px] font-medium placeholder:text-slate-400 focus-visible:ring-primary/20 focus-visible:border-primary transition-all"
+                />
+              </div>
+
+              <div className="relative group">
+                <PhoneIcon className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400 group-focus-within:text-primary transition-colors" />
                 <Input
                   placeholder="Mobile Number*"
                   value={formPhone}
                   onChange={(e) => setFormPhone(e.target.value)}
                   required
-                  className="h-7 border-0 bg-transparent pl-5 pr-0 text-[11px] font-medium placeholder:text-slate-500 focus-visible:ring-0 focus-visible:ring-offset-0"
+                  className="h-10 rounded-xl border-slate-200 bg-slate-50/50 pl-10 text-[12px] font-medium placeholder:text-slate-400 focus-visible:ring-primary/20 focus-visible:border-primary transition-all"
                 />
               </div>
-            </div>
 
-            <div className="relative group">
-              <MessageSquare className="pointer-events-none absolute left-0 top-3 w-3.5 h-3.5 text-slate-400 group-focus-within:text-primary transition-colors" />
-              <Textarea
-                placeholder="Your Message..."
-                value={formMessage}
-                onChange={(e) => setFormMessage(e.target.value)}
-                className="min-h-[44px] max-h-[60px] rounded-none border-0 border-b border-b-slate-300 bg-transparent pl-5 pr-0 py-1 text-[11px] font-medium placeholder:text-slate-500 resize-none focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:border-b-primary"
-              />
-            </div>
+              <div className="relative group">
+                <MessageSquare className="absolute left-3 top-3 w-4 h-4 text-slate-400 group-focus-within:text-primary transition-colors" />
+                <Textarea
+                  placeholder="Tell us about your requirements..."
+                  value={formMessage}
+                  onChange={(e) => setFormMessage(e.target.value)}
+                  className="min-h-[80px] rounded-xl border-slate-200 bg-slate-50/50 pl-10 py-2.5 text-[12px] font-medium placeholder:text-slate-400 focus-visible:ring-primary/20 focus-visible:border-primary transition-all resize-none"
+                />
+              </div>
 
-            <Button
-              type="submit"
-              variant="outline"
-              className="w-full border-[#ff4d2a] text-[#1f2937] hover:bg-[#fff7f5] font-black rounded-md h-7 text-[11px] transition-all active:scale-[0.98]"
-            >
-              Enquire Now
-            </Button>
+              <Button
+                type="submit"
+                className="w-full bg-[#ff4d2a] hover:bg-[#e64526] text-white font-black rounded-xl h-10 text-[13px] shadow-lg shadow-orange-500/20 transition-all active:scale-[0.98]"
+              >
+                Enquire Now
+              </Button>
 
-            <p className="text-[8px] text-slate-500 leading-tight text-center font-medium pt-0.5">
-              By providing your contact details you agreed to our{' '}
-              <span className="text-slate-700 font-bold hover:underline cursor-pointer">Privacy Policy</span>{' '}
-              &{' '}
-              <span className="text-slate-700 font-bold hover:underline cursor-pointer">Terms and Conditions</span>.
-            </p>
-          </form>
-        )}
-      </motion.div>
+              <p className="text-[9px] text-slate-500 leading-tight text-center font-medium pt-1">
+                By providing your contact details you agreed to our{' '}
+                <span className="text-primary font-bold hover:underline cursor-pointer">Privacy Policy</span>{' '}
+                &{' '}
+                <span className="text-primary font-bold hover:underline cursor-pointer">Terms and Conditions</span>.
+              </p>
+            </form>
+          )}
+        </motion.div>
+      )}
 
       {/* Plan Selection Modal */}
       <Dialog open={isPlanModalOpen} onOpenChange={setIsPlanModalOpen}>
