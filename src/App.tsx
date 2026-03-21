@@ -302,6 +302,7 @@ const App = () => (
           <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/course/:courseName/schedules" element={<SchedulesPage />} />
+          <Route path="/schedules/:categoryId" element={<SchedulesPage />} />
 
           {/* categories routes */}
           <Route path="/category/:categoryId" element={<DynamicCategoryPage />} />

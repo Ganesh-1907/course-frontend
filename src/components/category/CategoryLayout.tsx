@@ -10,7 +10,8 @@ import CategoryFAQ from "./CategoryFAQ";
 import CategoryCTA from "./CategoryCTA";
 import CategorySubNav from "./CategorySubNav";
 import { CategoryData, FAQItem } from "@/data/categoryData";
-import { Award, BadgeCheck } from "lucide-react";
+import { Award, BadgeCheck, ArrowRight, Clock } from "lucide-react";
+import { motion } from "framer-motion";
 
 interface CategoryLayoutProps {
   data: CategoryData;
@@ -63,15 +64,15 @@ function CategorySidebar({ data, isOpen, onClose }: { data: CategoryData; isOpen
       )}
       {/* Sidebar */}
       <div className={`fixed lg:sticky top-[40px] w-full sm:w-[270px] lg:w-[270px] z-[25] lg:z-[3] transition-all duration-500 ${isOpen ? "translate-x-0" : "-translate-x-full lg:translate-x-0"}`}>
-        <div className="bg-white rounded-2xl py-4 shadow-md border border-[#718aa5] m-4 lg:m-0">
+        <div className="bg-white rounded-2xl py-4 shadow-md border border-border m-4 lg:m-0">
           <div className="flex flex-col">
             {items.map(({ label, id }, i) => (
               <a
                 key={id}
                 onClick={onClose}
                 className={`px-3 py-2 text-sm font-semibold whitespace-nowrap cursor-pointer border-l-2 ${id === activeSection
-                    ? "border-[#34495f] text-[#01203d]"
-                    : "border-transparent text-[#718aa5] hover:border-[#01203d]"
+                    ? "border-primary text-primary"
+                    : "border-transparent text-muted-foreground hover:border-primary/50"
                   }`}
               >
                 {label}
@@ -80,7 +81,7 @@ function CategorySidebar({ data, isOpen, onClose }: { data: CategoryData; isOpen
           </div>
 
           <div className="flex flex-col gap-2 p-3 mt-2">
-            <button className="bg-[#fa4a23] text-white font-bold text-sm py-2 rounded w-full">
+            <button className="bg-primary hover:bg-primary/90 text-white font-bold text-sm py-2 rounded w-full transition-colors">
               Free Consultation
             </button>
           </div>
@@ -96,7 +97,7 @@ function ContactAdvisor() {
       id="category_contact"
       className="w-full my-4 px-4 sm:px-0"
     >
-      <div className="bg-[#07447d] rounded-xl px-4 sm:px-6 py-6 text-white relative">
+      <div className="bg-slate-900 rounded-2xl px-6 sm:px-8 py-8 text-white relative shadow-xl">
         <div className="flex flex-col lg:flex-row items-center justify-center lg:justify-around text-center gap-4">
 
           <div className="hidden lg:block ">
@@ -126,7 +127,7 @@ function ContactAdvisor() {
           </div>
 
           <button
-            className="bg-white text-black font-bold px-3 sm:px-4 py-2 rounded flex items-center gap-2 text-sm sm:text-base whitespace-nowrap"
+            className="bg-white text-slate-900 font-bold px-3 sm:px-6 py-2.5 rounded-lg flex items-center gap-2 text-sm sm:text-base whitespace-nowrap hover:bg-slate-50 transition-colors shadow-lg"
           >
             Contact us →
           </button>
@@ -142,13 +143,11 @@ function CategoryOverview({ content }) {
   const [expanded, setExpanded] = useState(false);
 
   return (
-    <div className="w-full rounded-xl px-4 sm:px-0">
-
-      <h2 className="px-4 py-3 bg-[#f7f8fa] rounded-xl text-lg sm:text-xl md:text-[calc(1.325rem+.9vw)]">
+    <div className="w-full rounded-2xl overflow-hidden border border-border/50">
+      <h2 className="px-6 py-4 bg-secondary/50 text-slate-900 font-black text-lg sm:text-xl md:text-[22px] tracking-tight">
         Top SAFe Certification Courses Overview
       </h2>
-
-      <div className="px-4 py-3 bg-[#f7f8fa] rounded-xl mt-2 text-sm sm:text-base">
+      <div className="px-6 py-6 bg-white text-slate-700 text-sm sm:text-base leading-relaxed">
 
         {!expanded && (
           <div
@@ -170,9 +169,9 @@ function CategoryOverview({ content }) {
         {/* Toggle button */}
         <button
           onClick={() => setExpanded(!expanded)}
-          className="mt-3 font-bold text-blue-600 text-sm"
+          className="mt-4 font-black text-primary hover:text-primary/80 transition-colors text-sm flex items-center gap-1 uppercase tracking-widest"
         >
-          {expanded ? "View less..." : "View more..."}
+          {expanded ? "View less ↑" : "View more ↓"}
         </button>
       </div>
     </div>
@@ -215,34 +214,34 @@ function TrainersSection() {
   return (
     <section className="w-full max-w-6xl mx-auto px-4 py-8">
 
-      <div className="mb-6">
-        <p className="uppercase text-xs sm:text-sm font-semibold text-slate-500">
+      <div className="mb-8">
+        <p className="uppercase text-[10px] font-black text-primary tracking-[0.2em] mb-2 px-1">
           Our Experienced Training Expert
         </p>
 
-        <h2 className="text-xl sm:text-2xl font-bold text-slate-900 mt-2">
+        <h2 className="text-2xl md:text-3xl font-black text-slate-900 tracking-tight">
           Meet the Team That's Invested in Your Success
         </h2>
 
-        <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between mt-4 gap-3">
-          <span className=" text-white flex gap-2 items-center bg-[#34495f] text-xs px-3 py-1 rounded-full font-semibold">
-            <Award strokeWidth={1.25} /> Instructors
+        <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between mt-6 gap-3">
+          <span className="text-white flex gap-2 items-center bg-slate-900 text-[10px] px-4 py-1.5 rounded-full font-black uppercase tracking-widest">
+            <Award size={14} strokeWidth={2.5} /> Instructors
           </span>
 
           <a
             href="/trainers"
-            className="text-xs sm:text-sm font-semibold underline text-blue-900"
+            className="text-xs sm:text-sm font-black text-primary hover:underline flex items-center gap-1"
           >
-            View All Trainers →
+            View All Trainers <ArrowRight size={14} />
           </a>
         </div>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         {trainers.map((trainer, index) => (
           <div
             key={index}
-            className="bg-white border border-[#718aa5] rounded-2xl p-5 shadow-sm hover:shadow-md transition"
+            className="bg-white border border-border/60 hover:border-primary/30 rounded-3xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 group"
           >
             <div className="flex items-center gap-3 mb-3">
               <img
@@ -267,8 +266,8 @@ function TrainersSection() {
               {trainer.description}
             </p>
 
-            <button className="text-sm text-blue-900 font-semibold underline">
-              Read More
+            <button className="text-xs text-primary font-black uppercase tracking-widest hover:gap-2 transition-all flex items-center gap-1">
+              Read Profile <ArrowRight size={12} />
             </button>
 
             <hr className="my-4" />
@@ -309,15 +308,13 @@ function CorporateTrainingSection() {
   ];
 
   return (
-    <section className="w-full max-w-5xl mx-auto px-4 sm:px-0">
-      <div className="bg-sky-50 rounded-2xl p-4 sm:p-6 md:p-8">
-
-        {/* Heading */}
-        <p className="uppercase text-xs sm:text-sm font-semibold text-slate-500">
+    <section className="w-full max-w-5xl mx-auto px-4 sm:px-0 my-12">
+      <div className="bg-accent/40 rounded-[3rem] p-8 sm:p-10 md:p-12 border border-primary/10">
+        <p className="uppercase text-[10px] font-black text-primary tracking-[0.2em] mb-2 px-1">
           SAFe Certification Course For Corporates
         </p>
 
-        <h2 className="text-xl sm:text-2xl font-bold text-slate-900 mt-2 mb-4">
+        <h2 className="text-2xl md:text-3xl font-black text-slate-900 tracking-tight mt-2 mb-6">
           Why Viovn Is The First Choice For Corporates?
         </h2>
 
@@ -344,8 +341,8 @@ function CorporateTrainingSection() {
         </ul>
 
         {/* Button */}
-        <div className="mt-6 w-full sm:max-w-sm">
-          <button className="w-full bg-orange-600 hover:bg-orange-700 text-white text-sm font-bold py-2 px-4 rounded">
+        <div className="mt-8">
+          <button className="bg-primary hover:bg-primary/90 text-white text-xs font-black uppercase tracking-[0.2em] py-4 px-8 rounded-2xl transition-all shadow-lg shadow-primary/20 hover:shadow-primary/40 active:scale-95">
             Corporate Group enquiry
           </button>
         </div>
@@ -360,10 +357,9 @@ function AccordionItem({ faq, index }: { faq: FAQItem, index: number }) {
 
   return (
     <div
-      className="mb-4 rounded bg-white "
+      className="mb-4 rounded-2xl bg-white border border-border/50 hover:border-primary/30 transition-all duration-300 overflow-hidden shadow-sm hover:shadow-md"
       style={{
-        boxShadow: "0px 2px 7px -3px #34495f",
-        fontFamily: "Open Sans, Arial, sans-serif",
+        fontFamily: "Poppins, sans-serif",
       }}
     >
       {/* Header */}
@@ -372,7 +368,7 @@ function AccordionItem({ faq, index }: { faq: FAQItem, index: number }) {
         onClick={() => setOpen(!open)}
         className="w-full flex border-b px-2 py-4 items-center justify-between text-left font-semibold text-[1rem]"
       >
-        <span className="text-[#34495f] font-semibold">
+        <span className="text-slate-900 font-bold group-hover:text-primary transition-colors">
           {index + 1}. {faq.question}
         </span>
 
@@ -428,7 +424,7 @@ function CourseReviews() {
       <div className="px-0 sm:px-4 py-4 my-4">
 
         {/* Title */}
-        <p className="text-[#01203d] font-bold text-lg sm:text-[1.3rem] mb-4">
+        <p className="text-slate-900 font-black text-xl md:text-2xl tracking-tight mb-4">
           Find out why 1,000+ professionals love Viovn
         </p>
 
@@ -439,9 +435,9 @@ function CourseReviews() {
 
             <button
               onClick={() => setActiveTab("linkedin")}
-              className={`px-3 py-2 rounded text-xs sm:text-sm font-semibold ${activeTab === "linkedin"
-                ? "bg-[#34495f] text-white"
-                : "text-[#34495f]"
+              className={`px-4 py-2 rounded-lg text-xs sm:text-sm font-black uppercase tracking-widest transition-all ${activeTab === "linkedin"
+                ? "bg-slate-900 text-white shadow-lg"
+                : "text-slate-500 hover:text-slate-900"
                 }`}
             >
               LinkedIn
@@ -449,9 +445,9 @@ function CourseReviews() {
 
             <button
               onClick={() => setActiveTab("trustpilot")}
-              className={`px-3 py-2 rounded text-xs sm:text-sm font-semibold ${activeTab === "trustpilot"
-                ? "bg-[#34495f] text-white"
-                : "text-[#34495f]"
+              className={`px-4 py-2 rounded-lg text-xs sm:text-sm font-black uppercase tracking-widest transition-all ${activeTab === "trustpilot"
+                ? "bg-slate-900 text-white shadow-lg"
+                : "text-slate-500 hover:text-slate-900"
                 }`}
             >
               Trustpilot
@@ -475,8 +471,7 @@ function CourseReviews() {
             {reviews.map((review, i) => (
               <div
                 key={i}
-                className="bg-white rounded-2xl shadow-md p-6 relative"
-                style={{ boxShadow: "0px 2px 7px -3px #34495f" }}
+                 className="bg-white rounded-[2rem] border border-border/60 p-10 relative shadow-sm hover:shadow-xl transition-all duration-500 group"
               >
                 {/* Quote icon */}
                 <div className="absolute top-2 left-3 text-2xl text-gray-400">
@@ -540,46 +535,36 @@ function CourseReviews() {
 }
 function FAQSection({ data }: { data: CategoryData }) {
   return (
-    <section className="bg-[#e9eff5] rounded-2xl mb-4 px-4 sm:px-0">
-      <div className="px-4 py-4 w-full">
+    <section className="bg-secondary/30 border border-border/50 rounded-[3rem] mb-8 overflow-hidden">
+      <div className="px-8 py-10 w-full">
         <div className="my-2">
-
-          <p className="uppercase text-xs sm:text-sm font-semibold text-[#01203d]">
+          <p className="uppercase text-[10px] font-black text-primary tracking-[0.2em] mb-2 px-1">
             {data.breadcrumbName} Courses FAQs
           </p>
 
-          <h2 className="text-xl sm:text-2xl font-bold text-[#01203d] my-2 mb-4">
+          <h2 className="text-2xl md:text-3xl font-black text-slate-900 tracking-tight my-2 mb-8">
             Frequently Asked Questions
           </h2>
 
-          {/* FAQ Tabs */}
-          <div className="flex flex-wrap gap-2 border-2 border-[#34495f] overflow-x-auto w-full p-2  rounded-[8px] bg-white mb-6">
-
-            <button className="text-xs sm:text-sm font-semibold bg-[#34495f] rounded px-2 sm:px-3 py-2 text-white whitespace-nowrap">
+          <div className="flex flex-wrap gap-3 p-2 rounded-2xl bg-white/50 backdrop-blur-sm mb-8 border border-border/50">
+            <button className="text-[10px] font-black uppercase tracking-widest bg-slate-900 rounded-xl px-5 py-3 text-white shadow-lg">
               Category Related
             </button>
 
-            <button className="text-xs sm:text-sm font-semibold text-[#34495f] rounded px-2 sm:px-3 py-2 bg-gray-100 hover:bg-gray-300 whitespace-nowrap">
+            <button className="text-[10px] font-black uppercase tracking-widest text-slate-500 hover:text-slate-900 rounded-xl px-5 py-3 hover:bg-white transition-all">
               Payment Related
             </button>
 
-            <button className="text-xs sm:text-sm font-semibold text-[#34495f] rounded px-2 sm:px-3 py-2 bg-gray-100 hover:bg-gray-300 whitespace-nowrap">
+            <button className="text-[10px] font-black uppercase tracking-widest text-slate-500 hover:text-slate-900 rounded-xl px-5 py-3 hover:bg-white transition-all">
               General Questions
             </button>
-
           </div>
 
-          <div className="space-y-3">
-
-            {data.faqs.map((faq, index) => {
-
-              return <AccordionItem faq={faq} index={index} />
-
-            })}
-
-
+          <div className="space-y-4">
+            {data.faqs.map((faq, index) => (
+              <AccordionItem key={index} faq={faq} index={index} />
+            ))}
           </div>
-
         </div>
       </div>
     </section>
@@ -588,74 +573,72 @@ function FAQSection({ data }: { data: CategoryData }) {
 
 function PracticeTestSection() {
   return (
-    <section className="px-4 sm:px-6 mt-2 rounded-2xl">
-      <div className="bg-[#e9eff5] px-4 py-4 rounded-2xl relative">
-
-        <p className="uppercase text-[0.75rem] sm:text-[0.85rem] font-semibold text-[#34495f]">
-          UNSURE ABOUT YOUR PREP?
-        </p>
-
-        <h2 className="text-[#01203d] font-extrabold text-lg sm:text-[1.3rem] mt-2 mb-3">
-          Enhance and Elevate Your Skills with SAFe Practice Test
-        </h2>
-
-        <div className="flex flex-col md:flex-row gap-4 md:gap-8">
-
+    <section className="px-0 mt-8 mb-12">
+      <div className="bg-slate-900 rounded-[3rem] p-8 md:p-12 relative overflow-hidden shadow-2xl">
+        <div className="relative z-10 flex flex-col md:flex-row gap-8 items-start">
           <div className="flex-1">
+            <p className="uppercase text-[10px] font-black text-primary tracking-[0.2em] mb-4">
+              UNSURE ABOUT YOUR PREP?
+            </p>
 
-            <ul className="flex flex-col gap-2 sm:gap-3 text-sm sm:text-[1rem] text-[#01203d] font-semibold list-disc ml-5">
-              <li>Immediate Result</li>
-              <li>Sample Papers</li>
-              <li>Time-Limited</li>
-              <li>Comprehensive Explanation</li>
-              <li>Previous Exam</li>
+            <h2 className="text-white font-black text-2xl md:text-3xl tracking-tight mb-8">
+              Enhance and Elevate Your Skills with SAFe Practice Test
+            </h2>
+
+            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              {['Immediate Result', 'Sample Papers', 'Time-Limited', 'Comprehensive Explanation', 'Previous Exam'].map((item, i) => (
+                <li key={i} className="flex items-center gap-3 text-white/90 font-bold text-sm">
+                  <BadgeCheck size={18} className="text-primary" />
+                  {item}
+                </li>
+              ))}
             </ul>
-
           </div>
 
-          <div className="w-full sm:w-[320px] px-2 py-2 bg-white rounded-lg shadow-md">
-
-            <img
-              src="https://www.viovn.com/frontend_assets/image/practicetestbg.webp"
-              className="h-[3.25rem] w-full object-cover"
-              alt="practice"
-            />
+          <div className="w-full md:w-[320px] bg-white/5 backdrop-blur-xl rounded-[2rem] p-8 border border-white/10 shadow-2xl">
+            <div className="relative aspect-video rounded-2xl overflow-hidden mb-6">
+              <img
+                src="https://www.viovn.com/frontend_assets/image/practicetestbg.webp"
+                className="w-full h-full object-cover"
+                alt="practice"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent" />
+              <div className="absolute bottom-4 left-4">
+                <span className="bg-primary text-white text-[10px] font-black px-3 py-1.5 rounded-full shadow-lg border border-white/10">
+                  SAFe Practice Test
+                </span>
+              </div>
+            </div>
 
             <div className="px-2">
-
-              <span className="bg-[#01203d] text-white relative bottom-[4.5rem] left-[50%] p-2 rounded text-xs inline-block transform -translate-x-1/2">
-                SAFe Practice Test
-              </span>
-
-              <h3 className="font-bold mt-2 text-[#01203d] text-sm">
-                SAFe Practice Test
+              <h3 className="font-black text-white text-lg mb-4">
+                Expert Practice Hub
               </h3>
 
-              <div className="flex gap-4 text-xs sm:text-sm text-[#34495f] mt-2 flex-wrap">
-                <span>12 Tests</span>
-                <span>570 Questions</span>
-              </div>
-
-              <hr className="my-3" />
-
-              <div className="flex justify-between text-xs sm:text-sm text-[#34495f]">
-                <span>19 hrs</span>
-                <span>Online</span>
+              <div className="flex items-center justify-between text-[11px] font-bold text-white/60 mb-6 uppercase tracking-widest">
+                <span className="flex items-center gap-2 px-3 py-1.5 bg-white/5 rounded-lg border border-white/5">
+                  12 Tests
+                </span>
+                <span className="flex items-center gap-2 px-3 py-1.5 bg-white/5 rounded-lg border border-white/5">
+                  570 Questions
+                </span>
               </div>
 
               <a
                 href="https://www.viovn.com/practice-tests"
-                className="block mt-3 text-right"
+                className="block"
               >
-                <button className="px-3 py-1 bg-[#fa4a23] text-white rounded text-xs sm:text-sm">
-                  Take Test →
+                <button className="w-full py-4 bg-primary hover:bg-primary/90 text-white rounded-2xl text-xs font-black uppercase tracking-widest transition-all shadow-lg shadow-primary/20 hover:shadow-primary/40 active:scale-95">
+                  Take Test Now →
                 </button>
               </a>
-
             </div>
           </div>
-
         </div>
+
+        {/* Decorative background element */}
+        <div className="absolute -top-24 -right-24 w-64 h-64 bg-primary/20 rounded-full blur-[100px]" />
+        <div className="absolute -bottom-24 -left-24 w-64 h-64 bg-blue-500/10 rounded-full blur-[100px]" />
       </div>
     </section>
   );
@@ -671,70 +654,80 @@ function LatestBlogs() {
       title:
         "Product Manager Certification Guide Salary, Cost & Career Path",
       desc:
-        "Complete guide to product manager certification, global salary, eligibility, cost, career path & top options like SAFe POPM ,SAFe APM ,ICP-PDM.",
-      img: "https://www.viovn.com/frontend_assets/image/home-blog-img.webp",
+        "Complete guide to product manager certification, global salary, eligibility, cost, career path & top options like SAFe POPM, SAFe APM, ICP-PDM.",
+      img: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800&h=450&fit=crop",
       link: "https://www.viovn.com/resources/product-manager-certification-guide",
     },
+    {
+      tag: "Agile",
+      date: "March 2026",
+      title: "Mastering Agile Transformations in 2026",
+      desc: "Key insights into scaling agile practices across enterprise teams for maximum efficiency and velocity.",
+      img: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=450&fit=crop",
+      link: "#",
+    }
   ];
 
   return (
-    <section className="w-full mt-6 mb-2 rounded-2xl px-4 sm:px-0">
-      <div className="bg-[#f7f8fa] px-4 py-4 rounded-2xl">
+    <section className="w-full mt-12 mb-8 px-4 sm:px-0">
+      <div className="flex items-end justify-between mb-8">
+        <div>
+          <p className="uppercase text-xs font-black text-primary tracking-[0.2em] mb-2 px-1">
+            Our Knowledge Hub
+          </p>
+          <h2 className="text-2xl md:text-3xl font-black text-slate-900 tracking-tight">
+            Latest from Our Blog
+          </h2>
+        </div>
+        <button className="hidden sm:flex items-center gap-2 text-sm font-bold text-primary hover:gap-3 transition-all">
+          View All Blogs <ArrowRight size={18} />
+        </button>
+      </div>
 
-        <p className="uppercase text-[0.75rem] sm:text-[0.85rem] font-semibold text-[#34495f]">
-          LEARNER REVIEWS FROM THE WORLD OVER
-        </p>
-
-        {/* title */}
-        <h2 className="text-[#01203d] font-extrabold text-lg sm:text-[1.3rem] mt-2 mb-4">
-          Our Latest Blogs
-        </h2>
-
-        {/* blog cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-
-          {blogs.map((blog, i) => (
-            <div
-              key={i}
-              className="border rounded-lg bg-white overflow-hidden"
-            >
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        {blogs.map((blog, i) => (
+          <motion.div
+            key={i}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: i * 0.1 }}
+            className="group cursor-pointer"
+          >
+            <div className="relative aspect-[16/9] rounded-3xl overflow-hidden mb-6 shadow-lg group-hover:shadow-2xl transition-all duration-500">
               <img
                 src={blog.img}
-                className="w-full h-[140px] sm:h-[160px] object-cover"
+                alt={blog.title}
+                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
               />
-
-              <div className="p-3">
-
-                <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2 mb-2">
-                  <span className="bg-[#fa4a23] text-white text-xs sm:text-sm px-3 py-1 rounded-full font-semibold">
-                    {blog.tag}
-                  </span>
-
-                  <span className="text-xs sm:text-sm text-gray-600">
-                    {blog.date}
-                  </span>
-                </div>
-
-                <h3 className="font-bold text-gray-900 mb-2 text-sm sm:text-base line-clamp-2">
-                  {blog.title}
-                </h3>
-
-                <p className="text-[0.75rem] sm:text-[0.85rem] font-semibold text-[#34495f] mb-3 line-clamp-2">
-                  {blog.desc}
-                </p>
-
-                <a
-                  href={blog.link}
-                  className="underline text-gray-900 text-xs sm:text-sm"
-                >
-                  Read More
-                </a>
-
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="absolute top-4 left-4 flex flex-col gap-2 z-10">
+                <span className="bg-white/95 backdrop-blur-md text-primary text-[10px] font-black px-3 py-1.5 rounded-full shadow-sm w-fit">
+                  {blog.tag}
+                </span>
+                <span className="bg-primary text-white text-[10px] font-black px-3 py-1.5 rounded-full shadow-lg shadow-primary/20 w-fit">
+                  20% OFF
+                </span>
               </div>
             </div>
-          ))}
 
-        </div>
+            <div className="px-4 pb-4">
+              <div className="flex items-center gap-3 mb-3 text-[11px] font-bold text-slate-400 uppercase tracking-widest">
+                <Clock size={14} className="text-primary" />
+                {blog.date}
+              </div>
+              <h3 className="text-xl font-black text-slate-900 group-hover:text-primary transition-colors mb-3 line-clamp-2 leading-snug">
+                {blog.title}
+              </h3>
+              <p className="text-slate-600 text-[14px] leading-relaxed mb-4 line-clamp-2 font-medium">
+                {blog.desc}
+              </p>
+              <div className="flex items-center gap-2 text-primary font-black text-xs uppercase tracking-widest group-hover:gap-3 transition-all">
+                Read Story <ArrowRight size={14} />
+              </div>
+            </div>
+          </motion.div>
+        ))}
       </div>
     </section>
   );
@@ -811,7 +804,7 @@ function RelatedCourses() {
     <section className=" bg-white relative">
       <div className="px-4 pb-3 relative">
         <div className="pt-3">
-          <h3 className="text-[#01203d] font-extrabold text-[1.3rem] mb-3">
+          <h3 className="text-slate-900 font-extrabold text-[1.3rem] mb-3">
             Browse Related Courses
           </h3>
 
@@ -820,7 +813,7 @@ function RelatedCourses() {
               <a
                 key={index}
                 href={course.url}
-                className="bg-[#d8e6ef] text-[#01203d] text-[0.85rem] px-2 py-2 rounded"
+                className="bg-secondary/50 hover:bg-primary/10 hover:text-primary text-slate-700 text-[0.85rem] px-3 py-2 rounded-lg font-medium transition-colors border border-border/50"
               >
                 {course.title}
               </a>
@@ -868,7 +861,7 @@ const CategoryLayout: React.FC<CategoryLayoutProps> = ({ data }) => {
           <CategoryStats data={data} />
         </section>
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 md:gap-8 lg:gap-16 relative container md:max-w-[1120px] pt-8 md:pt-20 px-4 md:px-0">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 md:gap-8 lg:gap-16 relative container pt-8 md:pt-20">
           <div className="lg:col-span-3">
             <CategorySidebar data={data} isOpen={sidebarOpen} onClose={() => setSidebarOpen(false)} />
           </div>

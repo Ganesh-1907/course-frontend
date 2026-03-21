@@ -41,18 +41,18 @@ const CategoryStats = ({ data }:{data: CategoryData;}) => {
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        className="bg-white rounded-full max-w-[1000px] shadow-xl shadow-slate-200/50 border border-slate-100 p-4 md:px-10"
+        className="bg-white rounded-full w-full shadow-[0_15px_60px_-15px_rgba(0,0,0,0.1)] border border-slate-100 p-6 md:px-12 md:py-8"
       >
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+        <div className="grid grid-cols-2 lg:grid-cols-4 items-center">
           {data.stats.map((stat, i) => (
-            <div key={i} className="flex flex-col items-center text-center group">
-              <div className={`w-10 h-10  flex items-center justify-center transition-transform group-hover:scale-110 duration-300`}>
-                {stat.icon && <stat.icon className={`w-5 h-5 ${stat.color}`} />}
+            <div key={i} className={`flex flex-col items-center text-center group ${i !== data.stats.length - 1 ? 'lg:border-r border-slate-100' : ''}`}>
+              <div className={`w-12 h-12 flex items-center justify-center transition-transform group-hover:scale-110 duration-500 mb-1`}>
+                {stat.icon && <stat.icon className={`w-6 h-6 rotate-0 group-hover:-rotate-12 transition-transform duration-500 ${stat.color}`} />}
               </div>
-              <h3 className="text-sm md:text-sm font-bold text-[#001c3d] mb-0.5">
+              <h3 className="text-base md:text-[20px] font-black text-[#001c3d] tracking-tighter leading-none mb-1">
                 {stat.value}
               </h3>
-              <p className="md:text-sm font-light text-slate-500 tracking-wide">
+              <p className="text-[10px] md:text-[11px] font-black text-slate-400 uppercase tracking-widest leading-none opacity-80">
                 {stat.label}
               </p>
             </div>

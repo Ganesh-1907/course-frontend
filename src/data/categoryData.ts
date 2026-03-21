@@ -15,6 +15,7 @@ export interface Course {
   badge?: string;
   nextDate?: string;
   navigate?: string;
+  skills?: string;
 }
 
 export interface FAQItem {
@@ -30,7 +31,7 @@ export interface CategoryData {
   description: string;
   highlights: string[];
   heroImage: string;
-  stats: { icon: IconNode, label: string; value: string }[];
+  stats: { icon?: any, label: string; value: string; color?: string; bgColor?: string }[];
   courses: Course[];
   details: {
     title: string;
@@ -41,7 +42,38 @@ export interface CategoryData {
   breadcrumbName?: string;
 }
 
+const HERO_IMAGE = "/images/category_hero.png";
 const DEFAULT_COURSE_IMAGE = "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=400&h=300&fit=crop";
+const GLOBAL_STATS = [
+  {
+    icon: Users,
+    value: "500,000+",
+    label: "Professional Enrolled",
+    color: "text-emerald-600",
+    bgColor: "bg-emerald-50",
+  },
+  {
+    icon: GraduationCap,
+    value: "150+",
+    label: "Global Trainers",
+    color: "text-amber-500",
+    bgColor: "bg-amber-50",
+  },
+  {
+    icon: Building2,
+    value: "300+",
+    label: "Workshops Every Month",
+    color: "text-rose-500",
+    bgColor: "bg-rose-50",
+  },
+  {
+    icon: Globe,
+    value: "130+",
+    label: "Countries",
+    color: "text-blue-500",
+    bgColor: "bg-blue-50",
+  },
+];
 let generatedCourseId = 10000;
 
 const buildCourses = (category: string, titles: string[], categorySlug?: string): Course[] =>
@@ -707,12 +739,8 @@ const buildCategory = (id: string, name: string, courseTitles: string[], slug?: 
   title: `${name} CERTIFICATION COURSES`,
   description: `${name} training and certification programs.`,
   highlights: [],
-  heroImage: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&q=80",
-  stats: [
-    { label: "Courses", value: String(courseTitles.length) },
-    { label: "Format", value: "Live + Self-paced" },
-    { label: "Level", value: "All Levels" },
-  ],
+  heroImage: HERO_IMAGE,
+  stats: GLOBAL_STATS,
   courses: buildCourses(name, courseTitles, slug || id),
   details: [],
   faqs: [],
@@ -937,37 +965,8 @@ export const categoryData: Record<string, CategoryData> = {
       "Trained by Experienced Industry Experts with Over 15+ Years of Experience.",
       "Gain Hands-on Practical Experience with Our Top Agile Certifications & Training."
     ],
-    heroImage: "https://www.viovn.com/frontend_assets/image/category_banner_f.webp",
-    stats: [
-      {
-        icon: Users,
-        value: "500,000+",
-        label: "Professional Enrolled",
-        color: "text-emerald-600",
-        bgColor: "bg-emerald-50",
-      },
-      {
-        icon: GraduationCap,
-        value: "150+",
-        label: "Global Trainers",
-        color: "text-amber-500",
-        bgColor: "bg-amber-50",
-      },
-      {
-        icon: Building2,
-        value: "300+",
-        label: "Workshops Every Month",
-        color: "text-rose-500",
-        bgColor: "bg-rose-50",
-      },
-      {
-        icon: Globe,
-        value: "130+",
-        label: "Countries",
-        color: "text-blue-500",
-        bgColor: "bg-blue-50",
-      },
-    ],
+    heroImage: HERO_IMAGE,
+    stats: GLOBAL_STATS,
     courses: buildCourses("Agile & Scrum", agileCourseTitles, "agile"),
     details: [
       {
@@ -1021,6 +1020,7 @@ export const categoryData: Record<string, CategoryData> = {
   project: {
     id: "project",
     name: "Project Management",
+    breadcrumbName: "PROJECT",
     title: "PROJECT MANAGEMENT PROFESSIONAL TRAINING",
     description: "Accelerate your career with globally recognized Project Management certifications. Learn to lead complex projects with confidence and precision.",
     highlights: [
@@ -1029,37 +1029,8 @@ export const categoryData: Record<string, CategoryData> = {
       "Earn 35 Contact Hours (PDU) for Exam Eligibility",
       "Led by PMP Certified Expert Practitioners"
     ],
-    heroImage: "https://images.unsplash.com/photo-1522071823991-b9671f30c46f?w=800&q=80",
-    stats: [
-      {
-        icon: Users,
-        value: "30K+",
-        label: "PMP Certified",
-        color: "text-blue-600",
-        bgColor: "bg-blue-50",
-      },
-      {
-        icon: TrendingUp,
-        value: "25%",
-        label: "Average Salary Hike",
-        color: "text-emerald-600",
-        bgColor: "bg-emerald-50",
-      },
-      {
-        icon: Award,
-        value: "99.1%",
-        label: "Exam Pass Rate",
-        color: "text-amber-500",
-        bgColor: "bg-amber-50",
-      },
-      {
-        icon: Globe,
-        value: "100+",
-        label: "Countries Covered",
-        color: "text-rose-500",
-        bgColor: "bg-rose-50",
-      },
-    ],
+    heroImage: HERO_IMAGE,
+    stats: GLOBAL_STATS,
     courses: buildCourses("Project Management", projectCourseTitles),
     details: [],
     faqs: [
@@ -1116,37 +1087,8 @@ export const categoryData: Record<string, CategoryData> = {
       "Comprehensive Digital Course Materials",
       "Interactive Case Studies & Real-world Labs"
     ],
-    heroImage: "https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&q=80",
-    stats: [
-      {
-        icon: Users,
-        value: "15K+",
-        label: "ITIL Experts Trained",
-        color: "text-purple-600",
-        bgColor: "bg-purple-50",
-      },
-      {
-        icon: Building2,
-        value: "200+",
-        label: "Corporate Batches",
-        color: "text-blue-600",
-        bgColor: "bg-blue-50",
-      },
-      {
-        icon: Star,
-        value: "4.8/5",
-        label: "Customer Rating",
-        color: "text-amber-500",
-        bgColor: "bg-amber-50",
-      },
-      {
-        icon: Globe,
-        value: "80+",
-        label: "Countries Served",
-        color: "text-emerald-600",
-        bgColor: "bg-emerald-50",
-      },
-    ],
+    heroImage: HERO_IMAGE,
+    stats: GLOBAL_STATS,
     courses: buildCourses("IT Service Management", serviceCourseTitles, "service"),
     details: [],
     faqs: [
@@ -1203,37 +1145,8 @@ export const categoryData: Record<string, CategoryData> = {
       "Green & Black Belt Certification Tracks",
       "Statistical Analysis Tool Training (Minitab)"
     ],
-    heroImage: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&q=80",
-    stats: [
-      {
-        icon: TrendingUp,
-        value: "40%",
-        label: "Efficiency Gained",
-        color: "text-emerald-600",
-        bgColor: "bg-emerald-50",
-      },
-      {
-        icon: Award,
-        value: "12K+",
-        label: "Certified Belts",
-        color: "text-amber-500",
-        bgColor: "bg-amber-50",
-      },
-      {
-        icon: CheckCircle,
-        value: "500+",
-        label: "Projects Completed",
-        color: "text-blue-600",
-        bgColor: "bg-blue-50",
-      },
-      {
-        icon: Globe,
-        value: "60+",
-        label: "Countries Served",
-        color: "text-rose-500",
-        bgColor: "bg-rose-50",
-      },
-    ],
+    heroImage: HERO_IMAGE,
+    stats: GLOBAL_STATS,
     courses: buildCourses("Quality & Process", qualityCourseTitles, "quality"),
     details: [],
     faqs: [
@@ -1291,37 +1204,8 @@ export const categoryData: Record<string, CategoryData> = {
       "Agile Leader Certification (CAL)",
       "One-on-One Executive Mentoring"
     ],
-    heroImage: "https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=800&q=80",
-    stats: [
-      {
-        icon: Users,
-        value: "5K+",
-        label: "Leaders Coached",
-        color: "text-purple-600",
-        bgColor: "bg-purple-50",
-      },
-      {
-        icon: Building2,
-        value: "150+",
-        label: "Fortune 500 Clients",
-        color: "text-blue-600",
-        bgColor: "bg-blue-50",
-      },
-      {
-        icon: Star,
-        value: "85",
-        label: "Net Promoter Score",
-        color: "text-amber-500",
-        bgColor: "bg-amber-50",
-      },
-      {
-        icon: Globe,
-        value: "50+",
-        label: "Countries Reached",
-        color: "text-emerald-600",
-        bgColor: "bg-emerald-50",
-      },
-    ],
+    heroImage: HERO_IMAGE,
+    stats: GLOBAL_STATS,
     courses: [],
     details: [],
     faqs: [
@@ -1370,6 +1254,7 @@ export const categoryData: Record<string, CategoryData> = {
   business: {
     id: "business",
     name: "Business Skills",
+    breadcrumbName: "BUSINESS",
     title: "ESSENTIAL BUSINESS SKILLS FOR CAREER GROWTH",
     description: "Master the soft and hard skills critical for modern business. From business analysis to effective communication.",
     highlights: [
@@ -1378,37 +1263,8 @@ export const categoryData: Record<string, CategoryData> = {
       "Data-Driven Decision Making Workshops",
       "Personal Branding & Leadership Soft Skills"
     ],
-    heroImage: "https://images.unsplash.com/photo-1552581234-26160f608093?w=800&q=80",
-    stats: [
-      {
-        icon: BookOpen,
-        value: "100+",
-        label: "Skills Covered",
-        color: "text-blue-600",
-        bgColor: "bg-blue-50",
-      },
-      {
-        icon: Users,
-        value: "80+",
-        label: "Corporate Trainers",
-        color: "text-emerald-600",
-        bgColor: "bg-emerald-50",
-      },
-      {
-        icon: TrendingUp,
-        value: "2K+",
-        label: "Career Pivoters",
-        color: "text-amber-500",
-        bgColor: "bg-amber-50",
-      },
-      {
-        icon: Globe,
-        value: "40+",
-        label: "Countries Reached",
-        color: "text-rose-500",
-        bgColor: "bg-rose-50",
-      },
-    ],
+    heroImage: HERO_IMAGE,
+    stats: GLOBAL_STATS,
     courses: buildCourses("Business Skills", businessCourseTitles, "business"),
     details: [],
     faqs: [
@@ -1465,37 +1321,8 @@ export const categoryData: Record<string, CategoryData> = {
       "Ethical AI & Governance Frameworks",
       "Practical Machine Learning Implementations"
     ],
-    heroImage: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&q=80",
-    stats: [
-      {
-        icon: Zap,
-        value: "2026 Ready",
-        label: "Latest Tech Curriculum",
-        color: "text-purple-600",
-        bgColor: "bg-purple-50",
-      },
-      {
-        icon: Monitor,
-        value: "100+",
-        label: "Hands-on Labs",
-        color: "text-blue-600",
-        bgColor: "bg-blue-50",
-      },
-      {
-        icon: Users,
-        value: "40+",
-        label: "Tech Mentors",
-        color: "text-emerald-600",
-        bgColor: "bg-emerald-50",
-      },
-      {
-        icon: Globe,
-        value: "90+",
-        label: "Countries Served",
-        color: "text-amber-500",
-        bgColor: "bg-amber-50",
-      },
-    ],
+    heroImage: HERO_IMAGE,
+    stats: GLOBAL_STATS,
     courses: buildCourses("AI & Technology", technologyCourseTitles, "technology"),
     details: [],
     faqs: [
@@ -1553,37 +1380,8 @@ export const categoryData: Record<string, CategoryData> = {
       "CompTIA Security+ Exam Prep",
       "24/7 Access to Virtual Security Labs"
     ],
-    heroImage: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=800&q=80",
-    stats: [
-      {
-        icon: Shield,
-        value: "10K+",
-        label: "Vulnerabilities Found",
-        color: "text-rose-600",
-        bgColor: "bg-rose-50",
-      },
-      {
-        icon: Users,
-        value: "8K+",
-        label: "Security Experts Trained",
-        color: "text-blue-600",
-        bgColor: "bg-blue-50",
-      },
-      {
-        icon: Zap,
-        value: "50+",
-        label: "Hackathons Hosted",
-        color: "text-amber-500",
-        bgColor: "bg-amber-50",
-      },
-      {
-        icon: Globe,
-        value: "70+",
-        label: "Countries Served",
-        color: "text-emerald-600",
-        bgColor: "bg-emerald-50",
-      },
-    ],
+    heroImage: HERO_IMAGE,
+    stats: GLOBAL_STATS,
     courses: [],
     details: [],
     faqs: [
@@ -1642,12 +1440,8 @@ export const categoryData: Record<string, CategoryData> = {
       "Get Trained by Certified SAFe Practice Consultants (SPCs).",
       "Gain Practical Insights into Implementing SAFe at Scale."
     ],
-    heroImage: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80",
-    stats: [
-      { label: "SAFe Professionals", value: "25K+" },
-      { label: "Partner Rating", value: "5.0/5" },
-      { label: "Global Presence", value: "30+ Countries" }
-    ],
+    heroImage: HERO_IMAGE,
+    stats: GLOBAL_STATS,
     courses: buildCourses("SAFE", safeCourseTitles, "safe"),
     details: [
       {

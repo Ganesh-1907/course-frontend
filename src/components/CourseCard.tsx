@@ -3,6 +3,7 @@ import { Star, Calendar, Users, Clock, MonitorPlay, Heart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
 import { LikeModal } from "./modals/LikeModal";
+import { getCourseImage } from "@/utils/courseImages";
 
 interface CourseCardProps {
   course: {
@@ -44,7 +45,7 @@ const CourseCard = ({ course, index }: CourseCardProps) => {
       {/* Image */}
       <div className="relative h-48 overflow-hidden">
         <img
-          src={course.image}
+          src={getCourseImage(course.id)}
           alt={course.title}
           className="w-full h-full object-cover"
         />

@@ -44,8 +44,8 @@ const ELearningHero: React.FC<ELearningHeroProps> = ({
           <BreadcrumbList>
             <BreadcrumbItem>
               <BreadcrumbLink asChild>
-                <Link to="/" className="text-slate-600 hover:text-slate-900 transition-colors flex items-center gap-1.5">
-                  <Home className="w-3.5 h-3.5" />
+                <Link to="/" className="text-slate-600 hover:text-slate-900 transition-colors flex items-center gap-1.5 text-[13px] font-medium">
+                  Home
                 </Link>
               </BreadcrumbLink>
             </BreadcrumbItem>

@@ -6,6 +6,9 @@ import { CategoryData } from "@/data/categoryData";
 import AdvisorModal from "@/components/modals/AdvisorModal";
 import { useState } from "react";
 import CategoryStats from "./CategoryStats";
+import { Link, useParams } from "react-router-dom";
+
+const DEFAULT_COURSE_IMAGE = "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=400&h=300&fit=crop";
 
 interface CategoryHeroProps {
   data: CategoryData;
@@ -22,12 +25,14 @@ const avatars = [
 
 const CategoryHero: React.FC<CategoryHeroProps> = ({ data }) => {
   const [isAdvisorOpen, setIsAdvisorOpen] = useState(false);
+  const { categoryId } = useParams<{ categoryId: string }>();
+
   return (
     <section className="relative pt-8 pb-[8rem] overflow-hidden bg-[#f0f9ff]">
-      <div className="container relative z-10 px-12">
+      <div className="container relative z-10">
         {/* Breadcrumbs */}
         <div className="flex items-center gap-2 mb-4 text-slate-600 font-bold text-sm">
-          <Home className="w-4 h-4" />
+          <Link to="/" className="hover:text-primary transition-colors">Home</Link>
           <ChevronRight className="w-4 h-4 text-slate-400" />
           <span className="text-slate-700 font-medium">{data.breadcrumbName || data.name}</span>
         </div>
@@ -40,55 +45,58 @@ const CategoryHero: React.FC<CategoryHeroProps> = ({ data }) => {
           >
 
 
-            <h1 className="text-2xl md:text-3xl font-semibold font-display mb-4 text-[#001c3d] leading-tight ">
-              {data.title}
+            <h1 className="text-3xl md:text-3xl lg:text-[36px] font-black font-display mb-5 leading-tight tracking-tight">
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-slate-900 via-blue-900 to-primary">
+                {data.title}
+              </span>
             </h1>
 
-            <p className="text-base text-[#001c3d] font-bold mb-6 max-w-xl leading-relaxed opacity-90">
+            <p className="text-base md:text-lg lg:text-[17px] font-medium text-[#001c3d]/80 mb-8 max-w-xl leading-relaxed">
               {data.subtitle || data.description}
             </p>
 
             {/* Social Proof */}
-            <div className="flex items-center gap-4 mb-8">
+            <div className="flex items-center gap-4 mb-10">
               <div className="flex -space-x-2">
                 {avatars.map((avatar, i) => (
                   <img
                     key={i}
                     src={avatar}
                     alt="Student"
-                    className="w-8 h-8 rounded-full border-2 border-white object-cover shadow-sm"
+                    className="w-10 h-10 rounded-full border-2 border-white object-cover shadow-sm"
                   />
                 ))}
               </div>
-              <span className="text-xs font-semibold text-[#001c3d]">{data.enrolledCount || "144,000+"} Enrolled</span>
+              <span className="text-sm font-bold text-[#001c3d] opacity-90">{data.enrolledCount || "144,000+"} Enrolled</span>
             </div>
 
             {/* feature list */}
-            <div className="space-y-3 mb-6">
+            <div className="space-y-4 mb-10">
               {data.highlights.map((highlight, i) => (
-                <div key={i} className="flex items-center gap-3">
-                  <div className="rounded-full p-1 bg-green-700 flex items-center justify-center flex-shrink-0">
-                  <Check color="white" size={8} />
+                <div key={i} className="flex items-start gap-3">
+                  <div className="rounded-full p-1 bg-green-600 flex items-center justify-center flex-shrink-0 mt-1">
+                    <Check color="white" size={10} strokeWidth={4} />
                   </div>
-                  <span className="text-sm font-normal text-[#001c3d] leading-tight">{highlight}</span>
+                  <span className="text-[14px] font-medium text-[#001c3d]/90 leading-snug">{highlight}</span>
                 </div>
               ))}
             </div>
 
             {/* CTAs */}
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap gap-5">
               <button
                 onClick={() => setIsAdvisorOpen(true)}
-                className="h-8 px-5  border-[1.5px] rounded-[0.25rem] border-[#fa4a23] text-black  font-semibold hover:bg-white/50 transition-all text-xs"
+                className="h-11 px-6 border-2 rounded-xl border-[#fa4a23] text-[#fa4a23] font-bold hover:bg-[#fa4a23] hover:text-white transition-all text-[13px] shadow-sm active:scale-[0.98]"
               >
                 Contact Learning Advisor
               </button>
-              <button
-                className="h-8 px-4 rounded-[0.25rem] bg-[#fa4a23] hover:bg-[#e43d1a] text-white font-semibold transition-all shadow-md flex items-center gap-2 text-xs"
+              <Link
+                to={`/schedules/${categoryId || data.id || data.name.toLowerCase().replace(/\s+/g, '-')}`}
+                className="h-11 px-6 rounded-xl bg-[#fa4a23] hover:bg-[#e43d1a] text-white font-bold transition-all shadow-lg shadow-orange-500/20 flex items-center gap-2 text-[13px] active:scale-[0.98]"
               >
                 View Schedules
-                <ArrowUpRight className="w-3.5 h-3.5" />
-              </button>
+                <ArrowUpRight className="w-4 h-4" />
+              </Link>
             </div>
 
             <AdvisorModal isOpen={isAdvisorOpen} onOpenChange={setIsAdvisorOpen} />
@@ -99,26 +107,19 @@ const CategoryHero: React.FC<CategoryHeroProps> = ({ data }) => {
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="hidden lg:flex justify-center items-end relative"
+            className="hidden lg:flex justify-center items-center relative"
           >
-            {/* Background Circle */}
-
-
-            {/* Main Image in Circle */}
-            <div className="relative ">
+            {/* Background Circle to match screenshot layout */}
+            <div className="absolute w-[500px] h-[500px] bg-sky-100/60 rounded-full" />
+            
+            {/* Main Image in Circle with masking */}
+            <div className="relative z-10 w-[460px] h-[460px] rounded-full overflow-hidden border-8 border-white shadow-2xl">
               <img
                 src={data.heroImage}
                 alt="Student Success"
-                height={'340'}
-                width={'340'}
-                className="object-cover"
-                style={{ marginLeft: '18%', }}
+                className="w-full h-full object-cover object-top"
               />
             </div>
-
-            {/* Decorative Floating Dots */}
-            <div className="absolute top-[25%] right-[0%] w-3 h-3 rounded-full bg-[#ff4e25] animate-ping" />
-            <div className="absolute bottom-[25%] left-[0%] w-5 h-5 rounded-full bg-sky-400/40 animate-bounce" />
           </motion.div>
         </div>
       </div>

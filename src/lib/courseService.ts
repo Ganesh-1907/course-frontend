@@ -49,3 +49,16 @@ export const getAllSchedules = async (courseName: string): Promise<{ schedules: 
         return null;
     }
 };
+
+export const getSchedulesByCategory = async (category: string): Promise<{ schedules: ScheduleData[], serviceType: string } | null> => {
+    try {
+        const response = await apiCall(`/user/courses/v2/schedules-by-type/${encodeURIComponent(category)}`);
+        if (response.success && response.data) {
+            return response.data;
+        }
+        return null;
+    } catch (error) {
+        console.error('Error fetching schedules by category:', error);
+        return null;
+    }
+};

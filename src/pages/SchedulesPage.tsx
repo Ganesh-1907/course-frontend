@@ -30,7 +30,7 @@ import {
   PopoverTrigger,
 } from "@/components/ui/popover";
 import { Checkbox } from "@/components/ui/checkbox";
-import { getAllSchedules, ScheduleData } from '@/lib/courseService';
+import { getAllSchedules, getSchedulesByCategory, ScheduleData } from '@/lib/courseService';
 import { useCart } from '@/context/CartContext';
 import { useAuth } from '@/context/AuthContext';
 import { useAuthModal } from '@/context/AuthModalContext';
@@ -64,7 +64,7 @@ const getCurrencySymbol = (currency: string | undefined) => {
 };
 
 const SchedulesPage: React.FC = () => {
-  const { courseName } = useParams<{ courseName: string }>();
+  const { courseName, categoryId } = useParams<{ courseName?: string; categoryId?: string }>();
   const navigate = useNavigate();
   const { addToCart, isInCart, loading: cartLoading } = useCart();
   const { user } = useAuth();
@@ -103,16 +103,30 @@ const SchedulesPage: React.FC = () => {
   }, [timeLeft]);
 
   useEffect(() => {
-    if (courseName) {
+    const searchTarget = courseName || categoryId;
+    if (searchTarget) {
       const fetchData = async () => {
         setIsLoading(true);
         try {
-          const data = await getAllSchedules(courseName);
-          if (data) {
-            setSchedules(data.schedules);
-            setCourseInfo(data.course);
-          } else {
-            setError('No schedules found for this course.');
+          let data;
+          if (courseName) {
+            data = await getAllSchedules(courseName);
+            if (data) {
+              setSchedules(data.schedules);
+              setCourseInfo(data.course);
+            }
+          } else if (categoryId) {
+            const result = await getSchedulesByCategory(categoryId);
+            if (result) {
+              setSchedules(result.schedules);
+              // For category view, we don't have a specific courseInfo object yet, 
+              // but we can set a dummy one or handle it in displayName
+              setCourseInfo(null);
+            }
+          }
+          
+          if (!schedules.length && !schedules) {
+             // Checking data again if needed, but the logic above sets schedules
           }
         } catch (err) {
           setError('Failed to fetch schedules. Please try again later.');
@@ -122,9 +136,13 @@ const SchedulesPage: React.FC = () => {
       };
       fetchData();
     }
-  }, [courseName]);
+  }, [courseName, categoryId]);
 
-  const decodedCourseName = useMemo(() => decodeURIComponent(courseName || ''), [courseName]);
+  const displayName = useMemo(() => {
+    if (courseInfo) return courseInfo.name;
+    const target = courseName || categoryId || '';
+    return decodeURIComponent(target).replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+  }, [courseName, categoryId, courseInfo]);
 
   const monthOptions = useMemo(() => {
     const options = [];
@@ -190,7 +208,7 @@ const SchedulesPage: React.FC = () => {
       return;
     }
     await addToCart({
-      courseName: schedule.courseName || decodedCourseName,
+      courseName: schedule.courseName || displayName,
       courseId: schedule.courseId?.toString() || courseInfo?.id.toString(),
       price: Number(schedule.originalPrice),
       discountedPrice: Number(schedule.discountedPrice),
@@ -223,24 +241,24 @@ const SchedulesPage: React.FC = () => {
         <div className="mb-10">
           <Button 
             variant="ghost" 
-            onClick={() => navigate(-1)}
+            onClick={() => navigate(`/category/${categoryId || 'agile'}`)}
             className="mb-6 -ml-2 text-slate-500 hover:text-primary hover:bg-white border border-transparent hover:border-slate-200 transition-all rounded-full px-4"
           >
             <ChevronLeft className="w-4 h-4 mr-1" />
-            Back to Course Details
+            Back to Category Details
           </Button>
 
           {/* Breadcrumbs */}
           <nav className="flex items-center gap-2 text-[11px] font-bold text-slate-400 uppercase tracking-widest mb-6">
             <Link to="/" className="hover:text-primary transition-colors">Home</Link>
             <ChevronRight className="w-3 h-3" />
-            <Link to="/category/agile" className="hover:text-primary transition-colors">Agile</Link>
+            <Link to={`/category/${categoryId || 'agile'}`} className="hover:text-primary transition-colors">Category</Link>
             <ChevronRight className="w-3 h-3" />
             <button 
-              onClick={() => navigate(-1)} 
+              onClick={() => navigate(`/category/${categoryId || 'agile'}`)} 
               className="hover:text-primary transition-colors truncate max-w-[250px] uppercase"
             >
-              {decodedCourseName}
+              {displayName}
             </button>
             <ChevronRight className="w-3 h-3" />
             <span className="text-primary cursor-default">Schedules</span>
@@ -250,7 +268,7 @@ const SchedulesPage: React.FC = () => {
             <span className="text-[10px] font-black text-primary uppercase tracking-[0.3em] bg-primary/5 px-3 py-1 rounded-full border border-primary/10">Course Schedules</span>
             <h1 className="text-4xl md:text-5xl font-black text-[#001c3d] leading-[1.15] tracking-tight">
               Schedules for <br />
-              <span className="text-primary italic inline-block mt-2">{decodedCourseName}</span>
+              <span className="text-primary italic inline-block mt-2">{displayName}</span>
             </h1>
           </div>
         </div>
@@ -459,12 +477,12 @@ const SchedulesPage: React.FC = () => {
                         <Button
                           onClick={() => handleEnroll(schedule)}
                           className={`w-full h-11 font-black text-[13px] rounded-xl shadow-lg transition-all active:scale-[0.98] ${
-                            isInCart(schedule.courseName || decodedCourseName)
+                            isInCart(schedule.courseName || displayName)
                               ? 'bg-green-600 hover:bg-green-700 text-white shadow-green-200'
                               : 'bg-primary hover:bg-[#e64526] text-white shadow-orange-200'
                           }`}
                         >
-                          {isInCart(schedule.courseName || decodedCourseName) ? (
+                          {isInCart(schedule.courseName || displayName) ? (
                             <><CheckCircle className="w-4 h-4 mr-2" /> Added to Cart</>
                           ) : (
                             'ENROLL NOW'
