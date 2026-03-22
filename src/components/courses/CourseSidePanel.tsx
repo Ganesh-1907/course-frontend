@@ -109,7 +109,12 @@ const CourseSidePanel: React.FC<CourseSidePanelProps> = ({ schedules = [], cours
     const finalPrice = plan === 'Premium' ? basePrice * 1.3 : basePrice;
 
     const enrollItem = {
-      courseId: String((featuredSchedule as any)?.id || courseId || name),
+      courseId: String(
+        (featuredSchedule as any)?.id || 
+        (featuredSchedule as any)?.scheduleId || 
+        courseId || 
+        name
+      ),
       courseName: featuredSchedule?.courseName || name,
       price: featuredSchedule ? parsePrice(featuredSchedule.originalPrice) : 0,
       basePrice: basePrice,

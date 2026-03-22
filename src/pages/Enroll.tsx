@@ -27,6 +27,7 @@ import { useCart } from "@/context/CartContext";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import Header from "@/components/Header";
+import { apiCall } from "@/lib/api";
 import {
   Dialog,
   DialogContent,
@@ -34,9 +35,18 @@ import {
   DialogTitle,
   DialogTrigger
 } from "@/components/ui/dialog";
-import { CheckCircle } from "lucide-react";
+import { CheckCircle, Loader2 } from "lucide-react";
 import { toast } from "sonner";
 import { cn } from "@/lib/utils";
+import { loadStripe } from "@stripe/stripe-js";
+import {
+  Elements,
+  PaymentElement,
+  useStripe,
+  useElements,
+} from "@stripe/react-stripe-js";
+
+const stripePromise = loadStripe("pk_test_51RBviLSBdkOysvco8uiMFym0JRvSm04DvaxwRgPytAXF2jHnizIDQg6TgbQgJQIgV7FiJxeaLSlBn1JWV9I4zYOY006qESc6Vt");
 
 const steps = [
   { id: 1, title: "Course Details", icon: ShoppingCart },
@@ -65,9 +75,9 @@ const Enroll = () => {
   const [formData, setFormData] = useState({
     fullName: "",
     email: "",
-    phone: "",
+    mobile: "",
     city: "",
-    referralCode: "",
+    zipCode: '000000',
   });
 
   const calculateSubtotal = () => {
@@ -83,8 +93,8 @@ const Enroll = () => {
       return;
     }
     if (currentStep === 2) {
-      if (!formData.fullName || !formData.email || !formData.phone) {
-        toast.error("Please fill in all required fields");
+      if (!formData.fullName || !formData.email || !formData.mobile || !formData.city) {
+        toast.error("Please fill all required fields");
         return;
       }
     }
@@ -107,7 +117,7 @@ const Enroll = () => {
   };
 
   const handleRazorpayPayment = async () => {
-    // 1. Load Razorpay script
+    // 0. Load Razorpay script
     const res = await loadRazorpayScript();
 
     if (!res) {
@@ -115,42 +125,89 @@ const Enroll = () => {
       return;
     }
 
-    // 2. Define Razorpay options
-    // NOTE: To get the full Razorpay UI without a backend order ID,
-    // you must use a globally valid Test Key or your own Test Key from Razorpay Dashboard.
-    const razorpayKey = import.meta.env.VITE_RAZP_KEY || "rzp_test_1DP5mmOlF5G5ag"; 
-
-    const options = {
-      key: razorpayKey, 
-      amount: Math.round(calculateTotal() * 100).toString(), // amount in paise (convert to string for safety)
-      currency: "INR",
-      name: "VIOVN EduTech",
-      description: "Dummy Course Enrollment Payment",
-      image: "https://your-logo-url.png",
-      handler: function (response: any) {
-        // This handler triggers upon successful payment in the Razorpay Iframe
-        console.log("Payment Success:", response);
-        toast.success(`Payment successful! Payment ID: ${response.razorpay_payment_id}`);
-        
-        // Navigate to home after brief success visual
-        setTimeout(() => {
-           navigate("/");
-        }, 1500);
-      },
-      prefill: {
-        name: formData.fullName || "Test User",
-        email: formData.email || "test@example.com",
-        contact: formData.phone || "9999999999",
-      },
-      notes: {
-        address: formData.city || "Test City",
-      },
-      theme: {
-        color: "#0f172a", // Brand color
-      },
-    };
-
     try {
+      // 1. Create order on backend
+      const totalAmount = calculateTotal();
+      
+      // Get numeric schedule IDs, filtering out any non-numeric placeholders
+      const scheduleIds = displayItems
+        .map(item => parseInt(item.scheduleId || item.courseId))
+        .filter(id => !isNaN(id));
+
+      if (scheduleIds.length === 0) {
+        console.error("No valid numeric schedule IDs found in cart items:", displayItems);
+        toast.error("Could not find a valid course schedule ID. Please try re-adding the course to your cart.");
+        return;
+      }
+      
+      const orderRes = await apiCall('/user/payments/create-order', {
+        method: 'POST',
+        data: {
+          amount: totalAmount,
+          scheduleId: scheduleIds[0] 
+        }
+      });
+
+      if (!orderRes.success) {
+        toast.error("Failed to create payment order. Please try again.");
+        return;
+      }
+
+      const orderData = orderRes.data;
+
+      // 2. Define Razorpay options
+      const razorpayKey = import.meta.env.VITE_RAZP_KEY || "rzp_test_Rbm66o8JPEj0P8"; 
+
+      const options = {
+        key: razorpayKey, 
+        amount: orderData.amount,
+        currency: orderData.currency,
+        name: "VIOVN EduTech",
+        description: "Course Enrollment Payment",
+        order_id: orderData.id,
+        handler: async function (response: any) {
+          // This handler triggers upon successful payment in the Razorpay Iframe
+          try {
+            const verifyRes = await apiCall('/user/payments/verify-payment', {
+              method: 'POST',
+              data: {
+                razorpay_order_id: response.razorpay_order_id,
+                razorpay_payment_id: response.razorpay_payment_id,
+                razorpay_signature: response.razorpay_signature,
+                scheduleIds: scheduleIds,
+                amount: totalAmount,
+                userData: {
+                  name: formData.fullName,
+                  email: formData.email,
+                  mobile: formData.mobile,
+                  city: formData.city
+                }
+              }
+            });
+
+            if (verifyRes.success) {
+              toast.success("Payment successful! Your enrollment is confirmed.");
+              setTimeout(() => {
+                navigate("/");
+              }, 1500);
+            } else {
+              toast.error("Payment verification failed. Please contact support.");
+            }
+          } catch (err: any) {
+            console.error("Verification error:", err);
+            toast.error(`Verification failed: ${err.message}`);
+          }
+        },
+        prefill: {
+          name: formData.fullName || "Test User",
+          email: formData.email || "test@example.com",
+          contact: formData.mobile || "9999999999",
+        },
+        theme: {
+          color: "#0f172a",
+        },
+      };
+
       // 3. Initialize and open Razorpay iframe
       const paymentObject = new (window as any).Razorpay(options);
       
@@ -160,74 +217,50 @@ const Enroll = () => {
       });
       
       paymentObject.open();
-    } catch (err) {
+
+    } catch (err: any) {
       console.error("Error opening Razorpay", err);
-      toast.error("Failed to initialize payment gateway. Please make sure your Test Key is valid.");
+      toast.error(`Failed to initialize payment: ${err.message}`);
     }
   };
 
+  const [stripeClientSecret, setStripeClientSecret] = useState<string | null>(null);
+  const [isStripeModalOpen, setIsStripeModalOpen] = useState(false);
+
   const loadStripeScript = () => {
-    return new Promise((resolve) => {
-      // Avoid loading multiple times
-      if (document.querySelector('script[src="https://checkout.stripe.com/checkout.js"]')) {
-        resolve(true);
-        return;
-      }
-      const script = document.createElement("script");
-      script.src = "https://checkout.stripe.com/checkout.js";
-      script.onload = () => resolve(true);
-      script.onerror = () => resolve(false);
-      document.body.appendChild(script);
-    });
+    // Already handled by @stripe/stripe-js
+    return Promise.resolve(true);
   };
 
   const handleStripePayment = async () => {
-    // 1. Load Stripe script
-    const res = await loadStripeScript();
+    const totalAmount = calculateTotal();
+    const scheduleIds = displayItems
+      .map(item => parseInt(item.scheduleId || item.courseId))
+      .filter(id => !isNaN(id));
 
-    if (!res) {
-      toast.error("Failed to load Stripe SDK. Please check your connection.");
+    if (scheduleIds.length === 0) {
+      toast.error("No valid course schedule selected.");
       return;
     }
 
-    // 2. Define Stripe options
-    // NOTE: To get the full Stripe UI without a backend,
-    // you must use your own Publishable Test Key from Stripe Dashboard.
-    const stripeKey = import.meta.env.VITE_STRIPE_KEY || "pk_test_TYooMQauvdEDq54NiTphI7jx"; // Fallback generic test key
-
     try {
-      // 3. Initialize and open Stripe checkout
-      const handler = (window as any).StripeCheckout.configure({
-        key: stripeKey,
-        locale: "auto",
-        token: function (token: any) {
-          // This handler triggers upon successful payment token generation in the Stripe UI
-          console.log("Stripe Payment Token generated:", token);
-          toast.success(`Payment successful! Token: ${token.id}`);
-          
-          // Navigate to home after brief success visual
-          setTimeout(() => {
-             navigate("/");
-          }, 1500);
+      const res = await apiCall('/user/payments/stripe/create-intent', {
+        method: 'POST',
+        data: {
+          amount: totalAmount,
+          scheduleIds: scheduleIds
         }
       });
 
-      handler.open({
-        name: "VIOVN EduTech",
-        description: "Dummy Course Enrollment Payment",
-        amount: Math.round(calculateTotal() * 100),
-        currency: "inr",
-        email: formData.email || "test@example.com"
-      });
-
-      // Cleanup
-      window.addEventListener('popstate', function() {
-        handler.close();
-      });
-
-    } catch (err) {
-      console.error("Error opening Stripe", err);
-      toast.error("Failed to initialize Stripe payment gateway.");
+      if (res.success) {
+        setStripeClientSecret(res.data.clientSecret);
+        setIsStripeModalOpen(true);
+      } else {
+        toast.error("Failed to initialize Stripe payment.");
+      }
+    } catch (err: any) {
+      console.error("Stripe initialization error:", err);
+      toast.error("Error connecting to Stripe.");
     }
   };
 
@@ -474,8 +507,8 @@ const Enroll = () => {
                           <Input
                             className="h-12 bg-slate-50 border-slate-200 focus:bg-white rounded-xl font-bold"
                             placeholder="+91 00000 00000"
-                            value={formData.phone}
-                            onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                            value={formData.mobile}
+                            onChange={(e) => setFormData({ ...formData, mobile: e.target.value })}
                           />
                         </div>
                         <div className="space-y-2">
@@ -507,38 +540,58 @@ const Enroll = () => {
                   key="step3"
                   initial={{ opacity: 0, x: 20 }}
                   animate={{ opacity: 1, x: 0 }}
-                  className="bg-white rounded-2xl p-10 border border-slate-100 shadow-sm"
+                  className="bg-white rounded-2xl p-6 md:p-10 border border-slate-100 shadow-sm"
                 >
-                  <div className="text-center space-y-6">
-                    <div className="w-20 h-20 bg-green-50 rounded-full flex items-center justify-center mx-auto mb-6">
-                      <CreditCard className="w-10 h-10 text-green-500" />
-                    </div>
-                    <h2 className="text-3xl font-black text-slate-900">Select Payment Method</h2>
-                    <p className="text-slate-500 font-bold">Please select one of our secure payment providers</p>
+                  <div className="space-y-8">
+                    <h2 className="text-xl font-black text-slate-900 border-b border-slate-50 pb-4">Choose payment method</h2>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-6">
-                      {['Razorpay', 'Stripe'].map((method) => (
-                        <button 
-                          key={method} 
-                          onClick={() => {
-                            if (method === 'Razorpay') {
-                              handleRazorpayPayment();
-                            } else if (method === 'Stripe') {
-                              handleStripePayment();
-                            } else {
-                              toast.info(`${method} integration coming soon!`);
-                            }
-                          }}
-                          className="p-8 rounded-2xl border-2 border-slate-100 hover:border-blue-500 hover:bg-blue-50/30 transition-all font-black text-lg text-slate-800 shadow-sm flex items-center justify-center"
-                        >
-                          {method}
-                        </button>
-                      ))}
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                      {/* Stripe Card */}
+                      <div className="bg-white rounded-2xl border border-slate-200 p-8 flex flex-col items-center text-center space-y-4 hover:border-blue-500/50 hover:shadow-md transition-all group">
+                        <div className="h-12 flex items-center justify-center">
+                          <img src="https://upload.wikimedia.org/wikipedia/commons/b/ba/Stripe_Logo%2C_revised_2016.svg" alt="Stripe" className="h-10" />
+                        </div>
+                        <p className="text-slate-600 font-bold text-sm">Credit / Debit Cards accepted</p>
+                        <p className="text-slate-400 text-[11px] font-medium leading-relaxed px-4">
+                          You will be charged <span className="text-slate-900 font-bold">INR {calculateTotal().toLocaleString('en-IN', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</span> on your payment card through Stripe.
+                        </p>
+                        <div className="pt-4 w-full">
+                          <Button 
+                            onClick={handleStripePayment}
+                            className="w-full bg-[#001c3d] hover:bg-[#002a5c] text-white font-black py-6 rounded-xl flex items-center justify-center gap-2 group-hover:scale-[1.02] transition-transform"
+                          >
+                            Pay with Stripe <CheckCircle className="w-4 h-4" />
+                          </Button>
+                        </div>
+                      </div>
+
+                      {/* Razorpay Card */}
+                      <div className="bg-white rounded-2xl border border-slate-200 p-8 flex flex-col items-center text-center space-y-4 hover:border-blue-500/50 hover:shadow-md transition-all group">
+                        <div className="h-12 flex items-center justify-center">
+                          <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/Razorpay_logo.svg" alt="Razorpay" className="h-10" />
+                        </div>
+                        <p className="text-slate-600 font-bold text-sm px-2">Credit/Debit Cards, NetBanking, EMI, UPI accepted</p>
+                        <p className="text-slate-400 text-[11px] font-medium leading-relaxed px-4">
+                          You will be charged <span className="text-slate-900 font-bold">INR {calculateTotal().toLocaleString('en-IN', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</span> on your payment card through Razorpay.
+                        </p>
+                        <p className="text-[12px] font-bold text-[#22c55e] flex items-center gap-1">
+                          As low as <span className="font-extrabold uppercase tracking-tight">INR {(calculateTotal() / 12).toLocaleString('en-IN', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} /month</span>
+                          <div className="w-3.5 h-3.5 rounded-full border border-[#22c55e] flex items-center justify-center text-[9px] font-black">i</div>
+                        </p>
+                        <div className="pt-4 w-full">
+                          <Button 
+                            onClick={handleRazorpayPayment}
+                            className="w-full bg-[#001c3d] hover:bg-[#002a5c] text-white font-black py-6 rounded-xl flex items-center justify-center gap-2 group-hover:scale-[1.02] transition-transform"
+                          >
+                            Pay with Razorpay <CheckCircle className="w-4 h-4" />
+                          </Button>
+                        </div>
+                      </div>
                     </div>
 
-                    <div className="pt-10 flex justify-center">
-                      <Button onClick={handleBack} variant="ghost" className="font-black text-slate-400">
-                        Back to details
+                    <div className="pt-6 flex justify-center border-t border-slate-50">
+                      <Button onClick={handleBack} variant="ghost" className="font-black text-slate-400 hover:text-slate-900">
+                        <ChevronLeft className="w-4 h-4 mr-2" /> Back to details
                       </Button>
                     </div>
                   </div>
@@ -624,6 +677,42 @@ const Enroll = () => {
         </div>
       </div>
 
+      {/* Stripe Payment Modal */}
+      <Dialog open={isStripeModalOpen} onOpenChange={setIsStripeModalOpen}>
+        <DialogContent className="max-w-md p-0 overflow-hidden bg-white border-none shadow-2xl rounded-2xl">
+          <div className="p-8 space-y-6">
+            <div className="text-center space-y-2">
+              <div className="h-10 flex items-center justify-center mb-2">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/b/ba/Stripe_Logo%2C_revised_2016.svg" alt="Stripe" className="h-8" />
+              </div>
+              <h2 className="text-xl font-black text-slate-900">Secure Payment</h2>
+              <p className="text-slate-500 font-bold text-[12px]">Complete your enrollment securely via Stripe</p>
+            </div>
+
+            {stripeClientSecret && (
+              <Elements stripe={stripePromise} options={{ clientSecret: stripeClientSecret }}>
+                <StripePaymentForm 
+                  totalAmount={calculateTotal()} 
+                  onSuccess={() => {
+                    setIsStripeModalOpen(false);
+                    toast.success("Payment successful!");
+                    setTimeout(() => navigate("/"), 1500);
+                  }}
+                  userData={{
+                    name: formData.fullName,
+                    email: formData.email,
+                    mobile: formData.mobile,
+                    city: formData.city
+                  }}
+                  scheduleIds={displayItems.map(item => parseInt(item.scheduleId || item.courseId)).filter(id => !isNaN(id))}
+                />
+              </Elements>
+            )}
+          </div>
+        </DialogContent>
+      </Dialog>
+      ...
+
       {/* Benefits Modal */}
       <Dialog open={isBenefitsModalOpen} onOpenChange={setIsBenefitsModalOpen}>
         <DialogContent className="max-w-xl p-0 overflow-hidden bg-[#f8fafc] border-none shadow-2xl rounded-xl">
@@ -683,6 +772,97 @@ const Enroll = () => {
 
       <StepScroller currentStep={currentStep} />
     </div>
+  );
+};
+
+// Stripe Payment Form Component
+const StripePaymentForm = ({ totalAmount, onSuccess, userData, scheduleIds }: any) => {
+  const stripe = useStripe();
+  const elements = useElements();
+  const [isProcessing, setIsProcessing] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+
+    if (!stripe || !elements) return;
+
+    setIsProcessing(true);
+
+    const { error, paymentIntent } = await stripe.confirmPayment({
+      elements,
+      confirmParams: {
+        return_url: window.location.origin + "/enroll",
+        payment_method_data: {
+          billing_details: {
+            name: userData.name,
+            email: userData.email,
+            phone: userData.mobile,
+            address: {
+              line1: userData.city || 'N/A', // Use city as fallback for address
+              city: userData.city || 'N/A',
+              state: userData.city || 'N/A', // Use city as fallback for state
+              postal_code: '000000', // Default postal code
+              country: 'IN', // Default to India
+            }
+          }
+        }
+      },
+      redirect: 'if_required'
+    });
+
+    if (error) {
+      toast.error(error.message || "Payment failed");
+      setIsProcessing(false);
+    } else if (paymentIntent && paymentIntent.status === 'succeeded') {
+      // Verify with backend
+      try {
+        const verifyRes = await apiCall('/user/payments/stripe/verify', {
+          method: 'POST',
+          data: {
+            paymentIntentId: paymentIntent.id,
+            scheduleIds,
+            amount: totalAmount,
+            userData
+          }
+        });
+
+        if (verifyRes.success) {
+          onSuccess();
+        } else {
+          toast.error("Payment verification failed.");
+        }
+      } catch (err: any) {
+        console.error("Stripe verification error:", err);
+        toast.error("Verification error.");
+      } finally {
+        setIsProcessing(false);
+      }
+    }
+  };
+
+  return (
+    <form onSubmit={handleSubmit} className="space-y-6">
+      <PaymentElement options={{ layout: 'tabs' }} />
+      <Button 
+        type="submit" 
+        disabled={!stripe || isProcessing} 
+        className="w-full bg-[#1e293b] hover:bg-black text-white py-6 rounded-xl font-black flex items-center justify-center gap-2"
+      >
+        {isProcessing ? (
+          <>
+            <Loader2 className="w-5 h-5 animate-spin" />
+            Processing...
+          </>
+        ) : (
+          <>
+            Pay INR {totalAmount.toLocaleString()}
+          </>
+        )}
+      </Button>
+      <p className="text-[10px] text-center text-slate-400 font-medium">
+        Your payment is secured with 256-bit encryption.
+      </p>
+    </form>
   );
 };
 

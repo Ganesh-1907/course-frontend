@@ -209,7 +209,7 @@ const SchedulesPage: React.FC = () => {
     }
     await addToCart({
       courseName: schedule.courseName || displayName,
-      courseId: schedule.courseId?.toString() || courseInfo?.id.toString(),
+      courseId: (schedule.id || schedule.courseId || courseInfo?.id)?.toString(),
       price: Number(schedule.originalPrice),
       discountedPrice: Number(schedule.discountedPrice),
       image: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=400&h=300&fit=crop'
