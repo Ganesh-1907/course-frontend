@@ -62,3 +62,33 @@ export const getSchedulesByCategory = async (category: string): Promise<{ schedu
         return null;
     }
 };
+
+export const getServiceTypes = async (): Promise<any[]> => {
+    try {
+        const response = await apiCall('/user/courses/service-types');
+        if (response.success) {
+            return response.data;
+        }
+        return [];
+    } catch (error) {
+        console.error('Error fetching service types:', error);
+        return [];
+    }
+};
+
+export const getAllCourses = async (page = 1, limit = 9, serviceType?: string): Promise<any> => {
+    try {
+        let url = `/user/courses?page=${page}&limit=${limit}`;
+        if (serviceType && serviceType !== 'All Courses') {
+            url += `&serviceType=${encodeURIComponent(serviceType)}`;
+        }
+        const response = await apiCall(url);
+        if (response.success) {
+            return response.data;
+        }
+        return { courses: [], pagination: { total: 0 } };
+    } catch (error) {
+        console.error('Error fetching courses:', error);
+        return { courses: [], pagination: { total: 0 } };
+    }
+};

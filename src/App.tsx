@@ -14,6 +14,7 @@ import SubCategoryPage from "./pages/SubCategoryPage";
 import DemoOne from "./pages/DemoOne";
 import NotFound from "./pages/NotFound";
 import Enroll from "./pages/Enroll";
+import AllCourses from "./pages/AllCourses";
 
 // ----------------------------- Resource Pages -----------------------------
 import FreeCoursePage from "./pages/resources/FreeCoursePage";
@@ -1192,7 +1193,7 @@ const App = () => (
           <Route path="/resources/questions" element={<QuestionsPage />} />
           <Route path="/resources/quiz" element={<QuizPage />} />
           <Route path="/resources/careers" element={<CareersPage />} />
-
+          <Route path="/all-courses" element={<AllCourses />} />
           <Route path="*" element={<NotFound />} />
           </Routes>
           <CartDrawer />
